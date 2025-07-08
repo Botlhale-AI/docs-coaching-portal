@@ -1,212 +1,160 @@
+# Courses Management
+
+The Courses module allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library.
+
+## Table of Contents
+
+- [Accessing the Courses Dashboard](#accessing-the-courses-dashboard)
+- [Creating a New Course](#creating-a-new-course)
+- [Viewing Course List](#viewing-course-list)
+- [Managing Existing Courses](#managing-existing-courses)
+- [Best Practices](#best-practices)
+
+## Accessing the Courses Dashboard
+
+The Courses Dashboard is your central hub for all course-related activities.
+
+1. Log in to your Vela Coaching Portal account
+2. Click on the **Courses** tab in the top navigation menu
+
+![Courses Dashboard](../static/img/screenshots/courses/courses-dashboard.png)
+
+## Creating a New Course
+
+Creating effective training materials is essential for agent development. Follow these steps to create a new course:
+
+### Step 1: Navigate to Create Course Page
+
+From the Courses Dashboard, click the **Create Course** button in the top-right corner.
+
+![Create Course Button](../static/img/screenshots/courses/create-course-button.png)
+
+### Step 2: Fill in Course Details
+
+Complete the course creation form with the following information:
+
+1. **Course Title**: Enter a clear, descriptive name for your course
+2. **Course Description**: Provide a comprehensive overview of what the course covers
+3. **Learning Objectives**: List specific skills agents will acquire
+4. **Estimated Duration**: Set the expected completion time
+5. **Difficulty Level**: Select the appropriate level (Beginner, Intermediate, Advanced)
+6. **Category**: Choose the relevant department or skill category
+7. **Prerequisites**: List any courses or skills required before taking this course
+
+![Course Details Form](../static/img/screenshots/courses/course-details-form.png)
+
+### Step 3: Add Course Content
+
+Build your course content using the content editor:
+
+1. Click the **Add Module** button to create course sections
+2. For each module:
+   - Add a module title and description
+   - Upload materials (PDFs, videos, presentations)
+   - Create quizzes to test knowledge retention
+
+![Adding Course Content](../static/img/screenshots/courses/adding-course-content.png)
+
+### Step 4: Set Completion Requirements
+
+Define what agents need to complete to finish the course:
+
+1. Minimum quiz score requirements
+2. Required modules
+3. Time-based requirements (if applicable)
+
+![Completion Requirements](../static/img/screenshots/courses/completion-requirements.png)
+
+### Step 5: Preview and Publish
+
+1. Click **Preview** to see how your course will appear to agents
+2. Review all content for accuracy and completeness
+3. Click **Publish** to make the course available or **Save as Draft** to continue editing later
+
+![Preview and Publish](../static/img/screenshots/courses/preview-publish.png)
+
+## Viewing Course List
+
+The Course List provides an overview of all courses in your organization's library.
+
+### Accessing the Course List
+
+From the Courses Dashboard, click on the **Course Library** tab to view all courses.
+
+![Course Library](../static/img/screenshots/courses/course-library.png)
+
+### Course List Features
+
+The Course List view includes several useful features:
+
+1. **Search Bar**: Quickly find courses by name, category, or keyword
+2. **Filters**: Filter courses by status, category, difficulty, or completion rate
+3. **Sort Options**: Sort by creation date, popularity, or alphabetically
+4. **Statistics Overview**: See at-a-glance metrics for each course
+
+![Course List Features](../static/img/screenshots/courses/course-list-features.png)
+
+### Course Cards
+
+Each course is represented by a card showing:
+
+- Course title and thumbnail
+- Completion rate
+- Number of enrolled agents
+- Average rating
+- Difficulty level
+- Estimated duration
+
+Click on any course card to view detailed information and management options.
+
+![Course Cards](../static/img/screenshots/courses/course-cards.png)
+
+## Managing Existing Courses
+
+Effective course management ensures your training materials remain relevant and effective.
+
+### Course Details Page
+
+Access a course's details page by clicking on its card in the Course List. From here, you can:
+
+1. **Edit Course**: Update content, requirements, or details
+2. **Assign to Agents**: Enroll specific agents or teams
+3. **View Analytics**: See completion rates, quiz scores, and feedback
+4. **Archive Course**: Remove from active rotation while preserving data
+5. **Duplicate Course**: Create a copy as a starting point for a new course
+
+![Course Management](../static/img/screenshots/courses/course-management.png)
+
+### Managing Enrollments
+
+Control who has access to each course:
+
+1. Click the **Enrollments** tab on the course details page
+2. Use the **Add Agents** button to enroll individual agents
+3. Use the **Add Team** button to enroll entire teams
+4. Set due dates for completion (optional)
+5. View progress for all enrolled agents
+
+![Managing Enrollments](../static/img/screenshots/courses/managing-enrollments.png)
+
+## Best Practices
+
+Follow these guidelines to create effective training courses:
+
+1. **Keep modules concise**: Aim for 5-10 minute sections to maintain attention
+2. **Use varied content types**: Mix videos, text, and interactive elements
+3. **Include real scenarios**: Base examples on actual customer interactions
+4. **Provide clear objectives**: State what agents will learn upfront
+5. **Test knowledge regularly**: Include quizzes throughout, not just at the end
+6. **Update regularly**: Review and refresh content at least quarterly
+7. **Collect feedback**: Use agent ratings and comments to improve content
+
 ---
-id: Courses
-title: Courses
-sidebar_label: Courses
-description: Create and manage training courses for agents
----
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+## Need Help?
 
-<div className="bg-vela-background rounded-lg p-6 mb-8 shadow-md">
+If you encounter any issues while creating or managing courses, please contact our support team:
 
-# <span className="text-vela-orange font-bold">Courses</span>
-
-<p className="text-vela-text-color text-lg mb-6">
-  This section allows you to create and manage the courses that agents will learn from. All created courses will appear as tiles on the Courses main page.
-</p>
-
-<div className="grid md:grid-cols-2 gap-6 mb-8">
-  <div className="bg-vela-background-card rounded-xl p-6 border border-vela-drawer-outline shadow-sm hover:shadow-md transition-all">
-    <h3 className="text-vela-orange text-xl font-bold mb-3">Browse Courses</h3>
-    <p className="text-vela-text-color">Access all available training materials organized by category and skill level.</p>
-  </div>
-  
-  <div className="bg-vela-background-card rounded-xl p-6 border border-vela-drawer-outline shadow-sm hover:shadow-md transition-all">
-    <h3 className="text-vela-orange text-xl font-bold mb-3">Track Progress</h3>
-    <p className="text-vela-text-color">Monitor completion rates and assessment scores for all assigned courses.</p>
-  </div>
-</div>
-
-## <span className="text-vela-orange font-bold">Creating a Course</span>
-
-<div className="bg-vela-background-card rounded-lg p-6 mb-6 border-l-4 border-vela-orange">
-  <p className="text-vela-text-color">
-    Use this section to create a new course. The following details are required:
-  </p>
-</div>
-
-<div className="space-y-4 mb-8">
-  <div className="bg-vela-background-drawer p-4 rounded-lg border border-vela-drawer-outline">
-    <h3 className="font-bold text-vela-text-color">Title</h3>
-    <p className="text-vela-text-color">The name of the course</p>
-  </div>
-
-  <div className="bg-vela-background-drawer p-4 rounded-lg border border-vela-drawer-outline">
-    <h3 className="font-bold text-vela-text-color">Category</h3>
-    <p className="text-vela-text-color">The classification or topic under which the course falls</p>
-  </div>
-
-  <div className="bg-vela-background-drawer p-4 rounded-lg border border-vela-drawer-outline">
-    <h3 className="font-bold text-vela-text-color">Description</h3>
-    <p className="text-vela-text-color">A brief summary of the course content</p>
-  </div>
-
-  <div className="bg-vela-background-drawer p-4 rounded-lg border border-vela-drawer-outline">
-    <h3 className="font-bold text-vela-text-color">Scope</h3>
-    <p className="text-vela-text-color">Define the scope or objectives of the course</p>
-  </div>
-
-  <div className="bg-vela-background-drawer p-4 rounded-lg border border-vela-drawer-outline">
-    <h3 className="font-bold text-vela-text-color">Training Initiation Range</h3>
-    <p className="text-vela-text-color">The minimum score required for an agent to pass the course</p>
-  </div>
-</div>
-
-## <span className="text-vela-orange font-bold">Adding Course Content</span>
-
-<div className="bg-vela-background-card p-6 rounded-lg mb-6 shadow-sm">
-  <p className="text-vela-text-color mb-4">
-    Course materials can be uploaded in PDF format. You can either drag and drop the file into the upload area or browse your device to locate it. Alternatively, you may provide an external link to the course material.
-  </p>
-  
-  <div className="border-2 border-dashed border-vela-drawer-outline rounded-lg p-8 text-center">
-    <div className="text-vela-orange text-4xl mb-2">
-      <i className="fas fa-cloud-upload-alt"></i>
-    </div>
-    <p className="text-vela-text-color">Drag and drop your files here</p>
-    <p className="text-vela-text-color text-sm opacity-70">or</p>
-    <button className="mt-2 bg-vela-button text-white py-2 px-4 rounded-md hover:opacity-90 transition-opacity">
-      Browse Files
-    </button>
-  </div>
-</div>
-
-## <span className="text-vela-orange font-bold">Selecting a Course Cover Image</span>
-
-<div className="bg-vela-background-card p-6 rounded-lg mb-6 shadow-sm">
-  <p className="text-vela-text-color mb-4">
-    The cover image will be displayed on the course tile on the Courses home page. You can upload an image from your device or choose from a selection of preloaded course themes.
-  </p>
-  
-  <div className="grid grid-cols-3 gap-4">
-    <div className="bg-vela-background-drawer rounded-lg p-2 border border-vela-drawer-outline hover:border-vela-orange cursor-pointer transition-colors">
-      <div className="aspect-video bg-gradient-to-br from-vela-blue to-vela-green rounded-md"></div>
-      <p className="text-center mt-2 text-vela-text-color text-sm">Sales</p>
-    </div>
-    
-    <div className="bg-vela-background-drawer rounded-lg p-2 border border-vela-drawer-outline hover:border-vela-orange cursor-pointer transition-colors">
-      <div className="aspect-video bg-gradient-to-br from-vela-orange to-vela-yellow rounded-md"></div>
-      <p className="text-center mt-2 text-vela-text-color text-sm">Customer Service</p>
-    </div>
-    
-    <div className="bg-vela-background-drawer rounded-lg p-2 border border-vela-drawer-outline hover:border-vela-orange cursor-pointer transition-colors">
-      <div className="aspect-video bg-gradient-to-br from-vela-red to-vela-orange rounded-md"></div>
-      <p className="text-center mt-2 text-vela-text-color text-sm">Leadership</p>
-    </div>
-  </div>
-</div>
-
-## <span className="text-vela-orange font-bold">Adding a Quiz</span>
-
-<div className="bg-vela-background-card p-6 rounded-lg mb-6 shadow-sm">
-  <p className="text-vela-text-color mb-4">
-    Create a quiz to assess agents' understanding of the course material. Questions can be added in the following formats:
-  </p>
-  
-  <ul className="list-disc pl-6 mb-6 text-vela-text-color">
-    <li className="mb-2">Multiple choice</li>
-    <li className="mb-2">Short paragraph</li>
-    <li className="mb-2">Long paragraph</li>
-  </ul>
-  
-  <p className="text-vela-text-color mb-4">
-    Each question can be assigned a specific point value. Additionally, you can mark questions as mandatory using the toggle option.
-  </p>
-  
-  <Tabs>
-    <TabItem value="multiple-choice" label="Multiple Choice" default>
-      <div className="bg-vela-background-drawer p-4 rounded-lg mt-4">
-        <div className="flex justify-between mb-2">
-          <h4 className="font-bold text-vela-text-color">Question 1</h4>
-          <span className="text-vela-orange">10 points</span>
-        </div>
-        <p className="text-vela-text-color mb-4">What is the primary goal of active listening?</p>
-        <div className="space-y-2">
-          <div className="flex items-center gap-2 p-2 border border-vela-drawer-outline rounded-md bg-vela-background">
-            <input type="radio" name="q1" id="q1a" className="accent-vela-orange" />
-            <label htmlFor="q1a" className="text-vela-text-color">To formulate your response while the customer is speaking</label>
-          </div>
-          <div className="flex items-center gap-2 p-2 border border-vela-drawer-outline rounded-md bg-vela-background">
-            <input type="radio" name="q1" id="q1b" className="accent-vela-orange" />
-            <label htmlFor="q1b" className="text-vela-text-color">To understand the customer's needs fully before responding</label>
-          </div>
-          <div className="flex items-center gap-2 p-2 border border-vela-drawer-outline rounded-md bg-vela-background">
-            <input type="radio" name="q1" id="q1c" className="accent-vela-orange" />
-            <label htmlFor="q1c" className="text-vela-text-color">To minimize the time spent on each call</label>
-          </div>
-        </div>
-      </div>
-    </TabItem>
-    <TabItem value="short-paragraph" label="Short Paragraph">
-      <div className="bg-vela-background-drawer p-4 rounded-lg mt-4">
-        <div className="flex justify-between mb-2">
-          <h4 className="font-bold text-vela-text-color">Question 2</h4>
-          <span className="text-vela-orange">15 points</span>
-        </div>
-        <p className="text-vela-text-color mb-4">Briefly explain how to handle an angry customer in 2-3 sentences.</p>
-        <textarea className="w-full p-3 rounded-md border border-vela-drawer-outline bg-vela-background text-vela-text-color" rows="3" placeholder="Enter your answer here..."></textarea>
-      </div>
-    </TabItem>
-  </Tabs>
-</div>
-
-## <span className="text-vela-orange font-bold">Setting Deadlines and Reminders</span>
-
-<div className="space-y-6 mb-6">
-  <div className="bg-vela-background-card p-6 rounded-lg shadow-sm">
-    <h3 className="font-bold text-vela-text-color mb-4">Quiz Retakes</h3>
-    <p className="text-vela-text-color mb-4">You can allow agents to retake the quiz if they do not pass. Specify the number of permitted retake attempts.</p>
-    <div className="flex items-center gap-4">
-      <input type="number" min="0" max="10" value="3" className="w-16 p-2 border border-vela-drawer-outline rounded-md bg-vela-background text-vela-text-color" />
-      <span className="text-vela-text-color">Maximum retake attempts</span>
-    </div>
-  </div>
-  
-  <div className="bg-vela-background-card p-6 rounded-lg shadow-sm">
-    <h3 className="font-bold text-vela-text-color mb-4">Deadline</h3>
-    <p className="text-vela-text-color mb-4">Set a time frame within which agents must complete the course after it has been assigned.</p>
-    <div className="flex items-center gap-4">
-      <input type="number" min="1" max="90" value="14" className="w-16 p-2 border border-vela-drawer-outline rounded-md bg-vela-background text-vela-text-color" />
-      <span className="text-vela-text-color">Days to complete</span>
-    </div>
-  </div>
-  
-  <div className="bg-vela-background-card p-6 rounded-lg shadow-sm">
-    <h3 className="font-bold text-vela-text-color mb-4">Course Nudges</h3>
-    <p className="text-vela-text-color mb-4">Automated reminders can be sent to agents to prompt them to complete the course before the deadline.</p>
-    <div className="flex items-center gap-2">
-      <input type="checkbox" id="reminder1" className="accent-vela-orange" checked />
-      <label htmlFor="reminder1" className="text-vela-text-color">Send reminder 7 days before deadline</label>
-    </div>
-    <div className="flex items-center gap-2 mt-2">
-      <input type="checkbox" id="reminder2" className="accent-vela-orange" checked />
-      <label htmlFor="reminder2" className="text-vela-text-color">Send reminder 3 days before deadline</label>
-    </div>
-    <div className="flex items-center gap-2 mt-2">
-      <input type="checkbox" id="reminder3" className="accent-vela-orange" checked />
-      <label htmlFor="reminder3" className="text-vela-text-color">Send reminder 1 day before deadline</label>
-    </div>
-  </div>
-</div>
-
-<div className="flex justify-end gap-4 mt-8">
-  <button className="px-6 py-2 border border-vela-button-alt text-vela-text-color rounded-md hover:bg-vela-background-drawer transition-colors">
-    Save as Draft
-  </button>
-  <button className="px-6 py-2 bg-vela-button text-white rounded-md hover:opacity-90 transition-opacity">
-    Publish Course
-  </button>
-</div>
-
-</div>
+- Email: support@botlhale.ai
+- Support Portal: [support.botlhale.ai](https://support.botlhale.ai)
+- Phone: +1-555-VELA-HELP (555-835-2435)
