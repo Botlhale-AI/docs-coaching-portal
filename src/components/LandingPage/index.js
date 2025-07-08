@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './styles.module.css';
 import CircuitBoard from '../CircuitBoard';
 import FeatureCards from '../FeatureCards';
+import styles2 from '../../theme/TopNavigationBar/styles.module.css'
 
 export default function LandingPage() {
   const {siteConfig} = useDocusaurusContext();
@@ -28,11 +29,8 @@ export default function LandingPage() {
                 Connect, learn, and excel with our integrated call center knowledge platform.
               </p>
               <div className={styles.heroCta}>
-                <Link to="/docs/intro" className={styles.heroButton}>
-                  Get Started
-                  <span className={styles.heroButtonArrow}>→</span>
-                </Link>
-                <Link to="/docs/features" className={`${styles.heroButton} ${styles.heroButtonSecondary}`}>
+
+                <Link to="/docs/Courses" className={`${styles2.roundedButton}`}>
                   Explore Features
                 </Link>
               </div>
@@ -45,11 +43,11 @@ export default function LandingPage() {
                     <span className={styles.dashboardControl}></span>
                     <span className={styles.dashboardControl}></span>
                   </div>
-                  <div className={styles.dashboardTitle}>Coaching Dashboard</div>
+                  <div className={styles.dashboardTitle}>Agent Performance Trends</div>
                 </div>
                 <div className={styles.dashboardBody}>
                   <div className={styles.chartContainer}>
-                    <div className={styles.chartTitle}>Agent Performance Trends</div>
+                    <div className={styles.chartTitle}></div>
                     
                     {/* Chart grid with square gridlines */}
                     <div className={styles.chartGrid}>

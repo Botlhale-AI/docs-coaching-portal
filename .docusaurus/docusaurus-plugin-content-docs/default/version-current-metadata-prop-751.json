@@ -10,79 +10,39 @@
   "docsSidebars": {
     "tutorialSidebar": [
       {
-        "type": "category",
+        "type": "link",
         "label": "Dashboard",
-        "collapsible": true,
-        "collapsed": true,
-        "items": [
-          {
-            "type": "link",
-            "label": "Dashboard",
-            "href": "/Dashboard",
-            "docId": "Dashboard",
-            "unlisted": false
-          }
-        ]
+        "href": "/Dashboard",
+        "docId": "Dashboard",
+        "unlisted": false
       },
       {
-        "type": "category",
+        "type": "link",
         "label": "Awards",
-        "collapsible": true,
-        "collapsed": true,
-        "items": [
-          {
-            "type": "link",
-            "label": "Awards",
-            "href": "/Awards",
-            "docId": "Awards",
-            "unlisted": false
-          }
-        ]
+        "href": "/Awards",
+        "docId": "Awards",
+        "unlisted": false
       },
       {
-        "type": "category",
+        "type": "link",
         "label": "Courses",
-        "collapsible": true,
-        "collapsed": true,
-        "items": [
-          {
-            "type": "link",
-            "label": "Courses",
-            "href": "/Courses",
-            "docId": "Courses",
-            "unlisted": false
-          }
-        ]
+        "href": "/Courses",
+        "docId": "Courses",
+        "unlisted": false
       },
       {
-        "type": "category",
+        "type": "link",
         "label": "Progress",
-        "collapsible": true,
-        "collapsed": true,
-        "items": [
-          {
-            "type": "link",
-            "label": "Progress",
-            "href": "/Progress",
-            "docId": "Progress",
-            "unlisted": false
-          }
-        ]
+        "href": "/Progress",
+        "docId": "Progress",
+        "unlisted": false
       },
       {
-        "type": "category",
+        "type": "link",
         "label": "Evaluation Cycles",
-        "collapsible": true,
-        "collapsed": true,
-        "items": [
-          {
-            "type": "link",
-            "label": "Options",
-            "href": "/Options",
-            "docId": "Options",
-            "unlisted": false
-          }
-        ]
+        "href": "/Options",
+        "docId": "Options",
+        "unlisted": false
       }
     ]
   },
@@ -95,8 +55,8 @@
     },
     "Courses": {
       "id": "Courses",
-      "title": "Courses",
-      "description": "Create and manage training courses for agents",
+      "title": "Courses Management",
+      "description": "The Courses module allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library.",
       "sidebar": "tutorialSidebar"
     },
     "Dashboard": {

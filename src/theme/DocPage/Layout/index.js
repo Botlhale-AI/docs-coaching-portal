@@ -17,7 +17,7 @@ export default function DocPageLayout({children}) {
     <Layout>
       <SubNavbar />
       
-      <div className={styles.docPage}>
+      <div className={clsx(styles.docPage, 'modern-doc-layout')}>
         {sidebar && (
           <DocPageLayoutSidebar
             sidebar={sidebar.items}

@@ -7,38 +7,58 @@ const sidebars = {
       type: 'category',
       label: 'Dashboard',
       collapsible: true,
-      collapsed: true,
-      items: ['Dashboard'],
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'Dashboard'
+      },
+      items: [],
     },
     
     {
       type: 'category',
       label: 'Awards',
       collapsible: true,
-      collapsed: true,
-      items: ['Awards'],
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'Awards'
+      },
+      items: [],
     },
     {
       type: 'category',
       label: 'Courses',
       collapsible: true,
-      collapsed: true,
-      items: ['Courses'],
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'Courses'
+      },
+      items: [],
     },
     {
       type: 'category',
       label: 'Progress',
       collapsible: true,
-      collapsed: true,
-      items: ['Progress'],
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'Progress'
+      },
+      items: [],
     },
     
     {
       type: 'category',
       label: 'Evaluation Cycles',
       collapsible: true,
-      collapsed: true,
-      items: ['Options'],
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'Options'
+      },
+      items: [],
     },
   ],
 };

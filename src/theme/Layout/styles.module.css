@@ -1,0 +1,15 @@
+/**
+ * Styles for the custom Layout component
+ */
+
+.mainWrapper {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 997px) {
+  .mainWrapper {
+    padding-top: var(--ifm-navbar-height);
+  }
+}

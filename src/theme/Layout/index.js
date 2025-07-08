@@ -10,9 +10,14 @@ import TopNavigationBar from '@theme/TopNavigationBar';
 import Footer from '@theme/Footer';
 import LayoutProvider from '@theme/Layout/Provider';
 import ErrorPageContent from '@theme/ErrorPageContent';
+import OriginalLayout from '@theme-original/Layout';
+import {useLocation} from '@docusaurus/router';
 import styles from './styles.module.css';
 
 export default function Layout(props) {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/' || location.pathname === '';
+  
   const {
     children,
     noFooter,
@@ -35,7 +40,7 @@ export default function Layout(props) {
       <Navbar />
       
       {/* Add the top navigation bar */}
-      <TopNavigationBar />
+      {!isHomePage && <TopNavigationBar />}
 
       <div className={clsx(ThemeClassNames.wrapper.main, styles.mainWrapper, wrapperClassName)}>
         <ErrorBoundary fallback={(params) => <ErrorPageContent {...params} />}>

@@ -1,7 +1,7 @@
 {
   "id": "Courses",
-  "title": "Courses",
-  "description": "Create and manage training courses for agents",
+  "title": "Courses Management",
+  "description": "The Courses module allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library.",
   "source": "@site/docs/Courses.md",
   "sourceDirName": ".",
   "slug": "/Courses",
@@ -13,12 +13,7 @@
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,
   "formattedLastUpdatedAt": "Oct 14, 2018",
-  "frontMatter": {
-    "id": "Courses",
-    "title": "Courses",
-    "sidebar_label": "Courses",
-    "description": "Create and manage training courses for agents"
-  },
+  "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Awards",

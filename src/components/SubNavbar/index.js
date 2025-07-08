@@ -1,73 +1,48 @@
-import React from 'react';
-import {useLocation} from '@docusaurus/router';
+import React, { useEffect, useState } from 'react';
 import Link from '@docusaurus/Link';
-import {useActiveDocContext} from '@docusaurus/plugin-content-docs/client';
-import {useAllDocsData} from '@docusaurus/plugin-content-docs/client';
+import {useLocation} from '@docusaurus/router';
+import clsx from 'clsx';
 
-function SubNavbar() {
+// Main navigation items - moved from navbar
+const mainNavItems = [
+  { label: 'Dashboard', to: '/Dashboard' },
+  { label: 'Awards', to: '/Awards' },
+  { label: 'Courses', to: '/Courses' },
+  { label: 'Progress', to: '/Progress' },
+  { label: 'Evaluation Cycles', to: '/Options' },
+];
+
+export default function SubNavbar() {
   const location = useLocation();
-  const activeDocContext = useActiveDocContext();
-  const allDocsData = useAllDocsData();
-  const currentDocData = allDocsData[activeDocContext.activeDoc?.pluginId || 'default'];
-  const activeSidebarName = activeDocContext.activeSidebar;
-
-  // If we're not in the docs section, don't render the sub navbar
-  if (!activeDocContext.activeDoc) {
-    return null;
-  }
-
-  // Get the current active category
-  const currentCategory = activeDocContext.activeDoc.sidebar === activeSidebarName 
-    ? currentDocData?.sidebars[activeSidebarName]?.find(item => 
-        item.type === 'category' && activeDocContext.activeDoc.id.startsWith(item.label)
-      )
-    : null;
-
-  // If no active category found, render a simplified sub navbar
-  if (!currentCategory) {
-    const topLevelCategories = currentDocData?.sidebars[activeSidebarName]?.filter(
-      item => item.type === 'category'
-    ) || [];
-
-    return (
-      <div className="sub-navbar">
-        <div className="sub-navbar__items">
-          {topLevelCategories.map((category, idx) => (
-            <Link
-              key={idx}
-              to={`/${category.items[0]}`}
-              className={clsx(
-                'sub-navbar__item',
-                location.pathname.includes(`/${category.items[0]}`) && 'sub-navbar__item--active'
-              )}
-            >
-              {category.label}
-            </Link>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  // Render sub navbar with items from the current category
+  const [isSticky, setIsSticky] = useState(false);
+  
+  // Handle scroll event to make the navigation sticky
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      setIsSticky(offset > 60); // Main navbar height
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
   return (
-    <div className="sub-navbar">
-      <div className="sub-navbar__items">
-        {currentCategory.items.map((item, idx) => (
+    <div className={clsx('horizontal-nav', isSticky && 'horizontal-nav-sticky')}>
+      <div className="horizontal-nav-container">
+        {mainNavItems.map((item, index) => (
           <Link
-            key={idx}
-            to={`/${item}`}
+            key={index}
+            to={item.to}
             className={clsx(
-              'sub-navbar__item',
-              location.pathname === `/${item}` && 'sub-navbar__item--active'
+              'horizontal-nav-item',
+              location.pathname.startsWith(item.to) && 'horizontal-nav-item-active'
             )}
           >
-            {item}
+            {item.label}
           </Link>
         ))}
       </div>
     </div>
   );
 }
-
-export default SubNavbar;

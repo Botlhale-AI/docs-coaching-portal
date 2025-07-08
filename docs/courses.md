@@ -17,7 +17,7 @@ The Courses Dashboard is your central hub for all course-related activities.
 1. Log in to your Vela Coaching Portal account
 2. Click on the **Courses** tab in the top navigation menu
 
-![Courses Dashboard](../static/img/screenshots/courses/courses-dashboard.png)
+![Courses Dashboard](../img/screenshots/courses/courses-list.png)
 
 ## Creating a New Course
 
@@ -27,7 +27,7 @@ Creating effective training materials is essential for agent development. Follow
 
 From the Courses Dashboard, click the **Create Course** button in the top-right corner.
 
-![Create Course Button](../static/img/screenshots/courses/create-course-button.png)
+<!-- ![Create Course Button](../img/screenshots/courses/courses-list.png) -->
 
 ### Step 2: Fill in Course Details
 
@@ -41,7 +41,7 @@ Complete the course creation form with the following information:
 6. **Category**: Choose the relevant department or skill category
 7. **Prerequisites**: List any courses or skills required before taking this course
 
-![Course Details Form](../static/img/screenshots/courses/course-details-form.png)
+![Course Details Form](../img/screenshots/courses/create-course.png)
 
 ### Step 3: Add Course Content
 
@@ -53,7 +53,7 @@ Build your course content using the content editor:
    - Upload materials (PDFs, videos, presentations)
    - Create quizzes to test knowledge retention
 
-![Adding Course Content](../static/img/screenshots/courses/adding-course-content.png)
+<!-- ![Adding Course Content](/img/screenshots/courses/create-course-choose-add-quiz.png) -->
 
 ### Step 4: Set Completion Requirements
 
@@ -63,7 +63,7 @@ Define what agents need to complete to finish the course:
 2. Required modules
 3. Time-based requirements (if applicable)
 
-![Completion Requirements](../static/img/screenshots/courses/completion-requirements.png)
+<!-- ![Completion Requirements](/img/screenshots/courses/create-course-deadlines.png) -->
 
 ### Step 5: Preview and Publish
 
@@ -71,7 +71,7 @@ Define what agents need to complete to finish the course:
 2. Review all content for accuracy and completeness
 3. Click **Publish** to make the course available or **Save as Draft** to continue editing later
 
-![Preview and Publish](../static/img/screenshots/courses/preview-publish.png)
+<!-- ![Preview and Publish](/img/screenshots/courses/create-course-deadlines.png) -->
 
 ## Viewing Course List
 
@@ -81,7 +81,7 @@ The Course List provides an overview of all courses in your organization's libra
 
 From the Courses Dashboard, click on the **Course Library** tab to view all courses.
 
-![Course Library](../static/img/screenshots/courses/course-library.png)
+<!-- ![Course Library](/img/screenshots/courses/create-course-deadlines.png) -->
 
 ### Course List Features
 
@@ -92,7 +92,7 @@ The Course List view includes several useful features:
 3. **Sort Options**: Sort by creation date, popularity, or alphabetically
 4. **Statistics Overview**: See at-a-glance metrics for each course
 
-![Course List Features](../static/img/screenshots/courses/course-list-features.png)
+<!-- ![Course List Features](/img/screenshots/courses/create-course-deadlines.png) -->
 
 ### Course Cards
 
@@ -107,7 +107,7 @@ Each course is represented by a card showing:
 
 Click on any course card to view detailed information and management options.
 
-![Course Cards](../static/img/screenshots/courses/course-cards.png)
+<!-- ![Course Cards](/img/screenshots/courses/create-course-deadlines.png) -->
 
 ## Managing Existing Courses
 
@@ -123,7 +123,7 @@ Access a course's details page by clicking on its card in the Course List. From 
 4. **Archive Course**: Remove from active rotation while preserving data
 5. **Duplicate Course**: Create a copy as a starting point for a new course
 
-![Course Management](../static/img/screenshots/courses/course-management.png)
+<!-- ![Course Management](/img/screenshots/courses/create-course-deadlines.png) -->
 
 ### Managing Enrollments
 
@@ -135,7 +135,7 @@ Control who has access to each course:
 4. Set due dates for completion (optional)
 5. View progress for all enrolled agents
 
-![Managing Enrollments](../static/img/screenshots/courses/managing-enrollments.png)
+<!-- ![Managing Enrollments](/img/screenshots/courses/create-course-deadlines.png) -->
 
 ## Best Practices
 
@@ -157,4 +157,3 @@ If you encounter any issues while creating or managing courses, please contact o
 
 - Email: support@botlhale.ai
 - Support Portal: [support.botlhale.ai](https://support.botlhale.ai)
-- Phone: +1-555-VELA-HELP (555-835-2435)

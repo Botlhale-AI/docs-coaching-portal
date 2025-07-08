@@ -36,54 +36,25 @@ const config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.png',
     navbar: {
       title: 'Vela Coaching Portal',
       logo: {
         alt: 'Vela Logo',
         src: 'img/logo.png',
-        srcDark: 'img/logo-dark.png',
+        srcDark: 'img/logo.png',
       },
       items: [
+        // Main nav items removed - now in top navigation bar
         {
-          type: 'doc',
-          docId: 'Dashboard',
-          position: 'left',
-          label: 'Dashboard',
-        },
-        {
-          type: 'doc',
-          docId: 'Awards',
-          position: 'left',
-          label: 'Awards',
-        },
-        {
-          type: 'doc',
-          docId: 'Courses',
-          position: 'left',
-          label: 'Courses',
-        },
-        {
-          type: 'doc',
-          docId: 'Progress',
-          position: 'left',
-          label: 'Progress',
-        },
-        {
-          type: 'doc',
-          docId: 'Options',
-          position: 'left',
-          label: 'Evaluation Cycles',
+          type: 'html',
+          position: 'right',
+          value: '<a href="https://vela.botlhale.xyz/register" target="_blank" class="auth-button auth-button-signup">Create Account</a>',
         },
         {
           type: 'html',
           position: 'right',
-          value: '<a href="https://vela.botlhale.xyz" target="_blank" class="auth-button auth-button-signup">Create Account</a>',
-        },
-        {
-          type: 'html',
-          position: 'right',
-          value: '<a href="https://vela.botlhale.xyz" target="_blank" class="auth-button auth-button-signin">Log In</a>',
+          value: '<a href="https://vela.botlhale.xyz/login" target="_blank" class="auth-button auth-button-signin">Log In</a>',
         },
         {
           href: 'https://github.com/botlhale-ai',
