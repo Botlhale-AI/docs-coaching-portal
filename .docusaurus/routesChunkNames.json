@@ -49,68 +49,48 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-8a6": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
-    "__context": {
-      "plugin": "plugin---docs-4-cb-80d"
-    }
-  },
-  "/docs-8f8": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "version": "version---docs-935-398"
-  },
-  "/docs-092": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
-  },
-  "/docs/Agents-4df": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-agentsba-5-703"
-  },
-  "/docs/Calls-a01": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-callse-8-e-ab2"
-  },
-  "/docs/Chats-4bc": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-chats-999-9ba"
-  },
-  "/docs/courses-705": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-courses-550-b29"
-  },
-  "/docs/Dashboard-379": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-dashboard-992-3a2"
-  },
-  "/docs/Data Upload-61b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-data-upload-19-b-572"
-  },
-  "/docs/Notifications-b23": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-notificationsb-2-a-7a9"
-  },
-  "/docs/release-notes-7c0": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-release-notesa-55-b08"
-  },
-  "/docs/Reports-d6c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-reportsb-4-c-dbd"
-  },
-  "/docs/Settings-16f": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-settingsac-0-9a3"
-  },
-  "/docs/Smart Detector-57a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-smart-detector-42-b-9e6"
-  },
   "/-409": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
       "plugin": "plugin---markdown-page-855-e70"
     },
     "config": "config---5-e-9-4f3"
+  },
+  "/-491": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docs-4-cb-80d"
+    }
+  },
+  "/-382": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "version": "version---docs-935-398"
+  },
+  "/-652": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/Awards-69a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-awardsbd-1-119"
+  },
+  "/Courses-48c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coursesfd-6-450"
+  },
+  "/Dashboard-c03": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-dashboard-992-3a2"
+  },
+  "/Options-723": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-options-772-d21"
+  },
+  "/Progress-ff3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-progressba-5-271"
+  },
+  "/release-notes-022": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-release-notesa-55-b08"
   }
 }

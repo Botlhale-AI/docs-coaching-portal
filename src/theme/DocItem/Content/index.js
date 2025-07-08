@@ -13,6 +13,19 @@ import styles from './styles.module.css';
 export default function DocItemContent({children}) {
   const {metadata, frontMatter} = useDoc();
   
+  // Helper function to check if a value is a valid date
+  const isValidDate = (date) => {
+    return date instanceof Date && !isNaN(date);
+  };
+  
+  // Safely get ISO string from date if it's valid
+  const getDateTimeAttribute = (dateValue) => {
+    if (dateValue && typeof dateValue === 'object' && typeof dateValue.toISOString === 'function') {
+      return dateValue.toISOString();
+    }
+    return undefined;
+  };
+  
   return (
     <div className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
       {(metadata.title || frontMatter.hide_title !== true) && (
@@ -32,7 +45,7 @@ export default function DocItemContent({children}) {
             <div className={styles.docLastUpdated}>
               <i className="fa-solid fa-calendar-check" aria-hidden="true"></i>
               {' Last updated: '}
-              <time dateTime={metadata.lastUpdatedAt?.toISOString()}>
+              <time dateTime={getDateTimeAttribute(metadata.lastUpdatedAt)}>
                 {metadata.formattedLastUpdatedAt}
               </time>
             </div>

@@ -1,74 +1,50 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/",
           "mainDocId": "Dashboard",
           "docs": [
             {
-              "id": "Agents",
-              "path": "/docs/Agents",
+              "id": "Awards",
+              "path": "/Awards",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Calls",
-              "path": "/docs/Calls",
+              "id": "Courses",
+              "path": "/Courses",
               "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "Chats",
-              "path": "/docs/Chats",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "courses",
-              "path": "/docs/courses"
             },
             {
               "id": "Dashboard",
-              "path": "/docs/Dashboard",
+              "path": "/Dashboard",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Data Upload",
-              "path": "/docs/Data Upload",
+              "id": "Options",
+              "path": "/Options",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Notifications",
-              "path": "/docs/Notifications",
+              "id": "Progress",
+              "path": "/Progress",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "release-notes",
-              "path": "/docs/release-notes"
-            },
-            {
-              "id": "Reports",
-              "path": "/docs/Reports",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "Settings",
-              "path": "/docs/Settings",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "Smart Detector",
-              "path": "/docs/Smart Detector",
-              "sidebar": "tutorialSidebar"
+              "path": "/release-notes"
             }
           ],
           "draftIds": [],
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/Dashboard",
+                "path": "/Dashboard",
                 "label": "Dashboard"
               }
             }

@@ -8,14 +8,14 @@ const CardsList = [
     title: 'Courses',
     description: 'Browse through all available training modules and educational content',
     icon: 'fas fa-graduation-cap',
-    link: '/docs/courses',
+    link: '/docs/Courses',
     color: 'orange',
   },
   {
     title: 'Awards',
     description: 'View achievements, badges and recognition for completed work',
     icon: 'fas fa-trophy',
-    link: '/docs/awards',
+    link: '/docs/Awards',
     color: 'blue',
   },
   {
@@ -29,7 +29,7 @@ const CardsList = [
     title: 'Evaluation Cycles',
     description: 'Schedule and manage performance review periods and feedback sessions',
     icon: 'fas fa-sync',
-    link: '/docs/evaluation-cycles',
+    link: '/docs/Options',
     color: 'yellow',
   },
 ];

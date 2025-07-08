@@ -19,6 +19,7 @@ const config = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
@@ -27,6 +28,7 @@ const config = {
         theme: {
           customCss: [
             require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/navigation.css'),
           ],
         },
       },
@@ -47,12 +49,41 @@ const config = {
           type: 'doc',
           docId: 'Dashboard',
           position: 'left',
-          label: 'Documentation',
+          label: 'Dashboard',
         },
         {
-          to: 'docs/release-notes',
-          label: 'Release Notes',
+          type: 'doc',
+          docId: 'Awards',
           position: 'left',
+          label: 'Awards',
+        },
+        {
+          type: 'doc',
+          docId: 'Courses',
+          position: 'left',
+          label: 'Courses',
+        },
+        {
+          type: 'doc',
+          docId: 'Progress',
+          position: 'left',
+          label: 'Progress',
+        },
+        {
+          type: 'doc',
+          docId: 'Options',
+          position: 'left',
+          label: 'Evaluation Cycles',
+        },
+        {
+          type: 'html',
+          position: 'right',
+          value: '<a href="https://vela.botlhale.xyz" target="_blank" class="auth-button auth-button-signup">Create Account</a>',
+        },
+        {
+          type: 'html',
+          position: 'right',
+          value: '<a href="https://vela.botlhale.xyz" target="_blank" class="auth-button auth-button-signin">Log In</a>',
         },
         {
           href: 'https://github.com/botlhale-ai',

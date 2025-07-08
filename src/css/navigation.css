@@ -1,0 +1,228 @@
+/**
+ * Custom navigation styles for Vela Coaching Portal
+ */
+
+/* Top Navigation Bar with Sub-Menus */
+.navbar {
+  height: auto;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.navbar__items {
+  align-items: center;
+}
+
+/* Auth Buttons */
+.auth-button {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-left: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.auth-button-signin {
+  background-color: transparent;
+  color: var(--ifm-color-emphasis-700);
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.auth-button-signin:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-900);
+  border-color: var(--ifm-color-emphasis-500);
+}
+
+.auth-button-signup {
+  background-color: #fc5f1e;
+  color: white;
+  box-shadow: 0 2px 4px rgba(252, 95, 30, 0.2);
+}
+
+.auth-button-signup:hover {
+  background-color: #e54c1a;
+  box-shadow: 0 4px 6px rgba(252, 95, 30, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Enhanced Search Bar */
+.custom-search-container {
+  margin-right: 1rem;
+}
+
+.DocSearch-Button {
+  border-radius: 1.5rem !important;
+  padding: 0 0.75rem !important;
+  height: 38px !important;
+  background: var(--ifm-color-emphasis-100) !important;
+  border: 1px solid var(--ifm-color-emphasis-200) !important;
+  transition: all 0.2s ease !important;
+  width: 200px !important;
+}
+
+.DocSearch-Button:hover {
+  background: var(--ifm-color-emphasis-200) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+.DocSearch-Button .DocSearch-Search-Icon {
+  color: var(--ifm-color-emphasis-500) !important;
+}
+
+.DocSearch-Button .DocSearch-Button-Placeholder {
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+  color: var(--ifm-color-emphasis-600) !important;
+}
+
+/* Search Highlights */
+.search-highlight {
+  background-color: rgba(252, 95, 30, 0.15);
+  color: #fc5f1e;
+  padding: 0 2px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+/* Top navigation menu */
+.top-nav-bar {
+  display: flex;
+  background-color: var(--ifm-navbar-background-color);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0.5rem 1rem;
+  overflow-x: auto;
+}
+
+.top-nav-item {
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 0.25rem;
+  color: var(--ifm-navbar-link-color);
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.top-nav-item:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  text-decoration: none;
+}
+
+.top-nav-item.active {
+  color: #fc5f1e;
+  background-color: rgba(252, 95, 30, 0.1);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 996px) {
+  .navbar__items--right > .auth-button {
+    display: none;
+  }
+  
+  .custom-search-container {
+    display: none;
+  }
+  
+  .navbar__toggle {
+    margin-right: 1rem;
+  }
+  
+  .top-nav-bar {
+    display: none;
+  }
+  
+  .navbar-sidebar {
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .navbar-sidebar .auth-button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Add bottom margin to the main container to accommodate the sub-navbar */
+.main-wrapper {
+  margin-top: 4rem; /* Adjust as needed based on your sub-navbar height */
+}
+
+/* DocSearch Modal Customizations */
+.DocSearch-Modal {
+  border-radius: 8px !important;
+}
+
+.DocSearch-Hit-source {
+  color: #fc5f1e !important;
+  font-weight: 600 !important;
+}
+
+.DocSearch-Hit-title mark {
+  background-color: rgba(252, 95, 30, 0.15) !important;
+  color: #fc5f1e !important;
+}
+
+.DocSearch-Hit[aria-selected=true] .DocSearch-Hit-title mark {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+}
+
+.DocSearch-Footer {
+  box-shadow: none !important;
+  border-top: 1px solid var(--ifm-color-emphasis-200) !important;
+}
+  .navbar__toggle {
+    margin-right: 1rem;
+  }
+  
+  .sub-navbar {
+    display: none;
+  }
+  
+  .navbar-sidebar {
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .navbar-sidebar .auth-button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+
+/* Add bottom margin to the main container to accommodate the sub-navbar */
+.main-wrapper {
+  margin-top: 4rem; /* Adjust as needed based on your sub-navbar height */
+}
+
+/* DocSearch Modal Customizations */
+.DocSearch-Modal {
+  border-radius: 8px !important;
+}
+
+.DocSearch-Hit-source {
+  color: #fc5f1e !important;
+  font-weight: 600 !important;
+}
+
+.DocSearch-Hit-title mark {
+  background-color: rgba(252, 95, 30, 0.15) !important;
+  color: #fc5f1e !important;
+}
+
+.DocSearch-Hit[aria-selected=true] .DocSearch-Hit-title mark {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+}
+
+.DocSearch-Footer {
+  box-shadow: none !important;
+  border-top: 1px solid var(--ifm-color-emphasis-200) !important;
+}

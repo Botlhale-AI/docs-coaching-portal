@@ -43,91 +43,62 @@ export default [
     exact: true
   },
   {
-    path: '/docs',
-    component: ComponentCreator('/docs', '8a6'),
+    path: '/',
+    component: ComponentCreator('/', '409'),
+    exact: true
+  },
+  {
+    path: '/',
+    component: ComponentCreator('/', '491'),
     routes: [
       {
-        path: '/docs',
-        component: ComponentCreator('/docs', '8f8'),
+        path: '/',
+        component: ComponentCreator('/', '382'),
         routes: [
           {
-            path: '/docs',
-            component: ComponentCreator('/docs', '092'),
+            path: '/',
+            component: ComponentCreator('/', '652'),
             routes: [
               {
-                path: '/docs/Agents',
-                component: ComponentCreator('/docs/Agents', '4df'),
+                path: '/Awards',
+                component: ComponentCreator('/Awards', '69a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Calls',
-                component: ComponentCreator('/docs/Calls', 'a01'),
+                path: '/Courses',
+                component: ComponentCreator('/Courses', '48c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Chats',
-                component: ComponentCreator('/docs/Chats', '4bc'),
+                path: '/Dashboard',
+                component: ComponentCreator('/Dashboard', 'c03'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/courses',
-                component: ComponentCreator('/docs/courses', '705'),
+                path: '/Options',
+                component: ComponentCreator('/Options', '723'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/Progress',
+                component: ComponentCreator('/Progress', 'ff3'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/release-notes',
+                component: ComponentCreator('/release-notes', '022'),
                 exact: true
-              },
-              {
-                path: '/docs/Dashboard',
-                component: ComponentCreator('/docs/Dashboard', '379'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/Data Upload',
-                component: ComponentCreator('/docs/Data Upload', '61b'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/Notifications',
-                component: ComponentCreator('/docs/Notifications', 'b23'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/release-notes',
-                component: ComponentCreator('/docs/release-notes', '7c0'),
-                exact: true
-              },
-              {
-                path: '/docs/Reports',
-                component: ComponentCreator('/docs/Reports', 'd6c'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/Settings',
-                component: ComponentCreator('/docs/Settings', '16f'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/Smart Detector',
-                component: ComponentCreator('/docs/Smart Detector', '57a'),
-                exact: true,
-                sidebar: "tutorialSidebar"
               }
             ]
           }
         ]
       }
     ]
-  },
-  {
-    path: '/',
-    component: ComponentCreator('/', '409'),
-    exact: true
   },
   {
     path: '*',

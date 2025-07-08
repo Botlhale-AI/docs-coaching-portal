@@ -10,62 +10,36 @@ const sidebars = {
       collapsed: true,
       items: ['Dashboard'],
     },
+    
     {
       type: 'category',
-      label: 'Interactions - Calls',
+      label: 'Awards',
       collapsible: true,
       collapsed: true,
-      items: ['Calls'],
+      items: ['Awards'],
     },
     {
       type: 'category',
-      label: 'Interactions - Chats',
+      label: 'Courses',
       collapsible: true,
       collapsed: true,
-      items: ['Chats'],
+      items: ['Courses'],
     },
     {
       type: 'category',
-      label: 'Agents',
+      label: 'Progress',
       collapsible: true,
       collapsed: true,
-      items: ['Agents'],
+      items: ['Progress'],
     },
+    
     {
       type: 'category',
-      label: 'Notifications',
+      label: 'Evaluation Cycles',
       collapsible: true,
       collapsed: true,
-      items: ['Notifications'],
+      items: ['Options'],
     },
-    {
-      type: 'category',
-      label: 'Reports',
-      collapsible: true,
-      collapsed: true,
-      items: ['Reports'],
-    },
-    {
-      type: 'category',
-      label: 'Settings',
-      collapsible: true,
-      collapsed: true,
-      items: ['Settings'],
-    },
-    {
-      type: 'category',
-      label: 'Smart Detector',
-      collapsible: true,
-      collapsed: true,
-      items: ['Smart Detector'],
-    },
-    {
-      type: 'category',
-      label: 'Data Management',
-      collapsible: true,
-      collapsed: true,
-      items: ['Data Upload'],
-    }
   ],
 };
 

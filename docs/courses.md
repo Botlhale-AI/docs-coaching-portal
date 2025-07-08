@@ -1,5 +1,5 @@
 ---
-id: courses
+id: Courses
 title: Courses
 sidebar_label: Courses
 description: Create and manage training courses for agents

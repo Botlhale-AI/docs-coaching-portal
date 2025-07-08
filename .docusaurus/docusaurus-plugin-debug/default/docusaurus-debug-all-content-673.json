@@ -9,8 +9,8 @@
           "badge": false,
           "noIndex": false,
           "className": "docs-version-current",
-          "path": "/docs",
-          "tagsPath": "/docs/tags",
+          "path": "/",
+          "tagsPath": "/tags",
           "isLast": true,
           "routePriority": -1,
           "sidebarFilePath": "/Users/athi/Desktop/docs-coaching-portal/sidebars.js",
@@ -18,13 +18,13 @@
           "contentPathLocalized": "/Users/athi/Desktop/docs-coaching-portal/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
-              "id": "Agents",
-              "title": "Agents",
-              "description": "The Agents screen in the Vela platform provides a comprehensive view of your agents' performance. This screen is designed to help you monitor, analyze, and improve the performance of your call center agents. The information on this screen is available in both a list view and a board view, allowing you to choose the format that best suits your needs. You can toggle between both views using the View icon in the top right corner of the screen.",
-              "source": "@site/docs/Agents.md",
+              "id": "Awards",
+              "title": "Awards",
+              "description": "",
+              "source": "@site/docs/Awards.md",
               "sourceDirName": ".",
-              "slug": "/Agents",
-              "permalink": "/docs/Agents",
+              "slug": "/Awards",
+              "permalink": "/Awards",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -32,86 +32,25 @@
               "lastUpdatedBy": "Author",
               "lastUpdatedAt": 1539502055,
               "formattedLastUpdatedAt": "Oct 14, 2018",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "sidebar_position": 4
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Chats",
-                "permalink": "/docs/Chats"
-              },
-              "next": {
-                "title": "Notifications",
-                "permalink": "/docs/Notifications"
-              }
-            },
-            {
-              "id": "Calls",
-              "title": "Calls",
-              "description": "The Interactions section is the primary interface for detailed analysis of individual customer engagements. It includes both Calls and Chats, providing access to transcripts, metadata, and other insights. This section enables users to review and evaluate customer conversations, helping teams identify trends, assess quality, and improve overall customer experience.",
-              "source": "@site/docs/Calls.md",
-              "sourceDirName": ".",
-              "slug": "/Calls",
-              "permalink": "/docs/Calls",
-              "draft": false,
-              "unlisted": false,
-              "tags": [],
-              "version": "current",
-              "lastUpdatedBy": "Author",
-              "lastUpdatedAt": 1539502055,
-              "formattedLastUpdatedAt": "Oct 14, 2018",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "sidebar_position": 2
-              },
+              "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Dashboard",
-                "permalink": "/docs/Dashboard"
+                "permalink": "/Dashboard"
               },
               "next": {
-                "title": "Chats",
-                "permalink": "/docs/Chats"
+                "title": "Courses",
+                "permalink": "/Courses"
               }
             },
             {
-              "id": "Chats",
-              "title": "Chats",
-              "description": "The Chats screen displays a detailed table of all processed chat interactions, organized by key metadata to support easy navigation and in-depth exploration.",
-              "source": "@site/docs/Chats.md",
-              "sourceDirName": ".",
-              "slug": "/Chats",
-              "permalink": "/docs/Chats",
-              "draft": false,
-              "unlisted": false,
-              "tags": [],
-              "version": "current",
-              "lastUpdatedBy": "Author",
-              "lastUpdatedAt": 1539502055,
-              "formattedLastUpdatedAt": "Oct 14, 2018",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "sidebar_position": 3
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Calls",
-                "permalink": "/docs/Calls"
-              },
-              "next": {
-                "title": "Agents",
-                "permalink": "/docs/Agents"
-              }
-            },
-            {
-              "id": "courses",
+              "id": "Courses",
               "title": "Courses",
               "description": "Create and manage training courses for agents",
-              "source": "@site/docs/courses.md",
+              "source": "@site/docs/Courses.md",
               "sourceDirName": ".",
-              "slug": "/courses",
-              "permalink": "/docs/courses",
+              "slug": "/Courses",
+              "permalink": "/Courses",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -120,10 +59,19 @@
               "lastUpdatedAt": 1539502055,
               "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
-                "id": "courses",
+                "id": "Courses",
                 "title": "Courses",
                 "sidebar_label": "Courses",
                 "description": "Create and manage training courses for agents"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Awards",
+                "permalink": "/Awards"
+              },
+              "next": {
+                "title": "Progress",
+                "permalink": "/Progress"
               }
             },
             {
@@ -133,7 +81,7 @@
               "source": "@site/docs/Dashboard.md",
               "sourceDirName": ".",
               "slug": "/Dashboard",
-              "permalink": "/docs/Dashboard",
+              "permalink": "/Dashboard",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -147,18 +95,18 @@
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "Calls",
-                "permalink": "/docs/Calls"
+                "title": "Awards",
+                "permalink": "/Awards"
               }
             },
             {
-              "id": "Data Upload",
-              "title": "Data Upload",
-              "description": "Data Upload",
-              "source": "@site/docs/Data Upload.md",
+              "id": "Options",
+              "title": "Options",
+              "description": "",
+              "source": "@site/docs/Options.md",
               "sourceDirName": ".",
-              "slug": "/Data Upload",
-              "permalink": "/docs/Data Upload",
+              "slug": "/Options",
+              "permalink": "/Options",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -166,24 +114,21 @@
               "lastUpdatedBy": "Author",
               "lastUpdatedAt": 1539502055,
               "formattedLastUpdatedAt": "Oct 14, 2018",
-              "sidebarPosition": 8,
-              "frontMatter": {
-                "sidebar_position": 8
-              },
+              "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Smart Detector",
-                "permalink": "/docs/Smart Detector"
+                "title": "Progress",
+                "permalink": "/Progress"
               }
             },
             {
-              "id": "Notifications",
-              "title": "Notifications",
-              "description": "The Notifications Screen offers a centralised view of all platform alerts and updates, facilitating efficient monitoring",
-              "source": "@site/docs/Notifications.md",
+              "id": "Progress",
+              "title": "Progress",
+              "description": "",
+              "source": "@site/docs/Progress.md",
               "sourceDirName": ".",
-              "slug": "/Notifications",
-              "permalink": "/docs/Notifications",
+              "slug": "/Progress",
+              "permalink": "/Progress",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -191,18 +136,15 @@
               "lastUpdatedBy": "Author",
               "lastUpdatedAt": 1539502055,
               "formattedLastUpdatedAt": "Oct 14, 2018",
-              "sidebarPosition": 6,
-              "frontMatter": {
-                "sidebar_position": 6
-              },
+              "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Agents",
-                "permalink": "/docs/Agents"
+                "title": "Courses",
+                "permalink": "/Courses"
               },
               "next": {
-                "title": "Reports",
-                "permalink": "/docs/Reports"
+                "title": "Options",
+                "permalink": "/Options"
               }
             },
             {
@@ -212,7 +154,7 @@
               "source": "@site/docs/release-notes.md",
               "sourceDirName": ".",
               "slug": "/release-notes",
-              "permalink": "/docs/release-notes",
+              "permalink": "/release-notes",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -223,93 +165,6 @@
               "sidebarPosition": 1,
               "frontMatter": {
                 "sidebar_position": 1
-              }
-            },
-            {
-              "id": "Reports",
-              "title": "Reports",
-              "description": "The Vela Reports Screen serves as a central hub for generating and reviewing",
-              "source": "@site/docs/Reports.md",
-              "sourceDirName": ".",
-              "slug": "/Reports",
-              "permalink": "/docs/Reports",
-              "draft": false,
-              "unlisted": false,
-              "tags": [],
-              "version": "current",
-              "lastUpdatedBy": "Author",
-              "lastUpdatedAt": 1539502055,
-              "formattedLastUpdatedAt": "Oct 14, 2018",
-              "sidebarPosition": 5,
-              "frontMatter": {
-                "sidebar_position": 5
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Notifications",
-                "permalink": "/docs/Notifications"
-              },
-              "next": {
-                "title": "Settings",
-                "permalink": "/docs/Settings"
-              }
-            },
-            {
-              "id": "Settings",
-              "title": "Settings",
-              "description": "The Settings Screen serves as a centralised hub for managing your account settings, preferences,",
-              "source": "@site/docs/Settings.md",
-              "sourceDirName": ".",
-              "slug": "/Settings",
-              "permalink": "/docs/Settings",
-              "draft": false,
-              "unlisted": false,
-              "tags": [],
-              "version": "current",
-              "lastUpdatedBy": "Author",
-              "lastUpdatedAt": 1539502055,
-              "formattedLastUpdatedAt": "Oct 14, 2018",
-              "sidebarPosition": 6,
-              "frontMatter": {
-                "sidebar_position": 6
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Reports",
-                "permalink": "/docs/Reports"
-              },
-              "next": {
-                "title": "Smart Detector",
-                "permalink": "/docs/Smart Detector"
-              }
-            },
-            {
-              "id": "Smart Detector",
-              "title": "Smart Detector",
-              "description": "Introduction",
-              "source": "@site/docs/Smart Detector.md",
-              "sourceDirName": ".",
-              "slug": "/Smart Detector",
-              "permalink": "/docs/Smart Detector",
-              "draft": false,
-              "unlisted": false,
-              "tags": [],
-              "version": "current",
-              "lastUpdatedBy": "Author",
-              "lastUpdatedAt": 1539502055,
-              "formattedLastUpdatedAt": "Oct 14, 2018",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "sidebar_position": 3
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Settings",
-                "permalink": "/docs/Settings"
-              },
-              "next": {
-                "title": "Data Upload",
-                "permalink": "/docs/Data Upload"
               }
             }
           ],
@@ -330,97 +185,49 @@
               },
               {
                 "type": "category",
-                "label": "Interactions - Calls",
+                "label": "Awards",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
-                    "id": "Calls"
+                    "id": "Awards"
                   }
                 ]
               },
               {
                 "type": "category",
-                "label": "Interactions - Chats",
+                "label": "Courses",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
-                    "id": "Chats"
+                    "id": "Courses"
                   }
                 ]
               },
               {
                 "type": "category",
-                "label": "Agents",
+                "label": "Progress",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
-                    "id": "Agents"
+                    "id": "Progress"
                   }
                 ]
               },
               {
                 "type": "category",
-                "label": "Notifications",
+                "label": "Evaluation Cycles",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
-                    "id": "Notifications"
-                  }
-                ]
-              },
-              {
-                "type": "category",
-                "label": "Reports",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "Reports"
-                  }
-                ]
-              },
-              {
-                "type": "category",
-                "label": "Settings",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "Settings"
-                  }
-                ]
-              },
-              {
-                "type": "category",
-                "label": "Smart Detector",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "Smart Detector"
-                  }
-                ]
-              },
-              {
-                "type": "category",
-                "label": "Data Management",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "Data Upload"
+                    "id": "Options"
                   }
                 ]
               }

@@ -1,0 +1,22 @@
+{
+  "id": "Options",
+  "title": "Options",
+  "description": "",
+  "source": "@site/docs/Options.md",
+  "sourceDirName": ".",
+  "slug": "/Options",
+  "permalink": "/Options",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Progress",
+    "permalink": "/Progress"
+  }
+}
