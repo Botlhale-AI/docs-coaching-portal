@@ -20,13 +20,15 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "C:\\Users\\Dakal\\Desktop\\docs-vela\\sidebars.js"
+          "sidebarPath": "/Users/athi/Desktop/docs-coaching-portal/sidebars.js",
+          "showLastUpdateTime": true,
+          "showLastUpdateAuthor": true
         },
-        "blog": {
-          "showReadingTime": true
-        },
+        "blog": false,
         "theme": {
-          "customCss": "C:\\Users\\Dakal\\Desktop\\docs-vela\\src\\css\\custom.module.css"
+          "customCss": [
+            "/Users/athi/Desktop/docs-coaching-portal/src/css/custom.css"
+          ]
         }
       }
     ]
@@ -34,28 +36,89 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
-      "title": "",
+      "title": "Vela Coaching Portal",
       "logo": {
-        "alt": "Botlhale AI Logo",
-        "src": "/img/VELA.png"
+        "alt": "Vela Logo",
+        "src": "img/logo.png",
+        "srcDark": "img/logo-dark.png"
       },
       "items": [
         {
-          "to": "/",
-          "label": "Home",
-          "position": "right"
+          "type": "doc",
+          "docId": "Dashboard",
+          "position": "left",
+          "label": "Documentation"
         },
         {
-          "to": "/docs/release-notes",
+          "to": "docs/release-notes",
           "label": "Release Notes",
-          "position": "right"
+          "position": "left"
         },
         {
-          "type": "search",
-          "position": "right"
+          "href": "https://github.com/botlhale-ai",
+          "position": "right",
+          "className": "header-github-link",
+          "aria-label": "GitHub repository"
         }
       ],
       "hideOnScroll": false
+    },
+    "footer": {
+      "style": "light",
+      "links": [
+        {
+          "title": "Documentation",
+          "items": [
+            {
+              "label": "Dashboard",
+              "to": "/docs/Dashboard"
+            },
+            {
+              "label": "Calls",
+              "to": "/docs/Calls"
+            },
+            {
+              "label": "Agents",
+              "to": "/docs/Agents"
+            }
+          ]
+        },
+        {
+          "title": "Features",
+          "items": [
+            {
+              "label": "Smart Detector",
+              "to": "/docs/Smart Detector"
+            },
+            {
+              "label": "Reports",
+              "to": "/docs/Reports"
+            },
+            {
+              "label": "Settings",
+              "to": "/docs/Settings"
+            }
+          ]
+        },
+        {
+          "title": "Resources",
+          "items": [
+            {
+              "label": "Release Notes",
+              "to": "/docs/release-notes"
+            },
+            {
+              "label": "GitHub",
+              "href": "https://github.com/botlhale-ai"
+            },
+            {
+              "label": "Contact Support",
+              "href": "mailto:support@botlhale.ai"
+            }
+          ]
+        }
+      ],
+      "copyright": "Copyright © 2025 Botlhale AI. All rights reserved."
     },
     "colorMode": {
       "defaultMode": "light",
@@ -299,6 +362,10 @@ export default {
     {
       "src": "/js/themeToggle.js",
       "async": true
+    },
+    {
+      "src": "https://kit.fontawesome.com/3d32eadabe.js",
+      "crossorigin": "anonymous"
     }
   ],
   "baseUrlIssueBanner": true,

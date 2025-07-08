@@ -1,0 +1,37 @@
+/* 
+ * This file adds Tailwind directives to the project
+ * to enable Tailwind CSS classes in Markdown files
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+ * Variables that correspond to your theme colors
+ * These will be accessed by the Tailwind classes in the Markdown
+ */
+:root {
+  --vela-orange: #fc5f1e;
+  --vela-background: var(--ifm-background-color);
+  --vela-background-drawer: var(--ifm-color-emphasis-100);
+  --vela-background-card: var(--ifm-card-background-color, #ffffff);
+  --vela-text-color: var(--ifm-font-color-base);
+  --vela-drawer-outline: var(--ifm-color-emphasis-300);
+  --vela-button: var(--vela-orange);
+  --vela-button-alt: var(--ifm-color-emphasis-300);
+  --vela-table-border: var(--ifm-color-emphasis-300);
+  
+  /* Additional colors from your theme */
+  --vela-blue: #01a9e1;
+  --vela-green: #61c454;
+  --vela-yellow: #f5bd4f;
+  --vela-red: #b90909;
+}
+
+html[data-theme='dark'] {
+  --vela-background-drawer: var(--ifm-color-emphasis-200);
+  --vela-background-card: var(--ifm-color-emphasis-100);
+  --vela-drawer-outline: var(--ifm-color-emphasis-400);
+  --vela-button-alt: var(--ifm-color-emphasis-500);
+}

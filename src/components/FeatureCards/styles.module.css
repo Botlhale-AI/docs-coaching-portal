@@ -1,0 +1,141 @@
+.cardsSection {
+  padding: 3rem 0;
+  background: var(--bg-color);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #031019;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  min-height: 200px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+}
+
+.card-orange::before {
+  background-color: #fc5f1e;
+}
+
+.card-blue::before {
+  background-color: #01a9e1;
+}
+
+.card-green::before {
+  background-color: #61c454;
+}
+
+.card-yellow::before {
+  background-color: #f5bd4f;
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.card-orange .cardIcon {
+  background-color: rgba(252, 95, 30, 0.1);
+  color: #fc5f1e;
+}
+
+.card-blue .cardIcon {
+  background-color: rgba(1, 169, 225, 0.1);
+  color: #01a9e1;
+}
+
+.card-green .cardIcon {
+  background-color: rgba(97, 196, 84, 0.1);
+  color: #61c454;
+}
+
+.card-yellow .cardIcon {
+  background-color: rgba(245, 189, 79, 0.1);
+  color: #f5bd4f;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #031019;
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  color: #999C9F;
+  line-height: 1.5;
+}
+
+.cardArrow {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  color: #031019;
+  opacity: 0.5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .cardArrow {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .card {
+    min-height: auto;
+  }
+}

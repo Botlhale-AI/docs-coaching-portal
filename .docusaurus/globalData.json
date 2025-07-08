@@ -26,6 +26,10 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "courses",
+              "path": "/docs/courses"
+            },
+            {
               "id": "Dashboard",
               "path": "/docs/Dashboard",
               "sidebar": "tutorialSidebar"

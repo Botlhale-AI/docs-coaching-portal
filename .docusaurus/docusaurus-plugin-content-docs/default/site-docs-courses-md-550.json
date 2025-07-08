@@ -1,0 +1,22 @@
+{
+  "id": "courses",
+  "title": "Courses",
+  "description": "Create and manage training courses for agents",
+  "source": "@site/docs/courses.md",
+  "sourceDirName": ".",
+  "slug": "/courses",
+  "permalink": "/docs/courses",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "id": "courses",
+    "title": "Courses",
+    "sidebar_label": "Courses",
+    "description": "Create and manage training courses for agents"
+  }
+}

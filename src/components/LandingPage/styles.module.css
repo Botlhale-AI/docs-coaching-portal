@@ -1,0 +1,886 @@
+.landingContainer {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.heroSection {
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.15;
+}
+
+.circuitBackground {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  gap: 2rem;
+}
+
+.heroText {
+  flex: 1;
+  max-width: 600px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroTitleLine {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  margin-bottom: 0.5rem;
+}
+
+.heroTitleMain {
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+}
+
+.heroTitleUnderline {
+  display: block;
+  width: 80px;
+  height: 6px;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  margin-top: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.heroCta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.heroButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  /* color: white; */
+}
+
+.heroButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.heroButtonArrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.heroButton:hover .heroButtonArrow {
+  transform: translateX(4px);
+}
+
+.heroButtonSecondary {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.heroButtonSecondary:hover {
+  background-color: var(--primary-color);
+  /* color: white; */
+}
+
+.heroVisual {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dashboard Preview Styling */
+.dashboardPreview {
+  width: 100%;
+  max-width: 500px;
+  background: var(--card-bg-color);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: perspective(1000px) rotateY(-5deg) rotateX(5deg) translateY(0);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(-5deg) rotateX(5deg) translateY(-15px);
+  }
+}
+
+.dashboardHeader {
+  background: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.dashboardControls {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+
+.dashboardControl {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.dashboardTitle {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.dashboardBody {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.dashboardMetric {
+  background: var(--bg-color);
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.metricLabel {
+  font-size: 0.875rem;
+  color: var(--secondary-text-color);
+  margin-bottom: 0.5rem;
+}
+
+.metricValue {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: flex;
+  align-items: baseline;
+}
+
+.metricUnit {
+  font-size: 1rem;
+  margin-left: 2px;
+  font-weight: 500;
+}
+
+.metricChart {
+  height: 4px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  margin-top: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.metricChart::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 92%;
+  background: var(--primary-color);
+  border-radius: 2px;
+  animation: pulse 2s infinite;
+}
+
+.metricChart:nth-child(3)::before {
+  width: 87%;
+}
+
+.metricItems {
+  display: flex;
+  gap: 4px;
+  margin-top: 0.75rem;
+}
+
+.metricItem {
+  height: 8px;
+  flex: 1;
+  background: var(--primary-color);
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Stats Section */
+.statsSection {
+  background: var(--card-bg-color);
+  padding: 3rem 0;
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statValue {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.statValue::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.statLabel {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+/* Features Section */
+.featuresSection {
+  padding: 6rem 0;
+  background: var(--bg-color);
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.sectionSubtitle {
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+}
+
+/* Workflow Section */
+.workflowSection {
+  padding: 6rem 0;
+  background: var(--card-bg-color);
+}
+
+.workflowContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.workflowStep {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.workflowNode {
+  position: relative;
+  margin-right: 2rem;
+}
+
+.workflowNodeInner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  position: relative;
+  z-index: 2;
+}
+
+.workflowNodeRing {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  opacity: 0.3;
+  animation: pulse 2s infinite;
+}
+
+.workflowContent {
+  flex: 1;
+  background: var(--bg-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid var(--primary-color);
+}
+
+.workflowTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.workflowDescription {
+  color: var(--secondary-text-color);
+  margin: 0;
+}
+
+.workflowConnector {
+  height: 50px;
+  position: relative;
+  margin-left: 25px;
+  margin-bottom: 1rem;
+}
+
+.workflowLine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--primary-color);
+  opacity: 0.4;
+}
+
+.workflowPulse {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  left: -4px;
+  top: 0;
+  animation: flowDown 3s infinite;
+}
+
+@keyframes flowDown {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 6rem 0;
+  background: var(--primary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  filter: blur(3px);
+}
+
+.ctaContent {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ctaTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.ctaDescription {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  /* background-color: white; */
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.ctaButtonArrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.ctaButton:hover .ctaButtonArrow {
+  transform: translateX(5px);
+}
+
+/* Enhanced dashboard chart styles */
+.chartContainer {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  padding: 10px 20px 30px 40px;
+  overflow: hidden;
+}
+
+.chartTitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.chartGrid {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  right: 20px;
+  bottom: 30px;
+  z-index: 1;
+}
+
+/* Square gridlines */
+.horizontalGridLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(127, 127, 127, 0.1);
+}
+
+.horizontalGridLine:nth-child(1) { top: 0%; }
+.horizontalGridLine:nth-child(2) { top: 20%; }
+.horizontalGridLine:nth-child(3) { top: 40%; }
+.horizontalGridLine:nth-child(4) { top: 60%; }
+.horizontalGridLine:nth-child(5) { top: 80%; }
+.horizontalGridLine:nth-child(6) { top: 100%; }
+
+.verticalGridLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(127, 127, 127, 0.1);
+}
+
+.verticalGridLine:nth-child(7) { left: 0%; }
+.verticalGridLine:nth-child(8) { left: 16.6%; }
+.verticalGridLine:nth-child(9) { left: 33.3%; }
+.verticalGridLine:nth-child(10) { left: 50%; }
+.verticalGridLine:nth-child(11) { left: 66.6%; }
+.verticalGridLine:nth-child(12) { left: 83.3%; }
+.verticalGridLine:nth-child(13) { left: 100%; }
+
+.yAxis {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  bottom: 30px;
+  width: 40px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.yAxisLabel {
+  font-size: 10px;
+  color: var(--ifm-color-emphasis-600);
+  text-align: right;
+  padding-right: 5px;
+  transform: translateY(50%);
+}
+
+.xAxis {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  right: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.xAxisLabel {
+  font-size: 10px;
+  color: var(--ifm-color-emphasis-600);
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+/* Performance lines for the agents */
+.performanceLine {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  right: 20px;
+  bottom: 30px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.performanceLine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(to right, 
+    transparent, transparent 0.1%, 
+    currentColor 0.1%, currentColor 99.9%, 
+    transparent 99.9%, transparent
+  );
+  mask-image: linear-gradient(to right, 
+    rgba(0, 0, 0, 0) 0%, 
+    rgba(0, 0, 0, 1) 0%, 
+    rgba(0, 0, 0, 1) 100%
+  );
+  animation: chartLineGrow 2s ease-out forwards;
+  opacity: 0.5;
+  clip-path: polygon(
+    0% 55%, 
+    20% 35%, 
+    40% 45%, 
+    60% 30%, 
+    80% 20%, 
+    100% 15%, 
+    100% 100%, 
+    0% 100%
+  );
+}
+
+.agentA::before {
+  clip-path: polygon(
+    0% 55%, 
+    20% 35%, 
+    40% 45%, 
+    60% 30%, 
+    80% 20%, 
+    100% 15%, 
+    100% 100%, 
+    0% 100%
+  );
+}
+
+.agentB::before {
+  clip-path: polygon(
+    0% 70%, 
+    20% 60%, 
+    40% 40%, 
+    60% 45%, 
+    80% 35%, 
+    100% 30%, 
+    100% 100%, 
+    0% 100%
+  );
+}
+
+.agentC::before {
+  clip-path: polygon(
+    0% 45%, 
+    20% 50%, 
+    40% 55%, 
+    60% 40%, 
+    80% 25%, 
+    100% 22%, 
+    100% 100%, 
+    0% 100%
+  );
+}
+
+.dataPoint {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 2;
+  animation: pulsePoint 3s infinite;
+}
+
+.agentA .dataPoint {
+  background-color: var(--ifm-color-primary);
+  animation-delay: calc(var(--data-index) * 0.2s);
+}
+
+.agentB .dataPoint {
+  background-color: #10b981;
+  animation-delay: calc(var(--data-index) * 0.2s + 0.1s);
+}
+
+.agentC .dataPoint {
+  background-color: #f59e0b;
+  animation-delay: calc(var(--data-index) * 0.2s + 0.2s);
+}
+
+.agentA { color: var(--ifm-color-primary); }
+.agentB { color: #10b981; }
+.agentC { color: #f59e0b; }
+
+/* Chart legend */
+.chartLegend {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legendColor {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.colorA { background-color: var(--ifm-color-primary); }
+.colorB { background-color: #10b981; }
+.colorC { background-color: #f59e0b; }
+
+.legendText {
+  font-size: 10px;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Animations for the chart */
+@keyframes chartLineGrow {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@keyframes pulsePoint {
+  0%, 100% {
+    transform: translate(-50%, 50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(var(--point-color-rgb), 0.7);
+  }
+  50% {
+    transform: translate(-50%, 50%) scale(1.2);
+    box-shadow: 0 0 0 3px rgba(var(--point-color-rgb), 0);
+  }
+}
+
+.dashboardPreview {
+  background: var(--ifm-background-surface-color);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  animation: floatDashboard 6s ease-in-out infinite;
+}
+
+@keyframes floatDashboard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 996px) {
+  .heroContent {
+    flex-direction: column;
+  }
+  
+  .heroText {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .heroTitle {
+    font-size: 2.75rem;
+  }
+
+  .heroTitleUnderline {
+    margin: 1rem auto 0;
+  }
+  
+  .heroCta {
+    justify-content: center;
+  }
+  
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+  }
+  
+  .sectionTitle, .ctaTitle {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 4rem 0;
+  }
+  
+  .heroTitle {
+    font-size: 2.25rem;
+  }
+  
+  .heroSubtitle, .sectionSubtitle, .ctaDescription {
+    font-size: 1.1rem;
+  }
+  
+  .workflowStep {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .workflowNode {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .workflowContent {
+    width: 100%;
+  }
+  
+  .workflowConnector {
+    display: none;
+  }
+  
+  .ctaTitle {
+    font-size: 2rem;
+  }
+  
+  .ctaButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboardBody {
+    grid-template-columns: 1fr;
+  }
+  
+  .heroCta {
+    flex-direction: column;
+  }
+}

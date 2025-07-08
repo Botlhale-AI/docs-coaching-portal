@@ -1,0 +1,110 @@
+.circuitContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.circuitSvg {
+  width: 100%;
+  height: 100%;
+  filter: url(#glow);
+}
+
+/* Node styling */
+.node {
+  opacity: 0;
+  transform-origin: center;
+  transform: scale(0);
+}
+
+/* Path styling */
+.path {
+  opacity: 0;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+/* Pulse styling */
+.pulse {
+  opacity: 0;
+}
+
+/* Text label styling */
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0;
+  font-family: var(--ifm-font-family-base);
+  text-transform: uppercase;
+}
+
+/* Animations */
+@keyframes nodeAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pathDraw {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 1000;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pulseMove {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .label {
+    font-size: 8px;
+  }
+}
+
+/* Animation classes that will be used in React useEffect */
+:global(.nodeAppear) {
+  animation: nodeAppear 0.5s ease-out forwards;
+}
+
+:global(.pathDraw) {
+  animation: pathDraw 1.5s ease-out forwards;
+}
+
+:global(.pulseMove) {
+  animation: pulseMove 3s linear infinite;
+}
+
+/* Hover effects */
+.node:hover {
+  filter: brightness(1.3);
+  cursor: pointer;
+}

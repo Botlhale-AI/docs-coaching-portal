@@ -1,0 +1,505 @@
+/**
+ * Vela Coaching Portal - Landing Page Styles
+ */
+
+/* Hero section */
+.heroBanner {
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--vela-hero-gradient-start), var(--vela-hero-gradient-end));
+  color: white;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../../static/img/pattern.svg');
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.heroContent {
+  max-width: 600px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.heroTitleHighlight {
+  position: relative;
+  display: inline;
+}
+
+.heroTitleHighlight:after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+  border-radius: 6px;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.heroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.heroButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.heroButton i {
+  transition: transform 0.2s ease;
+}
+
+.heroButton:hover i {
+  transform: translateX(4px);
+}
+
+.heroBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s ease;
+}
+
+.heroBadge:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.heroVisual {
+  position: relative;
+}
+
+.heroImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroImageInner {
+  position: relative;
+  animation: float 6s ease-in-out infinite;
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Stats section */
+.statsSection {
+  padding: 3rem 0;
+  background: var(--ifm-background-surface-color);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 -10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  text-align: center;
+}
+
+.counterStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counterValue {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.counterLabel {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Features section */
+.features {
+  padding: var(--vela-section-spacing) 0;
+  background: var(--ifm-background-color);
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.sectionSubtitle {
+  font-size: 1.25rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.feature {
+  margin-bottom: 2rem;
+}
+
+.featureCard {
+  height: 100%;
+  padding: 2rem;
+  background: var(--ifm-background-surface-color);
+  border-radius: var(--vela-card-border-radius);
+  box-shadow: var(--vela-card-box-shadow);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.featureCard:hover {
+  transform: var(--vela-card-hover-transform);
+  box-shadow: var(--vela-card-hover-box-shadow);
+}
+
+.featureIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darker);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+html[data-theme='dark'] .featureIcon {
+  background-color: var(--ifm-color-primary-darkest);
+  color: var(--ifm-color-primary-lightest);
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.featureDescription {
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  flex: 1;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.featureItemIcon {
+  color: var(--ifm-color-primary);
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.featureFooter {
+  margin-top: auto;
+}
+
+.featureButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.featureButton i {
+  transition: transform 0.2s ease;
+}
+
+.featureButton:hover i {
+  transform: translateX(4px);
+}
+
+/* Workflow section */
+.workflowSection {
+  padding: var(--vela-section-spacing) 0;
+  background: var(--ifm-background-surface-color);
+}
+
+.workflowContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.workflowStep {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.workflowStepVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.workflowStepIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  color: white;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-right: 1.5rem;
+}
+
+.workflowStepContent {
+  flex: 1;
+}
+
+.workflowStepTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.workflowStepDescription {
+  color: var(--ifm-color-emphasis-700);
+  margin: 0;
+}
+
+.workflowStepConnector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  color: var(--ifm-color-emphasis-500);
+}
+
+/* CTA section */
+.ctaSection {
+  padding: var(--vela-section-spacing) 0;
+  background: linear-gradient(135deg, var(--vela-hero-gradient-start), var(--vela-hero-gradient-end));
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaSection:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../../static/img/pattern.svg');
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.ctaContainer {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.ctaSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+.ctaButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ctaButton i {
+  transition: transform 0.2s ease;
+}
+
+.ctaButton:hover i {
+  transform: translateX(4px);
+}
+
+/* Responsive styles */
+@media (max-width: 996px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .heroContent {
+    max-width: 100%;
+  }
+  
+  .heroButtons, .heroBadges {
+    justify-content: center;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .sectionSubtitle, .heroSubtitle, .ctaSubtitle {
+    font-size: 1.125rem;
+  }
+  
+  .ctaTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroBanner {
+    padding: 4rem 0;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .workflowStep {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .workflowStepIcon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .workflowStepConnector {
+    display: none;
+  }
+  
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .counterValue {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .ctaTitle {
+    font-size: 1.75rem;
+  }
+}
