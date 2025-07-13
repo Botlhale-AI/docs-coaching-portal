@@ -9,8 +9,8 @@
           "badge": false,
           "noIndex": false,
           "className": "docs-version-current",
-          "path": "/",
-          "tagsPath": "/tags",
+          "path": "/docs",
+          "tagsPath": "/docs/tags",
           "isLast": true,
           "routePriority": -1,
           "sidebarFilePath": "/Users/athi/Desktop/docs-coaching-portal/sidebars.js",
@@ -24,7 +24,7 @@
               "source": "@site/docs/Awards.md",
               "sourceDirName": ".",
               "slug": "/Awards",
-              "permalink": "/Awards",
+              "permalink": "/docs/Awards",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -36,11 +36,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Dashboard",
-                "permalink": "/Dashboard"
+                "permalink": "/docs/Dashboard"
               },
               "next": {
                 "title": "Courses Management",
-                "permalink": "/Courses"
+                "permalink": "/docs/Courses"
               }
             },
             {
@@ -50,7 +50,7 @@
               "source": "@site/docs/Courses.md",
               "sourceDirName": ".",
               "slug": "/Courses",
-              "permalink": "/Courses",
+              "permalink": "/docs/Courses",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -62,11 +62,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Awards",
-                "permalink": "/Awards"
+                "permalink": "/docs/Awards"
               },
               "next": {
                 "title": "Progress",
-                "permalink": "/Progress"
+                "permalink": "/docs/Progress"
               }
             },
             {
@@ -76,7 +76,7 @@
               "source": "@site/docs/Dashboard.md",
               "sourceDirName": ".",
               "slug": "/Dashboard",
-              "permalink": "/Dashboard",
+              "permalink": "/docs/Dashboard",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -91,7 +91,7 @@
               "sidebar": "tutorialSidebar",
               "next": {
                 "title": "Awards",
-                "permalink": "/Awards"
+                "permalink": "/docs/Awards"
               }
             },
             {
@@ -101,7 +101,7 @@
               "source": "@site/docs/Options.md",
               "sourceDirName": ".",
               "slug": "/Options",
-              "permalink": "/Options",
+              "permalink": "/docs/Options",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -113,7 +113,7 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Progress",
-                "permalink": "/Progress"
+                "permalink": "/docs/Progress"
               }
             },
             {
@@ -123,7 +123,7 @@
               "source": "@site/docs/Progress.md",
               "sourceDirName": ".",
               "slug": "/Progress",
-              "permalink": "/Progress",
+              "permalink": "/docs/Progress",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -135,11 +135,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Courses Management",
-                "permalink": "/Courses"
+                "permalink": "/docs/Courses"
               },
               "next": {
                 "title": "Options",
-                "permalink": "/Options"
+                "permalink": "/docs/Options"
               }
             },
             {
@@ -149,7 +149,7 @@
               "source": "@site/docs/release-notes.md",
               "sourceDirName": ".",
               "slug": "/release-notes",
-              "permalink": "/release-notes",
+              "permalink": "/docs/release-notes",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -219,6 +219,7 @@
   },
   "docusaurus-plugin-debug": {},
   "docusaurus-theme-classic": {},
+  "docusaurus-theme-search-algolia": {},
   "docusaurus-bootstrap-plugin": {},
   "docusaurus-mdx-fallback-plugin": {}
 }

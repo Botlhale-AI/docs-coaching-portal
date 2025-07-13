@@ -49,48 +49,54 @@
     },
     "content": "content---markdown-page-393-028"
   },
+  "/search-075": {
+    "__comp": "__comp---theme-search-page-1-a-4-d6f",
+    "__context": {
+      "plugin": "plugin---searchc-44-236"
+    }
+  },
+  "/docs-64c": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---4-cb-d6b"
+    }
+  },
+  "/docs-a35": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "version": "version---935-fcf"
+  },
+  "/docs-837": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/Awards-6c8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---awardsbd-1-957"
+  },
+  "/docs/Courses-c40": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---coursesfd-6-6fd"
+  },
+  "/docs/Dashboard-379": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dashboard-992-15d"
+  },
+  "/docs/Options-545": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---options-772-b05"
+  },
+  "/docs/Progress-c67": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---progressba-5-f51"
+  },
+  "/docs/release-notes-7c0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---release-notesa-55-160"
+  },
   "/-409": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
       "plugin": "plugin---markdown-page-855-e70"
     },
     "config": "config---5-e-9-4f3"
-  },
-  "/-491": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
-    "__context": {
-      "plugin": "plugin---4-cb-d6b"
-    }
-  },
-  "/-382": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "version": "version---935-fcf"
-  },
-  "/-652": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
-  },
-  "/Awards-69a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---awardsbd-1-957"
-  },
-  "/Courses-48c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---coursesfd-6-6fd"
-  },
-  "/Dashboard-c03": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---dashboard-992-15d"
-  },
-  "/Options-723": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---options-772-b05"
-  },
-  "/Progress-ff3": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---progressba-5-f51"
-  },
-  "/release-notes-022": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---release-notesa-55-160"
   }
 }

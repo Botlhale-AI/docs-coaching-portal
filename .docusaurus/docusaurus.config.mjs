@@ -20,7 +20,8 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "routeBasePath": "/",
+          "routeBasePath": "docs",
+          "path": "docs",
           "sidebarPath": "/Users/athi/Desktop/docs-coaching-portal/sidebars.js",
           "showLastUpdateTime": true,
           "showLastUpdateAuthor": true
@@ -346,6 +347,14 @@ export default {
         }
       }
     ],
+    "algolia": {
+      "appId": "SDFKBMBHOD",
+      "apiKey": "cf13a1927236f97767c0dfe5913f3a15",
+      "indexName": "Developer at Botlhale AI",
+      "contextualSearch": true,
+      "searchParameters": {},
+      "searchPagePath": "search"
+    },
     "docs": {
       "versionPersistence": "localStorage",
       "sidebar": {

@@ -43,55 +43,55 @@ export default [
     exact: true
   },
   {
-    path: '/',
-    component: ComponentCreator('/', '409'),
+    path: '/search',
+    component: ComponentCreator('/search', '075'),
     exact: true
   },
   {
-    path: '/',
-    component: ComponentCreator('/', '491'),
+    path: '/docs',
+    component: ComponentCreator('/docs', '64c'),
     routes: [
       {
-        path: '/',
-        component: ComponentCreator('/', '382'),
+        path: '/docs',
+        component: ComponentCreator('/docs', 'a35'),
         routes: [
           {
-            path: '/',
-            component: ComponentCreator('/', '652'),
+            path: '/docs',
+            component: ComponentCreator('/docs', '837'),
             routes: [
               {
-                path: '/Awards',
-                component: ComponentCreator('/Awards', '69a'),
+                path: '/docs/Awards',
+                component: ComponentCreator('/docs/Awards', '6c8'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/Courses',
-                component: ComponentCreator('/Courses', '48c'),
+                path: '/docs/Courses',
+                component: ComponentCreator('/docs/Courses', 'c40'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/Dashboard',
-                component: ComponentCreator('/Dashboard', 'c03'),
+                path: '/docs/Dashboard',
+                component: ComponentCreator('/docs/Dashboard', '379'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/Options',
-                component: ComponentCreator('/Options', '723'),
+                path: '/docs/Options',
+                component: ComponentCreator('/docs/Options', '545'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/Progress',
-                component: ComponentCreator('/Progress', 'ff3'),
+                path: '/docs/Progress',
+                component: ComponentCreator('/docs/Progress', 'c67'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/release-notes',
-                component: ComponentCreator('/release-notes', '022'),
+                path: '/docs/release-notes',
+                component: ComponentCreator('/docs/release-notes', '7c0'),
                 exact: true
               }
             ]
@@ -99,6 +99,11 @@ export default [
         ]
       }
     ]
+  },
+  {
+    path: '/',
+    component: ComponentCreator('/', '409'),
+    exact: true
   },
   {
     path: '*',

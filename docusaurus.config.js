@@ -19,7 +19,9 @@ const config = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          routeBasePath: '/',
+          // Change from '/' to '/docs' to fix the routing
+          routeBasePath: 'docs',
+          path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
@@ -150,6 +152,16 @@ const config = {
         },
       },
     ],
+
+    // Properly configured Algolia DocSearch
+    algolia: {
+      appId: 'SDFKBMBHOD',
+      apiKey: 'cf13a1927236f97767c0dfe5913f3a15',
+      indexName: 'Developer at Botlhale AI',
+      contextualSearch: true,
+      searchParameters: {},
+      searchPagePath: 'search', // Explicitly set search page path
+    },
   },
 
   scripts: [
