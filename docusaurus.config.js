@@ -2,7 +2,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Vela - Docs',
+  title: 'Coaching Portal',
   tagline: "Documentation",
   url: 'https://docs-vela.botlhale.xyz', 
   baseUrl: '/',
@@ -25,6 +25,24 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
+          // Add sidebar configuration for role-based access
+          async sidebarItemsGenerator({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) {
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            
+            // Filter sidebar items based on the current page/role
+            const currentPath = args.docs?.find(doc => doc.id === args.item?.id)?.permalink;
+            
+            if (currentPath?.includes('Agent')) {
+              // Return agent-specific sidebar
+              return args.item?.sidebar === 'agentSidebar' ? sidebarItems : [];
+            } else {
+              // Return team lead sidebar for default pages
+              return args.item?.sidebar === 'teamLeadSidebar' ? sidebarItems : sidebarItems;
+            }
+          },
         },
         blog: false,
         theme: {
@@ -47,7 +65,7 @@ const config = {
         srcDark: 'img/logo.png',
       },
       items: [
-        // Main nav items removed - now in top navigation bar
+        // Only keep essential items - role-based navigation handled by TopNavigationBar
         {
           type: 'html',
           position: 'right',
@@ -71,36 +89,52 @@ const config = {
       style: 'light',
       links: [
         {
-          title: 'Documentation',
+          title: 'Team Leads & QAs',
           items: [
             {
               label: 'Dashboard',
               to: '/docs/Dashboard',
             },
             {
-              label: 'Calls',
-              to: '/docs/Calls',
+              label: 'Courses',
+              to: '/docs/Courses',
             },
             {
-              label: 'Agents',
-              to: '/docs/Agents',
+              label: 'Awards',
+              to: '/docs/Awards',
+            },
+            {
+              label: 'Progress',
+              to: '/docs/Progress',
+            },
+            {
+              label: 'Preferences',
+              to: '/docs/Preferences',
             },
           ],
         },
         {
-          title: 'Features',
+          title: 'Agents',
           items: [
             {
-              label: 'Smart Detector',
-              to: '/docs/Smart Detector',
+              label: 'My Dashboard',
+              to: '/docs/AgentDashboard',
             },
             {
-              label: 'Reports',
-              to: '/docs/Reports',
+              label: 'My Courses',
+              to: '/docs/AgentCourses',
             },
             {
-              label: 'Settings',
-              to: '/docs/Settings',
+              label: 'My Awards',
+              to: '/docs/AgentAwards',
+            },
+            {
+              label: 'Interactions',
+              to: '/docs/Interactions',
+            },
+            {
+              label: 'Admin',
+              to: '/docs/AgentAdmin',
             },
           ],
         },
@@ -112,8 +146,8 @@ const config = {
               to: '/docs/release-notes',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/botlhale-ai',
+              label: 'How to Get Started',
+              href: 'https://youtu.be/xmDezghws3w',
             },
             {
               label: 'Contact Support',

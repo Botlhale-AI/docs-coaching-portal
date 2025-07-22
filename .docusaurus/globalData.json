@@ -11,6 +11,26 @@
           "mainDocId": "Dashboard",
           "docs": [
             {
+              "id": "AgentAdmin",
+              "path": "/docs/AgentAdmin",
+              "sidebar": "agentSidebar"
+            },
+            {
+              "id": "AgentAwards",
+              "path": "/docs/AgentAwards",
+              "sidebar": "agentSidebar"
+            },
+            {
+              "id": "AgentCourses",
+              "path": "/docs/AgentCourses",
+              "sidebar": "agentSidebar"
+            },
+            {
+              "id": "AgentDashboard",
+              "path": "/docs/AgentDashboard",
+              "sidebar": "agentSidebar"
+            },
+            {
               "id": "Awards",
               "path": "/docs/Awards",
               "sidebar": "tutorialSidebar"
@@ -27,16 +47,13 @@
             },
             {
               "id": "Interactions",
-              "path": "/docs/Interactions"
-            },
-            {
-              "id": "Options",
-              "path": "/docs/Options",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/Interactions",
+              "sidebar": "agentSidebar"
             },
             {
               "id": "Preferences",
-              "path": "/docs/Preferences"
+              "path": "/docs/Preferences",
+              "sidebar": "tutorialSidebar"
             },
             {
               "id": "Progress",
@@ -50,6 +67,18 @@
           ],
           "draftIds": [],
           "sidebars": {
+            "teamLeadSidebar": {
+              "link": {
+                "path": "/docs/Dashboard",
+                "label": "Dashboard"
+              }
+            },
+            "agentSidebar": {
+              "link": {
+                "path": "/docs/AgentDashboard",
+                "label": "My Dashboard"
+              }
+            },
             "tutorialSidebar": {
               "link": {
                 "path": "/docs/Dashboard",

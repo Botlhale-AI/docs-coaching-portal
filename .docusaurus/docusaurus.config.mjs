@@ -4,7 +4,7 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "Vela - Docs",
+  "title": "Coaching Portal",
   "tagline": "Documentation",
   "url": "https://docs-vela.botlhale.xyz",
   "baseUrl": "/",
@@ -69,36 +69,52 @@ export default {
       "style": "light",
       "links": [
         {
-          "title": "Documentation",
+          "title": "Team Leads & QAs",
           "items": [
             {
               "label": "Dashboard",
               "to": "/docs/Dashboard"
             },
             {
-              "label": "Calls",
-              "to": "/docs/Calls"
+              "label": "Courses",
+              "to": "/docs/Courses"
             },
             {
-              "label": "Agents",
-              "to": "/docs/Agents"
+              "label": "Awards",
+              "to": "/docs/Awards"
+            },
+            {
+              "label": "Progress",
+              "to": "/docs/Progress"
+            },
+            {
+              "label": "Preferences",
+              "to": "/docs/Preferences"
             }
           ]
         },
         {
-          "title": "Features",
+          "title": "Agents",
           "items": [
             {
-              "label": "Smart Detector",
-              "to": "/docs/Smart Detector"
+              "label": "My Dashboard",
+              "to": "/docs/AgentDashboard"
             },
             {
-              "label": "Reports",
-              "to": "/docs/Reports"
+              "label": "My Courses",
+              "to": "/docs/AgentCourses"
             },
             {
-              "label": "Settings",
-              "to": "/docs/Settings"
+              "label": "My Awards",
+              "to": "/docs/AgentAwards"
+            },
+            {
+              "label": "Interactions",
+              "to": "/docs/Interactions"
+            },
+            {
+              "label": "Admin",
+              "to": "/docs/AgentAdmin"
             }
           ]
         },
@@ -110,8 +126,8 @@ export default {
               "to": "/docs/release-notes"
             },
             {
-              "label": "GitHub",
-              "href": "https://github.com/botlhale-ai"
+              "label": "How to Get Started",
+              "href": "https://youtu.be/xmDezghws3w"
             },
             {
               "label": "Contact Support",

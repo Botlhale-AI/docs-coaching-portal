@@ -18,9 +18,125 @@
           "contentPathLocalized": "/Users/athi/Desktop/docs-coaching-portal/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
+              "id": "AgentAdmin",
+              "title": "Admin (Agent View)",
+              "description": "Manage notifications and personal settings for your account",
+              "source": "@site/docs/AgentAdmin.md",
+              "sourceDirName": ".",
+              "slug": "/AgentAdmin",
+              "permalink": "/docs/AgentAdmin",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5,
+                "title": "Admin (Agent View)",
+                "description": "Manage notifications and personal settings for your account"
+              },
+              "sidebar": "agentSidebar",
+              "previous": {
+                "title": "Interactions (Agent View)",
+                "permalink": "/docs/Interactions"
+              }
+            },
+            {
+              "id": "AgentAwards",
+              "title": "My Awards (Agent View)",
+              "description": "View and manage your performance recognitions and achievements",
+              "source": "@site/docs/AgentAwards.md",
+              "sourceDirName": ".",
+              "slug": "/AgentAwards",
+              "permalink": "/docs/AgentAwards",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3,
+                "title": "My Awards (Agent View)",
+                "description": "View and manage your performance recognitions and achievements"
+              },
+              "sidebar": "agentSidebar",
+              "previous": {
+                "title": "My Courses (Agent View)",
+                "permalink": "/docs/AgentCourses"
+              },
+              "next": {
+                "title": "Interactions (Agent View)",
+                "permalink": "/docs/Interactions"
+              }
+            },
+            {
+              "id": "AgentCourses",
+              "title": "My Courses (Agent View)",
+              "description": "Manage and track your learning progress through assigned courses",
+              "source": "@site/docs/AgentCourses.md",
+              "sourceDirName": ".",
+              "slug": "/AgentCourses",
+              "permalink": "/docs/AgentCourses",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "My Courses (Agent View)",
+                "description": "Manage and track your learning progress through assigned courses"
+              },
+              "sidebar": "agentSidebar",
+              "previous": {
+                "title": "My Dashboard (Agent View)",
+                "permalink": "/docs/AgentDashboard"
+              },
+              "next": {
+                "title": "My Awards (Agent View)",
+                "permalink": "/docs/AgentAwards"
+              }
+            },
+            {
+              "id": "AgentDashboard",
+              "title": "My Dashboard (Agent View)",
+              "description": "Your personal performance overview and learning progress tracking",
+              "source": "@site/docs/AgentDashboard.md",
+              "sourceDirName": ".",
+              "slug": "/AgentDashboard",
+              "permalink": "/docs/AgentDashboard",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "My Dashboard (Agent View)",
+                "description": "Your personal performance overview and learning progress tracking"
+              },
+              "sidebar": "agentSidebar",
+              "next": {
+                "title": "My Courses (Agent View)",
+                "permalink": "/docs/AgentCourses"
+              }
+            },
+            {
               "id": "Awards",
-              "title": "Awards",
-              "description": "",
+              "title": "Awards Management (Team Lead View)",
+              "description": "Create, manage, and track awards and recognition for your team members",
               "source": "@site/docs/Awards.md",
               "sourceDirName": ".",
               "slug": "/Awards",
@@ -32,7 +148,12 @@
               "lastUpdatedBy": "Author",
               "lastUpdatedAt": 1539502055,
               "formattedLastUpdatedAt": "Oct 14, 2018",
-              "frontMatter": {},
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "Awards Management (Team Lead View)",
+                "description": "Create, manage, and track awards and recognition for your team members"
+              },
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Dashboard",
@@ -61,7 +182,7 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Awards",
+                "title": "Awards Management (Team Lead View)",
                 "permalink": "/docs/Awards"
               },
               "next": {
@@ -72,7 +193,7 @@
             {
               "id": "Dashboard",
               "title": "Dashboard",
-              "description": "The Dashboard section helps you understand how to use the Vela Dashboard to explore call center data easily. It shows important information like agent performance, customer trends, and more in a simple and visual way. This makes it easier for managers and analysts to make smart decisions quickly.",
+              "description": "",
               "source": "@site/docs/Dashboard.md",
               "sourceDirName": ".",
               "slug": "/Dashboard",
@@ -84,13 +205,10 @@
               "lastUpdatedBy": "Author",
               "lastUpdatedAt": 1539502055,
               "formattedLastUpdatedAt": "Oct 14, 2018",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "sidebar_position": 1
-              },
+              "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "Awards",
+                "title": "Awards Management (Team Lead View)",
                 "permalink": "/docs/Awards"
               }
             },
@@ -114,34 +232,21 @@
                 "sidebar_position": 4,
                 "title": "Interactions (Agent View)",
                 "description": "Review your call recordings and chat interactions with detailed analysis and performance metrics"
-              }
-            },
-            {
-              "id": "Options",
-              "title": "Options",
-              "description": "",
-              "source": "@site/docs/Options.md",
-              "sourceDirName": ".",
-              "slug": "/Options",
-              "permalink": "/docs/Options",
-              "draft": false,
-              "unlisted": false,
-              "tags": [],
-              "version": "current",
-              "lastUpdatedBy": "Author",
-              "lastUpdatedAt": 1539502055,
-              "formattedLastUpdatedAt": "Oct 14, 2018",
-              "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              },
+              "sidebar": "agentSidebar",
               "previous": {
-                "title": "Progress Tracking (Agent View)",
-                "permalink": "/docs/Progress"
+                "title": "My Awards (Agent View)",
+                "permalink": "/docs/AgentAwards"
+              },
+              "next": {
+                "title": "Admin (Agent View)",
+                "permalink": "/docs/AgentAdmin"
               }
             },
             {
               "id": "Preferences",
-              "title": "Preferences",
-              "description": "",
+              "title": "Preferences (Team Lead View)",
+              "description": "Customize your portal settings and manage notification preferences",
               "source": "@site/docs/Preferences.md",
               "sourceDirName": ".",
               "slug": "/Preferences",
@@ -153,7 +258,17 @@
               "lastUpdatedBy": "Author",
               "lastUpdatedAt": 1539502055,
               "formattedLastUpdatedAt": "Oct 14, 2018",
-              "frontMatter": {}
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5,
+                "title": "Preferences (Team Lead View)",
+                "description": "Customize your portal settings and manage notification preferences"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Progress Tracking (Agent View)",
+                "permalink": "/docs/Progress"
+              }
             },
             {
               "id": "Progress",
@@ -182,8 +297,8 @@
                 "permalink": "/docs/Courses"
               },
               "next": {
-                "title": "Options",
-                "permalink": "/docs/Options"
+                "title": "Preferences (Team Lead View)",
+                "permalink": "/docs/Preferences"
               }
             },
             {
@@ -209,6 +324,60 @@
           ],
           "drafts": [],
           "sidebars": {
+            "teamLeadSidebar": [
+              {
+                "type": "doc",
+                "label": "Dashboard",
+                "id": "Dashboard"
+              },
+              {
+                "type": "doc",
+                "label": "Courses",
+                "id": "Courses"
+              },
+              {
+                "type": "doc",
+                "label": "Awards",
+                "id": "Awards"
+              },
+              {
+                "type": "doc",
+                "label": "Progress",
+                "id": "Progress"
+              },
+              {
+                "type": "doc",
+                "label": "Preferences",
+                "id": "Preferences"
+              }
+            ],
+            "agentSidebar": [
+              {
+                "type": "doc",
+                "label": "My Dashboard",
+                "id": "AgentDashboard"
+              },
+              {
+                "type": "doc",
+                "label": "My Courses",
+                "id": "AgentCourses"
+              },
+              {
+                "type": "doc",
+                "label": "My Awards",
+                "id": "AgentAwards"
+              },
+              {
+                "type": "doc",
+                "label": "Interactions",
+                "id": "Interactions"
+              },
+              {
+                "type": "doc",
+                "label": "Admin",
+                "id": "AgentAdmin"
+              }
+            ],
             "tutorialSidebar": [
               {
                 "type": "doc",
@@ -232,8 +401,8 @@
               },
               {
                 "type": "doc",
-                "label": "Evaluation Cycles",
-                "id": "Options"
+                "label": "Preferences",
+                "id": "Preferences"
               }
             ]
           }

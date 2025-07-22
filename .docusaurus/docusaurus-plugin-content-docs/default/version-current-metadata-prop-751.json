@@ -8,6 +8,80 @@
   "className": "docs-version-current",
   "isLast": true,
   "docsSidebars": {
+    "teamLeadSidebar": [
+      {
+        "type": "link",
+        "label": "Dashboard",
+        "href": "/docs/Dashboard",
+        "docId": "Dashboard",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "Courses",
+        "href": "/docs/Courses",
+        "docId": "Courses",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "Awards",
+        "href": "/docs/Awards",
+        "docId": "Awards",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "Progress",
+        "href": "/docs/Progress",
+        "docId": "Progress",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "Preferences",
+        "href": "/docs/Preferences",
+        "docId": "Preferences",
+        "unlisted": false
+      }
+    ],
+    "agentSidebar": [
+      {
+        "type": "link",
+        "label": "My Dashboard",
+        "href": "/docs/AgentDashboard",
+        "docId": "AgentDashboard",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "My Courses",
+        "href": "/docs/AgentCourses",
+        "docId": "AgentCourses",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "My Awards",
+        "href": "/docs/AgentAwards",
+        "docId": "AgentAwards",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "Interactions",
+        "href": "/docs/Interactions",
+        "docId": "Interactions",
+        "unlisted": false
+      },
+      {
+        "type": "link",
+        "label": "Admin",
+        "href": "/docs/AgentAdmin",
+        "docId": "AgentAdmin",
+        "unlisted": false
+      }
+    ],
     "tutorialSidebar": [
       {
         "type": "link",
@@ -39,18 +113,42 @@
       },
       {
         "type": "link",
-        "label": "Evaluation Cycles",
-        "href": "/docs/Options",
-        "docId": "Options",
+        "label": "Preferences",
+        "href": "/docs/Preferences",
+        "docId": "Preferences",
         "unlisted": false
       }
     ]
   },
   "docs": {
+    "AgentAdmin": {
+      "id": "AgentAdmin",
+      "title": "Admin (Agent View)",
+      "description": "Manage notifications and personal settings for your account",
+      "sidebar": "agentSidebar"
+    },
+    "AgentAwards": {
+      "id": "AgentAwards",
+      "title": "My Awards (Agent View)",
+      "description": "View and manage your performance recognitions and achievements",
+      "sidebar": "agentSidebar"
+    },
+    "AgentCourses": {
+      "id": "AgentCourses",
+      "title": "My Courses (Agent View)",
+      "description": "Manage and track your learning progress through assigned courses",
+      "sidebar": "agentSidebar"
+    },
+    "AgentDashboard": {
+      "id": "AgentDashboard",
+      "title": "My Dashboard (Agent View)",
+      "description": "Your personal performance overview and learning progress tracking",
+      "sidebar": "agentSidebar"
+    },
     "Awards": {
       "id": "Awards",
-      "title": "Awards",
-      "description": "",
+      "title": "Awards Management (Team Lead View)",
+      "description": "Create, manage, and track awards and recognition for your team members",
       "sidebar": "tutorialSidebar"
     },
     "Courses": {
@@ -62,24 +160,20 @@
     "Dashboard": {
       "id": "Dashboard",
       "title": "Dashboard",
-      "description": "The Dashboard section helps you understand how to use the Vela Dashboard to explore call center data easily. It shows important information like agent performance, customer trends, and more in a simple and visual way. This makes it easier for managers and analysts to make smart decisions quickly.",
+      "description": "",
       "sidebar": "tutorialSidebar"
     },
     "Interactions": {
       "id": "Interactions",
       "title": "Interactions (Agent View)",
-      "description": "Review your call recordings and chat interactions with detailed analysis and performance metrics"
-    },
-    "Options": {
-      "id": "Options",
-      "title": "Options",
-      "description": "",
-      "sidebar": "tutorialSidebar"
+      "description": "Review your call recordings and chat interactions with detailed analysis and performance metrics",
+      "sidebar": "agentSidebar"
     },
     "Preferences": {
       "id": "Preferences",
-      "title": "Preferences",
-      "description": ""
+      "title": "Preferences (Team Lead View)",
+      "description": "Customize your portal settings and manage notification preferences",
+      "sidebar": "tutorialSidebar"
     },
     "Progress": {
       "id": "Progress",

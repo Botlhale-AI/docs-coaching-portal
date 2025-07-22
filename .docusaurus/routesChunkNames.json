@@ -55,42 +55,62 @@
       "plugin": "plugin---searchc-44-236"
     }
   },
-  "/docs-64c": {
+  "/docs-798": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "plugin---4-cb-d6b"
+      "plugin": "plugin---docs-4-cb-80d"
     }
   },
-  "/docs-a35": {
+  "/docs-27f": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "version": "version---935-fcf"
+    "version": "version---docs-935-398"
   },
-  "/docs-837": {
+  "/docs-b3d": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/AgentAdmin-9e1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-agent-admin-6-f-8-7f2"
+  },
+  "/docs/AgentAwards-193": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-agent-awards-53-e-8e1"
+  },
+  "/docs/AgentCourses-5f1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-agent-courses-2-a-1-0ec"
+  },
+  "/docs/AgentDashboard-a8d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-agent-dashboard-638-3b7"
   },
   "/docs/Awards-6c8": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---awardsbd-1-957"
+    "content": "content---docs-awardsbd-1-119"
   },
   "/docs/Courses-c40": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---coursesfd-6-6fd"
+    "content": "content---docs-coursesfd-6-450"
   },
   "/docs/Dashboard-379": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---dashboard-992-15d"
+    "content": "content---docs-dashboard-992-3a2"
   },
-  "/docs/Options-545": {
+  "/docs/Interactions-4be": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---options-772-b05"
+    "content": "content---docs-interactions-57-d-989"
+  },
+  "/docs/Preferences-def": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-preferences-9-eb-f0f"
   },
   "/docs/Progress-c67": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---progressba-5-f51"
+    "content": "content---docs-progressba-5-271"
   },
   "/docs/release-notes-7c0": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---release-notesa-55-160"
+    "content": "content---docs-release-notesa-55-b08"
   },
   "/-409": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
