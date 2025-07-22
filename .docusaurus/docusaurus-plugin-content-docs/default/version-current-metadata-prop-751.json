@@ -12,35 +12,35 @@
       {
         "type": "link",
         "label": "Dashboard",
-        "href": "/Dashboard",
+        "href": "/docs/Dashboard",
         "docId": "Dashboard",
         "unlisted": false
       },
       {
         "type": "link",
         "label": "Awards",
-        "href": "/Awards",
+        "href": "/docs/Awards",
         "docId": "Awards",
         "unlisted": false
       },
       {
         "type": "link",
         "label": "Courses",
-        "href": "/Courses",
+        "href": "/docs/Courses",
         "docId": "Courses",
         "unlisted": false
       },
       {
         "type": "link",
         "label": "Progress",
-        "href": "/Progress",
+        "href": "/docs/Progress",
         "docId": "Progress",
         "unlisted": false
       },
       {
         "type": "link",
         "label": "Evaluation Cycles",
-        "href": "/Options",
+        "href": "/docs/Options",
         "docId": "Options",
         "unlisted": false
       }
@@ -65,16 +65,26 @@
       "description": "The Dashboard section helps you understand how to use the Vela Dashboard to explore call center data easily. It shows important information like agent performance, customer trends, and more in a simple and visual way. This makes it easier for managers and analysts to make smart decisions quickly.",
       "sidebar": "tutorialSidebar"
     },
+    "Interactions": {
+      "id": "Interactions",
+      "title": "Interactions (Agent View)",
+      "description": "Review your call recordings and chat interactions with detailed analysis and performance metrics"
+    },
     "Options": {
       "id": "Options",
       "title": "Options",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
+    "Preferences": {
+      "id": "Preferences",
+      "title": "Preferences",
+      "description": ""
+    },
     "Progress": {
       "id": "Progress",
-      "title": "Progress",
-      "description": "",
+      "title": "Progress Tracking (Agent View)",
+      "description": "Track your learning journey, monitor skill development, and celebrate achievements",
       "sidebar": "tutorialSidebar"
     },
     "release-notes": {

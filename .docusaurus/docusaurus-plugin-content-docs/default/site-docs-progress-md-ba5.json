@@ -1,11 +1,11 @@
 {
   "id": "Progress",
-  "title": "Progress",
-  "description": "",
+  "title": "Progress Tracking (Agent View)",
+  "description": "Track your learning journey, monitor skill development, and celebrate achievements",
   "source": "@site/docs/Progress.md",
   "sourceDirName": ".",
   "slug": "/Progress",
-  "permalink": "/Progress",
+  "permalink": "/docs/Progress",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -13,14 +13,19 @@
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,
   "formattedLastUpdatedAt": "Oct 14, 2018",
-  "frontMatter": {},
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Progress Tracking (Agent View)",
+    "description": "Track your learning journey, monitor skill development, and celebrate achievements"
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Courses Management",
-    "permalink": "/Courses"
+    "permalink": "/docs/Courses"
   },
   "next": {
     "title": "Options",
-    "permalink": "/Options"
+    "permalink": "/docs/Options"
   }
 }

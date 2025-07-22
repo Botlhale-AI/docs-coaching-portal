@@ -5,7 +5,7 @@
   "source": "@site/docs/Awards.md",
   "sourceDirName": ".",
   "slug": "/Awards",
-  "permalink": "/Awards",
+  "permalink": "/docs/Awards",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Dashboard",
-    "permalink": "/Dashboard"
+    "permalink": "/docs/Dashboard"
   },
   "next": {
     "title": "Courses Management",
-    "permalink": "/Courses"
+    "permalink": "/docs/Courses"
   }
 }

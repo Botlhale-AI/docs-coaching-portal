@@ -1,50 +1,58 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/",
+      "path": "/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/",
+          "path": "/docs",
           "mainDocId": "Dashboard",
           "docs": [
             {
               "id": "Awards",
-              "path": "/Awards",
+              "path": "/docs/Awards",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Courses",
-              "path": "/Courses",
+              "path": "/docs/Courses",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Dashboard",
-              "path": "/Dashboard",
+              "path": "/docs/Dashboard",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Interactions",
+              "path": "/docs/Interactions"
             },
             {
               "id": "Options",
-              "path": "/Options",
+              "path": "/docs/Options",
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Preferences",
+              "path": "/docs/Preferences"
+            },
+            {
               "id": "Progress",
-              "path": "/Progress",
+              "path": "/docs/Progress",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "release-notes",
-              "path": "/release-notes"
+              "path": "/docs/release-notes"
             }
           ],
           "draftIds": [],
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/Dashboard",
+                "path": "/docs/Dashboard",
                 "label": "Dashboard"
               }
             }

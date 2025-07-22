@@ -5,7 +5,7 @@
   "source": "@site/docs/Courses.md",
   "sourceDirName": ".",
   "slug": "/Courses",
-  "permalink": "/Courses",
+  "permalink": "/docs/Courses",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Awards",
-    "permalink": "/Awards"
+    "permalink": "/docs/Awards"
   },
   "next": {
-    "title": "Progress",
-    "permalink": "/Progress"
+    "title": "Progress Tracking (Agent View)",
+    "permalink": "/docs/Progress"
   }
 }
