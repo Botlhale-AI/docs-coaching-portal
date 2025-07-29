@@ -4,8 +4,8 @@
   <ShortName>Coaching Portal</ShortName>
   <Description>Search Coaching Portal</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://docs-vela.botlhale.xyz/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://docs-vela.botlhale.xyz/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://docs-vela.botlhale.xyz/opensearch.xml" />
-  <moz:SearchForm>https://docs-vela.botlhale.xyz/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://docs-vela.botlhale.xyz/docs-coaching-portal/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://docs-vela.botlhale.xyz/docs-coaching-portal/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://docs-vela.botlhale.xyz/docs-coaching-portal/opensearch.xml" />
+  <moz:SearchForm>https://docs-vela.botlhale.xyz/docs-coaching-portal/</moz:SearchForm>
 </OpenSearchDescription>
