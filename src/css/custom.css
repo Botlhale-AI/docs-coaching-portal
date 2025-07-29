@@ -3,6 +3,8 @@
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Import DocSearch CSS */
+@import url('@docsearch/css');
 
 :root {
   --ifm-color-primary: #030190;
@@ -34,9 +36,15 @@
   --vela-content-max-width: 900px;
 
   /* Home page specific variables */
-  --vela-hero-gradient-start: #4f46e5;
+  --vela-hero-gradient-start: #e17a27;
   --vela-hero-gradient-end: #6366f1;
   --vela-section-spacing: 6rem;
+
+  /* Enhanced text colors for better visibility */
+  --ifm-heading-color: #1a1a1a;
+  --ifm-text-color: #333333;
+  --text-contrast-high: #000000;
+  --text-contrast-medium: #333333;
 }
 
 html[data-theme='dark'] {
@@ -54,6 +62,12 @@ html[data-theme='dark'] {
   /* Home page specific variables */
   --vela-hero-gradient-start: #031019;
   --vela-hero-gradient-end: #031019;
+
+  /* Enhanced text colors for better visibility in dark mode */
+  --ifm-heading-color: #ffffff;
+  --ifm-text-color: #e0e0e0;
+  --text-contrast-high: #ffffff;
+  --text-contrast-medium: #e0e0e0;
 }
 
 /* Global styles */
@@ -417,35 +431,38 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   opacity: 1;
 }
 
-/* Responsiveness */
-@media (max-width: 996px) {
-  .navbar__items--right > .navbar__item {
-    display: none;
-  }
-  
-  :root {
-    --ifm-navbar-height: 3.75rem;
-  }
-  
-  .markdown {
-    --ifm-h1-font-size: 2rem;
-    --ifm-h2-font-size: 1.5rem;
-    --ifm-h3-font-size: 1.25rem;
-  }
+/* DocSearch custom styles */
+.DocSearch-Button {
+  margin-left: 0;
+  border-radius: 4px;
+  height: 36px;
+  width: auto;
+  padding: 0 12px;
+  background: var(--ifm-color-emphasis-200);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  transition: all 0.2s ease;
 }
 
-@media (max-width: 768px) {
-  :root {
-    --vela-section-spacing: 4rem;
-  }
-  
-  .markdown img {
-    margin: 1rem 0;
-  }
-  
-  .vela-card__header,
-  .vela-card__body,
-  .vela-card__footer {
-    padding: 1rem;
-  }
+.DocSearch-Button:hover {
+  background: var(--ifm-color-emphasis-300);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.DocSearch-Button-Placeholder {
+  font-size: 0.9rem;
+}
+
+.DocSearch-Search-Icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.DocSearch-Hit-source {
+  color: var(--ifm-color-primary);
+}
+
+.DocSearch-Hit-title mark {
+  color: var(--ifm-color-primary-darkest);
+  background: rgba(252, 95, 30, 0.1);
 }

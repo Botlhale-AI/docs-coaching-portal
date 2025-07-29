@@ -19,8 +19,8 @@
           "docs": [
             {
               "id": "AgentAdmin",
-              "title": "Admin (Agent View)",
-              "description": "Manage notifications and personal settings for your account",
+              "title": "Admin",
+              "description": "Notifications and account settings",
               "source": "@site/docs/AgentAdmin.md",
               "sourceDirName": ".",
               "slug": "/AgentAdmin",
@@ -35,12 +35,12 @@
               "sidebarPosition": 5,
               "frontMatter": {
                 "sidebar_position": 5,
-                "title": "Admin (Agent View)",
-                "description": "Manage notifications and personal settings for your account"
+                "title": "Admin",
+                "description": "Notifications and account settings"
               },
               "sidebar": "agentSidebar",
               "previous": {
-                "title": "Interactions (Agent View)",
+                "title": "Interactions",
                 "permalink": "/docs/Interactions"
               }
             },
@@ -67,18 +67,18 @@
               },
               "sidebar": "agentSidebar",
               "previous": {
-                "title": "My Courses (Agent View)",
+                "title": "Courses",
                 "permalink": "/docs/AgentCourses"
               },
               "next": {
-                "title": "Interactions (Agent View)",
+                "title": "Interactions",
                 "permalink": "/docs/Interactions"
               }
             },
             {
               "id": "AgentCourses",
-              "title": "My Courses (Agent View)",
-              "description": "Manage and track your learning progress through assigned courses",
+              "title": "Courses",
+              "description": "The Courses section is where you can manage and track your learning progress. All your assigned training materials, ongoing courses, and completed certifications are organised here for easy access and monitoring.",
               "source": "@site/docs/AgentCourses.md",
               "sourceDirName": ".",
               "slug": "/AgentCourses",
@@ -93,12 +93,11 @@
               "sidebarPosition": 2,
               "frontMatter": {
                 "sidebar_position": 2,
-                "title": "My Courses (Agent View)",
-                "description": "Manage and track your learning progress through assigned courses"
+                "title": "Courses"
               },
               "sidebar": "agentSidebar",
               "previous": {
-                "title": "My Dashboard (Agent View)",
+                "title": "Dashboard",
                 "permalink": "/docs/AgentDashboard"
               },
               "next": {
@@ -108,8 +107,8 @@
             },
             {
               "id": "AgentDashboard",
-              "title": "My Dashboard (Agent View)",
-              "description": "Your personal performance overview and learning progress tracking",
+              "title": "Dashboard",
+              "description": "Dashboard Overview",
               "source": "@site/docs/AgentDashboard.md",
               "sourceDirName": ".",
               "slug": "/AgentDashboard",
@@ -124,12 +123,11 @@
               "sidebarPosition": 1,
               "frontMatter": {
                 "sidebar_position": 1,
-                "title": "My Dashboard (Agent View)",
-                "description": "Your personal performance overview and learning progress tracking"
+                "title": "Dashboard"
               },
               "sidebar": "agentSidebar",
               "next": {
-                "title": "My Courses (Agent View)",
+                "title": "Courses",
                 "permalink": "/docs/AgentCourses"
               }
             },
@@ -160,14 +158,14 @@
                 "permalink": "/docs/Dashboard"
               },
               "next": {
-                "title": "Courses Management",
+                "title": "Courses",
                 "permalink": "/docs/Courses"
               }
             },
             {
               "id": "Courses",
-              "title": "Courses Management",
-              "description": "The Courses module allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library.",
+              "title": "Courses",
+              "description": "The Courses section allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library.",
               "source": "@site/docs/Courses.md",
               "sourceDirName": ".",
               "slug": "/Courses",
@@ -179,7 +177,11 @@
               "lastUpdatedBy": "Author",
               "lastUpdatedAt": 1539502055,
               "formattedLastUpdatedAt": "Oct 14, 2018",
-              "frontMatter": {},
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "Courses"
+              },
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Awards Management (Team Lead View)",
@@ -214,7 +216,7 @@
             },
             {
               "id": "Interactions",
-              "title": "Interactions (Agent View)",
+              "title": "Interactions",
               "description": "Review your call recordings and chat interactions with detailed analysis and performance metrics",
               "source": "@site/docs/Interactions.md",
               "sourceDirName": ".",
@@ -230,7 +232,7 @@
               "sidebarPosition": 4,
               "frontMatter": {
                 "sidebar_position": 4,
-                "title": "Interactions (Agent View)",
+                "title": "Interactions",
                 "description": "Review your call recordings and chat interactions with detailed analysis and performance metrics"
               },
               "sidebar": "agentSidebar",
@@ -239,7 +241,7 @@
                 "permalink": "/docs/AgentAwards"
               },
               "next": {
-                "title": "Admin (Agent View)",
+                "title": "Admin",
                 "permalink": "/docs/AgentAdmin"
               }
             },
@@ -293,7 +295,7 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Courses Management",
+                "title": "Courses",
                 "permalink": "/docs/Courses"
               },
               "next": {

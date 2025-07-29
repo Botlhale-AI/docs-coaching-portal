@@ -3,24 +3,24 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
-const CardsList = [
+const TeamLeadCardsList = [
   {
-    title: 'Courses',
-    description: 'Browse through all available training modules and educational content',
+    title: 'Course Management',
+    description: 'Create, manage, and assign training modules to your team members',
     icon: 'fas fa-graduation-cap',
     link: '/docs/Courses',
     color: 'orange',
   },
   {
-    title: 'Awards',
-    description: 'View achievements, badges and recognition for completed work',
+    title: 'Awards & Recognition',
+    description: 'Manage achievements, badges, and recognition for your team',
     icon: 'fas fa-trophy',
     link: '/docs/Awards',
     color: 'blue',
   },
   {
-    title: 'Dashboard',
-    description: 'Monitor performance metrics and progress towards learning goals',
+    title: 'Team Dashboard',
+    description: 'Monitor team performance metrics and progress towards goals',
     icon: 'fas fa-chart-line',
     link: '/docs/Dashboard',
     color: 'green',
@@ -30,6 +30,37 @@ const CardsList = [
     description: 'Schedule and manage performance review periods and feedback sessions',
     icon: 'fas fa-sync',
     link: '/docs/Options',
+    color: 'yellow',
+  },
+];
+
+const AgentCardsList = [
+  {
+    title: 'My Dashboard',
+    description: 'View your performance metrics and track your learning progress',
+    icon: 'fas fa-tachometer-alt',
+    link: '/docs/Dashboard',
+    color: 'green',
+  },
+  {
+    title: 'My Courses',
+    description: 'Access assigned training modules and track completion status',
+    icon: 'fas fa-book-open',
+    link: '/docs/Progress#learning-paths-progress',
+    color: 'orange',
+  },
+  {
+    title: 'My Awards',
+    description: 'View your achievements, badges, and recognition received',
+    icon: 'fas fa-medal',
+    link: '/docs/Progress#achievement-badges',
+    color: 'blue',
+  },
+  {
+    title: 'Interactions',
+    description: 'Review your call recordings and chat interactions with detailed analysis',
+    icon: 'fas fa-phone',
+    link: '/docs/Interactions',
     color: 'yellow',
   },
 ];
@@ -54,12 +85,13 @@ function FeatureCard({ title, description, icon, link, color }) {
   );
 }
 
-export default function FeatureCards() {
+export default function FeatureCards({ selectedRole = 'teamlead' }) {
+  const cardsList = selectedRole === 'teamlead' ? TeamLeadCardsList : AgentCardsList;
+  
   return (
     <section className={styles.cardsSection}>
-      <h2 className={styles.sectionTitle}>Coaching Portal Features</h2>
       <div className={styles.cardsGrid}>
-        {CardsList.map((props, idx) => (
+        {cardsList.map((props, idx) => (
           <FeatureCard key={idx} {...props} />
         ))}
       </div>

@@ -1,69 +1,150 @@
 .topNavBar {
-  display: flex;
-  justify-content: center;
-  /* background-color: var(--ifm-navbar-background-color); */
-  /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); */
-  padding: 0.5rem 1rem;
+  background: var(--ifm-navbar-background-color);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
   position: sticky;
-  top: var(--ifm-navbar-height);
-  z-index: 100;
+  top: 60px; /* Below main navbar */
+  z-index: 99;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
 .navContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+}
+
+/* Role Toggle Section */
+.roleToggleSection {
+  display: flex;
+  align-items: center;
+}
+
+.roleToggle {
+  display: flex;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 6px;
+  padding: 4px;
+  gap: 2px;
+}
+
+.roleToggleButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-700);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.roleToggleButton:hover {
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+}
+
+.roleToggleActive {
+  background: white !important;
+  color: var(--primary-color) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+.roleToggleButton i {
+  font-size: 1rem;
+}
+
+/* Navigation Items */
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 0;
 }
 
 .navItem {
-  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
   text-decoration: none;
-  color: var(--ifm-navbar-link-color);
+  color: var(--ifm-color-emphasis-700);
   font-weight: 500;
+  font-size: 0.9rem;
   transition: all 0.2s ease;
-  border-radius: 4px;
+  position: relative;
+  border-bottom: 3px solid transparent;
+  height: 64px;
 }
 
 .navItem:hover {
-  color: #fc5f1e;
-  text-underline-offset: none;
+  color: var(--primary-color);
+  text-decoration: none;
+  background: rgba(252, 95, 30, 0.04);
 }
 
 .activeNavItem {
-  color: #fc5f1e;
-  border-bottom: 2px solid #fc5f1e;
+  color: var(--primary-color);
+  font-weight: 600;
+  border-bottom-color: var(--primary-color);
+  background: rgba(252, 95, 30, 0.04);
+}
+
+/* Responsive design */
+@media (max-width: 996px) {
+  .navContainer {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .navItems {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .navItem {
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem;
+    height: auto;
+  }
+  
+  .roleToggleSection {
+    order: -1;
+  }
 }
 
 @media (max-width: 768px) {
   .navContainer {
-    overflow-x: auto;
-    justify-content: flex-start;
-    padding: 0 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .roleToggle {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .roleToggleButton {
+    flex: 1;
+    justify-content: center;
+    padding: 0.75rem;
+  }
+  
+  .navItems {
+    gap: 0.5rem;
   }
   
   .navItem {
-    white-space: nowrap;
-    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    border-bottom-width: 2px;
   }
-}
-
-.roundedButton {
-  padding: 0.5rem 1rem;
-  border-radius: 1.5rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin-left: 0.75rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  border: 2px solid;
-  width: max-content;
-  color: #fc5f1e;
-}
-
-.roundedButton:hover{
-  background-color: rgba(252, 95, 30, 0.1);
-  color: #fc5f1e;
-  text-decoration: none;
 }

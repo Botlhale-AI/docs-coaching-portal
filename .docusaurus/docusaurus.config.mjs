@@ -12,7 +12,7 @@ export default {
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
   "organizationName": "Botlhale-AI",
-  "projectName": "docs-vela",
+  "projectName": "docs-coaching-portal",
   "deploymentBranch": "gh-pages",
   "trailingSlash": false,
   "presets": [

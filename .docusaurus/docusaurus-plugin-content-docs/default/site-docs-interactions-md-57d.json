@@ -1,0 +1,28 @@
+{
+  "id": "Interactions",
+  "title": "Interactions",
+  "description": "Review your call recordings and chat interactions with detailed analysis and performance metrics",
+  "source": "@site/docs/Interactions.md",
+  "sourceDirName": ".",
+  "slug": "/Interactions",
+  "permalink": "/docs/Interactions",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Interactions",
+    "description": "Review your call recordings and chat interactions with detailed analysis and performance metrics"
+  },
+  "sidebar": "agentSidebar",
+  "previous": {
+    "title": "My Awards (Agent View)",
+    "permalink": "/docs/AgentAwards"
+  },
+  "next": {
+    "title": "Admin",
+    "permalink": "/docs/AgentAdmin"
+  }
+}

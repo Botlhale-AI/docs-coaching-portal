@@ -106,12 +106,12 @@
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
-  color: #031019;
+  color: var(--ifm-heading-color); /* Use Docusaurus heading color variable */
 }
 
 .cardDescription {
   font-size: 0.95rem;
-  color: #999C9F;
+  color: var(--ifm-color-emphasis-700); /* Stronger contrast */
   line-height: 1.5;
 }
 

@@ -123,8 +123,8 @@
   "docs": {
     "AgentAdmin": {
       "id": "AgentAdmin",
-      "title": "Admin (Agent View)",
-      "description": "Manage notifications and personal settings for your account",
+      "title": "Admin",
+      "description": "Notifications and account settings",
       "sidebar": "agentSidebar"
     },
     "AgentAwards": {
@@ -135,14 +135,14 @@
     },
     "AgentCourses": {
       "id": "AgentCourses",
-      "title": "My Courses (Agent View)",
-      "description": "Manage and track your learning progress through assigned courses",
+      "title": "Courses",
+      "description": "The Courses section is where you can manage and track your learning progress. All your assigned training materials, ongoing courses, and completed certifications are organised here for easy access and monitoring.",
       "sidebar": "agentSidebar"
     },
     "AgentDashboard": {
       "id": "AgentDashboard",
-      "title": "My Dashboard (Agent View)",
-      "description": "Your personal performance overview and learning progress tracking",
+      "title": "Dashboard",
+      "description": "Dashboard Overview",
       "sidebar": "agentSidebar"
     },
     "Awards": {
@@ -153,8 +153,8 @@
     },
     "Courses": {
       "id": "Courses",
-      "title": "Courses Management",
-      "description": "The Courses module allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library.",
+      "title": "Courses",
+      "description": "The Courses section allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library.",
       "sidebar": "tutorialSidebar"
     },
     "Dashboard": {
@@ -165,7 +165,7 @@
     },
     "Interactions": {
       "id": "Interactions",
-      "title": "Interactions (Agent View)",
+      "title": "Interactions",
       "description": "Review your call recordings and chat interactions with detailed analysis and performance metrics",
       "sidebar": "agentSidebar"
     },

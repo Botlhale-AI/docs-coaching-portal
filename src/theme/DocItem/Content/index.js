@@ -40,17 +40,6 @@ export default function DocItemContent({children}) {
             <p className={styles.docDescription}>{frontMatter.description}</p>
           )}
           
-          {/* Last updated information */}
-          {(metadata.formattedLastUpdatedAt) && (
-            <div className={styles.docLastUpdated}>
-              <i className="fa-solid fa-calendar-check" aria-hidden="true"></i>
-              {' Last updated: '}
-              <time dateTime={getDateTimeAttribute(metadata.lastUpdatedAt)}>
-                {metadata.formattedLastUpdatedAt}
-              </time>
-            </div>
-          )}
-
           <div className={styles.docDivider}></div>
         </header>
       )}
@@ -59,7 +48,7 @@ export default function DocItemContent({children}) {
       
       {/* Feedback section */}
       <div className={styles.docFeedbackSection}>
-        <div className={styles.docFeedbackTitle}>Was this page helpful?</div>
+        {/* <div className={styles.docFeedbackTitle}>Was this page helpful?</div>
         <div className={styles.docFeedbackButtons}>
           <button className={styles.docFeedbackButton}>
             <i className="fa-solid fa-thumbs-up" aria-hidden="true"></i> Yes
@@ -67,10 +56,10 @@ export default function DocItemContent({children}) {
           <button className={styles.docFeedbackButton}>
             <i className="fa-solid fa-thumbs-down" aria-hidden="true"></i> No
           </button>
-        </div>
-        <div className={styles.docFeedbackMessage}>
+        </div> */}
+        {/* <div className={styles.docFeedbackMessage}>
           Have suggestions? <a href="mailto:support@botlhale.ai">Contact our support team</a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,0 +1,24 @@
+{
+  "id": "AgentAdmin",
+  "title": "Admin",
+  "description": "Notifications and account settings",
+  "source": "@site/docs/AgentAdmin.md",
+  "sourceDirName": ".",
+  "slug": "/AgentAdmin",
+  "permalink": "/docs/AgentAdmin",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "Admin",
+    "description": "Notifications and account settings"
+  },
+  "sidebar": "agentSidebar",
+  "previous": {
+    "title": "Interactions",
+    "permalink": "/docs/Interactions"
+  }
+}

@@ -2,7 +2,7 @@
  * Custom navigation styles for Vela Coaching Portal
  */
 
-/* Top Navigation Bar with Sub-Menus */
+/* Top Navigation Bar */
 .navbar {
   height: auto;
   padding: 0.75rem 1rem;
@@ -269,4 +269,219 @@
 .DocSearch-Footer {
   box-shadow: none !important;
   border-top: 1px solid var(--ifm-color-emphasis-200) !important;
+}
+
+/* Role-based navbar styling */
+.navbar-item-teamlead,
+.navbar-item-agent {
+  display: none;
+}
+
+/* Show appropriate navigation based on current page */
+[data-role="teamlead"] .navbar-item-teamlead {
+  display: block;
+}
+
+[data-role="agent"] .navbar-item-agent {
+  display: block;
+}
+
+/* Hide navigation items from other roles */
+.navbar__item--show-for-teamlead {
+  display: none;
+}
+
+.navbar__item--show-for-agent {
+  display: none;
+}
+
+/* Show role-specific items when appropriate */
+[data-current-role="teamlead"] .navbar__item--show-for-teamlead {
+  display: block;
+}
+
+[data-current-role="agent"] .navbar__item--show-for-agent {
+  display: block;
+}
+
+/* Role indicator styling */
+.nav-role-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(252, 95, 30, 0.1);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  border: 1px solid rgba(252, 95, 30, 0.2);
+}
+
+.nav-role-indicator i {
+  font-size: 1rem;
+}
+
+/* Role-based main navbar styling */
+.role-based-navbar {
+  background: var(--ifm-navbar-background-color);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 60px; /* Main navbar height */
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.role-nav-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 60px;
+}
+
+.role-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, var(--primary-color), #e54c1a);
+  color: white;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(252, 95, 30, 0.3);
+}
+
+.role-indicator i {
+  font-size: 1rem;
+}
+
+.role-nav-items {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.role-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.role-nav-item:hover {
+  background: var(--ifm-color-emphasis-100);
+  color: var(--primary-color);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.role-nav-item.active {
+  background: rgba(252, 95, 30, 0.1);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.role-nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+.role-nav-item i {
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+}
+
+/* Hide role-based navbar on mobile */
+@media (max-width: 768px) {
+  .role-based-navbar {
+    display: none;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 996px) {
+  .role-nav-container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .role-nav-items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .role-nav-item {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Integration with existing SubNavbar */
+.horizontal-nav {
+  top: 120px; /* Adjust for role-based navbar */
+}
+
+/* Hide sidebar temporarily for cleaner layout */
+.theme-doc-sidebar-container {
+  display: none !important;
+}
+
+/* Adjust main content area when sidebar is hidden */
+.main-wrapper {
+  width: 100% !important;
+}
+
+.docMainContainer {
+  max-width: none !important;
+  margin-left: 0 !important;
+}
+
+/* Remove role-based navbar styling - hide these elements */
+.role-based-navbar,
+.role-nav-container,
+.role-indicator,
+.role-nav-items,
+.role-nav-item {
+  display: none !important;
+}
+
+/* Remove SubNavbar styling - hide these elements */
+.sub-navbar,
+.sub-navbar-role,
+.horizontal-nav,
+.horizontal-nav-container,
+.horizontal-nav-item {
+  display: none !important;
+}
+
+/* Ensure docs content takes full width */
+.theme-doc-root {
+  display: block !important;
+}
+
+.container {
+  max-width: 1140px !important;
+  margin: 0 auto !important;
 }

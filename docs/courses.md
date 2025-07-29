@@ -1,23 +1,26 @@
-# Courses Management
+---
+sidebar_position: 2
+title: Courses
+---
 
-The Courses module allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library.
+The Courses section allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library.
 
 ## Table of Contents
 
-- [Accessing the Courses Dashboard](#accessing-the-courses-dashboard)
+- [Accessing the Courses Overview](#accessing-the-courses-dashboard)
 - [Creating a New Course](#creating-a-new-course)
 - [Viewing Course List](#viewing-course-list)
 - [Managing Existing Courses](#managing-existing-courses)
 - [Best Practices](#best-practices)
 
-## Accessing the Courses Dashboard
+## Courses Overview
 
-The Courses Dashboard is your central hub for all course-related activities.
+Navigating to the Courses display a list of Courses which includes several useful features:
 
-1. Log in to your Vela Coaching Portal account
-2. Click on the **Courses** tab in the top navigation menu
+1. **Search Bar**: Quickly find courses by name, category, or keyword
+2. **Course Details Overview**: See at-a-glance metrics for each course - showing the Course Title, Description, Date Created, Categoty and Scope.
 
-![Courses Dashboard](../img/screenshots/courses/courses-list.png)
+![Courses Dashboard](../img/screenshots/team_lead/courses/courses-list.png)
 
 ## Creating a New Course
 
@@ -25,9 +28,7 @@ Creating effective training materials is essential for agent development. Follow
 
 ### Step 1: Navigate to Create Course Page
 
-From the Courses Dashboard, click the **Create Course** button in the top-right corner.
-
-<!-- ![Create Course Button](../img/screenshots/courses/courses-list.png) -->
+From the Courses Overview page, click the **Create a New Course** card top lef tof the screen.
 
 ### Step 2: Fill in Course Details
 
@@ -35,81 +36,98 @@ Complete the course creation form with the following information:
 
 1. **Course Title**: Enter a clear, descriptive name for your course
 2. **Course Description**: Provide a comprehensive overview of what the course covers
-3. **Learning Objectives**: List specific skills agents will acquire
-4. **Estimated Duration**: Set the expected completion time
-5. **Difficulty Level**: Select the appropriate level (Beginner, Intermediate, Advanced)
-6. **Category**: Choose the relevant department or skill category
-7. **Prerequisites**: List any courses or skills required before taking this course
+3. **Course Category**: Choose the relevant skill category
+4. **Scope**: Select the appropriate scope (Entire Organisation, Specific Departments, Specific Teams)
 
-![Course Details Form](../img/screenshots/courses/create-course.png)
+<div
+  id="howdygo-embed"
+  style={{
+    width: '100%',
+    maxWidth: '1440px',
+    backgroundColor: '#ffffff',
+    border: '1px solid #e2e8f0',
+    borderRadius: '12px',
+    overflow: 'hidden',
+    boxShadow: '0px 0px 1px rgba(45, 55, 72, 0.05), 0px 4px 8px rgba(45, 55, 72, 0.1)'
+  }}
+>
+  <script src="https://js.howdygo.com/v1.2.1/index.js"></script>
+  <div
+    id="howdygo-wrapper"
+    style={{
+      position: 'relative',
+      width: '100%',
+      height: '0',
+      paddingBottom: 'calc(54.02777777777777% + 40px)'
+    }}
+  >
+    <iframe
+      id="howdygo-frame"
+      src="https://app.howdygo.com/prescreen-embed/ff13a1a2-72dc-489b-be09-7f74b6a5151b?mobileStrategy=inline&launchButton=Create+a+New+Course"
+      frameBorder="0"
+      scrolling="no"
+      allow="clipboard-write"
+      webkitAllowFullScreen
+      mozAllowFullScreen
+      allowFullScreen
+      style={{
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        width: '100%',
+        height: '100%'
+      }}
+    />
+  </div>
+</div>
 
 ### Step 3: Add Course Content
 
 Build your course content using the content editor:
 
-1. Click the **Add Module** button to create course sections
-2. For each module:
-   - Add a module title and description
-   - Upload materials (PDFs, videos, presentations)
-   - Create quizzes to test knowledge retention
+- For each module you have the following options:
+  - Provide an external link to the course material resourses
+  - Upload materials (PDFs)
+  - Drag and drop your preferred courses cover image or use our best quality theme images
 
-<!-- ![Adding Course Content](/img/screenshots/courses/create-course-choose-add-quiz.png) -->
-
-### Step 4: Set Completion Requirements
+### Step 4: Add Quiz Content
 
 Define what agents need to complete to finish the course:
 
-1. Minimum quiz score requirements
-2. Required modules
-3. Time-based requirements (if applicable)
+1. Create questions for your course assessment
+2. We support three types of questions: Short, Long Paragraphs and Multiple Choice questions
+3. Provide the points/score for each question in this section
+4. You also have the option to selected the expected correct answer for Multiple Choice questions
+5. Mark if a question is compulsory to answer by toggling the **Required** button
 
-<!-- ![Completion Requirements](/img/screenshots/courses/create-course-deadlines.png) -->
+### Step 5: Set Deadlines & Reminders
 
-### Step 5: Preview and Publish
+1. Set the number of **Quiz Retakes** which determines the number of times agents can retake the quiz if they fail.
+2. Set **Deadlines** for agents in Days, Weeks or Months. This is the time agents have to complete the course after assignment.
+3. Set **Course Nudges** for when to send reminders to agents to complete the course.
 
-1. Click **Preview** to see how your course will appear to agents
-2. Review all content for accuracy and completeness
-3. Click **Publish** to make the course available or **Save as Draft** to continue editing later
+### Step 6: Create Course
 
-<!-- ![Preview and Publish](/img/screenshots/courses/create-course-deadlines.png) -->
+Click **Create Course** to create course.
 
-## Viewing Course List
+:::warning
+Note that the platform will notify you if course creation is successful or if there were any issues with creating a course.
+:::
 
-The Course List provides an overview of all courses in your organization's library.
-
-### Accessing the Course List
-
-From the Courses Dashboard, click on the **Course Library** tab to view all courses.
-
-<!-- ![Course Library](/img/screenshots/courses/create-course-deadlines.png) -->
-
-### Course List Features
-
-The Course List view includes several useful features:
-
-1. **Search Bar**: Quickly find courses by name, category, or keyword
-2. **Filters**: Filter courses by status, category, difficulty, or completion rate
-3. **Sort Options**: Sort by creation date, popularity, or alphabetically
-4. **Statistics Overview**: See at-a-glance metrics for each course
-
-<!-- ![Course List Features](/img/screenshots/courses/create-course-deadlines.png) -->
-
-### Course Cards
+## Course Cards
 
 Each course is represented by a card showing:
 
-- Course title and thumbnail
-- Completion rate
-- Number of enrolled agents
-- Average rating
-- Difficulty level
-- Estimated duration
+- Course title and thumbnail/cover image
+- Date created
+- Scope
+- Category
 
 Click on any course card to view detailed information and management options.
 
-<!-- ![Course Cards](/img/screenshots/courses/create-course-deadlines.png) -->
-
 ## Managing Existing Courses
+
+![Course Management](../img/screenshots/team_lead/courses/team-lead-courses-edit.png)
 
 Effective course management ensures your training materials remain relevant and effective.
 
@@ -118,42 +136,62 @@ Effective course management ensures your training materials remain relevant and 
 Access a course's details page by clicking on its card in the Course List. From here, you can:
 
 1. **Edit Course**: Update content, requirements, or details
-2. **Assign to Agents**: Enroll specific agents or teams
-3. **View Analytics**: See completion rates, quiz scores, and feedback
-4. **Archive Course**: Remove from active rotation while preserving data
-5. **Duplicate Course**: Create a copy as a starting point for a new course
-
-<!-- ![Course Management](/img/screenshots/courses/create-course-deadlines.png) -->
-
-### Managing Enrollments
-
-Control who has access to each course:
-
-1. Click the **Enrollments** tab on the course details page
-2. Use the **Add Agents** button to enroll individual agents
-3. Use the **Add Team** button to enroll entire teams
-4. Set due dates for completion (optional)
-5. View progress for all enrolled agents
-
-<!-- ![Managing Enrollments](/img/screenshots/courses/create-course-deadlines.png) -->
-
-## Best Practices
-
-Follow these guidelines to create effective training courses:
-
-1. **Keep modules concise**: Aim for 5-10 minute sections to maintain attention
-2. **Use varied content types**: Mix videos, text, and interactive elements
-3. **Include real scenarios**: Base examples on actual customer interactions
-4. **Provide clear objectives**: State what agents will learn upfront
-5. **Test knowledge regularly**: Include quizzes throughout, not just at the end
-6. **Update regularly**: Review and refresh content at least quarterly
-7. **Collect feedback**: Use agent ratings and comments to improve content
+2. **View Course Content**: Description, Category, Traning Initiation Score Range, Course Details, Scope and Course Content (PDF/Link)
+3. **View Course Quiz**: See the quiz questions, scores
 
 ---
 
-## Need Help?
+## Interact with Coaching (Demo)
 
+Find below an interactive demo for Coaching in general.
+
+<div
+  id="howdygo-embed"
+  style={{
+    width: '100%',
+    maxWidth: '1440px',
+    backgroundColor: '#ffffff',
+    border: '1px solid #e2e8f0',
+    borderRadius: '12px',
+    overflow: 'hidden',
+    boxShadow: '0px 0px 1px rgba(45, 55, 72, 0.05), 0px 4px 8px rgba(45, 55, 72, 0.1)'
+  }}
+>
+  <script src="https://js.howdygo.com/v1.2.1/index.js"></script>
+  <div
+    id="howdygo-wrapper"
+    style={{
+      position: 'relative',
+      width: '100%',
+      height: '0',
+      paddingBottom: 'calc(54.02777777777777% + 40px)'
+    }}
+  >
+    <iframe
+      id="howdygo-frame"
+      src="https://app.howdygo.com/prescreen-embed/1619b05a-4e52-4d1b-a51b-32bc316fda86?mobileStrategy=inline&launchButton=Interact+with+Coaching"
+      frameBorder="0"
+      scrolling="no"
+      allow="clipboard-write"
+      webkitAllowFullScreen
+      mozAllowFullScreen
+      allowFullScreen
+      style={{
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        width: '100%',
+        height: '100%'
+      }}
+    />
+  </div>
+</div>
+
+---
+
+:::warning
 If you encounter any issues while creating or managing courses, please contact our support team:
 
 - Email: support@botlhale.ai
 - Support Portal: [support.botlhale.ai](https://support.botlhale.ai)
+  :::
