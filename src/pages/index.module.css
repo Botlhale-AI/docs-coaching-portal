@@ -25,8 +25,8 @@ body {
 
 .buttons .button {
   background-color: transparent;
-  border: 2px solid #e96733;
-  color: #e96733;
+  border: 2px solid #fc5f1e;
+  color: #fc5f1e;
   padding: 10px 20px;
   margin: 0 10px;
   text-decoration: none;
@@ -34,7 +34,7 @@ body {
 }
 
 .buttons .button:hover {
-  background-color: #e96733;
+  background-color: #fc5f1e;
   color: white;
-  border-color: #e96733;
+  border-color: #fc5f1e;
 }

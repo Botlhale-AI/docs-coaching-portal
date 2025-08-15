@@ -7,13 +7,13 @@
 @import url('@docsearch/css');
 
 :root {
-  --ifm-color-primary: #030190;
-  --ifm-color-primary-dark: #4338ca;
-  --ifm-color-primary-darker: #3730a3;
-  --ifm-color-primary-darkest: #312e81;
-  --ifm-color-primary-light: #6366f1;
-  --ifm-color-primary-lighter: #818cf8;
-  --ifm-color-primary-lightest: #a5b4fc;
+  --ifm-color-primary: #fc5f1e;
+  --ifm-color-primary-dark: #e54c1a;
+  --ifm-color-primary-darker: #d44c14;
+  --ifm-color-primary-darkest: #b33a0f;
+  --ifm-color-primary-light: #fd6f2e;
+  --ifm-color-primary-lighter: #fd7f3e;
+  --ifm-color-primary-lightest: #fd8f4e;
   
   --ifm-color-success: #10b981;
   --ifm-color-info: #0ea5e9;
@@ -36,8 +36,8 @@
   --vela-content-max-width: 900px;
 
   /* Home page specific variables */
-  --vela-hero-gradient-start: #e17a27;
-  --vela-hero-gradient-end: #6366f1;
+  --vela-hero-gradient-start: #fc5f1e;
+  --vela-hero-gradient-end: #fd8f4e;
   --vela-section-spacing: 6rem;
 
   /* Enhanced text colors for better visibility */
