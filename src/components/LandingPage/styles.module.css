@@ -85,9 +85,14 @@
   border-radius: 30px;
   font-size: 0.9rem;
   font-weight: 500;
-  background: var(--ifm-color-emphasis-200);
-  color: var(--ifm-color-emphasis-700);
+  background: var(--primary-gradient);
+  color: #031019;
   letter-spacing: 0.02em;
+}
+
+/* Dark mode override for tagline */
+html[data-theme='dark'] .tagline {
+  color: white;
 }
 
 .heroTitle {
