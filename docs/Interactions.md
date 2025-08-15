@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: Interactions
+title: Interactions (Team Lead View)
 # description: Review your call recordings and chat interactions with detailed analysis and performance metrics
 ---
 

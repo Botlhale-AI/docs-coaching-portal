@@ -1,11 +1,13 @@
 ---
 title: Preferences (Team Lead View)
-description: Customize your portal settings and manage notification preferences
+# description: Customize your portal settings and manage notification preferences
 ---
 
-# Preferences (Team Lead View)
+
 
 Customize your coaching portal experience with personalized settings, notification preferences, and dashboard configurations to optimize your team management workflow.
+
+---
 
 ## Overview
 

@@ -1,9 +1,8 @@
 ---
 title: Dashboard (Team Lead View)
-description: The Team Lead Dashboard provides a comprehensive overview of your team's performance metrics, allowing you to monitor progress, identify areas for improvement, and track trends over time.
+# description: The Team Lead Dashboard provides a comprehensive overview of your team's performance metrics, allowing you to monitor progress, identify areas for improvement, and track trends over time.
 ---
 
-# Dashboard (Team Lead View)
 
 The Team Lead Dashboard provides a comprehensive overview of your team's performance metrics, allowing you to monitor progress, identify areas for improvement, and track trends over time.
 

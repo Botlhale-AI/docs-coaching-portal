@@ -1,17 +1,17 @@
 ---
 sidebar_position: 2
-title: Courses
+title: Courses (Team Lead View)
 ---
 
 The Courses section allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library.
 
-## Table of Contents
+<!-- ## Table of Contents
 
 - [Accessing the Courses Overview](#accessing-the-courses-dashboard)
 - [Creating a New Course](#creating-a-new-course)
 - [Viewing Course List](#viewing-course-list)
 - [Managing Existing Courses](#managing-existing-courses)
-- [Best Practices](#best-practices)
+- [Best Practices](#best-practices) -->
 
 ## Courses Overview
 

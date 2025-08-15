@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Dashboard
+title: Dashboard (Agent View)
 # description: The Agent Dashboard provides a comprehensive overview of your individual performance metrics, allowing you to monitor your progress, identify areas for improvement, and track trends over time.
 ---
 

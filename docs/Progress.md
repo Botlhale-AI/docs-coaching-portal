@@ -1,12 +1,12 @@
 ---
 title: Progress Tracking (Team Lead View)
-description: Monitor your team's learning progress, track course completions, and analyze development trends to ensure effective coaching and skill development across your organization.
+# description: Monitor your team's learning progress, track course completions, and analyze development trends to ensure effective coaching and skill development across your organization.
 ---
 
-# Progress Tracking (Team Lead View)
 
 Monitor your team's learning progress, track course completions, and analyze development trends to ensure effective coaching and skill development across your organization.
 
+---
 ![Progress Dashboard](/img/progress.png)
 
 ## Overview

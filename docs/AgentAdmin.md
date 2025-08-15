@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: Admin
+title: Admin (Agent View)
 # description: Notifications and account settings
 ---
 

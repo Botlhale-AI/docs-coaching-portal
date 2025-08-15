@@ -1,5 +1,5 @@
 ---
-title: My Awards
+title: Awards (Agent View)
 # description: View and manage your performance recognitions and achievements
 ---
 
