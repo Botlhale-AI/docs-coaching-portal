@@ -1,208 +1,111 @@
 ---
-sidebar_position: 3
-title: Progress Tracking (Agent View)
-description: Track your learning journey, monitor skill development, and celebrate achievements
+title: Progress Tracking (Team Lead View)
+description: Monitor your team's learning progress, track course completions, and analyze development trends to ensure effective coaching and skill development across your organization.
 ---
 
-# Progress Tracking - Agent View
+# Progress Tracking (Team Lead View)
 
-As an agent, track your development journey, monitor skill acquisition, and celebrate achievements as you advance through your personalized learning path.
+Monitor your team's learning progress, track course completions, and analyze development trends to ensure effective coaching and skill development across your organization.
 
-## Your Personal Learning Dashboard
+![Progress Dashboard](/img/progress.png)
 
-Your Progress dashboard provides a comprehensive overview of your individual learning journey, displaying:
+## Overview
 
-- **Course Completion Rates**: Visual indicators showing percentage of your completed courses
-- **Skill Development**: Charts mapping your progress in different skill areas
-- **Achievement Badges**: Recognition of your milestones and accomplishments
-- **Learning Streaks**: Tracking of your consecutive days of learning activity
+The Progress Tracking dashboard provides comprehensive visibility into agent learning activities, allowing you to:
 
-![Progress Dashboard]
+- Monitor individual agent progress across assigned courses
+- Track completion rates and performance trends
+- Identify agents who may need additional support
+- Analyze team-wide learning effectiveness
 
-> **Agent Note**: This dashboard shows your personal performance metrics. Your team lead can view team-wide analytics through their separate dashboard.
+## Progress Dashboard Interface
 
-## My Skill Development Metrics
+The progress interface provides several key tools for managing and monitoring agent development:
 
-### Current Skill Levels
+### Date Range Filter
 
-Your current proficiency across core competency areas is displayed in an easy-to-read radar chart. Areas include:
+Located at the top right of the dashboard, the **Date Range** filter allows you to analyze progress over specific time periods:
 
-| Skill Area           | Current Level | Target Level | Progress |
-| -------------------- | ------------- | ------------ | -------- |
-| Customer Interaction | Advanced      | Expert       | 75%      |
-| Product Knowledge    | Intermediate  | Advanced     | 60%      |
-| Problem Resolution   | Advanced      | Expert       | 80%      |
-| Technical Skills     | Basic         | Intermediate | 40%      |
-| Communication        | Advanced      | Expert       | 85%      |
+- **Custom Date Range**: Select start and end dates (e.g., "30/06/2025 - 31/07/2025")
+- **Quick Filters**: Choose from preset options for common time periods
+- **Real-time Updates**: All progress data automatically updates when you change the date range
 
-### My Skill Growth Over Time
+### Search Agent Functionality
 
-Track your personal progress over weeks and months with detailed growth charts that show:
+Use the **Search Agent** field on the left side to quickly locate specific agents:
 
-- Month-by-month skill development
-- Areas of accelerated growth
-- Recommended focus areas based on your performance
+- **Search by Name**: Type agent names to filter the progress table
+- **Real-time Filtering**: Results update as you type
+- **Clear Search**: Reset filters to view all agents
 
-## My Achievement Badges
+### Sort By and Filter Controls
 
-Celebrate your personal accomplishments with achievement badges that mark important milestones in your learning journey.
+The interface includes **Sort By** and **Filter** options located in the top right area:
 
-### Recently Earned
+- **Sort By**: Organize data by different criteria (Agent, Course, Status, Date, etc.)
+- **Filter**: Apply specific filters to narrow down the displayed results
 
-<div className="badge-container">
-  <div className="badge">
-    <img src="/img/badges/quick-learner.svg" alt="Quick Learner Badge" />
-    <span>Quick Learner</span>
-    <p>Completed 5 courses in your first month</p>
-  </div>
-  
-  <div className="badge">
-    <img src="/img/badges/persistent.svg" alt="Persistence Badge" />
-    <span>Persistence</span>
-    <p>Maintained a 14-day learning streak</p>
-  </div>
-  
-  <div className="badge">
-    <img src="/img/badges/problem-solver.svg" alt="Problem Solver Badge" />
-    <span>Problem Solver</span>
-    <p>Successfully completed advanced troubleshooting scenarios</p>
-  </div>
-</div>
+## Agent Progress Table
 
-### Available Badges
+The main table displays comprehensive progress information with the following columns:
 
-Explore badges you can earn through continued learning and practice:
+| Column | Description |
+|--------|-------------|
+| **Agent** | Agent name (e.g., "Agent Jane") |
+| **Assigned Course** | Course title (e.g., "Claim process") |
+| **Status** | Current completion status with color-coded indicators |
+| **Date Assigned** | When the course was assigned (e.g., "10/07/2025") |
+| **Due Date** | Course completion deadline (e.g., "14/07/2025") |
+| **Initiation Score** | Agent's baseline score before starting (e.g., "47%") |
+| **Score** | Current or final assessment score |
 
-- **Knowledge Master**: Complete all courses in a learning path
-- **Team Player**: Participate in 5 group learning sessions
-- **Feedback Champion**: Provide constructive feedback on 10 courses
-- **Consistent Performer**: Maintain an 80%+ score across all assessments
-- **Innovation Pioneer**: Submit 3 improvement suggestions that get implemented
+### Status Indicators
 
-## My Learning Paths Progress
+Progress statuses are clearly marked with color-coded indicators:
 
-Monitor your advancement through structured learning paths designed to build expertise in specific domains.
+- **Complete** - Shown with green status indicator for successfully finished courses
+- **In Progress** - Yellow/orange indicator for courses currently being worked on
+- **Not Started** - Gray indicator for assigned but not yet begun courses
 
-### Customer Service Excellence Path
+## Managing Progress Data
 
-```mermaid
-graph LR
-    A[Basics of Customer Service] -->|Completed| B[Active Listening Skills]
-    B -->|Completed| C[Conflict Resolution]
-    C -->|In Progress| D[Customer Psychology]
-    D --> E[Advanced Service Techniques]
-    style A fill:#c3e6cb,stroke:#82d18b
-    style B fill:#c3e6cb,stroke:#82d18b
-    style C fill:#c3e6cb,stroke:#82d18b
-    style D fill:#ffecb5,stroke:#ffda79
-```
+### Filtering and Search
 
-### Technical Knowledge Path
+**Quick Search**:
 
-```mermaid
-graph LR
-    A[Product Fundamentals] -->|Completed| B[Basic Troubleshooting]
-    B -->|In Progress| C[Advanced Problem Solving]
-    C --> D[System Integration]
-    D --> E[Technical Leadership]
-    style A fill:#c3e6cb,stroke:#82d18b
-    style B fill:#ffecb5,stroke:#ffda79
-```
+- Use the Search Agent field to instantly filter by agent name
+- Results update in real-time as you type
 
-## My Performance Assessments
+**Advanced Filtering**:
 
-Regular assessments help gauge your knowledge retention and application skills.
+- Apply multiple filter criteria simultaneously
+- Filter by status, course type, date ranges, or performance levels
+- Save frequently used filter combinations
 
-### Recent Assessment Scores
+**Sorting Options**:
 
-| Assessment                      | Score | Team Average | My Percentile |
-| ------------------------------- | ----- | ------------ | ------------- |
-| Customer Interaction Simulation | 92%   | 78%          | 95th          |
-| Product Knowledge Test          | 85%   | 80%          | 70th          |
-| Troubleshooting Scenario        | 88%   | 75%          | 85th          |
-| Communication Assessment        | 95%   | 82%          | 98th          |
+- Sort by any column in ascending or descending order
+- Multiple sort criteria for complex data organization
+- Visual indicators show current sort status
 
-### My Improvement Areas
+### Data Analysis
 
-Based on your assessment results, we recommend focusing on:
+**Performance Tracking**:
 
-1. **Technical knowledge expansion** - Complete the Advanced Troubleshooting module
-2. **Objection handling techniques** - Review customer psychology materials
-3. **Time management skills** - Take the optional efficiency workshop
+- Compare initiation scores with final scores to measure improvement
+- Identify trends in course completion times
+- Monitor deadline adherence across the team
 
-## My Goal Setting
+**Progress Monitoring**:
 
-Set personal learning goals to stay motivated and focused on continuous improvement.
-
-### Current Goals
-
-- Complete Customer Psychology module by June 15
-- Achieve Advanced certification in Product Knowledge by Q3
-- Improve average assessment scores to 90%+ by year-end
-- Earn the Knowledge Master badge in Customer Service path
-
-### Setting New Goals
-
-1. Click the "Add Goal" button in your Progress dashboard
-2. Select a goal type: Course Completion, Skill Development, or Certification
-3. Define your target achievement level and deadline
-4. Add optional milestones to track progress
-
-## Coaching Feedback
-
-Your progress data is shared with your coach to facilitate targeted guidance and personalized feedback.
-
-### Recent Coaching Notes
-
-> "Great progress on customer interaction skills. Consider focusing more on technical knowledge to achieve a more balanced skill profile. Your active listening improvements are particularly notable."
->
-> — Coach Michael, May 2023
-
-### Request Feedback
-
-Use the "Request Feedback" button to ask for specific guidance from your coach on:
-
-- Recent assessment results
-- Skill development priorities
-- Career advancement strategies
-
-## My Progress Reports
-
-Generate comprehensive progress reports to share with managers or include in performance reviews.
-
-1. Navigate to the Export section of your Progress dashboard
-2. Select the date range and data points to include
-3. Choose PDF or Excel format
-4. Download or share your personalized report
-
-## My Interactions History
-
-### Recent Calls Performance
-
-| Date       | Duration | Customer Satisfaction | Quality Score | Key Topics                 |
-| ---------- | -------- | --------------------- | ------------- | -------------------------- |
-| 2023-05-15 | 12:34    | 4.5/5                 | 92%           | Billing, Technical Support |
-| 2023-05-14 | 8:45     | 4.8/5                 | 95%           | Product Information        |
-| 2023-05-13 | 15:22    | 4.2/5                 | 88%           | Complaint Resolution       |
-
-### Recent Chats Performance
-
-| Date       | Duration | Customer Satisfaction | Response Time | Resolution Rate |
-| ---------- | -------- | --------------------- | ------------- | --------------- |
-| 2023-05-15 | 25:30    | 4.6/5                 | 45s           | 100%            |
-| 2023-05-14 | 18:15    | 4.9/5                 | 32s           | 100%            |
-| 2023-05-13 | 32:45    | 4.3/5                 | 52s           | 95%             |
-
-## Data Privacy
-
-Your progress data is private by default. You can control what information is shared with:
-
-- Your assigned coach (default: full access)
-- Team managers (default: summary statistics only)
-- Learning community (default: badges and achievements only)
-
-Adjust your privacy settings in the Account section.
+- Track agents approaching deadlines
+- Identify courses with low completion rates
+- Monitor overall team learning velocity
 
 ---
 
-> **Team Lead Features**: If you're a team lead looking to manage team progress and create courses, please access the Team Lead portal through the main navigation.
+> **Maximize Learning Effectiveness**: Regular progress monitoring combined with targeted coaching interventions leads to improved agent performance and higher course completion rates. Use the insights to guide your team toward continuous learning and development.
+
+---
+
+*Last updated on Jul 22, 2025 by athenkosi-cetyana*

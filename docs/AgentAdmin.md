@@ -1,10 +1,8 @@
 ---
 sidebar_position: 5
 title: Admin
-description: Notifications and account settings
+# description: Notifications and account settings
 ---
-
-# Admin - Agent View
 
 The Admin section serves as your account management center, including both communications and settings management. This area helps you stay connected with important updates and maintain control over your account security and preferences.
 

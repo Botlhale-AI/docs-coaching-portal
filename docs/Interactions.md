@@ -1,10 +1,8 @@
 ---
 sidebar_position: 4
 title: Interactions
-description: Review your call recordings and chat interactions with detailed analysis and performance metrics
+# description: Review your call recordings and chat interactions with detailed analysis and performance metrics
 ---
-
-# Interactions - Agent View
 
 As an agent, view and analyze your call recordings and chat interactions to understand your performance and identify areas for improvement.
 

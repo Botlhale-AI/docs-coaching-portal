@@ -1,9 +1,12 @@
 ---
 sidebar_position: 1
 title: Dashboard
+# description: The Agent Dashboard provides a comprehensive overview of your individual performance metrics, allowing you to monitor your progress, identify areas for improvement, and track trends over time.
 ---
 
-## Dashboard Overview
+The Agent Dashboard provides a comprehensive overview of your individual performance metrics, allowing you to monitor your progress, identify areas for improvement, and track trends over time.
+
+## Overview
 
 Your agent dashboard provides a comprehensive view of your individual performance metrics and the average agent performance in your team, department or organisation. Everything is designed to help you understand your current standing and identify areas for growth across the different categories.
 
