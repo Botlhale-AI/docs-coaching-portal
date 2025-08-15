@@ -13,7 +13,7 @@ The Courses section allows team leads to create, manage, and assign training mat
 - [Managing Existing Courses](#managing-existing-courses)
 - [Best Practices](#best-practices) -->
 
-## Courses Overview
+## Overview
 
 Navigating to the Courses display a list of Courses which includes several useful features:
 

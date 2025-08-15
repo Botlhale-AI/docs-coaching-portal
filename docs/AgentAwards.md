@@ -6,7 +6,7 @@ title: Awards (Agent View)
 
 The Awards section is where you can view all the recognition you've received over time. This serves as your personal achievement gallery, showcasing your performance milestones and professional accomplishments.
 
-## Awards Overview
+## Overview
 
 Your awards represent recognition for excellent performance, skill development, and contribution to team success. Each award reflects specific achievements in your role and professional growth.
 

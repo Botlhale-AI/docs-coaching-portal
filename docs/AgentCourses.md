@@ -5,7 +5,7 @@ title: Courses (Agent View)
 
 The Courses section is where you can manage and track your learning progress. All your assigned training materials, ongoing courses, and completed certifications are organised here for easy access and monitoring.
 
-## Course Overview
+## Overview
 
 Your courses are organised by status to help you prioritize your learning activities:
 
