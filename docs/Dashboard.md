@@ -24,23 +24,13 @@ Use the **Date Range** filter at the top of the dashboard to analyze performance
 
 ### Category Scores
 
-The dashboard displays performance metrics across key evaluation categories:
+Your dashboard shows performance metrics across different evaluation categories. The specific categories you see will depend on how your company has set up the system.
 
-#### Customer Care
+Common categories include:
 
-Monitor how well your team handles customer interactions:
+**Customer Care** – How well agents handle customer interactions (e.g., average score, performance variation, trends)
 
-- **Average Performance**: Overall team score in customer service
-- **Individual Variations**: Range of performance across team members
-- **Trend Analysis**: Performance changes over the selected time period
-
-#### Compliance
-
-Track adherence to company policies and procedures:
-
-- **Policy Adherence**: How well agents follow established protocols
-- **Regulatory Compliance**: Meeting industry standards and requirements
-- **Documentation Accuracy**: Proper recording and documentation practices
+**Compliance** – Adherence to company policies, regulatory standards, and documentation accuracy
 
 ### Auto Fails
 
