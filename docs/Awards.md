@@ -54,7 +54,7 @@ Complete the award creation form with the following information:
 
 #### Step 2: Award Message
 
-![Award Message](/img/awards3.png)
+![Award Message](/img/awards5.png)
 
 **Award Message**: Enter a personalized message that will be sent to agents along with their award:
 
