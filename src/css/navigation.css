@@ -121,7 +121,7 @@
 
 /* Dark mode override for signup button */
 html[data-theme='dark'] .auth-button-signup {
-  color: white;
+  color: #031019;
 }
 
 /* Enhanced Documentation Styles */
