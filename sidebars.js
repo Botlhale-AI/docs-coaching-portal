@@ -135,23 +135,23 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Awards',
-      collapsible: true,
-      collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'Awards'
-      },
-      items: [],
-    },
-    {
-      type: 'category',
       label: 'Courses',
       collapsible: true,
       collapsed: false,
       link: {
         type: 'doc',
         id: 'Courses'
+      },
+      items: [],
+    },
+    {
+      type: 'category',
+      label: 'Awards',
+      collapsible: true,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'Awards'
       },
       items: [],
     },

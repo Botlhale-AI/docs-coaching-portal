@@ -30,18 +30,19 @@ const config = {
             defaultSidebarItemsGenerator,
             ...args
           }) {
-            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            // Determine which sidebar to use based on the current page
+            const currentDoc = args.docs?.find(doc => doc.id === args.item?.id);
+            const isAgentPage = currentDoc?.id?.includes('Agent');
             
-            // Filter sidebar items based on the current page/role
-            const currentPath = args.docs?.find(doc => doc.id === args.item?.id)?.permalink;
-            
-            if (currentPath?.includes('Agent')) {
-              // Return agent-specific sidebar
-              return args.item?.sidebar === 'agentSidebar' ? sidebarItems : [];
+            // Set the appropriate sidebar
+            if (isAgentPage) {
+              args.item = { ...args.item, sidebar: 'agentSidebar' };
             } else {
-              // Return team lead sidebar for default pages
-              return args.item?.sidebar === 'teamLeadSidebar' ? sidebarItems : sidebarItems;
+              args.item = { ...args.item, sidebar: 'teamLeadSidebar' };
             }
+            
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            return sidebarItems;
           },
         },
         blog: false,

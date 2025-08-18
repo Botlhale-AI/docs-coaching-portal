@@ -1,4 +1,6 @@
 ---
+sidebar_position: 3
+sidebar: teamLeadSidebar
 title: Awards Management (Team Lead View)
 # description: As a team lead, the Awards section empowers you to recognize outstanding performance, motivate your team, and track recognition patterns to build a positive workplace culture.
 ---

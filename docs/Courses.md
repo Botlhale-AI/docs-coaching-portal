@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+sidebar: teamLeadSidebar
 title: Courses (Team Lead View)
 ---
 
