@@ -44,6 +44,8 @@ This setting determines the scope of data used for:
 
 Set the frequency of automatic evaluation cycles used in agent coaching. This determines how often awards and training courses are reviewed.
 
+![Preferences Evaluation](../img/screenshots/team_lead/preferences/evaluation-cycle.png)
+
 ### Cycle Configuration
 
 **Repeat every**: Set the frequency interval (1-365)
@@ -104,6 +106,9 @@ This setting affects:
 
 Control what interaction data agents can access in their personal portals.
 
+![Preferences Agent View](../img/screenshots/team_lead/preferences/agent-view.png)
+
+
 ### Interaction Visibility
 
 **Which interactions would you like agents to be able to view:**
@@ -120,7 +125,7 @@ Control what interaction data agents can access in their personal portals.
   - Maintains quality standards in self-review
   - Prevents confusion from unprocessed data
 
-### Permission Benefits
+<!-- ### Permission Benefits
 
 **All Interactions Access**:
 
@@ -134,7 +139,7 @@ Control what interaction data agents can access in their personal portals.
 - Ensures consistent feedback quality
 - Focuses on meaningful coaching insights
 - Reduces information overload
-- Maintains professional review standards
+- Maintains professional review standards -->
 
 ## Configuration Best Practices
 
@@ -149,6 +154,7 @@ Control what interaction data agents can access in their personal portals.
 - **New Teams**: Begin with weekly cycles for close monitoring
 - **Established Teams**: Monthly cycles may be sufficient for stable performance
 - **Performance Issues**: Increase frequency to daily for intensive coaching periods
+
 
 ### Course Pass Rate Considerations
 
@@ -171,6 +177,8 @@ After configuring your settings:
 3. Verify course pass rates match your quality standards
 4. Confirm agent permissions support your management approach
 5. Click **Save** to apply all changes
+
+![Preferences Save](../img/screenshots/team_lead/preferences/save.png)
 
 > **Important**: Preference changes take effect immediately and will impact ongoing evaluations and agent access. Consider communicating significant changes to your team.
 

@@ -142,54 +142,6 @@ Access a course's details page by clicking on its card in the Course List. From 
 
 ---
 
-## Interact with Coaching (Demo)
-
-Find below an interactive demo for Coaching in general.
-
-<div
-  id="howdygo-embed"
-  style={{
-    width: '100%',
-    maxWidth: '1440px',
-    backgroundColor: '#ffffff',
-    border: '1px solid #e2e8f0',
-    borderRadius: '12px',
-    overflow: 'hidden',
-    boxShadow: '0px 0px 1px rgba(45, 55, 72, 0.05), 0px 4px 8px rgba(45, 55, 72, 0.1)'
-  }}
->
-  <script src="https://js.howdygo.com/v1.2.1/index.js"></script>
-  <div
-    id="howdygo-wrapper"
-    style={{
-      position: 'relative',
-      width: '100%',
-      height: '0',
-      paddingBottom: 'calc(54.02777777777777% + 40px)'
-    }}
-  >
-    <iframe
-      id="howdygo-frame"
-      src="https://app.howdygo.com/prescreen-embed/1619b05a-4e52-4d1b-a51b-32bc316fda86?mobileStrategy=inline&launchButton=Interact+with+Coaching"
-      frameBorder="0"
-      scrolling="no"
-      allow="clipboard-write"
-      webkitAllowFullScreen
-      mozAllowFullScreen
-      allowFullScreen
-      style={{
-        position: 'absolute',
-        top: '0',
-        left: '0',
-        width: '100%',
-        height: '100%'
-      }}
-    />
-  </div>
-</div>
-
----
-
 :::warning
 If you encounter any issues while creating or managing courses, please contact our support team:
 
