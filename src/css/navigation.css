@@ -124,6 +124,11 @@ html[data-theme='dark'] .auth-button-signup {
   color: #031019;
 }
 
+/* Hide GitHub repository link */
+.header-github-link {
+  display: none !important;
+}
+
 /* Enhanced Documentation Styles */
 .theme-doc-markdown {
   font-size: 1rem;

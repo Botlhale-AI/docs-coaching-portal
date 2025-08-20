@@ -92,7 +92,7 @@
 
 /* Dark mode override for tagline */
 html[data-theme='dark'] .tagline {
-  color: white;
+  color: #031019;
 }
 
 .heroTitle {
@@ -270,13 +270,22 @@ html[data-theme='dark'] .tagline {
   transform: scale(1.05);
 }
 
+/* Active role button description should be dark */
+.roleButtonActive .roleButtonDescription {
+  color: #031019 !important;
+}
+
 /* Dark mode override for active role button */
 html[data-theme='dark'] .roleButtonActive {
-  color: white !important;
+  color: #031019 !important;
 }
 
 html[data-theme='dark'] .roleButtonActive i {
-  color: white !important;
+  color: #031019 !important;
+}
+
+html[data-theme='dark'] .roleButtonActive .roleButtonDescription {
+  color: #031019 !important;
 }
 
 .roleButtonActive:hover {
@@ -292,11 +301,11 @@ html[data-theme='dark'] .roleButtonActive i {
 
 /* Dark mode hover override */
 html[data-theme='dark'] .roleButtonActive:hover {
-  color: white !important;
+  color: #031019 !important;
 }
 
 html[data-theme='dark'] .roleButtonActive:hover i {
-  color: white !important;
+  color: #031019 !important;
 }
 
 .roleButtonContent {
@@ -311,13 +320,13 @@ html[data-theme='dark'] .roleButtonActive:hover i {
 
 .roleButtonDescription {
   font-size: 0.85rem;
-  color: #031019;
+  color: var(--ifm-color-emphasis-600);
   font-weight: normal;
 }
 
 /* Dark mode override for role button descriptions */
 html[data-theme='dark'] .roleButtonDescription {
-  color: var(--ifm-color-emphasis-600);
+  color: var(--ifm-color-emphasis-400);
 }
 
 /* Focus styles for accessibility */
@@ -396,7 +405,7 @@ html[data-theme='dark'] .roleButtonDescription {
 
 /* Dark mode override for dashboard title */
 html[data-theme='dark'] .dashboardTitle {
-  color: white;
+  color: #031019;
 }
 
 .dashboardBody {
@@ -672,7 +681,7 @@ html[data-theme='dark'] .dashboardTitle {
   font-size: 1.1rem;
   position: relative;
   z-index: 2;
-  color: white;
+  color: #031019;
   box-shadow: 0 4px 12px rgba(252, 95, 30, 0.3);
 }
 
@@ -1096,7 +1105,7 @@ html[data-theme='dark'] .dashboardTitle {
 
 .courseCardHeader {
   background: linear-gradient(135deg, var(--primary-color) 0%, #e54c1a 100%);
-  color: white;
+  color: #031019;
   padding: 1rem 0.75rem 0.875rem;
   position: relative;
   display: flex;
@@ -1114,7 +1123,7 @@ html[data-theme='dark'] .dashboardTitle {
   font-weight: 600;
   text-align: center;
   line-height: 1.2;
-  color: white;
+  color: #031019;
   word-wrap: break-word;
   hyphens: auto;
   max-width: 100%;
@@ -1201,7 +1210,7 @@ html[data-theme='dark'] .dashboardTitle {
 
 .continueCourseBtn {
   background: linear-gradient(135deg, var(--primary-color) 0%, #e54c1a 100%);
-  color: white;
+  color: #031019;
   border: none;
   padding: 0.625rem 0.75rem;
   font-weight: 600;
@@ -1413,11 +1422,11 @@ html[data-theme='dark'] .dashboardTitle {
 
 /* Dark mode override for portal button */
 html[data-theme='dark'] .portalButton {
-  color: white;
+  color: #031019;
 }
 
 html[data-theme='dark'] .portalButton:hover {
-  color: white;
+  color: #031019;
 }
 
 .portalButton i {
