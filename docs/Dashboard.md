@@ -76,12 +76,12 @@ The dashboard includes several accordion-style chart sections:
 - **Department Performance**: Broader departmental view including multiple teams
 - **Agent Department**: Cross-departmental agent performance comparison
 
-### Interactive Features
+<!-- ### Interactive Features
 
 #### Drill-Down Capabilities
 
 - **Click on Data Points**: Access detailed breakdowns of specific metrics
-- **Zoom In or Resize**: Ability to resize charts to drill down and view data accurately
+- **Zoom In or Resize**: Ability to resize charts to drill down and view data accurately -->
 
 ---
 
