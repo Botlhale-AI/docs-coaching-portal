@@ -62,6 +62,8 @@ Filter awards by category to view specific types of recognition:
 - Team collaboration recognitions
 - Special milestone awards
 
+![Award Date Rnage](../img/screenshots/agent_view/awards/date-range.png)
+
 ### Sort Options
 
 Sort your awards by:
@@ -70,6 +72,8 @@ Sort your awards by:
 - **Award Name** (alphabetical order)
 - **Category** (grouped by type)
 - **Awarding Authority** (by supervisor or team lead)
+
+![Award Date Rnage](../img/screenshots/agent_view/awards/sort.png)
 
 ## Award Details
 

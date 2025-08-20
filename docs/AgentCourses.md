@@ -70,6 +70,9 @@ Click **View Course Details** to open a detailed view of the course where you ca
 - Access course materials and resources
 - View quiz results and feedback
 
+![Courses Sort](../img/screenshots/agent_view/courses/view-material.png)
+
+
 ### Access Course Materials
 
 #### PDF Materials
@@ -90,7 +93,7 @@ When course content is web-based:
 3. Complete the material at your own pace
 4. Return to the portal to take any required quizzes
 
-![Courses Sort](../img/screenshots/agent_view/courses/view-material.png)
+
 
 ### Take Course Quizzes
 

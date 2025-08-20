@@ -21,6 +21,9 @@ The Admin section is divided into two main areas:
 
 The Notifications tab acts as your in-app communication center where you can view messages, updates, and alerts sent through the system. This ensures you never miss critical updates or important communications from your team.
 
+![Notifications](../img/screenshots/agent_view/admin/notifications.png)
+
+
 ## Settings
 
 The Settings tab allows you to view and manage your account information, ensuring your account remains secure and up to date with current details.

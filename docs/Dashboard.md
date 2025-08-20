@@ -24,6 +24,12 @@ Use the **Date Range** filter at the top of the dashboard to analyze performance
 - **Quick Filters**: Choose from preset options like "Last 7 days", "Last month", "Last quarter"
 - **Real-time Updates**: All metrics automatically update when you change the date range
 
+![Dashboard Date-Range](../img/screenshots/team_lead/dashboard/date-range.png)
+
+**Custom Date Range Filter (continued)**
+![Dashboard Date-Range-2](../img/screenshots/team_lead/progress/date-filter-detailed.png)
+
+
 ### Category Scores
 
 Your dashboard shows performance metrics across different evaluation categories. The specific categories you see will depend on how your company has set up the system.

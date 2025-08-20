@@ -7,7 +7,6 @@ title: Preferences (Team Lead View)
 
 Customize your coaching portal experience with personalized settings, notification preferences, and dashboard configurations to optimize your team management workflow.
 
----
 
 ## Overview
 

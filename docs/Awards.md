@@ -107,9 +107,13 @@ Use the date range selector to view awards within specific time periods:
 
 #### Filter Options
 
+![Awards Filter](../img/screenshots/team_lead/awards/filter.png)
+
 Apply additional filters to narrow down the awards view
 
 #### Sort Options
+
+![Awards Sort](../img/screenshots/team_lead/awards/sort.png)
 
 Sort the awards table by the attributes present on table.
 
@@ -121,7 +125,12 @@ Sort the awards table by the attributes present on table.
 - Certificates include agent details, award information, and official branding
 - Use for record-keeping or formal recognition ceremonies
 
+![Awards Download](../img/screenshots/team_lead/awards/download.png)
 ---
+
+**Certificate Sample**   
+
+![Awards Certificate](../img/screenshots/team_lead/awards/certificate.png)
 
 > **Build Recognition Culture**: Effective award programs boost team morale and performance. Use the analytics features to optimize your recognition strategy and create a culture of excellence that motivates continuous improvement.
 

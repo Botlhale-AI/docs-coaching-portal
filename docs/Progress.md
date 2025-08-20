@@ -6,14 +6,13 @@ title: Progress (Team Lead View)
 
 Monitor your team's learning progress, track course completions, and analyze development trends to ensure effective coaching and skill development across your organization.
 
----
 
 ## Overview
 
 The Progress Tracking dashboard provides comprehensive visibility into agent learning activities, allowing you to:
 
 - Monitor individual agent progress across assigned courses
-- Track completion rates and performance trends
+- Track completion statutes and performance trends
 - Identify agents who may need additional support
 - Analyze team-wide learning effectiveness
 
@@ -31,7 +30,7 @@ Located at the top of the dashboard, the **Date Range** filter allows you to ana
 
 ![Progress Date-Range](../img/screenshots/team_lead/progress/date-filter.png)
 
-**Custom Date Range Filter (continued)**
+**Date Range Filter (continued)**
 ![Progress Date-Range-2](../img/screenshots/team_lead/progress/date-filter-detailed.png)
 
 - **Custom Date Range**: Select start and end dates (e.g., "30/06/2025 - 31/07/2025")
