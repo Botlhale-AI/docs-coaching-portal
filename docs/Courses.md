@@ -4,41 +4,42 @@ sidebar: teamLeadSidebar
 title: Courses (Team Lead View)
 ---
 
-The Courses section allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library.
-
-<!-- ## Table of Contents
-
-- [Accessing the Courses Overview](#accessing-the-courses-dashboard)
-- [Creating a New Course](#creating-a-new-course)
-- [Viewing Course List](#viewing-course-list)
-- [Managing Existing Courses](#managing-existing-courses)
-- [Best Practices](#best-practices) -->
+The Courses section allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library, including troubleshooting common issues and best practices for effective course management.
 
 ## Overview
 
-Navigating to the Courses display a list of Courses which includes several useful features:
+Navigating to the Courses displays a comprehensive list of all available courses with several powerful management features:
 
 1. **Search Bar**: Quickly find courses by name, category, or keyword
-2. **Course Details Overview**: See at-a-glance metrics for each course - showing the Course Title, Description, Date Created, Categoty and Scope.
+2. **Course Details Overview**: See at-a-glance metrics for each course - showing the Course Title, Description, Date Created, Category and Scope
+3. **Bulk Actions**: Select multiple courses for batch operations
+4. **Advanced Filtering**: Filter by status, category, or creation date
 
 ![Courses Dashboard](../img/screenshots/team_lead/courses/courses-list.png)
 
 ## Creating a New Course
 
-Creating effective training materials is essential for agent development. Follow these steps to create a new course:
+Creating effective training materials is essential for agent development. Follow these detailed steps to create a new course that maximizes learning outcomes:
 
 ### Step 1: Navigate to Create Course Page
 
-From the Courses Overview page, click the **Create a New Course** card top lef tof the screen.
+From the Courses Overview page, click the **Create a New Course** card located at the top left of the screen. This will open the course creation wizard with multiple sections to guide you through the process.
 
 ### Step 2: Fill in Course Details
 
-Complete the course creation form with the following information:
+Complete the course creation form with comprehensive information:
 
-1. **Course Title**: Enter a clear, descriptive name for your course
-2. **Course Description**: Provide a comprehensive overview of what the course covers
-3. **Course Category**: Choose the relevant skill category
-4. **Scope**: Select the appropriate scope (Entire Organisation, Specific Departments, Specific Teams)
+1. **Course Title**: Enter a clear, descriptive name that agents will immediately understand (e.g., "Advanced Customer Service Techniques" rather than "CS101")
+2. **Course Description**: Provide a detailed overview covering:
+   - What the course teaches
+   - Who should take it
+   - Expected learning outcomes
+   - Time commitment required
+3. **Course Category**: Choose the most relevant skill category from the dropdown menu
+4. **Scope**: Select the appropriate scope based on your organizational structure:
+   - **Entire Organisation**: For company-wide training like compliance or general procedures
+   - **Specific Departments**: For department-specific skills like technical support or sales
+   - **Specific Teams**: For team-specific training like new hire onboarding
 
 <div
   id="howdygo-embed"
@@ -84,61 +85,80 @@ Complete the course creation form with the following information:
 
 ### Step 3: Add Course Content
 
-Build your course content using the content editor:
+Build your course content using the content editor with these considerations:
 
-- For each module you have the following options:
-  - Provide an external link to the course material resourses
-  - Upload materials (PDFs)
-  - Drag and drop your preferred courses cover image or use our best quality theme images
+**For each module, you have the following options:**
+
+- **External Links**: Provide direct links to web-based training materials, videos, or interactive content
+- **PDF Uploads**: Upload comprehensive training materials, manuals, or reference documents
+- **Cover Images**: Drag and drop your preferred course cover image or select from our curated theme images
+
+**Content Best Practices:**
+- Keep modules focused on single learning objectives
+- Include practical examples and real-world scenarios
+- Ensure content is accessible and easy to understand
+- Consider different learning styles (visual, auditory, kinesthetic)
 
 ### Step 4: Add Quiz Content
 
-Define what agents need to complete to finish the course:
+Define comprehensive assessment criteria that agents need to complete:
 
-1. Create questions for your course assessment
-2. We support three types of questions: Short, Long Paragraphs and Multiple Choice questions
-3. Provide the points/score for each question in this section
-4. You also have the option to selected the expected correct answer for Multiple Choice questions
-5. Mark if a question is compulsory to answer by toggling the **Required** button
+1. **Create Diverse Questions**: Mix different question types to assess various learning levels:
+   - **Short Answer**: For testing specific knowledge points
+   - **Long Paragraph**: For evaluating understanding and application
+   - **Multiple Choice**: For quick assessment of factual knowledge
+
+2. **Question Scoring**: Assign appropriate points based on question complexity.
+
+3. **Correct Answers**: For multiple choice questions, clearly mark the expected correct answer
+
+4. **Required Questions**: Toggle the **Required** button for critical questions that must be answered correctly
 
 ### Step 5: Set Deadlines & Reminders
 
-1. Set the number of **Quiz Retakes** which determines the number of times agents can retake the quiz if they fail.
-2. Set **Deadlines** for agents in Days, Weeks or Months. This is the time agents have to complete the course after assignment.
-3. Set **Course Nudges** for when to send reminders to agents to complete the course.
+Configure timeframes and support mechanisms:
+
+1. **Quiz Retakes**: Set the number of retake attempts (typically 2-3 for most courses)
+2. **Deadlines**: Establish realistic completion timelines:
+   - **Days**: For quick refresher courses (1-7 days)
+   - **Weeks**: For standard training (1-4 weeks)
+   - **Months**: For comprehensive programs (1-3 months)
+3. **Course Nudges**: Schedule nudges for when to send reminders to agents to complete the course.
 
 ### Step 6: Create Course
 
-Click **Create Course** to create course.
+Review all information for accuracy and completeness, then click **Create Course** to finalize.
 
 :::warning
-Note that the platform will notify you if course creation is successful or if there were any issues with creating a course.
+The platform will provide immediate feedback on course creation success or highlight any issues that need resolution before the course can be activated.
 :::
 
 ## Course Cards
 
-Each course is represented by a card showing:
+Each course is represented by an informative card showing:
 
-- Course title and thumbnail/cover image
-- Date created
-- Scope
-- Category
+- **Course title and thumbnail/cover image**: Visual identification
+- **Date created**: Creation timestamp for reference
+- **Scope**: Organizational reach of the course
+- **Category**: Skill area classification
+- **Status indicators**: Active, draft, or archived status
 
-Click on any course card to view detailed information and management options.
+Click on any course card to access detailed information and management options.
 
 ## Managing Existing Courses
 
 ![Course Management](../img/screenshots/team_lead/courses/team-lead-courses-edit.png)
 
-Effective course management ensures your training materials remain relevant and effective.
+Effective course management ensures your training materials remain relevant, engaging, and effective over time.
 
 ### Course Details Page
 
-Access a course's details page by clicking on its card in the Course List. From here, you can:
+Access comprehensive course information by clicking on any course card. From the details page, you can:
 
-1. **Edit Course**: Update content, requirements, or details
-2. **View Course Content**: Description, Category, Traning Initiation Score Range, Course Details, Scope and Course Content (PDF/Link)
-3. **View Course Quiz**: See the quiz questions, scores
+1. **Edit Course**: Update content, requirements, or administrative details
+2. **View Course Content**: Access description, category, training initiation score range, course details, scope, and course content (PDF/Link)
+3. **View Course Quiz**: Review quiz questions, scoring, and answer options
+
 
 ---
 
@@ -147,4 +167,4 @@ If you encounter any issues while creating or managing courses, please contact o
 
 - Email: support@botlhale.ai
 - Support Portal: [support.botlhale.ai](https://support.botlhale.ai)
-  :::
+:::
