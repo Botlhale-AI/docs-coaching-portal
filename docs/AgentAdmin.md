@@ -4,13 +4,13 @@ title: Admin (Agent View)
 # description: Notifications and account settings
 ---
 
-The Admin section serves as your account management center, including both communications and settings management. This area helps you stay connected with important updates and maintain control over your account security and preferences. This comprehensive guide will help you navigate your account settings and ensure you're making the most of the platform's administrative features.
+The Admin section serves as your account management centre, including both communications and settings management. This area helps you stay connected with important updates and maintain control over your account security and preferences. This comprehensive guide will help you navigate your account settings and ensure you're making the most of the platform's administrative features.
 
 ## Overview
 
 The Admin section is divided into two main areas that provide complete control over your account and communications:
 
-- **Notifications**: Your in-app communication center for staying informed
+- **Notifications**: Your in-app communication centre for staying informed
 - **Settings**: Account information and security management for maintaining control
 
 ![Admin Dashboard](../img/screenshots/agent_view/admin/admin.png)
@@ -19,7 +19,7 @@ The Admin section is divided into two main areas that provide complete control o
 
 ## Notifications
 
-The Notifications tab acts as your in-app communication center where you can view messages, updates, and alerts sent through the system. This ensures you never miss critical updates or important communications from your team, helping you stay informed and responsive to organizational needs.
+The Notifications tab acts as your in-app communication centre where you can view messages, updates, and alerts sent through the system. This ensures you never miss critical updates or important communications from your team, helping you stay informed and responsive to organisational needs.
 
 ![Notifications](../img/screenshots/agent_view/admin/notifications.png)
 
@@ -31,12 +31,12 @@ The Notifications tab acts as your in-app communication center where you can vie
 **Notification Management:**
 - **Read/Unread Status**: Track which notifications you've reviewed
 - **Action Items**: Notifications requiring your response or action
-- **Archive Options**: Organize and manage your notification history
+- **Archive Options**: Organise and manage your notification history
 
 **Best Practices:**
 - **Regular Check-ins**: Review notifications daily to stay current
 - **Action Tracking**: Address any notifications requiring your response
-- **Organization**: Archive or delete old notifications to maintain clarity
+- **Organisation**: Archive or delete old notifications to maintain clarity
 - **Priority Setting**: Focus on high-priority notifications first
 
 ## Settings
@@ -51,7 +51,7 @@ View your basic account information and ensure all details are current and accur
 
 - **Full Name**: Your complete name as it appears in the system
 - **Email**: Your primary email address for communications and login
-- **Current Organisation**: Your assigned organization within the platform
+- **Current Organisation**: Your assigned organisation within the platform
 - **Current Team**: Your current assigned team and reporting structure
 
 **Account Information Management:**
@@ -62,7 +62,7 @@ View your basic account information and ensure all details are current and accur
 
 **Information Security:**
 - **Data Protection**: Your personal information is protected according to company policies
-- **Access Limits**: Only authorized personnel can view your account details
+- **Access Limits**: Only authorised personnel can view your account details
 - **Privacy Controls**: You control what information is shared and displayed
 - **Audit Trail**: All account changes are logged for security purposes
 
@@ -202,5 +202,5 @@ Implement these security practices to protect your account:
 
 ---
 
-> **Keep Your Account Secure**: Regularly review and update your account settings to maintain security and ensure you receive important communications. Contact your Team Lead or QA support if you experience any issues with your account. Remember that account security is a shared responsibility between you and your organization, and proactive management helps protect both your personal information and company data.
+> **Keep Your Account Secure**: Regularly review and update your account settings to maintain security and ensure you receive important communications. Contact your Team Lead or QA support if you experience any issues with your account. Remember that account security is a shared responsibility between you and your organisation, and proactive management helps protect both your personal information and company data.
 

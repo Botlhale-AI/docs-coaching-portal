@@ -5,7 +5,7 @@ title: Dashboard (Team Lead View)
 # description: The Team Lead Dashboard provides a comprehensive overview of your team's performance metrics, allowing you to monitor progress, identify areas for improvement, and track trends over time.
 ---
 
-The Team Lead Dashboard provides a comprehensive overview of your team's performance metrics, allowing you to monitor progress, identify areas for improvement, and track trends over time. This powerful analytics tool gives you the insights needed to make data-driven decisions about team development and performance optimization.
+The Team Lead Dashboard provides a comprehensive overview of your team's performance metrics, enabling you to monitor progress, identify areas for improvement, and track trends over time. This powerful analytics tool gives you the insights needed to make data-driven decisions about team development and performance optimisation.
 
 ## Overview
 
@@ -17,7 +17,7 @@ Your dashboard displays key performance indicators across multiple categories, h
 
 ### Date Range Selection
 
-Use the **Date Range** filter at the top of the dashboard to analyze performance over specific time periods with flexible options:
+Use the **Date Range** filter at the top of the dashboard to analyse performance over specific time periods with flexible options:
 
 - **Custom Date Range**: Select specific start and end dates to focus on particular periods for detailed analysis
 - **Quick Filters**: Choose from preset options like "Last 7 days", "Last month", "Last quarter" for common reporting periods
@@ -36,7 +36,7 @@ Use the **Date Range** filter at the top of the dashboard to analyze performance
 
 ### Category Scores
 
-Your dashboard shows performance metrics across different evaluation categories that reflect your organization's specific quality standards and coaching priorities. The specific categories you see will depend on how your company has configured the system to align with business objectives.
+Your dashboard shows performance metrics across different evaluation categories that reflect your organisation's specific quality standards and coaching priorities. The specific categories you see will depend on how your company has configured the system to align with business objectives.
 
 Common categories include:
 
@@ -52,7 +52,7 @@ Common categories include:
 **Technical Skills** – Proficiency in using systems, tools, and technical knowledge:
 - System navigation efficiency
 - Technical problem-solving ability
-- Tool utilization rates
+- Tool utilisation rates
 - Knowledge application accuracy
 - Process adherence scores
 
@@ -112,7 +112,7 @@ The dashboard includes several accordion-style chart sections that can be expand
 - **Agent Department**: Cross-departmental agent performance comparison
   - Performance benchmarking across departments
   - Skill transfer opportunities between teams
-  - Organizational learning and knowledge sharing
+  - Organisational learning and knowledge sharing
   - Career development and advancement planning
 
 ### Interactive Features
@@ -124,7 +124,7 @@ The dashboard includes several accordion-style chart sections that can be expand
 
 ---
 
-> **Maximize Team Success**: Regular dashboard monitoring combined with targeted coaching interventions leads to sustained performance improvements. Use the insights from this comprehensive dashboard to guide your team toward excellence while maintaining focus on both individual growth and team objectives. Remember that effective dashboard utilization requires consistent attention, thoughtful interpretation, and commitment to data-driven decision making.
+> **Maximise Team Success**: Regular dashboard monitoring combined with targeted coaching interventions leads to sustained performance improvements. Use the insights from this comprehensive dashboard to guide your team toward excellence while maintaining focus on both individual growth and team objectives. Remember that effective dashboard utilisation requires consistent attention, thoughtful interpretation, and commitment to data-driven decision making.
 
 ---
 

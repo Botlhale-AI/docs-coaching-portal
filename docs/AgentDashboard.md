@@ -4,11 +4,11 @@ title: Dashboard (Agent View)
 # description: The Agent Dashboard provides a comprehensive overview of your individual performance metrics, allowing you to monitor your progress, identify areas for improvement, and track trends over time.
 ---
 
-The Agent Dashboard provides a comprehensive overview of your individual performance metrics, allowing you to monitor your progress, identify areas for improvement, and track trends over time. This powerful personal analytics tool gives you the insights needed to understand your performance position and guide your professional development journey.
+The Agent Dashboard provides a comprehensive overview of your individual performance metrics, enabling you to monitor your progress, identify areas for improvement, and track trends over time. This powerful personal analytics tool gives you the insights needed to understand your performance position and guide your professional development journey.
 
 ## Overview
 
-Your agent dashboard provides a comprehensive view of your individual performance metrics and the average agent performance in your team, department, or organization. Everything is designed to help you understand your current standing and identify areas for growth across different categories. This personalized view enables you to take ownership of your performance and make informed decisions about your development priorities.
+Your agent dashboard provides a comprehensive view of your individual performance metrics and the average agent performance in your team, department, or organisation. Everything is designed to help you understand your current standing and identify areas for growth across different categories. This personalised view enables you to take ownership of your performance and make informed decisions about your development priorities.
 
 ![Agent Dashboard](../img/screenshots/agent_view/dashboard/dashboard-overview.png)
 
@@ -16,7 +16,7 @@ Your agent dashboard provides a comprehensive view of your individual performanc
 
 ### Category Scores
 
-Track your individual score in multiple categories versus your team score to understand your relative performance position. This assists in your ability to identify areas of improvement and recognize your strengths across different performance dimensions.
+Track your individual score in multiple categories versus your team score to understand your relative performance position. This assists in your ability to identify areas of improvement and recognise your strengths across different performance dimensions.
 
 **Understanding Category Scores:**
 - **Individual Performance**: Your personal score in each category based on recent evaluations
@@ -47,7 +47,7 @@ Track your individual score in multiple categories versus your team score to und
 - **Compliance Focus**: Many auto fails relate to regulatory or policy compliance requirements
 
 **Common Auto Fail Categories:**
-- **Security Violations**: Unauthorized disclosure of sensitive information
+- **Security Violations**: Unauthorised disclosure of sensitive information
 - **Compliance Breaches**: Failure to follow mandatory procedures
 - **Customer Harm**: Actions that could negatively impact customer experience
 - **System Misuse**: Improper use of tools or platforms
@@ -61,7 +61,7 @@ Track your individual score in multiple categories versus your team score to und
 
 #### Performance Charts
 
-View your performance trends over a specified date range with interactive charts that help you visualize your progress and identify patterns. Use the **Date range** filter to zone in on specific dates you are interested in to analyze:
+View your performance trends over a specified date range with interactive charts that help you visualise your progress and identify patterns. Use the **Date range** filter to zone in on specific dates you are interested in to analyse:
 
 - **Average Agent Performance trends**: How your team's overall performance is changing over time
 - **Your Individual Agent Performance**: Your personal performance trajectory and improvement patterns
@@ -84,7 +84,7 @@ View your performance trends over a specified date range with interactive charts
 
 ### Date Range Selection
 
-Use the date range filter to analyze your performance over specific time periods:
+Use the date range filter to analyse your performance over specific time periods:
 
 **Filter Options:**
 - **Quick Filters**: Last 7 days, Last 30 days, Last quarter, Current month

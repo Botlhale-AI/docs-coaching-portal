@@ -16,7 +16,7 @@ Your awards represent recognition for excellent performance, skill development, 
 
 ### Awards Table
 
-All your awards are displayed in an organized table format showing:
+All your awards are displayed in an organised table format showing:
 
 | Column | Description |
 |--------|-------------|

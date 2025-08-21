@@ -5,7 +5,7 @@ title: Awards (Team Lead View)
 # description: As a team lead, the Awards section empowers you to recognize outstanding performance, motivate your team, and track recognition patterns to build a positive workplace culture.
 ---
 
-As a team lead, the Awards section empowers you to recognize outstanding performance, motivate your team, and track recognition patterns to build a positive workplace culture.
+As a team lead, the Awards section empowers you to recognise outstanding performance, motivate your team, and track recognition patterns to build a positive workplace culture.
 
 ## Overview
 
@@ -38,13 +38,13 @@ Complete the award creation form with the following information:
 
 **Award Name**: Enter a clear, descriptive name for your award
 
-**Award Category**: Select from the dropdown menu to categorize your award
+**Award Category**: Select from the dropdown menu to categorise your award
 
-**Award Description**: Enter a brief description explaining what this award recognizes and the criteria for earning it
+**Award Description**: Enter a brief description explaining what this award recognises and the criteria for earning it
 
 **Scope**: Select who is eligible for this award:
 
-- **Entire Organisation**: Available to all agents across the organization
+- **Entire Organisation**: Available to all agents across the organisation
 - **Specific Departments**: Limit to selected departments
 - **Specific Teams**: Restrict to particular teams
 
@@ -58,10 +58,10 @@ Complete the award creation form with the following information:
 
 ![Award Message](/img/awards5.png)
 
-**Award Message**: Enter a personalized message that will be sent to agents along with their award:
+**Award Message**: Enter a personalised message that will be sent to agents along with their award:
 
 - Congratulatory message
-- Specific achievements being recognized
+- Specific achievements being recognised
 - Encouragement for continued excellence
 - Any additional recognition or benefits
 
@@ -132,7 +132,7 @@ Sort the awards table by the attributes present on table.
 
 ![Awards Certificate](../img/screenshots/team_lead/awards/certificate.png)
 
-> **Build Recognition Culture**: Effective award programs boost team morale and performance. Use the analytics features to optimize your recognition strategy and create a culture of excellence that motivates continuous improvement.
+> **Build Recognition Culture**: Effective award programmes boost team morale and performance. Use the analytics features to optimise your recognition strategy and create a culture of excellence that motivates continuous improvement.
 
 ---
 

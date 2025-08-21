@@ -3,11 +3,11 @@ sidebar_position: 2
 title: Courses (Agent View)
 ---
 
-The Courses section is where you can manage and track your learning progress. All your assigned training materials, ongoing courses, and completed certifications are organized here for easy access and monitoring. This comprehensive guide will help you navigate your learning journey effectively and maximize your professional development opportunities.
+The Courses section is where you can manage and track your learning progress. All your assigned training materials, ongoing courses, and completed certifications are organised here for easy access and monitoring. This comprehensive guide will help you navigate your learning journey effectively and maximise your professional development opportunities.
 
 ## Overview
 
-Your courses are organized by status to help you prioritize your learning activities and understand your current development position:
+Your courses are organised by status to help you prioritise your learning activities and understand your current development position:
 
 - **All Courses**: Complete view of every course available to you across all categories and statuses
 - **Assigned**: New courses that have been assigned to you and require your attention
@@ -54,13 +54,13 @@ Filter your courses by multiple criteria to focus on specific learning areas:
 
 Sort your courses by ascending or descending order using various criteria:
 
-- **Course Title**: Alphabetical organization
-- **Due Date**: Prioritize by urgency
+- **Course Title**: Alphabetical organisation
+- **Due Date**: Prioritise by urgency
 - **Initiation Score**: Compare baseline performance
 - **Status**: Group by completion status
 - **Date Assigned**: Chronological order
 - **Category**: Group by training type
-- **Final Score**: Performance-based organization
+- **Final Score**: Performance-based organisation
 
 ![Courses Sort](../img/screenshots/agent_view/courses/sort.png)
 
@@ -75,7 +75,7 @@ Click **View Course Details** to open a comprehensive view of the course where y
 - Review course objectives and expected learning outcomes
 - Check your current progress and completion status
 - Access all course materials and supplementary resources
-- View detailed quiz results and personalized feedback
+- View detailed quiz results and personalised feedback
 - Understand how the course fits into your overall development plan
 
 ![Courses Sort](../img/screenshots/agent_view/courses/view-material.png)
@@ -111,7 +111,7 @@ When course content is web-based or interactive:
 1. Click **Take Quiz** when you're ready to be assessed on the material
 2. Review any pre-quiz instructions, requirements, or time limits
 3. Ensure you have adequate time to complete the assessment without interruption
-4. Find a quiet environment to minimize distractions during the quiz
+4. Find a quiet environment to minimise distractions during the quiz
 
 #### Completing the Quiz
 

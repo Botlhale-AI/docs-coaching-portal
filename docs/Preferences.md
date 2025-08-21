@@ -1,11 +1,11 @@
 ---
 title: Preferences (Team Lead View)
-# description: Customize your portal settings and manage notification preferences
+# description: Customise your portal settings and manage notification preferences
 ---
 
 
 
-Customize your coaching portal experience with personalized settings, notification preferences, and dashboard configurations to optimize your team management workflow.
+Customise your coaching portal experience with personalised settings, notification preferences, and dashboard configurations to optimise your team management workflow.
 
 
 ## Overview
@@ -78,7 +78,7 @@ Set the frequency of automatic evaluation cycles used in agent coaching. This de
 
 ## Course Settings
 
-Configure course completion requirements and passing criteria for your team's training programs.
+Configure course completion requirements and passing criteria for your team's training programmes.
 
 ![Course Settings](/img/preferences2.png)
 
@@ -144,7 +144,7 @@ Control what interaction data agents can access in their personal portals.
 
 ### Evaluation Scope Recommendations
 
-- **High-Volume Centers**: Consider "Reviewed Interactions Only" to manage data quality
+- **High-Volume Centres**: Consider "Reviewed Interactions Only" to manage data quality
 - **Quality-Focused Teams**: Use "All Interactions" for comprehensive coverage
 - **Training Environments**: Start with "Reviewed Interactions Only" for guided learning
 
@@ -183,7 +183,7 @@ After configuring your settings:
 
 ---
 
-> **Optimize Your Experience**: Regular review of your preferences ensures the portal continues to meet your evolving needs as a team lead. These settings directly impact coaching effectiveness and team development outcomes.
+> **Optimise Your Experience**: Regular review of your preferences ensures the portal continues to meet your evolving needs as a team lead. These settings directly impact coaching effectiveness and team development outcomes.
 
 ---
 

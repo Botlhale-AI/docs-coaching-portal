@@ -19,7 +19,7 @@ Navigating to the Courses displays a comprehensive list of all available courses
 
 ## Creating a New Course
 
-Creating effective training materials is essential for agent development. Follow these detailed steps to create a new course that maximizes learning outcomes:
+Creating effective training materials is essential for agent development. Follow these detailed steps to create a new course that maximises learning outcomes:
 
 ### Step 1: Navigate to Create Course Page
 
@@ -36,7 +36,7 @@ Complete the course creation form with comprehensive information:
    - Expected learning outcomes
    - Time commitment required
 3. **Course Category**: Choose the most relevant skill category from the dropdown menu
-4. **Scope**: Select the appropriate scope based on your organizational structure:
+4. **Scope**: Select the appropriate scope based on your organisational structure:
    - **Entire Organisation**: For company-wide training like compliance or general procedures
    - **Specific Departments**: For department-specific skills like technical support or sales
    - **Specific Teams**: For team-specific training like new hire onboarding
@@ -122,12 +122,12 @@ Configure timeframes and support mechanisms:
 2. **Deadlines**: Establish realistic completion timelines:
    - **Days**: For quick refresher courses (1-7 days)
    - **Weeks**: For standard training (1-4 weeks)
-   - **Months**: For comprehensive programs (1-3 months)
+   - **Months**: For comprehensive programmes (1-3 months)
 3. **Course Nudges**: Schedule nudges for when to send reminders to agents to complete the course.
 
 ### Step 6: Create Course
 
-Review all information for accuracy and completeness, then click **Create Course** to finalize.
+Review all information for accuracy and completeness, then click **Create Course** to finalise.
 
 :::warning
 The platform will provide immediate feedback on course creation success or highlight any issues that need resolution before the course can be activated.
@@ -139,7 +139,7 @@ Each course is represented by an informative card showing:
 
 - **Course title and thumbnail/cover image**: Visual identification
 - **Date created**: Creation timestamp for reference
-- **Scope**: Organizational reach of the course
+- **Scope**: Organisational reach of the course
 - **Category**: Skill area classification
 - **Status indicators**: Active, draft, or archived status
 

@@ -4,7 +4,7 @@ title: Interactions (Team Lead View)
 # description: Review your call recordings and chat interactions with detailed analysis and performance metrics
 ---
 
-As an agent, view and analyze your call recordings and chat interactions to understand your performance and identify areas for improvement. This comprehensive guide helps you leverage interaction data to enhance your customer service skills and professional development.
+As an agent, view and analyse your call recordings and chat interactions to understand your performance and identify areas for improvement. This comprehensive guide helps you leverage interaction data to enhance your customer service skills and professional development.
 
 ## Overview
 
@@ -21,7 +21,7 @@ The Interactions section provides detailed insights into your customer communica
 
 ## Calls
 
-Monitor and analyze your voice call interactions with customers to understand your communication effectiveness and identify opportunities for improvement.
+Monitor and analyse your voice call interactions with customers to understand your communication effectiveness and identify opportunities for improvement.
 
 ### Recent Calls Performance
 
@@ -43,7 +43,7 @@ Track your call performance with these comprehensive key indicators that provide
 
 - **Agent Score**: Overall performance rating based on evaluation criteria
   - **Scoring Components**: Communication, problem-solving, compliance, and professionalism
-  - **Benchmark Comparison**: Compare against team and organizational standards
+  - **Benchmark Comparison**: Compare against team and organisational standards
   - **Improvement Tracking**: Monitor score progression and identify trends
 
 - **Silent Time**: Periods of inactivity or silence during calls
@@ -106,7 +106,7 @@ Click on any call to access comprehensive analysis that provides deep insights i
 
 ## Chats
 
-Analyze your text-based customer interactions and support conversations to understand your written communication effectiveness and response quality.
+Analyse your text-based customer interactions and support conversations to understand your written communication effectiveness and response quality.
 
 ### Recent Chats Performance
 
@@ -160,7 +160,7 @@ Review feedback on your chat support performance to understand your written comm
   - Effective use of chat features and tools
 
 - **Areas for Improvement**: Opportunities to enhance your chat skills
-  - Response time optimization
+  - Response time optimisation
   - Message clarity and completeness
   - Technical knowledge application
   - Customer engagement techniques
@@ -187,16 +187,16 @@ Click on any chat session to see comprehensive analysis of your written interact
 
 ### Sort
 
-Organize your interaction data to focus on specific aspects of your performance:
+Organise your interaction data to focus on specific aspects of your performance:
 
 ![Interactions - Calls](../img/screenshots/agent_view/interactions/interactions-sort.png)
 
 **Sorting Options:**
 - **Date/Time**: Chronological order to track performance over time
 - **Duration**: Handle time analysis to identify efficiency patterns
-- **Score**: Performance-based organization to focus on quality
+- **Score**: Performance-based organisation to focus on quality
 - **Customer Satisfaction**: Satisfaction-based sorting to understand customer impact
-- **Topic**: Category-based organization to analyze specific interaction types
+- **Topic**: Category-based organisation to analyse specific interaction types
 
 ### Filter
 
