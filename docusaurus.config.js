@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'Botlhale-AI', 
   projectName: 'docs-coaching-portal', 
-  deploymentBranch: 'gh-pages', 
+  deploymentBranch: 'docs/update', 
   trailingSlash: false,
 
   presets: [
@@ -93,6 +93,10 @@ const config = {
           title: 'Team Leads & QAs',
           items: [
             {
+              label: 'Getting Started (Team Leads)',
+              to: '/docs/GettingStartedTeamLeads',
+            },
+            {
               label: 'Dashboard',
               to: '/docs/Dashboard',
             },
@@ -117,6 +121,10 @@ const config = {
         {
           title: 'Agents',
           items: [
+            {
+              label: 'Getting Started (Agents)',
+              to: '/docs/GettingStartedAgents',
+            },
             {
               label: 'My Dashboard',
               to: '/docs/AgentDashboard',

@@ -6,6 +6,12 @@ import logo from '/static/img/VELA.png';
 
 const FeatureList = [
   {
+    title: 'Getting Started',
+    link: '/docs/GettingStartedTeamLeads',
+    description: 'Learn how to set up your team, define roles, and configure initial settings.',
+    icon: 'fas fa-play',
+  },
+  {
     title: 'Dashboard',
     link: '/docs/Dashboard',
     description: 'Learn how to view and customise your call insights.',

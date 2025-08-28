@@ -3,6 +3,7 @@ import { useLocation } from '@docusaurus/router';
 import Link from '@docusaurus/Link';
 
 const teamLeadMainNavItems = [
+  { label: 'Getting Started', to: '/docs/GettingStartedTeamLeads', icon: 'fas fa-play' },
   { label: 'Dashboard', to: '/docs/Dashboard', icon: 'fas fa-tachometer-alt' },
   { label: 'Courses', to: '/docs/Courses', icon: 'fas fa-book' },
   { label: 'Awards', to: '/docs/Awards', icon: 'fas fa-trophy' },
@@ -11,6 +12,7 @@ const teamLeadMainNavItems = [
 ];
 
 const agentMainNavItems = [
+  { label: 'Getting Started', to: '/docs/GettingStartedAgents', icon: 'fas fa-play' },
   { label: 'My Dashboard', to: '/docs/AgentDashboard', icon: 'fas fa-tachometer-alt' },
   { label: 'My Courses', to: '/docs/AgentCourses', icon: 'fas fa-book' },
   { label: 'My Awards', to: '/docs/AgentAwards', icon: 'fas fa-trophy' },

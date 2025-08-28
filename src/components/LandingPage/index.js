@@ -81,6 +81,10 @@ export default function LandingPage() {
   const workflowSteps = {
     teamlead: [
       {
+        title: "Getting Started",
+        description: "Set up your team, define roles, and configure initial settings to get started"
+      },
+      {
         title: "Team Dashboard Overview",
         description: "Access comprehensive performance metrics for your entire team at a glance"
       },
@@ -98,6 +102,10 @@ export default function LandingPage() {
       }
     ],
     agent: [
+      {
+        title: "Getting Started",
+        description: "Set up your team, define roles, and configure initial settings to get started"
+      },
       {
         title: "Personal Dashboard",
         description: "View your individual performance metrics and track your development progress"
