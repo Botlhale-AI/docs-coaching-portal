@@ -37,25 +37,63 @@ Select any interaction to review it in detail. You can listen to call audio, rea
 
 ---
 
-## 4. Coaching: Create and Track Development Plans
+## 4. Coaching: Driving Agent Development
 
-After identifying an opportunity from the dashboard or an interaction review, the **Coaching** section is where you take action.
+After identifying an opportunity from the dashboard or an interaction review, the **Coaching** section is where you take action to build skills and track improvement.
 
-Here, you can build structured **Coaching Plans** for your agents. A plan can include:
-* Assigning specific **Courses** from the learning library.
-* Creating custom **Action Items** for the agent to complete.
-* Scheduling follow-up **Meetings** to discuss progress.
+### Developing Skills with Courses
 
-You can monitor the status of all assigned coaching plans to ensure your team members are on track with their development goals.
+The **Courses** section is your internal learning management system. Here, you can create, assign, and manage training for your team.
+
+To create a new course, click the **"Create a New Course"** card and follow the steps:
+1.  **Course Details**: Add a clear title, description, category, and define the **Scope** (who can access it).
+2.  **Course Content**: Upload materials like PDFs or add external links.
+3.  **Quiz Content**: Build assessments with multiple choice, short answer, or paragraph questions to test understanding.
+4.  **Deadlines & Reminders**: Set quiz retake limits, completion deadlines, and automatic **Course Nudges** (reminders).
+5.  **Create Course**: Save and activate the course.
+
+You can also manage existing courses to edit content, view quiz results, and set the required **Pass Percentage** in your preferences.
+
+### Tracking Agent Progress
+
+The **Progress Tracking** dashboard gives you full visibility into your team's learning journey. Use this area to:
+* Monitor an individual agent's progress through their assigned courses.
+* Track team-wide completion rates and identify trends.
+* Quickly see who might need extra support or encouragement.
+
+The dashboard includes a **Date Range Filter**, an **Agent Progress Table** with color-coded statuses (**Complete**, **In Progress**, or **Not Started**), and robust search and filter controls. By comparing initiation and final scores, you can directly measure the impact of your training.
+
+
 
 ---
 
-## 5. Reporting: Analyze Long-Term Trends
+## 5. Recognizing Performance with Awards
+
+Motivate your team and build a positive culture by recognizing excellent work in the **Awards Management** section. 🏆
+
+### Creating a New Award
+
+While the system comes with pre-created awards, you can create custom ones. Click **"Create New Award"** and:
+1.  **Award Details**: Enter a name, category, description, and **Scope**.
+2.  **Score Threshold**: Set a performance score range that will automatically qualify an agent for the award.
+3.  **Award Message**: Write a personalized message that will be sent with the award.
+
+### Tracking Presented Awards
+
+In the **Awards Presented** tab, you'll find a comprehensive table of all awards distributed to your team. You can filter and sort this list by agent, date, or award type. For formal recognition, you can also **Download** a branded PDF certificate for any award.
+
+---
+
+## 6. Reporting: Analyze Long-Term Trends
 
 For a broader perspective, visit the **Reporting** section. Here, you can generate detailed reports on team and individual performance over longer periods. Use these insights to understand the effectiveness of your coaching strategies and to prepare for business reviews.
 
-This concludes the tour of the Vela Team Lead Portal—a powerful tool to help you lead a successful and improving team.
+---
+
+## A Note on Performance Feedback
+
+The Vela portal is designed for a holistic coaching loop. While there isn't a specific "send cautionary message" button, the process for addressing performance issues is built into the workflow. When you identify an area for improvement via the **Dashboard** or an **Interaction**, the next step is to create a **Coaching Plan** and assign a **Course**. This provides a structured, supportive, and trackable path for agent development.
 
 ---
 
-*Last updated on Aug 25, 2025 by *
+*Last updated on August 25, 2025 by *
