@@ -5,9 +5,9 @@ title: Getting Started - A Tour of the Team Lead Portal
 pagination_next: Dashboard
 ---
 
-Welcome to the Vela Coaching Portal! This guide will help you start managing your team's performance and driving measurable improvements immediately.
+Welcome to the Vela Coaching Portal! This guide will help you start managing your team's performance and driving measurable improvements.
 
-We know team leads juggle multiple responsibilities - from performance monitoring to coaching and development. That's where the Vela Coaching Portal comes in. We provide the tools you need to identify coaching opportunities, track progress, and recognise excellence across your team.
+We know team leads juggle multiple responsibilities, from performance monitoring to coaching and development. That's where the Vela Coaching Portal comes in. We provide the tools you need to identify coaching opportunities, track progress, and recognise excellence across your team.
 
 > **What is the Vela Coaching Portal?** The **Vela Coaching Portal** is your command centre for team development, offering course management, progress tracking, awards recognition, and performance insights to help you build a high-performing team.
 
@@ -29,7 +29,7 @@ We've made this guide as straightforward as possible because we understand you h
 Before we dive into the features, let's quickly familiarise you with the Vela Coaching Portal interface:
 
 ### **Left Navigation**
-The left navigation bar is your main navigation hub in the Coaching Portal. You'll find the **Coaching** section under TOOLS, which contains all your team development tools:
+The left navigation bar is your main navigation hub in the Coaching Portal. You'll find the **Coaching** section below **SMART DETECTOR**, which contains all your team development tools:
 
 **Coaching Section:**
 - **[Dashboard](./Dashboard)** - Your team's performance overview with customisable metrics
@@ -63,26 +63,10 @@ Your dashboard is your command centre for team insights. It shows you everything
 
 > **Why this matters**: Your dashboard helps you make data-driven decisions about where to focus your coaching efforts.
 
-### Step 2: Review Team Interactions
-**Goal**: Understand individual agent performance and identify coaching needs
-
-This is where you'll dive deep into individual performance and identify specific coaching opportunities.
-
-- [ ] **Navigate to "Interactions"** to see all team calls and chats
-- [ ] **Use filters** to find specific interactions (by agent, score, date range)
-- [ ] **Click on any interaction** to review in detail:
-  - [ ] **Listen to call audio** and read transcripts
-  - [ ] **Complete evaluation scorecards** for quality assessment
-  - [ ] **Identify specific coaching opportunities**
-
-> **[📞 Interactions guide](./Interactions)** - Learn how to review and evaluate interactions
-
-> **Why this matters**: Detailed interaction reviews help you provide specific, actionable feedback to your agents.
-
-### Step 3: Create Your First Course
+### Step 2: Create Your First Course
 **Goal**: Set up training to address identified skill gaps
 
-Once you've identified areas for improvement, create targeted training to help your team grow.
+Once you've identified areas for improvement from your dashboard, create targeted training to help your team grow.
 
 - [ ] **Go to "Coaching" → "Courses"** in the left navigation
 - [ ] **Click "Create a New Course"**
@@ -95,20 +79,37 @@ Once you've identified areas for improvement, create targeted training to help y
 
 > **Why this matters**: Structured training ensures consistent skill development across your team.
 
-### Step 4: Track Progress and Recognise Excellence
-**Goal**: Monitor development and motivate your team
+### Step 3: Set Up Awards and Recognition
+**Goal**: Create recognition programmes to motivate your team
 
-Keep your team motivated and track their development journey.
+Build a culture of excellence by setting up awards that recognise outstanding performance and achievements.
 
-- [ ] **Monitor progress** in the Progress Tracking dashboard
-- [ ] **Identify agents needing support** with colour-coded status indicators
-- [ ] **Create awards** to recognise outstanding performance
-- [ ] **Download certificates** for formal recognition
+- [ ] **Go to "Coaching" → "Awards"** in the left navigation
+- [ ] **Review pre-built awards** like "Excellent Customer Care" and "No Auto-Fail"
+- [ ] **Click "Create New Award"** to design custom recognition
+- [ ] **Set award criteria** (score thresholds, categories, scope)
+- [ ] **Write personalised messages** for award recipients
+- [ ] **Configure automatic award distribution** based on performance
 
-> **[📈 Progress tracking guide](./Progress)** - Learn how to monitor and support agent development
 > **[🏆 Awards guide](./Awards)** - Learn how to create and manage recognition programmes
 
-> **Why this matters**: Regular recognition and progress monitoring keeps your team engaged and motivated.
+> **Why this matters**: Recognition programmes boost team morale and motivate agents to excel.
+
+### Step 4: Track Progress and Monitor Development
+**Goal**: Monitor learning progress and identify support needs
+
+Keep track of how your team is developing and identify who needs additional support.
+
+- [ ] **Go to "Coaching" → "Progress"** in the left navigation
+- [ ] **Review completion status** with colour-coded indicators (Complete, In Progress, Not Started)
+- [ ] **Use date range filters** to analyse specific time periods
+- [ ] **Identify agents falling behind** and provide targeted support
+- [ ] **Monitor performance trends** to measure training effectiveness
+- [ ] **Download progress reports** for team meetings
+
+> **[📈 Progress tracking guide](./Progress)** - Learn how to monitor and support agent development
+
+> **Why this matters**: Regular progress monitoring helps you identify coaching opportunities and ensure everyone stays on track.
 
 ---
 
@@ -151,18 +152,19 @@ You've just discovered the capabilities that will help your team work better!
 
 ### **Daily Operations**
 - **[Monitor your dashboard](./Dashboard)** - Track daily performance and trends
-- **[Review team interactions](./Interactions)** - Stay on top of agent performance
 - **[Check course progress](./Progress)** - Identify agents who need support
+- **[Review awards and recognition](./Awards)** - Celebrate team achievements
 
 ### **Team Development**
 - **[Create training courses](./Courses)** - Develop specific skills and knowledge
 - **[Recognise excellence](./Awards)** - Build a culture of achievement
 - **[Track learning outcomes](./Progress)** - Measure the impact of your coaching
+- **[Customise your preferences](./Preferences)** - Tailor the portal to your needs
 
 ### **Advanced Features**
-- **[Customise preferences](./Preferences)** - Tailor the portal to your needs
 - **[Generate reports](./Progress)** - Create detailed performance summaries
 - **[Manage team structure](./Preferences)** - Configure departments and teams
+- **[Set evaluation cycles](./Preferences)** - Configure automatic assessment frequency
 
 > **💡 Pro Tip**: Use the left navigation in the Vela Coaching Portal to quickly access any section. Each section has its own dedicated documentation that you can reference while working in the platform.
 

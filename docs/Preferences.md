@@ -210,7 +210,6 @@ Stuck with preference configuration? We're here to help!
 
 **Still need assistance?**
 - **Email us**: support@botlhale.ai
-- **Visit our support portal**: [support.botlhale.ai](https://support.botlhale.ai)
 
 ---
 
