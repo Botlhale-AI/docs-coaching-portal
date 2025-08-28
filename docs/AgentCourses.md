@@ -1,6 +1,9 @@
 ---
 sidebar_position: 2
+sidebar: agentSidebar
 title: Track Your Learning Journey
+pagination_prev: AgentDashboard
+pagination_next: AgentAwards
 ---
 
 Manage and monitor your training progress with ease. The Courses section shows all your assigned training materials, ongoing courses, and completed certifications in one organised place.

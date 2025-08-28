@@ -1,6 +1,9 @@
 ---
 sidebar_position: 4
+sidebar: agentSidebar
 title: Review Your Performance and Interactions
+pagination_prev: AgentAwards
+pagination_next: AgentAdmin
 ---
 
 Review and analyse your team's call recordings and chat interactions to understand performance patterns and identify coaching opportunities.

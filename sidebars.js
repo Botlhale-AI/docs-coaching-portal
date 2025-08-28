@@ -76,7 +76,7 @@ const sidebars = {
   agentSidebar: [
     {
       type: 'category',
-      label: 'Getting Started (Team Leads)',
+      label: 'Getting Started (Agents)',
       collapsible: true,
       collapsed: false,
       link: {
@@ -144,6 +144,24 @@ const sidebars = {
 
   // Default sidebar (maintains compatibility)
   tutorialSidebar: [
+    {
+      type: 'category',
+      label: 'Getting Started',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        {
+          type: 'doc',
+          id: 'GettingStartedTeamLeads',
+          label: 'Team Leads',
+        },
+        {
+          type: 'doc',
+          id: 'GettingStartedAgents',
+          label: 'Agents',
+        },
+      ],
+    },
     {
       type: 'category',
       label: 'Dashboard',

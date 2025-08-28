@@ -2,6 +2,8 @@
 sidebar_position: 2
 sidebar: teamLeadSidebar
 title: Create and Manage Training Courses
+pagination_prev: Dashboard
+pagination_next: Awards
 ---
 
 Create training that actually helps your team get better. The Courses section lets you build training materials, assign them to the right people, and see how well they're working.

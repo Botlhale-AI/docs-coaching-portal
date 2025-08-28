@@ -2,6 +2,8 @@
 sidebar_position: 3
 sidebar: teamLeadSidebar
 title: Recognise and Reward Excellence
+pagination_prev: Courses
+pagination_next: Progress
 ---
 
 Build a culture of recognition that motivates your team to excel. The Awards section lets you create meaningful recognition programmes that celebrate achievements and drive continuous improvement.

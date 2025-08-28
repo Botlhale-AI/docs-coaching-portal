@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar: teamLeadSidebar
 title: Getting Started - A Tour of the Team Lead Portal
+pagination_next: Dashboard
 ---
 
 Welcome to the Vela Coaching Portal! This guide will help you start managing your team's performance and driving measurable improvements immediately.

@@ -1,5 +1,8 @@
 ---
+sidebar_position: 5
+sidebar: teamLeadSidebar
 title: Customise Your Coaching Portal Experience
+pagination_prev: Progress
 ---
 
 Tailor your coaching portal to match your team's needs and your management style. Configure evaluation settings, notification preferences, and dashboard options to improve your workflow.

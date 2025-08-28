@@ -180,7 +180,7 @@ export default function LandingPage() {
               {/* Updated CTA Button to match role selector style */}
               <div className={styles.heroCta}>
                 <Link 
-                  to={selectedRole === 'teamlead' ? "/docs/Dashboard" : "/docs/AgentDashboard"} 
+                  to={selectedRole === 'teamlead' ? "/docs/GettingStartedTeamLeads" : "/docs/GettingStartedAgents"} 
                   className={styles.portalButton}
                 >
                   <i className={selectedRole === 'teamlead' ? "fas fa-users-cog" : "fas fa-user"}></i>

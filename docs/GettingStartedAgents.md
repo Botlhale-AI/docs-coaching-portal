@@ -2,6 +2,8 @@
 sidebar_position: 1
 sidebar: agentSidebar
 title: Getting Started - A Tour of the Agent Portal
+pagination_next: AgentDashboard
+pagination_prev: null
 ---
 
 Welcome to the Vela Coaching Portal! This guide will help you start tracking your performance and managing your professional development immediately.

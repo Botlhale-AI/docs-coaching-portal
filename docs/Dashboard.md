@@ -2,6 +2,8 @@
 sidebar_position: 1
 sidebar: teamLeadSidebar
 title: Monitor Your Team's Performance
+pagination_prev: GettingStartedTeamLeads
+pagination_next: Courses
 ---
 
 Your Coaching Portal dashboard shows you everything about your team's learning and development at a glance. It's where you'll spot trends, identify coaching opportunities, and track how your team is progressing.

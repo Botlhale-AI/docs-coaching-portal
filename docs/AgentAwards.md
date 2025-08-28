@@ -1,5 +1,9 @@
 ---
+sidebar_position: 3
+sidebar: agentSidebar
 title: Celebrate Your Achievements
+pagination_prev: AgentCourses
+pagination_next: Interactions
 ---
 
 View and celebrate all the recognition you've earned over time. The Awards section serves as your personal achievement gallery, showcasing your performance milestones and professional accomplishments.

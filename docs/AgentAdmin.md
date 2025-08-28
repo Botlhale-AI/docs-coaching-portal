@@ -1,6 +1,8 @@
 ---
 sidebar_position: 5
+sidebar: agentSidebar
 title: Manage Your Account and Settings
+pagination_prev: Interactions
 ---
 
 The Admin section serves as your account management centre, including both communications and settings management. This area helps you stay connected with important updates and maintain control over your account security and preferences.

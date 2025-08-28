@@ -6,6 +6,7 @@ import styles from './styles.module.css';
 
 // Team Lead navigation items
 const teamLeadMenuItems = [
+  { label: 'Getting Started', to: '/docs/GettingStartedTeamLeads' },
   { label: 'Dashboard', to: '/docs/Dashboard' },
   { label: 'Courses', to: '/docs/Courses' },
   { label: 'Awards', to: '/docs/Awards' },
@@ -15,6 +16,7 @@ const teamLeadMenuItems = [
 
 // Agent navigation items
 const agentMenuItems = [
+  { label: 'Getting Started', to: '/docs/GettingStartedAgents' },
   { label: 'My Dashboard', to: '/docs/AgentDashboard' },
   { label: 'My Courses', to: '/docs/AgentCourses' },
   { label: 'My Awards', to: '/docs/AgentAwards' },

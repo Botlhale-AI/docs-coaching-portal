@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 title: Monitor Your Personal Performance
+pagination_prev: GettingStartedAgents
+pagination_next: AgentCourses
 ---
 
 Your Agent Dashboard shows you everything about your learning and development at a glance. It's where you'll spot trends, identify improvement opportunities, and track your progress over time.

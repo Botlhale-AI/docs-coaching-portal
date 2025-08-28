@@ -1,5 +1,9 @@
 ---
+sidebar_position: 4
+sidebar: teamLeadSidebar
 title: Track Learning Progress and Development
+pagination_prev: Awards
+pagination_next: Preferences
 ---
 
 Keep track of how your team is learning and growing. The Progress section shows you who's completing their training, who might be falling behind, and how well your coaching programmes are working.
