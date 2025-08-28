@@ -1,22 +1,34 @@
 ---
-title: Awards (Agent View)
-# description: View and manage your performance recognitions and achievements
+title: Celebrate Your Achievements
 ---
 
+View and celebrate all the recognition you've earned over time. The Awards section serves as your personal achievement gallery, showcasing your performance milestones and professional accomplishments.
 
-The Awards section is where you can view all the recognition you've received over time. This serves as your personal achievement gallery, showcasing your performance milestones and professional accomplishments.
+## What You Can Achieve
 
-## Overview
+Celebrate your recognition and achievements:
+
+| **Achievement Recognition** | **Performance Documentation** | **Career Development** |
+|---------------------------|----------------------------|---------------------|
+| **View all your awards** | **Track performance milestones** | **Build your professional portfolio** |
+| **Download certificates** | **Document your achievements** | **Support career advancement** |
+| **Celebrate success** | **Monitor recognition patterns** | **Validate your skills** |
+
+---
+
+## Understanding Your Awards
 
 Your awards represent recognition for excellent performance, skill development, and contribution to team success. Each award reflects specific achievements in your role and professional growth.
 
 ![Awards Dashboard](/img/agentawards1.png)
 
+---
+
 ## Viewing Your Awards
 
 ### Awards Table
 
-All your awards are displayed in an organized table format showing:
+All your awards are displayed in an organised table format showing:
 
 | Column | Description |
 |--------|-------------|
@@ -27,6 +39,8 @@ All your awards are displayed in an organized table format showing:
 | **Achievement Details** | Specific accomplishment that earned the award |
 | **Certificate Status** | Whether a certificate is available for download |
 | **Actions** | Options to view details or download certificates |
+
+---
 
 ## Searching and Filtering Awards
 
@@ -62,7 +76,7 @@ Filter awards by category to view specific types of recognition:
 - Team collaboration recognitions
 - Special milestone awards
 
-![Award Date Rnage](../img/screenshots/agent_view/awards/date-range.png)
+![Award Date Range](../img/screenshots/agent_view/awards/date-range.png)
 
 ### Sort Options
 
@@ -73,7 +87,9 @@ Sort your awards by:
 - **Category** (grouped by type)
 - **Awarding Authority** (by supervisor or team lead)
 
-![Award Date Rnage](../img/screenshots/agent_view/awards/sort.png)
+![Award Date Range](../img/screenshots/agent_view/awards/sort.png)
+
+---
 
 ## Award Details
 
@@ -118,6 +134,8 @@ Your certificates include:
 - **Career Development**: Use in job applications or promotions
 - **Personal Records**: Keep for your own achievement tracking
 
+---
+
 ## Award Notifications
 
 ### Receiving Award Notifications
@@ -132,6 +150,8 @@ When you receive a new award:
 Manage how you receive award notifications:
 
 - In-app notifications (recommended)
+
+---
 
 ## Award Impact
 
@@ -155,8 +175,34 @@ Your awards can help with:
 
 ---
 
-> **Celebrate Your Success!** Your awards represent your hard work and dedication. Take pride in your achievements and use them as motivation for continued excellence. For questions about specific awards, contact your team lead or supervisor.
+## What's Next?
+
+Now that you can view your awards, explore these related guides:
+
+- **[Track Your Courses](./AgentCourses.md)** - Continue your learning journey
+- **[Monitor Your Dashboard](./AgentDashboard.md)** - Track your overall performance
+- **[Review Your Interactions](./Interactions.md)** - Analyse your performance insights
 
 ---
 
-*Last updated on Jul 29, 2025 by athenkosi-cetyana*
+## Need Help?
+
+Stuck with viewing your awards? We're here to help!
+
+- **📖 [Course Tracking Guide](./AgentCourses.md)** - Learn about continuing your development
+- **📖 [Dashboard Guide](./AgentDashboard.md)** - Monitor your overall performance
+- **📖 [Interaction Analysis Guide](./Interactions.md)** - Review your performance insights
+
+**Still need assistance?**
+- **Email us**: support@botlhale.ai
+- **Visit our support portal**: [support.botlhale.ai](https://support.botlhale.ai)
+
+---
+
+## Was This Guide Helpful?
+
+We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.
+
+---
+
+> **Celebrate Your Success!** Your awards represent your hard work and dedication. Take pride in your achievements and use them as motivation for continued excellence. For questions about specific awards, contact your team lead or supervisor.

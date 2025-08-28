@@ -1,27 +1,33 @@
 ---
 sidebar_position: 2
 sidebar: teamLeadSidebar
-title: Courses (Team Lead View)
+title: Create and Manage Training Courses
 ---
 
-The Courses section allows team leads to create, manage, and assign training materials to agents. This guide walks you through the process of creating courses and managing your course library.
+Build effective training programmes that help your agents develop the skills they need to excel. The Courses section lets you create, manage, and assign training materials that drive real performance improvements.
 
-<!-- ## Table of Contents
+## What You Can Achieve
 
-- [Accessing the Courses Overview](#accessing-the-courses-dashboard)
-- [Creating a New Course](#creating-a-new-course)
-- [Viewing Course List](#viewing-course-list)
-- [Managing Existing Courses](#managing-existing-courses)
-- [Best Practices](#best-practices) -->
+Create training programmes that transform your team's capabilities:
 
-## Overview
+| **Course Creation** | **Content Management** | **Learning Delivery** |
+|-------------------|---------------------|---------------------|
+| **Build custom training programmes** | **Organise learning materials** | **Track completion rates** |
+| **Set clear learning objectives** | **Upload resources and assessments** | **Monitor learning progress** |
+| **Design engaging assessments** | **Create structured learning paths** | **Ensure skill development** |
 
-Navigating to the Courses display a list of Courses which includes several useful features:
+---
+
+## Understanding the Courses Interface
+
+Navigating to the Courses displays a list of Courses which includes several useful features:
 
 1. **Search Bar**: Quickly find courses by name, category, or keyword
-2. **Course Details Overview**: See at-a-glance metrics for each course - showing the Course Title, Description, Date Created, Categoty and Scope.
+2. **Course Details Overview**: See at-a-glance metrics for each course - showing the Course Title, Description, Date Created, Category and Scope.
 
 ![Courses Dashboard](../img/screenshots/team_lead/courses/courses-list.png)
+
+---
 
 ## Creating a New Course
 
@@ -29,7 +35,7 @@ Creating effective training materials is essential for agent development. Follow
 
 ### Step 1: Navigate to Create Course Page
 
-From the Courses Overview page, click the **Create a New Course** card top lef tof the screen.
+From the Courses Overview page, click the **Create a New Course** card top left of the screen.
 
 ### Step 2: Fill in Course Details
 
@@ -87,7 +93,7 @@ Complete the course creation form with the following information:
 Build your course content using the content editor:
 
 - For each module you have the following options:
-  - Provide an external link to the course material resourses
+  - Provide an external link to the course material resources
   - Upload materials (PDFs)
   - Drag and drop your preferred courses cover image or use our best quality theme images
 
@@ -98,7 +104,7 @@ Define what agents need to complete to finish the course:
 1. Create questions for your course assessment
 2. We support three types of questions: Short, Long Paragraphs and Multiple Choice questions
 3. Provide the points/score for each question in this section
-4. You also have the option to selected the expected correct answer for Multiple Choice questions
+4. You also have the option to select the expected correct answer for Multiple Choice questions
 5. Mark if a question is compulsory to answer by toggling the **Required** button
 
 ### Step 5: Set Deadlines & Reminders
@@ -111,9 +117,9 @@ Define what agents need to complete to finish the course:
 
 Click **Create Course** to create course.
 
-:::warning
-Note that the platform will notify you if course creation is successful or if there were any issues with creating a course.
-:::
+> **⚠️ Important**: The platform will notify you if course creation is successful or if there were any issues with creating a course.
+
+---
 
 ## Course Cards
 
@@ -126,6 +132,8 @@ Each course is represented by a card showing:
 
 Click on any course card to view detailed information and management options.
 
+---
+
 ## Managing Existing Courses
 
 ![Course Management](../img/screenshots/team_lead/courses/team-lead-courses-edit.png)
@@ -137,14 +145,35 @@ Effective course management ensures your training materials remain relevant and 
 Access a course's details page by clicking on its card in the Course List. From here, you can:
 
 1. **Edit Course**: Update content, requirements, or details
-2. **View Course Content**: Description, Category, Traning Initiation Score Range, Course Details, Scope and Course Content (PDF/Link)
+2. **View Course Content**: Description, Category, Training Initiation Score Range, Course Details, Scope and Course Content (PDF/Link)
 3. **View Course Quiz**: See the quiz questions, scores
 
 ---
 
-:::warning
-If you encounter any issues while creating or managing courses, please contact our support team:
+## What's Next?
 
-- Email: support@botlhale.ai
-- Support Portal: [support.botlhale.ai](https://support.botlhale.ai)
-  :::
+Now that you can create and manage courses, explore these related guides:
+
+- **[Monitor Progress](./Progress.md)** - Track how agents are progressing through courses
+- **[Set Up Awards](./Awards.md)** - Create recognition programmes for course completion
+- **[Review Interactions](./Interactions.md)** - Analyse how training impacts performance
+
+---
+
+## Need Help?
+
+Stuck with course creation? We're here to help!
+
+- **📖 [Progress Tracking Guide](./Progress.md)** - Learn about monitoring course completion
+- **📖 [Awards System Guide](./Awards.md)** - Set up recognition for course achievements
+- **📖 [Dashboard Guide](./Dashboard.md)** - Monitor overall training effectiveness
+
+**Still need assistance?**
+- **Email us**: support@botlhale.ai
+- **Visit our support portal**: [support.botlhale.ai](https://support.botlhale.ai)
+
+---
+
+## Was This Guide Helpful?
+
+We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.

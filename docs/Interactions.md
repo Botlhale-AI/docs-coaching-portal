@@ -1,25 +1,36 @@
 ---
 sidebar_position: 4
-title: Interactions (Team Lead View)
-# description: Review your call recordings and chat interactions with detailed analysis and performance metrics
+title: Review Your Performance and Interactions
 ---
 
-As an agent, view and analyze your call recordings and chat interactions to understand your performance and identify areas for improvement.
+Review and analyse your team's call recordings and chat interactions to understand performance patterns and identify coaching opportunities.
 
-## Overview
+## What You Can Achieve
 
-The Interactions section provides detailed insights into your customer communications across both voice calls and chat sessions. This helps you:
+Analyse interactions that drive performance improvement:
+
+| **Performance Review** | **Quality Assessment** | **Coaching Insights** |
+|----------------------|---------------------|---------------------|
+| **Review conversation quality** | **Assess customer satisfaction** | **Identify coaching opportunities** |
+| **Spot performance patterns** | **Track improvement trends** | **Develop targeted training** |
+| **Learn from successful interactions** | **Monitor compliance standards** | **Drive continuous improvement** |
+
+---
+
+## Understanding the Interactions Interface
+
+The Interactions section provides detailed insights into your team's customer communications across both voice calls and chat sessions. This helps you:
 
 - Review conversation quality and customer satisfaction
-- Identify patterns in customer inquiries
-- Track your performance metrics over time
+- Identify patterns in customer enquiries
+- Track performance metrics over time
 - Learn from successful interactions
 
 ---
 
-## Calls
+## Analysing Call Interactions
 
-Monitor and analyze your voice call interactions with customers.
+Monitor and analyse your team's voice call interactions with customers.
 
 ### Recent Calls Performance
 
@@ -31,7 +42,7 @@ View your most recent call interactions with key performance indicators:
 
 #### Performance Metrics
 
-Track your call performance with these key indicators:
+Track call performance with these key indicators:
 
 - **Handle Time**
 - **Agent Score**
@@ -39,9 +50,9 @@ Track your call performance with these key indicators:
 
 #### Common Call Topics
 
-Understanding the topics you handle most frequently. These are examples of common call topics:
+Understanding the topics your team handles most frequently. These are examples of common call topics:
 
-1. **Billing Inquiries**
+1. **Billing Enquiries**
 2. **Technical Support**
 3. **Account Management**
 4. **Product Information**
@@ -49,7 +60,7 @@ Understanding the topics you handle most frequently. These are examples of commo
 
 #### Call Quality Insights
 
-Review detailed feedback on your call handling:
+Review detailed feedback on call handling:
 
 - **Strengths**
 - **Areas for Improvement**
@@ -69,9 +80,9 @@ Click on any call to access detailed analysis. The detailed view is shown below
 
 ---
 
-## Chats
+## Analysing Chat Interactions
 
-Analyze your text-based customer interactions and support conversations.
+Analyse your team's text-based customer interactions and support conversations.
 
 ### Recent Chats Performance
 
@@ -81,25 +92,16 @@ View your most recent chat interactions:
 
 #### Performance Metrics
 
-Monitor your chat support effectiveness:
+Monitor chat support effectiveness:
 
 - **Handle Time**
 - **Response Time**
-
-<!-- #### Chat Efficiency Indicators
-
-Track how effectively you handle multiple conversations:
-
-- **Messages per Resolution**
-- **Escalation Rate**
-- **Transfer Rate**
-- **Follow-up Required** -->
 
 #### Common Chat Topics
 
 Most frequent chat conversation topics. These are examples of common chat topics:
 
-1. **Order Inquiries**
+1. **Order Enquiries**
 2. **Product Support**
 3. **Account Issues**
 4. **Billing Questions**
@@ -107,7 +109,7 @@ Most frequent chat conversation topics. These are examples of common chat topics
 
 ### Chat Quality Insights
 
-Review feedback on your chat support performance:
+Review feedback on chat support performance:
 
 - **Strengths**
 - **Areas for Improvement**
@@ -118,7 +120,7 @@ Review feedback on your chat support performance:
 Click on any chat session to see:
 
 - **Complete Chat Log**: Full conversation history with timestamps
-- **Response Time Analysis**: Breakdown of your reply speeds
+- **Response Time Analysis**: Breakdown of reply speeds
 - **Customer Journey**: Path taken before initiating chat
 - **Resolution Steps**: Actions taken to solve the customer's issue
 - **Satisfaction Survey**: Post-chat customer feedback
@@ -127,14 +129,46 @@ Click on any chat session to see:
 
 ---
 
-## Sort
+## Managing Interaction Data
+
+### Sort Options
 
 ![Interactions - Calls](../img/screenshots/agent_view/interactions/interactions-sort.png)
 
-## Filter
+### Filter Options
 
 ![Interactions - Calls](../img/screenshots/agent_view/interactions/interactions-filter.png)
 
-## Export
+### Export Data
 
 ![Interactions - Calls](../img/screenshots/agent_view/interactions/interactions-export.png)
+
+---
+
+## What's Next?
+
+Now that you can analyse interactions effectively, explore these related guides:
+
+- **[Monitor Progress](./Progress.md)** - Track how coaching impacts performance
+- **[Manage Courses](./Courses.md)** - Create training based on interaction insights
+- **[Set Up Awards](./Awards.md)** - Recognise excellent interaction performance
+
+---
+
+## Need Help?
+
+Stuck with interaction analysis? We're here to help!
+
+- **📖 [Progress Tracking Guide](./Progress.md)** - Learn about monitoring performance improvements
+- **📖 [Course Management Guide](./Courses.md)** - Create training based on interaction patterns
+- **📖 [Dashboard Guide](./Dashboard.md)** - Monitor overall interaction effectiveness
+
+**Still need assistance?**
+- **Email us**: support@botlhale.ai
+- **Visit our support portal**: [support.botlhale.ai](https://support.botlhale.ai)
+
+---
+
+## Was This Guide Helpful?
+
+We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.

@@ -1,13 +1,25 @@
 ---
 sidebar_position: 2
-title: Courses (Agent View)
+title: Track Your Learning Journey
 ---
 
-The Courses section is where you can manage and track your learning progress. All your assigned training materials, ongoing courses, and completed certifications are organised here for easy access and monitoring.
+Manage and monitor your training progress with ease. The Courses section shows all your assigned training materials, ongoing courses, and completed certifications in one organised place.
 
-## Overview
+## What You Can Achieve
 
-Your courses are organised by status to help you prioritize your learning activities:
+Track your learning progress effectively:
+
+| **Course Management** | **Progress Tracking** | **Skill Development** |
+|---------------------|---------------------|---------------------|
+| **View all assigned courses** | **Monitor completion status** | **Track skill improvements** |
+| **Access training materials** | **Track quiz results** | **Identify learning gaps** |
+| **Complete assessments** | **Review performance feedback** | **Celebrate achievements** |
+
+---
+
+## Understanding Your Courses Interface
+
+Your courses are organised by status to help you prioritise your learning activities:
 
 - **All Courses**: Complete view of every course available to you
 - **Assigned**: New courses that have been assigned to you
@@ -15,6 +27,8 @@ Your courses are organised by status to help you prioritize your learning activi
 - **Completed**: Successfully finished courses with your results
 
 ![Courses Dashboard](../img/screenshots/agent_view/courses/courses-overview.png)
+
+---
 
 ## Course Table View
 
@@ -32,6 +46,8 @@ All completed courses are presented in a comprehensive table format that include
 | **Actions**          | Available actions for each course                |
 
 This layout makes it easy to track where you are in your learning journey and how you've performed over time.
+
+---
 
 ## Finding Your Courses
 
@@ -57,6 +73,8 @@ Sort your courses by ascending or descending order by:
 
 ![Courses Sort](../img/screenshots/agent_view/courses/sort.png)
 
+---
+
 ## Course Actions
 
 For each course in your list, you'll see action buttons that allow you to:
@@ -71,7 +89,6 @@ Click **View Course Details** to open a detailed view of the course where you ca
 - View quiz results and feedback
 
 ![Courses Sort](../img/screenshots/agent_view/courses/view-material.png)
-
 
 ### Access Course Materials
 
@@ -92,8 +109,6 @@ When course content is web-based:
 2. The course content opens in a new browser tab
 3. Complete the material at your own pace
 4. Return to the portal to take any required quizzes
-
-
 
 ### Take Course Quizzes
 
@@ -132,11 +147,36 @@ After submission, you can:
 
 #### Quiz Results (continued)
 
-View every question and the results in detail by scrolliing down.
+View every question and the results in detail by scrolling down.
 
 ![Courses Dashboard](../img/screenshots/agent_view/courses/courses-detailed-view-quiz-results.png)
 
 ---
 
-> **Need Assistance?**
-> If you have questions about your courses or need technical support, contact your Team Lead or QA.
+## What's Next?
+
+Now that you can track your courses effectively, explore these related guides:
+
+- **[View Your Awards](./AgentAwards.md)** - Celebrate your learning achievements
+- **[Monitor Your Dashboard](./AgentDashboard.md)** - Track your overall performance
+- **[Review Your Interactions](./Interactions.md)** - Analyse your performance insights
+
+---
+
+## Need Help?
+
+Stuck with your courses? We're here to help!
+
+- **📖 [Awards Guide](./AgentAwards.md)** - Learn about recognising your achievements
+- **📖 [Dashboard Guide](./AgentDashboard.md)** - Monitor your overall performance
+- **📖 [Interaction Analysis Guide](./Interactions.md)** - Review your performance insights
+
+**Still need assistance?**
+- **Email us**: support@botlhale.ai
+- **Visit our support portal**: [support.botlhale.ai](https://support.botlhale.ai)
+
+---
+
+## Was This Guide Helpful?
+
+We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.

@@ -1,34 +1,37 @@
 ---
 sidebar_position: 1
 sidebar: teamLeadSidebar
-title: Dashboard (Team Lead View)
-# description: The Team Lead Dashboard provides a comprehensive overview of your team's performance metrics, allowing you to monitor progress, identify areas for improvement, and track trends over time.
+title: Monitor Your Team's Performance
 ---
 
+Your Coaching Portal dashboard shows you everything about your team's learning and development at a glance. It's where you'll spot trends, identify coaching opportunities, and track how your team is progressing.
 
-The Team Lead Dashboard provides a comprehensive overview of your team's performance metrics, allowing you to monitor progress, identify areas for improvement, and track trends over time.
+## What You Can Achieve
 
-## Overview
+Your dashboard transforms training data into actionable insights. With it, you can:
 
-Your dashboard displays key performance indicators across multiple categories, helping you understand your team's current standing and make data-driven coaching decisions.
+| **Performance Monitoring** | **Team Development** | **Learning Experience** |
+|---------------------------|-------------------|------------------------|
+| **Spot learning gaps before they escalate** | **Coach with confidence** | **Keep agents engaged** |
+| **Track progress trends and patterns** | **Identify top learners** | **Monitor satisfaction** |
+| **Optimise training efficiency** | **Spot development needs** | **Catch issues early** |
 
-![Dashboard Overview](/img/dashboard.png)
+---
 
-## Dashboard Features
+## Understanding Your Dashboard
 
 ### Date Range Selection
 
-Use the **Date Range** filter at the top of the dashboard to analyze performance over specific time periods:
+Use the **Date Range** filter at the top of the dashboard to analyse performance over specific time periods:
 
 - **Custom Date Range**: Select start and end dates to focus on specific periods
 - **Quick Filters**: Choose from preset options like "Last 7 days", "Last month", "Last quarter"
-- **Real-time Updates**: All metrics automatically update when you change the date range
+- **Live Updates**: All metrics automatically update when you change the date range
 
 ![Dashboard Date-Range](../img/screenshots/team_lead/dashboard/date-range.png)
 
 **Custom Date Range Filter (continued)**
 ![Dashboard Date-Range-2](../img/screenshots/team_lead/progress/date-filter-detailed.png)
-
 
 ### Category Scores
 
@@ -85,8 +88,35 @@ The dashboard includes several accordion-style chart sections:
 
 ---
 
-> **Maximize Team Success**: Regular dashboard monitoring combined with targeted coaching interventions leads to sustained performance improvements. Use the insights to guide your team toward excellence while maintaining focus on both individual growth and team objectives.
+## What's Next?
+
+Now that you understand your dashboard, explore these related guides:
+
+- **[Monitor Progress](./Progress.md)** - Track learning completion and trends
+- **[Manage Courses](./Courses.md)** - Create and assign training materials
+- **[Recognise Achievements](./Awards.md)** - Set up awards and recognition
+- **[Review Interactions](./Interactions.md)** - Analyse agent performance
 
 ---
 
-*Last updated on Jul 29, 2025 by athenkosi-cetyana*
+## Need Help?
+
+Stuck with your dashboard? We're here to help!
+
+- **📖 [Progress Tracking Guide](./Progress.md)** - Learn about detailed progress monitoring
+- **📖 [Course Management Guide](./Courses.md)** - Understand course creation and assignment
+- **📖 [Awards System Guide](./Awards.md)** - Set up recognition programmes
+
+**Still need assistance?**
+- **Email us**: support@botlhale.ai
+- **Visit our support portal**: [support.botlhale.ai](https://support.botlhale.ai)
+
+---
+
+## Was This Guide Helpful?
+
+We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.
+
+---
+
+> **Maximise Team Success**: Regular dashboard monitoring combined with targeted coaching interventions leads to sustained performance improvements. Use the insights to guide your team toward excellence while maintaining focus on both individual growth and team objectives.

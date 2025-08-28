@@ -1,99 +1,213 @@
 ---
 sidebar_position: 1
 sidebar: teamLeadSidebar
-title: Getting Started: A Tour of the Team Lead Portal
-# description: A step-by-step guide for Team Leads to monitor team performance, conduct evaluations, and create data-driven coaching plans in the Vela platform.
+title: Getting Started - A Tour of the Team Lead Portal
 ---
 
-Welcome to the Vela Coaching Portal! As a Team Lead, this platform is your command center for managing team performance, identifying coaching opportunities, and driving measurable improvements. This guide will walk you through the key areas of your portal.
+Welcome to the Vela Coaching Portal! This guide will help you start managing your team's performance and driving measurable improvements immediately.
 
----
+We know team leads juggle multiple responsibilities - from performance monitoring to coaching and development. That's where the Vela Coaching Portal comes in. We provide the tools you need to identify coaching opportunities, track progress, and recognise excellence across your team.
 
-## 1. The Dashboard: Your Team's Performance Overview
+> **What is the Vela Coaching Portal?** The **Vela Coaching Portal** is your command centre for team development, offering course management, progress tracking, awards recognition, and performance insights to help you build a high-performing team.
 
-When you log in, you'll land on the **Team Lead Dashboard**. This is your high-level view of your team's health and performance.
+## What You'll Achieve
 
-Use the **Date Range** filter to analyze performance over specific periods. The dashboard's widgets, such as **Category Scores** and **Auto Fails**, will update instantly. Use this data to spot team-wide trends and decide where to focus your attention.
+By the end of this guide, you'll be able to:
+- **Monitor your team's performance** with detailed analytics and insights
+- **Create and assign training courses** to develop specific skills
+- **Track learning progress** and identify agents who need support
+- **Recognise excellence** with awards and certificates
+- **Drive measurable improvements** through data-driven coaching
 
-
-
----
-
-## 2. The Team Page: Focus on Individual Agents
-
-Navigate to the **Team** section to see a list of all your direct reports. This page is your gateway to understanding individual performance.
-
-From here, you can click on any agent's name to drill down into their specific metrics, review their recent interactions, and see their active **Coaching Plans**. This is essential for preparing for one-on-one meetings.
+We've made this guide as straightforward as possible because we understand you have teams to manage and performance to improve.
 
 ---
 
-## 3. Interactions: Review, Evaluate, and Calibrate
+## Understanding the Vela Interface
 
-The **Interactions** section contains all your team's customer calls and chats. Use the powerful filters to find specific interactions, for example, by a particular agent, a low-scoring category, or a specific date range.
+Before we dive into the features, let's quickly familiarise you with the Vela Coaching Portal interface:
 
-Select any interaction to review it in detail. You can listen to call audio, read the **Transcrop**, and, most importantly, complete an **Evaluation Scorecard**. This is where you provide direct feedback and grade performance based on your company's quality standards.
+### **Top Navigation**
+The top navigation bar is your main navigation hub in the Coaching Portal. You'll find:
 
+- **[Dashboard](./Dashboard)** - Your team's performance overview with customisable metrics
+- **Team** - Individual agent management and performance tracking
+- **Interactions** - Review calls and chats with detailed analysis
+- **Coaching**
+  - **[Courses](./Courses)** - Create and manage training materials
+  - **[Progress](./Progress)** - Track learning development and completion rates
+- **[Awards](./Awards)** - Recognise and reward outstanding performance
+- **[Preferences](./Preferences)** - Configure your portal settings and preferences
 
-
----
-
-## 4. Coaching: Driving Agent Development
-
-After identifying an opportunity from the dashboard or an interaction review, the **Coaching** section is where you take action to build skills and track improvement.
-
-### Developing Skills with Courses
-
-The **Courses** section is your internal learning management system. Here, you can create, assign, and manage training for your team.
-
-To create a new course, click the **"Create a New Course"** card and follow the steps:
-1.  **Course Details**: Add a clear title, description, category, and define the **Scope** (who can access it).
-2.  **Course Content**: Upload materials like PDFs or add external links.
-3.  **Quiz Content**: Build assessments with multiple choice, short answer, or paragraph questions to test understanding.
-4.  **Deadlines & Reminders**: Set quiz retake limits, completion deadlines, and automatic **Course Nudges** (reminders).
-5.  **Create Course**: Save and activate the course.
-
-You can also manage existing courses to edit content, view quiz results, and set the required **Pass Percentage** in your preferences.
-
-### Tracking Agent Progress
-
-The **Progress Tracking** dashboard gives you full visibility into your team's learning journey. Use this area to:
-* Monitor an individual agent's progress through their assigned courses.
-* Track team-wide completion rates and identify trends.
-* Quickly see who might need extra support or encouragement.
-
-The dashboard includes a **Date Range Filter**, an **Agent Progress Table** with color-coded statuses (**Complete**, **In Progress**, or **Not Started**), and robust search and filter controls. By comparing initiation and final scores, you can directly measure the impact of your training.
-
-
+> **💡 Tip**: The top navigation provides easy access to all sections of the Coaching Portal, making it simple to switch between different areas of your team management workflow.
 
 ---
 
-## 5. Recognizing Performance with Awards
+## Quick Setup Checklist
 
-Motivate your team and build a positive culture by recognizing excellent work in the **Awards Management** section. 🏆
+### Step 1: Explore Your Dashboard
+**Goal**: Understand your team's current performance landscape
 
-### Creating a New Award
+Your dashboard is your command centre for team insights. It shows you everything you need to know at a glance.
 
-While the system comes with pre-created awards, you can create custom ones. Click **"Create New Award"** and:
-1.  **Award Details**: Enter a name, category, description, and **Scope**.
-2.  **Score Threshold**: Set a performance score range that will automatically qualify an agent for the award.
-3.  **Award Message**: Write a personalized message that will be sent with the award.
+- [ ] **Review the Dashboard** to see your team's performance metrics
+- [ ] **Use the Date Range filter** to analyse specific time periods
+- [ ] **Identify trends** in Category Scores and Auto Fails
+- [ ] **Spot coaching opportunities** based on performance data
 
-### Tracking Presented Awards
+> **[📊 Dashboard guide](./Dashboard)** - Learn about all dashboard features and metrics
 
-In the **Awards Presented** tab, you'll find a comprehensive table of all awards distributed to your team. You can filter and sort this list by agent, date, or award type. For formal recognition, you can also **Download** a branded PDF certificate for any award.
+> **Why this matters**: Your dashboard helps you make data-driven decisions about where to focus your coaching efforts.
+
+### Step 2: Review Team Interactions
+**Goal**: Understand individual agent performance and identify coaching needs
+
+This is where you'll dive deep into individual performance and identify specific coaching opportunities.
+
+- [ ] **Navigate to "Interactions"** to see all team calls and chats
+- [ ] **Use filters** to find specific interactions (by agent, score, date range)
+- [ ] **Click on any interaction** to review in detail:
+  - [ ] **Listen to call audio** and read transcripts
+  - [ ] **Complete evaluation scorecards** for quality assessment
+  - [ ] **Identify specific coaching opportunities**
+
+> **[📞 Interactions guide](./Interactions)** - Learn how to review and evaluate interactions effectively
+
+> **Why this matters**: Detailed interaction reviews help you provide specific, actionable feedback to your agents.
+
+### Step 3: Create Your First Course
+**Goal**: Set up training to address identified skill gaps
+
+Once you've identified areas for improvement, create targeted training to help your team grow.
+
+- [ ] **Go to "Coaching" → "Courses"** in the top navigation
+- [ ] **Click "Create a New Course"**
+- [ ] **Add course details** (title, description, category, scope)
+- [ ] **Upload training materials** (PDFs or external links)
+- [ ] **Create quiz content** to test understanding
+- [ ] **Set deadlines and reminders** for completion
+
+> **[📚 Course creation guide](./Courses)** - Learn about advanced course features and best practices
+
+> **Why this matters**: Structured training ensures consistent skill development across your team.
+
+### Step 4: Track Progress and Recognise Excellence
+**Goal**: Monitor development and motivate your team
+
+Keep your team motivated and track their development journey.
+
+- [ ] **Monitor progress** in the Progress Tracking dashboard
+- [ ] **Identify agents needing support** with colour-coded status indicators
+- [ ] **Create awards** to recognise outstanding performance
+- [ ] **Download certificates** for formal recognition
+
+> **[📈 Progress tracking guide](./Progress)** - Learn how to monitor and support agent development
+> **[🏆 Awards guide](./Awards)** - Learn how to create and manage recognition programmes
+
+> **Why this matters**: Regular recognition and progress monitoring keeps your team engaged and motivated.
 
 ---
 
-## 6. Reporting: Analyze Long-Term Trends
+## Next Steps
 
-For a broader perspective, visit the **Reporting** section. Here, you can generate detailed reports on team and individual performance over longer periods. Use these insights to understand the effectiveness of your coaching strategies and to prepare for business reviews.
+Now that you're familiar with the basics, here are some next steps to maximise your team's success:
+
+### **For New Teams**
+- Start with weekly progress reviews to establish coaching rhythms
+- Create introductory courses to build foundational skills
+- Set up regular award programmes to boost morale
+
+### **For Established Teams**
+- Use monthly evaluation cycles for ongoing development
+- Create advanced courses for skill specialisation
+- Implement comprehensive recognition programmes
+
+### **For Performance Improvement**
+- Increase evaluation frequency to daily for intensive coaching
+- Create targeted courses for specific skill gaps
+- Use detailed interaction reviews for personalised feedback
 
 ---
 
-## A Note on Performance Feedback
-
-The Vela portal is designed for a holistic coaching loop. While there isn't a specific "send cautionary message" button, the process for addressing performance issues is built into the workflow. When you identify an area for improvement via the **Dashboard** or an **Interaction**, the next step is to create a **Coaching Plan** and assign a **Course**. This provides a structured, supportive, and trackable path for agent development.
+> **💡 Pro Tip**: The Vela Coaching Portal is designed to grow with your team. Start with the basics and gradually explore advanced features as your coaching programme matures.
 
 ---
 
-*Last updated on August 25, 2025 by *
+## 🎉 You're All Set!
+
+**Congratulations!** You've just completed your first steps with the Vela Coaching Portal. You're now ready to transform your team management with data-driven coaching and development tools. The portal provides everything you need to build a high-performing team through structured learning and recognition.
+
+Team leads face unique challenges - managing performance, developing skills, and maintaining motivation. The Vela Coaching Portal helps you see what's really happening so you can make informed coaching decisions.
+
+You've just unlocked the capabilities that will make your team more effective!
+
+---
+
+## What's Next?
+
+### **Daily Operations**
+- **[Monitor your dashboard](./Dashboard)** - Track daily performance and trends
+- **[Review team interactions](./Interactions)** - Stay on top of agent performance
+- **[Check course progress](./Progress)** - Identify agents who need support
+
+### **Team Development**
+- **[Create training courses](./Courses)** - Develop specific skills and knowledge
+- **[Recognise excellence](./Awards)** - Build a culture of achievement
+- **[Track learning outcomes](./Progress)** - Measure the impact of your coaching
+
+### **Advanced Features**
+- **[Customise preferences](./Preferences)** - Tailor the portal to your needs
+- **[Generate reports](./Progress)** - Create detailed performance summaries
+- **[Manage team structure](./Preferences)** - Configure departments and teams
+
+> **💡 Pro Tip**: Use the top navigation in the Vela Coaching Portal to quickly access any section. Each section has its own dedicated documentation that you can reference while working in the platform.
+
+---
+
+## Need Help?
+
+Don't worry! We're here to help! Here's how to get support:
+
+- 📧 **Contact Support**: support@botlhale.ai
+- 🎥 **Video Tutorials**: Available on the homepage
+
+---
+
+## Was This Guide Helpful?
+
+We're constantly improving our documentation based on your feedback. Let us know how this guide worked for you:
+
+**Did this guide help you get started with the Vela Coaching Portal?**
+- ✅ **Yes** - I was able to set up the portal successfully
+- ❌ **No** - I need more help
+
+**What could we improve?**
+- More detailed steps
+- Better screenshots
+- Additional examples
+- Different organisation
+
+Send your feedback to: **support@botlhale.ai**
+
+---
+
+## Still Need Help?
+
+If this guide didn't answer your question, we're here to help:
+
+### 📞 **Get Human Support**
+- **Email**: support@botlhale.ai
+- **Response Time**: Within 24 hours (usually much faster)
+- **Available**: Monday - Friday, 9 AM - 5 PM SAST
+
+### 🎥 **Video Tutorials**
+- **Complete walkthroughs** available on the homepage
+- **Step-by-step guides** for every major feature
+- **Best practices** and tips from our team
+
+### 📚 **Additional Resources**
+- [Release Notes](./release-notes.md) - Latest updates and features
+
+---
+
+*Last updated on August 25, 2025*

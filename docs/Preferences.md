@@ -1,20 +1,30 @@
 ---
-title: Preferences (Team Lead View)
-# description: Customize your portal settings and manage notification preferences
+title: Customise Your Coaching Portal Experience
 ---
 
+Tailor your coaching portal to match your team's needs and your management style. Configure evaluation settings, notification preferences, and dashboard options to optimise your workflow.
 
+## What You Can Achieve
 
-Customize your coaching portal experience with personalized settings, notification preferences, and dashboard configurations to optimize your team management workflow.
+Customise settings that enhance your coaching effectiveness:
 
+| **Evaluation Control** | **Workflow Optimisation** | **Team Management** |
+|----------------------|-------------------------|-------------------|
+| **Set evaluation scope and frequency** | **Configure notification preferences** | **Control agent access permissions** |
+| **Define course completion criteria** | **Personalise dashboard layouts** | **Manage team visibility settings** |
+| **Optimise coaching cycles** | **Streamline administrative tasks** | **Build trust through transparency** |
 
-## Overview
+---
+
+## Understanding the Preferences Interface
 
 The Preferences section allows you to tailor the portal to your specific needs as a team lead, ensuring you receive the right information at the right time while maintaining an efficient workspace.
 
 ![Preferences Overview](/img/preferences.png)
 
-## Evaluation Scope
+---
+
+## Evaluation Scope Configuration
 
 Configure which interactions should be included in your evaluation processes.
 
@@ -39,7 +49,9 @@ This setting determines the scope of data used for:
 - Team performance comparisons
 - Award and recognition calculations
 
-## Evaluation Cycle
+---
+
+## Evaluation Cycle Settings
 
 Set the frequency of automatic evaluation cycles used in agent coaching. This determines how often awards and training courses are reviewed.
 
@@ -76,9 +88,9 @@ Set the frequency of automatic evaluation cycles used in agent coaching. This de
 
 ---
 
-## Course Settings
+## Course Settings Configuration
 
-Configure course completion requirements and passing criteria for your team's training programs.
+Configure course completion requirements and passing criteria for your team's training programmes.
 
 ![Course Settings](/img/preferences2.png)
 
@@ -101,12 +113,13 @@ This setting affects:
 - **Progress Tracking**: How completion rates are calculated in reports
 - **Retake Requirements**: When agents need to retake failed assessments
 
+---
+
 ## Agent View Permissions
 
 Control what interaction data agents can access in their personal portals.
 
 ![Preferences Agent View](../img/screenshots/team_lead/preferences/agent-view.png)
-
 
 ### Interaction Visibility
 
@@ -124,27 +137,13 @@ Control what interaction data agents can access in their personal portals.
   - Maintains quality standards in self-review
   - Prevents confusion from unprocessed data
 
-<!-- ### Permission Benefits
-
-**All Interactions Access**:
-
-- Encourages proactive self-assessment
-- Provides immediate access to recent work
-- Supports continuous learning mindset
-- Enables real-time performance awareness
-
-**Reviewed Interactions Only**:
-
-- Ensures consistent feedback quality
-- Focuses on meaningful coaching insights
-- Reduces information overload
-- Maintains professional review standards -->
+---
 
 ## Configuration Best Practices
 
 ### Evaluation Scope Recommendations
 
-- **High-Volume Centers**: Consider "Reviewed Interactions Only" to manage data quality
+- **High-Volume Centres**: Consider "Reviewed Interactions Only" to manage data quality
 - **Quality-Focused Teams**: Use "All Interactions" for comprehensive coverage
 - **Training Environments**: Start with "Reviewed Interactions Only" for guided learning
 
@@ -153,7 +152,6 @@ Control what interaction data agents can access in their personal portals.
 - **New Teams**: Begin with weekly cycles for close monitoring
 - **Established Teams**: Monthly cycles may be sufficient for stable performance
 - **Performance Issues**: Increase frequency to daily for intensive coaching periods
-
 
 ### Course Pass Rate Considerations
 
@@ -167,6 +165,8 @@ Control what interaction data agents can access in their personal portals.
 - **Quality Control Phase**: Use "Reviewed Interactions Only" for consistent messaging
 - **Performance Improvement**: Adjust based on individual agent needs and maturity
 
+---
+
 ## Saving Your Preferences
 
 After configuring your settings:
@@ -179,12 +179,38 @@ After configuring your settings:
 
 ![Preferences Save](../img/screenshots/team_lead/preferences/save.png)
 
-> **Important**: Preference changes take effect immediately and will impact ongoing evaluations and agent access. Consider communicating significant changes to your team.
+> **⚠️ Important**: Preference changes take effect immediately and will impact ongoing evaluations and agent access. Consider communicating significant changes to your team.
 
 ---
 
-> **Optimize Your Experience**: Regular review of your preferences ensures the portal continues to meet your evolving needs as a team lead. These settings directly impact coaching effectiveness and team development outcomes.
+## What's Next?
+
+Now that you've configured your preferences, explore these related guides:
+
+- **[Monitor Progress](./Progress.md)** - Track how your settings impact performance
+- **[Manage Courses](./Courses.md)** - Create training programmes with your new criteria
+- **[Set Up Awards](./Awards.md)** - Configure recognition based on your evaluation scope
 
 ---
 
-*Last updated on Jul 29, 2025 by athenkosi-cetyana*
+## Need Help?
+
+Stuck with preference configuration? We're here to help!
+
+- **📖 [Progress Tracking Guide](./Progress.md)** - Learn about monitoring with your new settings
+- **📖 [Course Management Guide](./Courses.md)** - Create training with your pass rate criteria
+- **📖 [Dashboard Guide](./Dashboard.md)** - Monitor effectiveness with your evaluation scope
+
+**Still need assistance?**
+- **Email us**: support@botlhale.ai
+- **Visit our support portal**: [support.botlhale.ai](https://support.botlhale.ai)
+
+---
+
+## Was This Guide Helpful?
+
+We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.
+
+---
+
+> **Optimise Your Experience**: Regular review of your preferences ensures the portal continues to meet your evolving needs as a team lead. These settings directly impact coaching effectiveness and team development outcomes.
