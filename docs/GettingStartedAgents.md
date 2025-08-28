@@ -8,7 +8,7 @@ Welcome to the Vela Coaching Portal! This guide will help you start tracking you
 
 We know agents want to excel in their roles and grow their careers. That's where the Vela Coaching Portal comes in. We provide the tools you need to track your performance, access training, and celebrate your achievements.
 
-> **What is the Vela Coaching Portal?** The **Vela Coaching Portal** is your personal development hub, offering performance insights, training courses, achievement recognition, and self-assessment tools to help you grow and succeed in your role.
+> **What is the Vela Coaching Portal?** The **Vela Coaching Portal** helps you track your performance, access training courses, celebrate your achievements, and assess your own development to help you grow and succeed in your role.
 
 ## What You'll Achieve
 
@@ -27,16 +27,16 @@ We've made this guide as straightforward as possible because we understand you h
 
 Before we dive into the features, let's quickly familiarise you with the Vela Coaching Portal interface:
 
-### **Top Navigation**
-The top navigation bar is your main navigation hub in the Coaching Portal. You'll find:
+### **Left Navigation**
+The left navigation bar is your main navigation hub in the Coaching Portal. You'll find:
 
-- **[My Dashboard](./AgentDashboard)** - Your personal performance overview with customisable metrics
-- **[My Courses](./AgentCourses)** - Access your training materials and track progress
-- **[My Awards](./AgentAwards)** - View your achievements and recognition
+- **[Dashboard](./AgentDashboard)** - Your personal performance overview with customisable metrics
+- **[Courses](./AgentCourses)** - Access your training materials and track progress
+- **[Awards](./AgentAwards)** - View your achievements and recognition
 - **[Interactions](./Interactions)** - Review your calls and chats with detailed analysis
 - **[Admin](./AgentAdmin)** - Manage your account settings and preferences
 
-> **💡 Tip**: The top navigation provides easy access to all sections of the Coaching Portal, making it simple to switch between different areas of your learning and development workflow.
+> **💡 Tip**: The left navigation provides easy access to all sections of the Coaching Portal, making it simple to switch between different areas of your learning and development workflow.
 
 ---
 
@@ -83,7 +83,7 @@ Your courses are designed to help you grow and improve in specific areas identif
 - [ ] **Complete quizzes** to test your understanding
 - [ ] **Review your scores** and feedback
 
-> **[📚 My Courses guide](./AgentCourses)** - Learn about course features and how to maximise your learning
+> **[📚 My Courses guide](./AgentCourses)** - Learn about course features and how to get the most from your learning
 
 > **Why this matters**: Structured training helps you develop the skills you need to excel in your role.
 
@@ -105,7 +105,7 @@ Your awards represent recognition for your hard work and dedication to excellenc
 
 ## Next Steps
 
-Now that you're familiar with the basics, here are some next steps to maximise your success:
+Now that you're familiar with the basics, here are some next steps to improve your success:
 
 ### **For New Agents**
 - Start by exploring your dashboard to understand your current performance
@@ -130,11 +130,11 @@ Now that you're familiar with the basics, here are some next steps to maximise y
 
 ## 🎉 You're All Set!
 
-**Congratulations!** You've just completed your first steps with the Vela Coaching Portal. You're now ready to transform your professional development with data-driven insights and structured learning tools. The portal provides everything you need to grow and excel in your role.
+**Congratulations!** You've just completed your first steps with the Vela Coaching Portal. You're now ready to improve your professional development with data-driven insights and structured learning tools. The portal provides everything you need to grow and excel in your role.
 
 Agents face unique challenges - managing performance, developing skills, and maintaining motivation. The Vela Coaching Portal helps you see what's really happening so you can make informed decisions about your development.
 
-You've just unlocked the capabilities that will make you more effective!
+You've just discovered the capabilities that will help you work better!
 
 ---
 
@@ -155,7 +155,7 @@ You've just unlocked the capabilities that will make you more effective!
 - **[Track your progress](./AgentCourses)** - Monitor your learning journey
 - **[Build your portfolio](./AgentAwards)** - Collect certificates and achievements
 
-> **💡 Pro Tip**: Use the top navigation in the Vela Coaching Portal to quickly access any section. Each section has its own dedicated documentation that you can reference while working in the platform.
+> **💡 Pro Tip**: Use the left navigation in the Vela Coaching Portal to quickly access any section. Each section has its own dedicated documentation that you can reference while working in the platform.
 
 ---
 
@@ -186,23 +186,3 @@ Send your feedback to: **support@botlhale.ai**
 
 ---
 
-## Still Need Help?
-
-If this guide didn't answer your question, we're here to help:
-
-### 📞 **Get Human Support**
-- **Email**: support@botlhale.ai
-- **Response Time**: Within 24 hours (usually much faster)
-- **Available**: Monday - Friday, 9 AM - 5 PM SAST
-
-### 🎥 **Video Tutorials**
-- **Complete walkthroughs** available on the homepage
-- **Step-by-step guides** for every major feature
-- **Best practices** and tips from our team
-
-### 📚 **Additional Resources**
-- [Release Notes](./release-notes.md) - Latest updates and features
-
----
-
-*Last updated on Aug 25, 2025*

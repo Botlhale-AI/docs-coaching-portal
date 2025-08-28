@@ -4,6 +4,10 @@ title: Celebrate Your Achievements
 
 View and celebrate all the recognition you've earned over time. The Awards section serves as your personal achievement gallery, showcasing your performance milestones and professional accomplishments.
 
+We know agents want to be recognised for their hard work and achievements. That's where the Awards section comes in. We provide the tools you need to view your recognition, download certificates, and build a portfolio of your professional accomplishments.
+
+> **What are Your Awards?** The **Awards section** is your personal achievement gallery, offering recognition viewing, certificate downloads, performance documentation, and career development tools to help you celebrate your success and advance your career.
+
 ## What You Can Achieve
 
 Celebrate your recognition and achievements:
@@ -21,6 +25,8 @@ Celebrate your recognition and achievements:
 Your awards represent recognition for excellent performance, skill development, and contribution to team success. Each award reflects specific achievements in your role and professional growth.
 
 ![Awards Dashboard](/img/agentawards1.png)
+
+> **💡 Tip**: Regular review of your awards helps you understand your strengths and track your career progression over time.
 
 ---
 
@@ -40,6 +46,8 @@ All your awards are displayed in an organised table format showing:
 | **Certificate Status** | Whether a certificate is available for download |
 | **Actions** | Options to view details or download certificates |
 
+> **Why this matters**: Understanding your awards helps you identify your strengths, track your achievements, and plan your career development path.
+
 ---
 
 ## Searching and Filtering Awards
@@ -55,6 +63,8 @@ Use the search bar to quickly find specific awards by:
 
 ![Award Search](/img/agentawards2.png)
 
+> **💡 Pro Tip**: Use the search function to quickly locate specific awards when you need to reference them for performance reviews or career discussions.
+
 ### Date Range Filter
 
 Filter awards by selecting a custom date range:
@@ -66,6 +76,8 @@ Filter awards by selecting a custom date range:
    - Last Month
 3. Or select custom start and end dates
 4. Click **Apply** to filter results
+
+> **Why this matters**: Date filtering helps you track your achievement patterns over time and identify periods of peak performance.
 
 ### Category Filters
 
@@ -89,6 +101,8 @@ Sort your awards by:
 
 ![Award Date Range](../img/screenshots/agent_view/awards/sort.png)
 
+> **💡 Tip**: Use sorting to identify patterns in your achievements and understand which areas you excel in most frequently.
+
 ---
 
 ## Award Details
@@ -98,90 +112,22 @@ Sort your awards by:
 Click **View Award** to open detailed information including:
 
 - **Complete Award Description**: Full details of the achievement
-- **Performance Metrics**: Specific data that earned the recognition
-- **Achievement Context**: Circumstances surrounding the award
-- **Feedback Comments**: Personal notes from your supervisor
+- **Performance Criteria**: What you did to earn the recognition
+- **Impact on Team**: How your achievement benefited the organisation
+- **Personal Message**: Any personalised feedback from your team lead
 
-![Award Details](/img/agentawards3.png)
-
-### Award Certificates
-
-#### Downloading Certificates
-
-For awards that include certificates:
-
-1. Click **View Award** to open the award details
-2. Click **Download Certificate** button
-3. The certificate will download as a PDF file
-4. Save the file for your personal records
-
-#### Certificate Features
-
-![Certificate Features](/img/agentawards4.png)
-
-Your certificates include:
-
-- Official company branding and logo
-- Your name and employee details
-- Specific achievement description
-- Date of recognition
-- Digital signature from awarding authority
-
-#### Uses for Certificates
-
-- **Personal Portfolio**: Add to your professional portfolio
-- **Performance Reviews**: Include in self-assessment documents
-- **Career Development**: Use in job applications or promotions
-- **Personal Records**: Keep for your own achievement tracking
-
----
-
-## Award Notifications
-
-### Receiving Award Notifications
-
-When you receive a new award:
-
-1. You'll receive an immediate in-app notification
-2. The award appears in your Awards section
-
-### Notification Settings
-
-Manage how you receive award notifications:
-
-- In-app notifications (recommended)
-
----
-
-## Award Impact
-
-### Performance Recognition
-
-Awards serve multiple purposes:
-
-- **Motivation**: Recognition for excellent work
-- **Career Development**: Documentation of achievements
-- **Team Morale**: Celebrating individual success
-- **Goal Setting**: Inspiration for future performance targets
-
-### Career Benefits
-
-Your awards can help with:
-
-- **Performance Reviews**: Evidence of exceptional work
-- **Promotion Opportunities**: Demonstration of readiness for advancement
-- **Skill Validation**: Proof of competency in specific areas
-- **Professional Growth**: Recognition of development progress
+> **Why this matters**: Detailed award information helps you understand exactly what you did well and how to replicate that success in the future.
 
 ---
 
 ## What's Next?
 
-Now that you can view your awards, explore these related guides:
+Now that you can celebrate your achievements, explore these related guides:
 
-- **[Track Your Courses](./AgentCourses.md)** - Continue your learning journey
-- **[Monitor Your Dashboard](./AgentDashboard.md)** - Track your overall performance
-- **[Review Your Interactions](./Interactions.md)** - Analyse your performance insights
+- **[📊 Monitor Your Performance](./AgentDashboard.md)** - Track how your achievements relate to your overall performance
+- **[📚 Track Your Learning](./AgentCourses.md)** - Continue developing skills that lead to more awards
+- **[📞 Review Your Interactions](./Interactions.md)** - Analyse the performance that earned your recognition
+- **[⚙️ Manage Your Settings](./AgentAdmin.md)** - Customise your awards experience
 
 ---
 
@@ -189,8 +135,8 @@ Now that you can view your awards, explore these related guides:
 
 Stuck with viewing your awards? We're here to help!
 
-- **📖 [Course Tracking Guide](./AgentCourses.md)** - Learn about continuing your development
-- **📖 [Dashboard Guide](./AgentDashboard.md)** - Monitor your overall performance
+- **📖 [Dashboard Guide](./AgentDashboard.md)** - Learn about monitoring your performance
+- **📖 [Course Tracking Guide](./AgentCourses.md)** - Understand your learning achievements
 - **📖 [Interaction Analysis Guide](./Interactions.md)** - Review your performance insights
 
 **Still need assistance?**
@@ -202,7 +148,3 @@ Stuck with viewing your awards? We're here to help!
 ## Was This Guide Helpful?
 
 We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.
-
----
-
-> **Celebrate Your Success!** Your awards represent your hard work and dedication. Take pride in your achievements and use them as motivation for continued excellence. For questions about specific awards, contact your team lead or supervisor.

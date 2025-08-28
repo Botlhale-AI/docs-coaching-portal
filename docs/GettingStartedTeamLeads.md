@@ -27,19 +27,22 @@ We've made this guide as straightforward as possible because we understand you h
 
 Before we dive into the features, let's quickly familiarise you with the Vela Coaching Portal interface:
 
-### **Top Navigation**
-The top navigation bar is your main navigation hub in the Coaching Portal. You'll find:
+### **Left Navigation**
+The left navigation bar is your main navigation hub in the Coaching Portal. You'll find the **Coaching** section under TOOLS, which contains all your team development tools:
 
+**Coaching Section:**
 - **[Dashboard](./Dashboard)** - Your team's performance overview with customisable metrics
-- **Team** - Individual agent management and performance tracking
-- **Interactions** - Review calls and chats with detailed analysis
-- **Coaching**
-  - **[Courses](./Courses)** - Create and manage training materials
-  - **[Progress](./Progress)** - Track learning development and completion rates
-- **[Awards](./Awards)** - Recognise and reward outstanding performance
+- **[Courses](./Courses)** - Create and manage training programmes
+- **[Progress](./Progress)** - Track learning completion and trends
+- **[Awards](./Awards)** - Set up recognition programmes
 - **[Preferences](./Preferences)** - Configure your portal settings and preferences
 
-> **💡 Tip**: The top navigation provides easy access to all sections of the Coaching Portal, making it simple to switch between different areas of your team management workflow.
+![Coaching Navigation](../img/screenshots/team_lead/nav.png)
+> **💡 Tip**: The Coaching section is where you'll spend most of your time managing your team's development and performance.
+
+> **💡 Tip**: The left navigation provides easy access to all sections of the Coaching Portal, making it simple to switch between different areas of your team management workflow.
+
+
 
 ---
 
@@ -71,7 +74,7 @@ This is where you'll dive deep into individual performance and identify specific
   - [ ] **Complete evaluation scorecards** for quality assessment
   - [ ] **Identify specific coaching opportunities**
 
-> **[📞 Interactions guide](./Interactions)** - Learn how to review and evaluate interactions effectively
+> **[📞 Interactions guide](./Interactions)** - Learn how to review and evaluate interactions
 
 > **Why this matters**: Detailed interaction reviews help you provide specific, actionable feedback to your agents.
 
@@ -80,7 +83,7 @@ This is where you'll dive deep into individual performance and identify specific
 
 Once you've identified areas for improvement, create targeted training to help your team grow.
 
-- [ ] **Go to "Coaching" → "Courses"** in the top navigation
+- [ ] **Go to "Coaching" → "Courses"** in the left navigation
 - [ ] **Click "Create a New Course"**
 - [ ] **Add course details** (title, description, category, scope)
 - [ ] **Upload training materials** (PDFs or external links)
@@ -110,7 +113,7 @@ Keep your team motivated and track their development journey.
 
 ## Next Steps
 
-Now that you're familiar with the basics, here are some next steps to maximise your team's success:
+Now that you're familiar with the basics, here are some next steps to improve your team's success:
 
 ### **For New Teams**
 - Start with weekly progress reviews to establish coaching rhythms
@@ -120,7 +123,7 @@ Now that you're familiar with the basics, here are some next steps to maximise y
 ### **For Established Teams**
 - Use monthly evaluation cycles for ongoing development
 - Create advanced courses for skill specialisation
-- Implement comprehensive recognition programmes
+- Implement complete recognition programmes
 
 ### **For Performance Improvement**
 - Increase evaluation frequency to daily for intensive coaching
@@ -135,11 +138,11 @@ Now that you're familiar with the basics, here are some next steps to maximise y
 
 ## 🎉 You're All Set!
 
-**Congratulations!** You've just completed your first steps with the Vela Coaching Portal. You're now ready to transform your team management with data-driven coaching and development tools. The portal provides everything you need to build a high-performing team through structured learning and recognition.
+**Congratulations!** You've just completed your first steps with the Vela Coaching Portal. You're now ready to improve your team management with data-driven coaching and development tools. The portal provides everything you need to build a high-performing team through structured learning and recognition.
 
 Team leads face unique challenges - managing performance, developing skills, and maintaining motivation. The Vela Coaching Portal helps you see what's really happening so you can make informed coaching decisions.
 
-You've just unlocked the capabilities that will make your team more effective!
+You've just discovered the capabilities that will help your team work better!
 
 ---
 
@@ -160,7 +163,7 @@ You've just unlocked the capabilities that will make your team more effective!
 - **[Generate reports](./Progress)** - Create detailed performance summaries
 - **[Manage team structure](./Preferences)** - Configure departments and teams
 
-> **💡 Pro Tip**: Use the top navigation in the Vela Coaching Portal to quickly access any section. Each section has its own dedicated documentation that you can reference while working in the platform.
+> **💡 Pro Tip**: Use the left navigation in the Vela Coaching Portal to quickly access any section. Each section has its own dedicated documentation that you can reference while working in the platform.
 
 ---
 
@@ -191,23 +194,3 @@ Send your feedback to: **support@botlhale.ai**
 
 ---
 
-## Still Need Help?
-
-If this guide didn't answer your question, we're here to help:
-
-### 📞 **Get Human Support**
-- **Email**: support@botlhale.ai
-- **Response Time**: Within 24 hours (usually much faster)
-- **Available**: Monday - Friday, 9 AM - 5 PM SAST
-
-### 🎥 **Video Tutorials**
-- **Complete walkthroughs** available on the homepage
-- **Step-by-step guides** for every major feature
-- **Best practices** and tips from our team
-
-### 📚 **Additional Resources**
-- [Release Notes](./release-notes.md) - Latest updates and features
-
----
-
-*Last updated on August 25, 2025*

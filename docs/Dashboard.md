@@ -6,15 +6,19 @@ title: Monitor Your Team's Performance
 
 Your Coaching Portal dashboard shows you everything about your team's learning and development at a glance. It's where you'll spot trends, identify coaching opportunities, and track how your team is progressing.
 
+Team leads want to see how their team is performing at a glance. Your Dashboard gives you the tools to monitor trends, spot coaching opportunities, and track how your team is developing.
+
+> **What is Your Dashboard?** Your **Dashboard** is your performance monitoring hub, offering real-time metrics, trend analysis, coaching insights, and team development tracking to help you make informed decisions about your team's growth.
+
 ## What You Can Achieve
 
-Your dashboard transforms training data into actionable insights. With it, you can:
+Your dashboard turns training data into useful insights. With it, you can:
 
 | **Performance Monitoring** | **Team Development** | **Learning Experience** |
 |---------------------------|-------------------|------------------------|
 | **Spot learning gaps before they escalate** | **Coach with confidence** | **Keep agents engaged** |
 | **Track progress trends and patterns** | **Identify top learners** | **Monitor satisfaction** |
-| **Optimise training efficiency** | **Spot development needs** | **Catch issues early** |
+| **Improve training efficiency** | **Spot development needs** | **Catch issues early** |
 
 ---
 
@@ -23,6 +27,8 @@ Your dashboard transforms training data into actionable insights. With it, you c
 ### Date Range Selection
 
 Use the **Date Range** filter at the top of the dashboard to analyse performance over specific time periods:
+
+> **💡 Tip**: Use different date ranges to spot trends - weekly views show immediate issues, while monthly views reveal longer-term patterns.
 
 - **Custom Date Range**: Select start and end dates to focus on specific periods
 - **Quick Filters**: Choose from preset options like "Last 7 days", "Last month", "Last quarter"
@@ -47,6 +53,8 @@ Common categories include:
 
 **Auto Fails** represent critical errors that automatically fail an evaluation. This percentage shows what portion of calls had at least one auto-fail criterion.
 
+> **Why this matters**: Auto-fail trends help you identify critical issues that need immediate attention and training.
+
 #### Understanding Auto Fail Metrics
 
 - **Percentage Display**: Shows the proportion of interactions with auto-fail occurrences
@@ -58,6 +66,8 @@ Common categories include:
 ## Performance Charts
 
 Access detailed performance analytics through expandable chart sections that provide deeper insights into team performance trends.
+
+> **💡 Pro Tip**: Use the drill-down features to identify specific agents or time periods that need attention.
 
 ![Performance Charts](/img/dashboard2.png)
 
@@ -92,10 +102,10 @@ The dashboard includes several accordion-style chart sections:
 
 Now that you understand your dashboard, explore these related guides:
 
-- **[Monitor Progress](./Progress.md)** - Track learning completion and trends
-- **[Manage Courses](./Courses.md)** - Create and assign training materials
-- **[Recognise Achievements](./Awards.md)** - Set up awards and recognition
-- **[Review Interactions](./Interactions.md)** - Analyse agent performance
+- **[📊 Monitor Progress](./Progress.md)** - Track learning completion and trends
+- **[📚 Manage Courses](./Courses.md)** - Create and assign training materials
+- **[🏆 Recognise Achievements](./Awards.md)** - Set up awards and recognition
+- **[📞 Review Interactions](./Interactions.md)** - Analyse agent performance
 
 ---
 
@@ -119,4 +129,4 @@ We're constantly improving our documentation. Let us know how we can make this g
 
 ---
 
-> **Maximise Team Success**: Regular dashboard monitoring combined with targeted coaching interventions leads to sustained performance improvements. Use the insights to guide your team toward excellence while maintaining focus on both individual growth and team objectives.
+> **Improve Team Success**: Regular dashboard monitoring combined with targeted coaching interventions leads to sustained performance improvements. Use the insights to guide your team toward excellence.hile maintaining focus on both individual growth and team objectives.

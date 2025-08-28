@@ -2,17 +2,21 @@
 title: Customise Your Coaching Portal Experience
 ---
 
-Tailor your coaching portal to match your team's needs and your management style. Configure evaluation settings, notification preferences, and dashboard options to optimise your workflow.
+Tailor your coaching portal to match your team's needs and your management style. Configure evaluation settings, notification preferences, and dashboard options to improve your workflow.
+
+Team leads want to work efficiently and focus on what matters most. The Preferences section gives you tools to customise your portal experience, simplify your workflow, and make sure you get the right information when you need it.
+
+> **What are Preferences?** The **Preferences section** lets you customise how the portal works for you. You can set evaluation settings, manage notifications, configure your dashboard, and adjust your workflow to work more efficiently.
 
 ## What You Can Achieve
 
-Customise settings that enhance your coaching effectiveness:
+Customise settings that improve your coaching effectiveness:
 
 | **Evaluation Control** | **Workflow Optimisation** | **Team Management** |
 |----------------------|-------------------------|-------------------|
 | **Set evaluation scope and frequency** | **Configure notification preferences** | **Control agent access permissions** |
 | **Define course completion criteria** | **Personalise dashboard layouts** | **Manage team visibility settings** |
-| **Optimise coaching cycles** | **Streamline administrative tasks** | **Build trust through transparency** |
+| **Improve coaching cycles** | **Simplify administrative tasks** | **Build trust through transparency** |
 
 ---
 
@@ -22,18 +26,20 @@ The Preferences section allows you to tailor the portal to your specific needs a
 
 ![Preferences Overview](/img/preferences.png)
 
+> **💡 Tip**: Take time to configure your preferences properly - the right settings can significantly improve your daily workflow and coaching effectiveness.
+
 ---
 
 ## Evaluation Scope Configuration
 
-Configure which interactions should be included in your evaluation processes.
+Configure which interactions should be included in your evaluation processes to ensure you're analysing the most relevant data.
 
 ### Interaction Selection
 
 Choose which interactions you want these evaluations to apply to:
 
 - **All Interactions**: Include all uploaded interactions in evaluations
-  - Provides comprehensive coverage of agent performance
+  - Provides complete coverage of agent performance
   - Ensures no interactions are missed in assessments
   - Gives complete picture of team performance
 
@@ -41,6 +47,8 @@ Choose which interactions you want these evaluations to apply to:
   - Focuses on quality-controlled data
   - Ensures evaluations are based on verified interactions
   - Provides more targeted assessment approach
+
+> **Why this matters**: The right evaluation scope ensures you're making decisions based on the most relevant and reliable data for your team's needs.
 
 This setting determines the scope of data used for:
 
@@ -56,6 +64,8 @@ This setting determines the scope of data used for:
 Set the frequency of automatic evaluation cycles used in agent coaching. This determines how often awards and training courses are reviewed.
 
 ![Preferences Evaluation](../img/screenshots/team_lead/preferences/evaluation-cycle.png)
+
+> **Why this matters**: Regular evaluation cycles help you maintain consistent coaching standards and ensure timely recognition of achievements.
 
 ### Cycle Configuration
 
@@ -74,7 +84,7 @@ Set the frequency of automatic evaluation cycles used in agent coaching. This de
 - **Daily Reviews**: Repeat every 1 day(s) at 11:00
   - Best for high-volume operations
   - Provides immediate feedback opportunities
-  - Enables rapid coaching interventions
+  - Allows quick coaching interventions
 
 - **Weekly Assessments**: Repeat every 1 week(s) at 11:00
   - Balanced approach for most teams
@@ -86,32 +96,25 @@ Set the frequency of automatic evaluation cycles used in agent coaching. This de
   - Focuses on significant trends and improvements
   - Reduces administrative overhead
 
+> **💡 Pro Tip**: Choose evaluation frequency based on your team size and operational needs - smaller teams might benefit from more frequent evaluations, while larger teams might prefer weekly or monthly cycles.
+
 ---
 
 ## Course Settings Configuration
 
-Configure course completion requirements and passing criteria for your team's training programmes.
+Configure course completion requirements and passing criteria for your team's training programmes to ensure consistent learning standards.
 
 ![Course Settings](/img/preferences2.png)
+
+> **Why this matters**: Clear completion criteria help agents understand expectations and ensure training programmes deliver measurable skill improvements.
 
 ### Pass Percentage
 
 **What percentage of the total score is required to pass a course?**
 
-Set the minimum score threshold (default: 75%) that agents must achieve to successfully complete a course:
+Set the minimum score threshold that agents must achieve to successfully complete a course. This ensures consistent learning standards across your team.
 
-- **Higher Thresholds (80-90%)**: Ensures thorough understanding
-- **Standard Thresholds (70-80%)**: Balanced approach for most content
-- **Lower Thresholds (60-70%)**: Suitable for introductory or complex material
-
-### Course Completion Impact
-
-This setting affects:
-
-- **Course Completion Status**: Whether agents receive completion credit
-- **Certification Awards**: Automatic recognition for successful completion
-- **Progress Tracking**: How completion rates are calculated in reports
-- **Retake Requirements**: When agents need to retake failed assessments
+> **💡 Tip**: Consider your team's current skill levels when setting pass percentages - aim for challenging but achievable standards that motivate improvement.
 
 ---
 
@@ -127,7 +130,7 @@ Control what interaction data agents can access in their personal portals.
 
 - **All Interactions**: Agents can view all their uploaded interactions
   - Provides complete transparency
-  - Enables comprehensive self-review
+  - Allows thorough self-review
   - Supports independent learning and improvement
   - Builds trust through open access
 
@@ -144,7 +147,7 @@ Control what interaction data agents can access in their personal portals.
 ### Evaluation Scope Recommendations
 
 - **High-Volume Centres**: Consider "Reviewed Interactions Only" to manage data quality
-- **Quality-Focused Teams**: Use "All Interactions" for comprehensive coverage
+- **Quality-Focused Teams**: Use "All Interactions" for complete coverage
 - **Training Environments**: Start with "Reviewed Interactions Only" for guided learning
 
 ### Evaluation Cycle Guidelines
@@ -185,11 +188,12 @@ After configuring your settings:
 
 ## What's Next?
 
-Now that you've configured your preferences, explore these related guides:
+Now that you've customised your portal experience, explore these related guides:
 
-- **[Monitor Progress](./Progress.md)** - Track how your settings impact performance
-- **[Manage Courses](./Courses.md)** - Create training programmes with your new criteria
-- **[Set Up Awards](./Awards.md)** - Configure recognition based on your evaluation scope
+- **[📊 Monitor Your Dashboard](./Dashboard.md)** - See how your preferences affect your dashboard view
+- **[📚 Manage Training Courses](./Courses.md)** - Create courses that align with your evaluation settings
+- **[🏆 Recognise Excellence](./Awards.md)** - Set up awards that work with your evaluation cycles
+- **[📈 Track Progress](./Progress.md)** - Monitor progress using your customised criteria
 
 ---
 
@@ -197,9 +201,9 @@ Now that you've configured your preferences, explore these related guides:
 
 Stuck with preference configuration? We're here to help!
 
-- **📖 [Progress Tracking Guide](./Progress.md)** - Learn about monitoring with your new settings
-- **📖 [Course Management Guide](./Courses.md)** - Create training with your pass rate criteria
-- **📖 [Dashboard Guide](./Dashboard.md)** - Monitor effectiveness with your evaluation scope
+- **📖 [Dashboard Guide](./Dashboard.md)** - Learn about customising your dashboard view
+- **📖 [Course Management Guide](./Courses.md)** - Create courses that work with your settings
+- **📖 [Awards Guide](./Awards.md)** - Set up recognition programmes
 
 **Still need assistance?**
 - **Email us**: support@botlhale.ai
@@ -213,4 +217,4 @@ We're constantly improving our documentation. Let us know how we can make this g
 
 ---
 
-> **Optimise Your Experience**: Regular review of your preferences ensures the portal continues to meet your evolving needs as a team lead. These settings directly impact coaching effectiveness and team development outcomes.
+> **Improve Your Experience**: Regular review of your preferences ensures the portal continues to meet your evolving needs as a team lead. These settings directly impact coaching effectiveness and team development outcomes.

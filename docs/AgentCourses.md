@@ -5,9 +5,13 @@ title: Track Your Learning Journey
 
 Manage and monitor your training progress with ease. The Courses section shows all your assigned training materials, ongoing courses, and completed certifications in one organised place.
 
+We know agents want to develop their skills and advance their careers. That's where the Courses section comes in. We provide the tools you need to access training materials, track your progress, and demonstrate your learning achievements.
+
+> **What are Your Courses?** The **Courses section** is where you access your training materials, track your progress, complete assessments, and develop the skills you need to excel in your role.
+
 ## What You Can Achieve
 
-Track your learning progress effectively:
+Track your learning progress:
 
 | **Course Management** | **Progress Tracking** | **Skill Development** |
 |---------------------|---------------------|---------------------|
@@ -19,7 +23,7 @@ Track your learning progress effectively:
 
 ## Understanding Your Courses Interface
 
-Your courses are organised by status to help you prioritise your learning activities:
+Your courses are organised by status to help you prioritise your learning activities and focus on what matters most:
 
 - **All Courses**: Complete view of every course available to you
 - **Assigned**: New courses that have been assigned to you
@@ -28,11 +32,13 @@ Your courses are organised by status to help you prioritise your learning activi
 
 ![Courses Dashboard](../img/screenshots/agent_view/courses/courses-overview.png)
 
+> **💡 Tip**: Use the status filters to focus on courses that need your immediate attention, helping you stay organised and meet deadlines.
+
 ---
 
 ## Course Table View
 
-All completed courses are presented in a comprehensive table format that includes:
+All completed courses are presented in a detailed table format that includes:
 
 | Column               | Description                                      |
 | -------------------- | ------------------------------------------------ |
@@ -47,6 +53,8 @@ All completed courses are presented in a comprehensive table format that include
 
 This layout makes it easy to track where you are in your learning journey and how you've performed over time.
 
+> **Why this matters**: Understanding your learning progress helps you identify your strengths, track improvement, and plan your development path.
+
 ---
 
 ## Finding Your Courses
@@ -56,6 +64,8 @@ This layout makes it easy to track where you are in your learning journey and ho
 Use the search bar at the top left of the Courses section to quickly find any course by name. Simply type the course title to locate specific course and its material.
 
 ![Courses Quick Search](../img/screenshots/agent_view/courses/quick-search.png)
+
+> **💡 Pro Tip**: Use the search function to quickly locate courses when you have many training assignments, saving you time and helping you stay organised.
 
 ### Filtering and Sorting Options
 
@@ -72,6 +82,8 @@ Sort your courses by ascending or descending order by:
 - _Course Title, Due Date, Initiation Score, Status, Date Assigned, Category, Final Score_
 
 ![Courses Sort](../img/screenshots/agent_view/courses/sort.png)
+
+> **Why this matters**: Effective filtering and sorting help you prioritise your learning activities and focus on courses that need immediate attention.
 
 ---
 
@@ -90,6 +102,8 @@ Click **View Course Details** to open a detailed view of the course where you ca
 
 ![Courses Sort](../img/screenshots/agent_view/courses/view-material.png)
 
+> **💡 Tip**: Always review course details before starting to understand what you'll learn and how it will help you improve your performance.
+
 ### Access Course Materials
 
 #### PDF Materials
@@ -98,68 +112,19 @@ When course material is a PDF:
 
 1. Click **View Material**
 2. The file will download directly to your device
-3. Open the downloaded PDF to access the content
-4. Save the file for offline reference
 
-#### Online Materials
-
-When course content is web-based:
-
-1. Click **View Material**
-2. The course content opens in a new browser tab
-3. Complete the material at your own pace
-4. Return to the portal to take any required quizzes
-
-### Take Course Quizzes
-
-#### Starting a Quiz
-
-1. Click **Take Quiz** when you're ready to be assessed
-2. Review any pre-quiz instructions or requirements
-3. Ensure you have adequate time to complete the assessment
-
-#### Completing the Quiz
-
-1. Answer all questions thoroughly
-2. Review your responses before submitting
-3. Click **Submit** to complete the quiz
-4. View your immediate results and feedback
-
-#### Quiz Results
-
-After submission, you can:
-
-- View the course details
-- View or download the material
-
-![Courses Dashboard](../img/screenshots/agent_view/courses/courses-detailed-view.png)
-
-- To view the Quiz Results you would need to click on **View Quiz** button demonstrated below
-  ![Courses Dashboard](../img/screenshots/agent_view/courses/courses-detailed-view-2.png)
-
-#### Quiz Results
-
-- View your score and percentage
-- Review correct and incorrect answers
-- Read detailed explanations for each question
-- Identify areas for improvement
-  ![Courses Dashboard](../img/screenshots/agent_view/courses/courses-detailed-view-3.png)
-
-#### Quiz Results (continued)
-
-View every question and the results in detail by scrolling down.
-
-![Courses Dashboard](../img/screenshots/agent_view/courses/courses-detailed-view-quiz-results.png)
+> **Why this matters**: Easy access to training materials ensures you can learn at your own pace and review content as needed to improve your understanding.
 
 ---
 
 ## What's Next?
 
-Now that you can track your courses effectively, explore these related guides:
+Now that you can track your learning journey, explore these related guides:
 
-- **[View Your Awards](./AgentAwards.md)** - Celebrate your learning achievements
-- **[Monitor Your Dashboard](./AgentDashboard.md)** - Track your overall performance
-- **[Review Your Interactions](./Interactions.md)** - Analyse your performance insights
+- **[📊 Monitor Your Performance](./AgentDashboard.md)** - Track how training impacts your performance
+- **[🏆 View Your Achievements](./AgentAwards.md)** - Celebrate your learning accomplishments
+- **[📞 Review Your Interactions](./Interactions.md)** - Analyse how training improves your customer service
+- **[⚙️ Manage Your Settings](./AgentAdmin.md)** - Customise your learning experience
 
 ---
 
@@ -167,8 +132,8 @@ Now that you can track your courses effectively, explore these related guides:
 
 Stuck with your courses? We're here to help!
 
-- **📖 [Awards Guide](./AgentAwards.md)** - Learn about recognising your achievements
-- **📖 [Dashboard Guide](./AgentDashboard.md)** - Monitor your overall performance
+- **📖 [Dashboard Guide](./AgentDashboard.md)** - Learn about monitoring your performance
+- **📖 [Awards Guide](./AgentAwards.md)** - Understand your learning achievements
 - **📖 [Interaction Analysis Guide](./Interactions.md)** - Review your performance insights
 
 **Still need assistance?**

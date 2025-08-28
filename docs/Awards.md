@@ -6,6 +6,10 @@ title: Recognise and Reward Excellence
 
 Build a culture of recognition that motivates your team to excel. The Awards section lets you create meaningful recognition programmes that celebrate achievements and drive continuous improvement.
 
+Team leads want to keep their agents motivated and engaged. The Awards section gives you tools to recognise excellence, celebrate achievements, and create a positive culture that improves performance and retention.
+
+> **What are Awards?** The **Awards section** is your recognition command centre, offering award creation, achievement tracking, certificate generation, and motivation tools to help you build a culture of excellence.
+
 ## What You Can Achieve
 
 Create recognition programmes that inspire your team:
@@ -20,24 +24,28 @@ Create recognition programmes that inspire your team:
 
 ## Understanding the Awards System
 
-The Awards Management system is divided into two main sections:
+The Awards Management system is divided into two main sections to help you create and track recognition easily:
 
 1. **Awards**: View and manage your collection of created awards
 2. **Awards Presented**: Track and manage awards that have been given to agents
 
 ![Awards Overview](/img/awards.png)
 
+> **💡 Tip**: The dual-section approach helps you separate award design from award distribution, making it easier to manage your recognition programmes.
+
 ---
 
 ## Creating and Managing Awards
 
-The Awards section displays your collection of pre-created awards, showing their descriptions and criteria. This section includes several pre-built award types:
+The Awards section displays your collection of pre-created awards, showing their descriptions and criteria. This section includes several pre-built award types to get you started.
 
 ### Example Awards
 
 - **Excellent Customer Care**: Recognition for agents who display exceptional customer service skills
 - **No Auto-Fail**: Awarded to agents who maintain compliance without any auto-fail incidents
 - **Most Skillful**: Recognition for agents who demonstrate superior skills and expertise across all areas
+
+> **Why this matters**: Pre-built awards provide a foundation for recognition programmes while allowing you to customise awards that match your team's specific goals and values.
 
 ### Creating New Awards
 
@@ -67,6 +75,8 @@ Complete the award creation form with the following information:
 - Maximum score: Set the upper threshold (e.g., 100%)
 - This determines the performance level required to automatically qualify for the award
 
+> **💡 Pro Tip**: Set realistic but challenging thresholds that motivate improvement while remaining achievable for your team.
+
 #### Step 2: Award Message
 
 ![Award Message](/img/awards5.png)
@@ -78,6 +88,8 @@ Complete the award creation form with the following information:
 - Encouragement for continued excellence
 - Any additional recognition or benefits
 
+> **Why this matters**: Personalised messages make awards feel more meaningful and help agents understand exactly what they've achieved and why it matters.
+
 #### Step 3: Create Award
 
 Once you've completed both sections:
@@ -88,11 +100,13 @@ Once you've completed both sections:
 
 The new award will be added to your Awards and will be available for automatic or manual distribution based on your criteria.
 
+> **💡 Tip**: Take time to review your award details before creating - well-designed awards can significantly impact team motivation and performance.
+
 ---
 
 ## Tracking Awards Presented
 
-The Awards Presented section provides a comprehensive view of all awards that have been distributed to your team members.
+The Awards Presented section shows all awards that have been given to your team members, helping you understand recognition patterns and celebrate achievements.
 
 ![Awards Presented](/img/awards4.png)
 
@@ -108,6 +122,8 @@ The awards table displays detailed information about each award given:
 | **Score** | The performance score that earned the award |
 | **Download** | Option to download the award certificate |
 
+> **Why this matters**: Tracking awarded recognition helps you identify top performers, understand achievement patterns, and ensure fair distribution across your team.
+
 ### Filtering and Search Options
 
 #### Date Range Filter
@@ -122,13 +138,15 @@ Use the date range selector to view awards within specific time periods:
 
 ![Awards Filter](../img/screenshots/team_lead/awards/filter.png)
 
-Apply additional filters to narrow down the awards view
+Apply additional filters to narrow down the awards view and focus on specific recognition patterns.
 
 #### Sort Options
 
 ![Awards Sort](../img/screenshots/team_lead/awards/sort.png)
 
-Sort the awards table by the attributes present on table.
+Sort the awards table by the attributes present on table to identify trends and patterns.
+
+> **💡 Tip**: Use filters and sorting to analyse recognition distribution and ensure all team members have opportunities to earn awards.
 
 ### Award Management Actions
 
@@ -139,6 +157,8 @@ Sort the awards table by the attributes present on table.
 - Use for record-keeping or formal recognition ceremonies
 
 ![Awards Download](../img/screenshots/team_lead/awards/download.png)
+
+> **Why this matters**: Professional certificates provide tangible recognition that agents can keep, share, and use for career development.
 
 ---
 
@@ -152,9 +172,10 @@ Sort the awards table by the attributes present on table.
 
 Now that you can create and manage awards, explore these related guides:
 
-- **[Monitor Progress](./Progress.md)** - Track how recognition impacts performance
-- **[Manage Courses](./Courses.md)** - Create training programmes that lead to awards
-- **[Review Interactions](./Interactions.md)** - Analyse performance that earns recognition
+- **[📊 Monitor Progress](./Progress.md)** - Track how recognition impacts performance
+- **[📚 Manage Courses](./Courses.md)** - Create training programmes that lead to awards
+- **[📞 Review Interactions](./Interactions.md)** - Analyse performance that earns recognition
+- **[📈 Check Your Dashboard](./Dashboard.md)** - Monitor overall recognition effectiveness
 
 ---
 
@@ -178,4 +199,4 @@ We're constantly improving our documentation. Let us know how we can make this g
 
 ---
 
-> **Build Recognition Culture**: Effective award programmes boost team morale and performance. Use the analytics features to optimise your recognition strategy and create a culture of excellence that motivates continuous improvement.
+> **Build Recognition Culture**: Good award programmes boost team morale and performance. Use the analytics features to improve your recognition strategy and create a culture of excellence that keeps everyone motivated.

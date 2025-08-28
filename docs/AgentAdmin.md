@@ -5,9 +5,13 @@ title: Manage Your Account and Settings
 
 The Admin section serves as your account management centre, including both communications and settings management. This area helps you stay connected with important updates and maintain control over your account security and preferences.
 
+Agents need to manage their account settings and stay informed about important updates. The Admin section gives you tools to control your notifications, manage your account security, and make sure you never miss critical communications.
+
+> **What is Admin?** The **Admin section** is your account management hub, offering notification control, security settings, account information, and communication preferences to help you stay organised and secure.
+
 ## What You Can Achieve
 
-Manage your account effectively:
+Manage your account:
 
 | **Account Management** | **Communication Control** | **Security Settings** |
 |----------------------|-------------------------|---------------------|
@@ -19,12 +23,14 @@ Manage your account effectively:
 
 ## Understanding the Admin Interface
 
-The Admin section is divided into two main areas:
+The Admin section is divided into two main areas to help you manage your account:
 
 - **Notifications**: Your in-app communication centre
 - **Settings**: Account information and security management
 
 ![Admin Dashboard](../img/screenshots/agent_view/admin/admin.png)
+
+> **💡 Tip**: Regular account management helps you stay secure and ensures you receive important updates about your training and performance.
 
 ---
 
@@ -33,6 +39,8 @@ The Admin section is divided into two main areas:
 The Notifications tab acts as your in-app communication centre where you can view messages, updates, and alerts sent through the system. This ensures you never miss critical updates or important communications from your team.
 
 ![Notifications](../img/screenshots/agent_view/admin/notifications.png)
+
+> **Why this matters**: Staying informed about important updates helps you respond quickly to new training assignments, performance feedback, and organisational changes.
 
 ---
 
@@ -51,11 +59,13 @@ View your basic account information:
 - **Current Organisation**: Your assigned organisation
 - **Current Team**: Your current assigned team
 
+> **💡 Pro Tip**: Keep your account information current to ensure you receive the right training assignments and performance updates for your role.
+
 ### Password Management
 
 ![Account Settings](../img/screenshots/agent_view/admin/admin.png)
 
-Keep your account secure with robust password controls:
+Keep your account secure with strong password controls:
 
 **Change Password**
 
@@ -68,6 +78,8 @@ Keep your account secure with robust password controls:
 3. Confirm your new password
 4. Click **Save** to apply changes
 
+> **Why this matters**: Strong password security protects your personal information and ensures only you can access your performance data and training records.
+
 **Password Security Tips**
 
 - Use a unique password not used elsewhere
@@ -76,15 +88,18 @@ Keep your account secure with robust password controls:
 - Never share your password with colleagues
 - Log out from shared computers
 
+> **💡 Tip**: Regular password updates and strong security practices help protect your account and maintain the confidentiality of your performance data.
+
 ---
 
 ## What's Next?
 
 Now that you can manage your account, explore these related guides:
 
-- **[Monitor Your Dashboard](./AgentDashboard.md)** - Track your overall performance
-- **[Track Your Courses](./AgentCourses.md)** - Continue your learning journey
-- **[View Your Awards](./AgentAwards.md)** - Celebrate your achievements
+- **[📊 Monitor Your Dashboard](./AgentDashboard.md)** - Track your overall performance
+- **[📚 Track Your Courses](./AgentCourses.md)** - Continue your learning journey
+- **[🏆 View Your Awards](./AgentAwards.md)** - Celebrate your achievements
+- **[📞 Review Your Interactions](./Interactions.md)** - Analyse your performance
 
 ---
 
