@@ -36,7 +36,9 @@ The left navigation bar is your main navigation hub in the Coaching Portal. You'
 - **[Courses](./AgentCourses)** - Access your training materials and track progress
 - **[Awards](./AgentAwards)** - View your achievements and recognition
 - **[Interactions](./Interactions)** - Review your calls and chats with detailed analysis
-- **[Admin](./AgentAdmin)** - Manage your account settings and preferences
+- **[Admin](./AgentAdmin)** - Manage your account settings, preferences, and notifications
+
+![Agent Sidebar Navigation](/img/agent_sidebar.png)
 
 > **💡 Tip**: The left navigation provides easy access to all sections of the Coaching Portal, making it simple to switch between different areas of your learning and development workflow.
 
@@ -54,7 +56,7 @@ Your dashboard is your personal command centre. It shows you everything you need
 - [ ] **Compare your scores** to team and organisation averages
 - [ ] **Identify your strengths** and areas for improvement
 
-> **[📊 My Dashboard guide](./AgentDashboard)** - Learn about all dashboard features and metrics
+> **[📊 Dashboard guide](./AgentDashboard)** - Learn about all dashboard features and metrics
 
 > **Why this matters**: Your dashboard helps you understand where you excel and where you can grow.
 
@@ -79,13 +81,13 @@ This is where you'll dive deep into your performance and understand what you're 
 
 Your courses are designed to help you grow and improve in specific areas identified through your performance analysis.
 
-- [ ] **Go to "My Courses"** to see all your assigned training
+- [ ] **Go to "Courses"** to see all your assigned training
 - [ ] **Check course status** (Not Started, In Progress, Completed)
 - [ ] **Start a course** by clicking on it
 - [ ] **Complete quizzes** to test your understanding
 - [ ] **Review your scores** and feedback
 
-> **[📚 My Courses guide](./AgentCourses)** - Learn about course features and how to get the most from your learning
+> **[📚 Courses guide](./AgentCourses)** - Learn about course features and how to get the most from your learning
 
 > **Why this matters**: Structured training helps you develop the skills you need to excel in your role.
 
@@ -94,12 +96,12 @@ Your courses are designed to help you grow and improve in specific areas identif
 
 Your awards represent recognition for your hard work and dedication to excellence.
 
-- [ ] **Check "My Awards"** to see your recognitions
+- [ ] **Check "Awards"** to see your recognitions
 - [ ] **Filter awards** by date or type to reflect on your accomplishments
 - [ ] **Download certificates** for your personal records
 - [ ] **Use achievements** as motivation for continued growth
 
-> **[🏆 My Awards guide](./AgentAwards)** - Learn about your awards and how to use them for career development
+> **[🏆Awards guide](./AgentAwards)** - Learn about your awards and how to use them for career development
 
 > **Why this matters**: Recognition keeps you motivated and provides evidence of your professional growth.
 
@@ -150,10 +152,10 @@ You've just discovered the capabilities that will help you work better!
 ### **Professional Development**
 - **[Access training materials](./AgentCourses)** - Develop specific skills and knowledge
 - **[Celebrate achievements](./AgentAwards)** - Track your recognition and awards
-- **[Manage your account](./AgentAdmin)** - Keep your profile updated
+- **[Manage your account](./AgentAdmin)** - Keep your profile updated and manage settings
 
 ### **Advanced Features**
-- **[Customise your view](./AgentAdmin)** - Tailor the portal to your preferences
+- **[Customise your view](./AgentAdmin)** - Tailor the portal to your preferences and manage notifications
 - **[Track your progress](./AgentCourses)** - Monitor your learning journey
 - **[Build your portfolio](./AgentAwards)** - Collect certificates and achievements
 

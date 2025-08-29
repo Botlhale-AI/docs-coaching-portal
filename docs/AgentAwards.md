@@ -122,6 +122,7 @@ Click **View Award** to open detailed information including:
 
 > **Why this matters**: Detailed award information helps you understand exactly what you did well and how to replicate that success in the future.
 
+![Award View](../img/screenshots/agent_view/awards/view.png)
 ---
 
 ## What's Next?
