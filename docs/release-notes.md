@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
+unlisted: true
+title: Vela Release Notes – Version 1.3
 ---
-
-# Vela Release Notes – Version 1.3
 
 Dear Vela Users,
 

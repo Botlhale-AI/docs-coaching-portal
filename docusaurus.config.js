@@ -23,8 +23,8 @@ const config = {
           routeBasePath: 'docs',
           path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
+          showLastUpdateTime: false,
+          showLastUpdateAuthor: false,
           // Add sidebar configuration for role-based access
           async sidebarItemsGenerator({
             defaultSidebarItemsGenerator,
@@ -169,23 +169,19 @@ const config = {
             },
           ],
         },
-        {
-          title: 'Resources',
-          items: [
-            {
-              label: 'Release Notes',
-              to: '/docs/release-notes',
-            },
-            {
-              label: 'How to Get Started',
-              href: 'https://youtu.be/xmDezghws3w',
-            },
-            {
-              label: 'Contact Support',
-              href: 'mailto:support@botlhale.ai',
-            },
-          ],
-        },
+                 {
+           title: 'Resources',
+           items: [
+             {
+               label: 'How to Get Started',
+               href: 'https://youtu.be/xmDezghws3w',
+             },
+             {
+               label: 'Contact Support',
+               href: 'mailto:support@botlhale.ai',
+             },
+           ],
+         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Botlhale AI. All rights reserved.`,
     },
