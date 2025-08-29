@@ -56,6 +56,24 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en'],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        searchBarPosition: 'right',
+        docsRouteBasePath: ['docs'],
+        ignoreFiles: [],
+        indexPages: true,
+        docsDir: 'docs',
+        indexDocs: true,
+      },
+    ],
+  ],
+
   themeConfig: {
     image: 'img/logo.png',
     navbar: {
@@ -82,6 +100,10 @@ const config = {
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
+        },
+        {
+          type: 'search',
+          position: 'right',
         },
       ],
     },
@@ -196,15 +218,7 @@ const config = {
       },
     ],
 
-    // Properly configured Algolia DocSearch
-    algolia: {
-      appId: 'SDFKBMBHOD',
-      apiKey: 'cf13a1927236f97767c0dfe5913f3a15',
-      indexName: 'Developer at Botlhale AI',
-      contextualSearch: true,
-      searchParameters: {},
-      searchPagePath: 'search', // Explicitly set search page path
-    },
+
   },
 
   scripts: [
