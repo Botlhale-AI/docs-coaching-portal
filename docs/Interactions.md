@@ -1,10 +1,8 @@
 ---
 sidebar_position: 4
-title: Interactions
-description: Review your call recordings and chat interactions with detailed analysis and performance metrics
+title: Interactions (Team Lead View)
+# description: Review your call recordings and chat interactions with detailed analysis and performance metrics
 ---
-
-# Interactions - Agent View
 
 As an agent, view and analyze your call recordings and chat interactions to understand your performance and identify areas for improvement.
 
@@ -35,29 +33,27 @@ View your most recent call interactions with key performance indicators:
 
 Track your call performance with these key indicators:
 
-- **Average Call Duration**: 11:43 minutes
-- **Customer Satisfaction**: 4.5/5 average rating
-- **First Call Resolution**: 87%
-- **Quality Score**: 90% average
-- **Silent Time**: 8.2% average
+- **Handle Time**
+- **Agent Score**
+- **Silent Time**
 
 #### Common Call Topics
 
-Understanding the topics you handle most frequently:
+Understanding the topics you handle most frequently. These are examples of common call topics:
 
-1. **Billing Inquiries** (35%) - Questions about charges, payments, and account balances
-2. **Technical Support** (28%) - Product issues, troubleshooting, and setup assistance
-3. **Account Management** (20%) - Profile updates, password resets, and preferences
-4. **Product Information** (12%) - Features, pricing, and availability questions
-5. **Complaints** (5%) - Service issues and escalation requests
+1. **Billing Inquiries**
+2. **Technical Support**
+3. **Account Management**
+4. **Product Information**
+5. **Complaints** 
 
 #### Call Quality Insights
 
 Review detailed feedback on your call handling:
 
-- **Strengths**: Excellent active listening, clear communication, professional tone
-- **Areas for Improvement**: Reduce hold times, improve first-call resolution
-- **Coaching Recommendations**: Complete the "Advanced Troubleshooting" course
+- **Strengths**
+- **Areas for Improvement**
+- **Coaching Recommendations**
 
 ### Detailed Call View
 
@@ -87,38 +83,35 @@ View your most recent chat interactions:
 
 Monitor your chat support effectiveness:
 
-- **Average Response Time**: 39 seconds
-- **Average Resolution Time**: 23 minutes
-- **Customer Satisfaction**: 4.6/5 average rating
-- **Resolution Rate**: 96%
-- **Concurrent Chat Capacity**: 3.2 average
+- **Handle Time**
+- **Response Time**
 
-#### Chat Efficiency Indicators
+<!-- #### Chat Efficiency Indicators
 
 Track how effectively you handle multiple conversations:
 
-- **Messages per Resolution**: 12.4 average
-- **Escalation Rate**: 4%
-- **Transfer Rate**: 2%
-- **Follow-up Required**: 8%
+- **Messages per Resolution**
+- **Escalation Rate**
+- **Transfer Rate**
+- **Follow-up Required** -->
 
 #### Common Chat Topics
 
-Most frequent chat conversation topics:
+Most frequent chat conversation topics. These are examples of common chat topics:
 
-1. **Order Inquiries** (40%) - Status, tracking, and modification requests
-2. **Product Support** (25%) - Usage questions and troubleshooting
-3. **Account Issues** (18%) - Login problems and profile management
-4. **Billing Questions** (12%) - Payment issues and invoice clarification
-5. **General Information** (5%) - Hours, policies, and contact details
+1. **Order Inquiries**
+2. **Product Support**
+3. **Account Issues**
+4. **Billing Questions**
+5. **General Information**
 
 ### Chat Quality Insights
 
 Review feedback on your chat support performance:
 
-- **Strengths**: Quick response times, clear explanations, helpful resources
-- **Areas for Improvement**: Use more personalized greetings, proactive follow-up
-- **Coaching Recommendations**: Review "Customer Engagement Best Practices" module
+- **Strengths**
+- **Areas for Improvement**
+- **Coaching Recommendations**
 
 ### Detailed Chat View
 

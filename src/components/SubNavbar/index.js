@@ -5,6 +5,7 @@ import clsx from 'clsx';
 
 // Team Lead navigation items - only show team lead specific pages
 const teamLeadNavItems = [
+  { label: 'Getting Started', to: '/docs/GettingStartedTeamLeads' },
   { label: 'Team Dashboard', to: '/docs/Dashboard' },
   { label: 'Course Management', to: '/docs/Courses' },
   { label: 'Awards & Recognition', to: '/docs/Awards' },
@@ -14,6 +15,7 @@ const teamLeadNavItems = [
 
 // Agent navigation items - only show agent specific pages
 const agentNavItems = [
+  { label: 'Getting Started', to: '/docs/GettingStartedAgents' },
   { label: 'My Dashboard', to: '/docs/AgentDashboard' },
   { label: 'My Courses', to: '/docs/AgentCourses' },
   { label: 'My Awards', to: '/docs/AgentAwards' },
@@ -43,7 +45,7 @@ export default function SubNavbar({ userRole = 'teamlead' }) {
   // Auto-detect role based on current page
   if (currentPath.includes('Agent')) {
     detectedRole = 'agent';
-  } else if (['/docs/Dashboard', '/docs/Courses', '/docs/Awards', '/docs/Progress', '/docs/Preferences'].some(path => currentPath === path)) {
+  } else if (['/docs/GettingStartedAgents','/docs/Dashboard', '/docs/Courses', '/docs/Awards', '/docs/Progress', '/docs/Preferences'].some(path => currentPath === path)) {
     detectedRole = 'teamlead';
   }
   

@@ -47,6 +47,22 @@ export default function LandingPage() {
     }
   }, [selectedRole]);
 
+  // Load HowdyGo script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://js.howdygo.com/v1.2.1/index.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup: remove script when component unmounts
+      const existingScript = document.querySelector('script[src="https://js.howdygo.com/v1.2.1/index.js"]');
+      if (existingScript) {
+        document.head.removeChild(existingScript);
+      }
+    };
+  }, []);
+
   // Video data based on role
   const videoData = {
     teamlead: {
@@ -65,6 +81,10 @@ export default function LandingPage() {
   const workflowSteps = {
     teamlead: [
       {
+        title: "Getting Started",
+        description: "Set up your team, define roles, and configure initial settings to get started"
+      },
+      {
         title: "Team Dashboard Overview",
         description: "Access comprehensive performance metrics for your entire team at a glance"
       },
@@ -82,6 +102,10 @@ export default function LandingPage() {
       }
     ],
     agent: [
+      {
+        title: "Getting Started",
+        description: "Set up your team, define roles, and configure initial settings to get started"
+      },
       {
         title: "Personal Dashboard",
         description: "View your individual performance metrics and track your development progress"
@@ -626,30 +650,91 @@ export default function LandingPage() {
         </section>
       )}
 
-      {/* Video Tutorial Section */}
-      <section className={styles.videoSection}>
-        <div className="container">
-          <div className={`${styles.sectionHeader} ${styles.animateIn}`}>
-            <h2 className={styles.sectionTitle}>How-To Guide Video</h2>
-            <p className={styles.sectionSubtitle}>
-              Watch this helpful tutorial to get started with the {selectedRole === 'teamlead' ? 'team lead' : 'agent'} features
-            </p>
+             {/* Interactive Demo Section */}
+       <section className={styles.videoSection}>
+         <div className="container">
+           <div className={`${styles.sectionHeader} ${styles.animateIn}`}>
+             <h2 className={styles.sectionTitle}>Interact with Coaching (Demo)</h2>
+             <p className={styles.sectionSubtitle}>
+               Find below an interactive demo for Coaching in general.
+             </p>
+           </div>
+           
+           <div className={`${styles.demoContainer} ${styles.animateIn}`} style={{
+             display: 'flex',
+             justifyContent: 'center',
+             alignItems: 'center',
+             width: '100%',
+             padding: '0 20px'
+           }}>
+             <div
+               id="howdygo-embed"
+               style={{
+                 width: '100%',
+                 maxWidth: '1440px',
+                 backgroundColor: '#ffffff',
+                 border: '1px solid #e2e8f0',
+                 borderRadius: '12px',
+                 overflow: 'hidden',
+                 boxShadow: '0px 0px 1px rgba(45, 55, 72, 0.05), 0px 4px 8px rgba(45, 55, 72, 0.1)'
+               }}
+             >
+              <div
+                id="howdygo-wrapper"
+                style={{
+                  position: 'relative',
+                  width: '100%',
+                  height: '0',
+                  paddingBottom: 'calc(54.02777777777777% + 40px)'
+                }}
+              >
+                <iframe
+                  id="howdygo-frame"
+                  src="https://app.howdygo.com/prescreen-embed/1619b05a-4e52-4d1b-a51b-32bc316fda86?mobileStrategy=inline&launchButton=Interact+with+Coaching"
+                  frameBorder="0"
+                  scrolling="no"
+                  allow="clipboard-write"
+                  webkitAllowFullScreen
+                  mozAllowFullScreen
+                  allowFullScreen
+                  style={{
+                    position: 'absolute',
+                    top: '0',
+                    left: '0',
+                    width: '100%',
+                    height: '100%'
+                  }}
+                />
+              </div>
+            </div>
           </div>
-          
-          <div className={`${styles.videoContainer} ${styles.animateIn}`}>
-            <iframe 
-              className={styles.videoFrame}
-              src={`https://www.youtube.com/embed/${videoData[selectedRole].videoId}`}
-              title={videoData[selectedRole].title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-          <p className={styles.videoDescription}>
-            {videoData[selectedRole].description}
-          </p>
         </div>
-      </section>
+       </section>
+
+       {/* Video Tutorial Section */}
+       <section className={styles.videoSection}>
+         <div className="container">
+           <div className={`${styles.sectionHeader} ${styles.animateIn}`}>
+             <h2 className={styles.sectionTitle}>How-To Guide Video</h2>
+             <p className={styles.sectionSubtitle}>
+               Watch this helpful tutorial to get started with the {selectedRole === 'teamlead' ? 'team lead' : 'agent'} features
+             </p>
+           </div>
+           
+           <div className={`${styles.videoContainer} ${styles.animateIn}`}>
+             <iframe 
+               className={styles.videoFrame}
+               src={`https://www.youtube.com/embed/${videoData[selectedRole].videoId}`}
+               title={videoData[selectedRole].title}
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+               allowFullScreen
+             ></iframe>
+           </div>
+           <p className={styles.videoDescription}>
+             {videoData[selectedRole].description}
+           </p>
+         </div>
+       </section>
     </div>
   );
 }

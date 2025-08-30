@@ -1,10 +1,8 @@
 ---
 sidebar_position: 5
-title: Admin
-description: Notifications and account settings
+title: Admin (Agent View)
+# description: Notifications and account settings
 ---
-
-# Admin - Agent View
 
 The Admin section serves as your account management center, including both communications and settings management. This area helps you stay connected with important updates and maintain control over your account security and preferences.
 
@@ -22,6 +20,9 @@ The Admin section is divided into two main areas:
 ## Notifications
 
 The Notifications tab acts as your in-app communication center where you can view messages, updates, and alerts sent through the system. This ensures you never miss critical updates or important communications from your team.
+
+![Notifications](../img/screenshots/agent_view/admin/notifications.png)
+
 
 ## Settings
 

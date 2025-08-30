@@ -109,7 +109,7 @@
 
 .auth-button-signup {
   background-color: #fc5f1e;
-  color: white;
+  color: #031019;
   box-shadow: 0 2px 4px rgba(252, 95, 30, 0.2);
 }
 
@@ -117,6 +117,16 @@
   background-color: rgba(252, 95, 30, 0.1);
   color: #fc5f1e;
   text-decoration: none;
+}
+
+/* Dark mode override for signup button */
+html[data-theme='dark'] .auth-button-signup {
+  color: #031019;
+}
+
+/* Hide GitHub repository link */
+.header-github-link {
+  display: none !important;
 }
 
 /* Enhanced Documentation Styles */

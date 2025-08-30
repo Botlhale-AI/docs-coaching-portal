@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import {ThemeClassNames} from '@docusaurus/theme-common';
-import {useDoc} from '@docusaurus/theme-common/internal';
+import {useDoc} from '@docusaurus/plugin-content-docs/client';
 import Heading from '@theme/Heading';
 import MDXContent from '@theme/MDXContent';
 import styles from './styles.module.css';
@@ -39,8 +39,6 @@ export default function DocItemContent({children}) {
           {frontMatter.description && (
             <p className={styles.docDescription}>{frontMatter.description}</p>
           )}
-          
-          <div className={styles.docDivider}></div>
         </header>
       )}
       

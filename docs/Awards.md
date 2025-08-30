@@ -1,132 +1,139 @@
 ---
-sidebar_position: 2
-title: Awards Management (Team Lead View)
-description: Create, manage, and track awards and recognition for your team members
+sidebar_position: 3
+sidebar: teamLeadSidebar
+title: Awards (Team Lead View)
+# description: As a team lead, the Awards section empowers you to recognize outstanding performance, motivate your team, and track recognition patterns to build a positive workplace culture.
 ---
-
-# Awards Management - Team Lead View
 
 As a team lead, the Awards section empowers you to recognize outstanding performance, motivate your team, and track recognition patterns to build a positive workplace culture.
 
 ## Overview
 
-The Awards Management system allows you to create custom recognition programs, issue awards to deserving team members, and analyze the impact of recognition on team performance and morale.
+The Awards Management system is divided into two main sections:
 
-## Creating Awards
+1. **Awards**: View and manage your collection of created awards
+2. **Awards Presented**: Track and manage awards that have been given to agents
 
-### Award Types
+![Awards Overview](/img/awards.png)
 
-- **Performance Awards**: For exceptional customer service or productivity
-- **Achievement Awards**: For reaching specific goals or milestones
-- **Behavioral Awards**: For demonstrating company values
-- **Skill Development Awards**: For learning and growth accomplishments
-- **Team Collaboration Awards**: For outstanding teamwork and support
+## Awards
 
-### Award Creation Process
+The Awards section displays your collection of pre-created awards, showing their descriptions and criteria. This section includes several pre-built award types:
 
-1. Navigate to the "Create Award" section
-2. Select the award category and type
-3. Define criteria and achievement thresholds
-4. Design the award certificate template
-5. Set up automatic or manual award triggers
-6. Review and activate the award program
+### Example Awards
 
-## Managing Team Awards
+- **Excellent Customer Care**: Recognition for agents who display exceptional customer service skills
+- **No Auto-Fail**: Awarded to agents who maintain compliance without any auto-fail incidents
+- **Most Skillful**: Recognition for agents who demonstrate superior skills and expertise across all areas
 
-### Issuing Awards
+### Creating New Awards
 
-- Browse eligible team members based on performance data
-- Select appropriate award types for specific achievements
-- Add personalized messages and feedback
-- Schedule award presentation timing
-- Generate and distribute certificates
+To create a custom award for your team, click the **Create New Award** button in the Awards section.
 
-### Award Tracking
+![Create Award Form](/img/awards2.png)
 
-- Monitor award distribution across team members
-- Analyze recognition patterns and frequencies
-- Track the correlation between awards and performance
-- Generate reports on team recognition metrics
+#### Step 1: Award Details
 
-## Award Categories
+Complete the award creation form with the following information:
 
-### Customer Excellence
+**Award Name**: Enter a clear, descriptive name for your award
 
-- Customer Satisfaction Champion
-- First Call Resolution Master
-- Customer Feedback Hero
-- Service Recovery Expert
+**Award Category**: Select from the dropdown menu to categorize your award
 
-### Performance Excellence
+**Award Description**: Enter a brief description explaining what this award recognizes and the criteria for earning it
 
-- Top Performer of the Month
-- Productivity Champion
-- Quality Assurance Star
-- Efficiency Expert
+**Scope**: Select who is eligible for this award:
 
-### Learning and Development
+- **Entire Organisation**: Available to all agents across the organization
+- **Specific Departments**: Limit to selected departments
+- **Specific Teams**: Restrict to particular teams
 
-- Quick Learner
-- Skill Development Champion
-- Certification Achiever
-- Knowledge Sharer
+**Score Threshold (Range)**: Set the performance score range required to earn this award:
 
-### Team Collaboration
+- Minimum score: Set the lower threshold (e.g., 80%)
+- Maximum score: Set the upper threshold (e.g., 100%)
+- This determines the performance level required to automatically qualify for the award
 
-- Team Player
-- Mentor of the Month
-- Collaboration Champion
-- Leadership Potential
+#### Step 2: Award Message
 
-## Recognition Analytics
+![Award Message](/img/awards5.png)
 
-### Team Recognition Metrics
+**Award Message**: Enter a personalized message that will be sent to agents along with their award:
 
-- Total awards issued per period
-- Award distribution by category
-- Recognition frequency per team member
-- Award impact on performance metrics
+- Congratulatory message
+- Specific achievements being recognized
+- Encouragement for continued excellence
+- Any additional recognition or benefits
 
-### Performance Correlation
+#### Step 3: Create Award
 
-- Awards vs. customer satisfaction scores
-- Recognition impact on retention rates
-- Award effectiveness in motivation
-- Team morale correlation analysis
+Once you've completed both sections:
 
-## Certificate Management
+1. Review all the information for accuracy
+2. Click **Create Award** to save and activate the award
+3. Click **Close** to cancel without saving
 
-### Custom Certificate Design
-
-- Upload company branding and logos
-- Create award-specific certificate templates
-- Customize text and layout options
-- Preview certificates before issuing
-
-### Certificate Distribution
-
-- Automatic certificate generation
-- Email delivery to recipients
-- Digital certificate storage
-- Physical certificate printing options
-
-## Award Program Strategy
-
-### Recognition Best Practices
-
-- Balance frequency and exclusivity
-- Ensure fair and transparent criteria
-- Celebrate diverse achievements
-- Provide meaningful recognition
-- Follow up on award impact
-
-### Program Optimization
-
-- Regular review of award criteria
-- Gather feedback from team members
-- Adjust programs based on effectiveness
-- Introduce new award categories as needed
+The new award will be added to your Awards and will be available for automatic or manual distribution based on your criteria.
 
 ---
 
-> **Build Recognition Culture**: Effective award programs boost team morale and performance. Use analytics to optimize your recognition strategy and create a culture of excellence.
+## Awards Presented
+
+The Awards Presented section provides a comprehensive view of all awards that have been distributed to your team members.
+
+![Awards Presented](/img/awards4.png)
+
+### Awards Table
+
+The awards table displays detailed information about each award given:
+
+| Column | Description |
+|--------|-------------|
+| **Agent** | Name of the agent who received the award |
+| **Award Name** | Title of the award presented |
+| **Date Awarded** | When the award was given to the agent |
+| **Score** | The performance score that earned the award |
+| **Download** | Option to download the award certificate |
+
+### Filtering and Search Options
+
+#### Date Range Filter
+
+Use the date range selector to view awards within specific time periods:
+
+- Select custom start and end dates (e.g., "01/08/2025 - 31/08/2025")
+- Quick filters for common periods (Last week, Last month, Last quarter)
+- Real-time updates as you adjust the date range
+
+#### Filter Options
+
+![Awards Filter](../img/screenshots/team_lead/awards/filter.png)
+
+Apply additional filters to narrow down the awards view
+
+#### Sort Options
+
+![Awards Sort](../img/screenshots/team_lead/awards/sort.png)
+
+Sort the awards table by the attributes present on table.
+
+### Award Management Actions
+
+#### Download Certificates
+
+- Click the download icon to get a PDF certificate for any award
+- Certificates include agent details, award information, and official branding
+- Use for record-keeping or formal recognition ceremonies
+
+![Awards Download](../img/screenshots/team_lead/awards/download.png)
+---
+
+**Certificate Sample**   
+
+![Awards Certificate](../img/screenshots/team_lead/awards/certificate.png)
+
+> **Build Recognition Culture**: Effective award programs boost team morale and performance. Use the analytics features to optimize your recognition strategy and create a culture of excellence that motivates continuous improvement.
+
+---
+
+*Last updated on Jul 29, 2025 by athenkosi-cetyana*

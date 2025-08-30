@@ -1,11 +1,11 @@
 ---
 sidebar_position: 2
-title: Courses
+title: Courses (Agent View)
 ---
 
 The Courses section is where you can manage and track your learning progress. All your assigned training materials, ongoing courses, and completed certifications are organised here for easy access and monitoring.
 
-## Course Overview
+## Overview
 
 Your courses are organised by status to help you prioritize your learning activities:
 
@@ -39,6 +39,8 @@ This layout makes it easy to track where you are in your learning journey and ho
 
 Use the search bar at the top left of the Courses section to quickly find any course by name. Simply type the course title to locate specific course and its material.
 
+![Courses Quick Search](../img/screenshots/agent_view/courses/quick-search.png)
+
 ### Filtering and Sorting Options
 
 Filter your courses by:
@@ -47,9 +49,13 @@ Filter your courses by:
 - **Due Date**: See courses by their deadlines
 - **Category**: View courses by category
 
+![Courses Filter](../img/screenshots/agent_view/courses/filter.png)
+
 Sort your courses by ascending or descending order by:
 
 - _Course Title, Due Date, Initiation Score, Status, Date Assigned, Category, Final Score_
+
+![Courses Sort](../img/screenshots/agent_view/courses/sort.png)
 
 ## Course Actions
 
@@ -63,6 +69,9 @@ Click **View Course Details** to open a detailed view of the course where you ca
 - Check your progress and completion status
 - Access course materials and resources
 - View quiz results and feedback
+
+![Courses Sort](../img/screenshots/agent_view/courses/view-material.png)
+
 
 ### Access Course Materials
 
@@ -83,6 +92,8 @@ When course content is web-based:
 2. The course content opens in a new browser tab
 3. Complete the material at your own pace
 4. Return to the portal to take any required quizzes
+
+
 
 ### Take Course Quizzes
 

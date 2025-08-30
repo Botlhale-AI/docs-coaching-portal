@@ -6,6 +6,17 @@ const sidebars = {
   teamLeadSidebar: [
     {
       type: 'category',
+      label: 'Getting Started (Team Leads)',
+      collapsible: true,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'GettingStartedTeamLeads'
+      },
+      items: [],
+    },
+    {
+      type: 'category',
       label: 'Dashboard',
       collapsible: true,
       collapsed: false,
@@ -63,6 +74,17 @@ const sidebars = {
 
   // Agent Sidebar
   agentSidebar: [
+    {
+      type: 'category',
+      label: 'Getting Started (Team Leads)',
+      collapsible: true,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'GettingStartedAgents'
+      },
+      items: [],
+    },
     {
       type: 'category',
       label: 'My Dashboard',
@@ -135,23 +157,23 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Awards',
-      collapsible: true,
-      collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'Awards'
-      },
-      items: [],
-    },
-    {
-      type: 'category',
       label: 'Courses',
       collapsible: true,
       collapsed: false,
       link: {
         type: 'doc',
         id: 'Courses'
+      },
+      items: [],
+    },
+    {
+      type: 'category',
+      label: 'Awards',
+      collapsible: true,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'Awards'
       },
       items: [],
     },

@@ -52,8 +52,8 @@
 }
 
 .roleToggleActive {
-  background: white !important;
-  color: var(--primary-color) !important;
+  background: var(--ifm-color-primary) !important;
+  color: #000000 !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   font-weight: 600;
 }
