@@ -468,18 +468,19 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 
-.docMainContainer_TBSr {
-  max-width: none !important;
-}
+/* Desktop only - remove padding and max-width constraints */
+@media (min-width: 997px) {
+  .docMainContainer_TBSr {
+    max-width: none !important;
+  }
 
+  #__docusaurus > div.main-wrapper.mainWrapper_eExm > div > div > main > div {
+    padding: 0 !important;
+  }
 
-#__docusaurus > div.main-wrapper.mainWrapper_eExm > div > div > main > div {
-  padding: 0 !important;
-}
-
-
-.col {
-  padding: 0 !important;
+  .col {
+    padding: 0 !important;
+  }
 }
 
 
