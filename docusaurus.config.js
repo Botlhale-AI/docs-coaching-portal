@@ -4,7 +4,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const config = {
   title: 'Coaching Portal',
   tagline: "Documentation",
-  url: 'https://docs-vela.botlhale.xyz', 
+  url: 'https://docs-coaching.botlhale.xyz', 
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
