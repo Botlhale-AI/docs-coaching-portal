@@ -466,3 +466,20 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   color: var(--ifm-color-primary-darkest);
   background: rgba(252, 95, 30, 0.1);
 }
+
+
+.docMainContainer_TBSr {
+  max-width: none !important;
+}
+
+
+#__docusaurus > div.main-wrapper.mainWrapper_eExm > div > div > main > div {
+  padding: 0 !important;
+}
+
+
+.col {
+  padding: 0 !important;
+}
+
+
