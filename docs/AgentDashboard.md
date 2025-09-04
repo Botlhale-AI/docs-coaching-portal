@@ -9,17 +9,17 @@ Your Agent Dashboard shows you everything about your learning and development at
 
 We know agents want to understand their performance and grow their skills. That's where your Agent Dashboard comes in. We provide the tools you need to track your progress, compare your performance, and identify specific areas where you can improve and excel.
 
-> **What is Your Dashboard?** Your **Agent Dashboard** is your personal performance command centre, offering individual metrics, team comparisons, trend analysis, and development insights to help you track your growth and identify improvement opportunities.
-
+> **What is Your Dashboard?** Your **Agent Dashboard** is your personal performance monitoring centre, offering individual metrics, team comparisons, trend analysis, and development insights to help you track your growth and identify improvement opportunities.
 ## What You Can Achieve
 
-Your dashboard turns your performance data into useful insights. With it, you can:
+Your dashboard is your personal performance hub. It helps you stay on track, grow your skills, and celebrate your progress. With it, you can:
 
-| **Performance Monitoring** | **Self-Development** | **Goal Setting** |
-|---------------------------|-------------------|----------------|
-| **Track your learning progress** | **Identify areas for improvement** | **Set personal development goals** |
-| **Compare with team performance** | **Monitor skill development** | **Celebrate achievements** |
-| **Spot trends and patterns** | **Focus on growth opportunities** | **Plan your development path** |
+- **Track your learning progress** and see how you’re improving over time  
+- **Spot trends and patterns** in your own performance  
+- **Compare your results** with your team to understand where you stand  
+- **Identify areas for improvement** and focus on growth opportunities  
+- **Set personal development goals** and plan your learning path  
+- **Celebrate achievements** as you reach milestones and build new skills
 
 ---
 

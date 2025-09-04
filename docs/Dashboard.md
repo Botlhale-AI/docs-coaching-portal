@@ -10,17 +10,16 @@ Your Coaching Portal dashboard shows you everything about your team's learning a
 
 Team leads want to see how their team is performing at a glance. Your Dashboard gives you the tools to monitor trends, spot coaching opportunities, and track how your team is developing.
 
-> **What is Your Dashboard?** Your **Dashboard** is your performance monitoring hub, offering real-time metrics, trend analysis, coaching insights, and team development tracking to help you make informed decisions about your team's growth.
+> **What is Your Dashboard?** Your **Dashboard** is your performance monitoring hub, offerin metrics, trend analysis, coaching insights, and team development tracking to help you make informed decisions about your team's growth.
 
 ## What You Can Achieve
 
-Your dashboard turns training data into useful insights. With it, you can:
-
-| **Performance Monitoring** | **Team Development** | **Learning Experience** |
-|---------------------------|-------------------|------------------------|
-| **Spot learning gaps before they escalate** | **Coach with confidence** | **Keep agents engaged** |
-| **Track progress trends and patterns** | **Identify top learners** | **Monitor satisfaction** |
-| **Improve training efficiency** | **Spot development needs** | **Catch issues early** |
+- **Spot learning gaps early** and take action before they affect performance  
+- **Track progress trends** to see how individuals and teams are improving  
+- **Identify top performers** and recognise excellence with confidence  
+- **Pinpoint development needs** to deliver targeted coaching  
+- **Understand Key Performance Areas** by monitoring how well your team performs in crucial evaluation categories like Customer Care and Compliance
+- **Improve training efficiency** by focusing on what drives measurable results
 
 ---
 

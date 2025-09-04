@@ -5,22 +5,20 @@ title: Getting Started - A Tour of the Team Lead Portal
 pagination_next: Dashboard
 ---
 
-Welcome to the Vela Coaching Portal! This guide will help you start managing your team's performance and driving measurable improvements.
+Welcome to the Vela Coaching Portal! This guide will help you start managing your organisation's performance and driving measurable improvements.
 
-We know team leads juggle multiple responsibilities, from performance monitoring to coaching and development. That's where the Vela Coaching Portal comes in. We provide the tools you need to identify coaching opportunities, track progress, and recognise excellence across your team.
-
-> **What is the Vela Coaching Portal?** The **Vela Coaching Portal** is your command centre for team development, offering course management, progress tracking, awards recognition, and performance insights to help you build a high-performing team.
+> **What is the Vela Coaching Portal?** The **Vela Coaching Portal** is your command centre for agent development, offering course management, progress tracking, awards recognition, and performance insights to help you build a high-performing organisation.
 
 ## What You'll Achieve
 
 By the end of this guide, you'll be able to:
-- **Monitor your team's performance** with detailed analytics and insights
+- **Set up an automated evaluation cycle** for your agents by configuring Preferences
+- **Monitor your organisation's performance in areas of concern** with detailed analytics on the dashboard
 - **Create and assign training courses** to develop specific skills
 - **Track learning progress** and identify agents who need support
 - **Recognise excellence** with awards and certificates
 - **Drive measurable improvements** through data-driven coaching
 
-We've made this guide as straightforward as possible because we understand you have teams to manage and performance to improve.
 
 ---
 
@@ -39,7 +37,6 @@ The left navigation bar is your main navigation hub in the Coaching Portal. You'
 - **[Preferences](./Preferences)** - Configure your portal settings and preferences
 
 ![Coaching Navigation](../img/screenshots/team_lead/nav.png)
-> **💡 Tip**: The Coaching section is where you'll spend most of your time managing your team's development and performance.
 
 > **💡 Tip**: The left navigation provides easy access to all sections of the Coaching Portal, making it simple to switch between different areas of your team management workflow.
 
@@ -49,7 +46,26 @@ The left navigation bar is your main navigation hub in the Coaching Portal. You'
 
 ## Quick Setup Checklist
 
-### Step 1: Explore Your Dashboard
+### Step 1: Set Up Your Preferences *(Start Here!)*
+**Goal**: Define the rules for how coaching runs in your team
+
+The very first thing you should do when you start using Coaching is set up your **Preferences**. Preferences control how agents are evaluated and how often those evaluations happen.  
+
+- [ ] **Go to "Coaching" → "Preferences"** in the left navigation  
+- [ ] **Set the Scope** → Decide which interactions should be included in evaluations  
+- [ ] **Set the Evaluation Cycle** → Choose how often automated evaluations run (daily, weekly, monthly)  
+
+When evaluations are triggered, Vela automatically:  
+- **Checks all criteria** you’ve defined in your scorecards  
+- **Assigns courses** to agents who meet the criteria defined in preferences or courses 
+- **Presents awards** to agents who achieve recognition thresholds defined in each award 
+
+This means your Preferences act as the **default automation engine** for coaching in Vela. Once you’ve configured Scope and Cycle, the system will consistently apply the rules you set, saving you time and ensuring fair, data-driven coaching across your team.  
+
+> **Why this matters**: Without Preferences set up, automated course assignments and award recognitions won’t run. Think of Preferences as your coaching autopilot.  
+
+
+### Step 2: Explore Your Dashboard
 **Goal**: Understand your team's current performance landscape
 
 Your dashboard is your command centre for team insights. It shows you everything you need to know at a glance.
@@ -63,7 +79,7 @@ Your dashboard is your command centre for team insights. It shows you everything
 
 > **Why this matters**: Your dashboard helps you make data-driven decisions about where to focus your coaching efforts.
 
-### Step 2: Create Your First Course
+### Step 3: Create Your First Course
 **Goal**: Set up training to address identified skill gaps
 
 Once you've identified areas for improvement from your dashboard, create targeted training to help your team grow.
@@ -79,7 +95,7 @@ Once you've identified areas for improvement from your dashboard, create targete
 
 > **Why this matters**: Structured training ensures consistent skill development across your team.
 
-### Step 3: Set Up Awards and Recognition
+### Step 4: Set Up Awards and Recognition
 **Goal**: Create recognition programmes to motivate your team
 
 Build a culture of excellence by setting up awards that recognise outstanding performance and achievements.
@@ -95,7 +111,7 @@ Build a culture of excellence by setting up awards that recognise outstanding pe
 
 > **Why this matters**: Recognition programmes boost team morale and motivate agents to excel.
 
-### Step 4: Track Progress and Monitor Development
+### Step 5: Track Progress and Monitor Development
 **Goal**: Monitor learning progress and identify support needs
 
 Keep track of how your team is developing and identify who needs additional support.
