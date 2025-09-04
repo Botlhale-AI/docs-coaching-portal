@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'Botlhale-AI', 
   projectName: 'docs-coaching-portal', 
-  deploymentBranch: 'docs/update', 
+  deploymentBranch: 'gh-pages', 
   trailingSlash: false,
 
   presets: [
