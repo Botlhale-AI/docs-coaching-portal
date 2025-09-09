@@ -18,7 +18,6 @@ Manage your account:
 | **Account Management** | **Communication Control** | **Security Settings** |
 |----------------------|-------------------------|---------------------|
 | **View account information** | **Manage notifications** | **Update password security** |
-| **Stay informed with updates** | **Control communication preferences** | **Maintain account security** |
 | **Keep details current** | **Receive important alerts** | **Protect your account** |
 
 ---

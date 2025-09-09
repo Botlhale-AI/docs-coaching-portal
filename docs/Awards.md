@@ -134,7 +134,7 @@ Use the date range selector to view awards within specific time periods:
 
 - Select custom start and end dates (e.g., "01/08/2025 - 31/08/2025")
 - Quick filters for common periods (Last week, Last month)
-- Live updates as you adjust the date range
+- Real time updates as you adjust the date range
 
 #### Filter Options
 
