@@ -10,7 +10,7 @@ Your Coaching Portal dashboard shows you everything about your team's learning a
 
 Team leads want to see how their team is performing at a glance. Your Dashboard gives you the tools to monitor trends, spot coaching opportunities, and track how your team is developing.
 
-> **What is Your Dashboard?** Your **Dashboard** is your performance monitoring hub, offerin metrics, trend analysis, coaching insights, and team development tracking to help you make informed decisions about your team's growth.
+> **What is Your Dashboard?** Your **Dashboard** is your performance monitoring hub, metrics, trend analysis, coaching insights, and team development tracking to help you make informed decisions about your team's growth.
 
 ## What You Can Achieve
 
@@ -32,7 +32,7 @@ Use the **Date Range** filter at the top of the dashboard to analyse performance
 > **💡 Tip**: Use different date ranges to spot trends - weekly views show immediate issues, while monthly views reveal longer-term patterns.
 
 - **Custom Date Range**: Select start and end dates to focus on specific periods
-- **Quick Filters**: Choose from preset options like "Last 7 days", "Last month", "Last quarter"
+- **Quick Filters**: Choose from preset options like "Last week", "Last month"
 - **Live Updates**: All metrics automatically update when you change the date range
 
 ![Dashboard Date-Range](../img/screenshots/team_lead/dashboard/date-range.png)
