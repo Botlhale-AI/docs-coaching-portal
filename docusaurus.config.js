@@ -69,18 +69,7 @@ const config = {
         {
           type: 'html',
           position: 'right',
-          value: '<a href="https://vela.botlhale.xyz/register" target="_blank" class="auth-button auth-button-signup">Create Account</a>',
-        },
-        {
-          type: 'html',
-          position: 'right',
           value: '<a href="https://vela.botlhale.xyz/login" target="_blank" class="auth-button auth-button-signin">Log In</a>',
-        },
-        {
-          href: 'https://github.com/botlhale-ai',
-          position: 'right',
-          className: 'header-github-link',
-          'aria-label': 'GitHub repository',
         },
         {
           to: '/docs/release-notes',

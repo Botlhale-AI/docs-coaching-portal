@@ -306,13 +306,7 @@ html[data-theme='dark'] .auth-button-signup {
 }
 
 /* Show role-specific items when appropriate */
-[data-current-role="teamlead"] .navbar__item--show-for-teamlead {
-  display: block;
-}
 
-[data-current-role="agent"] .navbar__item--show-for-agent {
-  display: block;
-}
 
 /* Role indicator styling */
 .nav-role-indicator {
@@ -333,15 +327,6 @@ html[data-theme='dark'] .auth-button-signup {
 }
 
 /* Role-based main navbar styling */
-.role-based-navbar {
-  background: var(--ifm-navbar-background-color);
-  border-bottom: 1px solid var(--ifm-color-emphasis-200);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 60px; /* Main navbar height */
-  z-index: 100;
-  transition: all 0.3s ease;
-}
 
 .role-nav-container {
   max-width: 1140px;
@@ -421,32 +406,6 @@ html[data-theme='dark'] .auth-button-signup {
   text-align: center;
 }
 
-/* Hide role-based navbar on mobile */
-@media (max-width: 768px) {
-  .role-based-navbar {
-    display: none;
-  }
-}
-
-/* Responsive adjustments */
-@media (max-width: 996px) {
-  .role-nav-container {
-    flex-direction: column;
-    height: auto;
-    padding: 1rem;
-    gap: 1rem;
-  }
-  
-  .role-nav-items {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .role-nav-item {
-    font-size: 0.85rem;
-    padding: 0.5rem 0.75rem;
-  }
-}
 
 /* Integration with existing SubNavbar */
 .horizontal-nav {
@@ -468,23 +427,7 @@ html[data-theme='dark'] .auth-button-signup {
   margin-left: 0 !important;
 }
 
-/* Remove role-based navbar styling - hide these elements */
-.role-based-navbar,
-.role-nav-container,
-.role-indicator,
-.role-nav-items,
-.role-nav-item {
-  display: none !important;
-}
 
-/* Remove SubNavbar styling - hide these elements */
-.sub-navbar,
-.sub-navbar-role,
-.horizontal-nav,
-.horizontal-nav-container,
-.horizontal-nav-item {
-  display: none !important;
-}
 
 /* Ensure docs content takes full width */
 .theme-doc-root {
