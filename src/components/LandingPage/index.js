@@ -1,13 +1,14 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './styles.module.css';
 import FeatureCards from '../FeatureCards';
-import styles2 from '../../theme/TopNavigationBar/styles.module.css';
+
 
 export default function LandingPage() {
   const {siteConfig} = useDocusaurusContext();
-  const [selectedRole, setSelectedRole] = useState('teamlead');
+  // The role toggle has gone: the sidebar splits by the same two audiences,
+  // and the preview below is decoration rather than a view of anyone's data.
   const heroRef = useRef(null);
   const chartRef = useRef(null);
   
@@ -32,7 +33,7 @@ export default function LandingPage() {
     };
   }, []);
 
-  // Reset SVG animations when role changes - using a safer implementation
+  // Refresh the inline SVG once on mount. It used to re-run when the role changed.
   useEffect(() => {
     if (chartRef.current) {
       // Force SVG refresh by changing the data attribute
@@ -45,23 +46,61 @@ export default function LandingPage() {
         }, 10);
       }
     }
-  }, [selectedRole]);
+  }, []);
 
-  // Video data based on role
+  // Tutorial videos. Only published ones belong here: an unavailable id renders
+  // as a "Video unavailable" box, which reads as a broken site.
+  //
+  // The agent tutorial (7quhuuCEZgA) was removed on 2026-08-18. Its YouTube
+  // oembed endpoint returns 404, so the video is private or deleted. Add it
+  // back once there is a working id, alongside a teamlead-style entry.
   const videoData = {
     teamlead: {
       videoId: 'xmDezghws3w',
       title: 'Team Lead Tutorial',
       description: 'Learn how team leads can effectively manage courses, track agent progress, and provide coaching through the platform.'
-    },
-    agent: {
-      videoId: '7quhuuCEZgA',
-      title: 'Agent Tutorial',
-      description: 'Discover how agents can access courses, track their learning progress, and review their performance metrics.'
     }
   };
   
-  // Role-specific workflow steps
+  // The agent's journey through the portal, in the order they meet it. Each
+  // step links to the page that covers it, so this section is a way into the
+  // documentation rather than a list of claims about it. The order matches the
+  // For Agents sidebar section.
+  const agentJourney = [
+    {
+      title: "Sign In",
+      description: "Sign in to the Coaching Portal for the first time and find your way around.",
+      to: "/docs/agents/getting-started",
+    },
+    {
+      title: "Read Your Dashboard",
+      description: "Your auto-fail rate and category scores, each shown against your team's.",
+      to: "/docs/agents/personal-performance",
+    },
+    {
+      title: "Review Your Interactions",
+      description: "Open the calls and chats behind those scores, with transcripts and scorecards.",
+      to: "/docs/agents/your-interactions",
+    },
+    {
+      title: "Work Through Your Courses",
+      description: "Read the material, take the quiz, and see how many attempts you have left.",
+      to: "/docs/agents/your-courses",
+    },
+    {
+      title: "Collect Your Awards",
+      description: "See what you have been presented and download the certificate.",
+      to: "/docs/agents/your-awards",
+    },
+    {
+      title: "Manage Your Account",
+      description: "Read your notifications, check your details, and change your password.",
+      to: "/docs/agents/your-account",
+    },
+  ];
+
+  // Workflow steps. Only the team lead sequence is rendered; the agent journey
+  // above covers the other audience.
   const workflowSteps = {
     teamlead: [
       {
@@ -131,44 +170,39 @@ export default function LandingPage() {
                 Your centralised hub for agent coaching, training resources, and performance analytics.
               </p>
               
-              {/* Enhanced Role Selector */}
+              {/* Two entry points, one per audience.
+                  This was a stateful role toggle that switched the whole page
+                  between a team lead and an agent view. It duplicated the
+                  sidebar, which now splits by the same two audiences, and it
+                  hid half the site behind a button nobody knew to press. These
+                  link straight into the two sections instead. */}
               <div className={`${styles.roleSelector} ${styles.animateIn}`}>
                 <div className={styles.roleSelectorHeader}>
-                  <h3 className={styles.roleSelectorTitle}>Choose Your Access Level</h3>
-                  <p className={styles.roleSelectorDescription}>Select the appropriate view based on your role</p>
+                  <h3 className={styles.roleSelectorTitle}>Where would you like to start?</h3>
+                  <p className={styles.roleSelectorDescription}>The documentation is split by role. Pick the one that describes you.</p>
                 </div>
                 <div className={styles.roleButtons}>
-                  <button 
-                    className={`${styles.roleButton} ${selectedRole === 'teamlead' ? styles.roleButtonActive : ''}`}
-                    onClick={() => setSelectedRole('teamlead')}
-                  >
+                  <Link to="/docs/team-leads" className={styles.roleButton}>
                     <i className="fas fa-users-cog"></i>
                     <div className={styles.roleButtonContent}>
-                      <span className={styles.roleButtonLabel}>Team Lead</span>
-                      <span className={styles.roleButtonDescription}>Manage teams & create content</span>
+                      <span className={styles.roleButtonLabel}>For Team Leads</span>
+                      <span className={styles.roleButtonDescription}>Run coaching, build courses, track progress</span>
                     </div>
-                  </button>
-                  <button 
-                    className={`${styles.roleButton} ${selectedRole === 'agent' ? styles.roleButtonActive : ''}`}
-                    onClick={() => setSelectedRole('agent')}
-                  >
+                  </Link>
+                  <Link to="/docs/agents" className={styles.roleButton}>
                     <i className="fas fa-user"></i>
                     <div className={styles.roleButtonContent}>
-                      <span className={styles.roleButtonLabel}>Agent</span>
-                      <span className={styles.roleButtonDescription}>Access courses & track progress</span>
+                      <span className={styles.roleButtonLabel}>For Agents</span>
+                      <span className={styles.roleButtonDescription}>Read your scores, take courses, collect awards</span>
                     </div>
-                  </button>
+                  </Link>
                 </div>
               </div>
 
-              {/* Updated CTA Button to match role selector style */}
               <div className={styles.heroCta}>
-                <Link 
-                  to={selectedRole === 'teamlead' ? "/docs/GettingStartedTeamLeads" : "/docs/GettingStartedAgents"} 
-                  className={styles.portalButton}
-                >
-                  <i className={selectedRole === 'teamlead' ? "fas fa-users-cog" : "fas fa-user"}></i>
-                  <span>{selectedRole === 'teamlead' ? 'Access Team Lead Portal' : 'Access Agent Portal'}</span>
+                <Link to="/docs/explanation/how-coaching-works" className={styles.portalButton}>
+                  <i className="fas fa-lightbulb"></i>
+                  <span>How Coaching Works</span>
                 </Link>
               </div>
             </div>
@@ -183,13 +217,12 @@ export default function LandingPage() {
                     <span className={styles.dashboardControl}></span>
                   </div>
                   <div className={styles.dashboardTitle}>
-                    {selectedRole === 'teamlead' ? 'Team Performance Overview' : 'My Learning Progress'}
+                    Team Performance Overview
                   </div>
                 </div>
                 <div className={styles.dashboardBody}>
-                  {/* Course Performance Metrics - Role-based content */}
+                  {/* Course performance metrics. Decorative. */}
                   <div className={styles.courseMetrics}>
-                    {selectedRole === 'teamlead' ? (
                       <>
                         <div className={styles.metricCard}>
                           <div className={styles.awardBadge}>
@@ -212,37 +245,14 @@ export default function LandingPage() {
                           <i className={`fas fa-cog ${styles.settingsIcon}`}></i>
                         </div>
                       </>
-                    ) : (
-                      <>
-                        <div className={styles.metricCard}>
-                          <div className={styles.awardBadge}>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                              <circle cx="12" cy="12" r="7"/>
-                              <path d="M12 1L9 9l-8 3 8 3 3 8 3-8 8-3-8-3z" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                            </svg>
-                          </div>
-                          <span className={styles.metricValue}>5</span>
-                          <span className={styles.metricLabel}>Awards Received</span>
-                        </div>
-                        <div className={styles.metricCard}>
-                          <div className={`${styles.awardBadge} ${styles.awardGold}`}>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                            </svg>
-                          </div>
-                          <span className={styles.metricValue}>Best Performing Agent</span>
-                        </div>
-                      </>
-                    )}
                   </div>
                   
                   {/* Enhanced Course Graphics with SVG Illustrations */}
                   <div className={styles.modernChart}>
                     <div className={styles.chartTitle}>
-                      {selectedRole === 'teamlead' ? 'Available Training Modules' : 'My Learning Path'}
+                      Available Training Modules
                     </div>
                     <div className={styles.courseGraphicsContainer}>
-                      {selectedRole === 'teamlead' ? (
                         <div className={styles.teamLeadCourseDisplay}>
                           <div className={styles.courseModule}>
                             <div className={styles.courseIcon}>
@@ -362,153 +372,6 @@ export default function LandingPage() {
                             </div>
                           </div>
                         </div>
-                      ) : (
-                        <div className={styles.agentCourseDisplay}>
-                          <div className={styles.courseCard}>
-                            <div className={styles.courseCardHeader}>
-                              <div className={styles.courseBadge}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#ffffff">
-                                  <path d="M20,2H4C2.9,2,2,2.9,2,4v18l4-4h14c1.1,0,2-0.9,2-2V4C22,2.9,21.1,2,20,2z M13,14h-2v-2h2V14z M13,10h-2V6h2V10z"/>
-                                </svg>
-                              </div>
-                              <h4>Communication Skills</h4>
-                              <span className={styles.courseCompletion}>
-                                <svg className={styles.circularProgress}>
-                                  <circle cx="12" cy="12" r="10" fill="none" stroke="#e5e7eb" strokeWidth="2.5"/>
-                                  <circle 
-                                    cx="12" 
-                                    cy="12" 
-                                    r="10" 
-                                    fill="none" 
-                                    stroke="#ffffff" 
-                                    strokeWidth="2.5"
-                                    strokeDasharray="62.8"
-                                    strokeDashoffset="12.56"
-                                    strokeLinecap="round"
-                                  />
-                                </svg>
-                                80%
-                              </span>
-                            </div>
-                            <div className={styles.courseProgress}>
-                              <div className={styles.moduleItem}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                  <defs>
-                                    <linearGradient id="checkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                      <stop offset="0%" stopColor="#11998e" />
-                                      <stop offset="100%" stopColor="#38ef7d" />
-                                    </linearGradient>
-                                  </defs>
-                                  <circle cx="12" cy="12" r="10" fill="url(#checkGrad)"/>
-                                  <path d="M9,16.17L5.83,13l-1.42,1.41L9,19L21,7l-1.41-1.41L9,16.17z" fill="white"/>
-                                </svg>
-                                <span>Active Listening</span>
-                              </div>
-                              <div className={styles.moduleItem}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                  <defs>
-                                    <linearGradient id="checkGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                      <stop offset="0%" stopColor="#11998e" />
-                                      <stop offset="100%" stopColor="#38ef7d" />
-                                    </linearGradient>
-                                  </defs>
-                                  <circle cx="12" cy="12" r="10" fill="url(#checkGrad2)"/>
-                                  <path d="M9,16.17L5.83,13l-1.42,1.41L9,19L21,7l-1.41-1.41L9,16.17z" fill="white"/>
-                                </svg>
-                                <span>Customer Empathy</span>
-                              </div>
-                              <div className={styles.moduleItem}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                  <circle cx="12" cy="12" r="10" fill="#e5e7eb"/>
-                                </svg>
-                                <span>Conflict Resolution</span>
-                              </div>
-                              <div className={styles.moduleItem}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                  <circle cx="12" cy="12" r="10" fill="#e5e7eb"/>
-                                </svg>
-                                <span>Final Assessment</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div className={styles.courseCard}>
-                            <div className={styles.courseCardHeader}>
-                              <div className={styles.courseBadge}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#ffffff">
-                                  <path d="M19.3,8.9l-4.2-4.2c-0.4-0.4-1-0.4-1.4,0L12,6.3l-1.7-1.7c-0.4-0.4-1-0.4-1.4,0l-4.2,4.2c-0.4,0.4-0.4,1,0,1.4L6.3,12l-1.7,1.7c-0.4,0.4-0.4,1,0,1.4l4.2,4.2c0.4,0.4,1,0.4,1.4,0l1.7-1.7l1.7,1.7c0.4,0.4,1,0.4,1.4,0l4.2-4.2c0.4-0.4,0.4-1,0-1.4L17.7,12l1.7-1.7C19.7,9.9,19.7,9.3,19.3,8.9z M12,16c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C16,14.2,14.2,16,12,16z"/>
-                                  <circle cx="12" cy="12" r="2" fill="white"/>
-                                </svg>
-                              </div>
-                              <h4>Problem Solving</h4>
-                              <span className={styles.courseCompletion}>
-                                <svg className={styles.circularProgress}>
-                                  <circle cx="12" cy="12" r="10" fill="none" stroke="#e5e7eb" strokeWidth="2.5"/>
-                                  <circle 
-                                    cx="12" 
-                                    cy="12" 
-                                    r="10" 
-                                    fill="none" 
-                                    stroke="#ffffff" 
-                                    strokeWidth="2.5"
-                                    strokeDasharray="62.8"
-                                    strokeDashoffset="34.54"
-                                    strokeLinecap="round"
-                                  />
-                                </svg>
-                                45%
-                              </span>
-                            </div>
-                            <div className={styles.courseProgress}>
-                              <div className={styles.moduleItem}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                  <defs>
-                                    <linearGradient id="checkGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                      <stop offset="0%" stopColor="#11998e" />
-                                      <stop offset="100%" stopColor="#38ef7d" />
-                                    </linearGradient>
-                                  </defs>
-                                  <circle cx="12" cy="12" r="10" fill="url(#checkGrad3)"/>
-                                  <path d="M9,16.17L5.83,13l-1.42,1.41L9,19L21,7l-1.41-1.41L9,16.17z" fill="white"/>
-                                </svg>
-                                <span>Issue Identification</span>
-                              </div>
-                              <div className={styles.moduleItem}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                  <defs>
-                                    <linearGradient id="checkGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
-                                      <stop offset="0%" stopColor="#11998e" />
-                                      <stop offset="100%" stopColor="#38ef7d" />
-                                    </linearGradient>
-                                  </defs>
-                                  <circle cx="12" cy="12" r="10" fill="url(#checkGrad4)"/>
-                                  <path d="M9,16.17L5.83,13l-1.42,1.41L9,19L21,7l-1.41-1.41L9,16.17z" fill="white"/>
-                                </svg>
-                                <span>Root Cause Analysis</span>
-                              </div>
-                              <div className={styles.moduleItem}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                  <defs>
-                                    <linearGradient id="spinnerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                                      <stop offset="0%" stopColor="#f59e0b" />
-                                      <stop offset="100%" stopColor="#d97706" />
-                                    </linearGradient>
-                                  </defs>
-                                  <circle cx="12" cy="12" r="10" fill="url(#spinnerGrad)"/>
-                                  <path className={styles.spinnerPath} d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10s10-4.48,10-10C22,6.48,17.52,2,12,2z M12,20c-4.42,0-8-3.58-8-8 c0-4.42,3.58-8,8-8s8,3.58,8,8C20,16.42,16.42,20,12,20z" fill="white"/>
-                                  <path d="M16.24,7.76C15.07,6.59,13.54,6,12,6L12,12L16.24,16.24c1.17-1.17,1.76-2.7,1.76-4.24C18,10.46,17.41,8.93,16.24,7.76z" fill="white"/>
-                                </svg>
-                                <span>Solution Development</span>
-                              </div>
-                              <div className={styles.moduleItem}>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                  <circle cx="12" cy="12" r="10" fill="#e5e7eb"/>
-                                </svg>
-                                <span>Final Assessment</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -524,14 +387,12 @@ export default function LandingPage() {
           <div className={`${styles.sectionHeader} ${styles.animateIn}`}>
             <h2 className={styles.sectionTitle}>How It Works</h2>
             <p className={styles.sectionSubtitle}>
-              {selectedRole === 'teamlead' 
-                ? 'Your journey to leading and coaching your team effectively'
-                : 'Your journey to skill development and performance excellence'}
+              Setting up coaching, in the order the settings depend on one another
             </p>
           </div>
           
           <div className={styles.workflowContainer}>
-            {workflowSteps[selectedRole].map((step, index) => (
+            {workflowSteps.teamlead.map((step, index) => (
               <React.Fragment key={index}>
                 <div className={`${styles.workflowStep} ${styles.animateIn}`}>
                   <div className={styles.workflowNode}>
@@ -546,7 +407,7 @@ export default function LandingPage() {
                   </div>
                 </div>
                 
-                {index < workflowSteps[selectedRole].length - 1 && (
+                {index < workflowSteps.teamlead.length - 1 && (
                   <div className={styles.workflowConnector}>
                     <div className={styles.workflowLine}></div>
                     <div className={styles.workflowPulse}></div>
@@ -558,81 +419,47 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Agent-Specific Features Section (visible only when Agent role is selected) */}
-      {selectedRole === 'agent' && (
-        <section className={styles.agentFeaturesSection}>
-          <div className="container">
-            <div className={`${styles.sectionHeader} ${styles.animateIn}`}>
-              <h2 className={styles.sectionTitle}>Agent Portal Walkthrough</h2>
-              <p className={styles.sectionSubtitle}>
-                Everything you need to know to navigate the platform effectively
-              </p>
-            </div>
-            
-            <div className={styles.agentFeaturesGrid}>
-              <div className={`${styles.agentFeatureCard} ${styles.animateIn}`}>
-                <div className={styles.agentFeatureIcon}>
-                  <i className="fas fa-sign-in-alt"></i>
-                </div>
-                <h3 className={styles.agentFeatureTitle}>Sign In</h3>
-                <p className={styles.agentFeatureDescription}>
-                  Securely log in and access your personalised portal with your assigned credentials
-                </p>
-              </div>
-              
-              <div className={`${styles.agentFeatureCard} ${styles.animateIn}`}>
-                <div className={styles.agentFeatureIcon}>
-                  <i className="fas fa-tachometer-alt"></i>
-                </div>
-                <h3 className={styles.agentFeatureTitle}>Dashboard</h3>
-                <p className={styles.agentFeatureDescription}>
-                  View performance metrics, compare to team averages, and use filters for focused insights
-                </p>
-              </div>
-              
-              <div className={`${styles.agentFeatureCard} ${styles.animateIn}`}>
-                <div className={styles.agentFeatureIcon}>
-                  <i className="fas fa-phone-alt"></i>
-                </div>
-                <h3 className={styles.agentFeatureTitle}>Interactions</h3>
-                <p className={styles.agentFeatureDescription}>
-                  Analyse calls and chats using advanced filtering, smart summaries, and performance scorecards
-                </p>
-              </div>
-              
-              <div className={`${styles.agentFeatureCard} ${styles.animateIn}`}>
-                <div className={styles.agentFeatureIcon}>
-                  <i className="fas fa-book"></i>
-                </div>
-                <h3 className={styles.agentFeatureTitle}>Courses</h3>
-                <p className={styles.agentFeatureDescription}>
-                  Track assigned courses, view materials, take quizzes, and monitor your learning outcomes
-                </p>
-              </div>
-              
-              <div className={`${styles.agentFeatureCard} ${styles.animateIn}`}>
-                <div className={styles.agentFeatureIcon}>
-                  <i className="fas fa-trophy"></i>
-                </div>
-                <h3 className={styles.agentFeatureTitle}>Awards</h3>
-                <p className={styles.agentFeatureDescription}>
-                  Access and download your performance-based recognitions and filter by time periods
-                </p>
-              </div>
-              
-              <div className={`${styles.agentFeatureCard} ${styles.animateIn}`}>
-                <div className={styles.agentFeatureIcon}>
-                  <i className="fas fa-cog"></i>
-                </div>
-                <h3 className={styles.agentFeatureTitle}>Admin</h3>
-                <p className={styles.agentFeatureDescription}>
-                  View notifications and update your profile and security settings with ease
-                </p>
-              </div>
-            </div>
+      {/* The agent walkthrough used to render only while the role toggle was set to
+          agent, so it was invisible by default. It is useful to both audiences: a
+          team lead answering "what does my agent see?" has nowhere else to look. */}
+      <section className={styles.workflowSection}>
+        <div className="container">
+          <div className={`${styles.sectionHeader} ${styles.animateIn}`}>
+            <h2 className={styles.sectionTitle}>Agent Portal Walkthrough</h2>
+            <p className={styles.sectionSubtitle}>
+              What an agent does, in the order they do it
+            </p>
           </div>
-        </section>
-      )}
+
+          <div className={styles.workflowContainer}>
+            {agentJourney.map((step, index) => (
+              <React.Fragment key={index}>
+                <div className={`${styles.workflowStep} ${styles.animateIn}`}>
+                  <div className={styles.workflowNode}>
+                    <div className={styles.workflowNodeInner}>{index + 1}</div>
+                    <div className={styles.workflowNodeRing}></div>
+                  </div>
+                  <div className={styles.workflowContent}>
+                    <h3 className={styles.workflowTitle}>
+                      <Link to={step.to}>{step.title}</Link>
+                    </h3>
+                    <p className={styles.workflowDescription}>
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+
+                {index < agentJourney.length - 1 && (
+                  <div className={styles.workflowConnector}>
+                    <div className={styles.workflowLine}></div>
+                    <div className={styles.workflowPulse}></div>
+                  </div>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+      </section>
 
 
        {/* Video Tutorial Section */}
@@ -641,22 +468,29 @@ export default function LandingPage() {
            <div className={`${styles.sectionHeader} ${styles.animateIn}`}>
              <h2 className={styles.sectionTitle}>How-To Guide Video</h2>
              <p className={styles.sectionSubtitle}>
-               Watch this helpful tutorial to get started with the {selectedRole === 'teamlead' ? 'team lead' : 'agent'} features
+               A walkthrough of the team lead side of coaching
              </p>
            </div>
-           
-           <div className={`${styles.videoContainer} ${styles.animateIn}`}>
-             <iframe 
-               className={styles.videoFrame}
-               src={`https://www.youtube.com/embed/${videoData[selectedRole].videoId}`}
-               title={videoData[selectedRole].title}
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-               allowFullScreen
-             ></iframe>
-           </div>
-           <p className={styles.videoDescription}>
-             {videoData[selectedRole].description}
-           </p>
+
+           {/* Rendered from videoData, so removing or adding a video is a one-line
+               change above rather than an edit to this markup. 
+*/}
+           {Object.keys(videoData).map((role) => (
+             <div key={role}>
+               <div className={`${styles.videoContainer} ${styles.animateIn}`}>
+                 <iframe
+                   className={styles.videoFrame}
+                   src={`https://www.youtube.com/embed/${videoData[role].videoId}`}
+                   title={videoData[role].title}
+                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                   allowFullScreen
+                 ></iframe>
+               </div>
+               <p className={styles.videoDescription}>
+                 {videoData[role].description}
+               </p>
+             </div>
+           ))}
          </div>
        </section>
     </div>
