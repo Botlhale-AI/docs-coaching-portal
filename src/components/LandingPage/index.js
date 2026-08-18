@@ -94,11 +94,11 @@ export default function LandingPage() {
       },
       {
         title: "Monitor Progress & Coach",
-        description: "Track agent development and provide personalized coaching and feedback"
+        description: "Track agent development and provide personalised coaching and feedback"
       },
       {
-        title: "Recognize & Motivate",
-        description: "Award achievements and incentives to recognize outstanding performance"
+        title: "Recognise & Motivate",
+        description: "Award achievements and incentives to recognise outstanding performance"
       }
     ],
     agent: [
@@ -112,7 +112,7 @@ export default function LandingPage() {
       },
       {
         title: "Review Interactions",
-        description: "Analyze your calls and chats with detailed feedback and improvement suggestions"
+        description: "Analyse your calls and chats with detailed feedback and improvement suggestions"
       },
       {
         title: "Complete Training",
@@ -144,7 +144,7 @@ export default function LandingPage() {
                 <span className={styles.heroTitleMain}>{siteConfig.title}</span>
               </h1>
               <p className={styles.heroSubtitle}>
-                Your centralized hub for agent coaching, training resources, and performance analytics.
+                Your centralised hub for agent coaching, training resources, and performance analytics.
               </p>
               
               {/* Enhanced Role Selector */}
@@ -592,7 +592,7 @@ export default function LandingPage() {
                 </div>
                 <h3 className={styles.agentFeatureTitle}>Sign In</h3>
                 <p className={styles.agentFeatureDescription}>
-                  Securely log in and access your personalized portal with your assigned credentials
+                  Securely log in and access your personalised portal with your assigned credentials
                 </p>
               </div>
               
@@ -612,7 +612,7 @@ export default function LandingPage() {
                 </div>
                 <h3 className={styles.agentFeatureTitle}>Interactions</h3>
                 <p className={styles.agentFeatureDescription}>
-                  Analyze calls and chats using advanced filtering, smart summaries, and performance scorecards
+                  Analyse calls and chats using advanced filtering, smart summaries, and performance scorecards
                 </p>
               </div>
               
