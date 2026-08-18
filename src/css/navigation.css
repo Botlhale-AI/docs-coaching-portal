@@ -412,29 +412,18 @@ html[data-theme='dark'] .auth-button-signup {
   top: 120px; /* Adjust for role-based navbar */
 }
 
-/* Hide sidebar temporarily for cleaner layout */
-.theme-doc-sidebar-container {
-  display: none !important;
-}
+/* The sidebar used to be hidden here with `display: none !important`, marked
+   "temporarily", which left the top bar as the only way to move around. That
+   bar shows one audience's six pages, so the categories added since (Reference,
+   Understanding Coaching, Support) and every section landing page were
+   unreachable by clicking. The sidebar is the primary navigation. Do not hide
+   it again; if it needs to be dismissible, use `themeConfig.docs.sidebar.hideable`
+   in docusaurus.config.js, which gives the reader a control instead. */
 
-/* Adjust main content area when sidebar is hidden */
-.main-wrapper {
-  width: 100% !important;
-}
-
-.docMainContainer {
-  max-width: none !important;
-  margin-left: 0 !important;
-}
-
-
-
-/* Ensure docs content takes full width */
-.theme-doc-root {
-  display: block !important;
-}
-
+/* The overrides that compensated for the hidden sidebar have gone with it.
+   `.docMainContainer` and `.docSidebarContainer` were dead selectors in any
+   case: those are CSS module classes and ship as hashed names such as
+   `docMainContainer_TCnq`, so a plain class selector never matched them. */
 .container {
-  max-width: 1140px !important;
-  margin: 0 auto !important;
+  margin: 0 auto;
 }
