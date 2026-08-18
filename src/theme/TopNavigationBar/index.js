@@ -12,6 +12,7 @@ const teamLeadMenuItems = [
   { label: 'Awards', to: '/docs/Awards' },
   { label: 'Progress', to: '/docs/Progress' },
   { label: 'Preferences', to: '/docs/Preferences' },
+  { label: 'Help', to: '/docs/FAQ' },
 ];
 
 // Agent navigation items
@@ -22,6 +23,7 @@ const agentMenuItems = [
   { label: 'My Awards', to: '/docs/AgentAwards' },
   { label: 'Interactions', to: '/docs/Interactions' },
   { label: 'Admin', to: '/docs/AgentAdmin' },
+  { label: 'Help', to: '/docs/FAQ' },
 ];
 
 export default function TopNavigationBar() {

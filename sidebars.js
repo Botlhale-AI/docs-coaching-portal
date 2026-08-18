@@ -42,6 +42,18 @@ const sidebars = {
         { type: 'doc', id: 'AgentAdmin', label: 'Admin' },
       ],
     },
+    {
+      type: 'category',
+      label: 'Reference and Help',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { type: 'doc', id: 'Glossary', label: 'Glossary' },
+        { type: 'doc', id: 'BestPractices', label: 'Best Practices' },
+        { type: 'doc', id: 'Troubleshooting', label: 'Troubleshooting' },
+        { type: 'doc', id: 'FAQ', label: 'FAQ' },
+      ],
+    },
   ],
 };
 
