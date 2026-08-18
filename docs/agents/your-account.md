@@ -1,10 +1,10 @@
 ---
-sidebar_position: 5
-sidebar: agentSidebar
-title: Manage Your Account and Settings
+title: Manage Your Account
 description: "Read your notifications, check your account details, and change your password."
+sidebar_position: 5
 type: how-to
-pagination_prev: Interactions
+pagination_prev: agents/your-awards
+pagination_next: null
 ---
 
 The **ADMIN** section at the foot of the left sidebar holds two pages: **Notifications**, where the portal tells you about new awards, courses, and comments, and **Settings**, where you check your account details and change your password.
@@ -32,7 +32,7 @@ Select **Notifications** under **ADMIN** in the left sidebar. Three tabs sort wh
 
 The page lists unread notifications only, so a tab with nothing in it reads **No results found**. That is a result rather than a fault: it means nothing of that type is waiting for you.
 
-![The Notifications page in the Coaching Portal, with the Awards, Courses, and Comments tabs above the list of unread notifications](../img/screenshots/agent_view/admin/notifications.png)
+![The Notifications page in the Coaching Portal, with the Awards, Courses, and Comments tabs above the list of unread notifications](../../img/screenshots/agent_view/admin/notifications.png)
 
 :::note Notifications is its own page
 It sits under **ADMIN** in the sidebar, beside **Settings**. It is not a tab inside Settings, so look for it in the sidebar rather than on the Settings page.
@@ -40,7 +40,7 @@ It sits under **ADMIN** in the sidebar, beside **Settings**. It is not a tab ins
 
 ---
 
-![The ADMIN section of the sidebar, with Notifications above Settings](../img/screenshots/agent_view/admin/admin.png)
+![The ADMIN section of the sidebar, with Notifications above Settings](../../img/screenshots/agent_view/admin/admin.png)
 
 ---
 
@@ -55,7 +55,7 @@ Select **Settings** under **ADMIN**, then the **account** tab. It shows the deta
 | **Current Organisation** | The organisation you belong to |
 | **Current Team** | The team your interactions are counted under |
 
-![The account tab in Settings, showing the Name, Email, Current Organisation, and Current Team fields](../img/screenshots/agent_view/admin/admin-account-info.jpeg)
+![The account tab in Settings, showing the Name, Email, Current Organisation, and Current Team fields](../../img/screenshots/agent_view/admin/admin-account-info.jpeg)
 
 These fields are read-only. To correct any of them, ask your team lead, who changes them from the main Vela platform.
 
@@ -90,10 +90,10 @@ For a password change, sign out and sign back in with the new password. That is 
 
 ## Related
 
-- [Monitor Your Dashboard](./AgentDashboard.md): track your scores over time
-- [Track Your Courses](./AgentCourses.md): work through the training assigned to you
-- [View Your Awards](./AgentAwards.md): the recognition your notifications tell you about
-- [Review Your Interactions](./Interactions.md): read the comments your team lead leaves
+- [Monitor Your Dashboard](./personal-performance.md): track your scores over time
+- [Track Your Courses](./your-courses.md): work through the training assigned to you
+- [View Your Awards](./your-awards.md): the recognition your notifications tell you about
+- [Review Your Interactions](./your-interactions.md): read the comments your team lead leaves
 
 ## Need Help?
 

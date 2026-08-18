@@ -1,10 +1,10 @@
 ---
-sidebar_position: 0
-title: Getting Started in the Coaching Portal
+title: Getting Started for Agents
 description: "Sign in for the first time and find your way around as an agent."
+sidebar_position: 0
 type: tutorial
-pagination_next: AgentDashboard
 pagination_prev: null
+pagination_next: agents/personal-performance
 ---
 
 The Coaching Portal is where you see how your conversations scored, work through training assigned to you, and read your team lead's feedback. It is separate from the main Vela platform your team lead uses, and it shows your own work only.
@@ -32,13 +32,13 @@ You need:
 
 Signing in takes you straight to your **Dashboard**.
 
-![The Coaching Portal sign-in page](../img/screenshots/agent_view/dashboard/login.png)
+![The Coaching Portal sign-in page](../../img/screenshots/agent_view/auth/login.png)
 
 :::note Signing in with Google or Microsoft
 Where your organisation uses Single Sign-On, use **Sign in with Google** or **Sign in with Microsoft** instead. You do not set a portal password, and the **security** tab does not appear.
 :::
 
-Change the temporary password once you are in. See [Manage Your Account and Settings](./AgentAdmin.md).
+Change the temporary password once you are in. See [Manage Your Account](./your-account.md).
 
 ---
 
@@ -55,7 +55,7 @@ The left sidebar holds everything, in two groups.
 | **Courses** | Training assigned to you |
 | **Awards** | Recognition you have been presented |
 
-![The Coaching Portal sidebar, with the TOOLS and ADMIN groups](../img/screenshots/agent_view/agent_sidebar.png)
+![The Coaching Portal sidebar, with the TOOLS and ADMIN groups](../../img/screenshots/agent_view/agent_sidebar.png)
 
 **ADMIN** is your account:
 
@@ -70,13 +70,13 @@ The left sidebar holds everything, in two groups.
 
 Work through these in order. Each takes a few minutes and shows you one part of the portal.
 
-1. **Open your Dashboard.** Set the date range to a period you have been working, and read **Category Scores**. The gap between **Your Team** and **Your Score** in each category is the most useful thing on the page. See [Monitor Your Personal Performance](./AgentDashboard.md).
+1. **Open your Dashboard.** Set the date range to a period you have been working, and read **Category Scores**. The gap between **Your Team** and **Your Score** in each category is the most useful thing on the page. See [Monitor Your Performance](./personal-performance.md).
 
-2. **Open one of your interactions.** Select **Interactions**, then **Calls** or **Chats**, and open one. Read the transcript alongside the **Scorecard** tab to see how the conversation was scored. See [Review Your Interactions](./Interactions.md).
+2. **Open one of your interactions.** Select **Interactions**, then **Calls** or **Chats**, and open one. Read the transcript alongside the **Scorecard** tab to see how the conversation was scored. See [Review Your Interactions](./your-interactions.md).
 
-3. **Check for coaching comments.** On the same interaction, select **View Comments**. This is where your team lead's feedback appears, and where you reply. See [Review Your Interactions](./Interactions.md).
+3. **Check for coaching comments.** On the same interaction, select **View Comments**. This is where your team lead's feedback appears, and where you reply. See [Review Your Interactions](./your-interactions.md).
 
-4. **Look at your courses.** Select **Courses**. Anything under **Assigned Courses** is waiting for you, and each shows a **Due Date**. See [Track Your Courses](./AgentCourses.md).
+4. **Look at your courses.** Select **Courses**. Anything under **Assigned Courses** is waiting for you, and each shows a **Due Date**. See [Track Your Courses](./your-courses.md).
 
 5. **Check your notifications.** Select **Notifications** under **ADMIN**. The three tabs sort what has arrived into awards, courses, and comments.
 
@@ -92,10 +92,10 @@ An empty Dashboard or interactions list is not a fault. It means nothing of your
 
 ## Related
 
-- [Monitor Your Personal Performance](./AgentDashboard.md): read your scores and spot trends
-- [Review Your Interactions](./Interactions.md): transcripts, scorecards, and comments
-- [Track Your Courses](./AgentCourses.md): work through assigned training
-- [Manage Your Account and Settings](./AgentAdmin.md): notifications, account details, and your password
+- [Monitor Your Performance](./personal-performance.md): read your scores and spot trends
+- [Review Your Interactions](./your-interactions.md): transcripts, scorecards, and comments
+- [Track Your Courses](./your-courses.md): work through assigned training
+- [Manage Your Account](./your-account.md): notifications, account details, and your password
 
 ## Need Help?
 

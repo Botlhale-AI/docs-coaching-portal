@@ -1,13 +1,13 @@
 ---
-sidebar_position: 7
 title: Troubleshooting
 description: "Work from a symptom to its cause, for the problems reported most."
+sidebar_position: 1
 type: troubleshooting
 pagination_prev: null
 pagination_next: null
 ---
 
-Common problems in the Coaching Portal, and what to check. Each entry starts from what you can see rather than from the feature it belongs to. For short answers to general questions, see [Frequently Asked Questions](./FAQ.md).
+Common problems in the Coaching Portal, and what to check. Each entry starts from what you can see rather than from the feature it belongs to. For short answers to general questions, see [Frequently Asked Questions](./faq.md).
 
 ---
 
@@ -34,14 +34,14 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 
 ## Empty Pages
 
-**Problem:** An agent's Dashboard reads **No Data Found**.
+**Problem:** An agent's Dashboard reads **No data available for the selected date range**.
 
 **Cause:** No processed interactions fall inside the selected dates.
 
 **Solution:**
 1. Widen the date range. A new account often has nothing in the current week.
 2. Confirm interactions have finished processing. They appear once analysis completes.
-3. If the organisation shows agents **Reviewed Interactions Only**, nothing appears until a reviewer marks an interaction as reviewed. See [Set Coaching Preferences](./Preferences.md).
+3. If the organisation shows agents **Reviewed Interactions Only**, nothing appears until a reviewer marks an interaction as reviewed. See [Set Coaching Preferences](../team-leads/coaching-preferences.md).
 
 ---
 
@@ -62,7 +62,7 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 **Solution:**
 1. Check when the cycle next runs, under **Coaching → Preferences**.
 2. After it has run, open **Progress** and look for agents against the course.
-3. Still nobody? No agent's scores fell inside the trigger range. Widen the range, or check the scores on the Dashboard.
+3. Still nobody? No agent's scores fell inside the **Training Initiation Score Range**. Widen the range, or check the scores on the Dashboard.
 
 ---
 
@@ -125,9 +125,9 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 
 ## Related
 
-- [Frequently Asked Questions](./FAQ.md): short answers rather than steps
-- [Glossary](./Glossary.md): what a term means
-- [Set Coaching Preferences](./Preferences.md): the settings behind several of these
+- [Frequently Asked Questions](./faq.md): short answers rather than steps
+- [Glossary](../reference/glossary.md): what a term means
+- [Set Coaching Preferences](../team-leads/coaching-preferences.md): the settings behind several of these
 
 ## Need Help?
 

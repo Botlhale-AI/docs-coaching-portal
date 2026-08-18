@@ -1,10 +1,10 @@
 ---
-sidebar_position: 4
 title: Track Learning Progress
 description: "See who has started, finished, or stalled on the courses you assigned."
+sidebar_position: 3
 type: how-to
-pagination_prev: Awards
-pagination_next: Preferences
+pagination_prev: team-leads/create-and-assign-courses
+pagination_next: team-leads/recognise-good-work
 ---
 
 **Progress** shows where each agent is with the courses assigned to them. Use it to find the agents who have stalled, and to check whether a course you built is actually being completed.
@@ -15,12 +15,14 @@ pagination_next: Preferences
 
 You need:
 
-- **Courses assigned.** Assignment happens on the evaluation cycle, so a course created since the last run has nobody against it yet. See [Create and Assign Courses](./Courses.md).
+- **Courses assigned.** Assignment happens on the evaluation cycle, so a course created since the last run has nobody against it yet. See [Create and Assign Courses](./create-and-assign-courses.md).
 - **Access covering the agents.** Your access level decides which agents appear.
 
 ---
 
 ## 1. Read the List
+
+{/* SCREENSHOT NEEDED: the Progress table itself, showing the Agent, Assigned Course, Date Assigned, Due Date, Score, Initiation Score, and Status columns with real rows. All four captures on this page are of filter and sort controls, so the table the page is about is never shown. Suggested path: img/screenshots/team_lead/progress/progress-table.png */}
 
 Select **Coaching** in the left sidebar, then **Progress**. Each row pairs an agent with a course:
 
@@ -43,17 +45,17 @@ An agent recorded against no department reads **No Department** rather than sitt
 
 **Filter** opens **Filter By**, where you narrow to the agents, courses, or dates you want. Set a period with **From**, then select **Apply**.
 
-![The filter panel on the Progress list](../img/screenshots/team_lead/progress/filter.png)
+![The filter panel on the Progress list](../../img/screenshots/team_lead/progress/filter.png)
 
-![Filtering the Progress list by date](../img/screenshots/team_lead/progress/date-filter.png)
+![Filtering the Progress list by date](../../img/screenshots/team_lead/progress/date-filter.png)
 
-![The detailed date filter, with the range you set](../img/screenshots/team_lead/progress/date-filter-detailed.png)
+![The detailed date filter, with the range you set](../../img/screenshots/team_lead/progress/date-filter-detailed.png)
 
 A date range that ends before it starts is refused with **Invalid date range**. Check the order of the two dates.
 
 **Sort** orders the list on a column you choose.
 
-![The sort control on the Progress list](../img/screenshots/team_lead/progress/sort.png)
+![The sort control on the Progress list](../../img/screenshots/team_lead/progress/sort.png)
 
 ---
 
@@ -76,16 +78,16 @@ Sorting on **Due Date** brings the overdue to the top. Working from that list ta
 
 Open **Progress** and confirm the course you assigned has agents against it, with **Date Assigned** on or after the evaluation cycle that ran.
 
-A course with nobody against it after a cycle has run usually means no agent's scores fell inside its trigger range. Widen the range on the course, or check the scores on the Dashboard.
+A course with nobody against it after a cycle has run usually means no agent's scores fell inside its **Training Initiation Score Range**. Widen the range on the course, or check the scores on the Dashboard.
 
 ---
 
 ## Related
 
-- [Create and Assign Courses](./Courses.md): build the courses tracked here
-- [Read the Coaching Dashboard](./Dashboard.md): whether scores moved after the training
-- [Set Coaching Preferences](./Preferences.md): the cycle that assigns courses
-- [Recognise Good Work](./Awards.md): mark the improvement when it arrives
+- [Create and Assign Courses](./create-and-assign-courses.md): build the courses tracked here
+- [Read the Coaching Dashboard](./coaching-dashboard.md): whether scores moved after the training
+- [Set Coaching Preferences](./coaching-preferences.md): the cycle that assigns courses
+- [Recognise Good Work](./recognise-good-work.md): mark the improvement when it arrives
 
 ## Need Help?
 

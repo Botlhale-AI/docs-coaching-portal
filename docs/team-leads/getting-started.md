@@ -1,10 +1,10 @@
 ---
-sidebar_position: 0
 title: Getting Started with Coaching
 description: "Set up the coaching cycle, build your first course, and see it land."
+sidebar_position: 0
 type: tutorial
-pagination_next: Dashboard
 pagination_prev: null
+pagination_next: team-leads/coaching-dashboard
 ---
 
 Coaching turns what Vela measures into training and recognition. You set the criteria once, and Vela assigns courses and presents awards to whoever meets them on a regular cycle. You are setting the rules rather than picking people each time.
@@ -19,11 +19,11 @@ You need:
 
 - **Coaching enabled for your organisation.** It is an add-on. Where it is enabled, **Coaching** appears in the left sidebar of the main Vela platform.
 - **Processed interactions with scores.** Coaching works from scores, so agents need analysed interactions and a scorecard behind them.
-- **Organisational access**, to set the preferences in step 1.
+- The **Organisational** access level, to set the preferences in step 1. Changing preferences also needs the admin role.
 
 ---
 
-![The Coaching section in the main Vela platform, with its Dashboard, Courses, Progress, Awards, and Preferences items](../img/screenshots/team_lead/nav.png)
+![The Coaching section in the main Vela platform, with its Dashboard, Courses, Progress, Awards, and Preferences items](../../img/screenshots/team_lead/nav.png)
 
 ---
 
@@ -35,7 +35,7 @@ Set the evaluation cycle before anything else. It decides how often Vela reviews
 
 Set the **Pass Percentage** at the same time. It applies to every course you build afterwards.
 
-See [Set Coaching Preferences](./Preferences.md) for each setting, including what agents can see of their own work.
+See [Set Coaching Preferences](./coaching-preferences.md) for each setting, including what agents can see of their own work.
 
 ---
 
@@ -47,7 +47,7 @@ Set the date range to a period with enough interactions to judge, then read **Ca
 
 Several agents behind in one category is what a course fixes well. One agent behind everywhere is a conversation, not a course.
 
-See [Read the Coaching Dashboard](./Dashboard.md).
+See [Read the Coaching Dashboard](./coaching-dashboard.md).
 
 ---
 
@@ -57,9 +57,9 @@ Select **Courses**, then **Create Course**.
 
 Name it for the gap, describe what it covers in terms the agent recognises, and attach your material. Add a quiz so completion means something. Set the **Deadline** in days and the scope.
 
-The trigger score range is what decides who receives it. Narrow it to the agents you saw behind in step 2. A wide range reaches everyone and measures nothing.
+The **Training Initiation Score Range** is what decides who receives it. Narrow it to the agents you saw behind in step 2. A wide range reaches everyone and measures nothing.
 
-See [Create and Assign Courses](./Courses.md).
+See [Create and Assign Courses](./create-and-assign-courses.md).
 
 ---
 
@@ -67,9 +67,9 @@ See [Create and Assign Courses](./Courses.md).
 
 Nothing happens until the next evaluation run. When it has passed, select **Progress**.
 
-Confirm agents appear against your course with a **Date Assigned**. Nobody there means no agent's scores fell inside your trigger range, so widen it or check the scores again.
+Confirm agents appear against your course with a **Date Assigned**. Nobody there means no agent's scores fell inside your **Training Initiation Score Range**, so widen it or check the scores again.
 
-See [Track Learning Progress](./Progress.md).
+See [Track Learning Progress](./track-learning-progress.md).
 
 ---
 
@@ -79,13 +79,13 @@ Select **Awards**, then **Create Award**.
 
 Set the **Agent Score** at a mark that means something when reached. Write the **Award Message** as though speaking to the person, because that is the part they read.
 
-See [Recognise Good Work](./Awards.md).
+See [Recognise Good Work](./recognise-good-work.md).
 
 ---
 
 ## Check Your Work
 
-You have finished the setup when four things are true: the evaluation cycle is set, one course exists with a trigger range covering a real gap, **Progress** shows agents against it after a cycle has run, and one award exists.
+You have finished the setup when four things are true: the evaluation cycle is set, one course exists with a **Training Initiation Score Range** covering a real gap, **Progress** shows agents against it after a cycle has run, and one award exists.
 
 The most common first-week surprise is an empty **Progress** page. Before the first cycle runs that is expected rather than a fault.
 
@@ -93,11 +93,11 @@ The most common first-week surprise is an empty **Progress** page. Before the fi
 
 ## Related
 
-- [Set Coaching Preferences](./Preferences.md): the cycle, pass mark, and agent view
-- [Read the Coaching Dashboard](./Dashboard.md): find the gap worth training
-- [Create and Assign Courses](./Courses.md): build the training
-- [Track Learning Progress](./Progress.md): confirm it reached people
-- [Recognise Good Work](./Awards.md): mark the improvement
+- [Set Coaching Preferences](./coaching-preferences.md): the cycle, pass mark, and agent view
+- [Read the Coaching Dashboard](./coaching-dashboard.md): find the gap worth training
+- [Create and Assign Courses](./create-and-assign-courses.md): build the training
+- [Track Learning Progress](./track-learning-progress.md): confirm it reached people
+- [Recognise Good Work](./recognise-good-work.md): mark the improvement
 
 ## Need Help?
 

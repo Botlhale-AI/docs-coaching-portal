@@ -1,10 +1,10 @@
 ---
-sidebar_position: 3
 title: View Your Awards
 description: "See the awards you have been presented and download the certificate."
+sidebar_position: 4
 type: how-to
-pagination_prev: AgentCourses
-pagination_next: Interactions
+pagination_prev: agents/your-courses
+pagination_next: agents/your-account
 ---
 
 **Awards** in the left sidebar holds the recognition your organisation has presented to you. An award arrives when your scores meet the criteria your team lead set for it, so it reflects your figures rather than anyone's opinion on the day.
@@ -26,15 +26,15 @@ Select **Awards** in the left sidebar. Each award shows its name and the date it
 
 **Sort** and the date range control sit above the list, so you can bring the most recent to the top or narrow to a period.
 
-![The Awards page in the Coaching Portal, listing the awards presented to this agent](../img/screenshots/agent_view/awards/awards-overview.png)
+![The Awards page in the Coaching Portal, listing the awards presented to this agent](../../img/screenshots/agent_view/awards/awards-overview.png)
 
-![The sort control open on the awards list](../img/screenshots/agent_view/awards/sort.png)
+![The sort control open on the awards list](../../img/screenshots/agent_view/awards/sort.png)
 
-![The date range control used to narrow the awards list to a period](../img/screenshots/agent_view/awards/date-range.png)
+![The date range control used to narrow the awards list to a period](../../img/screenshots/agent_view/awards/date-range.png)
 
 ---
 
-![The view control on the awards list](../img/screenshots/agent_view/awards/view.png)
+![The view control on the awards list](../../img/screenshots/agent_view/awards/view.png)
 
 ---
 
@@ -42,7 +42,7 @@ Select **Awards** in the left sidebar. Each award shows its name and the date it
 
 Select an award to see it in full. The detailed view shows the **Award Description**, which says what the award recognises, and the **Award Message** your team lead wrote when presenting it.
 
-![An award open in the detailed view, showing its description and the message written when it was presented](../img/screenshots/agent_view/awards/awards-detailed-view.png)
+![An award open in the detailed view, showing its description and the message written when it was presented](../../img/screenshots/agent_view/awards/awards-detailed-view.png)
 
 ---
 
@@ -50,7 +50,7 @@ Select an award to see it in full. The detailed view shows the **Award Descripti
 
 Select **Download Award** to save the certificate. It carries your name, the award, and the date, and it is yours to keep or share.
 
-![The award certificate as it downloads, carrying the agent's name, the award, and the date](../img/screenshots/agent_view/awards/award-template.png)
+![The award certificate as it downloads, carrying the agent's name, the award, and the date](../../img/screenshots/agent_view/awards/award-template.png)
 
 :::note Awards follow your scores
 Your team lead sets the criteria and Vela presents the award when an agent meets them on the evaluation cycle. Nobody presents them by hand, so consistent work is what brings them.
@@ -68,9 +68,9 @@ An award you were told about but cannot see may have been presented outside the 
 
 ## Related
 
-- [Monitor Your Personal Performance](./AgentDashboard.md): the scores awards are based on
-- [Track Your Courses](./AgentCourses.md): training that lifts the scores behind them
-- [Manage Your Account and Settings](./AgentAdmin.md): where award notifications arrive
+- [Monitor Your Performance](./personal-performance.md): the scores awards are based on
+- [Track Your Courses](./your-courses.md): training that lifts the scores behind them
+- [Manage Your Account](./your-account.md): where award notifications arrive
 
 ## Need Help?
 

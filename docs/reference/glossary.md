@@ -1,7 +1,7 @@
 ---
-sidebar_position: 6
 title: Glossary
 description: "Definitions of the terms used in the Coaching Portal and in this documentation."
+sidebar_position: 1
 type: reference
 pagination_prev: null
 pagination_next: null
@@ -21,7 +21,7 @@ An agent sees their own work only, never a colleague's.
 
 The setting that decides how much of their own work agents can see: **All Interactions**, or **Reviewed Interactions Only**. Set under **Coaching → Preferences**, it applies to every agent in the organisation.
 
-Reviewed-only means an unreviewed backlog is invisible to the agent. See [Set Coaching Preferences](./Preferences.md).
+Reviewed-only means an unreviewed backlog is invisible to the agent. See [Set Coaching Preferences](../team-leads/coaching-preferences.md).
 
 ## Auto Fail
 
@@ -33,7 +33,7 @@ The **Auto Fails** panel on the Dashboard shows the proportion of calls affected
 
 Recognition presented automatically when an agent's score reaches the **Agent Score** set on the award. Awards carry a certificate the agent can download.
 
-Nobody presents an award by hand. See [Recognise Good Work](./Awards.md).
+Nobody presents an award by hand. See [Recognise Good Work](../team-leads/recognise-good-work.md).
 
 ## Category
 
@@ -47,7 +47,7 @@ On a course or an award, **Category** groups related courses or awards so they a
 
 Training assigned automatically when an agent's scores fall inside the range set on it. A course holds material, an optional quiz, and a deadline in days.
 
-Courses reach people by score rather than by name. See [Create and Assign Courses](./Courses.md).
+Courses reach people by score rather than by name. See [Create and Assign Courses](../team-leads/create-and-assign-courses.md).
 
 ## Deadline
 
@@ -81,15 +81,15 @@ The share of the total quiz score an agent reaches to pass a course. Set once un
 
 ## Progress
 
-The page pairing each agent with each course assigned to them, and its status: **Not Started**, **In Progress**, or **Complete**. See [Track Learning Progress](./Progress.md).
+The page pairing each agent with each course assigned to them, and its status: **Not Started**, **In Progress**, or **Complete**. See [Track Learning Progress](../team-leads/track-learning-progress.md).
 
 ## Scorecard
 
 The set of questions each interaction is scored against, configured in the main Vela platform rather than in the Coaching Portal. Its results are what coaching acts on.
 
-An agent sees the outcome per question on the **Scorecard** tab of an interaction. See [Review Your Interactions](./Interactions.md).
+An agent sees the outcome per question on the **Scorecard** tab of an interaction. See [Review Your Interactions](../agents/your-interactions.md).
 
-## Trigger Score Range
+## Training Initiation Score Range
 
 The score range on a course that decides who receives it. An agent whose scores fall inside the range is assigned the course on the next evaluation cycle.
 
@@ -99,9 +99,9 @@ A narrow range reaches the people with the gap. A wide one reaches everyone and 
 
 ## Related
 
-- [Getting Started with Coaching](./GettingStartedTeamLeads.md): how these pieces fit together for a team lead
-- [Getting Started in the Coaching Portal](./GettingStartedAgents.md): the same, for an agent
-- [Set Coaching Preferences](./Preferences.md): where the cycle, pass mark, and view settings live
+- [Getting Started with Coaching](../team-leads/getting-started.md): how these pieces fit together for a team lead
+- [Getting Started for Agents](../agents/getting-started.md): the same, for an agent
+- [Set Coaching Preferences](../team-leads/coaching-preferences.md): where the cycle, pass mark, and view settings live
 
 ## Need Help?
 

@@ -1,7 +1,7 @@
 ---
-sidebar_position: 9
 title: Best Practices
 description: "Recommendations for running coaching so it changes something."
+sidebar_position: 3
 type: explanation
 pagination_prev: null
 pagination_next: null
@@ -25,7 +25,7 @@ The evaluation cycle decides how often Vela reviews scores and assigns what agen
 
 ## Aim Courses Narrowly
 
-The trigger score range is what decides who receives a course. It is the single setting that separates useful coaching from noise.
+The **Training Initiation Score Range** is what decides who receives a course. It is the single setting that separates useful coaching from noise.
 
 **Build around a category, not an overall score.** Several agents behind in Compliance is a course. One agent behind everywhere is a conversation, and no course fixes it.
 
@@ -86,11 +86,11 @@ Where it has moved, an award is the natural next step, and it is more credible f
 
 ## Related
 
-- [Set Coaching Preferences](./Preferences.md): the cycle, pass mark, and view settings
-- [Create and Assign Courses](./Courses.md): building the training
-- [Recognise Good Work](./Awards.md): setting awards worth earning
-- [Track Learning Progress](./Progress.md): reading the failures
-- [Read the Coaching Dashboard](./Dashboard.md): confirming scores moved
+- [Set Coaching Preferences](../team-leads/coaching-preferences.md): the cycle, pass mark, and view settings
+- [Create and Assign Courses](../team-leads/create-and-assign-courses.md): building the training
+- [Recognise Good Work](../team-leads/recognise-good-work.md): setting awards worth earning
+- [Track Learning Progress](../team-leads/track-learning-progress.md): reading the failures
+- [Read the Coaching Dashboard](../team-leads/coaching-dashboard.md): confirming scores moved
 
 ## Need Help?
 

@@ -1,83 +1,53 @@
 ---
+title: Release Notes
 description: "What has changed in each release of the Coaching Portal, newest first."
-type: reference
 sidebar_position: 1
-unlisted: true
-title: Vela Release Notes – Version 1.3
+type: reference
+pagination_prev: null
+pagination_next: null
 ---
 
-Dear Vela Users,
+What has changed in each release of the Coaching Portal, newest first.
 
-We're excited to announce the latest update to Vela! This release brings several new features, improvements, and bug fixes designed to enhance your experience and streamline your workflows. Here's what's new and improved:
+The Coaching Portal is an add-on to Vela. Changes to the wider platform, such as Smart Detector, reporting, and data upload, are recorded in the [Vela release notes](https://docs-vela.botlhale.xyz/docs/release-notes) rather than here.
 
-## New Features
+---
 
-### Knowledge Base
-We've added the ability to upload your knowledge base and a well-defined description for your documents into the system. This feature is available as an add-on and lets Vela analyse calls more effectively and assess agent performance based on your specific business context.
+## Current Release
 
-### Scorecard (Checklist) Results
-You can now view the results of the agent scorecard at a question level. Find this on the new Results tab on the Agents Scorecard page in the Smart Detector.
+### Coaching for Team Leads
 
-### Smart Search Insights
-Vela now provides explanations for smart search results, giving you deeper context and understanding behind the data.
+The **Coaching** section in the main Vela sidebar, available where coaching is enabled for the organisation.
 
-### Filtered Historical Smart Searches & Scorecards
-Apply newly created smart searches and scorecard questions to a selected subset of historical interactions, giving you greater flexibility and precision when reviewing past performance.
+- **Coaching Dashboard.** Auto-fail rates and category scores for the team and for each agent, over a date range you choose, with sorting to bring the lowest or highest to the top. See [Read the Coaching Dashboard](./team-leads/coaching-dashboard.md).
+- **Courses.** Build a course from a PDF, an external link, or both, add a quiz, and set the **Training Initiation Score Range** that decides who receives it. See [Create and Assign Courses](./team-leads/create-and-assign-courses.md).
+- **Quiz retakes.** Each course sets how many attempts an agent gets, between 1 and 5.
+- **Progress.** Every agent and course pairing, with status, dates, and both the latest and first-attempt scores, filterable by agent, course, and date. See [Track Learning Progress](./team-leads/track-learning-progress.md).
+- **Awards.** Define an award with a score range and a message, and let the evaluation cycle present it with a certificate. See [Recognise Good Work](./team-leads/recognise-good-work.md).
+- **Preferences.** The evaluation cycle, pass percentage, evaluation scope, and agent view permissions, set once for the organisation. See [Set Coaching Preferences](./team-leads/coaching-preferences.md).
 
-### Interactions Section
-Chats are now available in Vela! The Calls page has been moved into the new Interactions section, which now includes both Calls and Chats for improved data segmentation.
+### The Coaching Portal for Agents
 
-### Data Upload APIs
-The chats API allows clients to send their chat text data to Botlhale for processing on Vela. The call API allows clients to send their call voice data to Botlhale for processing on Vela.
+A separate portal agents sign in to, covering their own performance and training.
 
-### Interactions Metadata
-Include rich interaction metadata when sending and loading your interactions to Vela (manually via the platform's Upload functionality, or automatically via APIs).
+- **Dashboard.** Personal auto-fail and category scores, each shown against the team's, with performance charts over the period. See [Monitor Your Performance](./agents/personal-performance.md).
+- **Interactions.** Calls and chats with transcripts, audio, and the scorecard behind each score. What is visible depends on the organisation's **Agent View Permissions**. See [Review Your Interactions](./agents/your-interactions.md).
+- **Courses.** Assigned, in progress, and completed courses, with material to download and quizzes to take. See [Track Your Courses](./agents/your-courses.md).
+- **Awards.** Awards received, with certificates to download. See [View Your Awards](./agents/your-awards.md).
+- **Notifications and settings.** Notifications for courses and awards, account details, and password changes. See [Manage Your Account](./agents/your-account.md).
 
-## Improvements
+### Scoring of written quiz answers
 
-### Redaction
-We've improved the quality of the redaction model.
+Quiz questions answered as **Short Paragraph** or **Long Paragraph** are scored by Vela rather than matched against a stored answer, and a short reason is recorded against each one for the agent to read with their result.
 
-### User Segmentation
-We've created three classes of admin and user views: Organisational, Departmental and Team. Teams belong to departments, and departments belong to an organisation which houses everything.
-
-### Smart Detector Filtering
-We've expanded the filtering capabilities of the smart search and agent checklist tables. You can now filter by a wider range of table metrics, making it that much quicker to find the search or checklist you're looking for.
-
-### Created vs Detected Smart Search Terms
-This improvement allows users to distinguish between smart search terms (topics, intents, and pain points) detected by Vela and those that have been manually created within the platform. This provides greater transparency and control over your search criteria, so you can manage them and see where each came from of your smart searches.
-
-### Model Accuracy
-We've enhanced the accuracy of our multilingual ASR (transcription) models, resulting in greater precision and more dependable insights.
-
-### Checklists are Scorecards
-We've renamed Agent Checklists to Agent Scorecards to better reflect their purpose. This new name more accurately represents their role in evaluating agent performance, making it clearer and more intuitive for users.
-
-## Bug Fixes
-
-### Dashboard Configuration
-We have resolved an issue that caused dashboard configurations to reset on reload.
-
-### Users Table
-We've updated the users page for a better user experience! Now, only the table scrolls horizontally, keeping the rest of the page static for improved navigation and readability.
+---
 
 ## Related
 
-### Agent Coaching
-We are adding coaching to the platform. Team leads can send courses, view progress, and send awards and warnings to agents. Agents can in turn view their performance against that of the team. They can also view, acknowledge and complete courses, awards, and warnings.
+- [How Coaching Works](./explanation/how-coaching-works.md): what the evaluation cycle does
+- [Getting Started with Coaching](./team-leads/getting-started.md): first-time setup for a team lead
+- [Getting Started for Agents](./agents/getting-started.md): first-time sign-in for an agent
 
-### Vela Redesign
-We're redesigning Vela's UI for a better user experience.
+## Need Help?
 
-### Voice ID Notifications
-We'll automatically send emails to agents who have not submitted a sample for Voice ID.
-
-### Auto Agent Sharing for Agents
-This feature automates the sharing of individual performance reports with their respective agents.
-
-We're constantly working to make Vela better. Stay tuned for more updates, and as always, we'd love to hear your feedback at product@botlhale.ai.
-
-Thank you for being a valued part of our community!
-
-Warm regards,  
-The Vela Team
+**Contact Support:** support@botlhale.ai
