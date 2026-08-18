@@ -2,7 +2,12 @@
  * Vela Coaching Portal - Custom CSS
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Open Sans is requested in docusaurus.config.js, matching docs-vela. An Inter
+   @import used to sit here and Inter was the base family, so the two sites
+   rendered in different typefaces while both downloading Open Sans, which only
+   docs-vela then used. Nothing references Inter now, so the download has gone
+   with it. */
+
 /* Import DocSearch CSS */
 @import url('@docsearch/css');
 
@@ -21,7 +26,9 @@
   --ifm-color-danger: #ef4444;
   
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Open Sans, the family docs-vela uses and the one this site already loads. */
+  --ifm-font-family-base: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-link-color-hover: #fc5f1e;
   --ifm-heading-font-weight: 600;
   --ifm-navbar-height: 4rem;
   --ifm-navbar-padding-vertical: 0.75rem;
@@ -142,15 +149,41 @@ body {
   transition: all var(--vela-transition-speed) ease;
 }
 
+/* The selected page and section, styled as docs-vela styles them: orange text
+   on the page background in light mode, and a solid orange chip in dark mode.
+   This used to be a pale orange pill (primary-lightest on primary-darkest),
+   which read as a different product beside docs-vela. */
 .menu__link--active:not(.menu__link--sublist) {
-  background-color: var(--ifm-color-primary-lightest);
-  color: var(--ifm-color-primary-darkest);
-  font-weight: 500;
+  background-color: transparent;
+  color: var(--ifm-color-primary);
+}
+
+.navbar__link--active {
+  color: var(--ifm-color-primary);
+}
+
+.menu__link:hover,
+.menu__link--sublist:hover,
+.menu__link--active:hover,
+.navbar__link:hover {
+  color: var(--ifm-link-color-hover);
+}
+
+/* The active category header. Colour only, no weight change: docs-vela sets no
+   font-weight anywhere on the sidebar, and neither does Infima, so a 600 here
+   made the open section noticeably heavier than the same sidebar on docs-vela. */
+.menu__list-item-collapsible--active > .menu__link,
+.menu__link--sublist.menu__link--active {
+  color: var(--ifm-color-primary);
 }
 
 html[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
-  background-color: var(--ifm-color-primary-darkest);
-  color: var(--ifm-color-primary-lightest);
+  background-color: var(--ifm-color-primary);
+  color: #ffffff;
+}
+
+html[data-theme='dark'] .menu__link--active:not(.menu__link--sublist):hover {
+  color: #ffffff;
 }
 
 .menu__list-item-collapsible {

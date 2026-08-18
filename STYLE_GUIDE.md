@@ -12,17 +12,23 @@ Our audience is call centre team leads, QA managers, and administrators. They ar
 
 ## 0. How this site differs from docs-vela
 
-This guide is the Vela documentation style guide, adopted wholesale. Everything in it applies here. Four mechanical differences follow from this site's theme and config, and they override the equivalent instructions below.
+This guide is the Vela documentation style guide, adopted wholesale. Everything in it applies here. Two differences remain, and they override the equivalent instructions below. Everything else, including the linter, the build gates, and the CI workflow, now matches docs-vela.
 
-**Pages carry no `# H1`.** `src/theme/DocItem/Content/index.js` is swizzled: it renders the frontmatter `title` as the page heading and the frontmatter `description` as a visible subtitle beneath it. Adding a markdown `# Heading` produces two titles on the rendered page. Start the page with its opening paragraph.
+**Pages carry no `# H1`.** `src/theme/DocItem/Content/index.js` is swizzled: it renders the frontmatter `title` as the page heading. Adding a markdown `# Heading` produces two titles on the rendered page. Start the page with its opening paragraph.
 
-**`description:` is read by customers, not only by search engines.** On docs-vela it fills a meta tag. Here it appears under the title in the same type as the page, so write it as a subtitle: one sentence, plain, saying what the reader will be able to do.
-
-**`onBrokenLinks` is `warn`, not `throw`.** A broken link or anchor will not fail the build here. Check links by hand until that is changed. Changing it to `throw` is worth doing.
-
-**There is no lint script.** docs-vela runs `scripts/lint-docs.mjs` on every commit. Nothing equivalent runs here, so the checklist in section 9 is the only gate. Read it before opening a pull request rather than after.
+The rendered result is the same as docs-vela's, where the H1 is written in the markdown instead. Only the source differs, so a page copied from there needs its `# Heading` line removed. The linter fails a body H1, which is the inverse of the docs-vela rule.
 
 **Two audiences share one site.** Pages are written either for a team lead or for an agent, and a reader is only ever one of them. Say which audience a page is for in its opening line, and never mix the two audiences' steps in one procedure. An agent cannot create a course; a team lead does not have a My Awards page.
+
+This is why the sidebar splits by audience where docs-vela splits by task. It is the one structural departure, and it is deliberate.
+
+### What is no longer different
+
+Three earlier entries in this section described gaps that have since been closed. They are recorded here so nobody reinstates them:
+
+- `onBrokenLinks` and `onBrokenAnchors` are both `throw`. The build fails on a broken link or anchor, so they no longer need checking by hand.
+- `scripts/lint-docs.mjs` runs here, through `npm run lint:docs`, and on every push through `.github/workflows/docs.yml`.
+- `description:` fills the meta tag and search results only. The swizzled theme deliberately does not render it, because printing it above the opening paragraph said the same thing twice. Write it as a summary for search, not as a subtitle.
 
 ---
 

@@ -56,22 +56,22 @@ EPPO starts there: **any page might be the first one a reader sees.** Every page
 
 | Type | The reader is | The page must | Example |
 | :--- | :--- | :--- | :--- |
-| **Tutorial** | New, learning by doing | Give one guided path, no choices or theory | Team Lead Quick Start |
-| **How-to** | Competent, has chosen a task | Get them to the outcome efficiently | Generate Reports |
+| **Tutorial** | New, learning by doing | Give one guided path, no choices or theory | Getting Started with Coaching |
+| **How-to** | Competent, has chosen a task | Get them to the outcome efficiently | Create and Assign Courses |
 | **Reference** | Working, needs a fact | Describe neutrally and consistently | Metrics, Glossary |
-| **Explanation** | Building understanding | Explain why, discuss trade-offs | How Scoring Works |
-| **Troubleshooting** | Stuck, has a symptom | Move from symptom to cause to fix | Troubleshooting Guide |
+| **Explanation** | Building understanding | Explain why, discuss trade-offs | How Coaching Works |
+| **Troubleshooting** | Stuck, has a symptom | Move from symptom to cause to fix | Troubleshooting |
 
 Every page records its type in frontmatter, so drift is visible in review:
 
 ```yaml
 ---
-title: Generate Reports
+title: Create and Assign Courses
 type: how-to
 ---
 ```
 
-**Current distribution:** to be set once the rewrite is complete. The site has 13 pages, none of which carried a `type:` before this framework was adopted.
+**Current distribution:** 10 how-to, 5 reference, 3 explanation, 2 tutorial, 1 troubleshooting, across 21 published pages.
 
 Reference being the largest is intentional. In a mature product it is the material people return to most.
 
@@ -85,16 +85,25 @@ This site serves **two audiences who never overlap**: team leads, who run coachi
 
 | Section | Contains |
 | :--- | :--- |
-| **For Team Leads** | Getting Started · Dashboard · Courses · Awards · Progress · Preferences |
-| **For Agents** | Getting Started · My Dashboard · My Courses · My Awards · Interactions · Account and Settings |
+| **For Team Leads** | Getting Started with Coaching · Read the Coaching Dashboard · Create and Assign Courses · Track Learning Progress · Recognise Good Work · Set Coaching Preferences |
+| **For Agents** | Getting Started for Agents · Monitor Your Performance · Review Your Interactions · Track Your Courses · View Your Awards · Manage Your Account |
+| **Understanding Coaching** | How Coaching Works · How the Pieces Fit Together · Best Practices |
+| **Reference** | Glossary · Metrics · Course and Award Fields |
+| **Support** | Troubleshooting · Frequently Asked Questions |
 
-Within each section the order follows a real adoption sequence: learn the portal, read your figures, then the things you do with them.
+Names are separated by `·` rather than commas, because a title may contain a comma. The linter checks this table against what the sidebar actually builds, so a renamed page fails the build until both are updated.
+
+Within the two audience sections the order follows the sequence the reader meets the product in, not the order of the product's own menus. A team lead sets the cycle, reads the figures, then acts on them. An agent reads their figures, opens the interactions behind them, then works through what those figures earned them.
 
 Release Notes sits in the top navigation bar rather than the sidebar.
 
+### Every category has a landing page
+
+Each category carries a `generated-index` link with its own slug, so selecting a section header arrives somewhere rather than only expanding a list. This matches docs-vela, and it matters more here than it looks: a reader who lands on `/docs/team-leads` from search gets an orientation page instead of a redirect into whichever page happens to be first.
+
 ### One category per group of pages, not per page
 
-Each of the two sections above is a category. Individual pages sit directly inside them.
+Each of the sections above is a category. Individual pages sit directly inside them.
 
 Do not wrap a single page in its own category. A category containing one document adds a chevron and a click that lead nowhere, and it makes a six-page section look like six sections. This was the structure the site launched with and it is the main reason the sidebar read as cluttered.
 
@@ -144,7 +153,7 @@ If a set of steps appears on two pages, one owns it and the other links. The sco
 
 ### Pages carry no markdown H1
 
-The theme renders the frontmatter `title` as the page heading and the `description` as a visible subtitle. A `# Heading` in the body produces a second title. Start the page with its opening paragraph. See STYLE_GUIDE.md section 0.
+The theme renders the frontmatter `title` as the page heading. A `# Heading` in the body produces a second title. Start the page with its opening paragraph. See STYLE_GUIDE.md section 0.
 
 ### Every page states what it is in its opening line
 
@@ -172,13 +181,13 @@ Anything else that mixes types is a defect, not a deviation.
 4. Open the product, or the `vela` / `vela-data` source, and confirm every UI reference.
 5. Check the procedure does not already exist on another page.
 6. Run the checklist in [STYLE_GUIDE.md](./STYLE_GUIDE.md) section 9.
-7. Run `npm run build`, then check your links by hand. `onBrokenLinks` is set to `warn` here, so the build will not fail on a broken link or anchor.
+7. Run `npm run check`. It runs the linter and then the build, which fails on broken links and anchors.
 
 ---
 
 ## 9. What is enforced automatically
 
-Both commands run on every push through [.github/workflows/docs.yml](../.github/workflows/docs.yml), so nothing below depends on someone remembering.
+The linter and the build run on every push through [.github/workflows/docs.yml](./.github/workflows/docs.yml), so nothing below depends on someone remembering.
 
 | Check | Mechanism | Status |
 | :--- | :--- | :--- |
@@ -199,7 +208,7 @@ Run it before a release, or after the product changes:
 
 ```
 npm run check:labels
-VELA_SRC=/path/to/vela,/path/to/vela-data npm run check:labels
+VELA_SRC=C:/Users/you/vela,C:/Users/you/vela-data npm run check:labels
 ```
 
 It found four invented terms on its first run: "performance threshold", which is not a Vela concept at all, and "Speed Adjustment", "Date Range Selector", and "Interaction Type Filter", which name controls the product calls **Playback Speed**, **Select Date Range**, and **Interactions**.
