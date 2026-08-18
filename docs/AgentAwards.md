@@ -1,154 +1,77 @@
 ---
 sidebar_position: 3
-sidebar: agentSidebar
-title: Celebrate Your Achievements
+title: View Your Awards
+description: "See the awards you have been presented and download the certificate."
+type: how-to
 pagination_prev: AgentCourses
 pagination_next: Interactions
 ---
 
-View and celebrate all the recognition you've earned over time. The Awards section serves as your personal achievement gallery, showcasing your performance milestones and professional accomplishments.
-
-We know agents want to be recognised for their hard work and achievements. That's where the Awards section comes in. We provide the tools you need to view your recognition, download certificates, and build a portfolio of your professional accomplishments.
-
-> **What are Your Awards?** The **Awards section** is your personal achievement gallery, offering recognition viewing, certificate downloads, performance documentation, and career development tools to help you celebrate your success and advance your career.
-
-## What You Can Achieve
-
-Celebrate your recognition and achievements:
-
-| **Achievement Recognition** | **Performance Documentation** | **Career Development** |
-|---------------------------|----------------------------|---------------------|
-| **View all your awards** | **Track performance milestones** | **Build your professional portfolio** |
-| **Download certificates** | **Document your achievements** | **Support career advancement** |
-| **Celebrate success** | **Monitor recognition patterns** | **Validate your skills** |
+**Awards** in the left sidebar holds the recognition your organisation has presented to you. An award arrives when your scores meet the criteria your team lead set for it, so it reflects your figures rather than anyone's opinion on the day.
 
 ---
 
-## Understanding Your Awards
+## Before You Begin
 
-Your awards represent recognition for excellent performance, skill development, and contribution to team success. Each award reflects specific achievements in your role and professional growth.
+You need:
 
-![Awards Dashboard](/img/agentawards1.png)
-
-> **💡 Tip**: Regular review of your awards helps you understand your strengths and track your career progression over time.
-
----
-
-## Viewing Your Awards
-
-### Awards Table
-
-All your awards are displayed in an organised table format showing:
-
-| Column | Description |
-|--------|-------------|
-| **Award Name** | Title of the recognition received |
-| **Category** | Type of achievement (Performance, Training, Teamwork, etc.) |
-| **Date Received** | When the award was granted |
-| **Awarded By** | Team lead or supervisor who granted the recognition |
-| **Achievement Details** | Specific accomplishment that earned the award |
-| **Certificate Status** | Whether a certificate is available for download |
-| **Actions** | Options to view details or download certificates |
-
-> **Why this matters**: Understanding your awards helps you identify your strengths, track your achievements, and plan your career development path.
+- **An award presented to you.** Until one is, the page is empty. That is a result rather than a fault.
+- **Nothing else.** Awards arrive on their own. There is no action to take to receive one.
 
 ---
 
-## Searching and Filtering Awards
+## 1. Find Your Awards
 
-### Quick Search
+Select **Awards** in the left sidebar. Each award shows its name and the date it was awarded.
 
-Use the search bar to quickly find specific awards by:
+**Sort** and the date range control sit above the list, so you can bring the most recent to the top or narrow to a period.
 
-- Award name or title
-- Achievement category
-- Keywords related to the accomplishment
-- Date ranges
+![The Awards page in the Coaching Portal, listing the awards presented to this agent](../img/screenshots/agent_view/awards/awards-overview.png)
 
-![Award Search](/img/agentawards2.png)
+![The sort control open on the awards list](../img/screenshots/agent_view/awards/sort.png)
 
-> **💡 Pro Tip**: Use the search function to quickly locate specific awards when you need to reference them for performance reviews or career discussions.
-
-### Date Range Filter
-
-Filter awards by selecting a custom date range:
-
-1. Click on the **Date Range** selector
-2. Choose from preset options:
-   - This Week
-   - This Month
-   - Last Month
-3. Or select custom start and end dates
-4. Click **Apply** to filter results
-
-> **Why this matters**: Date filtering helps you track your achievement patterns over time and identify periods of peak performance.
-
-### Category Filters
-
-Filter awards by category to view specific types of recognition:
-
-- Performance awards only
-- Learning achievements
-- Team collaboration recognitions
-- Special milestone awards
-
-![Award Date Range](../img/screenshots/agent_view/awards/date-range.png)
-
-### Sort Options
-
-Sort your awards by:
-
-- **Date Received** (newest first or oldest first)
-- **Award Name** (alphabetical order)
-- **Category** (grouped by type)
-- **Awarding Authority** (by supervisor or team lead)
-
-![Award Date Range](../img/screenshots/agent_view/awards/sort.png)
-
-> **💡 Tip**: Use sorting to identify patterns in your achievements and understand which areas you excel in most frequently.
+![The date range control used to narrow the awards list to a period](../img/screenshots/agent_view/awards/date-range.png)
 
 ---
 
-## Award Details
-
-### Viewing Award Information
-
-Click **View Award** to open detailed information including:
-
-- **Complete Award Description**: Full details of the achievement
-- **Performance Criteria**: What you did to earn the recognition
-- **Impact on Team**: How your achievement benefited the organisation
-- **Personal Message**: Any personalised feedback from your team lead
-
-> **Why this matters**: Detailed award information helps you understand exactly what you did well and how to replicate that success in the future.
-
-![Award View](../img/screenshots/agent_view/awards/view.png)
----
-
-## What's Next?
-
-Now that you can celebrate your achievements, explore these related guides:
-
-- **[📊 Monitor Your Performance](./AgentDashboard.md)** - Track how your achievements relate to your overall performance
-- **[📚 Track Your Learning](./AgentCourses.md)** - Continue developing skills that lead to more awards
-- **[📞 Review Your Interactions](./Interactions.md)** - Analyse the performance that earned your recognition
-- **[⚙️ Manage Your Settings](./AgentAdmin.md)** - Customise your awards experience
+![The view control on the awards list](../img/screenshots/agent_view/awards/view.png)
 
 ---
+
+## 2. Open an Award
+
+Select an award to see it in full. The detailed view shows the **Award Description**, which says what the award recognises, and the **Award Message** your team lead wrote when presenting it.
+
+![An award open in the detailed view, showing its description and the message written when it was presented](../img/screenshots/agent_view/awards/awards-detailed-view.png)
+
+---
+
+## 3. Download the Certificate
+
+Select **Download Award** to save the certificate. It carries your name, the award, and the date, and it is yours to keep or share.
+
+![The award certificate as it downloads, carrying the agent's name, the award, and the date](../img/screenshots/agent_view/awards/award-template.png)
+
+:::note Awards follow your scores
+Your team lead sets the criteria and Vela presents the award when an agent meets them on the evaluation cycle. Nobody presents them by hand, so consistent work is what brings them.
+:::
+
+---
+
+## Check Your Work
+
+Open **Awards** and confirm the award appears with the date you expect, and that **Download Award** produces a certificate with your name on it.
+
+An award you were told about but cannot see may have been presented outside the period your date range covers. Widen it before asking.
+
+---
+
+## Related
+
+- [Monitor Your Personal Performance](./AgentDashboard.md): the scores awards are based on
+- [Track Your Courses](./AgentCourses.md): training that lifts the scores behind them
+- [Manage Your Account and Settings](./AgentAdmin.md): where award notifications arrive
 
 ## Need Help?
 
-Stuck with viewing your awards? We're here to help!
-
-- **📖 [Dashboard Guide](./AgentDashboard.md)** - Learn about monitoring your performance
-- **📖 [Course Tracking Guide](./AgentCourses.md)** - Understand your learning achievements
-- **📖 [Interaction Analysis Guide](./Interactions.md)** - Review your performance insights
-
-**Still need assistance?**
-- **Email us**: support@botlhale.ai
-
----
-
-## Was This Guide Helpful?
-
-We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.
+**Contact Support:** support@botlhale.ai

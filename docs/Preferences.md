@@ -1,222 +1,104 @@
 ---
 sidebar_position: 5
-sidebar: teamLeadSidebar
-title: Customise Your Coaching Portal Experience
+title: Set Coaching Preferences
+description: "Set the evaluation cycle, the pass mark, and what agents can see."
+type: how-to
 pagination_prev: Progress
+pagination_next: null
 ---
 
-Tailor your coaching portal to match your team's needs and your management style. Configure evaluation settings, notification preferences, and dashboard options to improve your workflow.
-
-Team leads want to work efficiently and focus on what matters most. The Preferences section gives you tools to customise your portal experience, simplify your workflow, and make sure you get the right information when you need it.
-
-> **What are Preferences?** The **Preferences section** lets you customise how the portal works for you. You can set evaluation settings, manage notifications, configure your dashboard, and adjust your workflow to work more efficiently.
-
-## What You Can Achieve
-
-Customise settings that improve your coaching effectiveness:
-
-| **Evaluation Control** | **Workflow Optimisation** | **Team Management** |
-|----------------------|-------------------------|-------------------|
-| **Set evaluation scope and frequency** | **Configure notification preferences** | **Control agent access permissions** |
-| **Define course completion criteria** | **Personalise dashboard layouts** | **Manage team visibility settings** |
-| **Improve coaching cycles** | **Simplify administrative tasks** | **Build trust through transparency** |
+**Preferences** holds the settings that govern all coaching in your organisation: how often Vela evaluates agents, what counts as passing a course, which interactions evaluations are based on, and how much of their own work agents can see. These apply organisation-wide rather than per course or per agent.
 
 ---
 
-## Understanding the Preferences Interface
+## Before You Begin
 
-The Preferences section allows you to tailor the portal to your specific needs as a team lead, ensuring you receive the right information at the right time while maintaining an efficient workspace.
+You need:
 
-![Preferences Overview](/img/preferences.png)
-
-> **💡 Tip**: Take time to configure your preferences properly - the right settings can significantly improve your daily workflow and coaching effectiveness.
-
----
-
-## Evaluation Scope Configuration
-
-Configure which interactions should be included in your evaluation processes to ensure you're analysing the most relevant data.
-
-### Interaction Selection
-
-Choose which interactions you want these evaluations to apply to:
-
-- **All Interactions**: Include all uploaded interactions in evaluations
-  - Provides complete coverage of agent performance
-  - Ensures no interactions are missed in assessments
-  - Gives complete picture of team performance
-
-- **Reviewed Interactions Only**: Only include interactions that have been reviewed
-  - Focuses on quality-controlled data
-  - Ensures evaluations are based on verified interactions
-  - Provides more targeted assessment approach
-
-> **Why this matters**: The right evaluation scope ensures you're making decisions based on the most relevant and reliable data for your team's needs.
-
-This setting determines the scope of data used for:
-
-- Performance analytics and reporting
-- Agent coaching insights
-- Team performance comparisons
-- Award and recognition calculations
+- **Organisational access.** These settings affect everyone, so changing them needs the access level that covers the whole organisation.
+- **To decide before agents are invited.** The agent view setting changes what people have already been able to see, so agree it early rather than after.
 
 ---
 
-## Evaluation Cycle Settings
+## 1. Set the Evaluation Cycle
 
-Set the frequency of automatic evaluation cycles used in agent coaching. This determines how often awards and training courses are reviewed.
+The evaluation cycle is how often Vela reviews agents' scores and assigns the courses and awards they qualify for. Nothing is assigned between runs, so this setting decides how quickly coaching responds to a change in performance.
 
-![Preferences Evaluation](../img/screenshots/team_lead/preferences/evaluation-cycle.png)
+| Field | What it does |
+| :--- | :--- |
+| **Repeat every** | How many units between runs |
+| The cycle unit | **day**, **week**, or **month** |
+| **Time** | The time of day the run happens |
+| **Day of Week** | Which day, when the unit is week |
+| **Day of Month** | Which date, when the unit is month |
 
-> **Why this matters**: Regular evaluation cycles help you maintain consistent coaching standards and ensure timely recognition of achievements.
+The page confirms your choice back to you, reading **Evaluate every 1 month(s)** or similar.
 
-### Cycle Configuration
+![The evaluation cycle settings, with the interval, unit, and time](../img/screenshots/team_lead/preferences/evaluation-cycle.png)
 
-**Repeat every**: Set the frequency interval (1-365)
-
-**Unit**: Select the base cycle unit
-
-- **Day(s)**: For daily evaluation cycles
-- **Week(s)**: For weekly evaluation cycles
-- **Month(s)**: For monthly evaluation cycles
-
-**Time**: Set the specific time when evaluations should run (e.g., 11:00)
-
-### Example Configurations
-
-- **Daily Reviews**: Repeat every 1 day(s) at 11:00
-  - Best for high-volume operations
-  - Provides immediate feedback opportunities
-  - Allows quick coaching interventions
-
-- **Weekly Assessments**: Repeat every 1 week(s) at 11:00
-  - Balanced approach for most teams
-  - Allows time for performance patterns to emerge
-  - Manageable review workload
-
-- **Monthly Evaluations**: Repeat every 1 month(s) at 11:00
-  - Suitable for long-term performance tracking
-  - Focuses on significant trends and improvements
-  - Reduces administrative overhead
-
-> **💡 Pro Tip**: Choose evaluation frequency based on your team size and operational needs - smaller teams might benefit from more frequent evaluations, while larger teams might prefer weekly or monthly cycles.
+Monthly suits most teams. Weekly responds faster but assigns courses on less evidence, so an agent can be given training for a bad week rather than a real gap.
 
 ---
 
-## Course Settings Configuration
+## 2. Set the Pass Percentage
 
-Configure course completion requirements and passing criteria for your team's training programmes to ensure consistent learning standards.
-
-![Course Settings](/img/preferences2.png)
-
-> **Why this matters**: Clear completion criteria help agents understand expectations and ensure training programmes deliver measurable skill improvements.
-
-### Pass Percentage
-
-**What percentage of the total score is required to pass a course?**
-
-Set the minimum score threshold that agents must achieve to successfully complete a course. This ensures consistent learning standards across your team.
-
-> **💡 Tip**: Consider your team's current skill levels when setting pass percentages - aim for challenging but achievable standards that motivate improvement.
+**Pass Percentage** is the share of the total quiz score an agent reaches to pass a course. It applies to every course, so it is set here rather than on each one.
 
 ---
 
-## Agent View Permissions
+## 3. Choose What Evaluations Are Based On
 
-Control what interaction data agents can access in their personal portals.
+Under **Evaluation Scope**, answer "Which interactions would you like these evaluations to apply to":
 
-![Preferences Agent View](../img/screenshots/team_lead/preferences/agent-view.png)
+| Option | What it means |
+| :--- | :--- |
+| **All Interactions** | Every processed interaction counts towards evaluation |
+| **Reviewed Interactions Only** | Only interactions a person has marked as reviewed count |
 
-### Interaction Visibility
-
-**Which interactions would you like agents to be able to view:**
-
-- **All Interactions**: Agents can view all their uploaded interactions
-  - Provides complete transparency
-  - Allows thorough self-review
-  - Supports independent learning and improvement
-  - Builds trust through open access
-
-- **Reviewed Interactions Only**: Agents can only view their reviewed interactions
-  - Ensures agents see quality-controlled feedback
-  - Focuses attention on professionally assessed interactions
-  - Maintains quality standards in self-review
-  - Prevents confusion from unprocessed data
+**Reviewed Interactions Only** is the stricter setting. It means coaching follows human-checked work rather than AI scores alone, which is worth having if your reviewers add context. It also means an unreviewed backlog stops evaluations running, so pick it only if your team keeps up with reviewing.
 
 ---
 
-## Configuration Best Practices
+## 4. Choose What Agents Can See
 
-### Evaluation Scope Recommendations
+Answer "Which interactions would you like agents to be able to view":
 
-- **High-Volume Centres**: Consider "Reviewed Interactions Only" to manage data quality
-- **Quality-Focused Teams**: Use "All Interactions" for complete coverage
-- **Training Environments**: Start with "Reviewed Interactions Only" for guided learning
+| Option | What it means |
+| :--- | :--- |
+| **All Interactions** | Agents can view all their uploaded interactions |
+| **Reviewed Interactions Only** | Agents can only view their reviewed interactions |
 
-### Evaluation Cycle Guidelines
+![The agent view permissions setting, with both options](../img/screenshots/team_lead/preferences/agent-view.png)
 
-- **New Teams**: Begin with weekly cycles for close monitoring
-- **Established Teams**: Monthly cycles may be sufficient for stable performance
-- **Performance Issues**: Increase frequency to daily for intensive coaching periods
+Reviewed-only is worth considering where your reviewers add context that changes how a score reads. It also means an unreviewed backlog is invisible to the agent, so their portal looks emptier than their work has been.
 
-### Course Pass Rate Considerations
-
-- **Technical Training**: Higher pass rates (80-85%) ensure competency
-- **Soft Skills Training**: Standard rates (70-75%) allow for varied learning styles
-- **Compliance Training**: Very high rates (90%+) ensure critical knowledge retention
-
-### Agent Permission Strategy
-
-- **Trust-Building Phase**: Grant "All Interactions" access to encourage ownership
-- **Quality Control Phase**: Use "Reviewed Interactions Only" for consistent messaging
-- **Performance Improvement**: Adjust based on individual agent needs and maturity
+Agree this before agents are invited. Changing it later changes what they have already been able to see.
 
 ---
 
-## Saving Your Preferences
+## 5. Save
 
-After configuring your settings:
+Select **Save** to apply your changes.
 
-1. Review all selected options
-2. Ensure evaluation cycles align with your coaching schedule
-3. Verify course pass rates match your quality standards
-4. Confirm agent permissions support your management approach
-5. Click **Save** to apply all changes
-
-![Preferences Save](../img/screenshots/team_lead/preferences/save.png)
-
-> **⚠️ Important**: Preference changes take effect immediately and will impact ongoing evaluations and agent access. Consider communicating significant changes to your team.
+![The Save control at the foot of the preferences page](../img/screenshots/team_lead/preferences/save.png)
 
 ---
 
-## What's Next?
+## Check Your Work
 
-Now that you've customised your portal experience, explore these related guides:
+Reopen **Preferences** and confirm the settings read back as you set them.
 
-- **[📊 Monitor Your Dashboard](./Dashboard.md)** - See how your preferences affect your dashboard view
-- **[📚 Manage Training Courses](./Courses.md)** - Create courses that align with your evaluation settings
-- **[🏆 Recognise Excellence](./Awards.md)** - Set up awards that work with your evaluation cycles
-- **[📈 Track Progress](./Progress.md)** - Monitor progress using your customised criteria
+For the cycle, the real check is the next run. Open **Progress** after the time you set and confirm courses have been assigned with that date. See [Track Learning Progress](./Progress.md).
 
 ---
+
+## Related
+
+- [Create and Assign Courses](./Courses.md): the courses this cycle assigns
+- [Recognise Good Work](./Awards.md): the awards this cycle presents
+- [Track Learning Progress](./Progress.md): confirm a cycle has run
+- [Review Your Interactions](./Interactions.md): what an agent sees under each view setting
 
 ## Need Help?
 
-Stuck with preference configuration? We're here to help!
-
-- **📖 [Dashboard Guide](./Dashboard.md)** - Learn about customising your dashboard view
-- **📖 [Course Management Guide](./Courses.md)** - Create courses that work with your settings
-- **📖 [Awards Guide](./Awards.md)** - Set up recognition programmes
-
-**Still need assistance?**
-- **Email us**: support@botlhale.ai
-
----
-
-## Was This Guide Helpful?
-
-We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.
-
----
-
-> **Improve Your Experience**: Regular review of your preferences ensures the portal continues to meet your evolving needs as a team lead. These settings directly impact coaching effectiveness and team development outcomes.
+**Contact Support:** support@botlhale.ai

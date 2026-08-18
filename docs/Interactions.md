@@ -1,178 +1,108 @@
 ---
 sidebar_position: 4
-sidebar: agentSidebar
-title: Review Your Performance and Interactions
+title: Review Your Interactions
+description: "Open a call or chat, read its transcript and scorecard, and see your team lead's comments."
+type: how-to
 pagination_prev: AgentAwards
 pagination_next: AgentAdmin
 ---
 
-Review and analyse your team's call recordings and chat interactions to understand performance patterns and identify coaching opportunities.
-
-Team leads need to understand their agents' performance in detail. The Interactions section gives you tools to review conversations, identify coaching opportunities, and help your team improve their customer service skills.
-
-> **What are Interactions?** The **Interactions section** is your performance analysis hub, offering conversation review, quality assessment, coaching insights, and improvement tracking to help you develop your team's customer service excellence.
-
-## What You Can Achieve
-
-Analyse interactions that drive performance improvement:
-
-| **Performance Review** | **Quality Assessment** | **Coaching Insights** |
-|----------------------|---------------------|---------------------|
-| **Review conversation quality** | **Assess customer satisfaction** | **Identify coaching opportunities** |
-| **Spot performance patterns** | **Track improvement trends** | **Develop targeted training** |
-| **Learn from successful interactions** | **Monitor compliance standards** | **Drive continuous improvement** |
+**Interactions** in the left sidebar holds every call and chat of yours that Vela has processed. This is where you read what was said, see how the conversation scored, and find the coaching comments your team lead has left. It has two sub-items, **Calls** and **Chats**, and both work the same way.
 
 ---
 
-## Understanding the Interactions Interface
+## Before You Begin
 
-The Interactions section provides detailed insights into your team's customer communications across both voice calls and chat sessions. This helps you:
+You need:
 
-- Review conversation quality and customer satisfaction
-- Identify patterns in customer enquiries
-- Track performance metrics over time
-- Learn from successful interactions
-
-> **💡 Tip**: Regular interaction reviews help you understand your team's strengths and identify specific areas where coaching can make the biggest impact.
+- **Processed interactions.** A call or chat appears here once Vela has finished transcribing and analysing it, so a new account has an empty list rather than an error.
+- **To know what your team lead has shared.** Your organisation chooses whether you see all your interactions or only the ones a reviewer has marked as reviewed. If your list looks shorter than you expect, that setting is the usual reason.
 
 ---
 
-## Analysing Call Interactions
+## 1. Find an Interaction
 
-Monitor and analyse your team's voice call interactions with customers to understand their communication skills and identify improvement opportunities.
+Select **Interactions** in the left sidebar, then **Calls** or **Chats**. The list shows your own interactions only.
 
-### Recent Calls Performance
+Three controls sit above the list:
 
-View your most recent call interactions with key performance indicators:
+| Control | What it does |
+| :--- | :--- |
+| **Search** | Narrows the list by wording |
+| **Sort** | Orders the list on a column you choose |
+| **Filter** | Opens a panel where you narrow the list, then select **Apply** |
 
-![Interactions - Calls](../img/screenshots/agent_view/interactions/interactions-calls-overview.png)
+![The Calls list in the Coaching Portal, showing the agent's own processed calls with the search, sort, and filter controls above it](../img/screenshots/agent_view/interactions/interactions-calls-overview.png)
 
-> **Why this matters**: Understanding call performance patterns helps you identify which agents excel and which need additional support or training.
+![The sort control open on the interactions list, with the columns you can order by](../img/screenshots/agent_view/interactions/interactions-sort.png)
 
-### Call Analytics
+![The filter panel open on the interactions list, with the Apply button that puts the filter into effect](../img/screenshots/agent_view/interactions/interactions-filter.png)
 
-#### Performance Metrics
+![The Chats list, laid out the same way as Calls](../img/screenshots/agent_view/interactions/interactions-chats-overview.png)
 
-Track call performance with these key indicators:
-
-- **Handle Time**
-- **Agent Score**
-- **Silent Time**
-
-#### Common Call Topics
-
-Understanding the topics your team handles most frequently helps you prepare targeted training and coaching:
-
-1. **Billing Enquiries**
-2. **Technical Support**
-3. **Account Management**
-4. **Product Information**
-5. **Complaints** 
-
-> **💡 Pro Tip**: Use topic analysis to identify which areas your team handles well and which might need additional training or support.
-
-#### Call Quality Insights
-
-Review detailed feedback on call handling:
-
-- **Strengths**
-- **Areas for Improvement**
-- **Coaching Recommendations**
-
-> **Why this matters**: Specific feedback helps you provide targeted coaching that addresses each agent's unique needs and development areas.
-
-### Detailed Call View
-
-Click on any call to access detailed analysis. The detailed view gives you a complete picture of each interaction:
-
-- **Full Transcript**: Complete conversation text with timestamps
-- **Sentiment Analysis**: Customer emotion tracking throughout the call
-- **Topic Detection**: Automatically identified discussion points
-- **Quality Scorecard**: Detailed evaluation against company standards
-- **Customer Feedback**: Post-call survey responses (when available)
-
-![Interactions - Calls](../img/screenshots/agent_view/interactions/interactions-calls-detailed-view.png)
-
-> **💡 Tip**: Use the detailed view to understand the context behind performance scores and provide more meaningful coaching feedback.
+Select an interaction to open it.
 
 ---
 
-## Analysing Chat Interactions
+## 2. Read the Detailed View
 
-Analyse your team's text-based customer interactions and support conversations to understand their written communication skills.
+The detailed view has three panels. The trail at the top reads **Interactions › Calls › Call Details**, so you can always see where you are.
 
-### Recent Chats Performance
+### A. Audio and Transcript
 
-View your most recent chat interactions:
+**Audio** holds the player. Where a recording is unavailable it reads **Audio not available**.
 
-![Interactions - Chats](../img/screenshots/agent_view/interactions/interactions-chats-overview.png)
+**Transcript** sits on the right. Switch it between **Original** and **English** when the conversation was not in English, and use **Search** to find a word in it. Selecting a line's timestamp jumps the audio to that moment, and **Play from here** does the same thing.
 
-> **Why this matters**: Chat interactions often require different skills than voice calls, and understanding these differences helps you provide appropriate coaching.
+Where a transcript is unavailable the panel reads **Transcript not available**.
 
-#### Performance Metrics
+![A call open in the detailed view, with the audio player and Smart Detector analysis on the left and Call Details and the Transcript on the right](../img/screenshots/agent_view/interactions/interactions-calls-detailed-view.png)
 
-Monitor chat support effectiveness:
+### B. Smart Detector
 
-- **Handle Time**
-- **Response Time**
+**Smart Detector** holds two tabs:
 
-> **💡 Pro Tip**: Compare chat and call performance to identify which communication channel each agent excels in, helping you assign work appropriately.
+| Tab | What it shows |
+| :--- | :--- |
+| **Summary** | What the AI found in the conversation |
+| **Scorecard** | Each question your organisation scores on, with its **Weight**, **Outcome**, and **Score** |
 
-#### Common Chat Topics
+On **Scorecard**, switch **View** between **Automatic** and **Manual** to see the AI's answers or a reviewer's. **Filter Scorecard** narrows a long list of questions.
 
-Understanding chat-specific topics helps you develop targeted training for written communication skills.
+A question that did not apply to the conversation reads **N/A** rather than counting against you.
 
----
+### C. Call Details
 
-## Using Interaction Data for Coaching
+**Call Details** lists the facts about the interaction: the agent, **Call ID**, **File Name**, **Date**, **Uploaded**, **Handle Time**, **Silent Time**, **Agent Score**, **Initial Score**, **Alerts**, and **Department**.
 
-### Identifying Coaching Opportunities
+Each panel has a control in its corner to **Expand Section** or **Collapse Section**, so you can give the transcript or the scorecard the whole width while you read.
 
-Use interaction analysis to identify specific areas where agents can improve:
-
-- **Performance Patterns**: Look for consistent issues across multiple interactions
-- **Strengths Recognition**: Identify what agents do well to build confidence
-- **Skill Gaps**: Spot areas where additional training would be beneficial
-
-> **Why this matters**: Data-driven coaching ensures your feedback is objective and focused on measurable improvements.
-
-### Creating Action Plans
-
-Develop specific coaching plans based on interaction analysis:
-
-1. **Review Performance Data**: Analyse scores, handle times, and quality metrics
-2. **Identify Specific Issues**: Look for patterns in customer complaints or low scores
-3. **Create Targeted Training**: Develop courses or coaching sessions for specific skills
-4. **Track Improvement**: Monitor progress over time to measure coaching effectiveness
-
-> **💡 Pro Tip**: Regular interaction reviews help you catch issues early before they become performance problems.
+![A chat open in the detailed view, laid out the same way as a call](../img/screenshots/agent_view/interactions/interactions-chats-detailed-view.png)
 
 ---
 
-## What's Next?
+## 3. Read Your Coaching Comments
 
-Now that you can review and analyse interactions, explore these related guides:
+Select **View Comments** to open the comments panel. This is where your team lead leaves feedback on the conversation, and where you reply to it.
 
-- **[📊 Monitor Your Dashboard](./Dashboard.md)** - Track overall team performance trends
-- **[📚 Create Training Courses](./Courses.md)** - Develop targeted training based on interaction analysis
-- **[🏆 Recognise Excellence](./Awards.md)** - Reward agents who demonstrate exceptional interaction skills
-- **[📈 Track Progress](./Progress.md)** - Monitor how coaching impacts interaction quality
+A comment that tags you with **@** also raises a notification, so check **Notifications** under **ADMIN** if you want to find recent feedback without opening each interaction. See [Manage Your Account and Settings](./AgentAdmin.md).
 
 ---
+
+## Check Your Work
+
+Open one of your interactions and confirm three things: the transcript loads, the **Scorecard** tab shows an outcome on each question, and **Call Details** names you as the agent.
+
+An interaction you expected and cannot find is usually one of two things. It may still be processing, in which case it appears once analysis finishes. Or your organisation shows agents reviewed interactions only, and nobody has reviewed it yet.
+
+---
+
+## Related
+
+- [Monitor Your Personal Performance](./AgentDashboard.md): how these interactions add up to your scores
+- [Track Your Courses](./AgentCourses.md): the training your scores can lead to
+- [Manage Your Account and Settings](./AgentAdmin.md): where comment notifications arrive
 
 ## Need Help?
 
-Stuck with interaction analysis? We're here to help!
-
-- **📖 [Dashboard Guide](./Dashboard.md)** - Learn about monitoring overall performance
-- **📖 [Course Creation Guide](./Courses.md)** - Create training based on interaction insights
-- **📖 [Awards Guide](./Awards.md)** - Recognise excellent interaction skills
-
-**Still need assistance?**
-- **Email us**: support@botlhale.ai
-
----
-
-## Was This Guide Helpful?
-
-We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.
+**Contact Support:** support@botlhale.ai

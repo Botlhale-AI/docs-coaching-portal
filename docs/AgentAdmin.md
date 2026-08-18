@@ -2,125 +2,99 @@
 sidebar_position: 5
 sidebar: agentSidebar
 title: Manage Your Account and Settings
+description: "Read your notifications, check your account details, and change your password."
+type: how-to
 pagination_prev: Interactions
 ---
 
-The Admin section serves as your account management centre, including both communications and settings management. This area helps you stay connected with important updates and maintain control over your account security and preferences.
-
-Agents need to manage their account settings and stay informed about important updates. The Admin section gives you tools to control your notifications, manage your account security, and make sure you never miss critical communications.
-
-> **What is Admin?** The **Admin section** is your account management hub, offering notification control, security settings, account information, and communication preferences to help you stay organised and secure.
-
-## What You Can Achieve
-
-Manage your account:
-
-| **Account Management** | **Communication Control** | **Security Settings** |
-|----------------------|-------------------------|---------------------|
-| **View account information** | **Manage notifications** | **Update password security** |
-| **Keep details current** | **Receive important alerts** | **Protect your account** |
+The **ADMIN** section at the foot of the left sidebar holds two pages: **Notifications**, where the portal tells you about new awards, courses, and comments, and **Settings**, where you check your account details and change your password.
 
 ---
 
-## Understanding the Admin Interface
+## Before You Begin
 
-The Admin section is divided into two main areas to help you manage your account:
+You need:
 
-- **Notifications**: Your in-app communication centre
-- **Settings**: Account information and security management
-
-![Admin Dashboard](../img/screenshots/agent_view/admin/admin.png)
-
-> **💡 Tip**: Regular account management helps you stay secure and ensures you receive important updates about your training and performance.
+- **A Coaching Portal sign-in.** Your team lead creates your account and the portal emails you an invitation.
+- **To know how you sign in.** If you use **Sign in with Google** or **Sign in with Microsoft**, your identity provider holds your password and the **security** tab does not appear.
 
 ---
 
-## Managing Notifications
+## 1. Read Your Notifications
 
-The Notifications tab acts as your in-app communication centre where you can view messages, updates, and alerts sent through the system. This ensures you never miss critical updates or important communications from your team.
+Select **Notifications** under **ADMIN** in the left sidebar. Three tabs sort what has arrived:
 
-![Notifications](../img/screenshots/agent_view/admin/notifications.png)
+| Tab | What it holds |
+| :--- | :--- |
+| **Awards** | An award someone has presented to you |
+| **Courses** | A course that has been assigned to you |
+| **Comments** | A comment your team lead left on one of your interactions |
 
-> **Why this matters**: Staying informed about important updates helps you respond quickly to new training assignments, performance feedback, and organisational changes.
+The page lists unread notifications only, so a tab with nothing in it reads **No results found**. That is a result rather than a fault: it means nothing of that type is waiting for you.
 
----
+![The Notifications page in the Coaching Portal, with the Awards, Courses, and Comments tabs above the list of unread notifications](../img/screenshots/agent_view/admin/notifications.png)
 
-## Managing Settings
-
-The Settings tab allows you to view and manage your account information, ensuring your account remains secure and up to date with current details.
-
-### Account Information
-
-![Account](../img/screenshots/agent_view/admin/admin-account-info.jpeg)
-
-View your basic account information:
-
-- **Full Name**: Your full name
-- **Email**: Your email address
-- **Current Organisation**: Your assigned organisation
-- **Current Team**: Your current assigned team
-
-> **💡 Pro Tip**: Keep your account information current to ensure you receive the right training assignments and performance updates for your role.
-
-### Password Management
-
-![Account Settings](../img/screenshots/agent_view/admin/admin.png)
-
-Keep your account secure with strong password controls:
-
-**Change Password**
-
-1. Enter your current password for verification
-2. Create a new strong password following these requirements:
-   - Minimum 8 characters
-   - Include uppercase and lowercase letters
-   - Include at least one number
-   - Include at least one special character
-3. Confirm your new password
-4. Click **Save** to apply changes
-
-> **Why this matters**: Strong password security protects your personal information and ensures only you can access your performance data and training records.
-
-**Password Security Tips**
-
-- Use a unique password not used elsewhere
-- Consider using a password manager
-- Update your password regularly (every 90 days recommended)
-- Never share your password with colleagues
-- Log out from shared computers
-
-> **💡 Tip**: Regular password updates and strong security practices help protect your account and maintain the confidentiality of your performance data.
+:::note Notifications is its own page
+It sits under **ADMIN** in the sidebar, beside **Settings**. It is not a tab inside Settings, so look for it in the sidebar rather than on the Settings page.
+:::
 
 ---
 
-## What's Next?
-
-Now that you can manage your account, explore these related guides:
-
-- **[📊 Monitor Your Dashboard](./AgentDashboard.md)** - Track your overall performance
-- **[📚 Track Your Courses](./AgentCourses.md)** - Continue your learning journey
-- **[🏆 View Your Awards](./AgentAwards.md)** - Celebrate your achievements
-- **[📞 Review Your Interactions](./Interactions.md)** - Analyse your performance
+![The ADMIN section of the sidebar, with Notifications above Settings](../img/screenshots/agent_view/admin/admin.png)
 
 ---
+
+## 2. Check Your Account Details
+
+Select **Settings** under **ADMIN**, then the **account** tab. It shows the details your organisation holds for you:
+
+| Field | What it shows |
+| :--- | :--- |
+| **Name** | Your name as your team lead entered it |
+| **Email** | The address you sign in with, and where the portal emails you |
+| **Current Organisation** | The organisation you belong to |
+| **Current Team** | The team your interactions are counted under |
+
+![The account tab in Settings, showing the Name, Email, Current Organisation, and Current Team fields](../img/screenshots/agent_view/admin/admin-account-info.jpeg)
+
+These fields are read-only. To correct any of them, ask your team lead, who changes them from the main Vela platform.
+
+---
+
+## 3. Change Your Password
+
+Select the **security** tab, then enter your current password and the new one twice.
+
+Your new password must meet all of these:
+
+- At least **8 characters**.
+- At least **one letter** (a-z, A-Z).
+- At least **one number** (0-9).
+- At least **one special character** (for example `@`, `#`, or `!`).
+
+Select **Save** to apply it. The next time you sign in, use the new password.
+
+:::note The security tab depends on how you sign in
+Signing in with Google or Microsoft means your identity provider holds your password, so the **security** tab does not appear. Change it with your provider instead.
+:::
+
+---
+
+## Check Your Work
+
+Open **Notifications** and confirm the tab you expect has entries in it. An empty tab reading **No results found** means nothing of that type is waiting for you.
+
+For a password change, sign out and sign back in with the new password. That is the only thing that confirms it took.
+
+---
+
+## Related
+
+- [Monitor Your Dashboard](./AgentDashboard.md): track your scores over time
+- [Track Your Courses](./AgentCourses.md): work through the training assigned to you
+- [View Your Awards](./AgentAwards.md): the recognition your notifications tell you about
+- [Review Your Interactions](./Interactions.md): read the comments your team lead leaves
 
 ## Need Help?
 
-Stuck with account management? We're here to help!
-
-- **📖 [Dashboard Guide](./AgentDashboard.md)** - Monitor your overall performance
-- **📖 [Course Tracking Guide](./AgentCourses.md)** - Continue your learning journey
-- **📖 [Awards Guide](./AgentAwards.md)** - Celebrate your achievements
-
-**Still need assistance?**
-- **Email us**: support@botlhale.ai
-
----
-
-## Was This Guide Helpful?
-
-We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.
-
----
-
-> **Keep Your Account Secure**: Regularly review and update your account settings to maintain security and ensure you receive important communications. Contact your Team Lead or QA support if you experience any issues with your account.
+**Contact Support:** support@botlhale.ai

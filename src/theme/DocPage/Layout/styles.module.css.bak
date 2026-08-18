@@ -6,11 +6,11 @@
 }
 
 .docMainContainer {
-  /* Single column: the sidebar is not rendered, so nothing sits to the left of
-     the article. The old 3fr/9fr grid reserved that space and left it empty. */
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 9fr);
 }
 
 .docSidebarContainer {
@@ -40,8 +40,7 @@
 
 @media (min-width: 997px) {
   .docItemCol {
-    /* Leaves room for the table of contents on the right. */
-    max-width: 100%;
+    max-width: 75%;
   }
 }
 

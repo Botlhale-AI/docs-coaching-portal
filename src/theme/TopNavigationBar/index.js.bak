@@ -27,12 +27,8 @@ const agentMenuItems = [
 export default function TopNavigationBar() {
   const location = useLocation();
   
-  // Determine initial role from an explicit list of agent pages.
-  // A substring test on 'Agent' was wrong: /docs/Interactions is an agent page
-  // and does not contain the word, so it showed the team lead bar.
-  const isAgentPath = agentMenuItems.some(
-    (item) => location.pathname === item.to || location.pathname === item.to + '/'
-  );
+  // Determine initial role based on current path
+  const isAgentPath = location.pathname.includes('Agent');
   const [currentRole, setCurrentRole] = useState(isAgentPath ? 'agent' : 'teamlead');
   
   // Only show navigation on docs pages

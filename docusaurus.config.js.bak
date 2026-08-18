@@ -25,6 +25,25 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: false,
           showLastUpdateAuthor: false,
+          // Add sidebar configuration for role-based access
+          async sidebarItemsGenerator({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) {
+            // Determine which sidebar to use based on the current page
+            const currentDoc = args.docs?.find(doc => doc.id === args.item?.id);
+            const isAgentPage = currentDoc?.id?.includes('Agent');
+            
+            // Set the appropriate sidebar
+            if (isAgentPage) {
+              args.item = { ...args.item, sidebar: 'agentSidebar' };
+            } else {
+              args.item = { ...args.item, sidebar: 'teamLeadSidebar' };
+            }
+            
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            return sidebarItems;
+          },
         },
         blog: false,
         theme: {
@@ -81,11 +100,6 @@ const config = {
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
-        },
-        {
-          to: '/docs/release-notes',
-          label: 'Release Notes',
-          position: 'right',
         },
         {
           type: 'search',

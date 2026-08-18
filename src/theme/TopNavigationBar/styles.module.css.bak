@@ -67,21 +67,12 @@
   display: flex;
   align-items: center;
   gap: 0;
-  /* Six items plus the role toggle do not fit at every width. Let the row
-     scroll sideways rather than wrap each label onto two lines. */
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.navItems::-webkit-scrollbar {
-  display: none;
 }
 
 .navItem {
   display: flex;
   align-items: center;
-  padding: 1rem 1.25rem;
-  white-space: nowrap;
+  padding: 1rem 1.5rem;
   text-decoration: none;
   color: var(--ifm-color-emphasis-700);
   font-weight: 500;

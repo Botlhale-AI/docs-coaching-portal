@@ -1,115 +1,77 @@
 ---
 sidebar_position: 1
 title: Monitor Your Personal Performance
+description: "Read your scores, compare them with your team, and see where to improve."
+type: how-to
 pagination_prev: GettingStartedAgents
 pagination_next: AgentCourses
 ---
 
-Your Agent Dashboard shows you everything about your learning and development at a glance. It's where you'll spot trends, identify improvement opportunities, and track your progress over time.
-
-We know agents want to understand their performance and grow their skills. That's where your Agent Dashboard comes in. We provide the tools you need to track your progress, compare your performance, and identify specific areas where you can improve and excel.
-
-> **What is Your Dashboard?** Your **Agent Dashboard** is your personal performance monitoring centre, offering individual metrics, team comparisons, trend analysis, and development insights to help you track your growth and identify improvement opportunities.
-## What You Can Achieve
-
-Your dashboard is your personal performance hub. It helps you stay on track, grow your skills, and celebrate your progress. With it, you can:
-
-- **Track your learning progress** and see how you’re improving over time  
-- **Spot trends and patterns** in your own performance  
-- **Compare your results** with your team to understand where you stand  
-- **Identify areas for improvement** and focus on growth opportunities  
-- **Set personal development goals** and plan your learning path  
-- **Celebrate achievements** as you reach milestones and build new skills
+Your **Dashboard** is the first thing you see when you sign in to the Coaching Portal. It shows how your interactions have scored over a period you choose, and how your figures compare with your team's.
 
 ---
 
-## Understanding Your Dashboard
+## Before You Begin
 
-Your agent dashboard gives you a complete view of your individual performance metrics and the average agent performance in your team, department or organisation. Everything is designed to help you understand your current standing and identify areas for growth across the different categories.
+You need:
 
-![Agent Dashboard](../img/screenshots/agent_view/dashboard/dashboard-overview.png)
-
-> **💡 Tip**: Regular dashboard reviews help you stay aware of your performance trends and catch improvement opportunities early.
-
----
-
-## Dashboard Metrics Explained
-
-### Category Scores
-
-Track your individual score in multiple categories versus your team score. This assists in your ability to identify areas of improvement.
-
-> **Why this matters**: Understanding how you compare to your team helps you identify your strengths and areas where you can grow to become a top performer.
-
-#### Auto Fails
-
-- **Auto-Fails**: Auto Fails represent critical errors that automatically fail an evaluation. This percentage shows what portion of calls had at least one auto-fail criterion.
-
-> **💡 Pro Tip**: Focus on reducing auto-fails first, as these represent critical areas that need immediate attention and can significantly impact your overall performance.
-
-#### Performance Charts
-
-View your performance trends over a specified date range. Use the **Date range** filter to zone in on specific dates you are interested in to analyse:
-
-- Average Agent Performance trends
-- Your Individual Agent Performance
-
-![Agent Dashboard](../img/screenshots/agent_view/dashboard/dashboard-charts.png)
-
-> **Why this matters**: Trend analysis helps you understand whether your performance is improving, staying consistent, or declining over time, allowing you to adjust your development focus accordingly.
+- **Processed interactions in the period you are looking at.** The Dashboard is built from analysed calls and chats, so a period with none reads **No Data Found** rather than showing an error.
+- **A scorecard set up by your organisation.** Scores come from the questions your organisation evaluates against. Without those, your interactions are transcribed but carry no score.
 
 ---
 
-## Using Your Dashboard for Development
+## 1. Set the Period
 
-### Setting Personal Goals
+Select the date range control at the top of the page to choose the period. Everything below it is recalculated for the dates you pick.
 
-Use your dashboard data to set realistic and challenging development goals:
+Start with a period long enough to hold several interactions. A single day rarely says much about a trend.
 
-1. **Identify Your Weakest Areas**: Look for categories where your score is below team average
-2. **Set Specific Targets**: Aim to improve by a specific percentage or reach team average
-3. **Track Progress**: Monitor your improvement over time using the trend charts
-4. **Celebrate Success**: Recognise when you achieve your goals and set new ones
-
-> **💡 Pro Tip**: Start with small, achievable goals and gradually increase the challenge as you improve.
-
-### Planning Your Development
-
-Use your dashboard insights to plan your learning and development:
-
-- **Focus on Low-Scoring Areas**: Prioritise training in categories where you're below average
-- **Build on Strengths**: Use your high-scoring areas as confidence builders
-- **Seek Feedback**: Use your performance data to guide conversations with your team lead
-- **Track Improvement**: Monitor how your scores change after training or coaching
-
-> **Why this matters**: Data-driven development planning ensures you focus your efforts on areas that will have the biggest impact on your performance and career growth.
+![The Coaching Portal Dashboard, with the date range control at the top and the Auto Fails and Category Scores panels below it](../img/screenshots/agent_view/dashboard/dashboard-overview.png)
 
 ---
 
-## What's Next?
+## 2. Read Your Figures
 
-Now that you understand your dashboard, explore these related guides:
+### A. Auto Fails
 
-- **[📚 Track Your Courses](./AgentCourses.md)** - Monitor your learning progress
-- **[🏆 View Your Awards](./AgentAwards.md)** - Celebrate your achievements
-- **[📞 Review Your Interactions](./Interactions.md)** - Analyse your performance
-- **[⚙️ Manage Your Settings](./AgentAdmin.md)** - Customise your portal experience
+**Auto Fails** shows the proportion of your calls that failed a question your organisation marks as critical, next to the same figure for your team.
+
+An auto-fail takes the whole interaction to zero whatever else went well, so this is the panel to look at first. A figure above your team's is worth a conversation with your team lead about which question is failing.
+
+### B. Category Scores
+
+**Category Scores** breaks your score down by the categories your organisation groups its questions into, such as Customer Care or Compliance.
+
+Each category shows two figures: **Your Team** and **Your Score**. The gap between them is the useful part. A category where you sit below your team is a specific, nameable thing to work on, which a single overall score never gives you.
+
+![The Dashboard charts, showing Average Agent Performance over the period beside Individual Agent Performance](../img/screenshots/agent_view/dashboard/dashboard-charts.png)
+
+### C. The Charts
+
+**Average Agent Performance** plots the trend across the period, and **Individual Agent Performance** shows your figure on its own.
+
+Read the trend rather than any single point. One low interaction in a week of good ones is normal variation. Three in a row in the same category is a pattern.
+
+:::tip Use the categories to choose what to work on
+An overall score tells you where you stand. The category breakdown tells you what to do about it. Take the category with the widest gap below your team and look at a few interactions in it. See [Review Your Interactions](./Interactions.md).
+:::
 
 ---
+
+## Check Your Work
+
+Set the date range to a period you know holds interactions, and confirm the panels fill with figures.
+
+**No Data Found** means no processed interactions fall inside the dates you chose. Widen the range. If it stays empty across a long period, your interactions may not have finished processing yet.
+
+---
+
+## Related
+
+- [Review Your Interactions](./Interactions.md): open the conversations behind these figures
+- [Track Your Courses](./AgentCourses.md): the training assigned when a score qualifies you for it
+- [View Your Awards](./AgentAwards.md): recognition for the work these figures reflect
 
 ## Need Help?
 
-Stuck with your dashboard? We're here to help!
-
-- **📖 [Course Tracking Guide](./AgentCourses.md)** - Learn about monitoring your learning progress
-- **📖 [Awards Guide](./AgentAwards.md)** - Understand your recognition achievements
-- **📖 [Interaction Analysis Guide](./Interactions.md)** - Review your performance insights
-
-**Still need assistance?**
-- **Email us**: support@botlhale.ai
-
----
-
-## Was This Guide Helpful?
-
-We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.
+**Contact Support:** support@botlhale.ai

@@ -1,192 +1,102 @@
 ---
-sidebar_position: 1
-sidebar: agentSidebar
-title: Getting Started - A Tour of the Agent Portal
+sidebar_position: 0
+title: Getting Started in the Coaching Portal
+description: "Sign in for the first time and find your way around as an agent."
+type: tutorial
 pagination_next: AgentDashboard
 pagination_prev: null
 ---
 
-Welcome to the Vela Coaching Portal! This guide will help you start tracking your performance and managing your professional development immediately.
+The Coaching Portal is where you see how your conversations scored, work through training assigned to you, and read your team lead's feedback. It is separate from the main Vela platform your team lead uses, and it shows your own work only.
 
-We know agents want to excel in their roles and grow their careers. That's where the Vela Coaching Portal comes in. We provide the tools you need to track your performance, access training, and celebrate your achievements.
-
-> **What is the Vela Coaching Portal?** The **Vela Coaching Portal** helps you track your performance, access training courses, celebrate your achievements, and assess your own development to help you grow and succeed in your role.
-
-## What You'll Achieve
-
-By the end of this guide, you'll be able to:
-- **Track your performance** with detailed analytics and insights
-- **Access training courses** to develop new skills and improve existing ones
-- **Review your interactions** to understand your strengths and areas for growth
-- **Celebrate achievements** with awards and recognition
-- **Manage your development** through structured learning paths
-
-We've made this guide as straightforward as possible because we understand you have calls to handle and skills to develop.
+This page takes you through signing in for the first time and finding each part of the portal. It takes about ten minutes.
 
 ---
 
-## Understanding the Vela Interface
+## Before You Begin
 
-Before we dive into the features, let's quickly familiarise you with the Vela Coaching Portal interface:
+You need:
 
-### **Left Navigation**
-The left navigation bar is your main navigation hub in the Coaching Portal. You'll find:
-
-- **[Dashboard](./AgentDashboard)** - Your personal performance overview with customisable metrics
-- **[Courses](./AgentCourses)** - Access your training materials and track progress
-- **[Awards](./AgentAwards)** - View your achievements and recognition
-- **[Interactions](./Interactions)** - Review your calls and chats with detailed analysis
-- **[Admin](./AgentAdmin)** - Manage your account settings, preferences, and notifications
-
-![Agent Sidebar Navigation](/img/agent_sidebar.png)
-
-> **💡 Tip**: The left navigation provides easy access to all sections of the Coaching Portal, making it simple to switch between different areas of your learning and development workflow.
+- **An invitation email.** Your team lead creates your account, and the portal emails you an invitation with a temporary password.
+- **A current browser.** Chrome, Edge, Firefox, or Safari.
 
 ---
 
-## Quick Setup Checklist
+## 1. Sign In for the First Time
 
-### Step 1: Explore Your Dashboard
-**Goal**: Understand your current performance and identify growth opportunities
+1. Open the invitation email and select **Confirm Account**. Do this before anything else, because the portal refuses the sign-in until your address is confirmed.
+2. On the sign-in page, enter your email address and the temporary password from the email.
 
-Your dashboard is your personal command centre. It shows you everything you need to know about your performance at a glance.
+{/* UNVERIFIED: the "Confirm Account" button label is not in the vela or vela-data source, because it lives in an email template neither repository holds. The verification flow itself is confirmed at app/api/auth/[...nextauth]/route.js:44. The label matches docs-vela and the onboarding video script, both written by people who have seen the email. Confirm against a real invitation when one is to hand. */}
+3. Select **Sign In**.
 
-- [ ] **Review the Dashboard** to see your performance metrics
-- [ ] **Use the date picker** to analyse specific time periods
-- [ ] **Compare your scores** to team and organisation averages
-- [ ] **Identify your strengths** and areas for improvement
+Signing in takes you straight to your **Dashboard**.
 
-> **[📊 Dashboard guide](./AgentDashboard)** - Learn about all dashboard features and metrics
+![The Coaching Portal sign-in page](../img/screenshots/agent_view/dashboard/login.png)
 
-> **Why this matters**: Your dashboard helps you understand where you excel and where you can grow.
+:::note Signing in with Google or Microsoft
+Where your organisation uses Single Sign-On, use **Sign in with Google** or **Sign in with Microsoft** instead. You do not set a portal password, and the **security** tab does not appear.
+:::
 
-### Step 2: Review Your Interactions
-**Goal**: Learn from your customer conversations and identify improvement areas
-
-This is where you'll dive deep into your performance and understand what you're doing well and where you can improve.
-
-- [ ] **Navigate to "Interactions"** to see all your calls and chats
-- [ ] **Use filters** to find specific interactions (by date, score, topic)
-- [ ] **Click on any interaction** to review in detail:
-  - [ ] **Listen to call audio** and read transcripts
-  - [ ] **Review Smart Detector insights** for performance analysis
-  - [ ] **Identify specific improvement opportunities**
-
-> **[📞 Interactions guide](./Interactions)** - Learn how to review and learn from your interactions
-
-> **Why this matters**: Detailed interaction reviews help you understand your performance patterns and identify specific areas for growth.
-
-### Step 3: Access Your Training
-**Goal**: Complete assigned courses and develop new skills
-
-Your courses are designed to help you grow and improve in specific areas identified through your performance analysis.
-
-- [ ] **Go to "Courses"** to see all your assigned training
-- [ ] **Check course status** (Not Started, In Progress, Completed)
-- [ ] **Start a course** by clicking on it
-- [ ] **Complete quizzes** to test your understanding
-- [ ] **Review your scores** and feedback
-
-> **[📚 Courses guide](./AgentCourses)** - Learn about course features and how to get the most from your learning
-
-> **Why this matters**: Structured training helps you develop the skills you need to excel in your role.
-
-### Step 4: Celebrate Your Achievements
-**Goal**: Recognise your progress and stay motivated
-
-Your awards represent recognition for your hard work and dedication to excellence.
-
-- [ ] **Check "Awards"** to see your recognitions
-- [ ] **Filter awards** by date or type to reflect on your accomplishments
-- [ ] **Download certificates** for your personal records
-- [ ] **Use achievements** as motivation for continued growth
-
-> **[🏆Awards guide](./AgentAwards)** - Learn about your awards and how to use them for career development
-
-> **Why this matters**: Recognition keeps you motivated and provides evidence of your professional growth.
+Change the temporary password once you are in. See [Manage Your Account and Settings](./AgentAdmin.md).
 
 ---
 
-## Next Steps
+## 2. Find Your Way Around
 
-Now that you're familiar with the basics, here are some next steps to improve your success:
+The left sidebar holds everything, in two groups.
 
-### **For New Agents**
-- Start by exploring your dashboard to understand your current performance
-- Complete any assigned introductory courses to build foundational skills
-- Review recent interactions to identify immediate improvement opportunities
+**TOOLS** is your day-to-day work:
 
-### **For Experienced Agents**
-- Use advanced filtering to analyse specific performance areas
-- Take advantage of all available training to develop specialised skills
-- Build a portfolio of achievements through awards and certificates
+| Item | What it holds |
+| :--- | :--- |
+| **Dashboard** | Your scores over a period you choose |
+| **Interactions** | Your calls and chats, with transcripts and comments |
+| **Courses** | Training assigned to you |
+| **Awards** | Recognition you have been presented |
 
-### **For Career Development**
-- Regularly review your performance trends to identify growth patterns
-- Complete advanced courses to prepare for career advancement
-- Use your awards and achievements in performance reviews and applications
+![The Coaching Portal sidebar, with the TOOLS and ADMIN groups](../img/screenshots/agent_view/agent_sidebar.png)
 
----
+**ADMIN** is your account:
 
-> **💡 Pro Tip**: The Vela Coaching Portal is designed to support your growth journey. Use it regularly to track your progress and celebrate your achievements.
-
----
-
-## 🎉 You're All Set!
-
-**Congratulations!** You've just completed your first steps with the Vela Coaching Portal. You're now ready to improve your professional development with data-driven insights and structured learning tools. The portal provides everything you need to grow and excel in your role.
-
-Agents face unique challenges - managing performance, developing skills, and maintaining motivation. The Vela Coaching Portal helps you see what's really happening so you can make informed decisions about your development.
-
-You've just discovered the capabilities that will help you work better!
+| Item | What it holds |
+| :--- | :--- |
+| **Notifications** | New awards, courses, and comments |
+| **Settings** | Your account details and password |
 
 ---
 
-## What's Next?
+## 3. Take the Tour
 
-### **Daily Operations**
-- **[Monitor your dashboard](./AgentDashboard)** - Track daily performance and trends
-- **[Review your interactions](./Interactions)** - Stay on top of your performance
-- **[Check your courses](./AgentCourses)** - Complete assigned training
+Work through these in order. Each takes a few minutes and shows you one part of the portal.
 
-### **Professional Development**
-- **[Access training materials](./AgentCourses)** - Develop specific skills and knowledge
-- **[Celebrate achievements](./AgentAwards)** - Track your recognition and awards
-- **[Manage your account](./AgentAdmin)** - Keep your profile updated and manage settings
+1. **Open your Dashboard.** Set the date range to a period you have been working, and read **Category Scores**. The gap between **Your Team** and **Your Score** in each category is the most useful thing on the page. See [Monitor Your Personal Performance](./AgentDashboard.md).
 
-### **Advanced Features**
-- **[Customise your view](./AgentAdmin)** - Tailor the portal to your preferences and manage notifications
-- **[Track your progress](./AgentCourses)** - Monitor your learning journey
-- **[Build your portfolio](./AgentAwards)** - Collect certificates and achievements
+2. **Open one of your interactions.** Select **Interactions**, then **Calls** or **Chats**, and open one. Read the transcript alongside the **Scorecard** tab to see how the conversation was scored. See [Review Your Interactions](./Interactions.md).
 
-> **💡 Pro Tip**: Use the left navigation in the Vela Coaching Portal to quickly access any section. Each section has its own dedicated documentation that you can reference while working in the platform.
+3. **Check for coaching comments.** On the same interaction, select **View Comments**. This is where your team lead's feedback appears, and where you reply. See [Review Your Interactions](./Interactions.md).
+
+4. **Look at your courses.** Select **Courses**. Anything under **Assigned Courses** is waiting for you, and each shows a **Due Date**. See [Track Your Courses](./AgentCourses.md).
+
+5. **Check your notifications.** Select **Notifications** under **ADMIN**. The three tabs sort what has arrived into awards, courses, and comments.
 
 ---
+
+## Check Your Work
+
+You are finished when you have signed in with your own password, opened one interaction and read its transcript, and found where comments and notifications appear.
+
+An empty Dashboard or interactions list is not a fault. It means nothing of yours has finished processing yet, or your organisation shows agents reviewed interactions only and nobody has reviewed one yet.
+
+---
+
+## Related
+
+- [Monitor Your Personal Performance](./AgentDashboard.md): read your scores and spot trends
+- [Review Your Interactions](./Interactions.md): transcripts, scorecards, and comments
+- [Track Your Courses](./AgentCourses.md): work through assigned training
+- [Manage Your Account and Settings](./AgentAdmin.md): notifications, account details, and your password
 
 ## Need Help?
 
-Don't worry! We're here to help! Here's how to get support:
-
-- 📧 **Contact Support**: support@botlhale.ai
-- 🎥 **Video Tutorials**: Available on the homepage
-
----
-
-## Was This Guide Helpful?
-
-We're constantly improving our documentation based on your feedback. Let us know how this guide worked for you:
-
-**Did this guide help you get started with the Vela Coaching Portal?**
-- ✅ **Yes** - I was able to set up the portal successfully
-- ❌ **No** - I need more help
-
-**What could we improve?**
-- More detailed steps
-- Better screenshots
-- Additional examples
-- Different organisation
-
-Send your feedback to: **support@botlhale.ai**
-
----
-
+**Contact Support:** support@botlhale.ai

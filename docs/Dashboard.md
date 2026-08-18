@@ -1,132 +1,86 @@
 ---
 sidebar_position: 1
-sidebar: teamLeadSidebar
-title: Monitor Your Team's Performance
+title: Read the Coaching Dashboard
+description: "See how your team is scoring and where coaching would help most."
+type: how-to
 pagination_prev: GettingStartedTeamLeads
 pagination_next: Courses
 ---
 
-Your Coaching Portal dashboard shows you everything about your team's learning and development at a glance. It's where you'll spot trends, identify coaching opportunities, and track how your team is progressing.
-
-Team leads want to see how their team is performing at a glance. Your Dashboard gives you the tools to monitor trends, spot coaching opportunities, and track how your team is developing.
-
-> **What is Your Dashboard?** Your **Dashboard** is your performance monitoring hub, metrics, trend analysis, coaching insights, and team development tracking to help you make informed decisions about your team's growth.
-
-## What You Can Achieve
-
-- **Spot learning gaps early** and take action before they affect performance  
-- **Track progress trends** to see how individuals and teams are improving  
-- **Identify top performers** and recognise excellence with confidence  
-- **Pinpoint development needs** to deliver targeted coaching  
-- **Understand Key Performance Areas** by monitoring how well your team performs in crucial evaluation categories like Customer Care and Compliance
-- **Improve training efficiency** by focusing on what drives measurable results
+**Coaching → Dashboard** shows how the agents you cover are scoring over a period you choose. Use it to decide who needs a conversation and what that conversation should be about, before you build a course or open individual interactions.
 
 ---
 
-## Understanding Your Dashboard
+## Before You Begin
 
-### Date Range Selection
+You need:
 
-Use the **Date Range** filter at the top of the dashboard to analyse performance over specific time periods:
-
-> **💡 Tip**: Use different date ranges to spot trends - weekly views show immediate issues, while monthly views reveal longer-term patterns.
-
-- **Custom Date Range**: Select start and end dates to focus on specific periods
-- **Quick Filters**: Choose from preset options like "Last week", "Last month"
-- **Live Updates**: All metrics automatically update when you change the date range
-
-![Dashboard Date-Range](../img/screenshots/team_lead/dashboard/date-range.png)
-
-**Custom Date Range Filter (continued)**
-![Dashboard Date-Range-2](../img/screenshots/team_lead/progress/date-filter-detailed.png)
-
-### Category Scores
-
-Your dashboard shows performance metrics across different evaluation categories. The specific categories you see will depend on how your company has set up the system.
-
-Common categories include:
-
-**Customer Care** – How well agents handle customer interactions (e.g., average score, performance variation, trends)
-
-**Compliance** – Adherence to company policies, regulatory standards, and documentation accuracy
-
-### Auto Fails
-
-**Auto Fails** represent critical errors that automatically fail an evaluation. This percentage shows what portion of calls had at least one auto-fail criterion.
-
-> **Why this matters**: Auto-fail trends help you identify critical issues that need immediate attention and training.
-
-#### Understanding Auto Fail Metrics
-
-- **Percentage Display**: Shows the proportion of interactions with auto-fail occurrences
-- **Trend Tracking**: Monitor whether auto-fail rates are increasing or decreasing
-- **Team vs Individual**: Compare team average with individual agent performance
+- **Processed interactions in the period.** The Dashboard is built from analysed calls and chats, so a period with none is empty rather than broken.
+- **Access covering the agents you want to see.** Your access level decides whether you see the whole organisation, a department, or one team.
 
 ---
 
-## Performance Charts
+## 1. Set the Period
 
-Access detailed performance analytics through expandable chart sections that provide deeper insights into team performance trends.
+Select the date range control at the top of the page and choose the dates. Everything below is recalculated for the period you pick.
 
-> **💡 Pro Tip**: Use the drill-down features to identify specific agents or time periods that need attention.
+![The date range control on the Coaching Dashboard](../img/screenshots/team_lead/dashboard/date-range.png)
 
-![Performance Charts](/img/dashboard2.png)
-
-### Chart Sections
-
-The dashboard includes several accordion-style chart sections:
-
-#### Average Agent Performance
-
-**Left Panel**: Displays average agent performance on a category
-
-#### Overall Performance Analysis
-
-**Right Panel**: Shows aggregate performance data based on your selected scope on a category
-
-**Scope Options**:
-
-- **Team Performance**: Metrics for your specific team
-- **Department Performance**: Broader departmental view including multiple teams
-- **Agent Department**: Cross-departmental agent performance comparison
-
-### Interactive Features
-
-#### Drill-Down Capabilities
-
-- **Click on Data Points**: Access detailed breakdowns of specific metrics
-- **Zoom In or Resize**: Ability to resize charts to drill down and view data accurately
+Pick a period long enough to hold several interactions per agent. A week is usually the shortest useful range, and a month is better for judging a trend.
 
 ---
 
-## What's Next?
+## 2. Read the Figures
 
-Now that you understand your dashboard, explore these related guides:
+### A. Auto Fails
 
-- **[📊 Monitor Progress](./Progress.md)** - Track learning completion and trends
-- **[📚 Manage Courses](./Courses.md)** - Create and assign training materials
-- **[🏆 Recognise Achievements](./Awards.md)** - Set up awards and recognition
-- **[📞 Review Interactions](./Interactions.md)** - Analyse agent performance
+**Auto Fails** shows the proportion of calls that failed a question your organisation marks as critical, for the team and for each agent.
+
+An auto-fail takes an interaction to zero whatever else went well, so a rising figure here matters more than a few points off an average. It usually points at one specific requirement being missed rather than general performance.
+
+### B. Category Scores
+
+**Category Scores** breaks scores down by the categories your organisation groups its scorecard questions into.
+
+This is the panel to plan coaching from. An agent below the team in one category has a specific, nameable gap. An agent below the team in every category is a different conversation.
+
+Use **Sort By** with **Ascending** or **Descending** to bring the lowest or highest to the top, then **Apply**.
+
+:::tip Sort ascending to find who needs you
+Sorting a category ascending puts the agents furthest behind at the top. That is your coaching list for the week, and it changes as scores move.
+:::
 
 ---
+
+## 3. Decide What to Do
+
+The Dashboard tells you where the gap is. What you do about it is one of three things:
+
+| What you see | What to do |
+| :--- | :--- |
+| One agent behind in one category | Open a few of their interactions and leave coaching comments |
+| Several agents behind in the same category | Build a course whose trigger range covers them |
+| An agent behind everywhere | A direct conversation, before anything automated |
+
+See [Create and Assign Courses](./Courses.md) for the second, and [Recognise Good Work](./Awards.md) for marking improvement once it comes.
+
+---
+
+## Check Your Work
+
+Set the date range to a period you know holds interactions and confirm the panels fill.
+
+An empty Dashboard means no processed interactions fall in the dates, or your access level does not cover the agents you expected. Widen the range first, then check the access level with an administrator.
+
+---
+
+## Related
+
+- [Create and Assign Courses](./Courses.md): turn a category gap into training
+- [Track Learning Progress](./Progress.md): see whether the training landed
+- [Recognise Good Work](./Awards.md): mark the improvement when it arrives
+- [Set Coaching Preferences](./Preferences.md): the cycle that drives assignment
 
 ## Need Help?
 
-Stuck with your dashboard? We're here to help!
-
-- **📖 [Progress Tracking Guide](./Progress.md)** - Learn about detailed progress monitoring
-- **📖 [Course Management Guide](./Courses.md)** - Understand course creation and assignment
-- **📖 [Awards System Guide](./Awards.md)** - Set up recognition programmes
-
-**Still need assistance?**
-- **Email us**: support@botlhale.ai
-
----
-
-## Was This Guide Helpful?
-
-We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.
-
----
-
-> **Improve Team Success**: Regular dashboard monitoring combined with targeted coaching interventions leads to sustained performance improvements. Use the insights to guide your team toward excellence.hile maintaining focus on both individual growth and team objectives.
+**Contact Support:** support@botlhale.ai

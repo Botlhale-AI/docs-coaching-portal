@@ -1,149 +1,98 @@
 ---
 sidebar_position: 2
-sidebar: agentSidebar
-title: Track Your Learning Journey
+title: Track Your Courses
+description: "Work through the training assigned to you, take the quiz, and see your result."
+type: how-to
 pagination_prev: AgentDashboard
 pagination_next: AgentAwards
 ---
 
-Manage and monitor your training progress with ease. The Courses section shows all your assigned training materials, ongoing courses, and completed certifications in one organised place.
-
-We know agents want to develop their skills and advance their careers. That's where the Courses section comes in. We provide the tools you need to access training materials, track your progress, and demonstrate your learning achievements.
-
-> **What are Your Courses?** The **Courses section** is where you access your training materials, track your progress, complete assessments, and develop the skills you need to excel in your role.
-
-## What You Can Achieve
-
-Track your learning progress:
-
-| **Course Management** | **Progress Tracking** | **Skill Development** |
-|---------------------|---------------------|---------------------|
-| **View all assigned courses** | **Monitor completion status** | **Track skill improvements** |
-| **Access training materials** | **Track quiz results** | **Identify learning gaps** |
-| **Complete assessments** | **Review performance feedback** | **Celebrate achievements** |
+**Courses** in the left sidebar holds the training assigned to you. Vela assigns courses on your organisation's evaluation cycle, based on how you have scored, so a course arrives because your figures qualified you for it rather than because someone picked you.
 
 ---
 
-## Understanding Your Courses Interface
+## Before You Begin
 
-Your courses are organised by status to help you prioritise your learning activities and focus on what matters most:
+You need:
 
-- **All Courses**: Complete view of every course available to you
-- **Assigned**: New courses that have been assigned to you
-- **In Progress**: Currently active courses you're working on
-- **Completed**: Successfully finished courses with your results
-
-![Courses Dashboard](../img/screenshots/agent_view/courses/courses-overview.png)
-
-> **💡 Tip**: Use the status filters to focus on courses that need your immediate attention, helping you stay organised and meet deadlines.
+- **A course assigned to you.** Your team lead creates courses and sets the score range that triggers each one. Until your scores fall in a range, the list is empty.
+- **To know your organisation's pass mark.** Your team lead sets one pass percentage for all courses, so the mark is the same whichever course you take.
 
 ---
 
-## Course Table View
+## 1. Find Your Courses
 
-All completed courses are presented in a detailed table format that includes:
+Select **Courses** in the left sidebar. The page groups what you have by where you are with it:
 
-| Column               | Description                                      |
-| -------------------- | ------------------------------------------------ |
-| **Course Title**     | Name of the course or training module            |
-| **Date Assigned**    | When the course was assigned to you              |
-| **Due Date**         | Deadline for course completion                   |
-| **Category**         | Course type (e.g., Customer Service, Compliance) |
-| **Initiation Score** | Your baseline score before starting the course   |
-| **Final Score**      | Your score after completing the course           |
-| **Date Completed**   | When you successfully finished the course        |
-| **Actions**          | Available actions for each course                |
+| Group | What it holds |
+| :--- | :--- |
+| **Assigned Courses** | Assigned to you, not started |
+| **Courses In Progress** | Opened and part-way through |
+| **Completed Courses** | Finished, with your result |
 
-This layout makes it easy to track where you are in your learning journey and how you've performed over time.
+**Search**, **Sort**, and **Filter** sit above the list for when you have more than a screenful.
 
-> **Why this matters**: Understanding your learning progress helps you identify your strengths, track improvement, and plan your development path.
+![The Courses page in the Coaching Portal, with courses grouped by assigned, in progress, and completed](../img/screenshots/agent_view/courses/courses-overview.png)
 
----
+![The quick search control above the courses list](../img/screenshots/agent_view/courses/quick-search.png)
 
-## Finding Your Courses
+![The filter panel open on the courses list](../img/screenshots/agent_view/courses/filter.png)
 
-### Quick Search
+![The sort control on the courses list](../img/screenshots/agent_view/courses/sort.png)
 
-Use the search bar at the top left of the Courses section to quickly find any course by name. Simply type the course title to locate specific course and its material.
-
-![Courses Quick Search](../img/screenshots/agent_view/courses/quick-search.png)
-
-> **💡 Pro Tip**: Use the search function to quickly locate courses when you have many training assignments, saving you time and helping you stay organised.
-
-### Filtering and Sorting Options
-
-Filter your courses by:
-
-- **Date Assigned**: See courses by date assigned
-- **Due Date**: See courses by their deadlines
-- **Category**: View courses by category
-
-![Courses Filter](../img/screenshots/agent_view/courses/filter.png)
-
-Sort your courses by ascending or descending order by:
-
-- _Course Title, Due Date, Initiation Score, Status, Date Assigned, Category, Final Score_
-
-![Courses Sort](../img/screenshots/agent_view/courses/sort.png)
-
-> **Why this matters**: Effective filtering and sorting help you prioritise your learning activities and focus on courses that need immediate attention.
+Each course shows its **Due Date**. Start early enough to finish before it.
 
 ---
 
-## Course Actions
+## 2. Work Through the Material
 
-For each course in your list, you'll see action buttons that allow you to:
+Select a course to open it. **Course Details** describes what it covers, and the material sits below.
 
-### View Course Details
+Material comes in two forms, and a course may hold both:
 
-Click **View Course Details** to open a detailed view of the course where you can:
+- **Course Material** is a file your team lead uploaded. Select **Download Material** to read it.
+- **Course Link** is an **External Link** that opens elsewhere in a new tab.
 
-- Review course objectives and learning outcomes
-- Check your progress and completion status
-- Access course materials and resources
-- View quiz results and feedback
+![A course open in the detailed view, with the course details and the material to work through](../img/screenshots/agent_view/courses/courses-detailed-view.png)
 
-![Courses Sort](../img/screenshots/agent_view/courses/view-material.png)
+![The course material open for reading](../img/screenshots/agent_view/courses/view-material.png)
 
-> **💡 Tip**: Always review course details before starting to understand what you'll learn and how it will help you improve your performance.
+![Further course content in the detailed view](../img/screenshots/agent_view/courses/courses-detailed-view-2.png)
 
-### Access Course Materials
+![The remaining course content](../img/screenshots/agent_view/courses/courses-detailed-view-3.png)
 
-#### PDF Materials
-
-When course material is a PDF:
-
-1. Click **View Material**
-2. The file will download directly to your device
-
-> **Why this matters**: Easy access to training materials ensures you can learn at your own pace and review content as needed to improve your understanding.
+Read the material before starting the quiz. The quiz is scored, and your result is recorded against the course.
 
 ---
 
-## What's Next?
+## 3. Take the Quiz
 
-Now that you can track your learning journey, explore these related guides:
+Where a course has a quiz, work through the questions and submit it.
 
-- **[📊 Monitor Your Performance](./AgentDashboard.md)** - Track how training impacts your performance
-- **[🏆 View Your Achievements](./AgentAwards.md)** - Celebrate your learning accomplishments
-- **[📞 Review Your Interactions](./Interactions.md)** - Analyse how training improves your customer service
-- **[⚙️ Manage Your Settings](./AgentAdmin.md)** - Customise your learning experience
+Questions come in a few shapes, including multiple choice and a **Long Paragraph** answer for questions that need writing rather than picking.
+
+Your result appears as a **Final Score**. Where you took the course more than once, **Initiation Score** records how you did the first time, so improvement is visible rather than overwritten.
+
+![The quiz results view, showing the final score against the questions answered](../img/screenshots/agent_view/courses/courses-detailed-view-quiz-results.png)
+
+Passing moves the course into **Completed Courses**. Where your organisation allows a retake, you can take it again to improve on the result.
 
 ---
+
+## Check Your Work
+
+Open **Courses** and confirm the course you finished sits under **Completed Courses** with a **Final Score** on it.
+
+A course still under **Courses In Progress** after you submitted usually means the quiz was not submitted rather than not passed. Open it and check.
+
+---
+
+## Related
+
+- [Monitor Your Personal Performance](./AgentDashboard.md): the scores that decide which courses reach you
+- [View Your Awards](./AgentAwards.md): recognition for the work you put in
+- [Review Your Interactions](./Interactions.md): the conversations behind your scores
 
 ## Need Help?
 
-Stuck with your courses? We're here to help!
-
-- **📖 [Dashboard Guide](./AgentDashboard.md)** - Learn about monitoring your performance
-- **📖 [Awards Guide](./AgentAwards.md)** - Understand your learning achievements
-- **📖 [Interaction Analysis Guide](./Interactions.md)** - Review your performance insights
-
-**Still need assistance?**
-- **Email us**: support@botlhale.ai
-
----
-
-## Was This Guide Helpful?
-
-We're constantly improving our documentation. Let us know how we can make this guide better for you and your team.
+**Contact Support:** support@botlhale.ai

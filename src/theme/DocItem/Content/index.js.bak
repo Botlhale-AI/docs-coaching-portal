@@ -36,11 +36,9 @@ export default function DocItemContent({children}) {
             </Heading>
           )}
           
-          {/* The description is deliberately not rendered here. It stays in
-              frontmatter for the meta tag and search results, matching
-              docs-vela. Rendering it put a summary directly above the opening
-              paragraph, which said the same thing twice. Restore this block to
-              show it again. */}
+          {frontMatter.description && (
+            <p className={styles.docDescription}>{frontMatter.description}</p>
+          )}
         </header>
       )}
       

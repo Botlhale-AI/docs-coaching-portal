@@ -18,11 +18,13 @@ export default function DocPageLayout({children}) {
       <SubNavbar />
       
       <div className={clsx(styles.docPage, 'modern-doc-layout')}>
-        {/* The vertical sidebar is deliberately not rendered. SubNavbar above
-            already lists every page for the current audience, so a second copy
-            duplicated the navigation and left an empty column beside the text.
-            sidebars.js is still required: it supplies the breadcrumbs and the
-            previous/next links. Restore this block to bring the column back. */}
+        {sidebar && (
+          <DocPageLayoutSidebar
+            sidebar={sidebar.items}
+            hiddenSidebarContainer={hiddenSidebarContainer}
+            setHiddenSidebarContainer={setHiddenSidebarContainer}
+          />
+        )}
         <DocPageLayoutMain
           hiddenSidebar={hiddenSidebar}
           setSidebarHidden={setHiddenSidebar}
