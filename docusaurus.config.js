@@ -6,8 +6,15 @@ const config = {
   tagline: "Documentation",
   url: 'https://docs-coaching.botlhale.xyz', 
   baseUrl: '/',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
+  markdown: {
+    mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   favicon: 'img/favicon.ico',
   organizationName: 'Botlhale-AI', 
   projectName: 'docs-coaching-portal', 
@@ -39,6 +46,31 @@ const config = {
 
   plugins: [
     [
+      // Every docs URL changed when the flat PascalCase pages moved into
+      // audience folders. These keep the old links working.
+      require.resolve('@docusaurus/plugin-client-redirects'),
+      {
+        redirects: [
+          { from: '/docs/GettingStartedTeamLeads', to: '/docs/team-leads/getting-started' },
+          { from: '/docs/Dashboard', to: '/docs/team-leads/coaching-dashboard' },
+          { from: '/docs/Courses', to: '/docs/team-leads/create-and-assign-courses' },
+          { from: '/docs/Progress', to: '/docs/team-leads/track-learning-progress' },
+          { from: '/docs/Awards', to: '/docs/team-leads/recognise-good-work' },
+          { from: '/docs/Preferences', to: '/docs/team-leads/coaching-preferences' },
+          { from: '/docs/GettingStartedAgents', to: '/docs/agents/getting-started' },
+          { from: '/docs/AgentDashboard', to: '/docs/agents/personal-performance' },
+          { from: '/docs/Interactions', to: '/docs/agents/your-interactions' },
+          { from: '/docs/AgentCourses', to: '/docs/agents/your-courses' },
+          { from: '/docs/AgentAwards', to: '/docs/agents/your-awards' },
+          { from: '/docs/AgentAdmin', to: '/docs/agents/your-account' },
+          { from: '/docs/Glossary', to: '/docs/reference/glossary' },
+          { from: '/docs/BestPractices', to: '/docs/explanation/best-practices' },
+          { from: '/docs/Troubleshooting', to: '/docs/support/troubleshooting-guide' },
+          { from: '/docs/FAQ', to: '/docs/support/faq' },
+        ],
+      },
+    ],
+    [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         hashed: true,
@@ -65,7 +97,7 @@ const config = {
         srcDark: 'img/logo.png',
       },
       items: [
-        // Only keep essential items - role-based navigation handled by TopNavigationBar
+        // Navigation lives in the sidebar. The role-based top bar was removed.
         {
           type: 'html',
           position: 'right',
@@ -90,28 +122,28 @@ const config = {
           title: 'Team Leads & QAs',
           items: [
             {
-              label: 'Getting Started (Team Leads)',
-              to: '/docs/GettingStartedTeamLeads',
+              label: 'Getting Started with Coaching',
+              to: '/docs/team-leads/getting-started',
             },
             {
-              label: 'Dashboard',
-              to: '/docs/Dashboard',
+              label: 'Read the Coaching Dashboard',
+              to: '/docs/team-leads/coaching-dashboard',
             },
             {
-              label: 'Courses',
-              to: '/docs/Courses',
+              label: 'Create and Assign Courses',
+              to: '/docs/team-leads/create-and-assign-courses',
             },
             {
-              label: 'Awards',
-              to: '/docs/Awards',
+              label: 'Recognise Good Work',
+              to: '/docs/team-leads/recognise-good-work',
             },
             {
-              label: 'Progress',
-              to: '/docs/Progress',
+              label: 'Track Learning Progress',
+              to: '/docs/team-leads/track-learning-progress',
             },
             {
-              label: 'Preferences',
-              to: '/docs/Preferences',
+              label: 'Set Coaching Preferences',
+              to: '/docs/team-leads/coaching-preferences',
             },
           ],
         },
@@ -119,28 +151,28 @@ const config = {
           title: 'Agents',
           items: [
             {
-              label: 'Getting Started (Agents)',
-              to: '/docs/GettingStartedAgents',
+              label: 'Getting Started for Agents',
+              to: '/docs/agents/getting-started',
             },
             {
-              label: 'My Dashboard',
-              to: '/docs/AgentDashboard',
+              label: 'Monitor Your Performance',
+              to: '/docs/agents/personal-performance',
             },
             {
-              label: 'My Courses',
-              to: '/docs/AgentCourses',
+              label: 'Track Your Courses',
+              to: '/docs/agents/your-courses',
             },
             {
-              label: 'My Awards',
-              to: '/docs/AgentAwards',
+              label: 'View Your Awards',
+              to: '/docs/agents/your-awards',
             },
             {
-              label: 'Interactions',
-              to: '/docs/Interactions',
+              label: 'Review Your Interactions',
+              to: '/docs/agents/your-interactions',
             },
             {
-              label: 'Admin',
-              to: '/docs/AgentAdmin',
+              label: 'Manage Your Account',
+              to: '/docs/agents/your-account',
             },
           ],
         },
@@ -161,6 +193,13 @@ const config = {
       copyright: `Copyright © ${new Date().getFullYear()} Botlhale AI. All rights reserved.`,
     },
     
+    docs: {
+      sidebar: {
+        hideable: false,
+        autoCollapseCategories: true,
+      },
+    },
+
     colorMode: {
       defaultMode: 'light',
       disableSwitch: false,
