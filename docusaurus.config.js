@@ -69,7 +69,7 @@ const config = {
         {
           type: 'html',
           position: 'right',
-          value: '<a href="https://vela.botlhale.xyz/login" target="_blank" class="auth-button auth-button-signin">Log In</a>',
+          value: '<a href="https://vela.botlhale.ai/login" target="_blank" class="auth-button auth-button-signin">Log In</a>',
         },
         {
           to: '/docs/release-notes',
