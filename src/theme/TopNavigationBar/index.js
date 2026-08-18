@@ -2,29 +2,24 @@ import React, { useState } from 'react';
 import Link from '@docusaurus/Link';
 import {useLocation} from '@docusaurus/router';
 import clsx from 'clsx';
+import sidebars from '@site/sidebars.js';
 import styles from './styles.module.css';
 
-// Team Lead navigation items
-const teamLeadMenuItems = [
-  { label: 'Getting Started', to: '/docs/GettingStartedTeamLeads' },
-  { label: 'Dashboard', to: '/docs/Dashboard' },
-  { label: 'Courses', to: '/docs/Courses' },
-  { label: 'Awards', to: '/docs/Awards' },
-  { label: 'Progress', to: '/docs/Progress' },
-  { label: 'Preferences', to: '/docs/Preferences' },
-  { label: 'Help', to: '/docs/FAQ' },
-];
+// Both navigations are derived from sidebars.js so there is one list to keep
+// current. Adding a page to a section there puts it in the sidebar and in this
+// bar at the same time. See DOCUMENTATION_FRAMEWORK.md section 6, "one
+// procedure lives in one place", which applies to navigation too.
+const sectionItems = (label) =>
+  (sidebars.docsSidebar.find((c) => c.label === label)?.items ?? []).map(
+    (item) => ({ label: item.label, to: `/docs/${item.id}` })
+  );
 
-// Agent navigation items
-const agentMenuItems = [
-  { label: 'Getting Started', to: '/docs/GettingStartedAgents' },
-  { label: 'My Dashboard', to: '/docs/AgentDashboard' },
-  { label: 'My Courses', to: '/docs/AgentCourses' },
-  { label: 'My Awards', to: '/docs/AgentAwards' },
-  { label: 'Interactions', to: '/docs/Interactions' },
-  { label: 'Admin', to: '/docs/AgentAdmin' },
-  { label: 'Help', to: '/docs/FAQ' },
-];
+// Reference and Help is shared by both audiences. It is one entry rather than
+// four, because seven items already fill the bar at common widths.
+const helpItem = { label: 'Help', to: '/docs/FAQ' };
+
+const teamLeadMenuItems = [...sectionItems('For Team Leads'), helpItem];
+const agentMenuItems = [...sectionItems('For Agents'), helpItem];
 
 export default function TopNavigationBar() {
   const location = useLocation();
