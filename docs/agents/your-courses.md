@@ -15,7 +15,7 @@ pagination_next: agents/your-awards
 
 You need:
 
-- **A course assigned to you.** Your team lead creates courses and sets a **Training Initiation Score Range** on each one. Until your scores fall in a range, the list is empty.
+- **A course assigned to you.** Your team lead creates courses and sets a **Training Initiation Score Range** on each course. Until your scores fall in a range, the list is empty.
 - **To know your organisation's pass mark.** Your team lead sets one pass percentage for all courses, so the mark is the same whichever course you take.
 
 ---

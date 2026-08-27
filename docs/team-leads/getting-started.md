@@ -85,7 +85,12 @@ See [Recognise Good Work](./recognise-good-work.md).
 
 ## Check Your Work
 
-You have finished the setup when four things are true: the evaluation cycle is set, one course exists with a **Training Initiation Score Range** covering a real gap, **Progress** shows agents against it after a cycle has run, and one award exists.
+You have finished the setup when four things are true:
+
+- The evaluation cycle is set.
+- One course exists, with a **Training Initiation Score Range** covering a real gap.
+- **Progress** shows agents against that course, after a cycle has run.
+- One award exists.
 
 The most common first-week surprise is an empty **Progress** page. Before the first cycle runs that is expected rather than a fault.
 

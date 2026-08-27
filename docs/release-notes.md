@@ -38,7 +38,7 @@ A separate portal agents sign in to, covering their own performance and training
 
 ### Scoring of written quiz answers
 
-Quiz questions answered as **Short Paragraph** or **Long Paragraph** are scored by Vela rather than matched against a stored answer, and a short reason is recorded against each one for the agent to read with their result.
+Vela scores quiz questions answered as **Short Paragraph** or **Long Paragraph**, rather than matching them against a stored answer. Each answer carries a short reason, which the agent reads with their result.
 
 ---
 

@@ -35,7 +35,9 @@ Select **Coaching** in the left sidebar, then **Awards**. Select the create cont
 
 {/* SCREENSHOT NEEDED: the Create an Award form, showing Award Name, Award Category, Award Description, Scope, Score Threshold (Range) with its Min and Max, and Award Message. This is the only team lead form with no capture at all, and it is the one with the most fields. Suggested path: img/screenshots/team_lead/awards/create-award.png */}
 
-**Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score falls between **Min** and **Max**, so a "top performer" award is a high min with a max of 100, and a band such as 70 to 79 recognises a specific tier rather than everyone above it.
+**Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score falls between **Min** and **Max**.
+
+That lets you recognise a tier rather than everyone above a line. A "top performer" award is a high min with a max of 100. A band such as 70 to 79 picks out that group on its own.
 
 {/* SCREENSHOT NEEDED: the Scope control expanded to departments or teams, with the multi-select open and the "N departments selected" count beneath it. Suggested path: img/screenshots/team_lead/awards/create-award-scope.png */}
 
