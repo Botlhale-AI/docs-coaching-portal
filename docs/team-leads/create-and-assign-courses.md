@@ -130,7 +130,7 @@ Select **Create** to save. The course is assigned on the next evaluation cycle.
 
 Open a course from the list and select **Edit Course** to change its details, material, or questions.
 
-![Editing an existing course](../../img/screenshots/team_lead/courses/team-lead-courses-edit.png)
+![The Edit Course form, with the course details open for changing](../../img/screenshots/team_lead/courses/team-lead-courses-edit.png)
 
 Editing changes the course for agents who have not yet completed it. Agents who already finished keep the result they earned.
 

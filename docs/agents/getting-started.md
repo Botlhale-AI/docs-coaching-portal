@@ -32,7 +32,7 @@ You need:
 
 Signing in takes you straight to your **Dashboard**.
 
-![The Coaching Portal sign-in page](../../img/screenshots/agent_view/auth/login.png)
+![The Coaching Portal sign-in page, with the email and password fields](../../img/screenshots/agent_view/auth/login.png)
 
 :::note Signing in with Google or Microsoft
 Where your organisation uses Single Sign-On, use **Sign in with Google** or **Sign in with Microsoft** instead. You do not set a portal password, and the **security** tab does not appear.

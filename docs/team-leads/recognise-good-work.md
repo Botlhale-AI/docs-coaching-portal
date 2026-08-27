@@ -67,7 +67,7 @@ Select **Create Award** to save, or **Cancel** to return to the awards list.
 
 Select **Download Award** on a row to save that agent's certificate. It carries their name, the award, and the date.
 
-![Downloading an award certificate](../../img/screenshots/team_lead/awards/download.png)
+![The Download Award control on an award row, which saves the certificate](../../img/screenshots/team_lead/awards/download.png)
 
 ![The certificate as it downloads, carrying the agent's name, the award, and the date](../../img/screenshots/team_lead/awards/certificate.png)
 

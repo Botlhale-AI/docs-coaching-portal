@@ -59,7 +59,7 @@ Material comes in two forms, and a course may hold both:
 
 ![Further course content in the detailed view](../../img/screenshots/agent_view/courses/courses-detailed-view-2.png)
 
-![The remaining course content](../../img/screenshots/agent_view/courses/courses-detailed-view-3.png)
+![The rest of the course content, below the material already shown](../../img/screenshots/agent_view/courses/courses-detailed-view-3.png)
 
 Read the material before starting the quiz. The quiz is scored, and your result is recorded against the course.
 
