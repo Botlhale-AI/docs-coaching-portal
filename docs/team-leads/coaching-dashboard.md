@@ -24,7 +24,7 @@ You need:
 
 Two controls at the top of the page decide what everything below is calculated from.
 
-**View By** sets how much of the organisation you are looking at. It opens on **Entire Organisation** and narrows to a department or a team. What it offers you is bounded by your own access, so a team lead sees fewer choices than an administrator.
+**View By** sets how much of the organisation you are looking at. It opens on **Entire Organisation** and narrows to a department or a team. What it offers you stops at your access level, so a team lead sees fewer choices than an administrator.
 
 **Date range** sets the period. Select the **pencil** beside it to change the dates.
 

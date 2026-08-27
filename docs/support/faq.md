@@ -25,7 +25,7 @@ A: An agent sees their own interactions, scores, courses, and awards, never a co
 ## Courses and Awards
 
 **Q: How does an agent get a course?**
-A: By score. You set a **Training Initiation Score Range** on the course, and on each evaluation cycle every agent whose scores fall in that range receives it. Nobody assigns courses by hand.
+A: By score. You set a **Training Initiation Score Range** on the course, and on each evaluation cycle every agent whose scores fall in that range receives it. Nobody assigns courses manually.
 
 **Q: How long does an agent have to finish a course?**
 A: The **Deadline** on the course, set in days. Each agent's **Due Date** is worked out from the day they receive it, so two agents assigned on different days have different due dates.

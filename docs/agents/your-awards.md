@@ -53,7 +53,7 @@ Select **Download Award** to save the certificate. It carries your name, the awa
 ![The award certificate as it downloads, carrying the agent's name, the award, and the date](../../img/screenshots/agent_view/awards/award-template.png)
 
 :::note Awards follow your scores
-Your team lead sets the criteria and Vela presents the award when an agent meets them on the evaluation cycle. Nobody presents them by hand, so consistent work is what brings them.
+Your team lead sets the criteria and Vela presents the award when an agent meets them on the evaluation cycle. Nobody presents them manually, so consistent work is what brings them.
 :::
 
 ---

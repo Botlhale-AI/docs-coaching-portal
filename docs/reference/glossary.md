@@ -33,7 +33,7 @@ The **Auto Fails** panel on the Dashboard shows the proportion of calls affected
 
 Recognition presented automatically when an agent's score reaches the **Agent Score** set on the award. Awards carry a certificate the agent can download.
 
-Nobody presents an award by hand. See [Recognise Good Work](../team-leads/recognise-good-work.md).
+Nobody presents an award manually. See [Recognise Good Work](../team-leads/recognise-good-work.md).
 
 ## Category
 
