@@ -99,7 +99,18 @@ for (const file of files) {
   const raw = read(file);
   const fm = raw.match(/^---\n([\s\S]*?)\n---/);
 
-  if (fm && /^draft:\s*true$/m.test(fm[1])) continue;
+  if (fm && /^draft:\s*true$/m.test(fm[1])) {
+    // A draft page is excluded from the rest of the checks, but the screenshots
+    // it uses are still in use. Harvest them so they are not reported orphaned.
+    for (const m of raw.matchAll(/!\[[^\]]*\]\(([^)\s]+)\)/g)) {
+      const src = m[1];
+      const target = src.startsWith("/")
+        ? join(ROOT, "static", src)
+        : resolve(dirname(file), src);
+      if (existsSync(target)) referencedImages.add(key(target));
+    }
+    continue;
+  }
   live.push({ file, rel, raw });
 
   // --- Frontmatter -------------------------------------------------------

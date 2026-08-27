@@ -32,6 +32,13 @@ Select **Coaching** in the left sidebar, then **Awards**. Select the create cont
 | **Scope** | Whether the award covers the whole organisation, chosen departments, or chosen teams |
 | **Score Threshold (Range)** | The **Min** and **Max** scores that earn it |
 | **Award Message** | What the agent reads when it is presented to them |
+| **Custom Evaluation Cycle** | Off by default, so the award is checked on the organisation's cycle. Turning it on opens the same **Repeat every**, **Unit** and **Time** controls used in [Coaching Preferences](./coaching-preferences.md), and this award alone then runs on them |
+
+Select **Create Award** to save it, or **Close** to leave without saving.
+
+:::tip When a custom cycle is worth setting
+Leave it off for most awards, so everything is judged over the same period and the awards stay comparable. Turn it on for an award that only makes sense over a longer window, such as one recognising sustained performance across a quarter while your default cycle runs weekly.
+:::
 
 {/* SCREENSHOT NEEDED: the Create an Award form, showing Award Name, Award Category, Award Description, Scope, Score Threshold (Range) with its Min and Max, and Award Message. This is the only team lead form with no capture at all, and it is the one with the most fields. Suggested path: img/screenshots/team_lead/awards/create-award.png */}
 
@@ -45,15 +52,27 @@ That lets you recognise a tier rather than everyone above a line. A "top perform
 
 Write the **Award Message** as though speaking to the person. It is the part they actually read, and a specific sentence about what they did well is worth more than a generic congratulation.
 
-Select **Create Award** to save, or **Cancel** to return to the awards list.
-
 ---
 
 ## 2. See What Has Been Presented
 
-**Awards Presented** lists what has gone out, with the agent and the **Date Awarded**.
+The Awards page holds two collapsible sections: **Awards**, which is what you have defined, and **Awards Presented**, which is what has actually gone out.
 
-**Filter**, **Sort**, and the date range control sit above the list.
+![The Awards Presented list, with the agent, award, date and score](../../img/screenshots/team_lead/awards/awards-presented.png)
+
+Open **Awards Presented**. Each row is one award reaching one agent:
+
+| Column | What it shows |
+| :--- | :--- |
+| **Agent** | Who received it |
+| **Award Name** | Which award |
+| **Date Awarded** | When the evaluation cycle presented it |
+| **Score** | The score they held when it was presented |
+| **Download** | Saves the certificate |
+
+**Filter**, **Sort By**, and the date range sit above the list, and long lists are paged with **Previous** and **Next**.
+
+An empty list where you expected awards usually means the date range, not a fault. Awards are presented on the evaluation cycle, so a range that predates the last run shows nothing.
 
 ![The filter panel on the awards list](../../img/screenshots/team_lead/awards/filter.png)
 

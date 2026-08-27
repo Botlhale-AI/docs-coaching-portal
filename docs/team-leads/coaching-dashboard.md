@@ -20,11 +20,15 @@ You need:
 
 ---
 
-## 1. Set the Period
+## 1. Set the Period and the Scope
 
-Select the date range control at the top of the page and choose the dates. Everything below is recalculated for the period you pick.
+Two controls at the top of the page decide what everything below is calculated from.
 
-![The date range control on the Coaching Dashboard](../../img/screenshots/team_lead/dashboard/date-range.png)
+**View By** sets how much of the organisation you are looking at. It opens on **Entire Organisation** and narrows to a department or a team. What it offers you is bounded by your own access, so a team lead sees fewer choices than an administrator.
+
+**Date range** sets the period. Select the **pencil** beside it to change the dates.
+
+![The View By and date range controls at the top of the Coaching Dashboard](../../img/screenshots/team_lead/dashboard/date-range.png)
 
 Pick a period long enough to hold several interactions per agent. A week is usually the shortest useful range, and a month is better for judging a trend.
 
@@ -32,27 +36,65 @@ Pick a period long enough to hold several interactions per agent. A week is usua
 
 ## 2. Read the Figures
 
+Two cards sit side by side below the controls, and they are read together.
+
+![Auto Fails and Category Scores on the Coaching Dashboard](../../img/screenshots/team_lead/dashboard/dashboard-overview.png)
+
 ### A. Auto Fails
 
-{/* SCREENSHOT NEEDED: the Auto Fails panel, with the team figure and the per-agent breakdown. Section 2 is the substance of this page and currently carries no capture at all. Suggested path: img/screenshots/team_lead/dashboard/auto-fails.png */}
+**Auto Fails** is a single percentage: the share of calls in the period that failed a question your organisation marks as critical, across everything **View By** covers. The **information** icon beside the heading explains the figure in place.
 
-**Auto Fails** shows the proportion of calls that failed a question your organisation marks as critical, for the team and for each agent.
+An auto-fail takes an interaction to zero whatever else went well, so a rising figure here matters more than a few points off an average. It usually points at one requirement being missed repeatedly rather than at general performance.
 
-An auto-fail takes an interaction to zero whatever else went well, so a rising figure here matters more than a few points off an average. It usually points at one specific requirement being missed rather than general performance.
+Read this figure before the panel beside it, because a high auto-fail rate is what makes the scores in **Category Scores** collapse.
 
 ### B. Category Scores
 
-{/* SCREENSHOT NEEDED: the Category Scores panel with several categories visible and the horizontal scroll arrows, plus a second capture of one category expanded to show the agents inside it. Suggested paths: img/screenshots/team_lead/dashboard/category-scores.png and category-scores-expanded.png */}
+**Category Scores** breaks performance down by the categories your organisation groups its scorecard questions into. Each category is a column with its heading in capitals.
 
-**Category Scores** breaks scores down by the categories your organisation groups its scorecard questions into.
+The panel scrolls two ways, and the second one is often missed. It scrolls **sideways** through the categories, with a **chevron** appearing on whichever side has more to show and a **Scroll for more** hint at the foot. Each column also scrolls **down** on its own where it holds more groups than fit.
 
-This is the panel to plan coaching from. An agent below the team in one category has a specific, nameable gap. An agent below the team in every category is a different conversation.
+Every column reads the same way:
 
-Use **Sort By** with **Ascending** or **Descending** to bring the lowest or highest to the top, then **Apply**.
+| Line | What it is |
+| :--- | :--- |
+| The heading | The category name |
+| **Average** | The figure across everything **View By** covers |
+| The lines below | The same figure for each department or team within it |
 
-:::tip Sort ascending to find who needs you
-Sorting a category ascending puts the agents furthest behind at the top. That is your coaching list for the week, and it changes as scores move.
+Two numbers can appear on a line, as in `department one - 4%(36%)`:
+
+- The **first** figure is the score with auto-fails applied.
+- The figure **in brackets** is what was earned on the question wording alone, before auto-fails zeroed it.
+
+The bracket only appears when the two differ. A line with one figure had no auto-fails in that category, so nothing was taken away.
+
+That gap is the useful part. A line reading `0%(71%)` is not a group that knows nothing about the category. It is a group doing most of the category correctly whose score is being wiped by a critical failure. Coaching that failure recovers the whole column, and coaching the category does not.
+
+:::tip Where the coaching list comes from
+Read across a category and find the groups whose bracketed figure is high while the first figure is low. Those are being held back by one requirement, which is a specific and fixable conversation. A group low on both figures is a broader gap that a course suits better.
 :::
+
+Where a category has no interactions in the period, its column reads **No team data available** rather than showing zeroes.
+
+### C. Per-Category Performance
+
+Below the two cards, every category gets its own section, with the category name as the heading and a **chevron** to collapse it.
+
+![One category's section, with the Average Agent Performance and Department Performance charts](../../img/screenshots/team_lead/dashboard/category-performance.png)
+
+Each section holds two charts for that category alone:
+
+| Chart | What it shows |
+| :--- | :--- |
+| **Average Agent Performance** | A line across the period, so you can see when performance moved rather than only where it ended |
+| **Department Performance** | A bar for each department, so you can see which part of the organisation carries the result |
+
+The **fullscreen** control on a chart expands it, which is worth using on **Department Performance** where long department names are cut short.
+
+Read the line chart for timing and the bars for location. A drop that starts on one date points at something that happened, such as a process change or a new intake. A drop confined to one department points at that department.
+
+A category with nothing in the period reads **There is no data available in this category for the selected date range**. That is an empty period rather than a fault, and widening the date range is the first thing to try.
 
 ---
 

@@ -20,7 +20,22 @@ You need:
 
 ---
 
-## 1. Set the Evaluation Cycle
+## 1. Choose What Evaluations Are Based On
+
+{/* SCREENSHOT NEEDED: the Evaluation Scope section with both radio cards, All Interactions and Reviewed Interactions Only, and the selected one outlined. Suggested path: img/screenshots/team_lead/preferences/evaluation-scope.png */}
+
+Under **Evaluation Scope**, answer "Which interactions would you like these evaluations to apply to":
+
+| Option | What it means |
+| :--- | :--- |
+| **All Interactions** | Every processed interaction counts towards evaluation |
+| **Reviewed Interactions Only** | Only interactions a person has marked as reviewed count |
+
+**Reviewed Interactions Only** is the stricter setting. It means coaching follows human-checked work rather than AI scores alone, which is worth having if your reviewers add context. It also means an unreviewed backlog stops evaluations running, so pick it only if your team keeps up with reviewing.
+
+---
+
+## 2. Set the Evaluation Cycle
 
 The evaluation cycle is how often Vela reviews agents' scores and assigns the courses and awards they qualify for. Nothing is assigned between runs, so this setting decides how quickly coaching responds to a change in performance.
 
@@ -36,32 +51,19 @@ The page confirms your choice back to you, reading **Evaluate every 1 month(s)**
 
 ![The evaluation cycle settings, with the interval, unit, and time](../../img/screenshots/team_lead/preferences/evaluation-cycle.png)
 
+![Evaluation Scope and Evaluation Cycle at the top of the preferences page](../../img/screenshots/team_lead/preferences/evaluation-scope-and-cycle.png)
+
 Monthly suits most teams. Weekly responds faster but assigns courses on less evidence, so an agent can be given training for a bad week rather than a real gap.
 
 **Day of Month** stops at 28, with **Last** as the alternative. There is no 29th, 30th, or 31st, because those dates do not exist in every month. Where you want the end of the month, choose **Last**.
 
 ---
 
-## 2. Set the Pass Percentage
+## 3. Set the Pass Percentage
 
 {/* SCREENSHOT NEEDED: the Courses section of Preferences, showing the Pass Percentage input and the question above it. Suggested path: img/screenshots/team_lead/preferences/pass-percentage.png */}
 
 **Pass Percentage** is the share of the total quiz score an agent reaches to pass a course. It applies to every course, so it is set here rather than on each course.
-
----
-
-## 3. Choose What Evaluations Are Based On
-
-{/* SCREENSHOT NEEDED: the Evaluation Scope section with both radio cards, All Interactions and Reviewed Interactions Only, and the selected one outlined. Suggested path: img/screenshots/team_lead/preferences/evaluation-scope.png */}
-
-Under **Evaluation Scope**, answer "Which interactions would you like these evaluations to apply to":
-
-| Option | What it means |
-| :--- | :--- |
-| **All Interactions** | Every processed interaction counts towards evaluation |
-| **Reviewed Interactions Only** | Only interactions a person has marked as reviewed count |
-
-**Reviewed Interactions Only** is the stricter setting. It means coaching follows human-checked work rather than AI scores alone, which is worth having if your reviewers add context. It also means an unreviewed backlog stops evaluations running, so pick it only if your team keeps up with reviewing.
 
 ---
 
@@ -75,6 +77,8 @@ Answer "Which interactions would you like agents to be able to view":
 | **Reviewed Interactions Only** | Agents can only view their reviewed interactions |
 
 ![The agent view permissions setting, with both options](../../img/screenshots/team_lead/preferences/agent-view.png)
+
+![The pass percentage and agent view permissions, with Save beneath them](../../img/screenshots/team_lead/preferences/pass-percentage-and-agent-view.png)
 
 Reviewed-only is worth considering where your reviewers add context that changes how a score reads. It also means an unreviewed backlog is invisible to the agent, so their portal looks emptier than their work has been.
 
