@@ -55,3 +55,6 @@ temp/
 
 # macOS
 .DS_Store
+
+# This repository uses npm. A yarn.lock would diverge from what CI installs.
+yarn.lock

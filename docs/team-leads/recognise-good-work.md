@@ -84,9 +84,9 @@ An empty list where you expected awards usually means the date range, not a faul
 
 ## 3. Download a Certificate
 
-Select **Download Award** on a row to save that agent's certificate. It carries their name, the award, and the date.
+Select the **download** icon in the **Download** column to save that agent's certificate. It carries their name, the award, and the date.
 
-![The Download Award control on an award row, which saves the certificate](../../img/screenshots/team_lead/awards/download.png)
+![The download icon on an award row, which saves the certificate](../../img/screenshots/team_lead/awards/download.png)
 
 ![The certificate as it downloads, carrying the agent's name, the award, and the date](../../img/screenshots/team_lead/awards/certificate.png)
 

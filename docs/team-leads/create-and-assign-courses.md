@@ -40,7 +40,10 @@ The form is one page in four labelled parts, and **Add Details** is the first.
 | Field | What it does |
 | :--- | :--- |
 | **Title** | The name of the course. It is the **Course Title** agents see in their list |
-| **Category** | Groups related courses, and the category a caution counts failures against |
+| **Category** | Groups related courses |
+
+{/* When Cautions ships, Category also names what a caution counts failed courses against.
+    Add that to the row above and link issue-cautions.md. */}
 | **Description** | What the course covers, and why it was assigned |
 | **Scope** | Whether the course can reach the whole organisation, chosen departments, or chosen teams |
 | **Training Initiation Score Range** | The band of scores that receives the course |
