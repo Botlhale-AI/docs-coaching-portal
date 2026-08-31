@@ -8,8 +8,6 @@ Our audience is call centre team leads, QA managers, and administrators. They ar
 
 ---
 
----
-
 ## 0. How this site differs from docs-vela
 
 This guide is the Vela documentation style guide, adopted wholesale. Everything in it applies here. Two differences remain, and they override the equivalent instructions below. Everything else, including the linter, the build gates, and the CI workflow, now matches docs-vela.
@@ -87,7 +85,33 @@ Other punctuation:
 
 - Use the Oxford comma.
 - Avoid semicolons. Use two sentences.
-- Use `:` to introduce a list or a definition.
+- Use `:` to introduce a list or a definition, but not in the opening sentence of a page.
+
+### Where a colon does not belong
+
+A colon introduces a definition or lands a point. Two uses it should not be put to:
+
+**Not in the first sentence of a page.** Every page is page one. A reader often lands on it from search with no idea yet what the page is, and a colon in the opening sentence hands them a list before they know why they would want it. Say what the thing is, finish the sentence, then enumerate.
+
+| Instead of | Write |
+| :--- | :--- |
+| Your Smart Search terms are the four lists of things Vela looks for in your interactions: **Topics**, **Intents**, **Keywords**, and **Pain Points**. | Your Smart Search terms are the four lists of things Vela looks for in your interactions. They are **Topics**, **Intents**, **Keywords**, and **Pain Points**. |
+| Vela notifies you when something needs your attention: an alert, a comment, or a finished report. | Vela notifies you when something needs your attention. That might be an alert, a comment, or a finished report. |
+
+**Not to hide a list inside a sentence.** Where a colon is followed by three or more parallel items, it is a list wearing a sentence's clothes. Either make it a real list, or fold the items into the sentence. Eleven language names behind a colon is the clearest case: the reader is scanning for one of them and has to read a paragraph to find it.
+
+| Instead of | Write |
+| :--- | :--- |
+| Transcription covers all 11 official South African languages: Afrikaans, English, isiNdebele, and so on. | Transcription covers all 11 official South African languages. These are Afrikaans, English, isiNdebele, and so on. |
+| …choose how each is charted: table, bar, line, pie, doughnut, or card. | …choose how each is charted as a table, bar, line, pie, doughnut, or card. |
+
+**What the colon is still for.** A definition, and a pivot where the second half explains or lands the first. These are correct and should not be rewritten:
+
+- **Access level** is organisational, departmental, or team: it decides how much of the organisation you see.
+- The zero is the verdict: this interaction failed, whatever else went well.
+- An empty tab is a result, not a fault: it means nothing of that type is waiting.
+
+The test is whether the colon is followed by an enumeration or by an explanation. Enumeration belongs in a list. Explanation can stay.
 
 ---
 
@@ -123,6 +147,36 @@ Where Vela has a word for something, use that word everywhere, including in the 
 | period | **date range** | The control the reader opens is labelled Date Range |
 
 The last two are the common failure: inventing a plausible-sounding name for something that already has one. Search the product for your noun before you use it.
+
+### Use the word a reader already knows
+
+Prefer the ordinary word. A reader working through a problem should never stop to decode vocabulary, and English is a second or third language for many of the people using Vela.
+
+| Instead of | Write |
+| :--- | :--- |
+| cultural nuance | the agent said the right thing in another language, or in words the AI did not match |
+| a systemic issue | a problem across the team |
+| the direction of travel | whether the team is improving or slipping |
+| one week of movement is variation | one week up or down is normal movement |
+| the interaction is attributed to nobody | the interaction is linked to no agent |
+| in a fortnight | in two weeks |
+| one failure invalidates the interaction | one failure means the whole interaction has failed |
+
+The test: read the sentence as a QA specialist halfway through a shift. Anything that makes them pause is the wrong word, however precise it is.
+
+### Prose only where a table cannot carry it
+
+Reach for structure first, and write paragraphs only where the reason genuinely needs sentences.
+
+| Content | Form |
+| :--- | :--- |
+| An order of steps | A numbered list |
+| A comparison, or good against bad | A two-column table |
+| A set of checks | A table of what to check and what it tells you |
+| A dependency between stages | A mermaid diagram |
+| Why a rule exists, where it is not obvious | One or two sentences under the structure |
+
+A page of unbroken prose fails even when every sentence in it is correct. If a page tells the reader to skip to what they need, give them a table at the top that lets them.
 
 ### Avoid developer words for ordinary things
 
@@ -168,7 +222,7 @@ Name the band, then say what it means in numbers, or point at where the numbers 
 | Agents in the red band need attention | Agents below the Lower Bound, shown in red, need attention |
 | The score turns green above the threshold | The score is green at or above the Upper Bound, which defaults to `80` |
 
-The boundaries are configurable, so a page that states a default must say so. [Organisation Configuration](./docs/settings-config/organisation-configuration.md) is the page that owns the actual numbers, including which end of each band is inclusive; link to it rather than restating the ranges.
+The boundaries are configurable, so a page that states a default must say so. [Organisation Configuration](https://docs-vela.botlhale.ai/docs/settings-config/organisation-configuration) in the Vela documentation is the page that owns the actual numbers, including which end of each band is inclusive; link to it rather than restating the ranges.
 
 The same rule applies to anything else where colour is the signal in the interface, such as a dark cell on a heatmap or a status dot. Say what the colour means, not only that it is there.
 
@@ -385,8 +439,8 @@ Anything else that mixes types is a defect, not a deviation.
 - **Headings**: Title Case, matching the existing pages. Keep it consistent within a page. Explanation pages are the exception: they may use sentence-case headings that state the point, such as "Every interaction is scored, not a sample", because a reader skimming the argument gets more from a claim than from a label.
 - **Closing sections**: use `## Related` for links to other pages and `## Need Help?` for the support address. A page that hands the reader to a specific next task may use `## Next Steps` instead of Related. Do not invent further variants.
 - **Numbering H2s**: number them (`## 1. Open the Report Builder`) when the sections are a sequence the reader works through in order. Leave them unnumbered when the sections are independent and a reader may start at any of them. Both forms are in use, so match the page you are editing rather than converting it.
-- One H1, at the top of the body. Docusaurus renders that as the page heading instead of adding its own, so a second H1 never appears.
-- Keep the H1 and the frontmatter `title` saying the same thing. The title is what the sidebar, browser tab, and search results show, so a reader who selects "Data Upload Guide" should not land on a page headed something else.
+- No H1 in the body. The theme renders the frontmatter `title` as the page heading, so a `# Heading` produces a second title on the page. Start with the opening paragraph. See section 0.
+- Keep the frontmatter `title` saying what the page is. It is the page heading, and it is also what the sidebar, browser tab, and search results show, so a reader who selects "Track Learning Progress" should not land on a page that opens by describing something else.
 - Do not skip heading levels.
 - **UI elements** in bold: select **Apply**.
 - **Field values and code** in backticks: set `sender` to `user`.
@@ -422,7 +476,7 @@ The title is the main thing a reader has to judge a search result by, and most o
 
 **Match the verb to the whole page, not its first section.** "Create a Smart Search" names one section of a page that also covers matching, tuning, alerts, analysis, and troubleshooting. "Set Up" covers all of it. If no single verb fits the page, it is doing several jobs and should be split.
 
-**In prose, link the feature name. In a Related list, link the title.** "See [Smart Search](./smart-search-guide.md)" reads as English mid-sentence. "[Set Up Smart Search](./smart-search-guide.md): build the searches that flag interactions" tells a reader what they will land on. Both are right in their place, and neither is a stale name.
+**In prose, link the feature name. In a Related list, link the title.** `[Smart Search](./smart-search-guide.md)` reads as English mid-sentence. `[Set Up Smart Search](./smart-search-guide.md): build the searches that flag interactions` tells a reader what they will land on. Both are right in their place, and neither is a stale name.
 
 This follows [GitLab's task topics](https://docs.gitlab.com/development/documentation/topic_types/task/), which use an active verb with the feature noun, and [Stripe](https://docs.stripe.com/payments/checkout), which titles a hub page with a verb spanning the whole journey ("Build a payments page"). [Diátaxis](https://diataxis.fr/how-to-guides/) ranks a bare feature name as the worst option for a how-to.
 
@@ -458,7 +512,7 @@ A screenshot is a claim about the product, and it ages faster than the text arou
 - **Numbered callouts may be drawn on top of a capture.** They add to the image rather than changing it, so the "never alter a value" rule does not apply: nothing underneath is hidden or altered. Keep them to screens dense enough that a reader has to hunt, number them in the same order as the numbered steps in the text, and never let a marker cover a label or a value. A callout that needs a caption to make sense is doing too much work, so split the screenshot instead.
 - **Shoot in Dark Mode.** Vela opens in Dark Mode, and the existing captures are almost all dark, so a light capture dropped into a dark page reads as a different product. Keep the whole corpus in one mode.
 
-  The exception is [Account and Security](docs/settings-config/account-security.md), where the section on choosing a display mode needs both, because the subject *is* the difference between them. If a page ever needs a light capture for another reason, pair it with the dark one rather than substituting it, and say in the alt text which mode is shown.
+  The one page with a reason to show both is [Account and Security](https://docs-vela.botlhale.ai/docs/settings-config/account-security) on the Vela site, where the subject *is* the difference between the modes. Nothing here has that subject, so every capture on this site is dark. If a page ever needs a light capture for another reason, pair it with the dark one rather than substituting it, and say in the alt text which mode is shown.
 
   The switch is the sun and moon control in the top navigation bar. Check which mode you are in before you shoot: it persists to your account, so it carries over from your last session on another machine.
 
@@ -522,7 +576,7 @@ An image nobody references is dead weight. Find them with a diff of what exists 
 10. Does the procedure exist somewhere else already?
 11. Do the screenshots show the current navigation, and no internal-only entries?
 12. Did you open the page in a browser and look at the diagrams?
-13. If you renamed a page, does the new title still match the H1, the sidebar label, the navigation table in [DOCUMENTATION_FRAMEWORK.md](./DOCUMENTATION_FRAMEWORK.md) section 4, and the link text on every page that points at it?
+13. If you renamed a page, does the new title still match the sidebar label, the navigation table in [DOCUMENTATION_FRAMEWORK.md](./DOCUMENTATION_FRAMEWORK.md) section 4, and the link text on every page that points at it?
 14. Does `npm run lint:docs` pass?
 15. Does `npm run build` pass?
 

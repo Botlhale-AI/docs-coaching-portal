@@ -7,7 +7,7 @@ pagination_prev: agents/your-awards
 pagination_next: null
 ---
 
-The **ADMIN** section at the foot of the left sidebar holds two pages: **Notifications**, where the portal tells you about new awards, courses, and comments, and **Settings**, where you check your account details and change your password.
+The **ADMIN** section at the foot of the left sidebar holds two pages. **Notifications** tells you about new awards, courses, and comments. **Settings** is where you check your account details and change your password.
 
 ---
 
