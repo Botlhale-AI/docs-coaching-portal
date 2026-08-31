@@ -22,6 +22,8 @@ You need:
 
 ## 1. Set the Period and the Scope
 
+Select **Coaching** in the left sidebar, then **Dashboard**.
+
 Two controls at the top of the page decide what everything below is calculated from.
 
 **View By** sets how much of the organisation you are looking at. It opens on **Entire Organisation** and narrows to a department or a team. What it offers you stops at your access level, so a team lead sees fewer choices than an administrator.

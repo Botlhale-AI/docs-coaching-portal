@@ -7,7 +7,7 @@ pagination_prev: agents/your-interactions
 pagination_next: agents/your-awards
 ---
 
-**Courses** in the left sidebar holds the training assigned to you. Vela assigns courses on your organisation's evaluation cycle, based on how you have scored, so a course arrives because your figures qualified you for it rather than because someone picked you.
+**Courses** in the left sidebar holds the training assigned to you. Vela assigns courses on your organisation's [evaluation cycle](../reference/glossary.md#evaluation-cycle), based on how you have scored, so a course arrives because your figures qualified you for it rather than because someone picked you.
 
 ---
 
@@ -15,7 +15,7 @@ pagination_next: agents/your-awards
 
 You need:
 
-- **A course assigned to you.** Your team lead creates courses and sets a **Training Initiation Score Range** on each course. Until your scores fall in a range, the list is empty.
+- **A course assigned to you.** Your team lead creates courses and sets a [**Training Initiation Score Range**](../reference/glossary.md#training-initiation-score-range) on each course. Until your scores fall in a range, the list is empty.
 - **To know your organisation's pass mark.** Your team lead sets one pass percentage for all courses, so the mark is the same whichever course you take.
 
 ---

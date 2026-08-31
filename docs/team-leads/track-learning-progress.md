@@ -33,7 +33,7 @@ Select **Coaching** in the left sidebar, then **Progress**. Each row pairs an ag
 | **Status** | **Not Started**, **In Progress**, or **Complete**, colour-coded red, amber and green |
 | **Date Assigned** | When they received it |
 | **Due Date** | Worked out from the deadline set on the course |
-| **Initiation Score** | The agent's score at the time the course was assigned, which is the score that put them inside the course's **Training Initiation Score Range** |
+| [**Initiation Score**](../reference/glossary.md#initiation-score) | The agent's score at the time the course was assigned, which is the score that put them inside the course's **Training Initiation Score Range** |
 | **Score** | Their result on the quiz, where they have finished it |
 
 The two score columns sit side by side so you can read them together. **Initiation Score** is where the agent was before the course, and **Score** is how they did on it. A course assigned at 40% and passed at 90% tells you the assignment was aimed correctly.

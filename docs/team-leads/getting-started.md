@@ -29,9 +29,9 @@ You need:
 
 ## 1. Set the Cycle First
 
-Select **Coaching**, then **Preferences**.
+Select **Coaching** in the left sidebar, then **Preferences**.
 
-Set the evaluation cycle before anything else. It decides how often Vela reviews scores and assigns what agents have qualified for, and nothing is assigned between runs. A course built without knowing the cycle looks broken for a month.
+Set the [evaluation cycle](../reference/glossary.md#evaluation-cycle) before anything else. It decides how often Vela reviews scores and assigns what agents have qualified for, and nothing is assigned between runs. A course built without knowing the cycle looks broken for a month.
 
 Set the **Pass Percentage** at the same time. It applies to every course you build afterwards.
 
@@ -57,7 +57,7 @@ Select **Courses**, then **Create Course**.
 
 Name it for the gap, describe what it covers in terms the agent recognises, and attach your material. Add a quiz so completion means something. Set the **Deadline** in days and the scope.
 
-The **Training Initiation Score Range** is what decides who receives it. Narrow it to the agents you saw behind in step 2. A wide range reaches everyone and measures nothing.
+The [**Training Initiation Score Range**](../reference/glossary.md#training-initiation-score-range) is what decides who receives it. Narrow it to the agents you saw behind in step 2. A wide range reaches everyone and measures nothing.
 
 See [Create and Assign Courses](./create-and-assign-courses.md).
 

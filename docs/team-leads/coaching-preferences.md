@@ -24,6 +24,8 @@ You need:
 
 {/* SCREENSHOT NEEDED: the Evaluation Scope section with both radio cards, All Interactions and Reviewed Interactions Only, and the selected one outlined. Suggested path: img/screenshots/team_lead/preferences/evaluation-scope.png */}
 
+Select **Coaching** in the left sidebar, then **Preferences**.
+
 Under **Evaluation Scope**, answer "Which interactions would you like these evaluations to apply to":
 
 | Option | What it means |

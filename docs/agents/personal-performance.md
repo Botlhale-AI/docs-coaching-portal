@@ -38,7 +38,7 @@ Start with a period long enough to hold several interactions. A single day rarel
 
 **Auto Fails** shows the proportion of your calls that failed a question your organisation marks as critical, next to the same figure for your team.
 
-An auto-fail takes the whole interaction to zero whatever else went well, so this is the panel to look at first. A figure above your team's is worth a conversation with your team lead about which question is failing.
+An [auto-fail](../reference/glossary.md#auto-fail) takes the whole interaction to zero whatever else went well, so this is the panel to look at first. A figure above your team's is worth a conversation with your team lead about which question is failing.
 
 ### B. Category Scores
 
