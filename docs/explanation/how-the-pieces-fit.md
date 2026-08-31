@@ -30,6 +30,8 @@ What connects them is the evaluation cycle. Team leads define, the cycle distrib
 
 ## What depends on what
 
+Preferences sits at the top of everything. Its four settings fan out into the rest of coaching: **Evaluation Scope** decides which interactions produce the scores, and those scores are what the Dashboard shows and what a course or award range is measured against. **Evaluation Cycle** decides when that measurement runs, and the run is what assigns courses and presents awards, which is what Progress then records. **Pass Percentage** decides whether a quiz result in Progress reads as a pass. **Agent View Permissions** sits apart from all of it, governing only what an agent can open under Interactions.
+
 ```mermaid
 flowchart TD
     P("Preferences") --> C("Evaluation Cycle")

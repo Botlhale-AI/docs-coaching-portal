@@ -9,13 +9,17 @@ pagination_next: null
 
 **Preferences** holds the settings that govern all coaching in your organisation: how often Vela evaluates agents, what counts as passing a course, which interactions evaluations are based on, and how much of their own work agents can see. These apply organisation-wide rather than per course or per agent.
 
+:::note Reading and changing are different permissions
+Everyone who can reach this page can read it. Changing anything on it needs organisational access **and** the admin role. With one but not the other the controls open greyed out, with no message explaining why.
+:::
+
 ---
 
 ## Before You Begin
 
 You need:
 
-- **Organisational access and the admin role.** The form is read-only unless you have both. Someone with organisational access but a different role can see these settings and not change them.
+- **Organisational access and the admin role.** See [Access Level](../reference/glossary.md#access-level).
 - **To decide before agents are invited.** The agent view setting changes what people have already been able to see, so agree it early rather than after.
 
 ---
@@ -84,7 +88,9 @@ Answer "Which interactions would you like agents to be able to view":
 
 Reviewed-only is worth considering where your reviewers add context that changes how a score reads. It also means an unreviewed backlog is invisible to the agent, so their portal looks emptier than their work has been.
 
-Agree this before agents are invited. Changing it later changes what they have already been able to see.
+:::warning This setting applies backwards, not from the next cycle
+Everything else on this page takes effect at the next evaluation cycle. This one takes effect at once, across an agent's whole history. Moving from **All Interactions** to **Reviewed Interactions Only** withdraws interactions an agent could open yesterday, including ones they have already read and been coached on. Agree it before agents are invited.
+:::
 
 ---
 

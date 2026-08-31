@@ -9,7 +9,7 @@ pagination_next: null
 
 What has changed in each release of the Coaching Portal, newest first.
 
-The Coaching Portal is an add-on to Vela. Changes to the wider platform, such as Smart Detector, reporting, and data upload, are recorded in the [Vela release notes](https://docs-vela.botlhale.xyz/docs/release-notes) rather than here.
+The Coaching Portal is an add-on to Vela. Changes to the wider platform, such as Smart Detector, reporting, and data upload, are recorded in the [Vela release notes](https://docs-vela.botlhale.ai/docs/release-notes) rather than here.
 
 ---
 

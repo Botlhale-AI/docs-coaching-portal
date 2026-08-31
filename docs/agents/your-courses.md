@@ -91,10 +91,13 @@ Select **Review Quiz** to read back an attempt you have already submitted.
 
 Your team lead sets **Quiz Retakes** on each course, between 1 and 5, so the number is not the same on every course. The quiz page shows how many you have left.
 
-Two things follow from that, and they matter:
+The count is shown wherever you can act on it: the quiz page reads **You have 2 retakes remaining**, and the button itself is labelled **Retake Quiz (2 left)**. When they are gone it reads **You have no retakes remaining**.
 
-- Running out of retakes closes the course. It moves to **Completed Courses** with the last score you got, whether or not you passed. Retaking is not available afterwards.
-- Because of this, a low first attempt is worth using a retake on rather than leaving. Read the material again before spending the next one.
+:::warning Running out of retakes closes the course
+The course moves to **Completed Courses** with the last score you got, whether or not you passed, and you cannot take it again. Check the number on the button before you start an attempt.
+:::
+
+A low first attempt is worth spending a retake on rather than leaving. Read the material again before you use the next one.
 
 Passing moves the course into **Completed Courses** too, which is the outcome you want from the same list position.
 

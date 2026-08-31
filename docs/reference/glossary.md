@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-Definitions of the terms used in the Coaching Portal and in this documentation. Terms that belong to the main Vela platform rather than to coaching are defined in the [Vela Glossary](https://docs.botlhale.xyz/docs/reference/glossary).
+Definitions of the terms used in the Coaching Portal and in this documentation. Terms that belong to the main Vela platform rather than to coaching are defined in the [Vela Glossary](https://docs-vela.botlhale.ai/docs/reference/glossary).
 
 ---
 
@@ -16,6 +16,20 @@ Definitions of the terms used in the Coaching Portal and in this documentation. 
 A person whose interactions Vela analyses. In coaching, an agent is also someone who signs in to the Coaching Portal to see their own scores, work through courses, and read feedback.
 
 An agent sees their own work only, never a colleague's.
+
+## Access Level
+
+How much of the organisation you can see and act on. Set on your user record in the main Vela platform, not in coaching, and it decides which agents appear on the Coaching Dashboard and how far a course or award can reach.
+
+| Level | Covers |
+| :--- | :--- |
+| **Organisational** | The whole organisation |
+| **Departmental** | Your department |
+| **Team** | Your team |
+
+Access level and role are two separate things, and coaching needs both in one place: changing **Coaching → Preferences** requires organisational access **and** the admin role. With one but not the other the form opens read-only.
+
+For the platform-wide detail, see [Access Level](https://docs-vela.botlhale.ai/docs/reference/glossary) in the Vela Glossary.
 
 ## Agent View Permissions
 
@@ -28,6 +42,8 @@ Reviewed-only means an unreviewed backlog is invisible to the agent. See [Set Co
 A question your organisation marks as critical. Failing it takes the whole interaction to zero whatever else went well.
 
 The **Auto Fails** panel on the Dashboard shows the proportion of calls affected, for an agent and for their team.
+
+The main Vela platform writes this as **Auto-Fail**, with a hyphen. It is the same measure, spelled as each screen spells it.
 
 ## Award
 
@@ -63,6 +79,8 @@ Nothing is assigned between runs. A course created today reaches agents at the n
 
 Which interactions count towards evaluation: **All Interactions**, or **Reviewed Interactions Only**. Separate from [Agent View Permissions](#agent-view-permissions), which controls what agents see rather than what evaluations use.
 
+Marking an interaction as reviewed happens in the main Vela platform, not in coaching. See [Review Status](https://docs-vela.botlhale.ai/docs/reference/glossary) in the Vela Glossary. On **Reviewed Interactions Only**, coaching moves only as fast as reviewing does.
+
 ## Final Score
 
 An agent's result on a course quiz. Where they took the course more than once, [Initiation Score](#initiation-score) records the first attempt alongside it.
@@ -83,9 +101,17 @@ The share of the total quiz score an agent reaches to pass a course. Set once un
 
 The page pairing each agent with each course assigned to them, and its status: **Not Started**, **In Progress**, or **Complete**. See [Track Learning Progress](../team-leads/track-learning-progress.md).
 
+## Quiz Retakes
+
+How many attempts an agent gets at a course quiz, from 1 to 5. Set on each course, so it varies between courses, unlike the [Pass Percentage](#pass-percentage), which is set once for the organisation.
+
+When the last retake is used the course is marked **Complete** whatever the agent scored, so **Complete** on its own does not mean passed. Read it together with **Score**.
+
 ## Scorecard
 
-The set of questions each interaction is scored against, configured in the main Vela platform rather than in the Coaching Portal. Its results are what coaching acts on.
+The set of questions each interaction is scored against, configured in the main Vela platform rather than in the Coaching Portal. Its results are what coaching acts on. The platform calls it the **Agent Scorecard**, and building one is covered in the [Vela documentation](https://docs-vela.botlhale.ai/docs/agent-scorecard-guide).
+
+This is the ceiling on what coaching can do. A gap your scorecard does not ask about produces no score, so no course range can find the agents who have it.
 
 An agent sees the outcome per question on the **Scorecard** tab of an interaction. See [Review Your Interactions](../agents/your-interactions.md).
 

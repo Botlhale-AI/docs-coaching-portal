@@ -124,7 +124,11 @@ These three sit together below the quiz, and they decide how much room an agent 
 
 **Quiz Retakes** sets how many attempts an agent gets at the quiz, from 1 to 5. New courses start at 3.
 
-Retakes matter more than they look. When an agent uses their last one, the course is marked complete whatever they scored, so the number you set here decides how long a struggling agent can keep trying before the course closes on them. Their first result is kept separately as the **Initiation Score**, so improvement across attempts stays visible.
+The number you set decides how long a struggling agent can keep trying before the course closes on them. Their first result is kept separately as the **Initiation Score**, so improvement across attempts stays visible.
+
+:::warning Running out of retakes looks the same as passing
+When an agent uses their last retake, the course is marked **Complete** whatever they scored. On the **Progress** table that row is indistinguishable at a glance from one that passed, so a course nobody could pass reads as a course everybody finished. Read **Complete** together with **Score**, which shows in red below the pass mark.
+:::
 
 The pass mark itself is set once for all courses under Preferences, not per course. See [Set Coaching Preferences](./coaching-preferences.md).
 
