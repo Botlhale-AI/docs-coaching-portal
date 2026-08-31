@@ -32,7 +32,7 @@ Three controls sit above the list:
 | **Sort** | Orders the list on a column you choose |
 | **Filter** | Opens a panel where you narrow the list, then select **Apply** |
 
-![The Calls list in the Coaching Portal, showing the agent's own processed calls with the search, sort, and filter controls above it](../../img/screenshots/agent_view/interactions/interactions-calls-overview.png)
+![The Calls list in the Agent Portal, showing the agent's own processed calls with the search, sort, and filter controls above it](../../img/screenshots/agent_view/interactions/interactions-calls-overview.png)
 
 ![The sort control open on the interactions list, with the columns you can order by](../../img/screenshots/agent_view/interactions/interactions-sort.png)
 

@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: agents/personal-performance
 ---
 
-The Coaching Portal is where you see how your conversations scored, work through training assigned to you, and read your team lead's feedback. It is separate from the main Vela platform your team lead uses, and it shows your own work only.
+The Agent Portal is where you see how your conversations scored, work through training assigned to you, and read your team lead's feedback. It is separate from the main Vela platform your team lead uses, and it shows your own work only.
 
 This page takes you through signing in for the first time and finding each part of the portal. It takes about ten minutes.
 
@@ -32,7 +32,7 @@ You need:
 
 Signing in takes you straight to your **Dashboard**.
 
-![The Coaching Portal sign-in page, with the email and password fields](../../img/screenshots/agent_view/auth/login.png)
+![The Agent Portal sign-in page, with the email and password fields](../../img/screenshots/agent_view/auth/login.png)
 
 :::note Signing in with Google or Microsoft
 Where your organisation uses Single Sign-On, use **Sign in with Google** or **Sign in with Microsoft** instead. You do not set a portal password, and the **security** tab does not appear.
@@ -55,7 +55,7 @@ The left sidebar holds everything, in two groups.
 | **Courses** | Training assigned to you |
 | **Awards** | Recognition you have been presented |
 
-![The Coaching Portal sidebar, with the TOOLS and ADMIN groups](../../img/screenshots/agent_view/agent_sidebar.png)
+![The Agent Portal sidebar, with the TOOLS and ADMIN groups](../../img/screenshots/agent_view/agent_sidebar.png)
 
 **ADMIN** is your account:
 

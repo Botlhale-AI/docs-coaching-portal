@@ -7,7 +7,7 @@ pagination_prev: agents/getting-started
 pagination_next: agents/your-interactions
 ---
 
-Your **Dashboard** is the first thing you see when you sign in to the Coaching Portal. It shows how your interactions have scored over a period you choose, and how your figures compare with your team's.
+Your **Dashboard** is the first thing you see when you sign in to the Agent Portal. It shows how your interactions have scored over a period you choose, and how your figures compare with your team's.
 
 ---
 
@@ -28,7 +28,7 @@ Select the date range control at the top of the page to choose the period. Every
 
 Start with a period long enough to hold several interactions. A single day rarely says much about a trend.
 
-![The Coaching Portal Dashboard, with the date range control at the top and the Auto Fails and Category Scores panels below it](../../img/screenshots/agent_view/dashboard/dashboard-overview.png)
+![The Agent Portal Dashboard, with the date range control at the top and the Auto Fails and Category Scores panels below it](../../img/screenshots/agent_view/dashboard/dashboard-overview.png)
 
 ---
 

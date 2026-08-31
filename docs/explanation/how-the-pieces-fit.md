@@ -20,7 +20,7 @@ Coaching spans two applications that look nothing alike.
 | | Where it lives | Who signs in |
 | :--- | :--- | :--- |
 | **The coaching side of Vela** | **Coaching** in the main Vela sidebar | Team leads, QA managers, administrators |
-| **The Coaching Portal** | A separate portal at its own address | Agents |
+| **The Agent Portal** | A separate portal at its own address | Agents |
 
 A team lead never sees the portal an agent uses, and an agent never sees the Coaching section. This is why the documentation is split by audience rather than by feature, and why a team lead cannot answer "what does this look like on my screen?" for an agent from memory.
 

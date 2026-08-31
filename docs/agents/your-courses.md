@@ -32,7 +32,7 @@ Select **Courses** in the left sidebar. The page groups what you have by where y
 
 **Search**, **Sort**, and **Filter** sit above the list for when you have more than a screenful.
 
-![The Courses page in the Coaching Portal, with courses grouped by assigned, in progress, and completed](../../img/screenshots/agent_view/courses/courses-overview.png)
+![The Courses page in the Agent Portal, with courses grouped by assigned, in progress, and completed](../../img/screenshots/agent_view/courses/courses-overview.png)
 
 ![The quick search control above the courses list](../../img/screenshots/agent_view/courses/quick-search.png)
 

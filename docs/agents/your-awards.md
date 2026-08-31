@@ -24,7 +24,7 @@ You need:
 
 Select **Awards** in the left sidebar. Each award shows its name and the date it was awarded.
 
-![The Awards page in the Coaching Portal, listing the awards presented to this agent](../../img/screenshots/agent_view/awards/awards-overview.png)
+![The Awards page in the Agent Portal, listing the awards presented to this agent](../../img/screenshots/agent_view/awards/awards-overview.png)
 
 Two controls sit above the list:
 

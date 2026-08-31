@@ -27,9 +27,15 @@ For the platform-wide detail, see [Access Level](https://docs-vela.botlhale.ai/d
 
 ## Agent
 
-A person whose interactions Vela analyses. In coaching, an agent is also someone who signs in to the Coaching Portal to see their own scores, work through courses, and read feedback.
+A person whose interactions Vela analyses. An agent needs no login to be scored. Where your organisation uses the [Agent Portal](#agent-portal), an agent also signs in there to see their own scores, work through courses, and read feedback.
 
-An agent sees their own work only, never a colleague's.
+## Agent Portal
+
+The separate application agents sign in to, at its own address. The main Vela sign-in page offers **Go to Agent Portal Login**, which is the control that takes an agent to it.
+
+Every query in it is scoped to the signed-in agent, so an agent sees their own work only, never a colleague's.
+
+The Agent Portal is one half of the [Coaching Portal](#coaching-portal) add-on. The other half is the **Coaching** section inside the main Vela platform, which is where team leads work.
 
 ## Agent View Permissions
 
@@ -58,6 +64,12 @@ Two different things share this word.
 On the **Dashboard**, a category groups related scorecard questions, such as Customer Care or Compliance. **Category Scores** breaks performance down by these.
 
 On a course or an award, **Category** groups related courses or awards so they are easier to find in a long list.
+
+## Coaching Portal
+
+The coaching add-on as a whole, and the name of this documentation. It has two halves: the **Coaching** section inside the main Vela platform, where team leads build courses and awards, and the [Agent Portal](#agent-portal), where agents receive them.
+
+"Coaching Portal" names the add-on rather than a screen. No control in Vela carries the words, so an agent looking for somewhere to sign in wants the Agent Portal.
 
 ## Course
 
@@ -91,7 +103,7 @@ An agent's result on their first attempt at a course, kept when they retake it. 
 
 ## Interaction
 
-A single customer conversation, either a **call** (voice) or a **chat** (text). The Coaching Portal uses "interaction" as the collective term for both.
+A single customer conversation, either a **call** (voice) or a **chat** (text). Vela uses "interaction" as the collective term for both.
 
 ## Pass Percentage
 
