@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-Every figure coaching shows, on the team lead side and in the agent portal, with what it measures and what a reader should take from it.
+Every figure coaching shows, on the team lead side and in the Agent Portal, with what it measures and what a reader should take from it.
 
 Interpretation is included on purpose. Knowing that Auto Fails is a percentage is accurate and not much use on its own. Knowing that a rising one points at a single requirement is the part a team lead came for.
 
