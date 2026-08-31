@@ -24,9 +24,14 @@ You need:
 
 Select **Awards** in the left sidebar. Each award shows its name and the date it was awarded.
 
-**Sort** and the date range control sit above the list, so you can bring the most recent to the top or narrow to a period.
-
 ![The Awards page in the Coaching Portal, listing the awards presented to this agent](../../img/screenshots/agent_view/awards/awards-overview.png)
+
+Two controls sit above the list:
+
+| Control | What it does |
+| :--- | :--- |
+| **Sort** | Brings the most recent to the top, or orders by name |
+| The date range | Narrows the list to a period |
 
 ![The sort control open on the awards list](../../img/screenshots/agent_view/awards/sort.png)
 
@@ -34,21 +39,27 @@ Select **Awards** in the left sidebar. Each award shows its name and the date it
 
 ---
 
-![The view control on the awards list](../../img/screenshots/agent_view/awards/view.png)
-
----
-
 ## 2. Open an Award
 
-Select an award to see it in full. The detailed view shows the **Award Description**, which says what the award recognises, and the **Award Message** your team lead wrote when presenting it.
+Select an award to open **Award Details**.
 
-![An award open in the detailed view, showing its description and the message written when it was presented](../../img/screenshots/agent_view/awards/awards-detailed-view.png)
+![An award open in the detailed view, showing what it recognises](../../img/screenshots/agent_view/awards/awards-detailed-view.png)
+
+The page holds what your team lead set when they created the award:
+
+| Section | What it holds |
+| :--- | :--- |
+| The description | What the award recognises |
+| **Message from your team lead** | What they wrote when presenting it to you |
+| The certificate | A preview, above the **Download** control |
+
+![Award Details, with the message from the team lead above the certificate and the Download control](../../img/screenshots/agent_view/awards/view.png)
 
 ---
 
 ## 3. Download the Certificate
 
-Select **Download Award** to save the certificate. It carries your name, the award, and the date, and it is yours to keep or share.
+Select **Download** to save the certificate. It carries your name, the award, and the date, and it is yours to keep or share.
 
 ![The award certificate as it downloads, carrying the agent's name, the award, and the date](../../img/screenshots/agent_view/awards/award-template.png)
 
@@ -60,7 +71,7 @@ Your team lead sets the criteria and Vela presents the award when an agent meets
 
 ## Check Your Work
 
-Open **Awards** and confirm the award appears with the date you expect, and that **Download Award** produces a certificate with your name on it.
+Open **Awards** and confirm the award appears with the date you expect, and that **Download** produces a certificate with your name on it.
 
 An award you were told about but cannot see may have been presented outside the period your date range covers. Widen it before asking.
 

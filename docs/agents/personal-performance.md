@@ -34,6 +34,15 @@ Start with a period long enough to hold several interactions. A single day rarel
 
 ## 2. Read Your Figures
 
+The page holds four panels. Each compares you with your team, which is what makes the figures mean something.
+
+| Panel | What it shows | Read it for |
+| :--- | :--- | :--- |
+| **Auto Fails** | The share of your calls that failed a critical question, beside the same figure for your team | Whether one requirement is costing you whole interactions |
+| **Category Scores** | Your score per category, beside your team's | Which specific area to work on |
+| **Average Agent Performance** | The trend across the period | Direction, rather than any single day |
+| **Individual Agent Performance** | Your own figure on its own | Where you stand right now |
+
 ### A. Auto Fails
 
 **Auto Fails** shows the proportion of your calls that failed a question your organisation marks as critical, next to the same figure for your team.

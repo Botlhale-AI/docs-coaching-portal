@@ -7,7 +7,19 @@ pagination_prev: null
 pagination_next: null
 ---
 
-Coaching in Vela is automatic in a specific and limited sense: you define the criteria, and a scheduled job applies them. Nothing is assigned manually, and nothing is assigned continuously. This page explains what runs, when, and what the numbers it produces do and do not tell you.
+Coaching in Vela is automatic in a specific and limited sense: you define the criteria, and a scheduled job applies them. Nothing is assigned manually, and nothing is assigned continuously.
+
+Seven rules follow from that, and each has a section below.
+
+| Rule | What it means in practice |
+| :--- | :--- |
+| [Coaching is an add-on](#coaching-is-an-add-on-and-it-is-off-by-default) | Where it is off, none of it exists. An empty screen may be the setting rather than a fault |
+| [Everything happens on the cycle](#everything-happens-on-the-cycle-and-only-on-the-cycle) | A course you build this morning reaches nobody until the next run |
+| [Assignment is by score](#assignment-is-by-score-never-by-name) | You cannot give a course to one named person |
+| [A range is a band](#a-range-is-a-band-not-a-threshold) | An agent above the ceiling is left out on purpose |
+| [Scores carry some things, not others](#what-the-scores-can-carry-and-what-they-cannot) | Use scores to choose who to look at, and interactions to decide what to say |
+| [Auto-fails are a different signal](#auto-fails-are-a-different-kind-of-signal) | One critical failure is not a drifting average |
+| [Results are recorded, not judged](#the-results-are-recorded-not-judged) | Vela reports what happened and leaves the conclusion to you | This page explains what runs, when, and what the numbers it produces do and do not tell you.
 
 ---
 
