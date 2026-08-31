@@ -17,9 +17,11 @@ Seven rules follow from that, and each has a section below.
 | [Everything happens on the cycle](#everything-happens-on-the-cycle-and-only-on-the-cycle) | A course you build this morning reaches nobody until the next run |
 | [Assignment is by score](#assignment-is-by-score-never-by-name) | You cannot give a course to one named person |
 | [A range is a band](#a-range-is-a-band-not-a-threshold) | An agent above the ceiling is left out on purpose |
-| [Scores carry some things, not others](#what-the-scores-can-carry-and-what-they-cannot) | Use scores to choose who to look at, and interactions to decide what to say |
+| [Scores show patterns, not context](#scores-show-patterns-not-context) | Use scores to choose who to look at, and interactions to decide what to say |
 | [Auto-fails are a different signal](#auto-fails-are-a-different-kind-of-signal) | One critical failure is not a drifting average |
-| [Results are recorded, not judged](#the-results-are-recorded-not-judged) | Vela reports what happened and leaves the conclusion to you | This page explains what runs, when, and what the numbers it produces do and do not tell you.
+| [Results are recorded, not judged](#the-results-are-recorded-not-judged) | Vela reports what happened and leaves the conclusion to you |
+
+This page explains what runs, when, and what the numbers it produces support.
 
 ---
 
@@ -40,7 +42,7 @@ flowchart TD
     A("Interactions are scored<br/>by the main Vela platform") --> B("The evaluation cycle runs<br/>on its schedule")
     B --> C{"For each agent,<br/>where does their score fall?"}
     C -- "Inside a course's<br/>Training Initiation Score Range" --> D("The course is assigned,<br/>with a Due Date")
-    C -- "Inside an award's<br/>Score Threshold Range" --> E("The award is presented,<br/>with a certificate")
+    C -- "Inside an award's<br/>Score Threshold (Range)" --> E("The award is presented,<br/>with a certificate")
     C -- "Neither" --> F("Nothing happens<br/>for that agent")
     D --> G("The agent works through it<br/>and takes the quiz")
     G --> H("Progress records the result")
@@ -77,9 +79,9 @@ The same applies to courses in reverse. A course set to 0 to 100 is assigned to 
 
 ---
 
-## What the scores can carry, and what they cannot
+## Scores show patterns, not context
 
-Coaching scores come from the main Vela platform's analysis of interactions. They are good at some things and poor at others, and the difference matters when you are about to have a conversation with someone about their performance.
+Coaching scores come from the main Vela platform's analysis of interactions. They measure repetition well and circumstance poorly, and the difference matters when you are about to discuss someone's performance with them.
 
 They are reliable for **volume and consistency**: whether a requirement was met across many calls, whether one agent differs from their team, whether a figure moved after training. These are the questions the Dashboard is built to answer.
 

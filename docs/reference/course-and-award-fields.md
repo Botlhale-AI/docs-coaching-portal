@@ -47,13 +47,13 @@ A URL to material hosted outside Vela. Opens in a new tab for the agent.
 
 A course may carry both an uploaded PDF and an external link.
 
-### Cover image
+### Cover Image
 
 An image shown on the course card. Either one of the supplied theme images or an uploaded file.
 
 Uploads accept `.jpg`, `.jpeg`, and `.png`.
 
-### Quiz questions
+### Quiz Questions
 
 Added one at a time with **Add Question**. Each question has its text and an answer type.
 

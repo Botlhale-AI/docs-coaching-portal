@@ -11,12 +11,6 @@ Definitions of the terms used in the Coaching Portal and in this documentation. 
 
 ---
 
-## Agent
-
-A person whose interactions Vela analyses. In coaching, an agent is also someone who signs in to the Coaching Portal to see their own scores, work through courses, and read feedback.
-
-An agent sees their own work only, never a colleague's.
-
 ## Access Level
 
 How much of the organisation you can see and act on. Set on your user record in the main Vela platform, not in coaching, and it decides which agents appear on the Coaching Dashboard and how far a course or award can reach.
@@ -30,6 +24,12 @@ How much of the organisation you can see and act on. Set on your user record in 
 Access level and role are two separate things, and coaching needs both in one place: changing **Coaching → Preferences** requires organisational access **and** the admin role. With one but not the other the form opens read-only.
 
 For the platform-wide detail, see [Access Level](https://docs-vela.botlhale.ai/docs/reference/glossary) in the Vela Glossary.
+
+## Agent
+
+A person whose interactions Vela analyses. In coaching, an agent is also someone who signs in to the Coaching Portal to see their own scores, work through courses, and read feedback.
+
+An agent sees their own work only, never a colleague's.
 
 ## Agent View Permissions
 
@@ -47,7 +47,7 @@ The main Vela platform writes this as **Auto-Fail**, with a hyphen. It is the sa
 
 ## Award
 
-Recognition presented automatically when an agent's score reaches the **Agent Score** set on the award. Awards carry a certificate the agent can download.
+Recognition presented automatically when an agent's score falls inside the **Score Threshold (Range)** set on the award. Awards carry a certificate the agent can download.
 
 Nobody presents an award manually. See [Recognise Good Work](../team-leads/recognise-good-work.md).
 
@@ -61,17 +61,17 @@ On a course or an award, **Category** groups related courses or awards so they a
 
 ## Course
 
-Training assigned automatically when an agent's scores fall inside the range set on it. A course holds material, an optional quiz, and a deadline in days.
+Training assigned automatically when an agent's scores fall inside the range set on it. A course holds material, an optional quiz, and a deadline.
 
 Courses reach people by score rather than by name. See [Create and Assign Courses](../team-leads/create-and-assign-courses.md).
 
 ## Deadline
 
-The number of **Days** an agent has from the date a course is assigned to them, set on the course itself. Each agent's **Due Date** is worked out from the day they receive it, so two agents assigned the same course on different days have different due dates.
+How long an agent has from the date a course is assigned to them, set on the course itself as a count and a unit of **Days**, **Weeks**, or **Months**. Each agent's **Due Date** is worked out from the day they receive it, so two agents assigned the same course on different days have different due dates.
 
 ## Evaluation Cycle
 
-How often Vela reviews scores and assigns the courses and awards agents have qualified for. Set under **Coaching → Preferences** as an interval, a unit of day, week, or month, and a time.
+How often Vela reviews scores and assigns the courses and awards agents have qualified for. Set under **Coaching → Preferences** as an interval, a unit of **Day(s)**, **Week(s)**, or **Month(s)**, and a time.
 
 Nothing is assigned between runs. A course created today reaches agents at the next run rather than immediately.
 
@@ -127,7 +127,7 @@ A narrow range reaches the people with the gap. A wide one reaches everyone and 
 
 - [Getting Started with Coaching](../team-leads/getting-started.md): how these pieces fit together for a team lead
 - [Getting Started for Agents](../agents/getting-started.md): the same, for an agent
-- [Set Coaching Preferences](../team-leads/coaching-preferences.md): where the cycle, pass mark, and view settings live
+- [Set Coaching Preferences](../team-leads/coaching-preferences.md): where the cycle, pass percentage, and view settings live
 
 ## Need Help?
 

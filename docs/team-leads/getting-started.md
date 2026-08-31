@@ -98,7 +98,7 @@ The most common first-week surprise is an empty **Progress** page. Before the fi
 
 ## Related
 
-- [Set Coaching Preferences](./coaching-preferences.md): the cycle, pass mark, and agent view
+- [Set Coaching Preferences](./coaching-preferences.md): the cycle, pass percentage, and agent view
 - [Read the Coaching Dashboard](./coaching-dashboard.md): find the gap worth training
 - [Create and Assign Courses](./create-and-assign-courses.md): build the training
 - [Track Learning Progress](./track-learning-progress.md): confirm it reached people

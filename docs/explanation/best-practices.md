@@ -39,7 +39,7 @@ The **Training Initiation Score Range** is what decides who receives a course. I
 
 An award set at a mark most of the team already clears recognises nothing, and agents work out quickly that it is automatic.
 
-**Set the score where reaching it means something.** Look at the current range on the Dashboard and place the award above where most people sit, not below.
+**Set the range where reaching it means something.** Look at where scores sit on the Dashboard today and place the floor above most of the team.
 
 **Write the Award Message as though speaking to the person.** It is the part they actually read. A specific sentence about what they did well is worth more than a generic congratulation, even though the award was presented automatically.
 
@@ -68,7 +68,7 @@ A high completion rate is the least interesting thing on the Progress page. The 
 | **Not Started** past the due date | The agent has not opened it. Reminders work better than waiting |
 | **In Progress** for a long time | The material is longer than the deadline allows, or the quiz is unclear |
 | **Complete** with low scores | The course ran but did not land. Check the material before assigning more |
-| Everyone **Complete**, high scores | Either it is working, or the pass mark is too low to tell |
+| Everyone **Complete**, high scores | Either it is working, or the pass percentage is too low to tell |
 
 Sort on **Due Date** to bring the overdue to the top. That list is shorter than the whole page and it is where the problems are.
 
@@ -86,7 +86,7 @@ Where it has moved, an award is the natural next step, and it is more credible f
 
 ## Related
 
-- [Set Coaching Preferences](../team-leads/coaching-preferences.md): the cycle, pass mark, and view settings
+- [Set Coaching Preferences](../team-leads/coaching-preferences.md): the cycle, pass percentage, and view settings
 - [Create and Assign Courses](../team-leads/create-and-assign-courses.md): building the training
 - [Recognise Good Work](../team-leads/recognise-good-work.md): setting awards worth earning
 - [Track Learning Progress](../team-leads/track-learning-progress.md): reading the failures

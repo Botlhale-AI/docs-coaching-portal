@@ -1,6 +1,6 @@
 ---
 title: Set Coaching Preferences
-description: "Set the evaluation cycle, the pass mark, and what agents can see."
+description: "Set the evaluation cycle, the pass percentage, and what agents can see."
 sidebar_position: 5
 type: how-to
 pagination_prev: team-leads/recognise-good-work

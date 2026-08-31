@@ -53,11 +53,11 @@ An [auto-fail](../reference/glossary.md#auto-fail) takes the whole interaction t
 
 **Category Scores** breaks your score down by the categories your organisation groups its questions into, such as Customer Care or Compliance.
 
-Each category shows two figures: **Your Team** and **Your Score**. The gap between them is the useful part. Your overall score tells you where you stand. The category with the widest gap tells you what to work on.
+Each category shows two figures: **Your Team** and **Your Score**. The gap between them is the useful part, because it separates a category you find hard from one the whole team finds hard.
 
 ![The Dashboard charts, showing Average Agent Performance over the period beside Individual Agent Performance](../../img/screenshots/agent_view/dashboard/dashboard-charts.png)
 
-### C. The Charts
+### C. Performance Charts
 
 **Average Agent Performance** plots the trend across the period, and **Individual Agent Performance** shows your figure on its own.
 

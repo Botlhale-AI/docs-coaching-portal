@@ -16,7 +16,7 @@ pagination_next: agents/your-awards
 You need:
 
 - **A course assigned to you.** Your team lead creates courses and sets a [**Training Initiation Score Range**](../reference/glossary.md#training-initiation-score-range) on each course. Until your scores fall in a range, the list is empty.
-- **To know your organisation's pass mark.** Your team lead sets one pass percentage for all courses, so the mark is the same whichever course you take.
+- **To know your organisation's pass percentage.** Your team lead sets one for every course, so it is the same whichever course you take.
 
 ---
 
@@ -79,7 +79,7 @@ Select **Take Quiz** on a course that has one. Questions come in three forms:
 
 Written answers are not marked against a fixed correct answer. Vela reads what you wrote, scores it, and records a short reason for that score, which you see beside the question in your result. Answer the question that was asked rather than writing generally around it.
 
-Your result appears as a **Final Score**. Where you took the course more than once, **Initiation Score** records how you did the first time, so improvement is visible rather than overwritten. Where you did not reach the mark, the page tells you so directly: *You did not meet the passing score of 70%*, with your organisation's figure in place of the 70.
+Your result appears as a **Final Score**. Where you took the course more than once, **Initiation Score** records how you did the first time, so improvement is visible rather than overwritten. Where you scored below the pass percentage, the page tells you so directly: *You did not meet the passing score of 70%*, with your organisation's figure in place of the 70.
 
 ![The quiz results view, showing the final score against the questions answered](../../img/screenshots/agent_view/courses/courses-detailed-view-quiz-results.png)
 
@@ -99,7 +99,7 @@ The course moves to **Completed Courses** with the last score you got, whether o
 
 A low first attempt is worth spending a retake on rather than leaving. Read the material again before you use the next one.
 
-Passing moves the course into **Completed Courses** too, which is the outcome you want from the same list position.
+Passing moves the course to **Completed Courses** as well. Both outcomes land in the same group, so the score beside it is what tells them apart.
 
 ---
 
@@ -107,7 +107,7 @@ Passing moves the course into **Completed Courses** too, which is the outcome yo
 
 Open **Courses** and confirm the course you finished sits under **Completed Courses** with a **Final Score** on it.
 
-A course still under **Courses In Progress** after you submitted usually means the quiz was not submitted rather than not passed. Open it and check. A course that moved to **Completed Courses** with a score below the pass mark means your retakes ran out.
+A course still under **Courses In Progress** after you submitted usually means the quiz was not submitted rather than not passed. Open it and check. A course that moved to **Completed Courses** with a score below the pass percentage means your retakes ran out.
 
 ---
 

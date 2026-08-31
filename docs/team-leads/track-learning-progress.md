@@ -68,7 +68,7 @@ There is no filter on an individual agent or a single course. Narrow by team and
 
 ![Filtering the Progress list by date](../../img/screenshots/team_lead/progress/date-filter.png)
 
-![The detailed date filter, with the range you set](../../img/screenshots/team_lead/progress/date-filter-detailed.png)
+![The detailed date range picker, with the range you set](../../img/screenshots/team_lead/progress/date-filter-detailed.png)
 
 A date range that ends before it starts is refused with **Invalid date range**. Check the order of the two dates.
 
@@ -85,7 +85,7 @@ A date range that ends before it starts is refused with **Invalid date range**. 
 | **Not Started** past the **Due Date** | The agent has not opened it. A direct reminder works better than waiting |
 | **In Progress** for a long time | The material may be longer than the deadline allows, or the quiz is unclear |
 | **Complete** with a low **Score** | The course ran but did not land. Check the material before assigning more |
-| Everyone **Complete** with high scores | The course is working, or the pass mark is set too low to tell |
+| Everyone **Complete** with high scores | The course is working, or the pass percentage is set too low to tell |
 
 :::tip Sort by Due Date to find who needs chasing
 Sorting on **Due Date** brings the overdue to the top. Working from that list takes less time than reading the whole page, and it catches the agents a course is failing rather than the ones it is working for.

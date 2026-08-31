@@ -35,7 +35,7 @@ Two controls sit above the list:
 
 ![The sort control open on the awards list](../../img/screenshots/agent_view/awards/sort.png)
 
-![The date range control used to narrow the awards list to a period](../../img/screenshots/agent_view/awards/date-range.png)
+![The date range control above your own awards list](../../img/screenshots/agent_view/awards/date-range.png)
 
 ---
 

@@ -61,7 +61,7 @@ Choosing departments or teams reveals a selector for which ones, and the course 
 
 This is the setting that decides who receives the course. It is a slider with two handles over 0 to 100, and the percentages either side of it show the floor and ceiling you have set. On each evaluation cycle, every agent in scope whose score falls between them is assigned the course.
 
-Set it around the gap you found on the Dashboard rather than around a pass mark. A range of 0 to 100 assigns the course to everyone, which tells you nothing about whether it worked. A range of 40 to 65 reaches the people who are struggling with the thing this course teaches, and leaves a comparison group who did not need it.
+Set it around the gap you found on the Dashboard rather than around a pass percentage. A range of 0 to 100 assigns the course to everyone, which tells you nothing about whether it worked. A range of 40 to 65 reaches the people who are struggling with the thing this course teaches, and leaves a comparison group who did not need it.
 
 The range is a band, not a threshold. An agent above the ceiling does not receive the course, which is deliberate: training aimed at a weakness is wasted on someone who does not have it.
 
@@ -127,10 +127,10 @@ These three sit together below the quiz, and they decide how much room an agent 
 The number you set decides how long a struggling agent can keep trying before the course closes on them. Their first result is kept separately as the **Initiation Score**, so improvement across attempts stays visible.
 
 :::warning Running out of retakes looks the same as passing
-When an agent uses their last retake, the course is marked **Complete** whatever they scored. On the **Progress** table that row is indistinguishable at a glance from one that passed, so a course nobody could pass reads as a course everybody finished. Read **Complete** together with **Score**, which shows in red below the pass mark.
+When an agent uses their last retake, the course is marked **Complete** whatever they scored. On the **Progress** table that row is indistinguishable at a glance from one that passed, so a course nobody could pass reads as a course everybody finished. Read **Complete** together with **Score**, which shows in red below the pass percentage.
 :::
 
-The pass mark itself is set once for all courses under Preferences, not per course. See [Set Coaching Preferences](./coaching-preferences.md).
+The pass percentage itself is set once for all courses under Preferences, not per course. See [Set Coaching Preferences](./coaching-preferences.md).
 
 ### Deadline
 
@@ -212,7 +212,7 @@ To confirm assignment, open **Progress** after the next evaluation cycle and loo
 
 - [Read the Coaching Dashboard](./coaching-dashboard.md): find the gap a course should target
 - [Track Learning Progress](./track-learning-progress.md): see who has started, finished, or stalled
-- [Set Coaching Preferences](./coaching-preferences.md): the cycle and pass mark that govern courses
+- [Set Coaching Preferences](./coaching-preferences.md): the cycle and pass percentage that govern courses
 - [Recognise Good Work](./recognise-good-work.md): mark the improvement a course produces
 
 ## Need Help?

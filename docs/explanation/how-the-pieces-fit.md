@@ -51,7 +51,7 @@ flowchart TD
     V --> I("What an agent sees<br/>under Interactions")
 ```
 
-Read from the top: Preferences governs everything. Nothing else in coaching overrides it, and no course or award carries its own cycle or its own pass mark.
+Read from the top: Preferences governs everything. Nothing else in coaching overrides it, and no course or award carries its own cycle or its own pass percentage.
 
 ---
 
@@ -67,7 +67,7 @@ Set it to **All Interactions** and nothing stalls, but the coaching follows the 
 
 Neither is wrong. What causes trouble is choosing one and forgetting it while diagnosing why nobody is being assigned anything.
 
-### The pass mark is organisation-wide, and the retakes are per course
+### The pass percentage is organisation-wide, and the retakes are per course
 
 These two look like they belong together and they do not.
 
@@ -111,7 +111,7 @@ The order matters. Reading the Dashboard before building a course is the differe
 
 A first month of coaching, in the order the dependencies require:
 
-1. **Set Preferences first.** The cycle, the pass mark, the evaluation scope, and the agent view setting. Everything downstream inherits these, and two of them are awkward to change later.
+1. **Set Preferences first.** The cycle, the pass percentage, the evaluation scope, and the agent view setting. Everything downstream inherits these, and two of them are awkward to change later.
 2. **Read the Dashboard.** Find a category several agents are behind in. One agent behind is a conversation, not a course.
 3. **Build one course** around that category, with a score range covering the agents you saw and not the whole team.
 4. **Wait for the cycle.** Nothing is assigned before it runs. This is the step people skip.

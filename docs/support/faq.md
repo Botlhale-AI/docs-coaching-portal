@@ -30,7 +30,7 @@ A: By score. You set a **Training Initiation Score Range** on the course, and on
 **Q: How long does an agent have to finish a course?**
 A: The **Deadline** on the course, set in days. Each agent's **Due Date** is worked out from the day they receive it, so two agents assigned on different days have different due dates.
 
-**Q: What is the pass mark?**
+**Q: What is the pass percentage?**
 A: The **Pass Percentage** under **Coaching → Preferences**. It applies to every course rather than being set per course.
 
 **Q: Can an agent retake a course?**

@@ -78,7 +78,7 @@ An empty list where you expected awards usually means the date range, not a faul
 
 ![The sort control on the awards list](../../img/screenshots/team_lead/awards/sort.png)
 
-![The date range control used to narrow the awards list to a period](../../img/screenshots/team_lead/awards/date-range.png)
+![The date range control above the Awards Presented list](../../img/screenshots/team_lead/awards/date-range.png)
 
 ---
 

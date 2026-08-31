@@ -68,7 +68,7 @@ The left sidebar holds everything, in two groups.
 
 ## 3. Take the Tour
 
-Work through these in order. Each takes a few minutes and shows you one part of the portal.
+Work through these in order. Each one shows you a different part of the portal.
 
 1. **Open your Dashboard.** Set the date range to a period you have been working, and read **Category Scores**. The gap between **Your Team** and **Your Score** in each category is the most useful thing on the page. See [Monitor Your Performance](./personal-performance.md).
 

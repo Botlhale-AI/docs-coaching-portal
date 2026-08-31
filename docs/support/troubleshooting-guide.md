@@ -97,7 +97,7 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 
 ## Progress
 
-**Problem:** A date filter is refused with **Invalid date range**.
+**Problem:** A date range is refused with **Invalid date range**.
 
 **Cause:** The end date falls before the start date.
 
