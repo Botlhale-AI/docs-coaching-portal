@@ -83,18 +83,22 @@ Where a category has no interactions in the period, its column reads **No team d
 
 Below the two cards, every category gets its own section, with the category name as the heading and a **chevron** to collapse it.
 
-![One category's section, with the Average Agent Performance and Department Performance charts](../../img/screenshots/team_lead/dashboard/category-performance.png)
+![One category's section, with the Average Agent Performance line chart and the grouped bar chart beside it](../../img/screenshots/team_lead/dashboard/category-performance.png)
 
 Each section holds two charts for that category alone:
 
 | Chart | What it shows |
 | :--- | :--- |
 | **Average Agent Performance** | A line across the period, so you can see when performance moved rather than only where it ended |
-| **Department Performance** | A bar for each department, so you can see which part of the organisation carries the result |
+| The grouped bar chart | A bar for each group, so you can see which part of the organisation carries the result |
 
-The **fullscreen** control on a chart expands it, which is worth using on **Department Performance** where long department names are cut short.
+:::note The bar chart is named after whatever you grouped by
+Its heading is built from two things: the category, and what **View By** is set to. Viewing departments in the Compliance category, it reads **Compliance - Department Performance**. Change **View By** and the heading changes with it, to **Team Performance** or **Agent Performance**. There is no chart called Department Performance in its own right.
+:::
 
-Read the line chart for timing and the bars for location. A drop that starts on one date points at something that happened, such as a process change or a new intake. A drop confined to one department points at that department.
+The **fullscreen** control on a chart expands it, which is worth using on the bar chart where long names are cut short.
+
+Read the line chart for timing and the bars for location. A drop that starts on one date points at something that happened, such as a process change or a new intake. A drop confined to one group points at that group.
 
 A category with nothing in the period reads **There is no data available in this category for the selected date range**. That is an empty period rather than a fault, and widening the date range is the first thing to try.
 

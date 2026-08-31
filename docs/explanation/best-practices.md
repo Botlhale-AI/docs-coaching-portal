@@ -78,7 +78,7 @@ Sort on **Due Date** to bring the overdue to the top. That list is shorter than 
 
 Coaching that assigns training and never checks whether scores moved is administration rather than coaching.
 
-After a course has been completed by the agents it targeted, go back to the Dashboard and look at the category it addressed, over the weeks since. If the category has not moved, the course did not work, and more of the same does not help.
+After a course has been completed by the agents it targeted, go back to the Dashboard and look at the category it addressed, over the weeks since. A category that has stayed flat tells you the course missed. Change the material, or narrow who receives it, before you run it again.
 
 Where it has moved, an award is the natural next step, and it is more credible for following a real improvement.
 

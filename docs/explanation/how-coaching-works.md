@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-Coaching in Vela is automatic in a specific and limited sense: you define the criteria, and a scheduled job applies them. Nothing is assigned manually, and nothing is assigned continuously.
+Coaching in Vela is automatic in a specific and limited sense: you define the criteria, and a scheduled job applies them on a fixed cycle. Every assignment comes from that job, and every assignment waits for it.
 
 Seven rules follow from that, and each has a section below.
 
