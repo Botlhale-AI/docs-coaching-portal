@@ -87,6 +87,20 @@ Select **Review Quiz** to read back an attempt you have already submitted.
 
 ### How Many Attempts You Get
 
+A course reaches **Completed Courses** two ways, and they look the same in the list:
+
+```mermaid
+stateDiagram-v2
+    [*] --> Assigned: Your score falls in the course's range
+    Assigned --> InProgress: You open it
+    InProgress --> InProgress: Retake, while you have some left
+    InProgress --> Completed: You pass
+    InProgress --> Completed: You use the last retake
+```
+
+The **Final Score** beside the course is what tells the two apart.
+
+
 {/* SCREENSHOT NEEDED: the quiz page showing the retakes remaining counter, and ideally a second capture of the result screen with the "You did not meet the passing score of N%" message. Neither is captured, and retakes are the thing agents ask about most. Suggested paths: img/screenshots/agent_view/courses/quiz-retakes-remaining.png and quiz-failed-result.png */}
 
 Your team lead sets **Quiz Retakes** on each course, between 1 and 5, so the number is not the same on every course. The quiz page shows how many you have left.
