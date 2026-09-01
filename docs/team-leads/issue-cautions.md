@@ -19,14 +19,16 @@ A caution is triggered by **failed courses**, not by scores directly. Each cauti
 The sequence is the same every time: Vela detects a candidate, you send it from a template, the agent acknowledges it, and you escalate to HR where that is warranted.
 
 ```mermaid
-flowchart LR
-    F("Agent fails enough<br/>courses in a category") --> D("Vela detects<br/>a candidate")
-    D --> S("You send it<br/>from a template")
-    S --> A{"The agent"}
-    A --> G("Signs it")
-    A --> P("Disputes it")
-    G --> H("Escalate to HR<br/>where warranted")
+stateDiagram-v2
+    [*] --> Detected: Agent fails enough courses
+    Detected --> Pending: You send it from a template
+    Pending --> Signed: The agent acknowledges it
+    Pending --> Disputed: The agent disagrees
+    Signed --> Escalated: Send to HR
+    Disputed --> Signed: Settled with the agent
 ```
+
+**Disputed** has no route to HR. Settle the disagreement with the agent first, or the escalation puts an unresolved dispute in front of HR as though it were closed.
 
 ---
 
