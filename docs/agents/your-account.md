@@ -90,7 +90,7 @@ For a password change, sign out and sign back in with the new password. That is 
 
 ## Related
 
-- [Monitor Your Dashboard](./personal-performance.md): track your scores over time
+- [Monitor Your Performance](./personal-performance.md): track your scores over time
 - [Track Your Courses](./your-courses.md): work through the training assigned to you
 - [View Your Awards](./your-awards.md): the recognition your notifications tell you about
 - [Review Your Interactions](./your-interactions.md): read the comments your team lead leaves

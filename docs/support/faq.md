@@ -37,7 +37,7 @@ A: The **Pass Percentage** under **Coaching → Preferences**. It applies to eve
 A: Where your organisation allows it. The first result is kept as the **Initiation Score** alongside the new **Final Score**, so improvement stays visible.
 
 **Q: How are awards presented?**
-A: Automatically, on the evaluation cycle, to every agent whose score reaches the **Agent Score** set on the award. Agents download their own certificate from their portal.
+A: Automatically, on the evaluation cycle, to every agent whose score falls inside the **Score Threshold (Range)** set on the award. Agents download their own certificate from their portal.
 
 ---
 

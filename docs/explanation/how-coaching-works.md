@@ -38,7 +38,7 @@ This is worth knowing before troubleshooting an empty screen. An agent who canno
 The evaluation cycle is the single clock the whole feature runs on. It is set once, under Preferences, and it governs both courses and awards.
 
 ```mermaid
-flowchart TD
+flowchart LR
     A("Interactions are scored<br/>by the main Vela platform") --> B("The evaluation cycle runs<br/>on its schedule")
     B --> C{"For each agent,<br/>where does their score fall?"}
     C -- "Inside a course's<br/>Training Initiation Score Range" --> D("The course is assigned,<br/>with a Due Date")

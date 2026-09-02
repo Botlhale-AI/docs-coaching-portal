@@ -90,7 +90,6 @@ const config = {
   themeConfig: {
     image: 'img/logo.png',
     navbar: {
-      title: 'Vela Coaching Portal',
       logo: {
         alt: 'Vela Logo',
         src: 'img/logo.png',

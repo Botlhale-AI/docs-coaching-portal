@@ -192,7 +192,7 @@ To confirm the loop closed, check that **Agent Status** has moved to **Signed** 
 
 - [Create and Assign Courses](./create-and-assign-courses.md): the coaching route to try before a caution
 - [Read the Coaching Dashboard](./coaching-dashboard.md): the category scores detection works from
-- [Coaching Preferences](./coaching-preferences.md): the evaluation cycle that decides how often detection runs
+- [Set Coaching Preferences](./coaching-preferences.md): the evaluation cycle that decides how often detection runs
 
 ---
 

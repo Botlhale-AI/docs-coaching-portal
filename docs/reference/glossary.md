@@ -23,7 +23,7 @@ How much of the organisation you can see and act on. Set on your user record in 
 
 Access level and role are two separate things, and coaching needs both in one place: changing **Coaching → Preferences** requires organisational access **and** the admin role. With one but not the other the form opens read-only.
 
-For the platform-wide detail, see [Access Level](https://docs-vela.botlhale.ai/docs/reference/glossary) in the Vela Glossary.
+For the platform-wide detail, see [Access Level](https://docs-vela.botlhale.ai/docs/reference/glossary#access-level) in the Vela Glossary.
 
 ## Agent
 
@@ -91,7 +91,7 @@ Nothing is assigned between runs. A course created today reaches agents at the n
 
 Which interactions count towards evaluation: **All Interactions**, or **Reviewed Interactions Only**. Separate from [Agent View Permissions](#agent-view-permissions), which controls what agents see rather than what evaluations use.
 
-Marking an interaction as reviewed happens in the main Vela platform, not in coaching. See [Review Status](https://docs-vela.botlhale.ai/docs/reference/glossary) in the Vela Glossary. On **Reviewed Interactions Only**, coaching moves only as fast as reviewing does.
+Marking an interaction as reviewed happens in the main Vela platform, not in coaching. See [Review Status](https://docs-vela.botlhale.ai/docs/reference/glossary#review-status) in the Vela Glossary. On **Reviewed Interactions Only**, coaching moves only as fast as reviewing does.
 
 ## Final Score
 

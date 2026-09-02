@@ -86,11 +86,11 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 
 **Problem:** An award exists but has never been presented.
 
-**Cause:** The **Agent Score** on the award is set higher than anyone reaches.
+**Cause:** The **Score Threshold (Range)** on the award is set higher than anyone reaches.
 
 **Solution:**
-1. Compare the award's score against the range on the Dashboard.
-2. Lower it to a mark that is demanding but reachable, or leave it if it is deliberately rare.
+1. Compare the award's range against the scores on the Dashboard.
+2. Lower it to a band that is demanding but reachable, or leave it if it is deliberately rare.
 3. Changes take effect from the next evaluation cycle. Awards already presented stay presented.
 
 ---

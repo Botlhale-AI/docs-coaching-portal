@@ -127,7 +127,9 @@ for (const file of files) {
   const type = fm[1].match(/^type:\s*(.+)$/m)?.[1].trim();
   if (!title) err(rel, "frontmatter is missing `title`");
   const description = fm[1].match(/^description:\s*(.+)$/m)?.[1].trim();
-  // description is rendered under the title on this site, so it is customer-facing.
+  // Not rendered on the page (see src/theme/DocItem/Content/index.js and
+  // STYLE_GUIDE.md section 0). It still fills the meta tag and search
+  // results, so it is customer-facing there.
   if (!description) err(rel, "frontmatter is missing `description`");
   if (!type) err(rel, "frontmatter is missing `type`");
   else if (!PAGE_TYPES.includes(type))
