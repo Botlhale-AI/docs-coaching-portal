@@ -36,6 +36,8 @@ Select **Courses** in the left sidebar. The page groups what you have by where y
 
 ![The quick search control above the courses list](../../img/screenshots/agent_view/courses/quick-search.png)
 
+{/* UNVERIFIED: this capture shows an "Assigned"-status course card with a View Course button, but Step 2 below says "Select Start Course to open one," and AgentCourseView.jsx ties the Start Course label specifically to status === "assigned". The screenshot (higher authority than source) contradicts what the source implies for that state. Needs a live check before the course-actions.png capture below is taken, since it may resolve the same question. */}
+
 ![The filter panel open on the courses list](../../img/screenshots/agent_view/courses/filter.png)
 
 ![The sort control on the courses list](../../img/screenshots/agent_view/courses/sort.png)

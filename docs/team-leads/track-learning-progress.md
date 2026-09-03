@@ -26,6 +26,8 @@ Select **Coaching** in the left sidebar, then **Progress**. Each row pairs an ag
 
 ![The Progress table, with a row for each agent and course](../../img/screenshots/team_lead/progress/progress-table.png)
 
+{/* RESHOOT: the rows here are raw QA test data ("Khaya Test", a course called "this is a test") rather than curated demo content. Not a compliance issue, just worth cleaning up on the next reshoot of this table. */}
+
 | Column | What it shows |
 | :--- | :--- |
 | **Agent** | Who the course was assigned to |
@@ -69,6 +71,8 @@ There is no filter on an individual agent or a single course. Narrow by team and
 ![Filtering the Progress list by date](../../img/screenshots/team_lead/progress/date-filter.png)
 
 ![The detailed date range picker, with the range you set](../../img/screenshots/team_lead/progress/date-filter-detailed.png)
+
+{/* RESHOOT: this capture originally showed Support in the ADMIN section behind the dimmed backdrop, an internal-only control that must never appear in a screenshot. Cropped out here as a temporary fix. Reshoot from a non-@botlhale.ai account when this page is next touched. */}
 
 A date range that ends before it starts is refused with **Invalid date range**. Check the order of the two dates.
 

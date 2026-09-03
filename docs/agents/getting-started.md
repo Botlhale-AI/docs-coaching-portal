@@ -57,6 +57,8 @@ The left sidebar holds everything, in two groups.
 
 ![The Agent Portal sidebar, with the TOOLS and ADMIN groups](../../img/screenshots/agent_view/agent_sidebar.png)
 
+{/* RESHOOT: this capture shows a fifth TOOLS item, Cautions, that the table above doesn't list. Cautions is unreleased (absent from vela's origin/main; issue-cautions.md is still draft). Reshoot from an account without the feature flag once Cautions ships and this page is updated to cover it, or once this capture is next redone. */}
+
 **ADMIN** is your account:
 
 | Item | What it holds |

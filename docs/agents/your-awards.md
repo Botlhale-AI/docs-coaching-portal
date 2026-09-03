@@ -55,6 +55,8 @@ The page holds what your team lead set when they created the award:
 
 ![Award Details, with the message from the team lead above the certificate and the Download control](../../img/screenshots/agent_view/awards/view.png)
 
+{/* RESHOOT: same Cautions-in-sidebar issue as agent_sidebar.png in getting-started.md — see the note there. */}
+
 ---
 
 ## 3. Download the Certificate

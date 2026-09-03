@@ -26,8 +26,6 @@ You need:
 
 ## 1. Choose What Evaluations Are Based On
 
-{/* SCREENSHOT NEEDED: the Evaluation Scope section with both radio cards, All Interactions and Reviewed Interactions Only, and the selected one outlined. Suggested path: img/screenshots/team_lead/preferences/evaluation-scope.png */}
-
 Select **Coaching** in the left sidebar, then **Preferences**.
 
 Under **Evaluation Scope**, answer "Which interactions would you like these evaluations to apply to":
@@ -66,8 +64,6 @@ Monthly suits most teams. Weekly responds faster but assigns courses on less evi
 ---
 
 ## 3. Set the Pass Percentage
-
-{/* SCREENSHOT NEEDED: the Courses section of Preferences, showing the Pass Percentage input and the question above it. Suggested path: img/screenshots/team_lead/preferences/pass-percentage.png */}
 
 **Pass Percentage** is the share of the total quiz score an agent reaches to pass a course. It applies to every course, so it is set here rather than on each course.
 

@@ -34,6 +34,8 @@ The page lists unread notifications only, so a tab with nothing in it reads **No
 
 ![The Notifications page in the Agent Portal, with the Awards, Courses, and Comments tabs above the list of unread notifications](../../img/screenshots/agent_view/admin/notifications.png)
 
+{/* RESHOOT: the live notification text originally read "You have been assigned undefined, your dealine to complete this course is 24-07-2025" — a broken template (course title missing) plus a typo, both visible on screen. That message line is painted over as a temporary fix so the bug isn't the thing being documented. Reshoot once the underlying "Course Assigned" notification text is fixed; until then this hides the defect rather than resolving it. */}
+
 :::note Notifications is its own page
 It sits under **ADMIN** in the sidebar, beside **Settings**. It is not a tab inside Settings, so look for it in the sidebar rather than on the Settings page.
 :::

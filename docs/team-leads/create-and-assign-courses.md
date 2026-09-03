@@ -114,6 +114,8 @@ Each question you add is listed with its number, its answer type, what it is wor
 
 ![Adding quiz questions to a course](../../img/screenshots/team_lead/courses/create-course-add-quiz.png)
 
+{/* RESHOOT: this capture originally showed Support in the ADMIN section, an internal-only control that must never appear in a screenshot. Cropped out here as a temporary fix. Reshoot from a non-@botlhale.ai account when this page is next touched. */}
+
 ---
 
 ## 5. Set Retakes, Deadline and Nudges
@@ -197,6 +199,8 @@ Read this page once after building a course. A quiz worth fewer points than you 
 Open a course from the list and select **Edit Course** to change its details, material, or questions.
 
 ![The Edit Course form, with the course details open for changing](../../img/screenshots/team_lead/courses/team-lead-courses-edit.png)
+
+{/* RESHOOT: two issues here. First, this originally showed Support in the ADMIN section, an internal-only control that must never appear in a screenshot; cropped out as a temporary fix. Second, the capture itself is the read-only course detail view with an Edit Course button, not the edit form the alt text and this step describe — reshoot the actual form open for editing, from a non-@botlhale.ai account. */}
 
 Editing changes the course for agents who have not yet completed it. Agents who already finished keep the result they earned.
 

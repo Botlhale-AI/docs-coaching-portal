@@ -42,6 +42,8 @@ Two cards sit side by side below the controls, and they are read together.
 
 ![Auto Fails and Category Scores on the Coaching Dashboard](../../img/screenshots/team_lead/dashboard/dashboard-overview.png)
 
+{/* RESHOOT: the sidebar in this capture shows Cautions as a live Coaching item. Cautions is unreleased (absent from vela's origin/main; issue-cautions.md is still draft) and this page's text doesn't mention it. Reshoot from an account without the feature flag once Cautions ships, or once this capture is next redone. */}
+
 ### A. Auto Fails
 
 **Auto Fails** is a single percentage: the share of calls in the period that failed a question your organisation marks as critical, across everything **View By** covers. The **information** icon beside the heading explains the figure in place.
@@ -84,6 +86,8 @@ Where a category has no interactions in the period, its column reads **No team d
 Below the two cards, every category gets its own section, with the category name as the heading and a **chevron** to collapse it.
 
 ![One category's section, with the Average Agent Performance line chart and the grouped bar chart beside it](../../img/screenshots/team_lead/dashboard/category-performance.png)
+
+{/* RESHOOT: same Cautions-in-sidebar issue as the capture above — see the note there. */}
 
 Each section holds two charts for that category alone:
 

@@ -76,6 +76,8 @@ An empty list where you expected awards usually means the date range, not a faul
 
 ![The filter panel on the awards list](../../img/screenshots/team_lead/awards/filter.png)
 
+{/* RESHOOT: this capture and the sort control below it originally showed Support in the ADMIN section behind the dimmed backdrop, an internal-only control that must never appear in a screenshot. Painted over as a temporary fix rather than cropped, since the modal is wide enough that cropping clipped its own Department/Team columns. The Department and Team lists visible here are also raw QA test data ("Newdeptn", "28 Test Team", "Load Dept") rather than curated demo content — worth cleaning up on the next real reshoot. */}
+
 ![The sort control on the awards list](../../img/screenshots/team_lead/awards/sort.png)
 
 ![The date range control above the Awards Presented list](../../img/screenshots/team_lead/awards/date-range.png)
