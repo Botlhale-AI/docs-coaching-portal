@@ -25,8 +25,6 @@ You need:
 
 ![The Coaching section in the main Vela platform, with its Dashboard, Courses, Progress, Awards, and Preferences items](../../img/screenshots/team_lead/nav.png)
 
-{/* RESHOOT: this capture originally showed Support in the ADMIN section, an internal-only control (@botlhale.ai accounts only, per STYLE_GUIDE.md) that must never appear in a screenshot. Cropped out here as a temporary fix. It also showed Cautions as a live Coaching item, which is unreleased (absent from vela's origin/main) and unexplained in this page's text; that inconsistency is not fixed by the crop. Reshoot from a non-@botlhale.ai account once Cautions ships, or crop it out too if it ships after this page does. */}
-
 ---
 
 ## 1. Set the Cycle First

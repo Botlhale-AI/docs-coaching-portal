@@ -26,12 +26,15 @@ Select **Awards** in the left sidebar. Each award shows its name and the date it
 
 ![The Awards page in the Agent Portal, listing the awards presented to this agent](../../img/screenshots/agent_view/awards/awards-overview.png)
 
-Two controls sit above the list:
+Three controls sit above the list:
 
 | Control | What it does |
 | :--- | :--- |
+| **Filter** | Narrows the list to one or more Award Categories |
 | **Sort** | Brings the most recent to the top, or orders by name |
 | The date range | Narrows the list to a period |
+
+![The filter panel open on the awards list, listing Award Categories to narrow by](../../img/screenshots/agent_view/awards/filter.png)
 
 ![The sort control open on the awards list](../../img/screenshots/agent_view/awards/sort.png)
 

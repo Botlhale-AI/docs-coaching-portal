@@ -40,7 +40,9 @@ Select **Create Award** to save it, or **Close** to leave without saving.
 Leave it off for most awards, so everything is judged over the same period and the awards stay comparable. Turn it on for an award that only makes sense over a longer window, such as one recognising sustained performance across a quarter while your default cycle runs weekly.
 :::
 
-{/* SCREENSHOT NEEDED: the Create an Award form, showing Award Name, Award Category, Award Description, Scope, Score Threshold (Range) with its Min and Max, and Award Message. This is the only team lead form with no capture at all, and it is the one with the most fields. Suggested path: img/screenshots/team_lead/awards/create-award.png */}
+![The Award form, with Award Name, Award Category, Award Description, Scope, and Score Threshold (Range)](../../img/screenshots/team_lead/awards/create-award.png)
+
+{/* Captured from Edit Award rather than Create an Award, but the form is the same in both modes. Award Message and Custom Evaluation Cycle sit below the fold and aren't visible here. */}
 
 **Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score falls between **Min** and **Max**.
 
@@ -57,6 +59,8 @@ Write the **Award Message** as though speaking to the person. It is the part the
 ## 2. See What Has Been Presented
 
 The Awards page holds two collapsible sections: **Awards**, which is what you have defined, and **Awards Presented**, which is what has actually gone out.
+
+![The Awards section, with each defined award as a card and Create New Award beside them](../../img/screenshots/team_lead/awards/awards-list.png)
 
 ![The Awards Presented list, with the agent, award, date and score](../../img/screenshots/team_lead/awards/awards-presented.png)
 
@@ -76,9 +80,11 @@ An empty list where you expected awards usually means the date range, not a faul
 
 ![The filter panel on the awards list](../../img/screenshots/team_lead/awards/filter.png)
 
-{/* RESHOOT: this capture and the sort control below it originally showed Support in the ADMIN section behind the dimmed backdrop, an internal-only control that must never appear in a screenshot. Painted over as a temporary fix rather than cropped, since the modal is wide enough that cropping clipped its own Department/Team columns. The Department and Team lists visible here are also raw QA test data ("Newdeptn", "28 Test Team", "Load Dept") rather than curated demo content — worth cleaning up on the next real reshoot. */}
+{/* RESHOOT: reshot clean of the Support leak that was here before. The Department and Team lists visible are still raw QA test data ("Demo Department AAA", "28 Test Team", "Load Dept") rather than curated demo content — worth cleaning up whenever this is next touched, though it's not a compliance issue. */}
 
 ![The sort control on the awards list](../../img/screenshots/team_lead/awards/sort.png)
+
+{/* RESHOOT: this capture still shows Support in the ADMIN section behind the dimmed backdrop, an internal-only control that must never appear in a screenshot. Painted over as a temporary fix rather than cropped, since the modal is wide enough that cropping clipped its own content. Reshoot from a non-@botlhale.ai account when this page is next touched — see filter.png above, which already got a clean recapture. */}
 
 ![The date range control above the Awards Presented list](../../img/screenshots/team_lead/awards/date-range.png)
 

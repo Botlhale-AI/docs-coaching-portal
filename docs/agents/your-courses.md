@@ -36,8 +36,6 @@ Select **Courses** in the left sidebar. The page groups what you have by where y
 
 ![The quick search control above the courses list](../../img/screenshots/agent_view/courses/quick-search.png)
 
-{/* UNVERIFIED: this capture shows an "Assigned"-status course card with a View Course button, but Step 2 below says "Select Start Course to open one," and AgentCourseView.jsx ties the Start Course label specifically to status === "assigned". The screenshot (higher authority than source) contradicts what the source implies for that state. Needs a live check before the course-actions.png capture below is taken, since it may resolve the same question. */}
-
 ![The filter panel open on the courses list](../../img/screenshots/agent_view/courses/filter.png)
 
 ![The sort control on the courses list](../../img/screenshots/agent_view/courses/sort.png)
@@ -48,7 +46,9 @@ Each course shows its **Due Date**. Start early enough to finish before it.
 
 ## 2. Work Through the Material
 
-Select **Start Course** to open one. **Course Details** describes what it covers, and the material sits below.
+Select **View Course** to open one. **Course Details** describes what it covers, and the material sits below.
+
+{/* Two independent captures (quick-search.png above and course-actions.png below) both show View Course on an Assigned-status card, not Start Course. AgentCourseView.jsx ties Start Course to status === "assigned", but the live product no longer matches that — updated this step to what the screen actually shows. */}
 
 Material comes in two forms, and a course may hold both:
 
@@ -69,7 +69,7 @@ Read the material before starting the quiz. The quiz is scored, and your result 
 
 ## 3. Take the Quiz
 
-{/* SCREENSHOT NEEDED: a course open with the Start Course, Take Quiz, and Review Quiz controls visible, so the reader can find the button this step names. Suggested path: img/screenshots/agent_view/courses/course-actions.png */}
+![An assigned course card, with the View Course, Download Material, and Take Quiz controls](../../img/screenshots/agent_view/courses/course-actions.png)
 
 Select **Take Quiz** on a course that has one. Questions come in three forms:
 
@@ -86,6 +86,8 @@ Your result appears as a **Final Score**. Where you took the course more than on
 ![The quiz results view, showing the final score against the questions answered](../../img/screenshots/agent_view/courses/courses-detailed-view-quiz-results.png)
 
 Select **Review Quiz** to read back an attempt you have already submitted.
+
+{/* UNVERIFIED: a live capture of Completed Courses shows that group as a table (Course Title, Date Assigned, Due Date, Category, Initiation Score, Final Score, Date Completed, Actions) with an eye icon in Actions, not a card with a Review Quiz button. Whether that icon is what this step means by "Review Quiz," or the wording has drifted, needs a live check. */}
 
 ### How Many Attempts You Get
 
