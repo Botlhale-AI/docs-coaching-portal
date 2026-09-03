@@ -20,7 +20,7 @@ You need:
 
 ---
 
-## 1. Read Your Notifications
+## Read Your Notifications
 
 Select **Notifications** under **ADMIN** in the left sidebar. Three tabs sort what has arrived:
 
@@ -44,7 +44,7 @@ It sits under **ADMIN** in the sidebar, beside **Settings**. It is not a tab ins
 
 ---
 
-## 2. Check Your Account Details
+## Check Your Account Details
 
 Select **Settings** under **ADMIN**, then the **account** tab. It shows the details your organisation holds for you:
 
@@ -61,7 +61,7 @@ These fields are read-only. To correct any of them, ask your team lead, who chan
 
 ---
 
-## 3. Change Your Password
+## Change Your Password
 
 Select the **security** tab, then enter your current password and the new one twice.
 
