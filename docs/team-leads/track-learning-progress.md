@@ -34,11 +34,11 @@ Select **Coaching** in the left sidebar, then **Progress**. Each row pairs an ag
 | **Date Assigned** | When they received it |
 | **Due Date** | Worked out from the deadline set on the course |
 | [**Initiation Score**](../reference/glossary.md#initiation-score) | The agent's score at the time the course was assigned, which is the score that put them inside the course's **Training Initiation Score Range** |
-| **Score** | Their result on the quiz, where they have finished it |
+| **Score** | Their result on the quiz. Reads **0%** by default until the agent submits it, so a 0% on a **Not Started** or **In Progress** row means no attempt yet, not a fail |
 
 The two score columns sit side by side so you can read them together. **Initiation Score** is where the agent was before the course, and **Score** is how they did on it. A course assigned at 40% and passed at 90% tells you the assignment was aimed correctly.
 
-**Score** is shown in red where it falls below the **Pass Percentage** set in [Coaching Preferences](./coaching-preferences.md), so a scan down that column finds the agents who took the course and did not pass it.
+**Score** is shown in red whenever it is below the **Pass Percentage** set in [Coaching Preferences](./coaching-preferences.md), including the default 0% on a course nobody has finished yet. Check **Status** alongside it before reading a red score as a fail: red on a **Complete** row is a real fail, red on **Not Started** or **In Progress** is the unfinished default rather than a result.
 
 Long lists are paged, with **Previous** and **Next** either side of the page count.
 

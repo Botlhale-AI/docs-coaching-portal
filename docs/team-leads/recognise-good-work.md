@@ -32,13 +32,8 @@ Select **Coaching** in the left sidebar, then **Awards**. Select the create cont
 | **Scope** | Whether the award covers the whole organisation, chosen departments, or chosen teams |
 | **Score Threshold (Range)** | The **Min** and **Max** scores that earn it |
 | **Award Message** | What the agent reads when it is presented to them |
-| **Custom Evaluation Cycle** | Off by default, so the award is checked on the organisation's cycle. Turning it on opens the same **Repeat every**, **Unit** and **Time** controls used in [Coaching Preferences](./coaching-preferences.md), and this award alone then runs on them |
 
-Select **Create Award** to save it, or **Close** to leave without saving.
-
-:::tip When a custom cycle is worth setting
-Leave it off for most awards, so everything is judged over the same period and the awards stay comparable. Turn it on for an award that only makes sense over a longer window, such as one recognising sustained performance across a quarter while your default cycle runs weekly.
-:::
+Select **Create Award** to save it, or **Close** to leave without saving. Every award runs on your organisation's evaluation cycle, set under [Coaching Preferences](./coaching-preferences.md). There is no per-award cycle to set separately.
 
 ![The Create an Award form, with Award Name, Award Category, Award Description, Scope, and Score Threshold (Range)](../../img/screenshots/team_lead/awards/create-award.png)
 
