@@ -41,13 +41,13 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 **Solution:**
 1. Widen the date range. A new account often has nothing in the current week.
 2. Confirm interactions have finished processing. They appear once analysis completes.
-3. If the organisation shows agents **Reviewed Interactions Only**, nothing appears until a reviewer marks an interaction as reviewed. See [Set Coaching Preferences](../team-leads/coaching-preferences.md).
+3. If **Evaluation Scope** is set to **Reviewed Interactions Only**, nothing appears until a reviewer marks an interaction as reviewed. See [Set Coaching Preferences](../team-leads/coaching-preferences.md).
 
 ---
 
 **Problem:** An agent's interactions list is shorter than the work they have done.
 
-**Cause:** The organisation is set to show agents reviewed interactions only.
+**Cause:** **Agent View Permissions** is set to **Reviewed Interactions Only**. This is a different setting from the one behind an empty Dashboard above: it governs what an agent can open under **Interactions**, not what feeds their scores.
 
 **Solution:** Check the setting under **Coaching → Preferences**. Where reviewed-only is chosen, an unreviewed backlog is invisible to the agent, so the fix is reviewing rather than a settings change.
 
