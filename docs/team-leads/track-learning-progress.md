@@ -26,8 +26,6 @@ Select **Coaching** in the left sidebar, then **Progress**. Each row pairs an ag
 
 ![The Progress table, with a row for each agent and course](../../img/screenshots/team_lead/progress/progress-table.png)
 
-{/* RESHOOT: the rows here are raw QA test data ("Khaya Test", a course called "this is a test") rather than curated demo content. Not a compliance issue, just worth cleaning up on the next reshoot of this table. A newer capture was tried and rejected: it showed a literal "Invalid date" string in the Due Date column, which reads as a genuine date-formatting bug rather than an improvement — worth reporting upstream separately before it's used here. */}
-
 | Column | What it shows |
 | :--- | :--- |
 | **Agent** | Who the course was assigned to |

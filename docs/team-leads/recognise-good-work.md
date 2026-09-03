@@ -40,9 +40,9 @@ Select **Create Award** to save it, or **Close** to leave without saving.
 Leave it off for most awards, so everything is judged over the same period and the awards stay comparable. Turn it on for an award that only makes sense over a longer window, such as one recognising sustained performance across a quarter while your default cycle runs weekly.
 :::
 
-![The Award form, with Award Name, Award Category, Award Description, Scope, and Score Threshold (Range)](../../img/screenshots/team_lead/awards/create-award.png)
+![The Create an Award form, with Award Name, Award Category, Award Description, Scope, and Score Threshold (Range)](../../img/screenshots/team_lead/awards/create-award.png)
 
-{/* Captured from Edit Award rather than Create an Award, but the form is the same in both modes. Award Message and Custom Evaluation Cycle sit below the fold and aren't visible here. */}
+![The rest of the Create an Award form, with Award Message and the Create Award control](../../img/screenshots/team_lead/awards/create-award2.png)
 
 **Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score falls between **Min** and **Max**.
 
@@ -79,8 +79,6 @@ Open **Awards Presented**. Each row is one award reaching one agent:
 An empty list where you expected awards usually means the date range, not a fault. Awards are presented on the evaluation cycle, so a range that predates the last run shows nothing.
 
 ![The filter panel on the awards list](../../img/screenshots/team_lead/awards/filter.png)
-
-{/* RESHOOT: reshot clean of the Support leak that was here before. The Department and Team lists visible are still raw QA test data ("Demo Department AAA", "28 Test Team", "Load Dept") rather than curated demo content — worth cleaning up whenever this is next touched, though it's not a compliance issue. */}
 
 ![The sort control on the awards list](../../img/screenshots/team_lead/awards/sort.png)
 
