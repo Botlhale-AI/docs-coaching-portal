@@ -16,7 +16,7 @@ pagination_next: agents/your-courses
 You need:
 
 - **Processed interactions.** A call or chat appears here once Vela has finished transcribing and analysing it, so a new account has an empty list rather than an error.
-- **To know what your team lead has shared.** Your organisation chooses whether you see all your interactions or only the ones a reviewer has marked as reviewed. If your list looks shorter than you expect, that setting is the usual reason.
+- **To know what your team lead has shared.** Your organisation's **Agent View Permissions** setting decides whether you see all your interactions or only the ones a reviewer has marked as reviewed. If your list looks shorter than you expect, that setting is the usual reason.
 
 ---
 

@@ -29,7 +29,7 @@ The **Training Initiation Score Range** is what decides who receives a course. I
 
 **Build around a category, not an overall score.** Several agents behind in Compliance is a course. One agent behind everywhere is a conversation, and no course fixes it.
 
-**Keep the range tight.** A range covering most of the team reaches people who do not need it, and their completing it tells you nothing. A narrow range means completion is a signal.
+**Keep the range tight.** A range covering most of the team reaches people who do not need it, so completion does not show whether it worked. A narrow range means completion is a signal.
 
 **Write the description for the person receiving it.** "Improve compliance" says nothing. "Covers the disclosures required at the start of a call, and when each applies" tells an agent what they are about to learn and why it arrived.
 

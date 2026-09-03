@@ -63,7 +63,7 @@ Choosing departments or teams reveals a selector for which ones, and the course 
 
 This is the setting that decides who receives the course. It is a slider with two handles over 0 to 100, and the percentages either side of it show the floor and ceiling you have set. On each evaluation cycle, every agent in scope whose score falls between them is assigned the course.
 
-Set it around the gap you found on the Dashboard rather than around a pass percentage. A range of 0 to 100 assigns the course to everyone, which tells you nothing about whether it worked. A range of 40 to 65 reaches the people who are struggling with the thing this course teaches, and leaves a comparison group who did not need it.
+Set it around the gap you found on the Dashboard rather than around a pass percentage. A range of 0 to 100 assigns the course to everyone, so there is no comparison group to show whether it worked. A range of 40 to 65 reaches the people who are struggling with the thing this course teaches, and leaves a comparison group who did not need it.
 
 The range is a band, not a threshold. An agent above the ceiling does not receive the course, which is deliberate: training aimed at a weakness is wasted on someone who does not have it.
 

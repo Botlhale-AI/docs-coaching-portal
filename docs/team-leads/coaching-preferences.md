@@ -10,7 +10,7 @@ pagination_next: null
 **Preferences** holds the settings that govern all coaching in your organisation. They set how often Vela evaluates agents, what counts as passing a course, which interactions evaluations are based on, and how much of their own work agents can see. All of them apply organisation-wide rather than per course or per agent.
 
 :::note Reading and changing are different permissions
-Everyone who can reach this page can read it. Changing anything on it needs organisational access **and** the admin role. With one but not the other the controls open greyed out, with no message explaining why.
+Everyone who can reach this page can read it. Changing anything on it needs organisational access **and** the admin role. With one but not the other, the controls open greyed out.
 :::
 
 ---
