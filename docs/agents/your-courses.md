@@ -117,7 +117,7 @@ The course moves to **Completed Courses** with the last score you got, whether o
 
 A low first attempt is worth spending a retake on rather than leaving. Read the material again before you use the next one.
 
-While retakes remain, the results screen also offers **Complete Course**, beside **Retake Quiz**. Selecting it closes the course out on that attempt's score, pass or fail, without waiting for retakes to run out. Passing does not move a course to **Completed Courses** by itself, so select **Complete Course** once you are satisfied with a result rather than assuming a pass alone is enough.
+While retakes remain, the results screen also offers **Complete Course**, beside **Retake Quiz**. Selecting it closes the course out on that attempt's score, pass or fail, without waiting for retakes to run out. Passing alone does not complete a course, so select **Complete Course** once you are satisfied with a result.
 
 ---
 

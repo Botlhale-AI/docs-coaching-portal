@@ -85,7 +85,7 @@ How long an agent has from the date a course is assigned to them, set on the cou
 
 ## Evaluation Cycle
 
-How often Vela reviews scores and assigns the courses and awards agents have qualified for. The Preferences page describes the two in one breath, as how often "awards and training courses are reviewed," with no distinction between them. On each run, every agent's score in every scorecard **Category** is checked against every course's **Training Initiation Score Range** and every award's **Score Threshold (Range)**: a course catches the agents scoring low in it, an award catches the agents scoring high. Set under **Coaching → Preferences** as an interval, a unit of **Day(s)**, **Week(s)**, or **Month(s)**, and a time.
+How often Vela reviews scores and assigns the courses and awards agents have qualified for. The Preferences page describes both in one breath, with no distinction between them: a course catches agents scoring low in a category, an award catches those scoring high. Set under **Coaching → Preferences** as an interval, a unit of **Day(s)**, **Week(s)**, or **Month(s)**, and a time.
 
 Nothing is assigned between runs. A course created today reaches agents at the next run rather than immediately.
 
