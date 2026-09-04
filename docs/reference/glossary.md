@@ -53,11 +53,11 @@ The main Vela platform writes this as **Auto-Fail**, with a hyphen. It is the sa
 
 ## Award
 
-Recognition intended to be presented automatically when an agent's score in the award's **Category** falls inside its **Score Threshold (Range)**, the same mechanism as a [Course](#course) pointed at a high band instead of a low one. Awards carry a certificate the agent can download.
+Recognition presented automatically when an agent's score in the award's **Category** falls inside its **Score Threshold (Range)**, the same mechanism as a [Course](#course) pointed at a high band instead of a low one. Awards carry a certificate the agent can download.
 
 Nobody presents an award manually. See [Recognise Good Work](../team-leads/recognise-good-work.md).
 
-{/* UNVERIFIED: no code in vela or vela-data creates the record that presents an award, so nothing about this entry is directly observed running, unlike course assignment (confirmed by the product owner from their own knowledge of the third service that runs it). "Checks a category score, not course completion" is an inference from absence, not a direct confirmation: Award's schema has no field linking it to a course, and course completion (submit-quiz/route.js, completeCourse()) triggers nothing else anywhere in either repo. It's the best-supported reading available, but confirm with the product owner before treating it as settled. */}
+{/* UNVERIFIED: no code in vela or vela-data creates the record that presents an award, so the literal implementation isn't directly observed, the same gap that exists for course assignment (confirmed only by the product owner's own knowledge of a third service, not by source). The Preferences page's own copy groups "awards and training courses" under one Evaluation Cycle description with no distinction, and Award's schema (category + triggerScore, no course-link field) is structurally identical to Course's, so both point the same way. Confirm with the product owner if a more specific answer is ever needed. */}
 
 ## Category
 
@@ -85,7 +85,7 @@ How long an agent has from the date a course is assigned to them, set on the cou
 
 ## Evaluation Cycle
 
-How often Vela reviews scores and assigns the courses and awards agents have qualified for. On each run, every agent's score in every scorecard **Category** is checked against every course's **Training Initiation Score Range**, a course catching the agents scoring low in it. Awards are believed to work the same way, against **Score Threshold (Range)**, catching the agents scoring high, though this has not been separately confirmed the way course assignment has. Set under **Coaching → Preferences** as an interval, a unit of **Day(s)**, **Week(s)**, or **Month(s)**, and a time.
+How often Vela reviews scores and assigns the courses and awards agents have qualified for. The Preferences page describes the two in one breath, as how often "awards and training courses are reviewed," with no distinction between them. On each run, every agent's score in every scorecard **Category** is checked against every course's **Training Initiation Score Range** and every award's **Score Threshold (Range)**: a course catches the agents scoring low in it, an award catches the agents scoring high. Set under **Coaching → Preferences** as an interval, a unit of **Day(s)**, **Week(s)**, or **Month(s)**, and a time.
 
 Nothing is assigned between runs. A course created today reaches agents at the next run rather than immediately.
 

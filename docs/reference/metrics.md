@@ -59,9 +59,9 @@ Shown on **Coaching → Awards** for a team lead, and on **Awards** in the porta
 | :--- | :--- | :--- |
 | **Date Awarded** | Both | The date the evaluation cycle presented an award to an agent |
 
-**What to look for:** awards are intended to be presented by the cycle, so an empty list is expected to be a date range that predates the last run more often than a fault.
+**What to look for:** awards are presented by the cycle, so an empty list is a date range that predates the last run more often than a fault.
 
-{/* UNVERIFIED: no code path was found that presents awards automatically; this assumes the same mechanism as course assignment, which has not been separately confirmed for awards. */}
+{/* UNVERIFIED: no code path was found that presents awards automatically, the same gap that exists for course assignment. The Preferences page's own copy describes one cycle covering both with no distinction, which is why this is stated the same way as the course-progress note above. */}
 
 ---
 

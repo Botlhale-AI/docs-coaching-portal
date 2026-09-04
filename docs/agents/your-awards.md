@@ -69,10 +69,10 @@ Select **Download** to save the certificate. It carries your name, the award's c
 ![The award certificate as it downloads, carrying the agent's name, the award's category and score, and the assessed period](../../img/screenshots/agent_view/awards/award-template.png)
 
 :::note Awards follow your scores
-Your team lead sets the criteria and Vela is intended to present the award automatically when an agent meets them on the [evaluation cycle](../reference/glossary.md#evaluation-cycle), the same way courses are assigned. Nobody presents them manually.
+Your team lead sets the criteria and Vela presents the award automatically when an agent meets them on the [evaluation cycle](../reference/glossary.md#evaluation-cycle), the same way courses are assigned. Nobody presents them manually.
 :::
 
-{/* UNVERIFIED: no code in vela or vela-data creates a PresentedAward record anywhere. Course auto-assignment by score is confirmed real (a cron in a third service, per the product owner), but that same confirmation has not been given for awards specifically. Confirm before restating this as settled. */}
+{/* UNVERIFIED: no code in vela or vela-data creates a PresentedAward record anywhere, the same gap that exists for course assignment (confirmed only by the product owner's own recollection, not by source). The Preferences page's own copy describes one Evaluation Cycle process covering "awards and training courses" with no distinction, which is why this note treats them the same. */}
 
 ---
 

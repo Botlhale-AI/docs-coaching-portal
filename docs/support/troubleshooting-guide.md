@@ -93,7 +93,7 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 2. Lower it to a band that is demanding but reachable, or leave it if it is deliberately rare.
 3. Changes take effect from the next evaluation cycle. Awards already presented stay presented.
 
-{/* UNVERIFIED: this entry assumes awards are presented automatically by the evaluation cycle, the same way courses are assigned. No code path that presents an award was found in vela or vela-data, and this has not been separately confirmed for awards the way course assignment was. If awards are not actually automatic yet, this whole entry needs rewriting. */}
+{/* UNVERIFIED: this entry assumes awards are presented automatically by the evaluation cycle, the same way courses are assigned. No code path that presents either was found in vela or vela-data; the Preferences page's own copy groups "awards and training courses" under one Evaluation Cycle description, which is why they're treated the same here. */}
 
 ---
 

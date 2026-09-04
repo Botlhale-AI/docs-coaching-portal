@@ -25,7 +25,7 @@ The **Coaching** section in the main Vela sidebar, available where coaching is e
 - **Progress.** Every agent and course pairing, with status, dates, and score, narrowed by team, department, status, or a score range, and by a separate date range control. See [Track Learning Progress](./team-leads/track-learning-progress.md).
 - **Awards.** Define an award with a score range and a message, for the evaluation cycle to present with a certificate. See [Recognise Good Work](./team-leads/recognise-good-work.md).
 
-{/* UNVERIFIED: the Awards bullet above assumes the evaluation cycle presents awards automatically, the same way it assigns courses. No code path that presents an award was found in vela or vela-data, and this has not been separately confirmed for awards the way course assignment was. */}
+{/* UNVERIFIED: the Awards bullet above assumes the evaluation cycle presents awards automatically, the same way it assigns courses. No code path that presents either was found in vela or vela-data; the Preferences page's own copy groups "awards and training courses" under one Evaluation Cycle description, which is why they're treated the same here. */}
 - **Preferences.** The evaluation cycle, pass percentage, evaluation scope, and agent view permissions, set once for the organisation. See [Set Coaching Preferences](./team-leads/coaching-preferences.md).
 
 ### The Coaching Portal for Agents
