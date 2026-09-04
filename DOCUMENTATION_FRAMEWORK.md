@@ -192,9 +192,9 @@ The linter and the build run on every push through [.github/workflows/docs.yml](
 | Check | Mechanism | Status |
 | :--- | :--- | :--- |
 | Broken links and anchors | `onBrokenLinks` and `onBrokenAnchors`, plus the linter | Fails |
-| Frontmatter: title, type, one H1 matching the title | Linter | Fails |
+| Frontmatter: title, type, no H1 in the body | Linter | Fails |
 | House style: dashes, banned words, UK spelling, present tense | Linter | Fails |
-| Images: alt text, spacing, resolution, no orphans | Linter | Fails |
+| Images: alt text, spacing, no orphans | Linter | Fails |
 | Links to draft pages | Linter | Fails |
 | Link text that is another page's title | Linter | Fails |
 | Sidebar label matches the page title | Linter | Fails |

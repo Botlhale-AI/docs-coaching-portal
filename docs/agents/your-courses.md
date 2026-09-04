@@ -79,9 +79,9 @@ Select **Take Quiz** on a course that has one. Questions come in three forms:
 | **Short Paragraph** | Write a brief answer |
 | **Long Paragraph** | Write a longer answer |
 
-Written answers are not marked against a fixed correct answer. Vela reads what you wrote, scores it, and records a short reason for that score, which you see beside the question in your result. Answer the question that was asked rather than writing generally around it.
+Written answers are still compared against an answer your team lead set when building the quiz, with Vela judging meaning rather than requiring exact wording. It records a short reason for the score, for your team lead's own review. Answer the question that was asked rather than writing generally around it.
 
-Your result appears as a **Final Score**. Where you took the course more than once, **Initiation Score** records how you did the first time, so improvement is visible rather than overwritten. Where you scored below the pass percentage, the page tells you so directly: *You did not meet the passing score of 70%*, with your organisation's figure in place of the 70.
+Your result appears as a **Final Score**. **Initiation Score** sits beside it, showing the score you had when the course was assigned to you rather than a quiz result, so the gap between the two is what the course changed. Where you scored below the pass percentage, the page tells you so directly: *You did not meet the passing score of 70%*, with your organisation's figure in place of the 70.
 
 ![The quiz results view, showing the final score against the questions answered](../../img/screenshots/agent_view/courses/courses-detailed-view-quiz-results.png)
 
@@ -98,7 +98,7 @@ stateDiagram-v2
     [*] --> Assigned: Your score falls in the course's range
     Assigned --> InProgress: You open it
     InProgress --> InProgress: Retake, while you have some left
-    InProgress --> Completed: You pass
+    InProgress --> Completed: You select Complete Course
     InProgress --> Completed: You use the last retake
 ```
 
@@ -117,7 +117,7 @@ The course moves to **Completed Courses** with the last score you got, whether o
 
 A low first attempt is worth spending a retake on rather than leaving. Read the material again before you use the next one.
 
-Passing moves the course to **Completed Courses** as well. Both outcomes land in the same group, so the score beside it is what tells them apart.
+While retakes remain, the results screen also offers **Complete Course**, beside **Retake Quiz**. Selecting it closes the course out on that attempt's score, pass or fail, without waiting for retakes to run out. Passing does not move a course to **Completed Courses** by itself, so select **Complete Course** once you are satisfied with a result rather than assuming a pass alone is enough.
 
 ---
 

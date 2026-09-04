@@ -30,7 +30,7 @@ What connects them is the evaluation cycle. Team leads define, the cycle distrib
 
 ## What depends on what
 
-Preferences sits at the top of everything. Its four settings fan out into the rest of coaching: **Evaluation Scope** decides which interactions produce the scores, and those scores are what the Dashboard shows and what a course or award range is measured against. **Evaluation Cycle** decides when that measurement runs, and the run is what assigns courses and presents awards, which is what Progress then records. **Pass Percentage** decides whether a quiz result in Progress reads as a pass. **Agent View Permissions** sits apart from all of it, governing only what an agent can open under Interactions.
+Preferences sits at the top of everything. Its four settings fan out into the rest of coaching: **Evaluation Scope** decides which interactions produce the scores, and those scores, broken down by category, are what the Dashboard shows and what a course or award range is measured against, always the agent's score in that course or award's own **Category**, never their overall score. **Evaluation Cycle** decides when that measurement runs, and the run is what assigns courses and presents awards, which is what Progress then records. **Pass Percentage** decides whether a quiz result in Progress reads as a pass. **Agent View Permissions** sits apart from all of it, governing only what an agent can open under Interactions.
 
 ```mermaid
 flowchart TD
@@ -85,9 +85,9 @@ Agree it before agents are invited. Changing it afterwards is visible to them an
 
 ### Scope caps what your own access allows
 
-The **Scope** control on a course or award offers the organisation, departments, or teams, but what you may actually set is limited by your own access level. Departmental access cannot build a course that reaches another department.
+The **Scope** control's options depend on your own access level rather than being the same for everyone. Organisational access sees **Entire Organisation**, **Specific Departments**, and **Specific Teams**. Departmental access never sees an organisation-wide option at all, only **Entire Department** and **Specific Teams**. Team access sees no selector, only a fixed line naming your own team.
 
-This is a common source of "the option is there but it does not work". The option is there because the control is the same for everyone. The limit is on your account.
+This is why a departmental-access team lead cannot build a course that reaches another department: the option to try is never offered, not shown and then blocked.
 
 ---
 
@@ -115,7 +115,7 @@ A first month of coaching, in the order the dependencies require:
 2. **Read the Dashboard.** Find a category several agents are behind in. One agent behind is a conversation, not a course.
 3. **Build one course** around that category, with a score range covering the agents you saw and not the whole team.
 4. **Wait for the cycle.** Nothing is assigned before it runs. This is the step people skip.
-5. **Open Progress.** Confirm agents are against the course with a **Date Assigned**. Nobody there means the range missed, not that coaching is broken.
+5. **Open Progress.** Confirm agents are assigned to the course, shown with a **Date Assigned**. Nobody there means the range missed, not that coaching is broken.
 6. **Read the Dashboard again next cycle.** Compare the agents who received the course with those who did not. That comparison is the only evidence the course worked.
 7. **Create an award** once there is something real to recognise.
 

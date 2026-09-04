@@ -16,7 +16,7 @@ The **ADMIN** section at the foot of the left sidebar holds two pages. **Notific
 You need:
 
 - **An Agent Portal sign-in.** Your team lead creates your account and the portal emails you an invitation.
-- **To know how you sign in.** If you use **Sign in with Google** or **Sign in with Microsoft**, your identity provider holds your password and the **security** tab does not appear.
+- **To know how you sign in.** If you use **Sign in with Google** or **Sign in with Microsoft**, your identity provider holds your password and the **Security** tab does not appear.
 
 ---
 
@@ -48,7 +48,7 @@ It sits under **ADMIN** in the sidebar, beside **Settings**. It is not a tab ins
 
 ## Check Your Account Details
 
-Select **Settings** under **ADMIN**, then the **account** tab. It shows the details your organisation holds for you:
+Select **Settings** under **ADMIN**, then the **Account** tab. It shows the details your organisation holds for you:
 
 | Field | What it shows |
 | :--- | :--- |
@@ -65,7 +65,7 @@ These fields are read-only. To correct any of them, ask your team lead, who chan
 
 ## Change Your Password
 
-Select the **security** tab, then enter your current password and the new one twice.
+Select the **Security** tab, then enter your current password and the new one twice.
 
 Your new password must meet all of these:
 
@@ -76,8 +76,8 @@ Your new password must meet all of these:
 
 Select **Save** to apply it. The next time you sign in, use the new password.
 
-:::note The security tab depends on how you sign in
-Signing in with Google or Microsoft means your identity provider holds your password, so the **security** tab does not appear. Change it with your provider instead.
+:::note The Security tab depends on how you sign in
+Signing in with Google or Microsoft means your identity provider holds your password, so the **Security** tab does not appear. Change it with your provider instead.
 :::
 
 ---

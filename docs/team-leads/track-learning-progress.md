@@ -58,7 +58,6 @@ A row occasionally shows **Unknown** rather than one of the three statuses. The 
 | **Status** | **Not Started**, **In Progress**, or **Complete** |
 | **Score** | A range, so you can isolate the agents who failed |
 | **Initiation Score** | A range, so you can isolate the agents a course was aimed at |
-| **From** | The start of the period |
 
 Select **Apply** to use them, and you get **Filters applied successfully**. Clearing them gives **Filters cleared successfully**.
 
@@ -66,11 +65,13 @@ There is no filter on an individual agent or a single course. Narrow by team and
 
 ![The filter panel on the Progress list](../../img/screenshots/team_lead/progress/filter.png)
 
+The date range is a separate control, the **pencil** icon above the table rather than part of **Filter By**. Selecting it opens its own picker with its own **Apply**.
+
 ![Filtering the Progress list by date](../../img/screenshots/team_lead/progress/date-filter.png)
 
 ![The detailed date range picker, with the range you set](../../img/screenshots/team_lead/progress/date-filter-detailed.png)
 
-A date range that ends before it starts is refused with **Invalid date range**. Check the order of the two dates.
+The picker keeps the earlier date you click as the start automatically, so there is no way to set an out-of-order range. Where the page instead shows **Invalid date range**, one of the two dates has not been set yet.
 
 **Sort By** orders the list on a column you choose.
 

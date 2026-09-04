@@ -10,7 +10,7 @@ pagination_next: null
 **Preferences** holds the settings that govern all coaching in your organisation. They set how often Vela evaluates agents, what counts as passing a course, which interactions evaluations are based on, and how much of their own work agents can see. All of them apply organisation-wide rather than per course or per agent.
 
 :::note Reading and changing are different permissions
-Everyone who can reach this page can read it. Changing anything on it needs organisational access **and** the admin role. With one but not the other, the controls open greyed out.
+Everyone who can reach this page can read it. Changing anything on it needs organisational access **and** the admin role. With one but not the other, the controls open greyed out, and **Save** does not appear at all.
 :::
 
 ---
@@ -67,6 +67,8 @@ Monthly suits most teams. Weekly responds faster but assigns courses on less evi
 
 **Pass Percentage** is the share of the total quiz score an agent reaches to pass a course. It applies to every course, so it is set here rather than on each course.
 
+Changing it applies immediately, to the very next quiz any agent submits anywhere in the organisation, rather than waiting for the evaluation cycle.
+
 ---
 
 ## 4. Choose What Agents Can See
@@ -85,7 +87,7 @@ Answer "Which interactions would you like agents to be able to view":
 Reviewed-only is worth considering where your reviewers add context that changes how a score reads. It also means an unreviewed backlog is invisible to the agent, so their portal looks emptier than their work has been.
 
 :::warning This setting applies backwards, not from the next cycle
-Everything else on this page takes effect at the next evaluation cycle. This one takes effect at once, across an agent's whole history. Moving from **All Interactions** to **Reviewed Interactions Only** withdraws interactions an agent could open yesterday, including ones they have already read and been coached on. Agree it before agents are invited.
+**Evaluation Scope** and **Evaluation Cycle** take effect at the next evaluation cycle. **Agent View Permissions** takes effect at once, across an agent's whole history, and **Pass Percentage** also applies immediately rather than waiting for a cycle. Moving Agent View Permissions from **All Interactions** to **Reviewed Interactions Only** withdraws interactions an agent could open yesterday, including ones they have already read and been coached on. Agree both before agents are invited.
 :::
 
 ---

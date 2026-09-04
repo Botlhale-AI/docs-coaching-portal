@@ -53,11 +53,11 @@ See [Read the Coaching Dashboard](./coaching-dashboard.md).
 
 ## 3. Build a Course Around It
 
-Select **Courses**, then **Create Course**.
+Select **Courses**, then **Create a New Course**.
 
-Name it for the gap, describe what it covers in terms the agent recognises, and attach your material. Add a quiz so completion means something. Set the **Deadline** in days and the scope.
+Name it for the gap, describe what it covers in terms the agent recognises, and attach your material. Set **Category** to the same category you found behind in step 2, since that is what the score range below is measured against, not the agent's overall score. Add a quiz so completion means something. Set the **Deadline** (a count and a unit of Days, Weeks, or Months) and the **Scope**.
 
-The [**Training Initiation Score Range**](../reference/glossary.md#training-initiation-score-range) is what decides who receives it. Narrow it to the agents you saw behind in step 2. A wide range reaches everyone and measures nothing.
+The [**Training Initiation Score Range**](../reference/glossary.md#training-initiation-score-range) is what decides who receives it: every agent whose score in that category falls inside it. Narrow it to the agents you saw behind in step 2. A wide range reaches everyone and measures nothing.
 
 See [Create and Assign Courses](./create-and-assign-courses.md).
 
@@ -75,9 +75,9 @@ See [Track Learning Progress](./track-learning-progress.md).
 
 ## 5. Recognise the Improvement
 
-Select **Awards**, then **Create Award**.
+Select **Awards**, then **Create New Award**.
 
-Set the **Agent Score** at a mark that means something when reached. Write the **Award Message** as though speaking to the person, because that is the part they read.
+Set the **Score Threshold (Range)** at a band that means something when reached. Write the **Award Message** as though speaking to the person, because that is the part they read.
 
 See [Recognise Good Work](./recognise-good-work.md).
 

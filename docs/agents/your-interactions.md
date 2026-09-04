@@ -46,19 +46,11 @@ Select an interaction to open it.
 
 ## 2. Read the Detailed View
 
-The detailed view has three panels. The trail at the top reads **Interactions › Calls › Call Details**, so you can always see where you are.
+The page is two columns. On the left, **Audio** sits above a toggle between **Smart Detector** and **Comments**. On the right, **Call Details** sits above the **Transcript**. The trail at the top reads **Interactions › Calls › Call Details** on a call. On a chat it reads **Interactions › Chats › Chat Details**, and the panel itself is titled **Chat Details** rather than **Call Details**.
 
-### A. Audio and Transcript
+### A. Audio and Smart Detector
 
-**Audio** holds the player. Where a recording is unavailable it reads **Audio not available**.
-
-**Transcript** sits on the right. Switch it between **Original** and **English** when the conversation was not in English, and use **Search** to find a word in it. Selecting a line's timestamp jumps the audio to that moment, and **Play from here** does the same thing.
-
-Where a transcript is unavailable the panel reads **Transcript not available**.
-
-![A call open in the detailed view, with the audio player and Smart Detector analysis on the left and Call Details and the Transcript on the right](../../img/screenshots/agent_view/interactions/interactions-calls-detailed-view.png)
-
-### B. Smart Detector
+**Audio** holds the player. Where a recording is unavailable it reads **Audio not available**. A control in this card's corner reads **Expand Section** or **Collapse Section**, giving it the whole width while you read.
 
 **Smart Detector** holds two tabs:
 
@@ -71,11 +63,15 @@ On **Scorecard**, switch **View** between **Automatic** and **Manual** to see th
 
 A question that did not apply to the conversation reads **N/A** rather than counting against you.
 
-### C. Call Details
+![A call open in the detailed view, with the audio player and Smart Detector analysis on the left and Call Details and the Transcript on the right](../../img/screenshots/agent_view/interactions/interactions-calls-detailed-view.png)
 
-**Call Details** lists the facts about the interaction: the agent, **Call ID**, **File Name**, **Date**, **Uploaded**, **Handle Time**, **Silent Time**, **Agent Score**, **Initial Score**, **Alerts**, and **Department**.
+### B. Call Details and Transcript
 
-Each panel has a control in its corner to **Expand Section** or **Collapse Section**, so you can give the transcript or the scorecard the whole width while you read.
+**Call Details** lists the facts about the interaction: the agent, **Call ID**, **File Name**, **Date**, **Uploaded**, **Handle Time**, **Agent Score**, **Initial Score**, **Department**, **Team**, **Topic**, and **Direction**. A call also carries **Silent Time**. A chat carries **Response Time** in its place.
+
+**Transcript** sits below it. Switch it between **Original** and **English** when the conversation was not in English, and use **Search** to find a word in it. Selecting a line's timestamp jumps the audio to that moment, and **Play from here** does the same thing.
+
+Where a transcript is unavailable the panel reads **Transcript not available**.
 
 ![A chat open in the detailed view, laid out the same way as a call](../../img/screenshots/agent_view/interactions/interactions-chats-detailed-view.png)
 

@@ -53,17 +53,19 @@ The main Vela platform writes this as **Auto-Fail**, with a hyphen. It is the sa
 
 ## Award
 
-Recognition presented automatically when an agent's score falls inside the **Score Threshold (Range)** set on the award. Awards carry a certificate the agent can download.
+Recognition intended to be presented automatically when an agent's score in the award's **Category** falls inside its **Score Threshold (Range)**, the same mechanism as a [Course](#course) pointed at a high band instead of a low one. Awards carry a certificate the agent can download.
 
 Nobody presents an award manually. See [Recognise Good Work](../team-leads/recognise-good-work.md).
 
+{/* UNVERIFIED: no code in vela or vela-data creates the record that presents an award, so nothing about this entry is directly observed running, unlike course assignment (confirmed by the product owner from their own knowledge of the third service that runs it). "Checks a category score, not course completion" is an inference from absence, not a direct confirmation: Award's schema has no field linking it to a course, and course completion (submit-quiz/route.js, completeCourse()) triggers nothing else anywhere in either repo. It's the best-supported reading available, but confirm with the product owner before treating it as settled. */}
+
 ## Category
 
-Two different things share this word.
+One list, shared across coaching and the main Vela platform. It is the same set of categories your organisation's Agent Scorecard questions are grouped into, such as Customer Care or Compliance, and it grows automatically the first time a scorecard question uses a new one.
 
-On the **Dashboard**, a category groups related scorecard questions, such as Customer Care or Compliance. **Category Scores** breaks performance down by these.
+On the **Dashboard**, a category groups scorecard questions, and **Category Scores** breaks performance down by them.
 
-On a course or an award, **Category** groups related courses or awards so they are easier to find in a long list.
+On a course or an award, **Category** is the one whose score the **Training Initiation Score Range** or **Score Threshold (Range)** is measured against, not the agent's overall score. A course scoped to Compliance with a range of 40 to 65 reaches agents whose Compliance score, specifically, falls in that band, whatever their other categories look like.
 
 ## Coaching Portal
 
@@ -73,9 +75,9 @@ The coaching add-on as a whole, and the name of this documentation. It has two h
 
 ## Course
 
-Training assigned automatically when an agent's scores fall inside the range set on it. A course holds material, an optional quiz, and a deadline.
+Training assigned automatically when an agent's score in the course's **Category** falls inside its **Training Initiation Score Range**. A course holds material, an optional quiz, and a deadline.
 
-Courses reach people by score rather than by name. See [Create and Assign Courses](../team-leads/create-and-assign-courses.md).
+Courses reach people by score in a category rather than by name. See [Create and Assign Courses](../team-leads/create-and-assign-courses.md).
 
 ## Deadline
 
@@ -83,7 +85,7 @@ How long an agent has from the date a course is assigned to them, set on the cou
 
 ## Evaluation Cycle
 
-How often Vela reviews scores and assigns the courses and awards agents have qualified for. Set under **Coaching → Preferences** as an interval, a unit of **Day(s)**, **Week(s)**, or **Month(s)**, and a time.
+How often Vela reviews scores and assigns the courses and awards agents have qualified for. On each run, every agent's score in every scorecard **Category** is checked against every course's **Training Initiation Score Range**, a course catching the agents scoring low in it. Awards are believed to work the same way, against **Score Threshold (Range)**, catching the agents scoring high, though this has not been separately confirmed the way course assignment has. Set under **Coaching → Preferences** as an interval, a unit of **Day(s)**, **Week(s)**, or **Month(s)**, and a time.
 
 Nothing is assigned between runs. A course created today reaches agents at the next run rather than immediately.
 
@@ -95,11 +97,11 @@ Marking an interaction as reviewed happens in the main Vela platform, not in coa
 
 ## Final Score
 
-An agent's result on a course quiz. Where they took the course more than once, [Initiation Score](#initiation-score) records the first attempt alongside it.
+An agent's result on a course quiz. [Initiation Score](#initiation-score) sits beside it, showing where they stood before the course rather than a previous quiz result.
 
 ## Initiation Score
 
-An agent's result on their first attempt at a course, kept when they retake it. Having both figures means improvement is visible rather than overwritten.
+An agent's score at the moment a course was assigned to them, the same score that put them inside the course's [Training Initiation Score Range](#training-initiation-score-range). It is set at assignment rather than kept from a first quiz attempt: a Progress row for a course still in progress, with no quiz submitted yet, already shows a real Initiation Score.
 
 ## Interaction
 
@@ -129,7 +131,7 @@ An agent sees the outcome per question on the **Scorecard** tab of an interactio
 
 ## Training Initiation Score Range
 
-The score range on a course that decides who receives it. An agent whose scores fall inside the range is assigned the course on the next evaluation cycle.
+The score range on a course that decides who receives it, measured against the agent's score in the course's own **Category** rather than their overall score. An agent whose score in that category falls inside the range is assigned the course on the next evaluation cycle.
 
 A narrow range reaches the people with the gap. A wide one reaches everyone and measures nothing.
 

@@ -22,15 +22,15 @@ You need:
 
 ## 1. Create an Award
 
-Select **Coaching** in the left sidebar, then **Awards**. Select the create control to open **Create an Award**. The form takes its fields in this order:
+Select **Coaching** in the left sidebar, then **Awards**. Select **Create New Award** to open the form. The form takes its fields in this order:
 
 | Field | What it does |
 | :--- | :--- |
 | **Award Name** | What the award is called, on the certificate and in the agent's list |
-| **Award Category** | Groups related awards. The list is drawn from your organisation's existing categories |
+| **Award Category** | The scorecard category the score threshold below is measured against. The list is the same one your organisation's scorecard questions are grouped into |
 | **Award Description** | What the award recognises |
 | **Scope** | Whether the award covers the whole organisation, chosen departments, or chosen teams |
-| **Score Threshold (Range)** | The **Min** and **Max** scores that earn it |
+| **Score Threshold (Range)** | The **Min** and **Max** an agent's score in that category must fall between to earn it |
 | **Award Message** | What the agent reads when it is presented to them |
 
 Select **Create Award** to save it, or **Close** to leave without saving. Every award runs on your organisation's evaluation cycle, set under [Coaching Preferences](./coaching-preferences.md). There is no per-award cycle to set separately.
@@ -39,9 +39,9 @@ Select **Create Award** to save it, or **Close** to leave without saving. Every 
 
 ![The rest of the Create an Award form, with Award Message and the Create Award control](../../img/screenshots/team_lead/awards/create-award2.png)
 
-**Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score falls between **Min** and **Max**.
+**Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score in **Award Category** falls between **Min** and **Max**, the same mechanism a course uses, aimed at a high band instead of a low one.
 
-That lets you recognise a tier rather than everyone above a line. A "top performer" award is a high min with a max of 100. A band such as 70 to 79 picks out that group on its own.
+That lets you recognise a tier rather than everyone above a line. A "top performer" award is a high min with a max of 100 on the category that matters most. A band such as 70 to 79 picks out that group on its own.
 
 {/* SCREENSHOT NEEDED: the Scope control expanded to departments or teams, with the multi-select open and the "N departments selected" count beneath it. Suggested path: img/screenshots/team_lead/awards/create-award-scope.png */}
 
@@ -85,11 +85,11 @@ An empty list where you expected awards usually means the date range, not a faul
 
 ## 3. Download a Certificate
 
-Select the **download** icon in the **Download** column to save that agent's certificate. It carries their name, the award, and the date.
+Select the **download** icon in the **Download** column to save that agent's certificate. It carries their name, the award's category and score, its description, your name as the supervisor who presented it, and the period it was assessed over, rather than the award's own name or a single date.
 
 ![The download icon on an award row, which saves the certificate](../../img/screenshots/team_lead/awards/download.png)
 
-![The certificate as it downloads, carrying the agent's name, the award, and the date](../../img/screenshots/team_lead/awards/certificate.png)
+![The certificate as it downloads, carrying the agent's name, the award's category and score, and the assessed period](../../img/screenshots/team_lead/awards/certificate.png)
 
 Agents can download their own certificates from their portal, so this is for your records rather than for sending to them. See [View Your Awards](../agents/your-awards.md).
 
@@ -97,7 +97,7 @@ Agents can download their own certificates from their portal, so this is for you
 
 ## 4. Edit an Award
 
-Select **Edit Award** to change an award's details, its scope, or the score range that earns it.
+Select the **pencil** icon on the award's card, in the **Awards** section, to change its details, its scope, or the score range that earns it.
 
 Changing the range changes who qualifies from the next evaluation cycle on. Awards already presented stay presented.
 

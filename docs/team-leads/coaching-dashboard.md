@@ -26,7 +26,7 @@ Select **Coaching** in the left sidebar, then **Dashboard**.
 
 Two controls at the top of the page decide what everything below is calculated from.
 
-**View By** sets how much of the organisation you are looking at. It opens on **Entire Organisation** and narrows to a department or a team. What it offers you stops at your access level, so a team lead sees fewer choices than an administrator.
+**View By** sets how much of the organisation you are looking at. It opens on the broadest scope your access level allows: **Entire Organisation** for organisational access, **Entire Department** for departmental access, or your own team for team access. What it offers narrows the same way, so a team lead sees fewer choices than an administrator.
 
 **Date range** sets the period. Select the **pencil** beside it to change the dates.
 
@@ -79,6 +79,8 @@ Read across a category and find the groups whose bracketed figure is high while 
 
 Where a category has no interactions in the period, its column reads **No team data available** rather than showing zeroes.
 
+{/* UNVERIFIED: exact trigger condition for "No team data available" versus a category not appearing as a column at all. The string is confirmed in dashboardPage.jsx, but not confirmed when it fires specifically for a zero-interaction category. Needs a live screen with that state. */}
+
 ### C. Per-Category Performance
 
 Below the two cards, every category gets its own section, with the category name as the heading and a **chevron** to collapse it.
@@ -92,8 +94,8 @@ Each section holds two charts for that category alone:
 | **Average Agent Performance** | A line across the period, so you can see when performance moved rather than only where it ended |
 | The grouped bar chart | A bar for each group, so you can see which part of the organisation carries the result |
 
-:::note The bar chart is named after whatever you grouped by
-Its heading is built from two things: the category, and what **View By** is set to. Viewing departments in the Compliance category, it reads **Compliance - Department Performance**. Change **View By** and the heading changes with it, to **Team Performance** or **Agent Performance**. There is no chart called Department Performance in its own right.
+:::note The expanded chart adds the category to its heading
+In its normal place on the page, the bar chart's heading reads only **Department Performance**, **Team Performance**, or **Agent Performance**, matching what **View By** is set to. Select the **fullscreen** control to expand it, and the heading gains the category in front, for example **Compliance - Department Performance**. The category prefix only appears in the expanded view.
 :::
 
 The **fullscreen** control on a chart expands it, which is worth using on the bar chart where long names are cut short.

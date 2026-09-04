@@ -43,6 +43,8 @@ The page holds four panels. Each compares you with your team, which is what make
 | **Average Agent Performance** | The trend across the period | Direction, rather than any single day |
 | **Individual Agent Performance** | Your own figure on its own | Where you stand right now |
 
+The last two repeat once for each category, each in its own collapsible section below the first two panels, rather than appearing once for the whole Dashboard.
+
 ### A. Auto Fails
 
 **Auto Fails** shows the proportion of your calls that failed a question your organisation marks as critical, next to the same figure for your team.
@@ -59,7 +61,7 @@ Each category shows two figures: **Your Team** and **Your Score**. The gap betwe
 
 ### C. Performance Charts
 
-**Average Agent Performance** plots the trend across the period, and **Individual Agent Performance** shows your figure on its own.
+Each category gets its own collapsible section, with a **chevron** to expand or collapse it. Inside, **Average Agent Performance** plots that category's trend across the period, and **Individual Agent Performance** shows your own figure for it on its own. A **fullscreen** control on each chart expands it.
 
 Read the trend rather than any single point. One low interaction in a week of good ones is normal variation. Three in a row in the same category is a pattern.
 

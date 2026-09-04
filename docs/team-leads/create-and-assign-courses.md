@@ -40,7 +40,7 @@ The form is one page in four labelled parts, and **Add Details** is the first.
 | Field | What it does |
 | :--- | :--- |
 | **Title** | The name of the course. It is the **Course Title** agents see in their list |
-| **Category** | Groups related courses |
+| **Category** | The scorecard category the score range below is measured against, not only a label for browsing |
 | **Description** | What the course covers, and why it was assigned |
 | **Scope** | Whether the course can reach the whole organisation, chosen departments, or chosen teams |
 | **Training Initiation Score Range** | The band of scores that receives the course |
@@ -51,8 +51,8 @@ A category is required, and saving without one is refused.
 
 Write the description for the agent receiving it. "Improve compliance" says less than "Covers the disclosures required at the start of a call, and when each applies."
 
-:::note Only administrators can add a category
-**+ Add New** beside the category list opens **Enter category name** and a **Create** control, and it appears only for administrators. If you do not see it, pick from the categories already there and ask an administrator to add one you need.
+:::note There is no way to add a category from this form
+Pick from the categories your organisation already has. There is no **+ Add New** control reachable here, so a new category has to be added elsewhere by whoever manages your Vela platform.
 :::
 
 ### Scope
@@ -61,7 +61,7 @@ Choosing departments or teams reveals a selector for which ones, and the course 
 
 ### Training Initiation Score Range
 
-This is the setting that decides who receives the course. It is a slider with two handles over 0 to 100, and the percentages either side of it show the floor and ceiling you have set. On each evaluation cycle, every agent in scope whose score falls between them is assigned the course.
+This is the setting that decides who receives the course, measured against the agent's score in the **Category** you chose above, not their overall score. It is a slider with two handles over 0 to 100, and the percentages either side of it show the floor and ceiling you have set. On each evaluation cycle, every agent in scope whose score in that category falls between them is assigned the course.
 
 Set it around the gap you found on the Dashboard rather than around a pass percentage. A range of 0 to 100 assigns the course to everyone, so there is no comparison group to show whether it worked. A range of 40 to 65 reaches the people who are struggling with the thing this course teaches, and leaves a comparison group who did not need it.
 
@@ -106,7 +106,7 @@ Select **Add Question** for each question you want to ask. Every question needs 
 
 A multiple choice question is refused until it has at least two options and one of them is marked correct. Use **Add option** to build the list.
 
-Paragraph answers have no correct answer to set, because they are not marked by comparison. Vela scores them, and records a short reason for the score against each question, which the agent sees with their result. Write those questions so there is something specific to judge: "Name the two disclosures required before taking payment" can be scored, "What did you think of this course?" cannot.
+Paragraph answers still need a correct answer, typed rather than chosen. Vela compares the agent's answer against it and scores by meaning rather than exact wording, and records a short reason for the score against each question, for your own review. Write those questions so there is something specific to judge: "Name the two disclosures required before taking payment" can be scored, "What did you think of this course?" cannot.
 
 ![A quiz question as it appears once added, with its type, points and answer](../../img/screenshots/team_lead/courses/new-course3.png)
 
@@ -154,23 +154,13 @@ Two nudges are usually enough: one with enough time left to do the work, and one
 
 ---
 
-## 6. Set Custom Evaluation Cycle
+## 6. Save the Course
 
-Off by default, so the course is checked on the organisation's cycle from [Coaching Preferences](./coaching-preferences.md). Turning it on opens that same set of scheduling controls for this course alone.
-
-:::note The checkbox says "award"
-On the course form this option reads **Evaluate this award using a custom cycle instead of the default cycle**. It controls the course you are working on. The wording is shared with the award form.
-:::
+Select **Create Course** to save, or **Close** to leave without saving. The course runs on your organisation's evaluation cycle set under [Coaching Preferences](./coaching-preferences.md). There is no per-course cycle to set separately.
 
 ---
 
-## 7. Save the Course
-
-Select **Create Course** to save, or **Close** to leave without saving. The course is assigned on the next evaluation cycle.
-
----
-
-## 8. Read a Course
+## 7. Read a Course
 
 Select a course in the list to open it. This is also what an agent sees, so it is worth checking after you save.
 
@@ -194,7 +184,7 @@ Read this page once after building a course. A quiz worth fewer points than you 
 
 ---
 
-## 9. Edit a Course
+## 8. Edit a Course
 
 Open a course from the list and select **Edit Course** to change its details, material, or questions.
 

@@ -26,12 +26,13 @@ Select **Awards** in the left sidebar. Each award shows its name and the date it
 
 ![The Awards page in the Agent Portal, listing the awards presented to this agent](../../img/screenshots/agent_view/awards/awards-overview.png)
 
-Three controls sit above the list:
+Four controls sit above the list:
 
 | Control | What it does |
 | :--- | :--- |
-| **Filter** | Narrows the list to one or more Award Categories |
-| **Sort** | Brings the most recent to the top, or orders by name |
+| **Search** | Narrows the list by wording in the award's name or description |
+| **Filter** | Narrows the list by **Award Category** |
+| **Sort By** | Orders the list by date awarded, award name, or award category |
 | The date range | Narrows the list to a period |
 
 ![The filter panel open on the awards list, listing Award Categories to narrow by](../../img/screenshots/agent_view/awards/filter.png)
@@ -52,9 +53,8 @@ The page holds what your team lead set when they created the award:
 
 | Section | What it holds |
 | :--- | :--- |
-| The description | What the award recognises |
 | **Message from your team lead** | What they wrote when presenting it to you |
-| The certificate | A preview, above the **Download** control |
+| **Download** | Saves the certificate, above its preview |
 
 ![Award Details, with the message from the team lead above the certificate and the Download control](../../img/screenshots/agent_view/awards/view.png)
 
@@ -64,13 +64,15 @@ The page holds what your team lead set when they created the award:
 
 ## 3. Download the Certificate
 
-Select **Download** to save the certificate. It carries your name, the award, and the date, and it is yours to keep or share.
+Select **Download** to save the certificate. It carries your name, the award's category and score, its description, your team lead's name as the supervisor who presented it, and the period it was assessed over, rather than the award's own name or a single date. It is yours to keep or share.
 
-![The award certificate as it downloads, carrying the agent's name, the award, and the date](../../img/screenshots/agent_view/awards/award-template.png)
+![The award certificate as it downloads, carrying the agent's name, the award's category and score, and the assessed period](../../img/screenshots/agent_view/awards/award-template.png)
 
 :::note Awards follow your scores
-Your team lead sets the criteria and Vela presents the award when an agent meets them on the [evaluation cycle](../reference/glossary.md#evaluation-cycle). Nobody presents them manually, so consistent work is what brings them.
+Your team lead sets the criteria and Vela is intended to present the award automatically when an agent meets them on the [evaluation cycle](../reference/glossary.md#evaluation-cycle), the same way courses are assigned. Nobody presents them manually.
 :::
+
+{/* UNVERIFIED: no code in vela or vela-data creates a PresentedAward record anywhere. Course auto-assignment by score is confirmed real (a cron in a third service, per the product owner), but that same confirmation has not been given for awards specifically. Confirm before restating this as settled. */}
 
 ---
 

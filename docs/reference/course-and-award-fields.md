@@ -27,7 +27,7 @@ What the course covers and why it was assigned. Free text.
 
 ### Category
 
-Groups related courses. Chosen from the organisation's existing categories, or added with **Enter category name**.
+The scorecard category the **Training Initiation Score Range** below is measured against, not only a label for browsing. It is the same list your organisation's Agent Scorecard questions are grouped into, and it grows automatically the first time a scorecard question uses a new category. Chosen from that list. There is no way to add a new one from this form (see [Create and Assign Courses](../team-leads/create-and-assign-courses.md)).
 
 ### Upload PDF
 
@@ -65,7 +65,7 @@ Added one at a time with **Add Question**. Each question has its text and an ans
 
 Paragraph answers are scored by Vela rather than matched against a stored answer, and each answer carries a short reason for the agent to read.
 
-Existing questions are changed with **Edit Question** and removed with **Remove**.
+Existing questions are changed with the **pencil** icon, which opens a panel headed **Edit Question N**, and removed with **Remove**.
 
 ### Quiz Retakes
 
@@ -76,16 +76,16 @@ How many attempts an agent gets at the quiz.
 | Range | 1 to 5 |
 | Default on a new course | 3 |
 
-When an agent uses their last retake, the course is marked **Complete** whatever they scored.
+The course is marked **Complete** when an agent uses their last retake, or selects **Complete Course** before that, whatever they scored.
 
 ### Training Initiation Score Range
 
-The band of scores that assigns the course. A slider with two handles, showing the floor and ceiling as percentages.
+The band of scores that assigns the course, measured against the agent's score in the course's own **Category** rather than their overall score. A slider with two handles, showing the floor and ceiling as percentages.
 
 | Property | Value |
 | :--- | :--- |
 | Range | 0 to 100 |
-| Behaviour | Agents scoring between the floor and ceiling are assigned the course on the next cycle |
+| Behaviour | Agents whose score in the course's Category falls between the floor and ceiling are assigned the course on the next cycle |
 
 A range of 0 to 100 assigns the course to everyone in scope.
 
@@ -102,15 +102,15 @@ Each agent's **Due Date** is calculated from the day they receive the course.
 
 ### Scope
 
-Who the course can reach.
+Who the course can reach. The options offered depend on your own access level, not a fixed list:
 
-| Option | What it covers |
+| Your access level | Options offered |
 | :--- | :--- |
-| Organisation | Everyone in the organisation |
-| Departments | The departments you select |
-| Teams | The teams you select |
+| Organisational | **Entire Organisation**, **Specific Departments**, **Specific Teams** |
+| Departmental | **Entire Department**, **Specific Teams** |
+| Team | No selector. A fixed line reads "Applying course to: `<your team>`" |
 
-Choosing departments or teams reveals a selector for which ones, and at least one must be picked. Your own access level limits which options are available.
+Choosing **Specific Departments** or **Specific Teams** reveals a selector for which ones, and at least one must be picked.
 
 ---
 
@@ -118,11 +118,11 @@ Choosing departments or teams reveals a selector for which ones, and at least on
 
 ### Award Name
 
-What the award is called, on the certificate and in the agent's list. Required.
+What the award is called, in the agent's list. It is not printed on the certificate itself, which prints the award's category and score instead. Required.
 
 ### Award Category
 
-Groups related awards. Drawn from the organisation's existing categories. Required.
+The scorecard category the **Score Threshold (Range)** below is measured against, the same list a course's **Category** is drawn from. Required.
 
 ### Award Description
 
@@ -130,13 +130,13 @@ What the award recognises. Free text.
 
 ### Scope
 
-Who is eligible for the award. Organisation, departments, or teams, on the same basis as a course's scope.
+Who is eligible for the award, on the same access-level-dependent basis as a course's [Scope](#scope) above.
 
 ### Score Threshold (Range)
 
-The band of scores that earns the award, set as **Min** and **Max**.
+The band of scores that earns the award, set as **Min** and **Max**, measured against the agent's score in **Award Category** rather than their overall score. The same mechanism as a course's Training Initiation Score Range, typically aimed at a high band instead of a low one.
 
-An agent earns the award when their score falls between the two. It is a band rather than a floor, so an award set to 70 to 79 deliberately excludes agents scoring 80.
+An agent earns the award when their score in that category falls between the two. It is a band rather than a floor, so an award set to 70 to 79 deliberately excludes agents scoring 80.
 
 ### Award Message
 

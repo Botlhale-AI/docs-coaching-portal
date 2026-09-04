@@ -26,8 +26,6 @@ You need:
 
 1. Open the invitation email and select **Confirm Account**. Do this before anything else, because the portal refuses the sign-in until your address is confirmed.
 2. On the sign-in page, enter your email address and the temporary password from the email.
-
-{/* UNVERIFIED: the "Confirm Account" button label is not in the vela or vela-data source, because it lives in an email template neither repository holds. The verification flow itself is confirmed at app/api/auth/[...nextauth]/route.js:44. The label matches docs-vela and the onboarding video script, both written by people who have seen the email. Confirm against a real invitation when one is to hand. */}
 3. Select **Sign In**.
 
 Signing in takes you straight to your **Dashboard**.
@@ -35,7 +33,7 @@ Signing in takes you straight to your **Dashboard**.
 ![The Agent Portal sign-in page, with the email and password fields](../../img/screenshots/agent_view/auth/login.png)
 
 :::note Signing in with Google or Microsoft
-Where your organisation uses Single Sign-On, use **Sign in with Google** or **Sign in with Microsoft** instead. You do not set a portal password, and the **security** tab does not appear.
+Where your organisation uses Single Sign-On, the Google and Microsoft buttons are not on this screen. Select **Go to Vela Login** below the sign-in form instead, and sign in there with your identity provider. You do not set a portal password, and the **Security** tab does not appear.
 :::
 
 Change the temporary password once you are in. See [Manage Your Account](./your-account.md).
@@ -76,7 +74,7 @@ Work through these in order. Each one shows you a different part of the portal.
 
 3. **Check for coaching comments.** On the same interaction, select **View Comments**. This is where your team lead's feedback appears, and where you reply. See [Review Your Interactions](./your-interactions.md).
 
-4. **Look at your courses.** Select **Courses**. Anything under **Assigned Courses** is waiting for you, and each shows a **Due Date**. See [Track Your Courses](./your-courses.md).
+4. **Look at your courses.** Select **Courses**. Anything under **Assigned Courses** is waiting for you, and each shows when it is due. See [Track Your Courses](./your-courses.md).
 
 5. **Check your notifications.** Select **Notifications** under **ADMIN**. The three tabs sort what has arrived into awards, courses, and comments.
 

@@ -24,7 +24,7 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 
 ---
 
-**Problem:** The **security** tab is missing from Settings, so there is nowhere to change a password.
+**Problem:** The **Security** tab is missing from Settings, so there is nowhere to change a password.
 
 **Cause:** The account signs in through Google or Microsoft, so the identity provider holds the password rather than Vela.
 
@@ -68,9 +68,9 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 
 **Problem:** An agent completed a course but it still shows **In Progress**.
 
-**Cause:** The quiz was worked through but not submitted.
+**Cause:** Submitting the quiz alone does not complete a course. Unless retakes have run out, the agent also has to select **Complete Course** on the results screen.
 
-**Solution:** Ask the agent to reopen the course and submit the quiz. A result is recorded on submission rather than on reading the material.
+**Solution:** Ask the agent to reopen the course and select **Complete Course**, or use a remaining retake if they want another attempt first.
 
 ---
 
@@ -93,23 +93,25 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 2. Lower it to a band that is demanding but reachable, or leave it if it is deliberately rare.
 3. Changes take effect from the next evaluation cycle. Awards already presented stay presented.
 
+{/* UNVERIFIED: this entry assumes awards are presented automatically by the evaluation cycle, the same way courses are assigned. No code path that presents an award was found in vela or vela-data, and this has not been separately confirmed for awards the way course assignment was. If awards are not actually automatic yet, this whole entry needs rewriting. */}
+
 ---
 
 ## Progress
 
-**Problem:** A date range is refused with **Invalid date range**.
+**Problem:** A date range control reads **Invalid date range**.
 
-**Cause:** The end date falls before the start date.
+**Cause:** The picker keeps the earlier of the two dates you click as the start automatically, so an out-of-order range cannot actually be set. **Invalid date range** instead means one of the two dates has not been set yet.
 
-**Solution:** Check the order of the two dates, then select **Apply** again.
+**Solution:** Set both a start and an end date, then select **Apply** again.
 
 ---
 
-**Problem:** Agents appear under **No Department**.
+**Problem:** **No Department** appears as an option in the Progress filter's department list.
 
-**Cause:** The agent record has no department assigned in the main Vela platform.
+**Cause:** A team's department is not assigned in the main Vela platform. This does not affect the Progress table itself, which has no department column.
 
-**Solution:** Ask an administrator to assign it. Sorting on that column brings the gaps together so they can be fixed in one pass.
+**Solution:** Ask an administrator to assign the team's department.
 
 ---
 
