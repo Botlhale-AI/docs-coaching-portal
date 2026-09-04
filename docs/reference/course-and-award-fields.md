@@ -63,7 +63,7 @@ Added one at a time with **Add Question**. Each question has its text and an ans
 | **Short Paragraph** | The question only | The question cannot be empty |
 | **Long Paragraph** | The question only | The question cannot be empty |
 
-Paragraph answers are scored by Vela rather than matched against a stored answer, and each answer carries a short reason for the agent to read.
+Paragraph answers are still compared against a stored answer, judged by Vela for meaning rather than exact wording, and each answer carries a short reason recorded against it.
 
 Existing questions are changed with the **pencil** icon, which opens a panel headed **Edit Question N**, and removed with **Remove**.
 

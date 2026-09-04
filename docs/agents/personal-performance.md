@@ -34,7 +34,7 @@ Start with a period long enough to hold several interactions. A single day rarel
 
 ## 2. Read Your Figures
 
-The page holds four panels. Each compares you with your team, which is what makes the figures mean something.
+The page holds four panels, most of which compare you with your team, which is what makes the figures mean something.
 
 | Panel | What it shows | Read it for |
 | :--- | :--- | :--- |
@@ -61,7 +61,7 @@ Each category shows two figures: **Your Team** and **Your Score**. The gap betwe
 
 ### C. Performance Charts
 
-Each category gets its own collapsible section, with a **chevron** to expand or collapse it. Inside, **Average Agent Performance** plots that category's trend across the period, and **Individual Agent Performance** shows your own figure for it on its own. A **fullscreen** control on each chart expands it.
+Each category gets its own collapsible section, with a **chevron** to expand or collapse it. Inside, **Average Agent Performance** plots that category's trend across the period, and **Individual Agent Performance** shows your own figure for it on its own. A **fullscreen** control on **Individual Agent Performance** replaces the two-column view with that chart alone.
 
 Read the trend rather than any single point. One low interaction in a week of good ones is normal variation. Three in a row in the same category is a pattern.
 

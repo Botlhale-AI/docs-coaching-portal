@@ -15,7 +15,7 @@ pagination_next: agents/your-account
 
 You need:
 
-- **An award presented to you.** Until one is, the page is empty. That is a result rather than a fault.
+- **An award presented to you.** Until one is, the page reads **No Awards Found**. That is a result rather than a fault.
 - **Nothing else.** Awards arrive on their own. There is no action to take to receive one.
 
 ---
@@ -64,7 +64,15 @@ The page holds what your team lead set when they created the award:
 
 ## 3. Download the Certificate
 
-Select **Download** to save the certificate. It carries your name, the award's category and score, its description, your team lead's name as the supervisor who presented it, and the period it was assessed over, rather than the award's own name or a single date. It is yours to keep or share.
+Select **Download** to save the certificate. It is yours to keep or share, and it carries:
+
+| Field | What it shows |
+| :--- | :--- |
+| Name | Yours |
+| Category and score | The award's category and your score, not the award's own name |
+| Description | What the award recognises |
+| Supervisor | Your team lead's name |
+| Period | A date range, not a single date |
 
 ![The award certificate as it downloads, carrying the agent's name, the award's category and score, and the assessed period](../../img/screenshots/agent_view/awards/award-template.png)
 

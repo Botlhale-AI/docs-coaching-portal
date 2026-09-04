@@ -46,9 +46,9 @@ Each course shows its **Due Date**. Start early enough to finish before it.
 
 ## 2. Work Through the Material
 
-Select **View Course** to open one. **Course Details** describes what it covers, and the material sits below.
+Select **View Course** to open one. The page opens on a description of what it covers, and the material sits below.
 
-{/* Two independent captures (quick-search.png above and course-actions.png below) both show View Course on an Assigned-status card, not Start Course. AgentCourseView.jsx ties Start Course to status === "assigned", but the live product no longer matches that — updated this step to what the screen actually shows. */}
+{/* Two independent captures (quick-search.png above and course-actions.png below) both show View Course on an Assigned-status card, not Start Course. AgentCourseView.jsx ties Start Course to status === "assigned", but the live product no longer matches that. Updated this step to what the screen actually shows. */}
 
 Material comes in two forms, and a course may hold both:
 
@@ -91,7 +91,7 @@ Select **Review Quiz** to read back an attempt you have already submitted.
 
 ### How Many Attempts You Get
 
-A course reaches **Completed Courses** two ways, and they look the same in the list:
+A course reaches **Completed Courses** two ways, and nothing on the row says which one happened:
 
 ```mermaid
 stateDiagram-v2
@@ -102,14 +102,14 @@ stateDiagram-v2
     InProgress --> Completed: You use the last retake
 ```
 
-The **Final Score** beside the course is what tells the two apart.
+Read the **Final Score** for how you did, not for which of the two closed the course out.
 
 
 {/* SCREENSHOT NEEDED: the quiz page showing the retakes remaining counter, and ideally a second capture of the result screen with the "You did not meet the passing score of N%" message. Neither is captured, and retakes are the thing agents ask about most. Suggested paths: img/screenshots/agent_view/courses/quiz-retakes-remaining.png and quiz-failed-result.png */}
 
 Your team lead sets **Quiz Retakes** on each course, between 1 and 5, so the number is not the same on every course. The quiz page shows how many you have left.
 
-The count is shown wherever you can act on it: the quiz page reads **You have 2 retakes remaining**, and the button itself is labelled **Retake Quiz (2 left)**. When they are gone it reads **You have no retakes remaining**.
+The count is shown wherever you can act on it, in wording that differs slightly by screen: before you start it reads **You have 2 retake attempts available**, and a failed attempt with retakes left tells you so as part of its own result message. The button itself is labelled **Retake Quiz (2 left)**, counting down to **You have no retakes remaining** once they are gone.
 
 :::warning Running out of retakes closes the course
 The course moves to **Completed Courses** with the last score you got, whether or not you passed, and you cannot take it again. Check the number on the button before you start an attempt.

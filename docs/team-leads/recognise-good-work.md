@@ -85,7 +85,15 @@ An empty list where you expected awards usually means the date range, not a faul
 
 ## 3. Download a Certificate
 
-Select the **download** icon in the **Download** column to save that agent's certificate. It carries their name, the award's category and score, its description, your name as the supervisor who presented it, and the period it was assessed over, rather than the award's own name or a single date.
+Select the **download** icon in the **Download** column to save that agent's certificate. It carries:
+
+| Field | What it shows |
+| :--- | :--- |
+| Name | The agent's |
+| Category and score | The award's category and the agent's score, not the award's own name |
+| Description | What the award recognises |
+| Supervisor | Your name |
+| Period | A date range, not a single date |
 
 ![The download icon on an award row, which saves the certificate](../../img/screenshots/team_lead/awards/download.png)
 

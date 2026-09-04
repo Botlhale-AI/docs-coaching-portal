@@ -7,7 +7,7 @@ pagination_prev: agents/personal-performance
 pagination_next: agents/your-courses
 ---
 
-**Interactions** in the left sidebar holds every call and chat of yours that Vela has processed. This is where you read what was said, see how the conversation scored, and find the coaching comments your team lead has left. It has two sub-items, **Calls** and **Chats**, and both work the same way.
+**Interactions** in the left sidebar holds every call and chat of yours that Vela has processed. This is where you read what was said, see how the conversation scored, and find the coaching comments your team lead has left. It has two sub-items, **Calls** and **Chats**. The list works the same way for both, though the detailed view differs, since a chat has nothing to play.
 
 ---
 
@@ -46,11 +46,11 @@ Select an interaction to open it.
 
 ## 2. Read the Detailed View
 
-The page is two columns. On the left, **Audio** sits above a toggle between **Smart Detector** and **Comments**. On the right, **Call Details** sits above the **Transcript**. The trail at the top reads **Interactions › Calls › Call Details** on a call. On a chat it reads **Interactions › Chats › Chat Details**, and the panel itself is titled **Chat Details** rather than **Call Details**.
+A call's detailed view has three cards: **Audio** and **Smart Detector** on the left, **Call Details** and **Transcript** on the right. A chat has two: **Smart Detector** alone on the left, and **Chat Details** and **Chat** on the right, since there is nothing to play. The trail at the top reads **Interactions › Calls › Call Details** on a call, and **Interactions › Chats › Chat Details** on a chat.
 
 ### A. Audio and Smart Detector
 
-**Audio** holds the player. Where a recording is unavailable it reads **Audio not available**. A control in this card's corner reads **Expand Section** or **Collapse Section**, giving it the whole width while you read.
+**Audio** holds the player, on a call only. Where a recording is unavailable it reads **Audio not available**. A control in this card's corner reads **Expand Section** or **Collapse Section**, giving it the whole width while you read.
 
 **Smart Detector** holds two tabs:
 
@@ -65,15 +65,23 @@ A question that did not apply to the conversation reads **N/A** rather than coun
 
 ![A call open in the detailed view, with the audio player and Smart Detector analysis on the left and Call Details and the Transcript on the right](../../img/screenshots/agent_view/interactions/interactions-calls-detailed-view.png)
 
-### B. Call Details and Transcript
+### B. Call Details (or Chat Details) and the Transcript (or Chat)
 
-**Call Details** lists the facts about the interaction: the agent, **Call ID**, **File Name**, **Date**, **Uploaded**, **Handle Time**, **Agent Score**, **Initial Score**, **Department**, **Team**, **Topic**, and **Direction**. A call also carries **Silent Time**. A chat carries **Response Time** in its place.
+**Call Details**, or **Chat Details** on a chat, lists:
 
-**Transcript** sits below it. Switch it between **Original** and **English** when the conversation was not in English, and use **Search** to find a word in it. Selecting a line's timestamp jumps the audio to that moment, and **Play from here** does the same thing.
+- The agent, **Call ID** (**Chat ID** on a chat), **File Name**, **Date**, and **Uploaded**
+- **Handle Time**, and **Silent Time** on a call
+- **Agent Score** and **Initial Score**
+- **Alerts**
+- **Department**
+
+{/* DEV: an earlier pass changed this list to drop Alerts and add Team/Topic/Direction, based on infoCard.jsx's agentMode gating. Reverted: the live screenshots below clearly show Alerts (reading "-") and no Team/Topic/Direction fields on the agent's own Call Details or Chat Details. Either infoCard.jsx isn't what renders this Coaching Portal page, or it's since changed. Worth checking which component actually renders this panel before touching this list again. */}
+
+Below it, a call's **Transcript** switches between **Original** and **English** when the conversation was not in English, and uses **Search** to find a word in it. Selecting a line's timestamp jumps the audio to that moment, and **Play from here** does the same thing. A chat's own panel is titled **Chat** rather than Transcript, with the same **Original**/**English** and **Search** controls, but nothing to jump the audio to.
 
 Where a transcript is unavailable the panel reads **Transcript not available**.
 
-![A chat open in the detailed view, laid out the same way as a call](../../img/screenshots/agent_view/interactions/interactions-chats-detailed-view.png)
+![A chat open in the detailed view, with Smart Detector alone on the left and Chat Details and the Chat on the right](../../img/screenshots/agent_view/interactions/interactions-chats-detailed-view.png)
 
 ---
 
@@ -87,7 +95,7 @@ A comment that tags you with **@** also raises a notification, so check **Notifi
 
 ## Check Your Work
 
-Open one of your interactions and confirm three things: the transcript loads, the **Scorecard** tab shows an outcome on each question, and **Call Details** names you as the agent.
+Open one of your interactions and confirm three things: the transcript loads, the **Scorecard** tab shows an outcome on each question, and **Call Details** (or **Chat Details**) names you as the agent.
 
 An interaction you expected and cannot find is usually one of two things. It may still be processing, in which case it appears once analysis finishes. Or your organisation shows agents reviewed interactions only, and nobody has reviewed it yet.
 

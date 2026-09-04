@@ -82,7 +82,7 @@ Work through these in order. Each one shows you a different part of the portal.
 
 ## Check Your Work
 
-You are finished when you have signed in with your own password, opened one interaction and read its transcript, and found where comments and notifications appear.
+You are finished when you have signed in successfully, opened one interaction and read its transcript, and found where comments and notifications appear.
 
 An empty Dashboard or interactions list is not a fault. It means nothing of yours has finished processing yet, or your organisation shows agents reviewed interactions only and nobody has reviewed one yet.
 

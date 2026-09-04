@@ -7,7 +7,7 @@ pagination_prev: team-leads/coaching-dashboard
 pagination_next: team-leads/track-learning-progress
 ---
 
-A course is training you build once and Vela assigns automatically. You set the score range that assigns it, and on each evaluation cycle every agent whose scores fall in that range receives it. Courses reach people by score rather than by name, so you set the criteria rather than picking individuals.
+A course is training you build once and Vela assigns automatically. You set the category and the score range within it that assigns the course, and on each evaluation cycle every agent whose score in that category falls in the range receives it. Courses reach people by score rather than by name, so you set the criteria rather than picking individuals.
 
 ---
 
