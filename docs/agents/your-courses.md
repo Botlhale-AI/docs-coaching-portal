@@ -106,12 +106,11 @@ Once a course is finished it moves to the **Completed Courses** table, whose row
 A course reaches **Completed Courses** two ways, and nothing on the row says which one happened:
 
 ```mermaid
-stateDiagram-v2
-    [*] --> Assigned: Your score falls in the course's range
-    Assigned --> InProgress: You open it
-    InProgress --> InProgress: Retake, while you have some left
-    InProgress --> Completed: You select Complete Course
-    InProgress --> Completed: You use the last retake
+flowchart TD
+    A("Your score falls in<br/>the course's range") --> B("Assigned")
+    B -- "You open it" --> C("In Progress")
+    C -- "You select Complete Course" --> D("Completed")
+    C -- "You run out of retakes" --> D
 ```
 
 Read the **Final Score** for how you did, not for which of the two closed the course out. A **Final Score** of **N/A** means the course was completed without a quiz result, for example by selecting **Complete Course** before taking the quiz.
