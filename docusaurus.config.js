@@ -98,9 +98,9 @@ const config = {
       items: [
         // Navigation lives in the sidebar. The role-based top bar was removed.
         {
-          type: 'html',
+          to: '/',
+          label: 'Home',
           position: 'right',
-          value: '<a href="https://vela.botlhale.ai/login" target="_blank" class="auth-button auth-button-signin">Log In</a>',
         },
         {
           to: '/docs/release-notes',
