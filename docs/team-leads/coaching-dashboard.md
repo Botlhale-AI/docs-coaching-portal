@@ -77,9 +77,9 @@ That gap is the useful part. A line reading `0%(71%)` is not a group that knows 
 Read across a category and find the groups whose bracketed figure is high while the first figure is low. Those are being held back by one requirement, which is a specific and fixable conversation. A group low on both figures is a broader gap that a course suits better.
 :::
 
-Where a category has no interactions in the period, its column reads **No team data available** rather than showing zeroes.
+Only categories with interactions in the period appear as columns.
 
-{/* UNVERIFIED: exact trigger condition for "No team data available" versus a category not appearing as a column at all. The string is confirmed in dashboardPage.jsx, but not confirmed when it fires specifically for a zero-interaction category. Needs a live screen with that state. */}
+{/* UNVERIFIED: dashboardPage.jsx carries a "No team data available" string for an empty category column, but two live checks on 2026-09-07 (View By set to Entire Organisation, and to Specific Teams, each with an empty date range) never reached it — an empty period collapses the whole area to "No data available for the selected date range. Try adjusting your filter." with no columns at all. No wording for an empty column is documented for want of a state that shows one. If a partly-populated dashboard ever renders an empty column, document what it actually says. */}
 
 ### C. Per-Category Performance
 
@@ -102,8 +102,6 @@ The **fullscreen** control on a chart expands it, which is worth using on the ba
 
 Read the line chart for timing and the bars for location. A drop that starts on one date points at something that happened, such as a process change or a new intake. A drop confined to one group points at that group.
 
-A category with nothing in the period reads **There is no data available in this category for the selected date range**. That is an empty period rather than a fault, and widening the date range is the first thing to try.
-
 ---
 
 ## 3. Decide What to Do
@@ -124,7 +122,9 @@ See [Create and Assign Courses](./create-and-assign-courses.md) for the second, 
 
 Set the date range to a period you know holds interactions and confirm the panels fill.
 
-An empty Dashboard means no processed interactions fall in the dates, or your access level does not cover the agents you expected. Widen the range first, then check the access level with an administrator.
+An empty Dashboard shows **No data available for the selected date range. Try adjusting your filter**. It means no processed interactions fall in the dates, or your access level does not cover the agents you expected. Widen the range first, then check the access level with an administrator.
+
+A single category's charts can read **There is no data available in this category for the selected date range** while the rest of the page is populated. Widen the range for that too.
 
 ---
 
