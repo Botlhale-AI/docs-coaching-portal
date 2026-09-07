@@ -67,13 +67,13 @@ A question that did not apply to the conversation reads **N/A** rather than coun
 
 ### B. Call Details (or Chat Details) and the Transcript (or Chat)
 
-**Call Details**, or **Chat Details** on a chat, is headed with your name and split into **Scores** and **Details**.
+**Call Details**, or **Chat Details** on a chat, shows your name at the top, then two groups of fields: **Scores** and **Details**.
 
-**Scores** holds **Agent Score**, **Initial Score**, and a **Compliance Score** and **Quality Score** each with its own **Initial** figure. **Agent Score** reads as two numbers, as in `0.0% (60.9%)`: the first with auto-fails applied, the figure in brackets before they were. A pair your organisation does not score on is left blank.
+**Scores** holds **Agent Score**, **Initial Score**, and a **Compliance Score** and **Quality Score** that each have their own **Initial** figure. **Agent Score** shows two numbers, for example 0.0% (60.9%). The first is your score with auto-fails applied. The number in brackets is what it was before them. A pair your organisation does not use stays blank.
 
-**Details** holds **Call ID** (**Chat ID** on a chat), **File Name**, **Date**, **Uploaded**, **Handle Time**, **Silent Time** on a call, **Department**, **Team**, **Topic**, and **Direction**.
+**Details** holds **Call ID** (**Chat ID** on a chat), **File Name**, **Date**, **Uploaded**, **Handle Time**, **Department**, **Team**, **Topic**, and **Direction**. A call also shows **Silent Time**, and a chat shows **Response Time** in its place.
 
-{/* VERIFIED 2026-09-07 against a live agent capture (DemoOrg3, Vusi Zulu): the panel is headed "Call Details / <name>" and split into "Scores:" (Agent Score, Initial Score, Compliance Score, Initial Compliance Score, Quality Score, Initial Quality Score - most blank on that call) and "Details:" (Call ID, File Name, Date, Uploaded, Handle Time, Silent Time, Department, Team, Topic, Direction). No Alerts field for an agent, and no separate "Agent" row - the name is the panel heading. An earlier DEV note claiming Alerts shows here and Team/Topic/Direction do not was wrong. */}
+{/* VERIFIED 2026-09-07 against live agent captures (DemoOrg3, Vusi Zulu): the panel shows the agent's name at the top, then "Scores:" (Agent Score, Initial Score, Compliance Score, Initial Compliance Score, Quality Score, Initial Quality Score - most blank on that call) and "Details:" (Call ID, File Name, Date, Uploaded, Handle Time, Silent Time, Department, Team, Topic, Direction). A chat shows Response Time where a call shows Silent Time. No Alerts field for an agent. An earlier DEV note claiming Alerts shows here and Team/Topic/Direction do not was wrong. */}
 
 Below it, a call's **Transcript** switches between **Original** and **English** when the conversation was not in English, and uses **Search** to find a word in it. Selecting a line's timestamp jumps the audio to that moment, and **Play from here** does the same thing. A chat's own panel is titled **Chat** rather than Transcript, with the same **Original**/**English** and **Search** controls, but nothing to jump the audio to.
 

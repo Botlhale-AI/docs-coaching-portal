@@ -106,7 +106,7 @@ Select **Add Question** for each question you want to ask. Every question needs 
 
 A multiple choice question is refused until it has at least two options and one of them is marked correct. Use **Add option** to build the list.
 
-Paragraph answers still need a correct answer, typed rather than chosen. Vela compares the agent's answer against it and scores by meaning rather than exact wording, and records a short reason for the score against each question, for your own review. Write those questions so there is something specific to judge: "Name the two disclosures required before taking payment" can be scored, "What did you think of this course?" cannot.
+Paragraph answers still need a correct answer, typed rather than chosen. Vela compares the agent's answer against it and scores by meaning rather than exact wording. Write those questions so there is something specific to judge: "Name the two disclosures required before taking payment" can be scored, "What did you think of this course?" cannot.
 
 ![A quiz question as it appears once added, with its type, points and answer](../../img/screenshots/team_lead/courses/new-course3.png)
 

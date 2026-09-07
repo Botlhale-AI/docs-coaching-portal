@@ -122,9 +122,9 @@ See [Create and Assign Courses](./create-and-assign-courses.md) for the second, 
 
 Set the date range to a period you know holds interactions and confirm the panels fill.
 
-An empty Dashboard shows **No data available for the selected date range. Try adjusting your filter**. It means no processed interactions fall in the dates, or your access level does not cover the agents you expected. Widen the range first, then check the access level with an administrator.
+An empty Dashboard shows **No data available for the selected date range. Try adjusting your filter**. Either no processed interactions fall in the dates, or your access level does not cover the agents you expected. Widen the range first, then check the access level with an administrator.
 
-A single category's charts can read **There is no data available in this category for the selected date range** while the rest of the page is populated. Widen the range for that too.
+One category's charts can read **There is no data available in this category for the selected date range** while the rest of the page has figures. Widen the range for that too.
 
 ---
 

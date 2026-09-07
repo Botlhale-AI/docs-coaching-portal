@@ -28,7 +28,9 @@ Select the date range control at the top of the page to choose the period. Every
 
 Start with a period long enough to hold several interactions. A single day rarely says much about a trend.
 
-![The Agent Portal Dashboard, with the date range control at the top and the Auto Fails and Category Scores panels below it](../../img/screenshots/agent_view/dashboard/dashboard-overview.png)
+Use the **Search categories** box at the top left to show one category at a time in Category Scores.
+
+![The Agent Portal Dashboard, with the Search categories box and date range control at the top and the Auto Fails and Category Scores panels below](../../img/screenshots/agent_view/dashboard/dashboard-overview.png)
 
 ---
 
@@ -43,7 +45,7 @@ The page holds four panels, most of which compare you with your team, which is w
 | **Average Agent Performance** | The trend across the period | Direction, rather than any single day |
 | **Individual Agent Performance** | Your own figure on its own | Where you stand right now |
 
-The last two repeat once for each category, each in its own collapsible section below the first two panels, rather than appearing once for the whole Dashboard.
+The last two appear once for each category, further down the page, rather than once for the whole Dashboard. Select a category's name to open or close its section.
 
 ### A. Auto Fails
 
@@ -57,11 +59,13 @@ An [auto-fail](../reference/glossary.md#auto-fail) takes the whole interaction t
 
 Each category shows two figures: **Your Team** and **Your Score**. The gap between them is the useful part, because it separates a category you find hard from one the whole team finds hard.
 
+When there are more categories than fit across the panel, an arrow on each side moves through them, and **Scroll for more** shows at the bottom. When no interactions fall in the date range, the panel reads **No category data available for the selected date range**.
+
 ![The Dashboard charts, showing Average Agent Performance over the period beside Individual Agent Performance](../../img/screenshots/agent_view/dashboard/dashboard-charts.png)
 
 ### C. Performance Charts
 
-Each category gets its own collapsible section, with a **chevron** to expand or collapse it. Inside, **Average Agent Performance** plots that category's trend across the period, and **Individual Agent Performance** shows your own figure for it on its own. A **fullscreen** control on **Individual Agent Performance** replaces the two-column view with that chart alone.
+Below the panels, each category your organisation scores on has its own section, headed with the category name. Select the heading to open or close it. Inside, **Average Agent Performance** shows the category's trend across the date range as a line, and **Individual Agent Performance** shows your current score for that category as a single figure. Select **fullscreen** on **Individual Agent Performance** to see that chart on its own.
 
 Read the trend rather than any single point. One low interaction in a week of good ones is normal variation. Three in a row in the same category is a pattern.
 
@@ -75,7 +79,9 @@ An overall score tells you where you stand. The category breakdown tells you wha
 
 Set the date range to a period you know holds interactions, and confirm the panels fill with figures.
 
-**No data available for the selected date range** means no processed interactions fall inside the dates you chose. Widen the range. If it stays empty across a long period, your interactions may not have finished processing yet.
+When no interactions fall inside the dates you chose, the Category Scores panel reads **No category data available for the selected date range** and the bottom of the page reads **No data available for the selected date range**. Widen the range. If it stays empty across a long period, your interactions may not have finished processing yet.
+
+![The Dashboard for a date range with no interactions, showing both no-data messages](../../img/screenshots/agent_view/dashboard/empty-state.png)
 
 ---
 
