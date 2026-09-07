@@ -67,15 +67,13 @@ A question that did not apply to the conversation reads **N/A** rather than coun
 
 ### B. Call Details (or Chat Details) and the Transcript (or Chat)
 
-**Call Details**, or **Chat Details** on a chat, lists:
+**Call Details**, or **Chat Details** on a chat, is headed with your name and split into **Scores** and **Details**.
 
-- The agent, **Call ID** (**Chat ID** on a chat), **File Name**, **Date**, and **Uploaded**
-- **Handle Time**, and **Silent Time** on a call
-- **Agent Score** and **Initial Score**
-- **Alerts**
-- **Department**
+**Scores** holds **Agent Score**, **Initial Score**, and a **Compliance Score** and **Quality Score** each with its own **Initial** figure. **Agent Score** reads as two numbers, as in `0.0% (60.9%)`: the first with auto-fails applied, the figure in brackets before they were. A pair your organisation does not score on is left blank.
 
-{/* DEV: an earlier pass changed this list to drop Alerts and add Team/Topic/Direction, based on infoCard.jsx's agentMode gating. Reverted: the live screenshots below clearly show Alerts (reading "-") and no Team/Topic/Direction fields on the agent's own Call Details or Chat Details. Either infoCard.jsx isn't what renders this Coaching Portal page, or it's since changed. Worth checking which component actually renders this panel before touching this list again. */}
+**Details** holds **Call ID** (**Chat ID** on a chat), **File Name**, **Date**, **Uploaded**, **Handle Time**, **Silent Time** on a call, **Department**, **Team**, **Topic**, and **Direction**.
+
+{/* VERIFIED 2026-09-07 against a live agent capture (DemoOrg3, Vusi Zulu): the panel is headed "Call Details / <name>" and split into "Scores:" (Agent Score, Initial Score, Compliance Score, Initial Compliance Score, Quality Score, Initial Quality Score - most blank on that call) and "Details:" (Call ID, File Name, Date, Uploaded, Handle Time, Silent Time, Department, Team, Topic, Direction). No Alerts field for an agent, and no separate "Agent" row - the name is the panel heading. An earlier DEV note claiming Alerts shows here and Team/Topic/Direction do not was wrong. */}
 
 Below it, a call's **Transcript** switches between **Original** and **English** when the conversation was not in English, and uses **Search** to find a word in it. Selecting a line's timestamp jumps the audio to that moment, and **Play from here** does the same thing. A chat's own panel is titled **Chat** rather than Transcript, with the same **Original**/**English** and **Search** controls, but nothing to jump the audio to.
 

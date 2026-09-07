@@ -28,7 +28,7 @@ Select **Courses** in the left sidebar. The page groups what you have by where y
 | :--- | :--- |
 | **Assigned Courses** | Assigned to you, not started |
 | **Courses In Progress** | Opened and part-way through |
-| **Completed Courses** | Finished, with your result |
+| **Completed Courses** | Finished, as a table rather than cards, with your result |
 
 **Search**, **Sort**, and **Filter** sit above the list for when you have more than a screenful.
 
@@ -85,9 +85,9 @@ Your result appears as a **Final Score**. **Initiation Score** sits beside it, s
 
 ![The quiz results view, showing the final score against the questions answered](../../img/screenshots/agent_view/courses/courses-detailed-view-quiz-results.png)
 
-Select **Review Quiz** to read back an attempt you have already submitted.
+Once a course is finished it moves to the **Completed Courses** table, whose row shows **Date Assigned**, **Due Date**, **Category**, **Initiation Score**, **Final Score**, and **Date Completed**. Select the **eye** icon in the **Actions** column to reopen the course and read back your attempt.
 
-{/* UNVERIFIED: a live capture of Completed Courses shows that group as a table (Course Title, Date Assigned, Due Date, Category, Initiation Score, Final Score, Date Completed, Actions) with an eye icon in Actions, not a card with a Review Quiz button. Whether that icon is what this step means by "Review Quiz," or the wording has drifted, needs a live check. */}
+{/* VERIFIED 2026-09-07 against a live agent capture (DemoOrg3, Vusi Zulu): Completed Courses is a table with those columns and an eye icon in Actions, not a card with a Review Quiz button. Final Score reads N/A on a row completed without a graded attempt. */}
 
 ### How Many Attempts You Get
 
@@ -102,7 +102,7 @@ stateDiagram-v2
     InProgress --> Completed: You use the last retake
 ```
 
-Read the **Final Score** for how you did, not for which of the two closed the course out.
+Read the **Final Score** for how you did, not for which of the two closed the course out. A **Final Score** of **N/A** means the course was closed out with no graded attempt on record.
 
 
 {/* SCREENSHOT NEEDED: the quiz page showing the retakes remaining counter, and ideally a second capture of the result screen with the "You did not meet the passing score of N%" message. Neither is captured, and retakes are the thing agents ask about most. Suggested paths: img/screenshots/agent_view/courses/quiz-retakes-remaining.png and quiz-failed-result.png */}
