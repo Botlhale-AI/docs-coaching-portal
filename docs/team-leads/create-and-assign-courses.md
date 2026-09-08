@@ -51,7 +51,7 @@ The form is one page in four labelled parts, and **Add Details** is the first.
   ]}
 />
 
-{/* When Cautions ships, add a line to the Category row above: it also names what a caution counts failed courses against. Link issue-cautions.md. */}
+{/* When Cautions ships, add a line to the Category pin above: it also names what a caution counts failed courses against. Link issue-cautions.md. */}
 
 A category is required, and saving without one is refused.
 
@@ -140,7 +140,7 @@ These three sit together below the quiz, and they decide how much room an agent 
 
 ### Quiz Retakes
 
-The number you set decides how long a struggling agent can keep trying before the course closes on them. Their first result is kept separately as the **Initiation Score**, so improvement across attempts stays visible.
+**Quiz Retakes** decides how long a struggling agent can keep trying before the course closes on them. Their first result is kept separately as the **Initiation Score**, so improvement across attempts stays visible.
 
 :::warning Running out of retakes looks the same as passing
 When an agent uses their last retake, the course is marked **Complete** whatever they scored. On the **Progress** table that row is indistinguishable at a glance from one that passed, so a course nobody could pass reads as a course everybody finished. Read **Complete** together with **Score**, which shows in red below the pass percentage.
@@ -150,13 +150,13 @@ The pass percentage itself is set once for all courses under Preferences, not pe
 
 ### Deadline
 
-It takes a count and a unit, and the unit is **Days**, **Weeks**, or **Months**. Each agent's **Due Date** is worked out from the day they receive it, so two agents who qualify on different cycles get the same amount of time rather than the same date.
+**Deadline** takes a count and a unit, and the unit is **Days**, **Weeks**, or **Months**. Each agent's **Due Date** is worked out from the day they receive it, so two agents who qualify on different cycles get the same amount of time rather than the same date.
 
 ![Setting the deadline on a course](../../img/screenshots/team_lead/courses/create-course-deadlines.png)
 
 ### Set Course Nudges
 
-Set each one as a count and a unit, so a nudge of 2 **Days** reaches the agent two days before their deadline. Select **+** to add it.
+You set each **nudge** as a count and a unit, so one of 2 **Days** reaches the agent two days before their deadline. Select **+** to add it.
 
 Add as many as you want, and each appears as `2 days before deadline` with a control to remove it. Adding one that already exists is refused with **Nudge already exists**.
 
