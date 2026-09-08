@@ -7,6 +7,9 @@ pagination_prev: team-leads/track-learning-progress
 pagination_next: team-leads/coaching-preferences
 ---
 
+import Hotspots from '@site/src/components/Hotspots';
+import createAwardImg from '@site/img/screenshots/team_lead/awards/create-award.png';
+
 An award is recognition you define once and Vela presents automatically. You set what earns it, and on each evaluation cycle every agent who meets the criteria receives it with a certificate. Like courses, awards reach people by score rather than by name.
 
 ---
@@ -24,20 +27,23 @@ You need:
 
 Select **Coaching** in the left sidebar, then **Awards**. Select **Create New Award** to open the form. The form takes its fields in this order:
 
-| Field | What it does |
-| :--- | :--- |
-| **Award Name** | What the award is called, on the certificate and in the agent's list |
-| **Award Category** | The scorecard category the score threshold below is measured against. The list is the same one your organisation's scorecard questions are grouped into |
-| **Award Description** | What the award recognises |
-| **Scope** | Whether the award covers the whole organisation, chosen departments, or chosen teams |
-| **Score Threshold (Range)** | The **Min** and **Max** an agent's score in that category must fall between to earn it |
-| **Award Message** | What the agent reads when it is presented to them |
+<Hotspots
+  src={createAwardImg}
+  alt="The Create an Award form: Award Name and Award Category above Award Description, then Scope and the Score Threshold (Range) Min and Max fields"
+  points={[
+    { x: 28.8, y: 42.2, title: 'Award Name', body: 'What the award is called, on the certificate and in the agent\'s list.' },
+    { x: 68.4, y: 42.2, title: 'Award Category', body: "The scorecard category the score threshold below is measured against. The list is the same one your organisation's scorecard questions are grouped into." },
+    { x: 31.4, y: 59.6, title: 'Award Description', body: 'What the award recognises.' },
+    { x: 25.9, y: 81.5, title: 'Scope', body: 'Whether the award covers the whole organisation, chosen departments, or chosen teams.' },
+    { x: 91.5, y: 81.5, title: 'Score Threshold (Range)', body: 'The Min and Max an agent\'s score in that category must fall between to earn it.' },
+  ]}
+/>
 
-Select **Create Award** to save it, or **Close** to leave without saving. Every award runs on your organisation's evaluation cycle, set under [Coaching Preferences](./coaching-preferences.md). There is no per-award cycle to set separately.
-
-![The Create an Award form, with Award Name, Award Category, Award Description, Scope, and Score Threshold (Range)](../../img/screenshots/team_lead/awards/create-award.png)
+The form is one page, scrolled. **Award Message**, what the agent reads when it is presented to them, sits below the fields above, with **Create Award** to save it and **Close** to leave without saving.
 
 ![The rest of the Create an Award form, with Award Message and the Create Award control](../../img/screenshots/team_lead/awards/create-award2.png)
+
+Every award runs on your organisation's evaluation cycle, set under [Coaching Preferences](./coaching-preferences.md). There is no per-award cycle to set separately.
 
 **Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score in **Award Category** falls between **Min** and **Max**, the same mechanism a course uses, aimed at a high band instead of a low one.
 
