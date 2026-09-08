@@ -7,6 +7,10 @@ pagination_prev: team-leads/coaching-dashboard
 pagination_next: team-leads/track-learning-progress
 ---
 
+import Hotspots from '@site/src/components/Hotspots';
+import newCourseImg from '@site/img/screenshots/team_lead/courses/new-course.png';
+import retakesImg from '@site/img/screenshots/team_lead/courses/new-course4.png';
+
 A course is training you build once and Vela assigns automatically. You set the category and the score range within it that assigns the course, and on each evaluation cycle every agent whose score in that category falls in the range receives it. Courses reach people by score rather than by name, so you set the criteria rather than picking individuals.
 
 ---
@@ -35,15 +39,17 @@ Select **Create Course** to start a new one.
 
 The form is one page in four labelled parts, and **Add Details** is the first.
 
-![The Add Details step, with title, category, description, scope and the score range slider](../../img/screenshots/team_lead/courses/new-course.png)
-
-| Field | What it does |
-| :--- | :--- |
-| **Title** | The name of the course. It is the **Course Title** agents see in their list |
-| **Category** | The scorecard category the score range below is measured against, not only a label for browsing |
-| **Description** | What the course covers, and why it was assigned |
-| **Scope** | Whether the course can reach the whole organisation, chosen departments, or chosen teams |
-| **Training Initiation Score Range** | The band of scores that receives the course |
+<Hotspots
+  src={newCourseImg}
+  alt="The Add Details step of the course form: Title and Category above Description, then Scope and the Training Initiation Score Range slider"
+  points={[
+    { x: 23.1, y: 31.6, title: 'Title', body: 'The name of the course. It is the Course Title agents see in their list.' },
+    { x: 65.2, y: 31.6, title: 'Category', body: 'The scorecard category the score range below is measured against, not only a label for browsing.' },
+    { x: 26.4, y: 47.5, title: 'Description', body: 'What the course covers, and why it was assigned.' },
+    { x: 24.1, y: 69.9, title: 'Scope', body: 'Whether the course can reach the whole organisation, chosen departments, or chosen teams.' },
+    { x: 75.1, y: 69.9, title: 'Training Initiation Score Range', body: 'The band of scores that receives the course.' },
+  ]}
+/>
 
 {/* When Cautions ships, add a line to the Category row above: it also names what a caution counts failed courses against. Link issue-cautions.md. */}
 
@@ -122,11 +128,17 @@ Each question you add is listed with its number, its answer type, what it is wor
 
 These three sit together below the quiz, and they decide how much room an agent has to finish.
 
-![Quiz retakes, the deadline, and the nudge controls](../../img/screenshots/team_lead/courses/new-course4.png)
+<Hotspots
+  src={retakesImg}
+  alt="Quiz Retakes, Deadline, and Set course nudges, each a control with its own info icon, stacked down the page"
+  points={[
+    { x: 31.1, y: 11.8, title: 'Quiz Retakes', body: 'How many attempts an agent gets at the quiz, from 1 to 5. New courses start at 3.' },
+    { x: 28.9, y: 27.6, title: 'Deadline', body: 'How long an agent has from the day the course is assigned to them, rather than a fixed date.' },
+    { x: 33.6, y: 44.5, title: 'Set course nudges', body: 'A reminder sent to an agent who has not finished, counted back from the due date.' },
+  ]}
+/>
 
 ### Quiz Retakes
-
-**Quiz Retakes** sets how many attempts an agent gets at the quiz, from 1 to 5. New courses start at 3.
 
 The number you set decides how long a struggling agent can keep trying before the course closes on them. Their first result is kept separately as the **Initiation Score**, so improvement across attempts stays visible.
 
@@ -138,13 +150,13 @@ The pass percentage itself is set once for all courses under Preferences, not pe
 
 ### Deadline
 
-**Deadline** is how long an agent has from the date the course is assigned to them, rather than a fixed calendar date. It takes a count and a unit, and the unit is **Days**, **Weeks**, or **Months**. Each agent's **Due Date** is worked out from the day they receive it, so two agents who qualify on different cycles get the same amount of time rather than the same date.
+It takes a count and a unit, and the unit is **Days**, **Weeks**, or **Months**. Each agent's **Due Date** is worked out from the day they receive it, so two agents who qualify on different cycles get the same amount of time rather than the same date.
 
 ![Setting the deadline on a course](../../img/screenshots/team_lead/courses/create-course-deadlines.png)
 
 ### Set Course Nudges
 
-A **nudge** is a reminder sent to an agent who has not finished the course. You set each one as a count and a unit counted back from the due date, so a nudge of 2 **Days** reaches the agent two days before their deadline. Select **+** to add it.
+Set each one as a count and a unit, so a nudge of 2 **Days** reaches the agent two days before their deadline. Select **+** to add it.
 
 Add as many as you want, and each appears as `2 days before deadline` with a control to remove it. Adding one that already exists is refused with **Nudge already exists**.
 

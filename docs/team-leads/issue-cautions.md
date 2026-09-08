@@ -7,6 +7,10 @@ draft: true
 pagination_prev: team-leads/coaching-preferences
 ---
 
+import Hotspots from '@site/src/components/Hotspots';
+import newCautionTemplateImg from '@site/img/screenshots/team_lead/cautions/new-caution-template.png';
+import addNewFieldImg from '@site/img/screenshots/team_lead/cautions/add-new-field.png';
+
 {/* DRAFT: Cautions is on the dev branch and not yet released. This page is set
     draft: true so it stays out of the published site. When Cautions ships,
     remove the draft flag, add the page to sidebars.js after coaching-preferences,
@@ -143,14 +147,16 @@ A template does two jobs: it decides **when** a caution is detected, and it supp
 
 Open **Caution Templates** and select **New Caution Template**.
 
-![The Create a Caution form, with scope, threshold, category and the employee confirmation](../../img/screenshots/team_lead/cautions/new-caution-template.png)
-
-| Field | What it does |
-| :--- | :--- |
-| **Caution Scope** | Required. Whether the template covers the whole organisation, a department, or a team |
-| **Course Threshold** | How many courses an agent must fail in the category before a caution is detected. The lowest you may set is 2 |
-| **Caution Category** | The category the template serves. Failed courses are counted within it |
-| **Confirmation by Employee** | The statements the agent agrees to when they sign. Select the **pencil** to change the wording |
+<Hotspots
+  src={newCautionTemplateImg}
+  alt="The Create a Caution form: Caution Scope and Course Threshold above Caution Category, and the Confirmation by Employee panel with its statements and edit pencil"
+  points={[
+    { x: 39.1, y: 27.8, title: 'Caution Scope', body: 'Required. Whether the template covers the whole organisation, a department, or a team.' },
+    { x: 77.1, y: 27.8, title: 'Course Threshold', body: 'How many courses an agent must fail in the category before a caution is detected. The lowest you may set is 2.' },
+    { x: 44.3, y: 43.0, title: 'Caution Category', body: 'The category the template serves. Failed courses are counted within it.' },
+    { x: 59.9, y: 60.0, title: 'Confirmation by Employee', body: 'The statements the agent agrees to when they sign. Select the pencil to change the wording.' },
+  ]}
+/>
 
 Select **Create Caution Template** to save, or **Discard** to leave without saving. A template with no name set reads **Untitled Caution** in the list.
 
@@ -162,15 +168,17 @@ Setting it to 1 is refused with **Course threshold must be at least 2 to prevent
 
 **Add new form field** puts an extra question on the caution, for anything your process needs recording that the standard wording does not cover.
 
-![The Add New Field form, with name, description, type, mandatory status and respondent](../../img/screenshots/team_lead/cautions/add-new-field.png)
-
-| Field | What it does |
-| :--- | :--- |
-| **Field Name** | What the field is called on the caution |
-| **Description** | Guidance for whoever fills it in |
-| **Type of Field** | What kind of answer it takes |
-| **Mandatory Status** | **Required** or otherwise. A required field has to be completed before the caution can be sent |
-| **Expected Respondent** | Who answers it, such as the **Agent** |
+<Hotspots
+  src={addNewFieldImg}
+  alt="The Add New Field modal: Field Name and Description above Type of Field, Mandatory Status, and Expected Respondent, with Add New Field and Discard below"
+  points={[
+    { x: 46.7, y: 33.0, title: 'Field Name', body: 'What the field is called on the caution.' },
+    { x: 46.8, y: 41.0, title: 'Description', body: 'Guidance for whoever fills it in.' },
+    { x: 47.1, y: 54.2, title: 'Type of Field', body: 'What kind of answer it takes.' },
+    { x: 48.3, y: 61.1, title: 'Mandatory Status', body: 'Required or otherwise. A required field has to be completed before the caution can be sent.' },
+    { x: 47.1, y: 68.7, title: 'Expected Respondent', body: 'Who answers it, such as the Agent.' },
+  ]}
+/>
 
 **Expected Respondent** is the field to get right. It decides whether the question is one you answer when sending, or one the agent answers when they acknowledge, and a question aimed at the wrong person blocks the step that person is trying to complete.
 
