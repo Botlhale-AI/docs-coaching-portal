@@ -117,9 +117,9 @@ The page pairing each agent with each course assigned to them, and its status: *
 
 ## Quiz Retakes
 
-How many attempts an agent gets at a course quiz, from 1 to 5. Set on each course, so it varies between courses, unlike the [Pass Percentage](#pass-percentage), which is set once for the organisation.
+How many retakes an agent gets after their first attempt at a course quiz, from 1 to 5, so a course set to 3 allows four attempts in total. Set on each course, so it varies between courses, unlike the [Pass Percentage](#pass-percentage), which is set once for the organisation.
 
-When the last retake is used the course is marked **Complete** whatever the agent scored, so **Complete** on its own does not mean passed. Read it together with **Score**.
+An agent reaches **Complete** by using their last retake, whatever they scored, or by selecting **Complete Course** on the results screen before that, so **Complete** on its own does not mean passed. Read it together with **Score**.
 
 ## Scorecard
 

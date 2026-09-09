@@ -101,7 +101,7 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 
 **Problem:** A date range control reads **Invalid date range**.
 
-**Cause:** The picker keeps the earlier of the two dates you click as the start automatically, so an out-of-order range cannot actually be set. **Invalid date range** instead means one of the two dates has not been set yet.
+**Cause:** The picker keeps the earlier of the two dates you select as the start automatically, so an out-of-order range cannot actually be set. **Invalid date range** instead means one of the two dates has not been set yet.
 
 **Solution:** Set both a start and an end date, then select **Apply** again.
 

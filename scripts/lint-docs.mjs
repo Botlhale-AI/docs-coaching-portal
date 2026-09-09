@@ -280,6 +280,28 @@ for (const file of files) {
     else referencedImages.add(key(target));
   });
 
+  // <Hotspots> components: an annotated screenshot with its own alt prop and
+  // a points={[...]} array of pin bodies. Neither is a ![]() image, so
+  // nothing above sees them. A missing alt renders an <img> with no alt
+  // attribute at all, worse than alt="", and a pin body is plain text like
+  // a Mermaid node label, so "**" in one renders as literal asterisks.
+  for (const m of raw.matchAll(/<Hotspots\b[\s\S]*?\/>/g)) {
+    const block = m[0];
+    const lineNo = raw.slice(0, m.index).split("\n").length;
+    const altMatch = block.match(/\balt=(?:"([^"]*)"|\{`([^`]*)`\})/);
+    if (!altMatch) {
+      err(rel, `line ${lineNo}: <Hotspots> has no alt text`);
+    } else {
+      const alt = (altMatch[1] ?? altMatch[2] ?? "").trim();
+      if (!alt) err(rel, `line ${lineNo}: <Hotspots> has empty alt text`);
+      else alts.push(alt);
+    }
+
+    const pointsMatch = block.match(/points=\{(\[[\s\S]*?\])\}/);
+    if (pointsMatch && pointsMatch[1].includes("**"))
+      err(rel, `line ${lineNo}: <Hotspots> points contain markdown bold, which renders literally`);
+  }
+
   const dupes = alts.filter((a, i) => alts.indexOf(a) !== i);
   for (const d of new Set(dupes)) err(rel, `alt text "${d}" is used more than once on this page`);
 

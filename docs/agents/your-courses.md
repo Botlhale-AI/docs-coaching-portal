@@ -50,7 +50,7 @@ Select **View Course** to open one. The page opens on a description of what it c
 
 {/* Two independent captures (quick-search.png above and course-actions.png below) both show View Course on an Assigned-status card, not Start Course. AgentCourseView.jsx ties Start Course to status === "assigned", but the live product no longer matches that. Updated this step to what the screen actually shows. */}
 
-Material comes in two forms, and a course may hold both:
+Material comes in two forms, and a course can carry both:
 
 - **Course Material** is a PDF your team lead uploaded. Select **Download Material** to read it.
 - **Course Link** is an **External Link** that opens elsewhere in a new tab.
@@ -106,7 +106,7 @@ Once a course is finished it moves to the **Completed Courses** table, whose row
 A course reaches **Completed Courses** two ways, and nothing on the row says which one happened:
 
 ```mermaid
-flowchart TD
+flowchart LR
     A("Your score falls in<br/>the course's range") --> B("Assigned")
     B -- "You open it" --> C("In Progress")
     C -- "You select Complete Course" --> D("Completed")

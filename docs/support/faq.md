@@ -28,13 +28,13 @@ A: An agent sees their own interactions, scores, courses, and awards, never a co
 A: By score. You set a **Training Initiation Score Range** on the course, and on each evaluation cycle every agent whose scores fall in that range receives it. Nobody assigns courses manually.
 
 **Q: How long does an agent have to finish a course?**
-A: The **Deadline** on the course, set in days. Each agent's **Due Date** is worked out from the day they receive it, so two agents assigned on different days have different due dates.
+A: The **Deadline** on the course, set as a count and a unit of **Days**, **Weeks**, or **Months**. Each agent's **Due Date** is worked out from the day they receive it, so two agents assigned on different days have different due dates.
 
 **Q: What is the pass percentage?**
 A: The **Pass Percentage** under **Coaching → Preferences**. It applies to every course rather than being set per course.
 
 **Q: Can an agent retake a course?**
-A: Where your organisation allows it. The first result is kept as the **Initiation Score** alongside the new **Final Score**, so improvement stays visible.
+A: Yes, between 1 and 5 times, set per course by your team lead as **Quiz Retakes**. The **Initiation Score**, the agent's score when the course was assigned, stays visible alongside the new **Final Score**, so improvement stays visible.
 
 **Q: How are awards presented?**
 A: Automatically, on the evaluation cycle, to every agent whose score falls inside the **Score Threshold (Range)** set on the award. Agents download their own certificate from their portal.

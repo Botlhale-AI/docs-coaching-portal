@@ -79,7 +79,7 @@ Read across a category and find the groups whose bracketed figure is high while 
 
 Only categories with interactions in the period appear as columns.
 
-{/* UNVERIFIED: dashboardPage.jsx carries a "No team data available" string for an empty category column, but two live checks on 2026-09-07 (View By set to Entire Organisation, and to Specific Teams, each with an empty date range) never reached it — an empty period collapses the whole area to "No data available for the selected date range. Try adjusting your filter." with no columns at all. No wording for an empty column is documented for want of a state that shows one. If a partly-populated dashboard ever renders an empty column, document what it actually says. */}
+{/* UNVERIFIED: dashboardPage.jsx carries a "No team data available" string for an empty category column, but two live checks on 2026-09-07 (View By set to Entire Organisation, and to Specific Teams, each with an empty date range) never reached it. An empty period collapses the whole area to "No data available for the selected date range. Try adjusting your filter." with no columns at all. No wording for an empty column is documented for want of a state that shows one. If a partly-populated dashboard ever renders an empty column, document what it actually says. */}
 
 ### C. Per-Category Performance
 

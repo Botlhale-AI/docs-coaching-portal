@@ -38,7 +38,7 @@ Select **Coaching** in the left sidebar, then **Progress**. Each row pairs an ag
 
 The two score columns sit side by side so you can read them together. **Initiation Score** is where the agent was before the course, and **Score** is how they did on it. A course assigned at 40% and passed at 90% tells you the assignment was aimed correctly.
 
-**Score** is shown in red whenever it is below the **Pass Percentage** set in [Coaching Preferences](./coaching-preferences.md), including the default 0% on a course nobody has finished yet. Check **Status** alongside it before reading a red score as a fail: red on a **Complete** row is a real fail, red on **Not Started** or **In Progress** is the unfinished default rather than a result.
+**Score** is shown in red whenever it is below the **Pass Percentage** set in [Coaching Preferences](./coaching-preferences.md), including the default 0% on a course nobody has finished yet. Check **Status** alongside it before reading a red score as a fail: red on **Not Started** or **In Progress** is the unfinished default rather than a result, and red on a **Complete** row means the agent finished below the pass mark, whether their retakes ran out or they selected **Complete Course** rather than trying again.
 
 Long lists are paged, with **Previous** and **Next** either side of the page count.
 
@@ -71,7 +71,7 @@ The date range is a separate control, the **pencil** icon above the table rather
 
 ![The detailed date range picker, with the range you set](../../img/screenshots/team_lead/progress/date-filter-detailed.png)
 
-The picker keeps the earlier date you click as the start automatically, so there is no way to set an out-of-order range. Where the page instead shows **Invalid date range**, one of the two dates has not been set yet.
+The picker keeps the earlier date you select as the start automatically, so there is no way to set an out-of-order range. Where the page instead shows **Invalid date range**, one of the two dates has not been set yet.
 
 **Sort By** orders the list on a column you choose.
 

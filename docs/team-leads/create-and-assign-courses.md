@@ -31,7 +31,7 @@ Select **Coaching** in the left sidebar, then **Courses**. The page lists what a
 
 ![The Courses list, showing the courses that already exist](../../img/screenshots/team_lead/courses/courses-list.png)
 
-Select **Create Course** to start a new one.
+Select **Create a New Course** to start one.
 
 ---
 
@@ -107,16 +107,18 @@ Select **Add Question** for each question you want to ask. Every question needs 
 | Answer type | What the agent does | What you set |
 | :--- | :--- | :--- |
 | **Multiple Choice** | Picks one of the options | At least two options, and which is the **Correct Answer** |
-| **Short Paragraph** | Writes a brief answer | The question only |
-| **Long Paragraph** | Writes at length | The question only |
+| **Short Paragraph** | Writes a brief answer | The question, and the answer Vela judges it against |
+| **Long Paragraph** | Writes at length | The question, and the answer Vela judges it against |
 
 A multiple choice question is refused until it has at least two options and one of them is marked correct. Use **Add option** to build the list.
 
 Paragraph answers still need a correct answer, typed rather than chosen. Vela compares the agent's answer against it and scores by meaning rather than exact wording. Write those questions so there is something specific to judge: "Name the two disclosures required before taking payment" can be scored, "What did you think of this course?" cannot.
 
+Every question also carries **Points**, worth 1 by default and adjustable, though saving is refused if you set it to 0, and **Required**, a toggle set on by default that decides whether the agent must answer it before submitting the quiz.
+
 ![A quiz question as it appears once added, with its type, points and answer](../../img/screenshots/team_lead/courses/new-course3.png)
 
-Each question you add is listed with its number, its answer type, what it is worth as **1 point**, whether it is **Required**, and the **Answer** you marked correct. The **pencil** edits a question and the **bin** removes it.
+Each question you add is listed with its number, its answer type, the point value and **Required** setting you gave it, and the **Answer** you marked correct. The **pencil** edits a question and the **bin** removes it.
 
 ![Adding quiz questions to a course](../../img/screenshots/team_lead/courses/create-course-add-quiz.png)
 
@@ -132,7 +134,7 @@ These three sit together below the quiz, and they decide how much room an agent 
   src={retakesImg}
   alt="Quiz Retakes, Deadline, and Set course nudges, each a control with its own info icon, stacked down the page"
   points={[
-    { x: 31.1, y: 11.8, title: 'Quiz Retakes', body: 'How many attempts an agent gets at the quiz, from 1 to 5. New courses start at 3.' },
+    { x: 31.1, y: 11.8, title: 'Quiz Retakes', body: 'How many retakes an agent gets after a first attempt, from 1 to 5. New courses start at 3, which allows four attempts in total.' },
     { x: 28.9, y: 27.6, title: 'Deadline', body: 'How long an agent has from the day the course is assigned to them, rather than a fixed date.' },
     { x: 33.6, y: 44.5, title: 'Set course nudges', body: 'A reminder sent to an agent who has not finished, counted back from the due date.' },
   ]}
@@ -140,10 +142,10 @@ These three sit together below the quiz, and they decide how much room an agent 
 
 ### Quiz Retakes
 
-**Quiz Retakes** decides how long a struggling agent can keep trying before the course closes on them. Their first result is kept separately as the **Initiation Score**, so improvement across attempts stays visible.
+**Quiz Retakes** decides how long a struggling agent can keep trying before the course closes on them. Their **Initiation Score**, the score that qualified them for the course, stays visible throughout, so you can see whether the attempts moved it.
 
-:::warning Running out of retakes looks the same as passing
-When an agent uses their last retake, the course is marked **Complete** whatever they scored. On the **Progress** table that row is indistinguishable at a glance from one that passed, so a course nobody could pass reads as a course everybody finished. Read **Complete** together with **Score**, which shows in red below the pass percentage.
+:::warning Complete does not mean passed
+An agent reaches **Complete** two ways: by using their last retake, whatever they scored, or by selecting **Complete Course** on the results screen at any point, including after a failing attempt with retakes left. Either way the **Progress** table shows the same status, so a passed course and an abandoned one can look identical at a glance. Read **Complete** together with **Score**, which shows in red below the pass percentage.
 :::
 
 The pass percentage itself is set once for all courses under Preferences, not per course. See [Set Coaching Preferences](./coaching-preferences.md).
@@ -158,7 +160,7 @@ The pass percentage itself is set once for all courses under Preferences, not pe
 
 You set each **nudge** as a count and a unit, so one of 2 **Days** reaches the agent two days before their deadline. Select **+** to add it.
 
-Add as many as you want, and each appears as `2 days before deadline` with a control to remove it. Adding one that already exists is refused with **Nudge already exists**.
+Add up to three, and each appears as `2 days before deadline` with a control to remove it. Adding one that already exists is refused with **Nudge already exists**.
 
 Because the deadline runs from the day each agent receives the course, nudges follow each agent's own due date rather than a shared calendar date.
 
@@ -198,11 +200,13 @@ Read this page once after building a course. A quiz worth fewer points than you 
 
 ## 8. Edit a Course
 
-Open a course from the list and select **Edit Course** to change its details, material, or questions.
+Open a course from the list and select **Edit Course**, in the banner, to change its details, material, or questions.
 
-![The Edit Course form, with the course details open for changing](../../img/screenshots/team_lead/courses/team-lead-courses-edit.png)
+![A course open in the detailed view, with the Edit Course button in the banner](../../img/screenshots/team_lead/courses/course-detail-edit-button.png)
 
-{/* RESHOOT: two issues here. First, this originally showed Support in the ADMIN section, an internal-only control that must never appear in a screenshot; cropped out as a temporary fix. Second, the capture itself is the read-only course detail view with an Edit Course button, not the edit form the alt text and this step describe — reshoot the actual form open for editing, from a non-@botlhale.ai account. */}
+This opens the same form as building a course, pre-filled with what you set.
+
+![The course form in edit mode, with the existing Title, Category, Description, Scope, and Training Initiation Score Range open for changing](../../img/screenshots/team_lead/courses/edit-course-form.png)
 
 Editing changes the course for agents who have not yet completed it. Agents who already finished keep the result they earned.
 

@@ -61,14 +61,7 @@ An award set at a mark most of the team already clears recognises nothing, and a
 
 ## Read Progress for Failure, Not Completion
 
-A high completion rate is the least interesting thing on the Progress page. The useful signals are the failures.
-
-| What you see | What it usually means |
-| :--- | :--- |
-| **Not Started** past the due date | The agent has not opened it. Reminders work better than waiting |
-| **In Progress** for a long time | The material is longer than the deadline allows, or the quiz is unclear |
-| **Complete** with low scores | The course ran but did not land. Check the material before assigning more |
-| Everyone **Complete**, high scores | Either it is working, or the pass percentage is too low to tell |
+A high completion rate is the least interesting thing on the Progress page. The useful signals are the failures, not the completions, so read it for what stalled or scored low rather than for how much of it is done. See [Track Learning Progress](../team-leads/track-learning-progress.md#3-act-on-what-you-find) for what each status usually means and how to act on it.
 
 Sort on **Due Date** to bring the overdue to the top. That list is shorter than the whole page and it is where the problems are.
 

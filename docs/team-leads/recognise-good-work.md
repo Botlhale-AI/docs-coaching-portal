@@ -31,7 +31,7 @@ Select **Coaching** in the left sidebar, then **Awards**. Select **Create New Aw
   src={createAwardImg}
   alt="The Create an Award form: Award Name and Award Category above Award Description, then Scope and the Score Threshold (Range) Min and Max fields"
   points={[
-    { x: 28.8, y: 42.2, title: 'Award Name', body: 'What the award is called, on the certificate and in the agent\'s list.' },
+    { x: 28.8, y: 42.2, title: 'Award Name', body: 'What the award is called, in the agent\'s list. It is not printed on the certificate, which prints the award\'s category and score instead.' },
     { x: 68.4, y: 42.2, title: 'Award Category', body: "The scorecard category the score threshold below is measured against. The list is the same one your organisation's scorecard questions are grouped into." },
     { x: 31.4, y: 59.6, title: 'Award Description', body: 'What the award recognises.' },
     { x: 25.9, y: 81.5, title: 'Scope', body: 'Whether the award covers the whole organisation, chosen departments, or chosen teams.' },
@@ -82,8 +82,6 @@ An empty list where you expected awards usually means the date range, not a faul
 ![The filter panel on the awards list](../../img/screenshots/team_lead/awards/filter.png)
 
 ![The sort control on the awards list](../../img/screenshots/team_lead/awards/sort.png)
-
-{/* RESHOOT: this capture still shows Support in the ADMIN section behind the dimmed backdrop, an internal-only control that must never appear in a screenshot. Painted over as a temporary fix rather than cropped, since the modal is wide enough that cropping clipped its own content. Reshoot from a non-@botlhale.ai account when this page is next touched — see filter.png above, which already got a clean recapture. */}
 
 ![The date range control above the Awards Presented list](../../img/screenshots/team_lead/awards/date-range.png)
 
