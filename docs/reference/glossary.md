@@ -87,7 +87,7 @@ How long an agent has from the date a course is assigned to them, set on the cou
 
 How often Vela reviews scores and assigns the courses and awards agents have qualified for. The Preferences page describes both in one breath, with no distinction between them: a course catches agents scoring low in a category, an award catches those scoring high. Set under **Coaching → Preferences** as an interval, a unit of **Day(s)**, **Week(s)**, or **Month(s)**, and a time.
 
-Nothing is assigned between runs. A course created today reaches agents at the next run rather than immediately.
+Nothing is assigned between runs. A course created today reaches agents at the next run rather than immediately. See [How Coaching Works](../explanation/how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for why.
 
 ## Evaluation Scope
 
@@ -117,9 +117,7 @@ The page pairing each agent with each course assigned to them, and its status: *
 
 ## Quiz Retakes
 
-How many retakes an agent gets after their first attempt at a course quiz, from 1 to 5, so a course set to 3 allows four attempts in total. Set on each course, so it varies between courses, unlike the [Pass Percentage](#pass-percentage), which is set once for the organisation.
-
-An agent reaches **Complete** by using their last retake, whatever they scored, or by selecting **Complete Course** on the results screen before that, so **Complete** on its own does not mean passed. Read it together with **Score**.
+How many extra attempts an agent gets at a course quiz after their first try. Set on each course, so it varies between courses, unlike the [Pass Percentage](#pass-percentage), which is set once for the organisation. See [Quiz Retakes](../reference/course-and-award-fields.md#quiz-retakes) for the range and how it decides **Complete**.
 
 ## Scorecard
 

@@ -41,7 +41,7 @@ Under **Evaluation Scope**, answer "Which interactions would you like these eval
 
 ## 2. Set the Evaluation Cycle
 
-The evaluation cycle is how often Vela reviews agents' scores and assigns the courses and awards they qualify for. Nothing is assigned between runs, so this setting decides how quickly coaching responds to a change in performance.
+Nothing is assigned between runs, so this setting decides how quickly coaching responds to a change in performance. See [How Coaching Works](../explanation/how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for what runs on this schedule.
 
 | Field | What it does |
 | :--- | :--- |

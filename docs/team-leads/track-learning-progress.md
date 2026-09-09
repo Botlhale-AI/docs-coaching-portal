@@ -38,7 +38,7 @@ Select **Coaching** in the left sidebar, then **Progress**. Each row pairs an ag
 
 The two score columns sit side by side so you can read them together. **Initiation Score** is where the agent was before the course, and **Score** is how they did on it. A course assigned at 40% and passed at 90% tells you the assignment was aimed correctly.
 
-**Score** is shown in red whenever it is below the **Pass Percentage** set in [Coaching Preferences](./coaching-preferences.md), including the default 0% on a course nobody has finished yet. Check **Status** alongside it before reading a red score as a fail: red on **Not Started** or **In Progress** is the unfinished default rather than a result, and red on a **Complete** row means the agent finished below the pass mark, whether their retakes ran out or they selected **Complete Course** rather than trying again.
+**Score** is shown in red whenever it is below the **Pass Percentage** set in [Coaching Preferences](./coaching-preferences.md), including the default 0% on a course nobody has finished yet. Check **Status** alongside it before reading a red score as a fail. Red on **Not Started** or **In Progress** is the unfinished default, not a result. Red on a **Complete** row means the agent finished below the pass mark. See [Metrics](../reference/metrics.md#course-progress) for the two ways a course reaches **Complete**.
 
 Long lists are paged, with **Previous** and **Next** either side of the page count.
 

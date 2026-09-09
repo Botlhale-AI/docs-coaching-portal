@@ -145,7 +145,7 @@ These three sit together below the quiz, and they decide how much room an agent 
 **Quiz Retakes** decides how long a struggling agent can keep trying before the course closes on them. Their **Initiation Score**, the score that qualified them for the course, stays visible throughout, so you can see whether the attempts moved it.
 
 :::warning Complete does not mean passed
-An agent reaches **Complete** two ways: by using their last retake, whatever they scored, or by selecting **Complete Course** on the results screen at any point, including after a failing attempt with retakes left. Either way the **Progress** table shows the same status, so a passed course and an abandoned one can look identical at a glance. Read **Complete** together with **Score**, which shows in red below the pass percentage.
+An agent reaches **Complete** by running out of retakes or by selecting **Complete Course**, whichever comes first, whatever they scored. The **Progress** table shows the same status either way, so read **Complete** together with **Score**. See [Metrics](../reference/metrics.md#course-progress) for what the two routes mean for what you do next.
 :::
 
 The pass percentage itself is set once for all courses under Preferences, not per course. See [Set Coaching Preferences](./coaching-preferences.md).

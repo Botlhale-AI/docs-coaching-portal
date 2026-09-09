@@ -15,7 +15,7 @@ These are recommendations for the second problem. Each section stands on its own
 
 ## Set the Cycle Before Anything Else
 
-The evaluation cycle decides how often Vela reviews scores and assigns what agents have qualified for. Nothing happens between runs, so a course built without knowing the cycle looks broken for a month.
+Nothing is assigned between cycle runs, so a course built without knowing the cycle looks broken for a month. See [How Coaching Works](./how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for what the cycle actually does.
 
 **Monthly suits most teams.** A month holds enough interactions to tell a real gap from a bad week.
 

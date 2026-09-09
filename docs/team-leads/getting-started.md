@@ -31,7 +31,7 @@ You need:
 
 Select **Coaching** in the left sidebar, then **Preferences**.
 
-Set the [evaluation cycle](../reference/glossary.md#evaluation-cycle) before anything else. It decides how often Vela reviews scores and assigns what agents have qualified for, and nothing is assigned between runs. A course built without knowing the cycle looks broken for a month.
+Set the [evaluation cycle](../reference/glossary.md#evaluation-cycle) before anything else. Nothing is assigned between runs, so a course built without knowing it looks broken for a month. See [How Coaching Works](../explanation/how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for what the cycle actually does.
 
 Set the **Pass Percentage** at the same time. It applies to every course you build afterwards.
 

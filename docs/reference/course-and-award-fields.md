@@ -87,7 +87,7 @@ How many retakes an agent gets after their first attempt at the quiz, so a cours
 | Range | 1 to 5 |
 | Default on a new course | 3 |
 
-The course is marked **Complete** when an agent uses their last retake, or selects **Complete Course** before that, whatever they scored.
+A course reaches **Complete** when retakes run out or the agent selects **Complete Course**, whichever comes first, whatever they scored. See [Metrics](./metrics.md#course-progress) for what that does and does not confirm.
 
 ### Training Initiation Score Range
 
@@ -108,6 +108,7 @@ How long an agent has from their own **Date Assigned**, rather than a fixed cale
 | :--- | :--- |
 | Count | A number, minimum 1 |
 | Unit | **Days**, **Weeks**, or **Months** |
+| Default on a new course | 7 days |
 
 Each agent's **Due Date** is calculated from the day they receive the course.
 
@@ -176,7 +177,7 @@ How often courses and awards are assessed and assigned.
 | :--- | :--- |
 | **Repeat every** | 1 to 100 |
 | **Unit** | **Day(s)**, **Week(s)**, **Month(s)** |
-| **Time** | 24-hour, on the hour |
+| **Time** | 24-hour, on the hour. Defaults to `09:00` |
 | **Day of Week** | Sunday to Saturday. Shown when the unit is week |
 | **Day of Month** | 1 to 28, or **Last**. Shown when the unit is month |
 
