@@ -120,9 +120,7 @@ Every question also carries **Points**, worth 1 by default and adjustable, thoug
 
 Each question you add is listed with its number, its answer type, the point value and **Required** setting you gave it, and the **Answer** you marked correct. The **pencil** edits a question and the **bin** removes it.
 
-![Adding quiz questions to a course](../../img/screenshots/team_lead/courses/create-course-add-quiz.png)
-
-{/* RESHOOT: this capture originally showed Support in the ADMIN section, an internal-only control that must never appear in a screenshot. Cropped out here as a temporary fix. Reshoot from a non-@botlhale.ai account when this page is next touched. */}
+![The New Question panel, with a Multiple Choice question, its options with one marked as the correct answer, the Points field, and the Required toggle](../../img/screenshots/team_lead/courses/create-course-add-quiz.png)
 
 ---
 
