@@ -12,6 +12,12 @@ const ICONS = {
   check: 'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z',
   course: 'M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z',
   award: 'M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM7 10.82C5.84 10.4 5 9.3 5 8V7h2v3.82zM12 16c-1.65 0-3-1.35-3-3V5h6v8c0 1.65-1.35 3-3 3zm7-8c0 1.3-.84 2.4-2 2.82V7h2v1z',
+  teamlead: 'M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z',
+  agent: 'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z',
+  idea: 'M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z',
+  book: 'M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z',
+  fields: 'M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h12v2H3v-2z',
+  fix: 'M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z',
   none: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z',
 };
 
@@ -68,7 +74,7 @@ export default function LandingPage() {
   const agentJourney = [
     {
       title: "Sign In",
-      description: "Sign in to the Coaching Portal for the first time and find your way around.",
+      description: "Sign in to the Agent Portal for the first time and find your way around.",
       to: "/docs/agents/getting-started",
     },
     {
@@ -83,7 +89,7 @@ export default function LandingPage() {
     },
     {
       title: "Work Through Your Courses",
-      description: "Read the material, take the quiz, and see how many attempts you have left.",
+      description: "Read the material, take the quiz, and see how many retakes you have left.",
       to: "/docs/agents/your-courses",
     },
     {
@@ -131,6 +137,34 @@ export default function LandingPage() {
     ],
   };
   
+  // Reference and Support, matching those two sidebar sections.
+  const quickLinks = [
+    {
+      title: "Glossary",
+      icon: "book",
+      description: "What each term means, from Auto Fail to Training Initiation Score Range.",
+      to: "/docs/reference/glossary",
+    },
+    {
+      title: "Metrics",
+      icon: "score",
+      description: "Every figure coaching shows, and what to take from it.",
+      to: "/docs/reference/metrics",
+    },
+    {
+      title: "Course and Award Fields",
+      icon: "fields",
+      description: "Every field on the course, award, and preferences forms, with its limits.",
+      to: "/docs/reference/course-and-award-fields",
+    },
+    {
+      title: "Troubleshooting",
+      icon: "fix",
+      description: "Work from a symptom to its cause, for the problems reported most.",
+      to: "/docs/support/troubleshooting-guide",
+    },
+  ];
+
   return (
     <div className={styles.landingContainer}>
       {/* Modern Hero Section */}
@@ -160,12 +194,15 @@ export default function LandingPage() {
                   nobody knew to press. */}
               <div className={`${styles.heroCta} ${styles.animateIn}`}>
                 <Link to="/docs/team-leads" className={styles.portalButton}>
+                  <Icon name="teamlead" size={18} />
                   For Team Leads
                 </Link>
                 <Link to="/docs/agents" className={styles.portalButton}>
+                  <Icon name="agent" size={18} />
                   For Agents
                 </Link>
                 <Link to="/docs/explanation/how-coaching-works" className={styles.portalButtonOutline}>
+                  <Icon name="idea" size={18} />
                   How Coaching Works
                 </Link>
               </div>
@@ -194,9 +231,10 @@ export default function LandingPage() {
                     </div>
                     <div className={styles.cycleStepRow}>
                       <span className={styles.cycleStepIcon}><Icon name="check" /></span>
-                      <span className={styles.cycleStepText}>Each agent&apos;s scores are checked against every course and award</span>
+                      <span className={styles.cycleStepText}>Scope sets who is eligible, then their category score decides who qualifies</span>
                     </div>
                   </div>
+                  <p className={styles.cycleBranchLabel}>One outcome per agent</p>
                   <div className={styles.cycleOutcomes}>
                     <div className={styles.cycleOutcome}>
                       <Icon name="course" size={18} />
@@ -219,7 +257,7 @@ export default function LandingPage() {
       </section>
 
       {/* Enhanced Workflow Section with Role-Specific Content */}
-      <section className={styles.workflowSection}>
+      <section className={styles.workflowSection} id="team-lead-walkthrough">
         <div className="container">
           <div className={`${styles.sectionHeader} ${styles.animateIn}`}>
             <h2 className={styles.sectionTitle}>What a Team Lead Does</h2>
@@ -261,7 +299,7 @@ export default function LandingPage() {
       {/* The agent walkthrough used to render only while the role toggle was set to
           agent, so it was invisible by default. It is useful to both audiences: a
           team lead answering "what does my agent see?" has nowhere else to look. */}
-      <section className={styles.workflowSection}>
+      <section className={styles.workflowSection} id="agent-walkthrough">
         <div className="container">
           <div className={`${styles.sectionHeader} ${styles.animateIn}`}>
             <h2 className={styles.sectionTitle}>What an Agent Does</h2>
@@ -300,6 +338,30 @@ export default function LandingPage() {
         </div>
       </section>
 
+
+      {/* Reference and Support have their own sidebar sections but had no way
+          in from here, so a reader arriving with a term or a symptom had
+          nowhere to go. */}
+      <section className={styles.quickSection}>
+        <div className="container">
+          <div className={`${styles.sectionHeader} ${styles.animateIn}`}>
+            <h2 className={styles.sectionTitle}>Look Something Up</h2>
+            <p className={styles.sectionSubtitle}>
+              For a term, a figure, a field, or a problem
+            </p>
+          </div>
+
+          <div className={`${styles.quickLinks} ${styles.animateIn}`}>
+            {quickLinks.map((l) => (
+              <Link key={l.to} to={l.to} className={styles.quickLink}>
+                <span className={styles.quickLinkIcon}><Icon name={l.icon} size={20} /></span>
+                <span className={styles.quickLinkTitle}>{l.title}</span>
+                <span className={styles.quickLinkText}>{l.description}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
        {/* Video Tutorial Section */}
        <section className={styles.videoSection}>

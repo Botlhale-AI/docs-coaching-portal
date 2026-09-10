@@ -19,11 +19,7 @@
   position: relative;
   padding: 6rem 0 4.5rem;
   overflow: hidden;
-  background: linear-gradient(
-    160deg,
-    var(--ifm-background-color) 0%,
-    var(--ifm-color-emphasis-100) 100%
-  );
+  background: var(--ifm-background-color);
 }
 
 .heroBackground {
@@ -167,6 +163,10 @@ html[data-theme='dark'] .portalButton:hover {
   display: block;
 }
 
+.workflowSection[id] {
+  scroll-margin-top: 4rem;
+}
+
 /* --- Hero visual: framed card ----------------------------------- */
 
 .heroVisual {
@@ -249,11 +249,15 @@ html[data-theme='dark'] .portalButton:hover {
 .cycleStepRow:not(:last-child)::after {
   content: '';
   position: absolute;
-  left: 24px;
-  bottom: -1.1rem;
+  left: 29px;
+  bottom: -1.35rem;
   width: 2px;
-  height: 0.9rem;
-  background: var(--ifm-color-emphasis-300);
+  height: 1.35rem;
+  background: linear-gradient(
+    to bottom,
+    var(--ifm-color-emphasis-300),
+    rgba(252, 95, 30, 0.45)
+  );
 }
 
 .cycleStepIcon {
@@ -274,11 +278,20 @@ html[data-theme='dark'] .portalButton:hover {
   flex: 1;
 }
 
+.cycleBranchLabel {
+  margin: 1.5rem 0 0.6rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-600);
+  text-align: center;
+}
+
 .cycleOutcomes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
-  margin-top: 1.5rem;
   padding-top: 1.25rem;
   border-top: var(--surface-border);
 }
@@ -289,8 +302,9 @@ html[data-theme='dark'] .portalButton:hover {
   align-items: center;
   gap: 0.35rem;
   text-align: center;
-  padding: 0.7rem 0.35rem;
-  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.75rem 0.35rem;
+  background: rgba(252, 95, 30, 0.06);
+  border: 1px solid rgba(252, 95, 30, 0.22);
   border-radius: var(--border-radius-md);
   font-size: 0.72rem;
   font-weight: 600;
@@ -541,4 +555,105 @@ html[data-theme='dark'] .portalButton:hover {
   .portalButtonOutline { justify-content: center; }
   .workflowSection,
   .videoSection { padding: 3.5rem 0; }
+}
+
+/* --- Look something up ------------------------------------------- */
+
+.quickSection {
+  padding: 5rem 0;
+  background: var(--ifm-background-surface-color);
+  border-top: var(--surface-border);
+  position: relative;
+}
+
+.quickLinks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.quickLink {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.5rem 1.35rem;
+  background: var(--ifm-background-color);
+  border: var(--surface-border);
+  border-radius: var(--border-radius-lg);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-standard);
+}
+
+/* Accent bar that wipes in on hover, echoing the hero buttons. */
+.quickLink::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--primary-gradient);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition-standard);
+}
+
+.quickLink:hover {
+  transform: translateY(-4px);
+  border-color: rgba(252, 95, 30, 0.4);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+  text-decoration: none;
+}
+
+.quickLink:hover::before {
+  transform: scaleX(1);
+}
+
+.quickLinkIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  background: rgba(252, 95, 30, 0.1);
+  border: 1px solid rgba(252, 95, 30, 0.2);
+  transition: var(--transition-standard);
+}
+
+.quickLink:hover .quickLinkIcon {
+  background: var(--primary-gradient);
+  color: #031019;
+  border-color: transparent;
+}
+
+.quickLinkTitle {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ifm-heading-color);
+  transition: var(--transition-standard);
+}
+
+.quickLink:hover .quickLinkTitle {
+  color: var(--primary-color);
+}
+
+.quickLinkText {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--ifm-color-emphasis-700);
+}
+
+@media (max-width: 996px) {
+  .quickLinks { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .quickLinks { grid-template-columns: 1fr; }
+  .quickSection { padding: 3.5rem 0; }
 }
