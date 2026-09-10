@@ -69,7 +69,7 @@ Select **Download** to save the certificate. It is yours to keep or share, and i
 | Name | Yours |
 | Category and score | The award's category and your score, not the award's own name |
 | Description | What the award recognises |
-| Supervisor | Your team lead's name |
+| Supervisor | Whoever created the award, which may not be your own team lead |
 | Date | The dates the score covers, shown as a range rather than one day |
 
 ![The award certificate as it downloads, titled Certificate of Achievement and carrying the agent name, the award category and score, and the dates the score covers](../../img/screenshots/agent_view/awards/award-template.png)

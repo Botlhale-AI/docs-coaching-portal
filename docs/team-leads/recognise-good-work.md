@@ -12,6 +12,8 @@ import createAwardImg from '@site/img/screenshots/team_lead/awards/create-award.
 
 An award is recognition you define once and Vela presents automatically. You set what earns it, and on each evaluation cycle every agent who meets the criteria receives it with a certificate. Like courses, awards reach people by score rather than by name.
 
+{/* UNVERIFIED: no code in vela or vela-data creates the record that presents an award, the same gap that exists for course assignment. The Preferences page's own copy groups "awards and training courses" under one Evaluation Cycle description with no distinction, which is why this page states it the same way. Carried on glossary.md, metrics.md, troubleshooting-guide.md and your-awards.md too. */}
+
 ---
 
 ## Before You Begin
@@ -93,10 +95,10 @@ Select the **download** icon in the **Download** column to save that agent's cer
 
 | Field | What it shows |
 | :--- | :--- |
-| Name | The agent's |
+| Name | The agent's name |
 | Category and score | The award's category and the agent's score, not the award's own name |
 | Description | What the award recognises |
-| Supervisor | Your name |
+| Supervisor | Whoever created the award, which is not always the person downloading it |
 | Period | A date range, not a single date |
 
 ![The download icon on an award row, which saves the certificate](../../img/screenshots/team_lead/awards/download.png)
