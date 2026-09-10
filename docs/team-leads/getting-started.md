@@ -33,6 +33,8 @@ Select **Coaching** in the left sidebar, then **Preferences**.
 
 Set the [evaluation cycle](../reference/glossary.md#evaluation-cycle) before anything else. Nothing is assigned between runs, so a course built without knowing it looks broken for a month. See [How Coaching Works](../explanation/how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for what the cycle actually does.
 
+![The Evaluation Cycle settings under Preferences, with the interval, unit, and time](../../img/screenshots/team_lead/preferences/evaluation-cycle.png)
+
 Set the **Pass Percentage** at the same time. It applies to every course you build afterwards.
 
 See [Set Coaching Preferences](./coaching-preferences.md) for each setting, including what agents can see of their own work.
@@ -44,6 +46,8 @@ See [Set Coaching Preferences](./coaching-preferences.md) for each setting, incl
 Select **Dashboard**.
 
 Set the date range to a period with enough interactions to judge, then read **Category Scores**. Look for a category where several agents sit below the team rather than one agent below everywhere.
+
+![Auto Fails beside Category Scores on the Coaching Dashboard, broken down by category](../../img/screenshots/team_lead/dashboard/dashboard-overview.png)
 
 Several agents behind in one category is what a course fixes well. One agent behind everywhere is a conversation, not a course.
 
@@ -57,6 +61,8 @@ Select **Courses**, then **Create a New Course**.
 
 Name it for the gap, describe what it covers in terms the agent recognises, and attach your material. Set **Category** to the same category you found behind in step 2, since that is what the score range below is measured against, not the agent's overall score. Add a quiz so completion means something. Set the **Deadline** (a count and a unit of Days, Weeks, or Months) and the **Scope**.
 
+![The Add Details step of the course form, with Title, Category, Description, Scope, and the score range slider](../../img/screenshots/team_lead/courses/new-course.png)
+
 The [**Training Initiation Score Range**](../reference/glossary.md#training-initiation-score-range) is what decides who receives it: every agent whose score in that category falls inside it. Narrow it to the agents you saw behind in step 2. A wide range reaches everyone and measures nothing.
 
 See [Create and Assign Courses](./create-and-assign-courses.md).
@@ -69,6 +75,8 @@ Nothing happens until the next evaluation run. When it has passed, select **Prog
 
 Confirm agents appear against your course with a **Date Assigned**. Nobody there means no agent's scores fell inside your **Training Initiation Score Range**, so widen it or check the scores again.
 
+![The Progress table once a cycle has run, with a row pairing each agent with a course](../../img/screenshots/team_lead/progress/progress-table.png)
+
 See [Track Learning Progress](./track-learning-progress.md).
 
 ---
@@ -78,6 +86,8 @@ See [Track Learning Progress](./track-learning-progress.md).
 Select **Awards**, then **Create New Award**.
 
 Set the **Score Threshold (Range)** at a band that means something when reached. Write the **Award Message** as though speaking to the person, because that is the part they read.
+
+![The Create an Award form, with Award Name, Award Category, Award Description, Scope, and the Score Threshold range](../../img/screenshots/team_lead/awards/create-award.png)
 
 See [Recognise Good Work](./recognise-good-work.md).
 

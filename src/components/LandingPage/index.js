@@ -231,7 +231,7 @@ export default function LandingPage() {
                     </div>
                     <div className={styles.cycleStepRow}>
                       <span className={styles.cycleStepIcon}><Icon name="check" /></span>
-                      <span className={styles.cycleStepText}>Scope sets who is eligible. Category score decides who qualifies</span>
+                      <span className={styles.cycleStepText}>Scope sets who is eligible, then category score decides who qualifies</span>
                     </div>
                   </div>
                   <p className={styles.cycleBranchLabel}>One outcome per agent</p>

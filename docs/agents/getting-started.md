@@ -70,11 +70,17 @@ Work through these in order. Each one shows you a different part of the portal.
 
 1. **Open your Dashboard.** Set the date range to a period you have been working, and read **Category Scores**. The gap between **Your Team** and **Your Score** in each category is the most useful thing on the page. See [Monitor Your Performance](./personal-performance.md).
 
+   ![Your Dashboard in the Agent Portal, with Auto Fails and Category Scores comparing you against your team](../../img/screenshots/agent_view/dashboard/dashboard-overview.png)
+
 2. **Open one of your interactions.** Select **Interactions**, then **Calls** or **Chats**, and open one. Read the transcript alongside the **Scorecard** tab to see how the conversation was scored. See [Review Your Interactions](./your-interactions.md).
+
+   ![A call open in the Agent Portal, with the audio player and Smart Detector on the left and Call Details and the transcript on the right](../../img/screenshots/agent_view/interactions/interactions-calls-detailed-view.png)
 
 3. **Check for coaching comments.** On the same interaction, select **View Comments**. This is where your team lead's feedback appears, and where you reply. See [Review Your Interactions](./your-interactions.md).
 
 4. **Look at your courses.** Select **Courses**. Anything under **Assigned Courses** is waiting for you, and each shows when it is due. See [Track Your Courses](./your-courses.md).
+
+   ![The Courses page in the Agent Portal, grouped into assigned, in progress, and completed](../../img/screenshots/agent_view/courses/courses-overview.png)
 
 5. **Check your notifications.** Select **Notifications** under **ADMIN**. The three tabs sort what has arrived into awards, courses, and comments.
 
