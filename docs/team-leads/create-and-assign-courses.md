@@ -20,7 +20,7 @@ A course is training you build once and Vela assigns automatically. You set the 
 You need:
 
 - **A gap worth training.** Build the course around a category several agents are behind in. See [Read the Coaching Dashboard](./coaching-dashboard.md).
-- **Your material ready.** A file to upload, a link to point at, or both.
+- **Your material ready.** A file to upload, or a link to point at.
 - **To know your evaluation cycle.** Assignment happens on the cycle set under Preferences, so a course created today reaches agents at the next run rather than immediately. See [Set Coaching Preferences](./coaching-preferences.md).
 
 ---
@@ -79,7 +79,7 @@ Scope and the score range work together rather than instead of each other. Scope
 
 ## 3. Add Content
 
-A course holds what the agent works through. **Upload PDF** and **External Link** are alternatives, with **or** between them, so a course carries one or the other rather than both.
+A course holds what the agent works through. **Upload PDF** and **External Link** sit either side of an **or**, so a course built in one pass carries one of the two. A course switched from one to the other later keeps both, which [Course and Award Fields](../reference/course-and-award-fields.md#external-link) covers.
 
 ![The Add Content step, with the content type chosen and the cover image picker](../../img/screenshots/team_lead/courses/new-course2.png)
 
@@ -140,7 +140,7 @@ These three sit together below the quiz, and they decide how much room an agent 
 
 ### Quiz Retakes
 
-**Quiz Retakes** decides how long a struggling agent can keep trying before the course closes on them. Their **Initiation Score**, the score that qualified them for the course, stays visible throughout, so you can see whether the attempts moved it.
+**Quiz Retakes** decides how long a struggling agent can keep trying before the course closes on them. Their **Initiation Score** is fixed at assignment and does not change, so it stays on the row as the baseline their quiz **Score** is read against.
 
 :::warning Complete does not mean passed
 An agent reaches **Complete** by running out of retakes or by selecting **Complete Course**, whichever comes first, whatever they scored. The **Progress** table shows the same status either way, so read **Complete** together with **Score**. See [Metrics](../reference/metrics.md#course-progress) for what the two routes mean for what you do next.
@@ -185,7 +185,7 @@ The banner carries the cover image, the course name and **Created**. **Content**
 | **Quiz Questions** | How many questions the quiz holds |
 | **Total Points** | What the quiz is worth in total |
 | **Deadline** | The window each agent gets, counted from the day they receive it |
-| **Retakes Allowed** | Attempts at the quiz |
+| **Retakes Allowed** | Retakes after the first attempt |
 | **Nudges** | How many reminders are set |
 
 **Scope** sits beneath it, and **Course Content** holds the PDF or the link.
