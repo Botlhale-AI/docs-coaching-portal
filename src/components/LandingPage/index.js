@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './styles.module.css';
-import FeatureCards from '../FeatureCards';
 
 
 export default function LandingPage() {

@@ -58,3 +58,6 @@ temp/
 
 # This repository uses npm. A yarn.lock would diverge from what CI installs.
 yarn.lock
+
+# Local agent instructions
+CLAUDE.md
