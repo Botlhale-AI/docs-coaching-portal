@@ -7,7 +7,7 @@ pagination_prev: agents/personal-performance
 pagination_next: agents/your-courses
 ---
 
-**Interactions** in the left sidebar holds every call and chat of yours that Vela has processed. This is where you read what was said, see how the conversation scored, and find the coaching comments your team lead has left. It has two sub-items, **Calls** and **Chats**. The list works the same way for both, though the detailed view differs, since a chat has nothing to play.
+**Interactions** in the left sidebar holds the calls and chats of yours that Vela has processed and your organisation lets you open. This is where you read what was said, see how the conversation scored, and find the coaching comments your team lead has left. It has two sub-items, **Calls** and **Chats**. The list works the same way for both, though the detailed view differs, since a chat has nothing to play.
 
 ---
 
@@ -29,7 +29,7 @@ Three controls sit above the list:
 | Control | What it does |
 | :--- | :--- |
 | **Search** | Narrows the list by wording |
-| **Sort** | Orders the list on a column you choose |
+| **Sort By** | Orders the list on a column you choose |
 | **Filter** | Opens a panel where you narrow the list, then select **Apply** |
 
 ![The Calls list in the Agent Portal, showing the processed calls for the signed-in agent with the search, sort, and filter controls above it](../../img/screenshots/agent_view/interactions/interactions-calls-overview.png)
@@ -85,7 +85,9 @@ Where a transcript is unavailable the panel reads **Transcript not available**.
 
 ## 3. Read Your Coaching Comments
 
-Select **View Comments** to open the comments panel. This is where your team lead leaves feedback on the conversation, and where you reply to it.
+Open the interaction, then select **View Comments** to open the comments panel. This is where your team lead leaves feedback on the conversation, and where you reply to it.
+
+{/* SCREENSHOT NEEDED: the comments panel open on an interaction, showing a team lead comment and the reply box. No capture of it exists anywhere in the repo, so this step and step 3 of the agent tutorial both run without one. Suggested path: img/screenshots/agent_view/interactions/comments.png */}
 
 A comment that tags you with **@** also raises a notification, so check **Notifications** under **ADMIN** if you want to find recent feedback without opening each interaction. See [Manage Your Account](./your-account.md).
 

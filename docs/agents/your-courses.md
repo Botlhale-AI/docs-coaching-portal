@@ -30,7 +30,7 @@ Select **Courses** in the left sidebar. The page groups what you have by where y
 | **Courses In Progress** | Opened and part-way through |
 | **Completed Courses** | Finished, as a table rather than cards, with your result |
 
-**Search**, **Sort**, and **Filter** sit above the list for when you have more than a screenful.
+**Search**, **Sort By**, and **Filter** sit above the list for when you have more than a screenful.
 
 ![The Courses page in the Agent Portal, with courses grouped by assigned, in progress, and completed](../../img/screenshots/agent_view/courses/courses-overview.png)
 
