@@ -101,7 +101,7 @@ Select the **download** icon in the **Download** column to save that agent's cer
 
 ![The download icon on an award row, which saves the certificate](../../img/screenshots/team_lead/awards/download.png)
 
-![The certificate as it downloads, carrying the agent's name, the award's category and score, and the assessed period](../../img/screenshots/team_lead/awards/certificate.png)
+![The certificate as it downloads, carrying the agent name, the award category and score, and the assessed period](../../img/screenshots/team_lead/awards/certificate.png)
 
 Agents can download their own certificates from their portal, so this is for your records rather than for sending to them. See [View Your Awards](../agents/your-awards.md).
 

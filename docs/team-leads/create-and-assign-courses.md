@@ -130,11 +130,11 @@ These three sit together below the quiz, and they decide how much room an agent 
 
 <Hotspots
   src={retakesImg}
-  alt="Quiz Retakes, Deadline, and Set course nudges, each a control with its own info icon, stacked down the page"
+  alt="The Set Deadlines And Reminders step: Quiz Retakes, Deadline, and Set course nudges, each a control with its own info icon, stacked down the page above the Create Course and Close buttons"
   points={[
-    { x: 31.1, y: 11.8, title: 'Quiz Retakes', body: 'How many retakes an agent gets after a first attempt, from 1 to 5. New courses start at 3, which allows four attempts in total.' },
-    { x: 28.9, y: 27.6, title: 'Deadline', body: 'How long an agent has from the day the course is assigned to them, rather than a fixed date.' },
-    { x: 33.6, y: 44.5, title: 'Set course nudges', body: 'A reminder sent to an agent who has not finished, counted back from the due date.' },
+    { x: 31.1, y: 26, title: 'Quiz Retakes', body: 'How many retakes an agent gets after a first attempt, from 1 to 5. New courses start at 3, which allows four attempts in total.' },
+    { x: 28.9, y: 42, title: 'Deadline', body: 'How long an agent has from the day the course is assigned to them, rather than a fixed date. New courses start at 7 days.' },
+    { x: 33.6, y: 59, title: 'Set course nudges', body: 'A reminder sent to an agent who has not finished, counted back from the due date.' },
   ]}
 />
 
@@ -151,8 +151,6 @@ The pass percentage itself is set once for all courses under Preferences, not pe
 ### Deadline
 
 **Deadline** takes a count and a unit, and the unit is **Days**, **Weeks**, or **Months**. Each agent's **Due Date** is worked out from the day they receive it, so two agents who qualify on different cycles get the same amount of time rather than the same date.
-
-![Setting the deadline on a course](../../img/screenshots/team_lead/courses/create-course-deadlines.png)
 
 ### Set Course Nudges
 

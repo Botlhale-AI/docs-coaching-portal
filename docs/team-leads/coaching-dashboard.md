@@ -85,7 +85,7 @@ Only categories with interactions in the period appear as columns.
 
 Below the two cards, every category gets its own section, with the category name as the heading and a **chevron** to collapse it.
 
-![One category's section, with the Average Agent Performance line chart and the grouped bar chart beside it](../../img/screenshots/team_lead/dashboard/category-performance.png)
+![A single category section, with the Average Agent Performance line chart and the grouped bar chart beside it](../../img/screenshots/team_lead/dashboard/category-performance.png)
 
 Each section holds two charts for that category alone:
 

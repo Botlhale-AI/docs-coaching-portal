@@ -72,7 +72,7 @@ Select **Download** to save the certificate. It is yours to keep or share, and i
 | Supervisor | Your team lead's name |
 | Date | The dates the score covers, shown as a range rather than one day |
 
-![The award certificate as it downloads, titled Certificate of Achievement and carrying the agent's name, the award's category and score, and the dates the score covers](../../img/screenshots/agent_view/awards/award-template.png)
+![The award certificate as it downloads, titled Certificate of Achievement and carrying the agent name, the award category and score, and the dates the score covers](../../img/screenshots/agent_view/awards/award-template.png)
 
 {/* VERIFIED 2026-09-07 against a downloaded certificate (DemoOrg3, Vusi Zulu): headed "Certificate of Achievement", body "For extraordinary achievement in <category> with a score of <n>%", the description beneath it, "Jane Doe / Supervisor" bottom-left, "08/09/2025 - 08/10/2025 / Date" bottom-right, "Powered by Botlhale AI" in the corner. The award's own name is not printed. */}
 

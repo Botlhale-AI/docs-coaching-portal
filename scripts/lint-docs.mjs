@@ -261,6 +261,12 @@ for (const file of files) {
     const [, alt, src] = img;
 
     if (!alt.trim()) err(rel, `line ${i + 1}: image has empty alt text`);
+    // MDX double-encodes alt text on the way to the page, so an apostrophe
+    // reaches a screen reader as the literal "&#39;". Straight or curly, in
+    // or out of a contraction, reword to avoid it. Confirmed on the built
+    // HTML: alt without an apostrophe renders clean, alt with one does not.
+    if (/['’]/.test(alt))
+      err(rel, `line ${i + 1}: apostrophe in alt text renders as "&#39;". Reword: ${alt.trim().slice(0, 70)}`);
     alts.push(alt.trim());
 
     const before = lines[i - 1] ?? "";
