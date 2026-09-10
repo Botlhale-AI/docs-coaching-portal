@@ -1,6 +1,9 @@
 .landingContainer {
   width: 100%;
   overflow-x: hidden;
+  /* Defined here rather than inherited: the theme does not set it, and every
+     gradient, badge and button below is built from it. */
+  --primary-color: #fc5f1e;
   --primary-gradient: linear-gradient(120deg, var(--primary-color), #e54c1a);
   --surface-border: 1px solid var(--ifm-color-emphasis-200);
   --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
@@ -8,13 +11,13 @@
   --transition-standard: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --border-radius-lg: 16px;
   --border-radius-md: 12px;
-  --border-radius-sm: 8px;
 }
 
-/* Hero Section */
+/* --- Hero ----------------------------------------------------------- */
+
 .heroSection {
   position: relative;
-  padding: 7rem 0 5rem;
+  padding: 6rem 0 4.5rem;
   overflow: hidden;
   background: linear-gradient(
     160deg,
@@ -25,10 +28,7 @@
 
 .heroBackground {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   z-index: 0;
 }
 
@@ -48,30 +48,23 @@
 }
 
 .heroContent {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  z-index: 1;
   gap: 4rem;
-  min-height: 60vh;
 }
 
 .heroText {
   flex: 1;
-  max-width: 600px;
+  max-width: 560px;
   animation: fadeInUp 0.8s ease-out;
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .tagWrapper {
@@ -84,268 +77,102 @@
   padding: 0.4rem 1rem;
   border-radius: 30px;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
   background: var(--primary-gradient);
   color: #031019;
   letter-spacing: 0.02em;
 }
 
-/* Dark mode override for tagline */
-html[data-theme='dark'] .tagline {
-  color: #031019;
-}
-
 .heroTitle {
-  font-size: 3.5rem;
+  display: flex;
+  flex-direction: column;
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
   letter-spacing: -0.02em;
-}
-
-/* Hero Title with better contrast */
-.heroTitleMain {
-  font-size: 3.5rem;
-  position: relative;
-  display: inline-block;
-  color: var(--ifm-color-emphasis-700);
-  /* background: var(--primary-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
-}
-
-/* Force color for dark mode to ensure visibility */
-:global(.dark-theme) .heroTitleMain {
-  /* color: var(--primary-color); */
-  -webkit-text-stroke: 0.5px var(--primary-color);
-  text-shadow: 0 0 1px rgba(252, 95, 30, 0.3);
 }
 
 .heroTitleLine {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: var(--ifm-color-emphasis-700);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .heroTitleMain {
-  font-size: 3.5rem;
-  position: relative;
-  display: inline-block;
-  color: var(--ifm-color-emphasis-700);
-  /* background: var(--primary-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
-}
-
-/* Ensure section titles are visible in both modes */
-.sectionTitle {
-  font-size: 2.25rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  color: var(--ifm-heading-color); /* Use Docusaurus heading color variable */
-  letter-spacing: -0.02em;
-}
-
-.sectionSubtitle {
-  font-size: 1.1rem;
-  color: var(--ifm-color-emphasis-700); /* Stronger contrast */
-  max-width: 600px;
-  margin: 0 auto;
+  font-size: 3.25rem;
+  color: var(--ifm-color-emphasis-800);
 }
 
 .heroSubtitle {
-  font-size: 1.2rem;
-  color: var(--ifm-color-emphasis-800); /* Stronger contrast */
-  margin-bottom: 2.5rem;
+  font-size: 1.15rem;
+  color: var(--ifm-color-emphasis-800);
+  margin-bottom: 2rem;
   line-height: 1.7;
-  font-weight: 400;
 }
+
+/* --- Hero buttons ------------------------------------------------- */
 
 .heroCta {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
-/* Role Selector - Premium Design */
-.roleSelector {
-  margin: 2.5rem 0;
-  background: var(--ifm-background-surface-color);
-  border-radius: var(--border-radius-lg);
-  border: var(--surface-border);
-  box-shadow: var(--card-shadow);
-  overflow: hidden;
-}
-
-.roleSelectorHeader {
-  padding: 1.5rem;
-  border-bottom: var(--surface-border);
-}
-
-.roleSelectorTitle {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--ifm-heading-color); /* Use Docusaurus heading color variable */
-  margin: 0;
-  letter-spacing: -0.01em;
-}
-
-.roleSelectorDescription {
-  font-size: 0.9rem;
-  color: var(--ifm-color-emphasis-700); /* Stronger contrast */
-  margin: 0.5rem 0 0;
-}
-
-.roleButtons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.roleButton {
-  display: flex;
+.portalButton,
+.portalButtonOutline {
+  display: inline-flex;
   align-items: center;
-  padding: 1.5rem;
+  gap: 0.55rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-standard);
+}
+
+.portalButton {
+  background: var(--primary-gradient);
+  color: #031019;
+  box-shadow: 0 6px 16px rgba(252, 95, 30, 0.22);
+}
+
+.portalButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(252, 95, 30, 0.3);
+  text-decoration: none;
+  color: #031019;
+}
+
+html[data-theme='dark'] .portalButton,
+html[data-theme='dark'] .portalButton:hover {
+  color: #031019;
+}
+
+.portalButtonOutline {
   background: transparent;
   color: var(--ifm-color-emphasis-800);
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition-standard);
-  position: relative;
-  border: none;
-  border-right: var(--surface-border);
-  text-align: left;
+  border: 1px solid var(--ifm-color-emphasis-300);
 }
 
-.roleButton:last-child {
-  border-right: none;
-}
-
-.roleButton i {
-  font-size: 1.5rem;
-  margin-right: 1rem;
-  color: var(--ifm-color-emphasis-500);
-  transition: var(--transition-standard);
-}
-
-.roleButton::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: var(--primary-gradient);
-  transform: scaleX(0);
-  transition: var(--transition-standard);
-}
-
-.roleButton:hover {
-  background: var(--ifm-color-emphasis-100);
-}
-
-.roleButton:hover i {
-  color: var(--primary-color);
-}
-
-.roleButtonActive {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #e54c1a 100%);
-  color: #031019 !important;
-  border-color: var(--primary-color);
-  box-shadow: 0 12px 40px rgba(252, 95, 30, 0.25);
+.portalButtonOutline:hover {
   transform: translateY(-2px);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
-.roleButtonActive::after {
-  transform: scaleX(1);
+.cycleStepIcon svg {
+  display: block;
 }
 
-.roleButtonActive i {
-  color: #031019 !important;
-  transform: scale(1.05);
-}
+/* --- Hero visual: framed card ----------------------------------- */
 
-/* Active role button description should be dark */
-.roleButtonActive .roleButtonDescription {
-  color: #031019 !important;
-}
-
-/* Dark mode override for active role button */
-html[data-theme='dark'] .roleButtonActive {
-  color: #031019 !important;
-}
-
-html[data-theme='dark'] .roleButtonActive i {
-  color: #031019 !important;
-}
-
-html[data-theme='dark'] .roleButtonActive .roleButtonDescription {
-  color: #031019 !important;
-}
-
-.roleButtonActive:hover {
-  background: linear-gradient(135deg, #e54c1a 0%, #d44014 100%);
-  color: #031019 !important;
-  transform: translateY(-6px);
-  box-shadow: 0 16px 48px rgba(252, 95, 30, 0.3);
-}
-
-.roleButtonActive:hover i {
-  color: #031019 !important;
-}
-
-/* Dark mode hover override */
-html[data-theme='dark'] .roleButtonActive:hover {
-  color: #031019 !important;
-}
-
-html[data-theme='dark'] .roleButtonActive:hover i {
-  color: #031019 !important;
-}
-
-.roleButtonContent {
-  display: flex;
-  flex-direction: column;
-}
-
-.roleButtonLabel {
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
-.roleButtonDescription {
-  font-size: 0.85rem;
-  color: var(--ifm-color-emphasis-600);
-  font-weight: normal;
-}
-
-/* Dark mode override for role button descriptions */
-html[data-theme='dark'] .roleButtonDescription {
-  color: var(--ifm-color-emphasis-400);
-}
-
-/* Focus styles for accessibility */
-.roleButton:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(252, 95, 30, 0.3);
-}
-
-.roleButton:focus:not(:focus-visible) {
-  box-shadow: none;
-}
-
-/* Dashboard Preview Styling */
 .heroVisual {
   flex: 1;
-  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   animation: fadeIn 1s ease-out;
 }
 
@@ -356,285 +183,151 @@ html[data-theme='dark'] .roleButtonDescription {
 
 .dashboardPreview {
   width: 100%;
-  max-width: 560px;
+  max-width: 440px;
   background: var(--ifm-background-surface-color);
   border-radius: var(--border-radius-lg);
   overflow: hidden;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.14), 0 10px 20px rgba(0, 0, 0, 0.08);
   border: var(--surface-border);
-  position: relative;
 }
-
-/* Remove floating animation keyframes */
-/*
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-15px) rotate(-1deg);
-  }
-}
-*/
 
 .dashboardHeader {
-  padding: 1.25rem 1.5rem;
+  padding: 0.9rem 1.25rem;
   background: var(--primary-gradient);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .dashboardControls {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .dashboardControl {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.65);
 }
 
 .dashboardTitle {
-  font-weight: 600;
-  font-size: 1rem;
-  color: #031019;
-}
-
-/* Dark mode override for dashboard title */
-html[data-theme='dark'] .dashboardTitle {
+  font-weight: 700;
+  font-size: 0.9rem;
   color: #031019;
 }
 
 .dashboardBody {
-  padding: 1.5rem;
+  padding: 1.5rem 1.35rem;
 }
 
-/* Course Performance Metrics */
-.courseMetrics {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+/* Evaluation cycle shown inside the card. Shape only, no figures. */
+.cycleFlow {
+  display: flex;
+  flex-direction: column;
 }
 
-.metricCard {
+.cycleStepRow {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.7rem 0.85rem;
   background: var(--ifm-background-color);
-  padding: 1.25rem;
-  border-radius: var(--border-radius-md);
   border: var(--surface-border);
-  text-align: center;
-  transition: var(--transition-standard);
+  border-radius: var(--border-radius-md);
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.cycleStepRow:not(:last-child) {
+  margin-bottom: 1.35rem;
   position: relative;
 }
 
-/* Award Badges for Team Lead view */
-.awardBadge {
-  width: 48px;
-  height: 48px;
+.cycleStepRow:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 24px;
+  bottom: -1.1rem;
+  width: 2px;
+  height: 0.9rem;
+  background: var(--ifm-color-emphasis-300);
+}
+
+.cycleStepIcon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #fc5f1e 0%, #e54c1a 100%);
-  color: white;
+  background: var(--primary-gradient);
+  color: #031019;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 0.5rem;
-  font-size: 1.5rem;
-  box-shadow: 0 4px 12px rgba(252, 95, 30, 0.3);
-  position: relative;
-  /* Remove 3D transform effects */
-  /* transform-style: preserve-3d; */
-  /* transform: perspective(500px) rotateY(15deg); */
+  box-shadow: 0 3px 8px rgba(252, 95, 30, 0.3);
 }
 
-.awardGold {
-  background: linear-gradient(135deg, #ffd700 0%, #f5bd4f 100%);
-  box-shadow: 0 4px 12px rgba(245, 189, 79, 0.3);
-}
-
-.awardBadge::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: inherit;
-  border-radius: 50%;
-  filter: blur(6px);
-  opacity: 0.6;
-  z-index: -1;
-}
-
-.awardBadge i {
-  /* Remove 3D translateZ */
-  /* transform: translateZ(5px); */
-}
-
-.metricCard:hover {
-  box-shadow: var(--card-shadow);
-  transform: translateY(-2px);
-}
-
-.metricValue {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  display: block;
-  margin-bottom: 0.25rem;
-  letter-spacing: -0.01em;
-}
-
-.metricLabel {
-  font-size: 0.875rem;
-  color: var(--ifm-color-emphasis-600);
-  font-weight: 500;
-}
-
-.progressChart {
-  background: var(--ifm-background-color);
-  border-radius: var(--border-radius-md);
-  border: var(--surface-border);
-  position: relative;
-  overflow: hidden;
-  padding: 1.25rem;
-  height: 180px;
-}
-
-.chartTitle {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--ifm-color-emphasis-700);
-  margin-bottom: 1rem;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-
-.progressBars {
-  display: flex;
-  align-items: flex-end;
-  height: 100px;
-  gap: 12px;
-}
-
-.progressBar {
+.cycleStepText {
   flex: 1;
-  background: var(--ifm-color-emphasis-200);
-  border-radius: 4px;
-  position: relative;
-  animation: growBar 1.5s cubic-bezier(0.2, 0.8, 0.2, 1);
-  transform-origin: bottom;
 }
 
-.progressBar:nth-child(1) { height: 40%; background: #10b981; }
-.progressBar:nth-child(2) { height: 65%; background: var(--primary-color); }
-.progressBar:nth-child(3) { height: 50%; background: #f59e0b; }
-.progressBar:nth-child(4) { height: 80%; background: #8b5cf6; }
-.progressBar:nth-child(5) { height: 45%; background: #06b6d4; }
-
-@keyframes growBar {
-  from {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-  to {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-}
-
-.chartLabels {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.75rem;
-}
-
-.chartLabel {
-  font-size: 0.75rem;
-  color: var(--ifm-color-emphasis-600);
-}
-
-/* Stats Section */
-.statsSection {
-  padding: 4rem 0;
-  background: var(--ifm-background-surface-color);
-  position: relative;
-  z-index: 1;
-  border-top: var(--surface-border);
-  border-bottom: var(--surface-border);
-}
-
-.statsGrid {
+.cycleOutcomes {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: var(--surface-border);
 }
 
-.statItem {
+.cycleOutcome {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem;
+  gap: 0.35rem;
+  text-align: center;
+  padding: 0.7rem 0.35rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: var(--border-radius-md);
-  transition: var(--transition-standard);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
 }
 
-.statItem:hover {
-  background: var(--ifm-background-color);
-  transform: translateY(-5px);
-  box-shadow: var(--card-shadow);
-}
-
-.statValue {
-  font-size: 2.75rem;
-  font-weight: 800;
+.cycleOutcome svg {
   color: var(--primary-color);
-  margin-bottom: 0.75rem;
-  position: relative;
-  display: inline-block;
-  letter-spacing: -0.02em;
-  text-shadow: 0 0 1px rgba(252, 95, 30, 0.1); /* Subtle text shadow for better visibility */
 }
 
-.statLabel {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--ifm-color-emphasis-800); /* Stronger contrast */
-}
-
-/* Features Section */
-.featuresSection {
-  padding: 6rem 0;
-  background: var(--ifm-background-color);
-}
+/* --- Section headers -------------------------------------------------- */
 
 .sectionHeader {
   text-align: center;
   max-width: 700px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 3.5rem;
 }
 
 .sectionTitle {
   font-size: 2.25rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: var(--ifm-heading-color); /* Use Docusaurus heading color variable */
+  color: var(--ifm-heading-color);
   letter-spacing: -0.02em;
 }
 
 .sectionSubtitle {
   font-size: 1.1rem;
-  color: var(--ifm-color-emphasis-700); /* Stronger contrast */
+  color: var(--ifm-color-emphasis-700);
   max-width: 600px;
   margin: 0 auto;
 }
 
-/* Workflow Section */
+/* --- Workflow ------------------------------------------------------- */
+
 .workflowSection {
-  padding: 6rem 0;
+  padding: 5.5rem 0;
   background: var(--ifm-background-surface-color);
   position: relative;
 }
@@ -642,10 +335,7 @@ html[data-theme='dark'] .dashboardTitle {
 .workflowSection::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: radial-gradient(circle at 70% 20%, rgba(252, 95, 30, 0.03), transparent 60%);
 }
 
@@ -697,18 +387,9 @@ html[data-theme='dark'] .dashboardTitle {
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 0.6;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 0.3;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.6;
-  }
+  0% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.1); opacity: 0.3; }
+  100% { transform: scale(1); opacity: 0.6; }
 }
 
 .workflowContent {
@@ -729,28 +410,22 @@ html[data-theme='dark'] .dashboardTitle {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--ifm-heading-color); 
+}
+
+.workflowTitle a {
+  color: var(--ifm-heading-color);
+  text-decoration: none;
+}
+
+.workflowTitle a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .workflowDescription {
-  color: var(--ifm-color-emphasis-700); /* Stronger contrast */
+  color: var(--ifm-color-emphasis-700);
   margin: 0;
   font-size: 0.95rem;
-}
-
-/* Fix video section title visibility */
-.videoSection .sectionTitle {
-  color: var(--ifm-heading-color); /* Use Docusaurus heading color variable */
-}
-
-.videoDescription {
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: var(--ifm-color-emphasis-700); /* Stronger contrast */
-  text-align: center;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .workflowConnector {
@@ -781,92 +456,58 @@ html[data-theme='dark'] .dashboardTitle {
 }
 
 @keyframes flowDown {
-  0% {
-    top: 0;
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    top: 100%;
-    opacity: 0;
-  }
+  0% { top: 0; opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
 }
 
-/* CTA Section */
-.ctaSection {
-  padding: 6rem 0;
-  background: var(--primary-gradient);
+/* --- Video ----------------------------------------------------------- */
+
+.videoSection {
+  padding: 5rem 0;
+  background: var(--ifm-background-color);
   position: relative;
-  overflow: hidden;
-  color: white;
 }
 
-.ctaContent {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-
-.ctaPattern {
+.videoSection::before {
+  content: '';
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
+  background: radial-gradient(circle at 30% 80%, rgba(252, 95, 30, 0.03), transparent 60%);
+}
+
+.videoSection .sectionTitle {
+  color: var(--ifm-heading-color);
+}
+
+.videoContainer {
+  margin-top: 2.5rem;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--card-shadow-hover);
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.videoFrame {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+  border: none;
 }
 
-.ctaTitle {
-  font-size: 2.75rem;
-  font-weight: 800;
-  margin-bottom: 1.25rem;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-}
-
-.ctaDescription {
-  font-size: 1.2rem;
-  margin-bottom: 2.5rem;
-  opacity: 0.9;
-}
-
-.ctaButton {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.875rem 1.75rem;
-  border-radius: 50px;
+.videoDescription {
+  margin: 1rem auto 0;
   font-size: 1rem;
-  font-weight: 600;
-  background-color: white;
-  color: var(--primary-color);
-  transition: var(--transition-standard);
-  text-decoration: none;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  color: var(--ifm-color-emphasis-700);
+  text-align: center;
+  max-width: 700px;
 }
 
-.ctaButton:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-}
+/* --- Scroll reveal ------------------------------------------------- */
 
-.ctaButtonArrow {
-  margin-left: 0.5rem;
-  transition: transform 0.3s ease;
-}
-
-.ctaButton:hover .ctaButtonArrow {
-  transform: translateX(4px);
-}
-
-/* Animation classes for page elements */
 .animateIn {
   opacity: 0;
   transform: translateY(20px);
@@ -878,729 +519,26 @@ html[data-theme='dark'] .dashboardTitle {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-/* Enhanced Course Graphics Styles */
-.courseGraphicsContainer {
-  position: relative;
-  height: auto;
-  min-height: 200px;
-  max-height: none;
-  margin: 1rem 0;
-  border-radius: var(--border-radius-md);
-  overflow: visible;
-  background-color: transparent;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  padding: 1rem;
-}
+/* --- Responsive -------------------------------------------------- */
 
-/* Ensure both course displays have consistent spacing */
-.modernChart {
-  background: var(--ifm-background-color);
-  border-radius: var(--border-radius-md);
-  border: var(--surface-border);
-  position: relative;
-  overflow: hidden;
-  padding: 1.25rem;
-  margin-top: 1rem;
-}
-
-.chartTitle {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--ifm-color-emphasis-700);
-  margin-bottom: 1rem;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-
-/* Team Lead Course Display */
-.teamLeadCourseDisplay {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-}
-
-.courseModule {
-  display: flex;
-  align-items: center;
-  background: var(--ifm-background-surface-color);
-  border-radius: var(--border-radius-md);
-  padding: 1rem;
-  transition: var(--transition-standard);
-  border: var(--surface-border);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
-  min-height: 100px;
-  margin-bottom: 0.75rem;
-}
-
-.courseModule:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
-}
-
-.courseIcon {
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  margin-right: 1rem;
-  flex-shrink: 0;
-  background: var(--ifm-background-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
-  position: relative;
-  overflow: visible;
-}
-
-.courseIcon svg {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-}
-
-.courseInfo {
-  flex: 1;
-  min-width: 0;
-  padding-left: 0;
-}
-
-.courseInfo h4 {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--ifm-heading-color);
-  line-height: 1.3;
-}
-
-.courseStats {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 0.75rem;
-  font-size: 0.8rem;
-  color: var(--ifm-color-emphasis-700);
-  flex-wrap: wrap;
-}
-
-.courseStats span {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  white-space: nowrap;
-}
-
-/* Enhanced progress bar with animation */
-.enhancedProgressBar {
-  height: 8px;
-  background: var(--ifm-color-emphasis-200);
-  border-radius: 4px;
-  overflow: hidden;
-  margin-bottom: 0.5rem;
-  position: relative;
-  width: 100%;
-}
-
-.enhancedProgressFill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--primary-color) 0%, #e54c1a 100%);
-  border-radius: 4px;
-  position: relative;
-  overflow: hidden;
-  transition: width 0.8s ease-in-out;
-  min-width: 2px;
-}
-
-.progressPulse {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
-  animation: progressPulse 2s infinite;
-}
-
-@keyframes progressPulse {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(200%);
-  }
-}
-
-.progressPoints {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 1px;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
-.progressPoint {
-  position: absolute;
-  top: 50%;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--ifm-color-emphasis-300);
-  border: 2px solid var(--ifm-background-color);
-  transform: translate(-50%, -50%);
-  transition: all 0.3s ease;
-  z-index: 2;
-}
-
-.progressPointActive {
-  background: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(252, 95, 30, 0.2);
-  transform: translate(-50%, -50%) scale(1.2);
-}
-
-.progressLabels {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.8rem;
-  color: var(--ifm-color-emphasis-700);
-  margin-top: 0.25rem;
-}
-
-.progressPercentage {
-  font-weight: 600;
-  color: var(--primary-color);
-}
-
-/* Agent Course Display - Fixed Layout */
-.agentCourseDisplay {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
-  width: 100%;
-  height: auto;
-  padding: 0.25rem 0;
-}
-
-.courseCard {
-  background: var(--ifm-background-surface-color);
-  border-radius: var(--border-radius-md);
-  border: var(--surface-border);
-  overflow: hidden;
-  transition: var(--transition-standard);
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  position: relative;
-  height: auto;
-  min-height: 280px;
-  max-height: none;
-}
-
-.courseCard:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-.courseCardHeader {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #e54c1a 100%);
-  color: #031019;
-  padding: 1rem 0.75rem 0.875rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 75px;
-  justify-content: center;
-  text-align: center;
-  flex-shrink: 0;
-}
-
-.courseCardHeader h4 {
-  margin: 0.375rem 0 0.375rem 0;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-align: center;
-  line-height: 1.2;
-  color: #031019;
-  word-wrap: break-word;
-  hyphens: auto;
-  max-width: 100%;
-}
-
-.courseBadge {
-  position: absolute;
-  left: 50%;
-  top: -14px;
-  transform: translateX(-50%);
-  width: 28px;
-  height: 28px;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  border: 2px solid white;
-  z-index: 1;
-  backdrop-filter: blur(10px);
-  flex-shrink: 0;
-}
-
-.courseCompletion {
-  font-size: 0.8rem;
-  opacity: 0.95;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 0.375rem;
-  position: relative;
-  margin-top: 0.25rem;
-  flex-shrink: 0;
-}
-
-.circularProgress {
-  width: 18px;
-  height: 18px;
-  transform: rotate(-90deg);
-  flex-shrink: 0;
-}
-
-.courseProgress {
-  padding: 0.875rem 0.75rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.375rem;
-  min-height: 100px;
-  overflow: hidden;
-}
-
-.moduleItem {
-  display: flex;
-  align-items: center;
-  font-size: 0.75rem;
-  color: var(--ifm-color-emphasis-800);
-  line-height: 1.3;
-  padding: 0.3rem 0;
-  border-bottom: 1px solid var(--ifm-color-emphasis-200);
-  min-height: 24px;
-}
-
-.moduleItem:last-child {
-  border-bottom: none;
-}
-
-.moduleItem svg {
-  margin-right: 0.5rem;
-  flex-shrink: 0;
-  width: 14px;
-  height: 14px;
-}
-
-.moduleItem span {
-  flex: 1;
-  font-weight: 500;
-  word-wrap: break-word;
-  hyphens: auto;
-  line-height: 1.2;
-}
-
-.continueCourseBtn {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #e54c1a 100%);
-  color: #031019;
-  border: none;
-  padding: 0.625rem 0.75rem;
-  font-weight: 600;
-  font-size: 0.8rem;
-  cursor: pointer;
-  transition: var(--transition-standard);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.375rem;
-  margin-top: auto;
-  border-radius: 0;
-  flex-shrink: 0;
-  min-height: 36px;
-}
-
-.continueCourseBtn:hover {
-  filter: brightness(1.1);
-  transform: translateY(-1px);
-  background: linear-gradient(135deg, #e54c1a 0%, #d44014 100%);
-}
-
-.continueCourseBtn svg {
-  transition: transform 0.3s ease;
-  width: 14px;
-  height: 14px;
-}
-
-/* Responsive adjustments for agent course display */
-@media (max-width: 768px) {
-  .courseGraphicsContainer {
-    padding: 0.25rem;
-  }
-  
-  .agentCourseDisplay {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
-  
-  .courseCard {
-    min-height: 240px;
-  }
-  
-  .courseCardHeader {
-    min-height: 65px;
-    padding: 0.875rem 0.625rem 0.75rem;
-  }
-  
-  .courseCardHeader h4 {
-    font-size: 0.85rem;
-  }
-  
-  .courseProgress {
-    min-height: 80px;
-    padding: 0.75rem 0.625rem;
-  }
-  
-  .moduleItem {
-    font-size: 0.7rem;
-    padding: 0.25rem 0;
-  }
-  
-  .continueCourseBtn {
-    padding: 0.5rem 0.625rem;
-    font-size: 0.75rem;
-    min-height: 32px;
-  }
-}
-
-@media (max-width: 480px) {
-  .courseCardHeader {
-    min-height: 60px;
-    padding: 0.75rem 0.5rem 0.625rem;
-  }
-  
-  .courseCardHeader h4 {
-    font-size: 0.8rem;
-    margin: 0.25rem 0;
-  }
-  
-  .courseProgress {
-    min-height: 70px;
-    padding: 0.625rem 0.5rem;
-  }
-  
-  .moduleItem {
-    font-size: 0.65rem;
-    padding: 0.2rem 0;
-    min-height: 20px;
-  }
-  
-  .continueCourseBtn {
-    padding: 0.425rem 0.5rem;
-    font-size: 0.7rem;
-    min-height: 28px;
-  }
-  
-  .courseBadge {
-    width: 24px;
-    height: 24px;
-    top: -12px;
-  }
-  
-  .courseCard {
-    min-height: 220px;
-  }
-  
-  .courseCompletion {
-    font-size: 0.7rem;
-  }
-  
-  .circularProgress {
-    width: 16px;
-    height: 16px;
-  }
-  
-  .agentCourseDisplay {
-    gap: 0.5rem;
-  }
-}
-
-/* Ensure proper CSS custom properties are defined */
-:root {
-  --primary-color: #fc5f1e;
-  --border-radius-md: 8px;
-  --transition-standard: all 0.3s ease;
-  --surface-border: 1px solid var(--ifm-color-emphasis-200);
-}
-
-/* Dark mode support */
-[data-theme='dark'] {
-  --primary-color: #fc5f1e;
-}
-
-/* Video Section Styles */
-.videoSection {
-  padding: 5rem 0;
-  background: var(--ifm-background-color);
-  position: relative;
-}
-
-.videoSection::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at 30% 80%, rgba(252, 95, 30, 0.03), transparent 60%);
-}
-
-.videoContainer {
-  margin-top: 2.5rem;
-  border-radius: var(--border-radius-lg);
-  overflow: hidden;
-  box-shadow: var(--card-shadow-hover);
-  position: relative;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-}
-
-.videoFrame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Fix role selector text visibility */
-.roleSelectorTitle {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--ifm-heading-color); /* Use Docusaurus heading color variable */
-  margin: 0;
-  letter-spacing: -0.01em;
-}
-
-.roleSelectorDescription {
-  font-size: 0.9rem;
-  color: var(--ifm-color-emphasis-700); /* Stronger contrast */
-  margin: 0.5rem 0 0;
-}
-
-/* Updated CTA Button to match role selector style */
-.portalButton {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.875rem 1.75rem;
-  background: var(--primary-gradient);
-  color: #031019;
-  border-radius: 50px;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: var(--transition-standard);
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  box-shadow: 0 8px 16px rgba(252, 95, 30, 0.25);
-}
-
-.portalButton:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(252, 95, 30, 0.35);
-  text-decoration: none;
-  color: #031019;
-}
-
-/* Dark mode override for portal button */
-html[data-theme='dark'] .portalButton {
-  color: #031019;
-}
-
-html[data-theme='dark'] .portalButton:hover {
-  color: #031019;
-}
-
-.portalButton i {
-  font-size: 1.1rem;
-}
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .courseGraphicsContainer {
-    padding: 0.75rem;
-  }
-  
-  .agentCourseDisplay {
-    flex-direction: column;
-  }
-  
-  .courseCard {
-    min-width: unset;
-    width: 100%;
-  }
-  
-  .teamLeadCourseDisplay {
-    gap: 0.75rem;
-  }
-  
-  .courseModule {
-    padding: 0.75rem;
+@media (max-width: 996px) {
+  .heroContent {
     flex-direction: column;
     text-align: center;
+    gap: 3rem;
   }
-  
-  .courseIcon {
-    margin-right: 0;
-    margin-bottom: 0.75rem;
-  }
-  
-  .courseStats {
-    justify-content: center;
-  }
+  .heroText { max-width: 640px; }
+  .heroCta { justify-content: center; }
+  .heroTitle { align-items: center; }
+  .cycleStepText { text-align: left; }
 }
 
-@media (max-width: 480px) {
-  .courseCardHeader {
-    padding: 1rem 0.75rem 0.75rem;
-  }
-  
-  .courseProgress {
-    padding: 1rem 0.75rem;
-  }
-  
-  .moduleItem {
-    font-size: 0.85rem;
-  }
-}
-  
-  .courseIcon {
-    margin-right: 0;
-    margin-bottom: 0.75rem;
-  }
-  
-  .courseStats {
-    justify-content: center;
-  }
-  
-  .courseCardHeader {
-    min-height: 80px;
-  }
-  
-  .courseProgress {
-    min-height: 140px;
-  }
-
-
-@media (max-width: 480px) {
-  .courseCardHeader {
-    padding: 1rem 0.75rem 0.75rem;
-  }
-  
-  .courseProgress {
-    padding: 1rem 0.75rem;
-  }
-  
-  .moduleItem {
-    font-size: 0.85rem;
-  }
-}
- 
-/* Updated CTA Button to match role selector style */
-.portalButton {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.875rem 1.75rem;
-  background: var(--primary-gradient);
-  color: #031019;
-  border-radius: 50px;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: var(--transition-standard);
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  box-shadow: 0 8px 16px rgba(252, 95, 30, 0.25);
-}
-
-.portalButton:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(252, 95, 30, 0.35);
-  text-decoration: none;
-  color: #031019;
-}
-
-.portalButton i {
-  font-size: 1.1rem;
-}
-/* Responsive adjustments */
 @media (max-width: 768px) {
-  .courseGraphicsContainer {
-    padding: 0.75rem;
-  }
-  
-  .agentCourseDisplay {
-    flex-direction: column;
-  }
-  
-  .courseCard {
-    min-width: unset;
-    width: 100%;
-  }
-  
-  .teamLeadCourseDisplay {
-    gap: 0.75rem;
-  }
-  
-  .courseModule {
-    padding: 0.75rem;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .courseIcon {
-    margin-right: 0;
-    margin-bottom: 0.75rem;
-  }
-  
-  .courseStats {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .courseCardHeader {
-    padding: 1rem 0.75rem 0.75rem;
-  }
-  
-  .courseProgress {
-    padding: 1rem 0.75rem;
-  }
-  
-  .moduleItem {
-    font-size: 0.85rem;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .courseCardHeader {
-    padding: 1rem 0.75rem 0.75rem;
-  }
-  
-  .courseProgress {
-    padding: 1rem 0.75rem;
-  }
-  
-  .moduleItem {
-    font-size: 0.85rem;
-  }
+  .heroSection { padding: 4rem 0 3rem; }
+  .heroTitleMain { font-size: 2.4rem; }
+  .heroCta { flex-direction: column; align-items: stretch; }
+  .portalButton,
+  .portalButtonOutline { justify-content: center; }
+  .workflowSection,
+  .videoSection { padding: 3.5rem 0; }
 }

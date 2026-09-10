@@ -5,7 +5,7 @@ import LandingPage from '../components/LandingPage';
 export default function Home() {
   return (
     <Layout
-      description="Vela Coaching Portal - Your centralised hub for agent coaching, training resources, and performance analytics.">
+      description="Documentation for Vela Coaching. Team leads set up courses and awards in the Vela platform; agents receive them in the Agent Portal.">
       <LandingPage />
     </Layout>
   );

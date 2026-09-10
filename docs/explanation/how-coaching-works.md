@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-Coaching in Vela is automatic in a specific and limited sense: you define the criteria, and a scheduled job applies them on a fixed cycle. Every assignment comes from that job, and every assignment waits for it.
+Coaching runs on a schedule. You set the criteria once, and on each cycle Vela checks every agent's scores against them and assigns the courses and awards they have qualified for. Between cycles it does nothing, and it never decides anything itself.
 
 Seven rules follow from that, and each has a section below.
 
