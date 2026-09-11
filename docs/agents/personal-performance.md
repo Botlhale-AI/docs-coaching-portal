@@ -22,9 +22,9 @@ You need:
 
 ## 1. Set the Period
 
-{/* SCREENSHOT NEEDED: the date range control itself, open. The capture in this step is a full page overview, so the control the step is about is not clearly shown. Suggested path: img/screenshots/agent_view/dashboard/date-range.png */}
+Select the date range control at the top of the page to choose the period. It opens **Filter by Date Range**, which offers **Today**, **Yesterday**, **This Week**, **Last Week**, **This Month**, and **Last Month** down the side, or **From** and **To** dates you pick off two months of calendar. Select **Save** to apply it, or **Close** to leave the range as it was. Everything below is recalculated for the dates you keep.
 
-Select the date range control at the top of the page to choose the period. Everything below it is recalculated for the dates you pick.
+![The Filter by Date Range picker, with the preset ranges beside From and To dates on two months of calendar](../../img/screenshots/agent_view/dashboard/date-range.png)
 
 Start with a period long enough to hold several interactions. A single day rarely says much about a trend.
 
@@ -57,15 +57,15 @@ An [auto-fail](../reference/glossary.md#auto-fail) takes the whole interaction t
 
 **Category Scores** breaks your score down by the categories your organisation groups its questions into, such as Customer Care or Compliance.
 
-Each category shows two figures: **Your Team** and **Your Score**. The gap between them is the useful part, because it separates a category you find hard from one the whole team finds hard.
+Each category shows two figures, **Your Team** and **Your Score**. The gap between them is the useful part, because it separates a category you find hard from one the whole team finds hard.
 
 When there are more categories than fit across the panel, an arrow on each side moves through them, and **Scroll for more** shows at the bottom. When no interactions fall in the date range, the panel reads **No category data available for the selected date range**.
-
-![The Dashboard charts, showing Average Agent Performance over the period beside Individual Agent Performance](../../img/screenshots/agent_view/dashboard/dashboard-charts.png)
 
 ### C. Performance Charts
 
 Below the panels, each category your organisation scores on has its own section, headed with the category name. Select the heading to open or close it. Inside, **Average Agent Performance** shows the category's trend across the date range as a line, and **Individual Agent Performance** shows your current score for that category as a single figure. Select **fullscreen** on **Individual Agent Performance** to see that chart on its own.
+
+![The Dashboard charts, showing Average Agent Performance over the period beside Individual Agent Performance](../../img/screenshots/agent_view/dashboard/dashboard-charts.png)
 
 Read the trend rather than any single point. One low interaction in a week of good ones is normal variation. Three in a row in the same category is a pattern.
 

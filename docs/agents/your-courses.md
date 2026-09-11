@@ -16,7 +16,7 @@ pagination_next: agents/your-awards
 You need:
 
 - **A course assigned to you.** Your team lead creates courses and sets a [**Training Initiation Score Range**](../reference/glossary.md#training-initiation-score-range) on each course. Until your scores fall in a range, the list is empty.
-- **To know your organisation's pass percentage.** Your team lead sets one for every course, so it is the same whichever course you take.
+- **To know your organisation's pass percentage.** Your team lead sets a single pass percentage for the whole organisation, so it is the same whichever course you take.
 
 ---
 
@@ -71,7 +71,7 @@ Read the material before starting the quiz. The quiz is scored, and your result 
 
 ![An assigned course card, with the View Course, Download Material, and Take Quiz controls](../../img/screenshots/agent_view/courses/course-actions.png)
 
-Select **Take Quiz** on a course that has one. The quiz page shows the course name at the top, and each question is numbered and marked **Required**. Questions come in three forms:
+Select **Take Quiz** on a course that has one. The quiz page shows the course name at the top, and each question is numbered. A question marked **Required** has to be answered before you can submit. Questions come in three forms:
 
 | Type | What you do |
 | :--- | :--- |
@@ -86,7 +86,7 @@ Written answers are compared against an answer your team lead set when building 
 When you submit, the page shows **Quiz Completed** and your score as a percentage, shown in red if it is below the pass mark. Below that:
 
 - If you did not pass, a line reads **You did not meet the passing score of 50%**, followed by how many retake attempts you have left. Your organisation's pass mark replaces the 50.
-- Three buttons: **Return to Course**, **Retake Quiz** with the number left in brackets, and **Complete Course**.
+- Three buttons, **Return to Course**, **Retake Quiz** with the number left in brackets, and **Complete Course**.
 - **Quiz Answers** lists each question with the points it earned, such as **1/3 points**.
 
 ![The quiz results screen: Quiz Completed with the score, the passing-score message, and the Return to Course, Retake Quiz and Complete Course buttons](../../img/screenshots/agent_view/courses/quiz-failed.png)
@@ -115,7 +115,7 @@ flowchart LR
 
 Read the **Final Score** for how you did, not for which of the two closed the course out. A **Final Score** of **N/A** means the course was completed without a quiz result, for example by selecting **Complete Course** before taking the quiz.
 
-Your team lead sets **Quiz Retakes** on each course, between 1 and 5, so the number is not the same on every course. Vela shows how many you have left in a few places: the quiz page reads **You have 2 retake attempts available**, the results screen reads **You have 2 retakes remaining**, and the button on the results screen reads **Retake Quiz (2 left)**.
+Your team lead sets **Quiz Retakes** on each course, between 1 and 5, so the number is not the same on every course. Vela shows how many you have left in a few places. The quiz page reads **You have 2 retake attempts available**, the results screen reads **You have 2 retakes remaining**, and the button on the results screen reads **Retake Quiz (2 left)**.
 
 {/* UNVERIFIED: the wording once the count reaches zero, and whether the Retake Quiz button then disappears, was not captured - the live captures show counts of 1 and 2 remaining with the button present. */}
 
@@ -133,7 +133,7 @@ While retakes remain, the results screen also offers **Complete Course**, beside
 
 Open **Courses** and confirm the course you finished sits under **Completed Courses** with a **Final Score** on it.
 
-A course still under **Courses In Progress** after you submitted usually means the quiz was not submitted rather than not passed. Open it and check. A course that moved to **Completed Courses** with a score below the pass percentage means your retakes ran out.
+A course still under **Courses In Progress** after you submitted usually means the quiz was not submitted rather than not passed. Open it and check. A course that moved to **Completed Courses** with a score below the pass percentage means either your retakes ran out or you selected **Complete Course** on that attempt.
 
 ---
 

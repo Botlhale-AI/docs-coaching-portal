@@ -43,7 +43,7 @@ An award set at a mark most of the team already clears recognises nothing, and a
 
 **Write the Award Message as though speaking to the person.** It is the part they actually read. A specific sentence about what they did well is worth more than a generic congratulation, even though the award was presented automatically.
 
-**Do not create many awards at once.** Two or three that mean something beat a dozen nobody notices.
+**Keep the number of awards small.** Two or three that mean something beat a dozen nobody notices.
 
 ---
 

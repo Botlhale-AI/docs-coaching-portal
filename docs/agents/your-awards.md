@@ -22,9 +22,13 @@ You need:
 
 ## 1. Find Your Awards
 
-Select **Awards** in the left sidebar. Each award shows its name and the date it was awarded.
+Select **Awards** in the left sidebar. The page opens on **Recent Activity**, where the newest award sits on its own **New Achievement** card with **View Award** beside it.
 
-![The Awards page in the Agent Portal, listing the awards presented to this agent](../../img/screenshots/agent_view/awards/awards-overview.png)
+![The Awards page in the Agent Portal, with Search, the date range, Filter and Sort By above a Recent Activity card for the newest award](../../img/screenshots/agent_view/awards/awards-overview.png)
+
+Every award you have been presented sits below that, one card each, reading down as its name, the date it was awarded, what it recognises, and the category it was earned in. An award with the same name can appear more than once, carrying a different date each time.
+
+![The full list of awards, each card carrying a trophy, the award name, the date awarded, the description, and the category](../../img/screenshots/agent_view/awards/awards-overview2.png)
 
 Four controls sit above the list:
 
@@ -45,7 +49,7 @@ Four controls sit above the list:
 
 ## 2. Open an Award
 
-Select an award to open **Award Details**.
+Select **View Award** on the Recent Activity card, or any card in the list below it, to open **Award Details**.
 
 ![An award open in the detailed view, showing what it recognises](../../img/screenshots/agent_view/awards/awards-detailed-view.png)
 

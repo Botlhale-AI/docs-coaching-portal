@@ -16,7 +16,7 @@ The **ADMIN** section at the foot of the left sidebar holds two pages. **Notific
 You need:
 
 - **An Agent Portal sign-in.** Your team lead creates your account and the portal emails you an invitation.
-- **To know how you sign in.** If you use **Sign in with Google** or **Sign in with Microsoft**, your identity provider holds your password and the **Security** tab does not appear.
+- **To know how you sign in.** Where you sign in through Google or Microsoft, your identity provider holds your password, so the **Security** tab does not appear.
 
 ---
 
@@ -30,7 +30,7 @@ Select **Notifications** under **ADMIN** in the left sidebar. Three tabs sort wh
 | **Courses** | A course that has been assigned to you |
 | **Comments** | A comment your team lead left on one of your interactions |
 
-The page lists unread notifications only, so a tab with nothing in it reads **No results found**. That is a result rather than a fault: it means nothing of that type is waiting for you.
+The page lists unread notifications only, so a tab with nothing in it reads **No results found**. That is a result rather than a fault. It means nothing of that type is waiting for you.
 
 ![The Notifications page in the Agent Portal, with the Awards, Courses, and Comments tabs above the list of unread notifications](../../img/screenshots/agent_view/admin/notifications.png)
 

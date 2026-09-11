@@ -12,7 +12,7 @@ Short answers to the most common questions about the Coaching Portal. For step-b
 ## General
 
 **Q: What is the Coaching Portal?**
-A: A separate site where agents see their own scores, work through training assigned to them, and read their team lead's feedback. Team leads run coaching from the **Coaching** section of the main Vela platform.
+A: The coaching add-on as a whole, in two halves. Team leads run coaching from the **Coaching** section of the main Vela platform. Agents sign in to the **Agent Portal**, a separate site, to see their own scores, work through training assigned to them, and read their team lead's feedback.
 
 **Q: Is it part of Vela?**
 A: Coaching is an add-on. Where it is enabled, **Coaching** appears in the left sidebar of the main platform and agents can sign in to their portal. Where it is not, neither appears.
@@ -25,7 +25,7 @@ A: An agent sees their own interactions, scores, courses, and awards, never a co
 ## Courses and Awards
 
 **Q: How does an agent get a course?**
-A: By score. You set a **Training Initiation Score Range** on the course, and on each evaluation cycle every agent whose scores fall in that range receives it. Nobody assigns courses manually.
+A: By score. You set a **Category** on the course and a **Training Initiation Score Range** within it, and on each evaluation cycle every agent in scope whose score in that category falls in the range receives it. Nobody assigns courses manually.
 
 **Q: How long does an agent have to finish a course?**
 A: The **Deadline** on the course, set as a count and a unit of **Days**, **Weeks**, or **Months**. Each agent's **Due Date** is worked out from the day they receive it, so two agents assigned on different days have different due dates.
@@ -37,7 +37,9 @@ A: The **Pass Percentage** under **Coaching → Preferences**. It applies to eve
 A: Yes, between 1 and 5 times, set per course by your team lead as **Quiz Retakes**. The **Initiation Score**, the agent's score when the course was assigned, stays visible alongside the new **Final Score**, so improvement stays visible.
 
 **Q: How are awards presented?**
-A: Automatically, on the evaluation cycle, to every agent whose score falls inside the **Score Threshold (Range)** set on the award. Agents download their own certificate from their portal.
+A: Automatically, on the evaluation cycle, to every agent whose score in the award's **Award Category** falls inside its **Score Threshold (Range)**. Agents download their own certificate from their portal.
+
+{/* UNVERIFIED: no code in vela or vela-data creates the record that presents an award, the same gap that exists for course assignment. Carried on glossary.md, metrics.md, troubleshooting-guide.md, your-awards.md and recognise-good-work.md too. */}
 
 ---
 

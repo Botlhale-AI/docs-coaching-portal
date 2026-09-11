@@ -51,9 +51,9 @@ Every award runs on your organisation's evaluation cycle, set under [Coaching Pr
 
 That lets you recognise a tier rather than everyone above a line. A "top performer" award is a high min with a max of 100 on the category that matters most. A band such as 70 to 79 picks out that group on its own.
 
-{/* SCREENSHOT NEEDED: the Scope control expanded to departments or teams, with the multi-select open and the "N departments selected" count beneath it. Suggested path: img/screenshots/team_lead/awards/create-award-scope.png */}
+![Scope set to Specific Departments, with the Select Departments list open beside the Score Threshold Min and Max](../../img/screenshots/team_lead/awards/create-award-scope.png)
 
-**Scope** decides who is eligible. Choosing departments or teams reveals a second selector for which ones, and the form reports how many you have picked. What you may set is limited by your own access level: departmental access cannot award outside your department.
+**Scope** decides who is eligible. Choosing departments or teams reveals a second selector for which ones, and the form reports how many you have picked. What you may set is limited by your own access level. Departmental access cannot award outside your department.
 
 Write the **Award Message** as though speaking to the person. It is the part they actually read, and a specific sentence about what they did well is worth more than a generic congratulation.
 
@@ -61,7 +61,7 @@ Write the **Award Message** as though speaking to the person. It is the part the
 
 ## 2. See What Has Been Presented
 
-The Awards page holds two collapsible sections: **Awards**, which is what you have defined, and **Awards Presented**, which is what has actually gone out.
+The Awards page holds two collapsible sections. **Awards** is what you have defined, and **Awards Presented** is what has actually gone out.
 
 ![The Awards section, with each defined award as a card and Create New Award beside them](../../img/screenshots/team_lead/awards/awards-list.png)
 
