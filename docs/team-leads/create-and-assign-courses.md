@@ -79,7 +79,7 @@ Scope and the score range work together rather than instead of each other. Scope
 
 ## 3. Add Content
 
-A course holds what the agent works through, either an uploaded PDF or a link to material hosted elsewhere. **Upload PDF** and **External Link** are a radio choice, so a course built in one pass carries just one. Editing the course later and switching to the other option does not clear what was already set. Vela keeps both, and the agent then sees a **View Material** control for each. See [Course and Award Fields](../reference/course-and-award-fields.md#external-link) for how that plays out.
+A course holds what the agent works through, either an uploaded PDF or a link to material hosted elsewhere. **Upload PDF** and **External Link** are a radio choice, so a course built in one pass carries one. Editing the course later and switching to the other option does not clear what was already set. Vela keeps both, and the agent then sees a **View Material** control for each. See [Course and Award Fields](../reference/course-and-award-fields.md#external-link) for how that plays out.
 
 ![The Add Content step, with the content type chosen and the cover image picker](../../img/screenshots/team_lead/courses/new-course2.png)
 
