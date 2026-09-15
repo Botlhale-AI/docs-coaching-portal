@@ -20,8 +20,8 @@ An award is recognition you define once and Vela presents automatically. You set
 
 You need:
 
-- **Something worth recognising.** An award for a mark most of the team already clears recognises nothing. Set it where reaching it means something.
-- **To know your evaluation cycle.** Awards are presented on the cycle set under Preferences, so one created today reaches agents at the next run. See [Set Coaching Preferences](./coaching-preferences.md).
+- **Something worth recognising.** An award for a mark most of the team already clears recognises nothing, and agents work out quickly that it is automatic. Check where scores actually sit on the [Coaching Dashboard](./coaching-dashboard.md) first, then set the floor above most of the team.
+- **To know your evaluation cycle.** Awards go out on the cycle set under [Coaching Preferences](./coaching-preferences.md), not the moment you save the form. An award created today waits for that cycle to run before the first agent receives it, so check the cycle before you commit to a date you're expecting it to land by.
 
 ---
 
@@ -33,11 +33,11 @@ Select **Coaching** in the left sidebar, then **Awards**. Select **Create New Aw
   src={createAwardImg}
   alt="The Create an Award form: Award Name and Award Category above Award Description, then Scope and the Score Threshold (Range) Min and Max fields"
   points={[
-    { x: 28.8, y: 42.2, title: 'Award Name', body: 'What the award is called, in the agent\'s list. It is not printed on the certificate, which prints the award\'s category and score instead.' },
-    { x: 68.4, y: 42.2, title: 'Award Category', body: "The scorecard category the score threshold below is measured against. The list is the same one your organisation's scorecard questions are grouped into." },
-    { x: 31.4, y: 59.6, title: 'Award Description', body: 'What the award recognises.' },
-    { x: 25.9, y: 81.5, title: 'Scope', body: 'Whether the award covers the whole organisation, chosen departments, or chosen teams.' },
-    { x: 91.5, y: 81.5, title: 'Score Threshold (Range)', body: 'The Min and Max an agent\'s score in that category must fall between to earn it.' },
+    { x: 28.8, y: 42.2, title: 'Award Name', body: 'What the award is called. It shows in the agent\'s own Awards list, but not on the certificate, which prints the award\'s category and score instead.' },
+    { x: 68.4, y: 42.2, title: 'Award Category', body: "The scorecard category the Score Threshold below measures against. Choose from the same categories your organisation's scorecard questions are grouped into." },
+    { x: 31.4, y: 59.6, title: 'Award Description', body: 'What the award recognises. The agent sees it in their award list, and it prints on the certificate beneath the category and score.' },
+    { x: 25.9, y: 81.5, title: 'Scope', body: 'Whether the award applies organisation-wide, or only to chosen departments or teams.' },
+    { x: 91.5, y: 81.5, title: 'Score Threshold (Range)', body: 'The Min and Max an agent\'s score in the chosen Award Category must fall between to earn the award.' },
   ]}
 />
 
@@ -112,6 +112,8 @@ Agents can download their own certificates from their portal, so this is for you
 ## 4. Edit an Award
 
 Select the **pencil** icon on the award's card, in the **Awards** section, to change its details, its scope, or the score range that earns it.
+
+![The pencil icon on an award card, in the Awards section](../../img/screenshots/team_lead/awards/edit-award.png)
 
 Changing the range changes who qualifies from the next evaluation cycle on. Awards already presented stay presented.
 
