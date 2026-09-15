@@ -42,17 +42,6 @@ The two score columns sit side by side so you can read them together. **Initiati
 
 Long lists are paged, with **Previous** and **Next** either side of the page count.
 
-:::note A status that is blank or reads **Unknown**
-A row occasionally shows no status at all, or **Unknown**. The assignment is real and the rest of the row is accurate. Treat it as **Not Started** until the agent opens the course, and report it if it persists.
-:::
-
-{/* VERIFIED against source: getStatus() in coaching/progress/page.jsx maps
-    assigned, in-progress and completed to the three labels. Any other value
-    returns undefined from the lookup, which renders as an empty cell, so blank
-    is the likelier of the two. Its catch returns "Unknown", but a missing key
-    does not throw, so that branch is only reached when the course record
-    itself is absent. */}
-
 ---
 
 ## 2. Narrow the List
@@ -61,7 +50,7 @@ A row occasionally shows no status at all, or **Unknown**. The assignment is rea
 
 | Field | What it takes |
 | :--- | :--- |
-| **team** and department | Tick the teams whose agents you want, grouped under their department. A department with no name set reads **No Department** |
+| **Department** and **Team** | Tick the teams whose agents you want, grouped under their department. A department with no name set reads **No Department** |
 | **Status** | **Not Started**, **In Progress**, or **Complete** |
 | **Score** | A range, so you can isolate the agents who failed |
 | **Initiation Score** | A range, so you can isolate the agents a course was aimed at |
