@@ -43,11 +43,11 @@ The form is one page in four labelled parts, and **Add Details** is the first.
   src={newCourseImg}
   alt="The Add Details step of the course form: Title and Category above Description, then Scope and the Training Initiation Score Range slider"
   points={[
-    { x: 23.1, y: 31.6, title: 'Title', body: 'The name of the course. It is the Course Title agents see in their list.' },
-    { x: 65.2, y: 31.6, title: 'Category', body: 'The scorecard category the score range below is measured against, not only a label for browsing.' },
+    { x: 23.1, y: 31.6, title: 'Title', body: 'The name of the course. Agents see it as Course Title in their list.' },
+    { x: 65.2, y: 31.6, title: 'Category', body: 'The scorecard category the Training Initiation Score Range below is measured against, not only a label for browsing.' },
     { x: 26.4, y: 47.5, title: 'Description', body: 'What the course covers, and why it was assigned.' },
-    { x: 24.1, y: 69.9, title: 'Scope', body: 'Whether the course can reach the whole organisation, chosen departments, or chosen teams.' },
-    { x: 75.1, y: 69.9, title: 'Training Initiation Score Range', body: 'The band of scores that receives the course.' },
+    { x: 24.1, y: 69.9, title: 'Scope', body: 'Who the course can reach, from the whole organisation down to chosen departments or teams. The options offered depend on your own access level.' },
+    { x: 75.1, y: 69.9, title: 'Training Initiation Score Range', body: 'The band of scores, measured against the agent\'s score in the chosen Category rather than their overall score, that receives the course.' },
   ]}
 />
 
@@ -65,13 +65,13 @@ Pick from the categories your organisation already has. There is no **+ Add New*
 
 Choosing departments or teams reveals a selector for which ones, and the course is refused until you pick at least one. Your own access level caps what you may set here.
 
+![Scope set to Specific Departments, with the Select Departments list open beside the Training Initiation Score Range slider](../../img/screenshots/team_lead/courses/scope-selector.png)
+
 ### Training Initiation Score Range
 
-This is the setting that decides who receives the course, measured against the agent's score in the **Category** you chose above, not their overall score. It is a slider with two handles over 0 to 100, and the percentages either side of it show the floor and ceiling you have set. On each evaluation cycle, every agent in scope whose score in that category falls between them is assigned the course.
+This decides who receives the course, measured against the agent's score in the **Category** chosen above rather than their overall score. It is a slider with two handles over 0 to 100, showing the floor and ceiling you set as percentages on either side. On each evaluation cycle, every agent in scope whose score in that category falls between them receives the course.
 
-Set it around the gap you found on the Dashboard rather than around a pass percentage. A range of 0 to 100 assigns the course to everyone, so there is no comparison group to show whether it worked. A range of 40 to 65 reaches the people who are struggling with the thing this course teaches, and leaves a comparison group who did not need it.
-
-The range is a band, not a threshold. An agent above the ceiling does not receive the course, which is deliberate: training aimed at a weakness is wasted on someone who does not have it.
+Set it around the gap you found on the Dashboard, not around a pass percentage. A range of 0 to 100 assigns the course to everyone, leaving no comparison group to show whether it worked. A narrower band, such as 40 to 65, reaches only the people struggling with what the course teaches and leaves the rest as a comparison group. It is a band rather than a threshold, so an agent above the ceiling does not receive the course. That is deliberate: training aimed at a weakness is wasted on someone who does not have it.
 
 Scope and the score range work together rather than instead of each other. Scope decides who is eligible at all. The range decides which of those people qualify on a given cycle.
 
@@ -79,7 +79,7 @@ Scope and the score range work together rather than instead of each other. Scope
 
 ## 3. Add Content
 
-A course holds what the agent works through. **Upload PDF** and **External Link** sit either side of an **or**, so a course built in one pass carries one of the two. A course switched from one to the other later keeps both, which [Course and Award Fields](../reference/course-and-award-fields.md#external-link) covers.
+A course holds what the agent works through, either an uploaded PDF or a link to material hosted elsewhere. **Upload PDF** and **External Link** are a radio choice, so a course built in one pass carries just one. Editing the course later and switching to the other option does not clear what was already set. Vela keeps both, and the agent then sees a **View Material** control for each. See [Course and Award Fields](../reference/course-and-award-fields.md#external-link) for how that plays out.
 
 ![The Add Content step, with the content type chosen and the cover image picker](../../img/screenshots/team_lead/courses/new-course2.png)
 
