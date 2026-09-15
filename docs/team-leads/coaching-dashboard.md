@@ -7,7 +7,7 @@ pagination_prev: team-leads/getting-started
 pagination_next: team-leads/create-and-assign-courses
 ---
 
-**Coaching → Dashboard** shows how the agents you cover are scoring over a period you choose. Use it to decide who needs a conversation and what that conversation should be about, before you build a course or open individual interactions.
+**Dashboard** shows how the agents you cover are scoring over a period you choose. Use it to decide who needs a conversation and what that conversation should be about, before you build a course or open individual interactions.
 
 ---
 
@@ -24,13 +24,14 @@ You need:
 
 Select **Coaching** in the left sidebar, then **Dashboard**.
 
-Two controls at the top of the page decide what everything below is calculated from.
+![The Coaching Dashboard on arrival, with View By and the date range above the Auto Fails and Category Scores cards](../../img/screenshots/team_lead/dashboard/dashboard-overview.png)
 
-**View By** sets how much of the organisation you are looking at. It opens on the broadest scope your access level allows: **Entire Organisation** for organisational access, **Entire Department** for departmental access, or your own team for team access. What it offers narrows the same way, so a team lead sees fewer choices than an administrator.
+Two controls at the top of the page decide what everything below is calculated from:
 
-**Date range** sets the period. Select the **pencil** beside it to change the dates.
-
-![The View By and date range controls at the top of the Coaching Dashboard](../../img/screenshots/team_lead/dashboard/date-range.png)
+| Control | What it does |
+| :--- | :--- |
+| **View By** | How much of the organisation you are looking at. Opens on the broadest scope your access level allows, **Entire Organisation** for organisational access, **Entire Department** for departmental access, or your own team for team access. Narrows the same way, so a team lead sees fewer choices than an administrator |
+| **Date range** | Sets the period. Select the **pencil** beside it to change the dates |
 
 Pick a period long enough to hold several interactions per agent. A week is usually the shortest useful range, and a month is better for judging a trend.
 
@@ -38,9 +39,7 @@ Pick a period long enough to hold several interactions per agent. A week is usua
 
 ## 2. Read the Figures
 
-Two cards sit side by side below the controls, and they are read together.
-
-![Auto Fails and Category Scores on the Coaching Dashboard](../../img/screenshots/team_lead/dashboard/dashboard-overview.png)
+Two cards sit side by side below the controls, shown above, and they are read together.
 
 ### A. Auto Fails
 
@@ -54,7 +53,7 @@ Read this figure before the panel beside it, because a high auto-fail rate is wh
 
 **Category Scores** breaks performance down by the categories your organisation groups its scorecard questions into. Each category is a column with its heading in capitals.
 
-The panel scrolls two ways, and the second one is often missed. It scrolls **sideways** through the categories, with a **chevron** appearing on whichever side has more to show and a **Scroll for more** hint at the foot. Each column also scrolls **down** on its own where it holds more groups than fit.
+The panel scrolls two ways, and the second one is often missed. It scrolls **sideways** through the categories, with an **arrow** appearing on whichever side has more to show and a **Scroll for more** hint at the foot. Each column also scrolls **down** on its own where it holds more groups than fit.
 
 Every column reads the same way:
 
@@ -83,7 +82,7 @@ Only categories with interactions in the period appear as columns.
 
 ### C. Per-Category Performance
 
-Below the two cards, every category gets its own section, with the category name as the heading and a **chevron** to collapse it.
+Below the two cards, every category gets its own section, with the category name as the heading and an **arrow** to collapse it.
 
 ![A single category section, with the Average Agent Performance line chart and the grouped bar chart beside it](../../img/screenshots/team_lead/dashboard/category-performance.png)
 
@@ -92,7 +91,7 @@ Each section holds two charts for that category alone:
 | Chart | What it shows |
 | :--- | :--- |
 | **Average Agent Performance** | A line across the period, so you can see when performance moved rather than only where it ended |
-| The grouped bar chart | A bar for each group, so you can see which part of the organisation carries the result |
+| **Department Performance**, **Team Performance**, or **Agent Performance** | A bar for each group, so you can see which part of the organisation carries the result |
 
 :::note The expanded chart adds the category to its heading
 In its normal place on the page, the bar chart's heading reads only **Department Performance**, **Team Performance**, or **Agent Performance**, matching what **View By** is set to. Select the **fullscreen** control to expand it, and the heading gains the category in front, for example **Compliance - Department Performance**. The category prefix only appears in the expanded view.

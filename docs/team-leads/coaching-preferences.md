@@ -37,6 +37,8 @@ Under **Evaluation Scope**, answer "Which interactions would you like these eval
 
 **Reviewed Interactions Only** is the stricter setting. It means coaching follows human-checked work rather than AI scores alone, which is worth having if your reviewers add context. It also means an unreviewed backlog stops evaluations running, so pick it only if your team keeps up with reviewing.
 
+![Evaluation Scope and Evaluation Cycle at the top of the preferences page](../../img/screenshots/team_lead/preferences/evaluation-scope-and-cycle.png)
+
 ---
 
 ## 2. Set the Evaluation Cycle
@@ -55,7 +57,7 @@ The page confirms your choice back to you, reading **Evaluate every 1 month(s)**
 
 ![The evaluation cycle settings, with the interval, unit, and time](../../img/screenshots/team_lead/preferences/evaluation-cycle.png)
 
-![Evaluation Scope and Evaluation Cycle at the top of the preferences page](../../img/screenshots/team_lead/preferences/evaluation-scope-and-cycle.png)
+![The Unit dropdown open, listing Day(s), Week(s), and Month(s)](../../img/screenshots/team_lead/preferences/unit-list.png)
 
 Monthly suits most teams. Weekly responds faster but assigns courses on less evidence, so an agent can be given training for a bad week rather than a real gap.
 

@@ -50,7 +50,7 @@ Long lists are paged, with **Previous** and **Next** either side of the page cou
 
 | Field | What it takes |
 | :--- | :--- |
-| **Department** and **Team** | Tick the teams whose agents you want, grouped under their department. A department with no name set reads **No Department** |
+| **Department** and **Team** | Tick the teams whose agents you want, grouped under their department. Each team shows its department alongside it, reading **No Department** where that link can't be resolved |
 | **Status** | **Not Started**, **In Progress**, or **Complete** |
 | **Score** | A range, so you can isolate the agents who failed |
 | **Initiation Score** | A range, so you can isolate the agents a course was aimed at |
