@@ -27,6 +27,8 @@ You need:
 2. On the sign-in page, enter your email address and the temporary password from the email.
 3. Select **Sign In**.
 
+![The invitation email, with the Confirm Account button and temporary password](../../img/screenshots/agent_view/auth/agent-invite.png)
+
 Signing in takes you straight to your **Dashboard**.
 
 ![The Agent Portal sign-in page, with the email and password fields](../../img/screenshots/agent_view/auth/login.png)
@@ -76,6 +78,8 @@ Work through these in order. Each one shows you a different part of the portal.
    ![A call open in the Agent Portal, with the audio player and Smart Detector on the left and Call Details and the transcript on the right](../../img/screenshots/agent_view/interactions/interactions-calls-detailed-view.png)
 
 3. **Check for coaching comments.** On the same interaction, select **View Comments**. This is where your team lead's feedback appears, and where you reply. See [Review Your Interactions](./your-interactions.md).
+
+   ![The comments panel open on a call, with a comment from the team lead and the Reply, Like, and Mark as Resolved links](../../img/screenshots/agent_view/interactions/comments.png)
 
 4. **Look at your courses.** Select **Courses**. Anything under **Assigned Courses** is waiting for you, and each shows when it is due. See [Track Your Courses](./your-courses.md).
 

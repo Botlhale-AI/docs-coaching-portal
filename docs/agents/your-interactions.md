@@ -87,7 +87,7 @@ Where a transcript is unavailable the panel reads **Transcript not available**.
 
 Open the interaction, then select **View Comments** to open the comments panel. This is where your team lead leaves feedback on the conversation, and where you reply to it.
 
-{/* SCREENSHOT NEEDED: the comments panel open on an interaction, showing a team lead comment and the reply box. No capture of it exists anywhere in the repo, so this step and step 3 of the agent tutorial both run without one. Suggested path: img/screenshots/agent_view/interactions/comments.png */}
+![The comments panel open on a call, with a comment from the team lead and the Reply, Like, and Mark as Resolved links](../../img/screenshots/agent_view/interactions/comments.png)
 
 A comment that tags you with **@** also raises a notification, so check **Notifications** under **ADMIN** if you want to find recent feedback without opening each interaction. See [Manage Your Account](./your-account.md).
 
