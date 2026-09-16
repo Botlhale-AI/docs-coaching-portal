@@ -18,7 +18,6 @@ This page takes you through signing in for the first time and finding each part 
 You need:
 
 - **An invitation email.** Your team lead creates your account, and the portal emails you an invitation with a temporary password.
-- **A current browser.** Chrome, Edge, Firefox, or Safari.
 
 ---
 

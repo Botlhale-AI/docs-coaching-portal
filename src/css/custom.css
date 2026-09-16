@@ -147,6 +147,7 @@ body {
   border-radius: 0.375rem;
   padding: 0.5rem 0.75rem;
   transition: all var(--vela-transition-speed) ease;
+  border-left: 3px solid transparent;
 }
 
 /* The selected page and section, styled as docs-vela styles them: orange text
@@ -156,6 +157,7 @@ body {
 .menu__link--active:not(.menu__link--sublist) {
   background-color: transparent;
   color: var(--ifm-color-primary);
+  border-left-color: var(--ifm-color-primary);
 }
 
 .navbar__link--active {
