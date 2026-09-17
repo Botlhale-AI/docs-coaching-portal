@@ -24,21 +24,25 @@ You need:
 
 Select **Interactions** in the left sidebar, then **Calls** or **Chats**. The list shows your own interactions only.
 
+![The Calls list in the Agent Portal, showing the processed calls for the signed-in agent with the search, sort, and filter controls above it](../../img/screenshots/agent_view/interactions/interactions-calls-overview.png)
+
 Three controls sit above the list:
 
 | Control | What it does |
 | :--- | :--- |
 | **Search** | Narrows the list by wording |
-| **Sort By** | Orders the list on a column you choose |
-| **Filter** | Opens a panel where you narrow the list, then select **Apply** |
+| **Sort By** | Orders the list by a column, ascending or descending |
+| **Filter** | Narrows the list by department, team, handle time, and other fields |
 
-![The Calls list in the Agent Portal, showing the processed calls for the signed-in agent with the search, sort, and filter controls above it](../../img/screenshots/agent_view/interactions/interactions-calls-overview.png)
+**Sort By** opens a panel. Tick **Ascending** or **Descending**, tick the column to order by, then select **Save Changes**.
 
-![The sort control open on the interactions list, with the columns you can order by](../../img/screenshots/agent_view/interactions/interactions-sort.png)
+![The Sort By panel over the Calls list, with Ascending and Descending above the columns you can order by, and Save Changes and Close at the foot](../../img/screenshots/agent_view/interactions/sort.png)
 
-![The filter panel open on the interactions list, with the Apply button that puts the filter into effect](../../img/screenshots/agent_view/interactions/interactions-filter.png)
+**Filter** opens a panel. It starts with **Department**, **Team**, **Handle Time**, **Silent Time**, **Agent Score**, and **Direction**, and scrolls for the rest. Set what you need, then select **Save Changes**. **Clear All Fields** at the top resets every field.
 
-![The Chats list, laid out the same way as Calls](../../img/screenshots/agent_view/interactions/interactions-chats-overview.png)
+{/* UNVERIFIED: below Direction, origin/main filter.jsx renders Topic and Reviewed with no agentMode gate, so an agent should see them on scrolling. Not yet confirmed on a scrolled capture. */}
+
+![The Filter By panel over the Calls list, with Department, Team, Handle Time, Silent Time, Agent Score, and Direction visible, the Clear All Fields link, and Save Changes and Close at the foot](../../img/screenshots/agent_view/interactions/filter.png)
 
 Select an interaction to open it.
 
