@@ -19,7 +19,7 @@ Nothing is assigned between cycle runs, so a course built without knowing the cy
 
 **Monthly suits most teams.** A month holds enough interactions to tell a real gap from a bad week.
 
-**Weekly responds faster and judges on less.** It is worth it where volumes are high or a compliance change needs to land quickly. At low volumes it assigns training for normal variation, which teaches agents that courses mean nothing.
+**Weekly responds faster and evaluates on less.** It is worth it where volumes are high or a compliance change needs to land quickly. At low volumes it assigns training for normal variation, which teaches agents that courses mean nothing.
 
 ---
 

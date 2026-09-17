@@ -43,7 +43,7 @@ Two cards sit side by side below the controls, shown above, and they are read to
 
 ### A. Auto Fails
 
-**Auto Fails** is a single percentage: the share of calls in the period that failed a question your organisation marks as critical, across everything **View By** covers. The **information** icon beside the heading explains the figure in place.
+**Auto Fails** is a single percentage, the share of calls in the period that failed a question your organisation marks as critical, across everything **View By** covers. The **information** icon beside the heading explains the figure in place.
 
 An auto-fail takes an interaction to zero whatever else went well, so a rising figure here matters more than a few points off an average. It usually points at one requirement being missed repeatedly rather than at general performance.
 

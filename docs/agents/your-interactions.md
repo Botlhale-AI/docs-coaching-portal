@@ -46,7 +46,7 @@ Select an interaction to open it.
 
 ## 2. Read the Detailed View
 
-A call's detailed view has three cards: **Audio** and **Smart Detector** on the left, **Call Details** and **Transcript** on the right. A chat has two: **Smart Detector** alone on the left, and **Chat Details** and **Chat** on the right, since there is nothing to play. The trail at the top reads **Interactions › Calls › Call Details** on a call, and **Interactions › Chats › Chat Details** on a chat.
+A call's detailed view has three cards, with **Audio** and **Smart Detector** on the left and **Call Details** and **Transcript** on the right. A chat has two, with **Smart Detector** alone on the left and **Chat Details** and **Chat** on the right, since there is nothing to play. The trail at the top reads **Interactions › Calls › Call Details** on a call, and **Interactions › Chats › Chat Details** on a chat.
 
 ### A. Audio and Smart Detector
 
@@ -67,7 +67,7 @@ A question that did not apply to the conversation reads **N/A** rather than coun
 
 ### B. Call Details (or Chat Details) and the Transcript (or Chat)
 
-**Call Details**, or **Chat Details** on a chat, shows your name at the top, then two groups of fields: **Scores** and **Details**.
+**Call Details**, or **Chat Details** on a chat, shows your name at the top, then two groups of fields, **Scores** and **Details**.
 
 **Scores** holds **Agent Score**, **Initial Score**, and a **Compliance Score** and **Quality Score** that each have their own **Initial** figure. **Agent Score** shows two numbers, for example 0.0% (60.9%). The first is your score with auto-fails applied. The number in brackets is what it was before them. A pair your organisation does not use stays blank.
 
@@ -95,7 +95,7 @@ A comment that tags you with **@** also raises a notification, so check **Notifi
 
 ## Check Your Work
 
-Open one of your interactions and confirm three things: the transcript loads, the **Scorecard** tab shows an outcome on each question, and **Call Details** (or **Chat Details**) names you as the agent.
+Open one of your interactions and confirm three things. The transcript loads, the **Scorecard** tab shows an outcome on each question, and **Call Details** (or **Chat Details**) names you as the agent.
 
 An interaction you expected and cannot find is usually one of two things. It may still be processing, in which case it appears once analysis finishes. Or your organisation shows agents reviewed interactions only, and nobody has reviewed it yet.
 

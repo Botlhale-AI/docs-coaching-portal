@@ -21,7 +21,7 @@ How much of the organisation you can see and act on. Set on your user record in 
 | **Departmental** | Your department |
 | **Team** | Your team |
 
-Access level and role are two separate things, and coaching needs both in one place: changing **Coaching → Preferences** requires organisational access **and** the admin role. With one but not the other the form opens read-only.
+Access level and role are two separate things, and coaching needs both in one place. Changing **Coaching → Preferences** requires organisational access **and** the admin role. With one but not the other the form opens read-only.
 
 For the platform-wide detail, see [Access Level](https://docs-vela.botlhale.ai/docs/reference/glossary#access-level) in the Vela Glossary.
 
@@ -39,7 +39,7 @@ The Agent Portal is one half of the [Coaching Portal](#coaching-portal) add-on. 
 
 ## Agent View Permissions
 
-The setting that decides how much of their own work agents can see: **All Interactions**, or **Reviewed Interactions Only**. Set under **Coaching → Preferences**, it applies to every agent in the organisation.
+The setting that decides how much of their own work agents can see, either **All Interactions** or **Reviewed Interactions Only**. Set under **Coaching → Preferences**, it applies to every agent in the organisation.
 
 Reviewed-only means an unreviewed backlog is invisible to the agent. See [Set Coaching Preferences](../team-leads/coaching-preferences.md).
 
@@ -69,7 +69,7 @@ On a course or an award, **Category** is the one whose score the **Training Init
 
 ## Coaching Portal
 
-The coaching add-on as a whole, and the name of this documentation. It has two halves: the **Coaching** section inside the main Vela platform, where team leads build courses and awards, and the [Agent Portal](#agent-portal), where agents receive them.
+The coaching add-on as a whole, and the name of this documentation. It has two halves. The **Coaching** section inside the main Vela platform is where team leads build courses and awards, and the [Agent Portal](#agent-portal) is where agents receive them.
 
 "Coaching Portal" names the add-on rather than a screen. No control in Vela carries the words, so an agent looking for somewhere to sign in wants the Agent Portal.
 
@@ -85,13 +85,13 @@ How long an agent has from the date a course is assigned to them, set on the cou
 
 ## Evaluation Cycle
 
-How often Vela reviews scores and assigns the courses and awards agents have qualified for. The Preferences page describes both in one breath, with no distinction between them: a course catches agents scoring low in a category, an award catches those scoring high. Set under **Coaching → Preferences** as an interval, a unit of **Day(s)**, **Week(s)**, or **Month(s)**, and a time.
+How often Vela reviews scores and assigns the courses and awards agents have qualified for. The Preferences page describes both in one breath, with no distinction between them. A course catches agents scoring low in a category, and an award catches those scoring high. Set under **Coaching → Preferences** as an interval, a unit of **Day(s)**, **Week(s)**, or **Month(s)**, and a time.
 
 Nothing is assigned between runs. A course created today reaches agents at the next run rather than immediately. See [How Coaching Works](../explanation/how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for why.
 
 ## Evaluation Scope
 
-Which interactions count towards evaluation: **All Interactions**, or **Reviewed Interactions Only**. Separate from [Agent View Permissions](#agent-view-permissions), which controls what agents see rather than what evaluations use.
+Which interactions count towards evaluation, either **All Interactions** or **Reviewed Interactions Only**. Separate from [Agent View Permissions](#agent-view-permissions), which controls what agents see rather than what evaluations use.
 
 Marking an interaction as reviewed happens in the main Vela platform, not in coaching. See [Review Status](https://docs-vela.botlhale.ai/docs/reference/glossary#review-status) in the Vela Glossary. On **Reviewed Interactions Only**, coaching moves only as fast as reviewing does.
 
@@ -101,7 +101,7 @@ An agent's result on a course quiz. [Initiation Score](#initiation-score) sits b
 
 ## Initiation Score
 
-An agent's score at the moment a course was assigned to them, the same score that put them inside the course's [Training Initiation Score Range](#training-initiation-score-range). It is set at assignment rather than kept from a first quiz attempt: a Progress row for a course still in progress, with no quiz submitted yet, already shows a real Initiation Score.
+An agent's score at the moment a course was assigned to them, the same score that put them inside the course's [Training Initiation Score Range](#training-initiation-score-range). It is set at assignment rather than kept from a first quiz attempt. A Progress row for a course still in progress, with no quiz submitted yet, already shows a real Initiation Score.
 
 ## Interaction
 
@@ -113,7 +113,7 @@ The share of the total quiz score an agent reaches to pass a course. Set once un
 
 ## Progress
 
-The page pairing each agent with each course assigned to them, and its status: **Not Started**, **In Progress**, or **Complete**. See [Track Learning Progress](../team-leads/track-learning-progress.md).
+The page pairing each agent with each course assigned to them, with a status of **Not Started**, **In Progress**, or **Complete**. See [Track Learning Progress](../team-leads/track-learning-progress.md).
 
 ## Quiz Retakes
 

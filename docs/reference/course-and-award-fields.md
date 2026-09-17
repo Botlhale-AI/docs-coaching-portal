@@ -64,10 +64,10 @@ Added one at a time with **Add Question**. Each question has its text and an ans
 | Answer type | What you set | Validation |
 | :--- | :--- | :--- |
 | **Multiple Choice** | Options, built with **Add option**, and the **Correct Answer** | At least two options, and one marked correct |
-| **Short Paragraph** | The question, and the answer Vela judges it against | The question cannot be empty, and an answer must be set |
-| **Long Paragraph** | The question, and the answer Vela judges it against | The question cannot be empty, and an answer must be set |
+| **Short Paragraph** | The question, and the answer Vela scores it against | The question cannot be empty, and an answer must be set |
+| **Long Paragraph** | The question, and the answer Vela scores it against | The question cannot be empty, and an answer must be set |
 
-Paragraph answers are compared against a stored answer, judged by Vela for meaning rather than exact wording.
+Paragraph answers are compared against a stored answer for meaning rather than exact wording.
 
 Every question also has:
 

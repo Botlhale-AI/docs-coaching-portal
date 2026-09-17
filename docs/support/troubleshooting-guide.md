@@ -47,7 +47,7 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 
 **Problem:** An agent's interactions list is shorter than the work they have done.
 
-**Cause:** **Agent View Permissions** is set to **Reviewed Interactions Only**. This is a different setting from the one behind an empty Dashboard above: it governs what an agent can open under **Interactions**, not what feeds their scores.
+**Cause:** **Agent View Permissions** is set to **Reviewed Interactions Only**. This is a different setting from the one behind an empty Dashboard above. It governs what an agent can open under **Interactions**, not what feeds their scores.
 
 **Solution:** Check the setting under **Coaching → Preferences**. Where reviewed-only is chosen, an unreviewed backlog is invisible to the agent, so the fix is reviewing rather than a settings change.
 

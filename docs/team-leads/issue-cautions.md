@@ -16,11 +16,11 @@ import addNewFieldImg from '@site/img/screenshots/team_lead/cautions/add-new-fie
     remove the draft flag, add the page to sidebars.js after coaching-preferences,
     fix the pagination on the page before it, and capture the screenshots marked below. */}
 
-A caution is a formal record that an agent's performance has fallen below standard. Unlike a course or an award, which Vela presents on its own, a caution is only ever sent by a person. Vela finds the candidates and you decide which ones become a record.
+A caution is a formal record that an agent's performance has fallen below standard. Unlike a course or an award, which Vela presents automatically, a caution is only ever sent by a person. Vela finds the candidates and you decide which ones become a record.
 
-A caution is triggered by **failed courses**, not by scores directly. Each caution template names a category and a **Course Threshold**, and an agent who fails that many courses in the category becomes a candidate. That places cautions at the end of the coaching path rather than alongside it: the agent was assigned training, the training did not work, and the formal record follows.
+A caution is triggered by **failed courses**, not by scores directly. Each caution template names a category and a **Course Threshold**, and an agent who fails that many courses in the category becomes a candidate. That places cautions at the end of the coaching path rather than alongside it. The agent was assigned training, the training did not work, and the formal record follows.
 
-The sequence is the same every time: Vela detects a candidate, you send it from a template, the agent acknowledges it, and you escalate to HR where that is warranted.
+The sequence is the same every time. Vela detects a candidate, you send it from a template, the agent acknowledges it, and you escalate to HR where that is warranted.
 
 ```mermaid
 stateDiagram-v2
@@ -82,7 +82,7 @@ Select **View** on a row before sending. The detail page shows **Agent Informati
 
 Read what is behind the detection rather than the fact of it. Detection is a threshold being crossed, and a threshold does not know whether the agent was newly assigned to the work, covering an unfamiliar queue, or dealing with a run of unusual interactions. A caution you cannot justify from what is in front of you is one to leave unsent.
 
-Because detection already means courses were failed, the coaching route has usually been tried. Check that it was tried properly: a course assigned with an unrealistic deadline, or one whose material never matched the gap, is a failure of the course rather than of the agent.
+Because detection already means courses were failed, the coaching route has usually been tried. Check that it was tried properly. A course assigned with an unrealistic deadline, or one whose material never matched the gap, is a failure of the course rather than of the agent.
 
 ---
 
@@ -143,13 +143,13 @@ The email leaves Vela as soon as you send it, and there is no recall. Check the 
 
 ## 6. Manage the Templates
 
-A template does two jobs: it decides **when** a caution is detected, and it supplies **what** the agent reads. Nothing works until one exists for the category, so build these first.
+A template does two jobs. It decides **when** a caution is detected, and it supplies **what** the agent reads. Nothing works until one exists for the category, so build these first.
 
 Open **Caution Templates** and select **New Caution Template**.
 
 <Hotspots
   src={newCautionTemplateImg}
-  alt="The Create a Caution form: Caution Scope and Course Threshold above Caution Category, and the Confirmation by Employee panel with its statements and edit pencil"
+  alt="The Create a Caution form, with Caution Scope and Course Threshold above Caution Category, and the Confirmation by Employee panel with its statements and edit pencil"
   points={[
     { x: 39.1, y: 27.8, title: 'Caution Scope', body: 'Required. Whether the template covers the whole organisation, a department, or a team.' },
     { x: 77.1, y: 27.8, title: 'Course Threshold', body: 'How many courses an agent must fail in the category before a caution is detected. The lowest you may set is 2.' },
@@ -170,7 +170,7 @@ Setting it to 1 is refused with **Course threshold must be at least 2 to prevent
 
 <Hotspots
   src={addNewFieldImg}
-  alt="The Add New Field modal: Field Name and Description above Type of Field, Mandatory Status, and Expected Respondent, with Add New Field and Discard below"
+  alt="The Add New Field modal, with Field Name and Description above Type of Field, Mandatory Status, and Expected Respondent, and Add New Field and Discard below"
   points={[
     { x: 46.7, y: 33.0, title: 'Field Name', body: 'What the field is called on the caution.' },
     { x: 46.8, y: 41.0, title: 'Description', body: 'Guidance for whoever fills it in.' },

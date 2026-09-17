@@ -16,7 +16,7 @@ pagination_next: agents/your-account
 You need:
 
 - **An award presented to you.** Until one is, the page reads **No Awards Found**. That is a result rather than a fault.
-- **Nothing else.** Awards arrive on their own. There is no action to take to receive one.
+- **Nothing else.** Awards arrive automatically. There is no action to take to receive one.
 
 ---
 

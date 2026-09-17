@@ -41,7 +41,7 @@ The form is one page in four labelled parts, and **Add Details** is the first.
 
 <Hotspots
   src={newCourseImg}
-  alt="The Add Details step of the course form: Title and Category above Description, then Scope and the Training Initiation Score Range slider"
+  alt="The Add Details step of the course form, with Title and Category above Description, then Scope and the Training Initiation Score Range slider"
   points={[
     { x: 23.1, y: 31.6, title: 'Title', body: 'The name of the course. Agents see it as Course Title in their list.' },
     { x: 65.2, y: 31.6, title: 'Category', body: 'The scorecard category the Training Initiation Score Range below is measured against, not only a label for browsing.' },
@@ -71,7 +71,7 @@ Choosing departments or teams reveals a selector for which ones, and the course 
 
 This decides who receives the course, measured against the agent's score in the **Category** chosen above rather than their overall score. It is a slider with two handles over 0 to 100, showing the floor and ceiling you set as percentages on either side. On each evaluation cycle, every agent in scope whose score in that category falls between them receives the course.
 
-Set it around the gap you found on the Dashboard, not around a pass percentage. A range of 0 to 100 assigns the course to everyone, leaving no comparison group to show whether it worked. A narrower band, such as 40 to 65, reaches only the people struggling with what the course teaches and leaves the rest as a comparison group. It is a band rather than a threshold, so an agent above the ceiling does not receive the course. That is deliberate: training aimed at a weakness is wasted on someone who does not have it.
+Set it around the gap you found on the Dashboard, not around a pass percentage. A range of 0 to 100 assigns the course to everyone, leaving no comparison group to show whether it worked. A narrower band, such as 40 to 65, reaches only the people struggling with what the course teaches and leaves the rest as a comparison group. It is a band rather than a threshold, so an agent above the ceiling does not receive the course. That is deliberate. Training aimed at a weakness is wasted on someone who does not have it.
 
 Scope and the score range work together rather than instead of each other. Scope decides who is eligible at all. The range decides which of those people qualify on a given cycle.
 
@@ -107,12 +107,12 @@ Select **Add Question** for each question you want to ask. Every question needs 
 | Answer type | What the agent does | What you set |
 | :--- | :--- | :--- |
 | **Multiple Choice** | Picks one of the options | At least two options, and which is the **Correct Answer** |
-| **Short Paragraph** | Writes a brief answer | The question, and the answer Vela judges it against |
-| **Long Paragraph** | Writes at length | The question, and the answer Vela judges it against |
+| **Short Paragraph** | Writes a brief answer | The question, and the answer Vela scores it against |
+| **Long Paragraph** | Writes at length | The question, and the answer Vela scores it against |
 
 A multiple choice question is refused until it has at least two options and one of them is marked correct. Use **Add option** to build the list.
 
-Paragraph answers still need a correct answer, typed rather than chosen. Vela compares the agent's answer against it and scores by meaning rather than exact wording. Write those questions so there is something specific to judge: "Name the two disclosures required before taking payment" can be scored, "What did you think of this course?" cannot.
+Paragraph answers still need a correct answer, typed rather than chosen. Vela compares the agent's answer against it and scores by meaning rather than exact wording. Write those questions so there is something specific to score. "Name the two disclosures required before taking payment" can be scored, and "What did you think of this course?" cannot.
 
 Every question also carries **Points**, worth 1 by default and adjustable, though saving is refused if you set it to 0, and **Required**, a toggle set on by default that decides whether the agent must answer it before submitting the quiz.
 
@@ -130,7 +130,7 @@ These three sit together below the quiz, and they decide how much room an agent 
 
 <Hotspots
   src={retakesImg}
-  alt="The Set Deadlines And Reminders step: Quiz Retakes, Deadline, and Set course nudges, each a control with its own info icon, stacked down the page above the Create Course and Close buttons"
+  alt="The Set Deadlines And Reminders step, with Quiz Retakes, Deadline, and Set course nudges, each a control with its own info icon, stacked down the page above the Create Course and Close buttons"
   points={[
     { x: 31.1, y: 26, title: 'Quiz Retakes', body: 'How many retakes an agent gets after a first attempt, from 1 to 5. New courses start at 3, which allows four attempts in total.' },
     { x: 28.9, y: 42, title: 'Deadline', body: 'How long an agent has from the day the course is assigned to them, rather than a fixed date. New courses start at 7 days.' },
@@ -160,7 +160,7 @@ Add up to three, and each appears as `2 days before deadline` with a control to 
 
 Because the deadline runs from the day each agent receives the course, nudges follow each agent's own due date rather than a shared calendar date.
 
-Two nudges are usually enough: one with enough time left to do the work, and one close to the deadline. A course with none relies on the agent remembering.
+Two nudges are usually enough, one with enough time left to do the work and one close to the deadline. A course with none relies on the agent remembering.
 
 ---
 

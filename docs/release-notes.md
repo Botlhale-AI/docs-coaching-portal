@@ -40,7 +40,7 @@ A separate portal agents sign in to, covering their own performance and training
 
 ### Scoring of written quiz answers
 
-Vela scores quiz questions answered as **Short Paragraph** or **Long Paragraph** against a team lead's typed answer, judging by meaning rather than requiring exact wording.
+Vela scores quiz questions answered as **Short Paragraph** or **Long Paragraph** against a team lead's typed answer, by meaning rather than exact wording.
 
 {/* The reason for each score is stored (submit-quiz/route.js) but a live check on 2026-09-07 confirmed it is shown nowhere - not on the agent's result screen and not in the team lead's course views. The claim that a reason is "recorded for review" was removed here, in create-and-assign-courses.md, and in course-and-award-fields.md until a screen shows it. */}
 

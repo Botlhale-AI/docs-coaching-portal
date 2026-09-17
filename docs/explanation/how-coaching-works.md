@@ -27,7 +27,7 @@ This page explains what runs, when, and what the numbers it produces support.
 
 ## Coaching is an add-on, and it is off by default
 
-The **Coaching** section appears in the left sidebar of the main Vela platform only where coaching is enabled for your organisation. Where it is not, none of this exists: no Dashboard, no Courses, no Preferences, and no portal for agents to sign in to.
+The **Coaching** section appears in the left sidebar of the main Vela platform only where coaching is enabled for your organisation. Where it is not, none of this exists. There is no Dashboard, no Courses, no Preferences, and no portal for agents to sign in to.
 
 This is worth knowing before troubleshooting an empty screen. An agent who cannot find their courses may not have a coaching problem at all.
 
@@ -50,7 +50,7 @@ flowchart LR
 
 Between runs, nothing is assigned. A course you create this morning reaches nobody until the next run, however obviously some agent qualifies for it. This is the single most common reason a team lead thinks coaching is broken when it is working exactly as configured.
 
-It also means the cycle length is a real decision rather than a formality. A monthly cycle judges an agent on a month of work and responds within a month. A daily cycle responds within a day, on a day's evidence, which is rarely enough to distinguish a weakness from a bad shift.
+It also means the cycle length is a real decision rather than a formality. A monthly cycle evaluates an agent on a month of work and responds within a month. A daily cycle responds within a day, on a day's evidence, which is rarely enough to distinguish a weakness from a bad shift.
 
 ---
 
@@ -60,12 +60,12 @@ There is no control anywhere that assigns a course to a named person. You descri
 
 Two settings shape who that is:
 
-- **Scope** decides who is eligible at all: the whole organisation, chosen departments, or chosen teams.
+- **Scope** decides who is eligible at all, whether the whole organisation, chosen departments, or chosen teams.
 - **Training Initiation Score Range** decides which of those eligible people qualify on this run.
 
 Scope is a fence, and the score range is a filter applied inside it. An agent outside the scope never qualifies whatever they score.
 
-This design has a consequence worth stating plainly: coaching follows the scores, so it inherits whatever the scores are measuring. If your scorecard does not ask about the thing you want to coach, no range you set finds the people who need it.
+This design has a consequence worth stating plainly. Coaching follows the scores, so it inherits whatever the scores are measuring. If your scorecard does not ask about the thing you want to coach, no range you set finds the people who need it.
 
 ---
 
@@ -83,11 +83,11 @@ The same applies to courses in reverse. A course set to 0 to 100 is assigned to 
 
 Coaching scores come from the main Vela platform's analysis of interactions. They measure repetition well and circumstance poorly, and the difference matters when you are about to discuss someone's performance with them.
 
-They are reliable for **volume and consistency**: whether a requirement was met across many calls, whether one agent differs from their team, whether a figure moved after training. These are the questions the Dashboard is built to answer.
+They are reliable for **volume and consistency**, such as whether a requirement was met across many calls, whether one agent differs from their team, and whether a figure moved after training. These are the questions the Dashboard is built to answer.
 
-They are weaker on **anything requiring context about the individual call**. A low score on a difficult customer and a low score on a careless one read the same. This is why the **Reviewed Interactions Only** setting exists: choosing it means coaching follows work a person has checked, rather than the analysis alone.
+They are weaker on **anything requiring context about the individual call**. A low score on a difficult customer and a low score on a careless one read the same. This is why the **Reviewed Interactions Only** setting exists. Choosing it means coaching follows work a person has checked, rather than the analysis alone.
 
-The practical rule: use the scores to decide **who to look at**, and look at the interactions to decide **what to say**. A course built from a category average without opening a single call is a guess with a number attached to it.
+The practical rule is to use the scores to decide **who to look at**, and the interactions to decide **what to say**. A course built from a category average without opening a single call is a guess with a number attached to it.
 
 ---
 
@@ -103,7 +103,7 @@ Because an auto-fail zeroes the interaction, it also pulls the agent's average d
 
 ## The results are recorded, not judged
 
-Vela records what happened: who was assigned what, when it was due, what they scored, and what they scored the first time. It does not decide whether an agent is improving, and it does not escalate anything.
+Vela records who was assigned what, when it was due, what they scored, and what they scored the first time. It does not decide whether an agent is improving, and it does not escalate anything.
 
 That is deliberate, and it puts the judgement where it belongs. **Progress** shows you a course nobody started and a course everybody passed at 100%, and treats them the same. Both are worth your attention, for opposite reasons, and only a person can tell which is which.
 

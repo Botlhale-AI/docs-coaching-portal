@@ -81,7 +81,7 @@ Select **Take Quiz** on a course that has one. The quiz page shows the course na
 
 ![The quiz page, with the trail reading Courses then the course name then Quiz, a numbered question, the retake count at the top, and Close and Submit Quiz below](../../img/screenshots/agent_view/courses/quiz-question.png)
 
-Written answers are compared against an answer your team lead set when building the quiz, with Vela judging the meaning rather than the exact wording. Answer the question that was asked rather than writing generally around it.
+Written answers are compared against an answer your team lead set when building the quiz, with Vela scoring the meaning rather than the exact wording. Answer the question that was asked rather than writing generally around it.
 
 When you submit, the page shows **Quiz Completed** and your score as a percentage, shown in red if it is below the pass mark. Below that:
 
@@ -89,7 +89,7 @@ When you submit, the page shows **Quiz Completed** and your score as a percentag
 - Three buttons, **Return to Course**, **Retake Quiz** with the number left in brackets, and **Complete Course**.
 - **Quiz Answers** lists each question with the points it earned, such as **1/3 points**.
 
-![The quiz results screen: Quiz Completed with the score, the passing-score message, and the Return to Course, Retake Quiz and Complete Course buttons](../../img/screenshots/agent_view/courses/quiz-failed.png)
+![The quiz results screen, with Quiz Completed and the score, the passing-score message, and the Return to Course, Retake Quiz and Complete Course buttons](../../img/screenshots/agent_view/courses/quiz-failed.png)
 
 In **Quiz Answers**, a paragraph question shows the answer you gave, and a multiple-choice question shows every option with the one you chose marked **Answer**.
 

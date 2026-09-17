@@ -63,7 +63,7 @@ Name it for the gap, describe what it covers in terms the agent recognises, and 
 
 ![The Add Details step of the course form, with Title, Category, Description, Scope, and the score range slider](../../img/screenshots/team_lead/courses/new-course.png)
 
-The [**Training Initiation Score Range**](../reference/glossary.md#training-initiation-score-range) is what decides who receives it: every agent whose score in that category falls inside it. Narrow it to the agents you saw behind in step 2. A wide range reaches everyone and measures nothing.
+The [**Training Initiation Score Range**](../reference/glossary.md#training-initiation-score-range) is what decides who receives it, which is every agent whose score in that category falls inside it. Narrow it to the agents you saw behind in step 2. A wide range reaches everyone and measures nothing.
 
 See [Create and Assign Courses](./create-and-assign-courses.md).
 

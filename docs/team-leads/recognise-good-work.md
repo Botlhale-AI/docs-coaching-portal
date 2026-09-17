@@ -31,7 +31,7 @@ Select **Coaching** in the left sidebar, then **Awards**. Select **Create New Aw
 
 <Hotspots
   src={createAwardImg}
-  alt="The Create an Award form: Award Name and Award Category above Award Description, then Scope and the Score Threshold (Range) Min and Max fields"
+  alt="The Create an Award form, with Award Name and Award Category above Award Description, then Scope and the Score Threshold (Range) Min and Max fields"
   points={[
     { x: 28.8, y: 42.2, title: 'Award Name', body: 'What the award is called. It shows in the agent\'s own Awards list, but not on the certificate, which prints the award\'s category and score instead.' },
     { x: 68.4, y: 42.2, title: 'Award Category', body: "The scorecard category the Score Threshold below measures against. Choose from the same categories your organisation's scorecard questions are grouped into." },
