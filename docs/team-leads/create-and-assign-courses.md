@@ -75,6 +75,8 @@ Set it around the gap you found on the Dashboard, not around a pass percentage. 
 
 Scope and the score range work together rather than instead of each other. Scope decides who is eligible at all. The range decides which of those people qualify on a given cycle.
 
+{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev (#842), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
+
 ---
 
 ## 3. Add Content

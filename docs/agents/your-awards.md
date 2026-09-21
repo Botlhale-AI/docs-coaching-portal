@@ -82,7 +82,7 @@ Select **Download** to save the certificate. It is yours to keep or share, and i
 Your team lead sets the criteria and Vela presents the award automatically when an agent meets them on the [evaluation cycle](../reference/glossary.md#evaluation-cycle), the same way courses are assigned. Nobody presents them manually.
 :::
 
-{/* UNVERIFIED: no code in vela or vela-data creates a PresentedAward record anywhere, the same gap that exists for course assignment (confirmed only by the product owner's own recollection, not by source). The Preferences page's own copy describes one Evaluation Cycle process covering "awards and training courses" with no distinction, which is why this note treats them the same. */}
+{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), not origin/main, which has no code that presents awards or assigns courses. Full note under Award in glossary.md. */}
 
 ---
 

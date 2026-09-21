@@ -65,6 +65,8 @@ Name it for the gap, describe what it covers in terms the agent recognises, and 
 
 The [**Training Initiation Score Range**](../reference/glossary.md#training-initiation-score-range) is what decides who receives it, which is every agent whose score in that category falls inside it. Narrow it to the agents you saw behind in step 2. A wide range reaches everyone and measures nothing.
 
+{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev (#842), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
+
 See [Create and Assign Courses](./create-and-assign-courses.md).
 
 ---

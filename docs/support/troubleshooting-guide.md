@@ -135,7 +135,7 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 2. Lower it to a band that is demanding but reachable, or leave it if it is deliberately rare.
 3. Changes take effect from the next evaluation cycle. Awards already presented stay presented.
 
-{/* UNVERIFIED: this entry assumes awards are presented automatically by the evaluation cycle, the same way courses are assigned. No code path that presents either was found in vela or vela-data; the Preferences page's own copy groups "awards and training courses" under one Evaluation Cycle description, which is why they're treated the same here. */}
+{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), not origin/main, which has no code that presents awards or assigns courses. Full note under Award in glossary.md. */}
 
 ---
 

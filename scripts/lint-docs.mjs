@@ -198,7 +198,7 @@ for (const file of files) {
 
   // Style guide section 4: no contractions. Product strings in UI_LITERALS
   // are quoted as the product spells them, so they pass.
-  for (const m of body.matchAll(/\b(?:can't|don't|doesn't|isn't|won't|aren't|wasn't|didn't|haven't|hasn't|you're|we're|they're|it's)\b/gi)) {
+  for (const m of body.matchAll(/\b(?:can't|don't|doesn't|isn't|won't|aren't|wasn't|didn't|haven't|hasn't|you're|we're|they're|it's|you'll|you've|we've|we'll|that's|there's|what's|let's)\b/gi)) {
     const ctx = body.slice(Math.max(0, m.index - 40), m.index + 40).replace(/\n/g, " ");
     if (UI_LITERALS.some((lit) => ctx.includes(lit))) continue;
     err(rel, `contraction "${m[0]}": write it out. In: ...${ctx.trim()}...`);

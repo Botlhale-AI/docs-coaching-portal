@@ -38,9 +38,9 @@ Three controls sit above the list:
 
 ![The Sort By panel over the Calls list, with Ascending and Descending above the columns you can order by, and Save Changes and Close at the foot](../../img/screenshots/agent_view/interactions/sort.png)
 
-**Filter** opens a panel. It starts with **Department**, **Team**, **Handle Time**, **Silent Time**, **Agent Score**, and **Direction**, and scrolls for the rest. Set what you need, then select **Save Changes**. **Clear All Fields** at the top resets every field.
+**Filter** opens a panel holding **Department**, **Team**, **Handle Time**, **Silent Time**, **Agent Score**, **Direction**, **Topic**, and **Reviewed**, in that order, so the last two are out of sight until you scroll. Set what you need, then select **Save Changes**. **Clear All Fields** at the top resets every field.
 
-{/* UNVERIFIED: below Direction, origin/main filter.jsx renders Topic and Reviewed with no agentMode gate, so an agent should see them on scrolling. Not yet confirmed on a scrolled capture. */}
+{/* VERIFIED 2026-09-21 against app/(pages)/interactions/calls/filter.jsx on origin/main, which the agent list renders with agentMode set. Topic and Reviewed carry no agentMode gate. Agent, Alerts, and Tags are gated off for an agent, and the Compliance Score and Quality Score filters are commented out for everyone. The capture above shows the panel down to Direction; Topic and Reviewed are not yet seen on a scrolled capture. */}
 
 ![The Filter By panel over the Calls list, with Department, Team, Handle Time, Silent Time, Agent Score, and Direction visible, the Clear All Fields link, and Save Changes and Close at the foot](../../img/screenshots/agent_view/interactions/filter.png)
 

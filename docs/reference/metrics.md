@@ -62,7 +62,7 @@ Shown on **Coaching → Awards** for a team lead, and on **Awards** in the porta
 
 **What to look for:** awards are presented by the cycle, so an empty list is a date range that predates the last run more often than a fault.
 
-{/* UNVERIFIED: no code path was found that presents awards automatically, the same gap that exists for course assignment. The Preferences page's own copy describes one cycle covering both with no distinction, which is why this is stated the same way as the course-progress note above. */}
+{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), not origin/main, which has no code that presents awards or assigns courses. Full note under Award in glossary.md. */}
 
 ---
 

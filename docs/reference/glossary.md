@@ -57,7 +57,7 @@ Recognition presented automatically when an agent's score in the award's **Categ
 
 Nobody presents an award manually. See [Recognise Good Work](../team-leads/recognise-good-work.md).
 
-{/* UNVERIFIED: no code in vela or vela-data creates the record that presents an award, so the literal implementation isn't directly observed, the same gap that exists for course assignment (confirmed only by the product owner's own knowledge of a third service, not by source). The Preferences page's own copy groups "awards and training courses" under one Evaluation Cycle description with no distinction, and Award's schema (category + triggerScore, no course-link field) is structurally identical to Course's, so both point the same way. Confirm with the product owner if a more specific answer is ever needed. */}
+{/* VERIFIED 2026-09-21 against origin/dev, not origin/main. Nothing on origin/main creates a PresentedAward or a CourseAssigned record: lib/coachingCycle.js (#842, merged to dev 2026-08-30) says so in its header, citing #693, "settings with no effect". On dev that file presents awards and assigns courses in one pass, triggered by coaching.nextEvaluationDate from Preferences and run by an hourly cron through /api/coaching/cycle. Score Threshold (Range) and Training Initiation Score Range are inclusive bands, floor <= score <= ceiling. An award is presented once per agent per award per evaluation window, so again on a later cycle if the agent qualifies again. A course is not re-assigned while one is outstanding. Until #842 reaches main the released product has no code that does any of this, so the behaviour on these pages is dev's. Recheck when it ships. See the marker under Category for the one place dev contradicts the pages. */}
 
 ## Category
 
@@ -66,6 +66,8 @@ One list, shared across coaching and the main Vela platform. It is the same set 
 On the **Dashboard**, a category groups scorecard questions, and **Category Scores** breaks performance down by them.
 
 On a course or an award, **Category** is the one whose score the **Training Initiation Score Range** or **Score Threshold (Range)** is measured against, not the agent's overall score. A course scoped to Compliance with a range of 40 to 65 reaches agents whose Compliance score, specifically, falls in that band, whatever their other categories look like.
+
+{/* UNVERIFIED: that the range is measured against the agent's score in the chosen Category. origin/main has no implementation to check. The only one, lib/coachingCycle.js on origin/dev (#842), scores each agent on their overall weighted score across every category and never reads the award's or course's category field. Either the form's Category is meant to scope the score and #842 is wrong, or Category is a label and this paragraph is. Three things point at the former. Neither create form carries help text on Category or the range, so the product itself does not say. lib/warningAutoDetect.js, which #842's header says it deliberately mirrors, does score per category: it loops the category scores and matches template.category. And the certificate (lib/generateAward.js) prints "achievement in <category> with a score of <n>%", which misleads if n is the overall score. Needs the product owner to decide, and #842 should be checked before it reaches main. Stated the same way on course-and-award-fields.md, how-the-pieces-fit.md, create-and-assign-courses.md, getting-started.md (team lead), recognise-good-work.md, and faq.md. */}
 
 ## Coaching Portal
 

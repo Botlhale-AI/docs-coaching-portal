@@ -12,7 +12,7 @@ import createAwardImg from '@site/img/screenshots/team_lead/awards/create-award.
 
 An award is recognition you define once and Vela presents automatically. You set what earns it, and on each evaluation cycle every agent who meets the criteria receives it with a certificate. Like courses, awards reach people by score rather than by name.
 
-{/* UNVERIFIED: no code in vela or vela-data creates the record that presents an award, the same gap that exists for course assignment. The Preferences page's own copy groups "awards and training courses" under one Evaluation Cycle description with no distinction, which is why this page states it the same way. Carried on glossary.md, metrics.md, troubleshooting-guide.md and your-awards.md too. */}
+{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), not origin/main, which has no code that presents awards or assigns courses. Full note under Award in glossary.md. */}
 
 ---
 
@@ -50,6 +50,8 @@ Every award runs on your organisation's evaluation cycle, set under [Coaching Pr
 **Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score in **Award Category** falls between **Min** and **Max**, the same mechanism a course uses, aimed at a high band instead of a low one.
 
 That lets you recognise a tier rather than everyone above a line. A "top performer" award is a high min with a max of 100 on the category that matters most. A band such as 70 to 79 picks out that group on its own.
+
+{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev (#842), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
 
 ![Scope set to Specific Departments, with the Select Departments list open beside the Score Threshold Min and Max](../../img/screenshots/team_lead/awards/create-award-scope.png)
 

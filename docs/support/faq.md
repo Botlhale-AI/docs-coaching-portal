@@ -27,6 +27,8 @@ A: An agent sees their own interactions, scores, courses, and awards, never a co
 **Q: How does an agent get a course?**
 A: By score. You set a **Category** on the course and a **Training Initiation Score Range** within it, and on each evaluation cycle every agent in scope whose score in that category falls in the range receives it. Nobody assigns courses manually.
 
+{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev (#842), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
+
 **Q: How long does an agent have to finish a course?**
 A: The **Deadline** on the course, set as a count and a unit of **Days**, **Weeks**, or **Months**. Each agent's **Due Date** is worked out from the day they receive it, so two agents assigned on different days have different due dates.
 
@@ -39,7 +41,7 @@ A: Yes, between 1 and 5 times, set per course by your team lead as **Quiz Retake
 **Q: How are awards presented?**
 A: Automatically, on the evaluation cycle, to every agent whose score in the award's **Award Category** falls inside its **Score Threshold (Range)**. Agents download their own certificate from their portal.
 
-{/* UNVERIFIED: no code in vela or vela-data creates the record that presents an award, the same gap that exists for course assignment. Carried on glossary.md, metrics.md, troubleshooting-guide.md, your-awards.md and recognise-good-work.md too. */}
+{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), not origin/main, which has no code that presents awards or assigns courses. Full note under Award in glossary.md. */}
 
 ---
 
