@@ -32,6 +32,8 @@ What connects them is the evaluation cycle. Team leads define, the cycle distrib
 
 Preferences sits at the top of everything. Its four settings fan out into the rest of coaching. **Evaluation Scope** decides which interactions produce the scores, and those scores, broken down by category, are what the Dashboard shows and what a course or award range is measured against. That range always checks the agent's score in one specific **Category**, never their overall score. **Evaluation Cycle** decides when that measurement runs, and the run is what assigns courses and presents awards, which is what Progress then records. **Pass Percentage** decides whether a quiz result in Progress reads as a pass. **Agent View Permissions** sits apart from all of it, governing only what an agent can open under Interactions.
 
+{/* flowchart TD on purpose, against the LR default in STYLE_GUIDE.md section 6: four settings fan out from Preferences and rejoin at Progress, and drawn left to right that is six columns wide, which overflows a phone screen. Top down keeps it in one column of width. */}
+
 ```mermaid
 flowchart TD
     P("Preferences") --> C("Evaluation Cycle")

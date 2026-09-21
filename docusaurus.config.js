@@ -30,7 +30,8 @@ const config = {
           routeBasePath: 'docs',
           path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          showLastUpdateTime: false,
+          // Dates come from git, so CI checks out full history. See .github/workflows/docs.yml.
+          showLastUpdateTime: true,
           showLastUpdateAuthor: false,
         },
         blog: false,
@@ -118,7 +119,7 @@ const config = {
       style: 'light',
       links: [
         {
-          title: 'Team Leads & QAs',
+          title: 'For Team Leads',
           items: [
             {
               label: 'Getting Started with Coaching',
@@ -133,12 +134,12 @@ const config = {
               to: '/docs/team-leads/create-and-assign-courses',
             },
             {
-              label: 'Recognise Good Work',
-              to: '/docs/team-leads/recognise-good-work',
-            },
-            {
               label: 'Track Learning Progress',
               to: '/docs/team-leads/track-learning-progress',
+            },
+            {
+              label: 'Recognise Good Work',
+              to: '/docs/team-leads/recognise-good-work',
             },
             {
               label: 'Set Coaching Preferences',
@@ -147,7 +148,7 @@ const config = {
           ],
         },
         {
-          title: 'Agents',
+          title: 'For Agents',
           items: [
             {
               label: 'Getting Started for Agents',
@@ -158,16 +159,16 @@ const config = {
               to: '/docs/agents/personal-performance',
             },
             {
+              label: 'Review Your Interactions',
+              to: '/docs/agents/your-interactions',
+            },
+            {
               label: 'Track Your Courses',
               to: '/docs/agents/your-courses',
             },
             {
               label: 'View Your Awards',
               to: '/docs/agents/your-awards',
-            },
-            {
-              label: 'Review Your Interactions',
-              to: '/docs/agents/your-interactions',
             },
             {
               label: 'Manage Your Account',

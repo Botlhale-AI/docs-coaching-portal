@@ -21,7 +21,7 @@ An award is recognition you define once and Vela presents automatically. You set
 You need:
 
 - **Something worth recognising.** An award for a mark most of the team already clears recognises nothing, and agents work out quickly that it is automatic. Check where scores actually sit on the [Coaching Dashboard](./coaching-dashboard.md) first, then set the floor above most of the team.
-- **To know your evaluation cycle.** Awards go out on the cycle set under [Coaching Preferences](./coaching-preferences.md), not the moment you save the form. An award created today waits for that cycle to run before the first agent receives it, so check the cycle before you commit to a date you're expecting it to land by.
+- **To know your evaluation cycle.** Awards go out on the cycle set under [Coaching Preferences](./coaching-preferences.md), not the moment you save the form. An award created today waits for that cycle to run before the first agent receives it, so check the cycle before you commit to a date you are expecting it to land by.
 
 ---
 
@@ -81,11 +81,9 @@ Open **Awards Presented**. Each row is one award reaching one agent:
 
 An empty list where you expected awards usually means the date range, not a fault. Awards are presented on the evaluation cycle, so a range that predates the last run shows nothing.
 
-![The filter panel on the awards list](../../img/screenshots/team_lead/awards/filter.png)
+**Filter** opens **Filter By**, shown below. **Sort By** and the date range open the same panels as on **Progress**, described in [Track Learning Progress](./track-learning-progress.md#2-narrow-the-list).
 
-![The sort control on the awards list](../../img/screenshots/team_lead/awards/sort.png)
-
-![The date range control above the Awards Presented list](../../img/screenshots/team_lead/awards/date-range.png)
+![The filter panel on the Awards Presented list](../../img/screenshots/team_lead/awards/filter.png)
 
 ---
 

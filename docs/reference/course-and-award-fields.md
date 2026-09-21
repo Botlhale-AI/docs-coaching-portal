@@ -64,7 +64,7 @@ Added one at a time with **Add Question**. Each question has its text and an ans
 
 | Answer type | What you set | Validation |
 | :--- | :--- | :--- |
-| **Multiple Choice** | Options, built with **Add option**, and the **Correct Answer** | At least two options, and one marked correct |
+| **Multiple Choice** | Options, built with **Add option**, and the **Correct Answer** | Between two and ten options, and one marked correct. **Add option** disappears at ten, and the **bin** on an option is disabled at two |
 | **Short Paragraph** | The question, and the answer Vela scores it against | The question cannot be empty, and an answer must be set |
 | **Long Paragraph** | The question, and the answer Vela scores it against | The question cannot be empty, and an answer must be set |
 

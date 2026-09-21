@@ -110,7 +110,7 @@ Select **Add Question** for each question you want to ask. Every question needs 
 | **Short Paragraph** | Writes a brief answer | The question, and the answer Vela scores it against |
 | **Long Paragraph** | Writes at length | The question, and the answer Vela scores it against |
 
-A multiple choice question is refused until it has at least two options and one of them is marked correct. Use **Add option** to build the list.
+A multiple choice question is refused until it has at least two options and one of them is marked correct. Use **Add option** to build the list, up to ten.
 
 Paragraph answers still need a correct answer, typed rather than chosen. Vela compares the agent's answer against it and scores by meaning rather than exact wording. Write those questions so there is something specific to score. "Name the two disclosures required before taking payment" can be scored, and "What did you think of this course?" cannot.
 

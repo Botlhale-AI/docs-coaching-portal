@@ -13,7 +13,9 @@ The Coaching Portal is an add-on to Vela. Changes to the wider platform, such as
 
 ---
 
-## Current Release
+## Vela 2.1
+
+Coaching shipped with Vela 2.1, and nothing in it has changed on a later release. The platform side of that release is recorded under [Version 2.1](https://docs-vela.botlhale.ai/docs/release-notes#version-21) in the Vela release notes.
 
 ### Coaching for Team Leads
 

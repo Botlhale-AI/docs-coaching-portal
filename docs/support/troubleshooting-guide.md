@@ -13,7 +13,7 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 
 ## Signing In
 
-{/* The sign-in messages in this section are from app/api/login/route.js on origin/main, shown on the sign-in page as the message Vela shows. The unconfirmed-address and Security tab entries are confirmed on screen. The others are traced in source and not yet seen live, so confirm the wording at the next capture. */}
+{/* The sign-in messages in this section are from app/api/login/route.js on origin/main, shown on the sign-in page as the message Vela shows. Confirmed on screen: the unconfirmed-address message, the Security tab entry, "You are not registered as an agent. Please log in on the main Vela login page." (2026-09-21), and "Your account has been blocked. Please contact support for assistance" (2026-09-21). Not yet seen live: the agent-at-main-login message, the deactivated message, and the tenth-attempt "Too many login attempts" wording that precedes the blocked one. No capture of the wrong-portal message is in the repository yet: the one taken shows a real address, so mask it with a solid bar before saving it as img/screenshots/agent_view/auth/wrong-portal.png. */}
 
 **Problem:** Sign-in is refused with **We have sent you an email. Please verify your email address.**, even with the password from the invitation email.
 

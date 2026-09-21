@@ -86,14 +86,24 @@ Signing in with Google or Microsoft means your identity provider holds your pass
 
 Where you cannot sign in because you have forgotten your password, reset it from the sign-in page rather than asking for a new invitation.
 
-1. On the sign-in page, select **Forgot your password?** beneath the password field.
+1. On the sign-in page, select **Forgot your password?** beneath the password field. It opens **Vela Password Reset**.
 2. Enter your email address and select **Reset**. The page confirms that a reset link has been sent to your address, and an email headed **Reset Your Password** arrives.
-3. Open the link in the email, then enter your new password under **Password** and again under **Confirm Password**. The rules above apply.
-4. Select **Reset**. The page reads **You have successfully reset your password. You may now sign in.**, and **Return to login** takes you back to the sign-in page.
+
+   ![The Vela Password Reset page, with the Email field and the Reset button](../../img/screenshots/agent_view/auth/forgot-password.png)
+
+3. In the email, select **Reset Password**. If the button does not work, the email also carries the link to paste into your browser.
+
+   ![The Reset Your Password email, with the Reset Password button and the link to paste beneath it](../../img/screenshots/agent_view/auth/reset-email.png)
+
+4. The link opens a second **Vela Password Reset** page. Enter your new password under **Password** and again under **Confirm Password**. The rules above apply, and the **information** icon beside **Password** lists them.
+
+   ![The second Vela Password Reset page, with Password and Confirm Password above the Reset button](../../img/screenshots/agent_view/auth/reset-password.png)
+
+5. Select **Reset**. The page reads **You have successfully reset your password. You may now sign in.**, and **Return to login** takes you back to the sign-in page.
 
 A link that reads **Your password reset link has expired** has been left too long. Start again from **Forgot your password?**.
 
-{/* SCREENSHOT: the Forgot your password? page, with its Email field and Reset button, and the reset page with Password and Confirm Password. Save under img/screenshots/agent_view/auth/. Wording above is from forgotPasswordForm.jsx, resetPasswordForm.jsx, and app/api/reset/route.js on origin/main, not yet seen on a live screen. */}
+{/* The success message and Return to login in step 5, and the expired-link message, are from resetPasswordForm.jsx and app/api/reset/route.js on origin/main. Every screen in the flow is captured above; those two states are not, since they need a live token. */}
 
 This applies to password sign-in only. Where you sign in with Google or Microsoft, reset it with your provider.
 

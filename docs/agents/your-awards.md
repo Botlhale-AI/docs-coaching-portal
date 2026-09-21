@@ -26,7 +26,7 @@ Select **Awards** in the left sidebar. The page opens on **Recent Activity**, wh
 
 ![The Awards page in the Agent Portal, with Search, the date range, Filter and Sort By above a Recent Activity card for the newest award](../../img/screenshots/agent_view/awards/awards-overview.png)
 
-Every award you have been presented sits below that, one card each, reading down as its name, the date it was awarded, what it recognises, and the category it was earned in. An award with the same name can appear more than once, carrying a different date each time.
+Every award you have been presented sits below that under **Your Awards**, one card each, reading down as its name, the date it was awarded, what it recognises, and the category it was earned in. An award with the same name can appear more than once, carrying a different date each time.
 
 ![The full list of awards, each card carrying a trophy, the award name, the date awarded, the description, and the category](../../img/screenshots/agent_view/awards/awards-overview2.png)
 
@@ -39,11 +39,9 @@ Four controls sit above the list:
 | **Sort By** | Orders the list by date awarded, award name, or award category |
 | The date range | Narrows the list to a period |
 
-![The filter panel open on the awards list, listing Award Categories to narrow by](../../img/screenshots/agent_view/awards/filter.png)
+**Filter** opens **Filter By**, with a tick box for each **Award Category** and **Clear All Fields** at the top. Select **Apply** to use it. **Sort By** and the date range open the same panels as elsewhere in the portal, and the date range picker is described in [Monitor Your Performance](./personal-performance.md#1-set-the-period).
 
-![The sort control open on the awards list](../../img/screenshots/agent_view/awards/sort.png)
-
-![The date range control above your own awards list](../../img/screenshots/agent_view/awards/date-range.png)
+![The Filter By panel open on the awards list, with a tick box for each Award Category and Apply and Close at the foot](../../img/screenshots/agent_view/awards/filter.png)
 
 ---
 

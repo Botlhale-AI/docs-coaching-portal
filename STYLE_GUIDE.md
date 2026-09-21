@@ -237,6 +237,7 @@ The same rule applies to anything else where colour is the signal in the interfa
 - **Active voice.** "An administrator sets the boundaries", not "The boundaries are set by an administrator".
 - **Short sentences.** If a sentence has two ideas, make it two sentences.
 - **UK English.** organisation, analyse, recognise, customise, behaviour.
+- **No contractions.** "cannot", not "can't". The corpus expands them everywhere, and the linter fails the common ones. A product string that contains one is quoted as the product spells it.
 - **Select, not click.** "Select **Apply**", not "Click Apply". See below.
 
 ### Select, not click

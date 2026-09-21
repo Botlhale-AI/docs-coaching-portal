@@ -30,7 +30,7 @@ Select **Courses** in the left sidebar. The page groups what you have by where y
 | **Courses In Progress** | Opened and part-way through |
 | **Completed Courses** | Finished, as a table rather than cards, with your result |
 
-**Search**, **Sort By**, and **Filter** sit above the list for when you have more than a screenful.
+**Search**, **Sort By**, and **Filter** sit above the list for when you have more than a screenful. Beneath them, four tabs each carry a count. **All Courses** shows every group, and **Assigned**, **In Progress**, and **Completed** show one group each.
 
 ![The Courses page in the Agent Portal, with courses grouped by assigned, in progress, and completed](../../img/screenshots/agent_view/courses/courses-overview.png)
 
@@ -46,22 +46,18 @@ Each course shows its **Due Date**. Start early enough to finish before it.
 
 ## 2. Work Through the Material
 
-Select **View Course** to open one. The page opens on a description of what it covers, and the material sits below.
+Select **View Course** to open one. The page opens on a description of what it covers, then its details, with **Category**, **Scope**, and **Applies to** on the left and **Initiation Score**, **Score**, **Date Assigned**, **Due Date**, and, once finished, **Date Completed** on the right. The material sits below.
 
 {/* Two independent captures (quick-search.png above and course-actions.png below) both show View Course on an Assigned-status card, not Start Course. AgentCourseView.jsx ties Start Course to status === "assigned", but the live product no longer matches that. Updated this step to what the screen actually shows. */}
 
 Material comes in two forms, and a course can carry both:
 
-- **Course Material** is a PDF your team lead uploaded. Select **Download Material** to read it.
-- **Course Link** is an **External Link** that opens elsewhere in a new tab.
+- **Course Material** is a PDF your team lead uploaded. **View Material** opens it in a new tab. On the course's card in the list, **Download Material** does the same.
+- **Course Link** is an **External Link**, behind its own **View Material** control, that opens elsewhere in a new tab.
 
-![A course open in the detailed view, with the course details and the material to work through](../../img/screenshots/agent_view/courses/courses-detailed-view.png)
+Below the material, **Take Quiz** opens the quiz. Once the course is complete it reads **View Quiz** instead, and opens your results.
 
-![The course material open for reading](../../img/screenshots/agent_view/courses/view-material.png)
-
-![Further course content in the detailed view](../../img/screenshots/agent_view/courses/courses-detailed-view-2.png)
-
-![The rest of the course content, below the material already shown](../../img/screenshots/agent_view/courses/courses-detailed-view-3.png)
+![A completed course open in the detailed view, with its details, the Course Material section and its View Material control, and the Take Quiz section reading View Quiz](../../img/screenshots/agent_view/courses/courses-detailed-view-2.png)
 
 Read the material before starting the quiz. The quiz is scored, and your result is recorded against the course.
 
@@ -83,9 +79,9 @@ Select **Take Quiz** on a course that has one. The quiz page shows the course na
 
 Written answers are compared against an answer your team lead set when building the quiz, with Vela scoring the meaning rather than the exact wording. Answer the question that was asked rather than writing generally around it.
 
-When you submit, the page shows **Quiz Completed** and your score as a percentage, shown in red if it is below the pass mark. Below that:
+When you submit, the page shows **Quiz Completed** and your score as a percentage. A pass is green, with **You have successfully passed this course quiz!** beneath it. A fail is red, with **You did not meet the passing score of 50%** followed by how many retakes you have left. Your organisation's pass mark replaces the 50. Below that:
 
-- If you did not pass, a line reads **You did not meet the passing score of 50%**, followed by how many retake attempts you have left. Your organisation's pass mark replaces the 50.
+- **Previous Attempts**, once you have retaken the quiz, listing the score of every attempt with the latest outlined.
 - Three buttons, **Return to Course**, **Retake Quiz** with the number left in brackets, and **Complete Course**.
 - **Quiz Answers** lists each question with the points it earned, such as **1/3 points**.
 
@@ -117,7 +113,11 @@ Read the **Final Score** for how you did, not for which of the two closed the co
 
 Your team lead sets **Quiz Retakes** on each course, between 1 and 5, so the number is not the same on every course. Vela shows how many you have left in a few places. The quiz page reads **You have 2 retake attempts available**, the results screen reads **You have 2 retakes remaining**, and the button on the results screen reads **Retake Quiz (2 left)**.
 
-{/* UNVERIFIED: the wording once the count reaches zero, and whether the Retake Quiz button then disappears, was not captured - the live captures show counts of 1 and 2 remaining with the button present. */}
+When the count reaches zero, the line reads **You have no retakes remaining.** and both **Retake Quiz** and **Complete Course** are gone, leaving **Return to Course**. A completed course shows the same single button whenever you reopen its results.
+
+![The results screen of a completed course, with a green 94% and the pass message, Previous Attempts listing a 69% first attempt and the 94% second attempt, and Return to Course as the only button](../../img/screenshots/agent_view/courses/courses-detailed-view-3.png)
+
+{/* The zero-retake wording and the two buttons disappearing are from CourseQuizClient.jsx on origin/main, where both buttons are gated on retakesRemaining > 0 and the assignment not being completed. The completed state is confirmed by the capture above. Previous Attempts is absent on the first-attempt capture (quiz-failed.png) and present with two attempts here, which is why it is described as appearing once the quiz has been retaken. */}
 
 :::warning Running out of retakes closes the course
 The course moves to **Completed Courses** with the last score you got, whether or not you passed, and you cannot take it again. Check the count before you start an attempt.
