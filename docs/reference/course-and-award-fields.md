@@ -38,6 +38,7 @@ The course material file.
 | Accepted format | PDF only |
 | Maximum size | 10MB |
 | Message on an oversized file | **File size exceeds 10MB limit** |
+| Message on any other format | **Please upload a PDF file** |
 
 No other format is accepted. Material in another format must be exported to PDF or hosted elsewhere and linked with **External Link**.
 
@@ -76,7 +77,7 @@ Every question also has:
 | **Points** | A whole number, worth 1 by default. Saving is refused if set to 0 |
 | **Required** | On by default. Decides whether the agent must answer it before submitting the quiz |
 
-Existing questions are changed with the **pencil** icon, which opens a panel headed **Edit Question N**, and removed with **Remove**.
+Existing questions are changed with the **pencil** icon, which opens a panel headed **Edit Question N**, and removed with the **bin** icon.
 
 ### Quiz Retakes
 

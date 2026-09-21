@@ -46,7 +46,7 @@ A: Automatically, on the evaluation cycle, to every agent whose score in the awa
 ## Timing
 
 **Q: I created a course. Why does nobody have it?**
-A: Assignment happens on the evaluation cycle, not when you save. Check when the cycle next runs under **Coaching → Preferences**, then look at **Progress** after it has.
+A: Assignment happens on the evaluation cycle, not when you save. Work out when the cycle next runs from the interval, day, and time under **Coaching → Preferences**, which shows the schedule rather than the date of the next run, then look at **Progress** after it has.
 
 **Q: How often should the cycle run?**
 A: Monthly suits most teams. Weekly responds faster but assigns training on less evidence, so an agent can be given a course for one bad week rather than a real gap.

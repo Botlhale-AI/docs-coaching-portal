@@ -108,7 +108,7 @@ Select **Save** to apply your changes.
 
 Reopen **Preferences** and confirm the settings read back as you set them.
 
-For the cycle, the real check is the next run. Open **Progress** after the time you set and confirm courses have been assigned with that date. See [Track Learning Progress](./track-learning-progress.md).
+For the cycle, the real check is the next run. The page shows the schedule rather than the date of the next run, so work that out from the interval, day, and time you set. Open **Progress** after it and confirm courses have been assigned with that date. See [Track Learning Progress](./track-learning-progress.md).
 
 ---
 

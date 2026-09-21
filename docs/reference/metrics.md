@@ -23,7 +23,8 @@ Shown on **Coaching → Dashboard** for a team lead, and on **Dashboard** in the
 | **Category Scores** | Both | Scores broken down by the categories the organisation groups its scorecard questions into |
 | **Your Score** | Agent | The agent's own score in a category, over the selected period |
 | **Your Team** | Agent | The same category across the agent's whole team, shown beside **Your Score** |
-| **Average Agent Performance** | Agent | The trend of scores across the selected period |
+| **Average Agent Performance** | Both | The trend across the selected period, one section per category. A team lead sees one line, for everything **View By** covers. An agent sees two, their team's in blue and their own in orange, and hovering a point names which is which |
+| **Department Performance**, **Team Performance**, or **Agent Performance** | Team lead | A bar for each group within what **View By** covers, headed for the level shown |
 | **Individual Agent Performance** | Agent | The agent's own figure plotted alone, without the team comparison |
 
 The main Vela platform writes Auto Fails as **Auto-Fail**. It is the same measure, spelled as each screen spells it.

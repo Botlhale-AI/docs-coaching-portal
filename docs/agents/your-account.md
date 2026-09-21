@@ -82,11 +82,28 @@ Signing in with Google or Microsoft means your identity provider holds your pass
 
 ---
 
+## Reset a Forgotten Password
+
+Where you cannot sign in because you have forgotten your password, reset it from the sign-in page rather than asking for a new invitation.
+
+1. On the sign-in page, select **Forgot your password?** beneath the password field.
+2. Enter your email address and select **Reset**. The page confirms that a reset link has been sent to your address, and an email headed **Reset Your Password** arrives.
+3. Open the link in the email, then enter your new password under **Password** and again under **Confirm Password**. The rules above apply.
+4. Select **Reset**. The page reads **You have successfully reset your password. You may now sign in.**, and **Return to login** takes you back to the sign-in page.
+
+A link that reads **Your password reset link has expired** has been left too long. Start again from **Forgot your password?**.
+
+{/* SCREENSHOT: the Forgot your password? page, with its Email field and Reset button, and the reset page with Password and Confirm Password. Save under img/screenshots/agent_view/auth/. Wording above is from forgotPasswordForm.jsx, resetPasswordForm.jsx, and app/api/reset/route.js on origin/main, not yet seen on a live screen. */}
+
+This applies to password sign-in only. Where you sign in with Google or Microsoft, reset it with your provider.
+
+---
+
 ## Check Your Work
 
 Open **Notifications** and confirm the tab you expect has entries in it. An empty tab reading **No results found** means nothing of that type is waiting for you.
 
-For a password change, sign out and sign back in with the new password. That is the only thing that confirms it took.
+For a password change or a reset, sign out and sign back in with the new password. That is the only thing that confirms it took.
 
 ---
 

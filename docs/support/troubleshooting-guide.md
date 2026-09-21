@@ -13,7 +13,9 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 
 ## Signing In
 
-**Problem:** Sign-in is refused, even with the password from the invitation email.
+{/* The sign-in messages in this section are from app/api/login/route.js on origin/main, shown on the sign-in page as the message Vela shows. The unconfirmed-address and Security tab entries are confirmed on screen. The others are traced in source and not yet seen live, so confirm the wording at the next capture. */}
+
+**Problem:** Sign-in is refused with **We have sent you an email. Please verify your email address.**, even with the password from the invitation email.
 
 **Cause:** The email address has not been confirmed yet. Vela refuses the sign-in until it is.
 
@@ -29,6 +31,46 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 **Cause:** The account signs in through Google or Microsoft, so the identity provider holds the password rather than Vela.
 
 **Solution:** Change the password with your provider. The tab is absent by design rather than missing.
+
+---
+
+**Problem:** The password has been forgotten, so there is no way past the sign-in page.
+
+**Cause:** A forgotten password is reset from the sign-in page, not by a new invitation.
+
+**Solution:** Select **Forgot your password?** beneath the password field and follow the emailed link. See [Manage Your Account](../agents/your-account.md#reset-a-forgotten-password).
+
+---
+
+**Problem:** Sign-in is refused with **You are not registered as an agent. Please log in on the main Vela login page.**
+
+**Cause:** The address belongs to a team lead or administrator account. Those sign in to the main Vela platform, and the Agent Portal accepts agents only.
+
+**Solution:** Select **Go to Vela Login** below the sign-in form.
+
+---
+
+**Problem:** The main Vela sign-in page refuses an agent with **You are registered as an agent. Please log in on the agent coaching portal.**
+
+**Cause:** The address belongs to an agent account, and agents sign in to the Agent Portal rather than the main platform.
+
+**Solution:** Select **Go to Agent Portal Login** on the main sign-in page, and sign in there.
+
+---
+
+**Problem:** Sign-in is refused with **Your account has been deactivated. Please contact your organisation admin.**
+
+**Cause:** The agent record has been made inactive in the main Vela platform. The password is not the problem.
+
+**Solution:** Ask your team lead to reactivate the record. Retrying the password does not help.
+
+---
+
+**Problem:** Sign-in is refused with **Too many login attempts. Your account has been blocked. Please contact support for assistance**, or afterwards with **Your account has been blocked. Please contact support for assistance**.
+
+**Cause:** Ten wrong passwords in a row block the account. A successful sign-in resets the count, so the block only comes from consecutive failures.
+
+**Solution:** Contact support@botlhale.ai to lift the block. Where the password is uncertain, use **Forgot your password?** before the count runs out rather than guessing.
 
 ---
 
@@ -60,7 +102,7 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 **Cause:** Assignment happens on the evaluation cycle, not on save.
 
 **Solution:**
-1. Check when the cycle next runs, under **Coaching → Preferences**.
+1. Work out when the cycle next runs from the interval, day, and time under **Coaching → Preferences**. The page shows the schedule rather than the date of the next run.
 2. After it has run, open **Progress** and look for agents against the course.
 3. Still nobody? No agent's scores fell inside the **Training Initiation Score Range**. Widen the range, or check the scores on the Dashboard.
 
@@ -74,11 +116,11 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 
 ---
 
-**Problem:** A course file is rejected on upload.
+**Problem:** A course file is rejected on upload, with **Please upload a PDF file** or **File size exceeds 10MB limit**.
 
-**Cause:** Files are limited to 10MB.
+**Cause:** The upload accepts PDF only, and a PDF over 10MB.
 
-**Solution:** Compress the file or split it, or host it elsewhere and use **Course Link** with an **External Link** instead.
+**Solution:** Export the material to PDF where it is another format. Where the PDF is over 10MB, compress it or split it. Either way, hosting it elsewhere and using **External Link** instead also works.
 
 ---
 

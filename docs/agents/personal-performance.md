@@ -42,7 +42,7 @@ The page holds four panels, most of which compare you with your team, which is w
 | :--- | :--- | :--- |
 | **Auto Fails** | The share of your calls that failed a critical question, beside the same figure for your team | Whether one requirement is costing you whole interactions |
 | **Category Scores** | Your score per category, beside your team's | Which specific area to work on |
-| **Average Agent Performance** | The trend across the period | Direction, rather than any single day |
+| **Average Agent Performance** | Your trend across the period beside your team's | Direction, rather than any single day |
 | **Individual Agent Performance** | Your own figure on its own | Where you stand right now |
 
 The last two appear once for each category, further down the page, rather than once for the whole Dashboard. Select a category's name to open or close its section.
@@ -63,7 +63,7 @@ When there are more categories than fit across the panel, an arrow on each side 
 
 ### C. Performance Charts
 
-Below the panels, each category your organisation scores on has its own section, headed with the category name. Select the heading to open or close it. Inside, **Average Agent Performance** shows the category's trend across the date range as a line, and **Individual Agent Performance** shows your current score for that category as a single figure. Select **fullscreen** on **Individual Agent Performance** to see that chart on its own.
+Below the panels, each category your organisation scores on has its own section, headed with the category name. Select the heading to open or close it. Inside, **Average Agent Performance** shows two lines across the date range, your team's score for the category in blue and your own in orange. There is no legend, so hover a point to see which line it belongs to. Beside it, **Individual Agent Performance** shows your current score for that category as a single figure. Select **fullscreen** on **Individual Agent Performance** to see that chart on its own.
 
 ![The Dashboard charts, showing Average Agent Performance over the period beside Individual Agent Performance](../../img/screenshots/agent_view/dashboard/dashboard-charts.png)
 

@@ -70,6 +70,14 @@ const UI_LITERALS = [
   "Simple Storage",
   "not part of the selected organization", // Vela's own error message
   "Color", // the Tags screen labels the column this way
+  // Sign-in and upload messages the product shows verbatim, quoted in
+  // troubleshooting-guide.md, course-and-award-fields.md, and your-account.md.
+  "Please verify your email address",
+  "as an agent. Please log in", // covers both wrong-portal messages
+  "We have sent you an email",
+  "Please contact your organisation admin",
+  "Please contact support for assistance",
+  "Please upload a PDF file",
 ];
 
 const errors = [];
@@ -210,8 +218,9 @@ for (const file of files) {
   // Botlhale announcing a change to a customer, not a page describing the
   // product. Rewriting "we've launched" into the passive would read worse.
   // Recorded as a deliberate deviation in STYLE_GUIDE.md section 5.
-  if (!FIRST_PERSON_OK.includes(rel) &&
-      /\b(we|our|us)\b/i.test(body.replace(/\bVela's\b/g, "")))
+  // Product strings in UI_LITERALS are quoted, not spoken, so they are stripped first.
+  const spoken = UI_LITERALS.reduce((b, lit) => b.split(lit).join(""), body.replace(/\bVela's\b/g, ""));
+  if (!FIRST_PERSON_OK.includes(rel) && /\b(we|our|us)\b/i.test(spoken))
     warn(rel, "first person (we/our/us): documentation is not a person");
 
   for (const m of body.matchAll(/\bwill\b/gi)) {

@@ -71,7 +71,7 @@ On a course or an award, **Category** is the one whose score the **Training Init
 
 The coaching add-on as a whole, and the name of this documentation. It has two halves. The **Coaching** section inside the main Vela platform is where team leads build courses and awards, and the [Agent Portal](#agent-portal) is where agents receive them.
 
-"Coaching Portal" names the add-on rather than a screen. No control in Vela carries the words, so an agent looking for somewhere to sign in wants the Agent Portal.
+"Coaching Portal" names the add-on rather than a screen. The agent sign-in page is headed **Coaching Portal**, but no sidebar entry or menu in either application carries the name, so an agent looking for somewhere to sign in wants the Agent Portal.
 
 ## Course
 

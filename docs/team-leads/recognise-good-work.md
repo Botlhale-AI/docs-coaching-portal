@@ -99,7 +99,7 @@ Select the **download** icon in the **Download** column to save that agent's cer
 | Category and score | The award's category and the agent's score, not the award's own name |
 | Description | What the award recognises |
 | Supervisor | Whoever created the award, which is not always the person downloading it |
-| Period | A date range, not a single date |
+| Date | The dates the score covers, shown as a range rather than one day |
 
 ![The download icon on an award row, which saves the certificate](../../img/screenshots/team_lead/awards/download.png)
 
