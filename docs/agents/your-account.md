@@ -55,9 +55,14 @@ Select **Settings** under **ADMIN**, then the **Account** tab. It shows the deta
 | **Name** | Your name as your team lead entered it |
 | **Email** | The address you sign in with, and where the portal emails you |
 | **Current Organisation** | The organisation you belong to |
+| **Current Department** | The department your interactions are counted under. Shown on some accounts and not others |
 | **Current Team** | The team your interactions are counted under |
 
-![The account tab in Settings, showing the Name, Email, Current Organisation, and Current Team fields](../../img/screenshots/agent_view/admin/admin-account-info.jpeg)
+![The account tab in Settings, showing the Name, Email, Current Organisation, Current Department, and Current Team fields](../../img/screenshots/agent_view/admin/admin-account-info-department.png)
+
+{/* RESHOOT HISTORY: admin-account-info.jpeg (Agent Jane, DepartmentOrg) showed this same tab with no Current Department row, and was replaced here by admin-account-info-department.png (John Zulu, FeatureTesting), which has one. Deleted rather than kept alongside it, per STYLE_GUIDE.md section 8: an unreferenced screenshot is dead weight, and this page only needs one to show the fields it documents. The old capture is not stale, it is a second real state, which is why it is recorded here rather than just discarded. */}
+
+{/* UNVERIFIED: what decides whether Current Department appears. The condition in vela's shared AccountSettings component, app/(pages)/settings/page.jsx, is `!profile.access === "organisational"`, which JS operator precedence parses as `(!profile.access) === "organisational"`. That compares a boolean to a string, so it is always false and the row should never render for anyone, which contradicts both captures described above. Source is wrong about the screen here, the same class of defect as the Sort By control. Needs engineering to confirm the intended rule, most likely the `!==` version seen elsewhere in this file's history. */}
 
 These fields are read-only. To correct any of them, ask your team lead, who changes them from the main Vela platform.
 
