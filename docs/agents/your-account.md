@@ -7,7 +7,7 @@ pagination_prev: agents/your-awards
 pagination_next: null
 ---
 
-The **ADMIN** section at the foot of the left sidebar holds two pages. **Notifications** tells you about new awards, courses, and comments. **Settings** is where you check your account details and change your password.
+The **ADMIN** section at the foot of the Agent Portal's left sidebar holds two pages. **Notifications** tells you about new awards and courses. **Settings** is where you check your account details and change your password.
 
 ---
 
@@ -15,8 +15,8 @@ The **ADMIN** section at the foot of the left sidebar holds two pages. **Notific
 
 You need:
 
-- **An Agent Portal sign-in.** Your team lead creates your account and the portal emails you an invitation.
-- **To know how you sign in.** Where you sign in through Google or Microsoft, your identity provider holds your password, so the **Security** tab does not appear.
+- **An Agent Portal sign-in.** An administrator in your organisation creates your account, and the portal emails you an invitation.
+- **To know how you sign in.** Where you sign in through Google or Microsoft, your identity provider holds your password. The **Security** tab changes your Vela password only.
 
 ---
 
@@ -28,11 +28,13 @@ Select **Notifications** under **ADMIN** in the left sidebar. Three tabs sort wh
 | :--- | :--- |
 | **Awards** | An award someone has presented to you |
 | **Courses** | A course that has been assigned to you |
-| **Comments** | A comment your team lead left on one of your interactions |
+| **Comments** | Comment notifications. Your team lead's comments do not arrive here, so open **View Comments** on the interaction to read them |
 
 The page lists unread notifications only, so a tab with nothing in it reads **No results found**. That is a result rather than a fault. It means nothing of that type is waiting for you.
 
 ![The Notifications page in the Agent Portal, with the Awards, Courses, and Comments tabs above the list of unread notifications](../../img/screenshots/agent_view/admin/notifications.png)
+
+{/* VERIFIED 2026-10-01 on origin/main, origin/vela-fly, and origin/dev-hold: app/(pages)/interactions/calls/[id]/comments.js does not notify an agent of a new comment. Mentions match profile names, and @agent stores the string "agent", so the "New mention" notification never reaches an agent. The org-comment recipients exclude role "agent", and reply notifications go to the main comment's author, who is never an agent. A like or a resolve on a reply the agent wrote does notify its author, but only where notifications.platform.own_comments is set, and addUser in settings.jsx never sets it for anyone, with no settings page for agents to change it. So in practice the Comments tab stays empty for agents created there. The user has never seen a mention notification on an agent account (2026-10-01). */}
 
 {/* RESHOOT: the live notification text originally read "You have been assigned undefined, your dealine to complete this course is 24-07-2025", a broken template (course title missing) plus a typo, both visible on screen. That message line is painted over as a temporary fix so the bug isn't the thing being documented. Reshoot once the underlying "Course Assigned" notification text is fixed; until then this hides the defect rather than resolving it. */}
 
@@ -62,7 +64,7 @@ Select **Settings** under **ADMIN**, then the **Account** tab. It shows the deta
 
 {/* RESHOOT HISTORY: admin-account-info.jpeg (Agent Jane, DepartmentOrg) showed this same tab with no Current Department row, and was replaced here by admin-account-info-department.png (John Zulu, FeatureTesting), which has one. Deleted rather than kept alongside it, per STYLE_GUIDE.md section 8: an unreferenced screenshot is dead weight, and this page only needs one to show the fields it documents. The old capture is not stale, it is a second real state, which is why it is recorded here rather than just discarded. */}
 
-{/* UNVERIFIED: what decides whether Current Department appears. The condition in vela's shared AccountSettings component, app/(pages)/settings/page.jsx, is `!profile.access === "organisational"`, which JS operator precedence parses as `(!profile.access) === "organisational"`. That compares a boolean to a string, so it is always false and the row should never render for anyone, which contradicts both captures described above. Source is wrong about the screen here, the same class of defect as the Sort By control. Needs engineering to confirm the intended rule, most likely the `!==` version seen elsewhere in this file's history. */}
+{/* UNVERIFIED: what decides whether Current Department appears. The condition in vela's shared AccountSettings component, app/(pages)/settings/page.jsx, is `!profile.access === "organisational"`, which JS operator precedence parses as `(!profile.access) === "organisational"`. That compares a boolean to a string, so it is always false and the row should never render for anyone, which contradicts both captures described above. Source is wrong about the screen here, the same class of defect as the Sort By control. Needs engineering to confirm the intended rule, most likely the `!==` version seen elsewhere in this file's history. Checked 2026-10-01: the condition is the same on origin/main and origin/vela-fly. On origin/dev and origin/dev-hold it is `!hideAgentScope && profile.access === "departmental"`, which matches both captures (the row shows for departmental access only), so the captures likely came from a dev build. Keep the row as written until a vela-fly screen settles it. */}
 
 These fields are read-only. To correct any of them, ask your team lead, who changes them from the main Vela platform.
 
@@ -81,9 +83,11 @@ Your new password must meet all of these:
 
 Select **Save** to apply it. The next time you sign in, use the new password.
 
-:::note The Security tab depends on how you sign in
-Signing in with Google or Microsoft means your identity provider holds your password, so the **Security** tab does not appear. Change it with your provider instead.
+:::note Signing in with Google or Microsoft
+The **Security** tab changes your Vela password only. Where you sign in with Google or Microsoft, your provider holds your password, so change it with your provider instead.
 :::
+
+{/* VERIFIED 2026-10-01 on origin/vela-fly: coaching_portal/(pages)/settings/page.jsx hides the Security tab when session.provider is google or azure-ad, but the session callback in app/api/auth/[...nextauth]/route.js never sets provider, so the tab shows for everyone. */}
 
 ---
 

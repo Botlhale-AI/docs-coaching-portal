@@ -7,7 +7,7 @@ pagination_prev: team-leads/recognise-good-work
 pagination_next: null
 ---
 
-**Preferences** holds the settings that govern all coaching in your organisation. They set how often Vela evaluates agents, what counts as passing a course, which interactions evaluations are based on, and how much of their own work agents can see. All of them apply organisation-wide rather than per course or per agent.
+**Preferences**, under **Coaching** in the main Vela platform, holds the settings team leads use to govern all coaching in your organisation. They set how often Vela evaluates agents, what counts as passing a course, which interactions evaluations are based on, and how much of their own work agents can see. All of them apply organisation-wide rather than per course or per agent.
 
 :::note Reading and changing are different permissions
 Everyone who can reach this page can read it. Changing anything on it needs organisational access **and** the admin role. With one but not the other, the controls open greyed out, and **Save** does not appear at all.
@@ -35,7 +35,7 @@ Under **Evaluation Scope**, answer "Which interactions would you like these eval
 | **All Interactions** | Every processed interaction counts towards evaluation |
 | **Reviewed Interactions Only** | Only interactions a person has marked as reviewed count |
 
-**Reviewed Interactions Only** is the stricter setting. It means coaching follows human-checked work rather than AI scores alone, which is worth having if your reviewers add context. It also means an unreviewed backlog stops evaluations running, so pick it only if your team keeps up with reviewing.
+**Reviewed Interactions Only** is the stricter setting. It means coaching follows human-checked work rather than AI scores alone, which is worth having if your reviewers add context. It also means an agent with no reviewed interactions since the last run is left out of that run, and an interaction reviewed after its run never counts. Pick it only if your team reviews within each cycle.
 
 ![Evaluation Scope and Evaluation Cycle at the top of the preferences page](../../img/screenshots/team_lead/preferences/evaluation-scope-and-cycle.png)
 
@@ -49,7 +49,7 @@ Nothing is assigned between runs, so this setting decides how quickly coaching r
 | :--- | :--- |
 | **Repeat every** | How many units between runs, from 1 to 100 |
 | **Unit** | **Day(s)**, **Week(s)**, or **Month(s)** |
-| **Time** | The time of day the run happens |
+| **Time** | The hour of the day the run happens, on the hour |
 | **Day of Week** | Which day, when the unit is week |
 | **Day of Month** | Which date, when the unit is month. The list runs 1 to 28, plus **Last** |
 
@@ -67,9 +67,11 @@ Monthly suits most teams. Weekly responds faster but assigns courses on less evi
 
 ## 3. Set the Pass Percentage
 
-**Pass Percentage** is the share of the total quiz score an agent reaches to pass a course. It applies to every course, so it is set here rather than on each course.
+Under **Courses**, **Pass Percentage** is the share of the total quiz score an agent reaches to pass a course. It applies to every course, so it is set here rather than on each course.
 
 Changing it applies immediately, to the very next quiz any agent submits anywhere in the organisation, rather than waiting for the evaluation cycle.
+
+{/* UNVERIFIED: the server ignores this setting. app/api/coaching/courses/[courseId]/submit-quiz/route.js reads coaching.passingScore, which does not exist (the field is passMark), so it records a pass at 50 whatever is set here. Every screen uses passMark, so the agent and the team lead see the configured value. Still present on origin/vela-fly and origin/dev-hold. Product bug, raised with engineering. */}
 
 ---
 
@@ -89,7 +91,7 @@ Answer "Which interactions would you like agents to be able to view":
 Reviewed-only is worth considering where your reviewers add context that changes how a score reads. It also means an unreviewed backlog is invisible to the agent, so their portal looks emptier than their work has been.
 
 :::warning Two of these four do not wait for the next cycle
-**Evaluation Scope** and **Evaluation Cycle** take effect at the next evaluation cycle. **Pass Percentage** and **Agent View Permissions** apply at once.
+**Evaluation Cycle** reschedules the next run as soon as you save. **Evaluation Scope** changes the Dashboard at once and the courses and awards from that next run. **Pass Percentage** and **Agent View Permissions** apply at once.
 
 **Agent View Permissions** reaches backwards as well. Moving it from **All Interactions** to **Reviewed Interactions Only** withdraws interactions an agent could open yesterday, including ones they have already read and been coached on. Agree that setting and the pass percentage before agents are invited.
 :::

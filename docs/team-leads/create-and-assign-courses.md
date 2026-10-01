@@ -11,7 +11,9 @@ import Hotspots from '@site/src/components/Hotspots';
 import newCourseImg from '@site/img/screenshots/team_lead/courses/new-course.png';
 import retakesImg from '@site/img/screenshots/team_lead/courses/new-course4.png';
 
-A course is training you build once and Vela assigns automatically. You set the category and the score range within it that assigns the course, and on each evaluation cycle every agent whose score in that category falls in the range receives it. Courses reach people by score rather than by name, so you set the criteria rather than picking individuals.
+A course is training you build once, as a team lead, and Vela assigns automatically. You set the category and the score range within it that assigns the course, and on each evaluation cycle every agent whose score in that category falls in the range receives it. Courses reach people by score rather than by name, so you set the criteria rather than picking individuals.
+
+{/* UNVERIFIED: per-Category measurement. See the note under Category in glossary.md. */}
 
 ---
 
@@ -20,7 +22,8 @@ A course is training you build once and Vela assigns automatically. You set the 
 You need:
 
 - **A gap worth training.** Build the course around a category several agents are behind in. See [Read the Coaching Dashboard](./coaching-dashboard.md).
-- **Your material ready.** A file to upload, or a link to point at.
+- **Your material ready.** A PDF to upload, or a link starting `https://`. The form refuses a link without it.
+- **A cover image and at least one quiz question.** The form refuses a course without either.
 - **To know your evaluation cycle.** Assignment happens on the cycle set under Preferences, so a course created today reaches agents at the next run rather than immediately. See [Set Coaching Preferences](./coaching-preferences.md).
 
 ---
@@ -63,7 +66,7 @@ Pick from the categories your organisation already has. There is no **+ Add New*
 
 ### Scope
 
-Choosing departments or teams reveals a selector for which ones, and the course is refused until you pick at least one. Your own access level caps what you may set here.
+Choosing departments or teams reveals a selector for which ones, and the course is refused until you pick at least one. Your own access level caps what you may set here. If your access covers one team, the form shows that team instead of a choice.
 
 ![Scope set to Specific Departments, with the Select Departments list open beside the Training Initiation Score Range slider](../../img/screenshots/team_lead/courses/scope-selector.png)
 
@@ -71,11 +74,11 @@ Choosing departments or teams reveals a selector for which ones, and the course 
 
 This decides who receives the course, measured against the agent's score in the **Category** chosen above rather than their overall score. It is a slider with two handles over 0 to 100, showing the floor and ceiling you set as percentages on either side. On each evaluation cycle, every agent in scope whose score in that category falls between them receives the course.
 
-Set it around the gap you found on the Dashboard, not around a pass percentage. A range of 0 to 100 assigns the course to everyone, leaving no comparison group to show whether it worked. A narrower band, such as 40 to 65, reaches only the people struggling with what the course teaches and leaves the rest as a comparison group. It is a band rather than a threshold, so an agent above the ceiling does not receive the course. That is deliberate. Training aimed at a weakness is wasted on someone who does not have it.
+Set it around the gap you found on the Dashboard, not around a pass percentage. The slider starts at 0 to 100, and the form refuses that range, so move at least one handle before you save. A range covering every score would reach everyone and leave no comparison group to show whether the course worked. A narrower band, such as 40 to 65, reaches only the people struggling with what the course teaches and leaves the rest as a comparison group. It is a band rather than a threshold, so an agent above the ceiling does not receive the course. That is deliberate. Training aimed at a weakness is wasted on someone who does not have it.
 
 Scope and the score range work together rather than instead of each other. Scope decides who is eligible at all. The range decides which of those people qualify on a given cycle.
 
-{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev (#842), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
+{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev and origin/dev-hold (#842, rechecked 2026-10-01), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
 
 ---
 
@@ -86,7 +89,7 @@ A course holds what the agent works through, either an uploaded PDF or a link to
 ![The Add Content step, with the content type chosen and the cover image picker](../../img/screenshots/team_lead/courses/new-course2.png)
 
 - **Upload PDF**: drag and drop a file, or select the area to browse. The form states the rule beneath it: *Accepted file type: PDF. Maximum size: 10MB.* A file in any other format is refused, and one over the limit reports **File size exceeds 10MB limit**.
-- **External Link**: reveals a **Course Link** field for a URL that opens elsewhere, for material you host outside Vela.
+- **External Link**: reveals a **Course Link** field for a URL that opens elsewhere, for material you host outside Vela. The link must start with `https://`.
 
 :::note PDF is the only accepted upload
 The upload control accepts `.pdf` and nothing else. Where your material is a slide deck, a document, or a video, either export it to PDF or host it and point **External Link** at it.
@@ -98,7 +101,7 @@ The cover image is what the agent sees against the course in their list. Drag on
 
 ![Choosing a theme image for the course](../../img/screenshots/team_lead/courses/create-course-choose-theme.png)
 
-A theme image is enough for most courses. It costs nothing and still gives agents something to recognise the course by in a list.
+A cover image is required, and the form refuses a course without one. A theme image is enough for most courses. It costs nothing and still gives agents something to recognise the course by in a list.
 
 ---
 
@@ -134,7 +137,7 @@ These three sit together below the quiz, and they decide how much room an agent 
   src={retakesImg}
   alt="The Set Deadlines And Reminders step, with Quiz Retakes, Deadline, and Set course nudges, each a control with its own info icon, stacked down the page above the Create Course and Close buttons"
   points={[
-    { x: 31.1, y: 26, title: 'Quiz Retakes', body: 'How many retakes an agent gets after a first attempt, from 1 to 5. New courses start at 3, which allows four attempts in total.' },
+    { x: 31.1, y: 26, title: 'Quiz Retakes', body: 'How many times an agent can take the quiz in total, including the first attempt, from 1 to 5. New courses start at 3.' },
     { x: 28.9, y: 42, title: 'Deadline', body: 'How long an agent has from the day the course is assigned to them, rather than a fixed date. New courses start at 7 days.' },
     { x: 33.6, y: 59, title: 'Set course nudges', body: 'A reminder sent to an agent who has not finished, counted back from the due date.' },
   ]}
@@ -164,6 +167,8 @@ Because the deadline runs from the day each agent receives the course, nudges fo
 
 Two nudges are usually enough, one with enough time left to do the work and one close to the deadline. A course with none relies on the agent remembering.
 
+{/* UNVERIFIED: that nudges are sent. On origin/vela-fly they are only stored on the course. On origin/dev-hold, coachingCycle.js copies them onto each assignment, and lib/courseNudge.js sends reminders only when a team lead triggers one by hand (api/coaching/courses/nudge). No code on any branch sends a nudge on its own date. Needs the product owner. */}
+
 ---
 
 ## 6. Save the Course
@@ -174,7 +179,7 @@ Select **Create Course** to save, or **Close** to leave without saving. The cour
 
 ## 7. Read a Course
 
-Select a course in the list to open it. This is also what an agent sees, so it is worth checking after you save.
+Select a course in the list to open it. This is your view of the course. Agents see their own version in the Agent Portal, without the answers or the score range.
 
 ![A course open, with its cover image, content and the Course Details summary](../../img/screenshots/team_lead/courses/course-detail.png)
 
@@ -187,7 +192,7 @@ The banner carries the cover image, the course name and **Created**. **Content**
 | **Quiz Questions** | How many questions the quiz holds |
 | **Total Points** | What the quiz is worth in total |
 | **Deadline** | The window each agent gets, counted from the day they receive it |
-| **Retakes Allowed** | Retakes after the first attempt |
+| **Retakes Allowed** | Attempts allowed in total, including the first |
 | **Nudges** | How many reminders are set |
 
 **Scope** sits beneath it, and **Course Content** holds the PDF or the link.
@@ -207,6 +212,12 @@ This opens the same form as building a course, pre-filled with what you set.
 ![The course form in edit mode, with the existing Title, Category, Description, Scope, and Training Initiation Score Range open for changing](../../img/screenshots/team_lead/courses/edit-course-form.png)
 
 Editing changes the course for agents who have not yet completed it. Agents who already finished keep the result they earned.
+
+:::caution Removing questions and nudges does not save
+A question you remove with the **bin** while editing stays on the course. Removing every nudge also leaves them all in place. The form saves without an error either way. To retire a question, build a new course without it.
+:::
+
+{/* VERIFIED 2026-10-01 on origin/vela-fly and origin/dev-hold: app/api/coaching/courses/[courseId]/route.js inserts new questions and updates edited ones, and only $pushes question ids onto the course. Nothing removes one. Nudges are written only when nudges.length > 0. Product bug, raised with engineering. */}
 
 ---
 

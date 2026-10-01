@@ -7,7 +7,7 @@ pagination_prev: team-leads/getting-started
 pagination_next: team-leads/create-and-assign-courses
 ---
 
-**Dashboard** shows how the agents you cover are scoring over a period you choose. Use it to decide who needs a conversation and what that conversation should be about, before you build a course or open individual interactions.
+As a team lead, you use **Dashboard**, under **Coaching** in the main Vela platform, to see how the agents you cover are scoring over a period you choose. Use it to decide who needs a conversation and what that conversation should be about, before you build a course or open individual interactions.
 
 ---
 
@@ -17,6 +17,7 @@ You need:
 
 - **Processed interactions in the period.** The Dashboard is built from analysed calls and chats, so a period with none is empty rather than broken.
 - **Access covering the agents you want to see.** Your access level decides whether you see the whole organisation, a department, or one team.
+- **Reviewed interactions, where your organisation counts only those.** Where **Evaluation Scope** under **Preferences** is **Reviewed Interactions Only**, the Dashboard counts reviewed interactions only.
 
 ---
 
@@ -30,7 +31,7 @@ Two controls at the top of the page decide what everything below is calculated f
 
 | Control | What it does |
 | :--- | :--- |
-| **View By** | How much of the organisation you are looking at. Opens on the broadest scope your access level allows, **Entire Organisation** for organisational access, **Entire Department** for departmental access, or your own team for team access. Narrows the same way, so a team lead sees fewer choices than an administrator |
+| **View By** | How much of the organisation you are looking at. Opens on the broadest scope your access level allows, **Entire Organisation** for organisational access, **Entire Department** for departmental access, or your own team for team access. Team access offers fewer choices than organisational access |
 | **Date range** | Sets the period. Select the **pencil** beside it to change the dates |
 
 Pick a period long enough to hold several interactions per agent. A week is usually the shortest useful range, and a month is better for judging a trend.
@@ -61,19 +62,23 @@ Every column reads the same way:
 | :--- | :--- |
 | The heading | The category name |
 | **Average** | The figure across everything **View By** covers |
-| The lines below | The same figure for each department or team within it |
+| The lines below | The same figure for each department, team, or agent one level below what **View By** covers |
 
 Two numbers can appear on a line, as in `department one - 4%(36%)`:
 
 - The **first** figure is the score with auto-fails applied.
-- The figure **in brackets** is what was earned on the question wording alone, before auto-fails zeroed it.
+- The figure **in brackets** is the score without the auto-fail rule. The failed critical question still counts as zero in it.
 
-The bracket only appears when the two differ. A line with one figure had no auto-fails in that category, so nothing was taken away.
+The bracket only appears when the two differ. A line with one figure had no auto-failed interactions, so nothing was taken away.
 
-That gap is the useful part. A line reading `0%(71%)` is not a group that knows nothing about the category. It is a group doing most of the category correctly whose score is being wiped by a critical failure. Coaching that failure recovers the whole column, and coaching the category does not.
+An auto-fail removes an interaction's points from every category, not only the category its critical question belongs to. So a collapsed figure in one category can come from a critical question in another.
+
+{/* VERIFIED 2026-10-01 on origin/vela-fly: app/(pages)/coaching/dashboard/dashboard.js works out autoFailed once per call, across all questions, and then withholds that call's points (failScore) in every category. */}
+
+That gap is the useful part. A line reading `0%(71%)` is not a group that knows nothing about the category. It is a group doing most of the category correctly whose score is being wiped by a critical failure, which may be a question in another category. Coaching that failure recovers the whole column, and coaching the category does not.
 
 :::tip Where the coaching list comes from
-Read across a category and find the groups whose bracketed figure is high while the first figure is low. Those are being held back by one requirement, which is a specific and fixable conversation. A group low on both figures is a broader gap that a course suits better.
+Read across a category and find the groups whose bracketed figure is high while the first figure is low. Those are being held back by one critical requirement, which may sit in another category. That is a specific and fixable conversation. A group low on both figures is a broader gap that a course suits better.
 :::
 
 Only categories with interactions in the period appear as columns.
@@ -94,10 +99,8 @@ Each section holds two charts for that category alone:
 | **Department Performance**, **Team Performance**, or **Agent Performance** | A bar for each group, so you can see which part of the organisation carries the result |
 
 :::note The expanded chart adds the category to its heading
-In its normal place on the page, the bar chart's heading reads only **Department Performance**, **Team Performance**, or **Agent Performance**, matching what **View By** is set to. Select the **fullscreen** control to expand it, and the heading gains the category in front, for example **Compliance - Department Performance**. The category prefix only appears in the expanded view.
+In its normal place on the page, the bar chart's heading reads only **Department Performance**, **Team Performance**, or **Agent Performance**, one level below what **View By** covers. It reads **Department Performance** under **Entire Organisation**, **Team Performance** under a department choice, and **Agent Performance** under **Specific Teams**, **Entire Team**, or **Specific Agents**. Select the **fullscreen** control to expand it, which is worth doing where long names are cut short. The heading then gains the category in front, for example **Compliance - Department Performance**. The category prefix only appears in the expanded view.
 :::
-
-The **fullscreen** control on a chart expands it, which is worth using on the bar chart where long names are cut short.
 
 Read the line chart for timing and the bars for location. A drop that starts on one date points at something that happened, such as a process change or a new intake. A drop confined to one group points at that group.
 
@@ -121,9 +124,9 @@ See [Create and Assign Courses](./create-and-assign-courses.md) for the second, 
 
 Set the date range to a period you know holds interactions and confirm the panels fill.
 
-An empty Dashboard shows **No data available for the selected date range. Try adjusting your filter**. Either no processed interactions fall in the dates, or your access level does not cover the agents you expected. Widen the range first, then check the access level with an administrator.
+An empty Dashboard shows **No data available for the selected date range. Try adjusting your filter**. Either no processed interactions fall in the dates, **Evaluation Scope** is **Reviewed Interactions Only** and nothing in the dates has been reviewed, or your access level does not cover the agents you expected. Widen the range first, then check **Evaluation Scope** and your access level. The same message also appears when the figures fail to load, so reload the page if the range is clearly right.
 
-One category's charts can read **There is no data available in this category for the selected date range** while the rest of the page has figures. Widen the range for that too.
+{/* VERIFIED 2026-10-01 on origin/vela-fly: app/components/charts/performanceCharts.jsx sets hasData = true, so the per-category "There is no data available in this category" message never renders. Removed from this page. */}
 
 ---
 

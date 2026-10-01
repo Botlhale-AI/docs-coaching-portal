@@ -10,9 +10,9 @@ pagination_next: team-leads/coaching-preferences
 import Hotspots from '@site/src/components/Hotspots';
 import createAwardImg from '@site/img/screenshots/team_lead/awards/create-award.png';
 
-An award is recognition you define once and Vela presents automatically. You set what earns it, and on each evaluation cycle every agent who meets the criteria receives it with a certificate. Like courses, awards reach people by score rather than by name.
+An award is recognition you define once, as a team lead, and Vela presents automatically. You set what earns it, and on each evaluation cycle every agent who meets the criteria receives it with a certificate. Like courses, awards reach people by score rather than by name.
 
-{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), not origin/main, which has no code that presents awards or assigns courses. Full note under Award in glossary.md. */}
+{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), rechecked 2026-10-01 on origin/dev-hold. Not yet on origin/main or origin/vela-fly, which have no code that presents awards or assigns courses. Documented ahead of release by decision, 2026-10-01: main is expected to carry it before these pages go live. Full note under Award in glossary.md. */}
 
 ---
 
@@ -47,15 +47,19 @@ The form is one page, scrolled. **Award Message**, what the agent reads when it 
 
 Every award runs on your organisation's evaluation cycle, set under [Coaching Preferences](./coaching-preferences.md). There is no per-award cycle to set separately.
 
-**Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score in **Award Category** falls between **Min** and **Max**, the same mechanism a course uses, aimed at a high band instead of a low one.
+{/* UNVERIFIED: origin/dev-hold adds a Custom Evaluation Cycle checkbox to the award form (AwardCreateForm.jsx, AwardEditForm.jsx). coachingCycle.js uses it as that award's look-back window, while the organisation's cycle still decides when the run happens. Not on main or vela-fly. Needs a decision on whether to document it with the cycle. */}
+
+**Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score in **Award Category** falls between **Min** and **Max**, the same mechanism a course uses, aimed at a high band instead of a low one. The form opens at 0 and 100, which it refuses, because a range covering every score recognises no one. Set **Min** below **Max**, and narrower than 0 to 100.
 
 That lets you recognise a tier rather than everyone above a line. A "top performer" award is a high min with a max of 100 on the category that matters most. A band such as 70 to 79 picks out that group on its own.
 
-{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev (#842), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
+{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev and origin/dev-hold (#842, rechecked 2026-10-01), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
 
 ![Scope set to Specific Departments, with the Select Departments list open beside the Score Threshold Min and Max](../../img/screenshots/team_lead/awards/create-award-scope.png)
 
 **Scope** decides who is eligible. Choosing departments or teams reveals a second selector for which ones, and the form reports how many you have picked. What you may set is limited by your own access level. Departmental access cannot award outside your department.
+
+{/* UNVERIFIED: team access. On origin/vela-fly AwardCreateForm.jsx starts scope at "organisation" for every access level and, for team access, only shows the text "Applying course to: <team>" without changing it. The create route accepts organisation, and coachingCycle.js on dev-hold then takes in the whole organisation. So a team-access award may reach the whole organisation. Needs the product owner. */}
 
 Write the **Award Message** as though speaking to the person. It is the part they actually read, and a specific sentence about what they did well is worth more than a generic congratulation.
 
@@ -69,7 +73,7 @@ The Awards page holds two collapsible sections. **Awards** is what you have defi
 
 ![The Awards Presented list, with the agent, award, date and score](../../img/screenshots/team_lead/awards/awards-presented.png)
 
-Open **Awards Presented**. Each row is one award reaching one agent:
+Scroll to **Awards Presented**. Both sections open expanded. Each row is one award reaching one agent:
 
 | Column | What it shows |
 | :--- | :--- |
@@ -80,6 +84,8 @@ Open **Awards Presented**. Each row is one award reaching one agent:
 | **Download** | Saves the certificate |
 
 **Filter**, **Sort By**, and the date range sit above the list, and long lists are paged with **Previous** and **Next**.
+
+{/* CHECKED 2026-10-01: described as origin/dev-hold behaves, because this list fills only once the evaluation cycle ships from there. On origin/vela-fly (and main), Previous and Next throw (presentedAwardsTable.jsx uses an undeclared pathname), and the agent, team, department, and award filters return nothing (awards/page.jsx matches profile.* and checks awards against the agent list). dev-hold fixes both. Recheck when the cycle reaches main. */}
 
 An empty list where you expected awards usually means the date range, not a fault. Awards are presented on the evaluation cycle, so a range that predates the last run shows nothing.
 

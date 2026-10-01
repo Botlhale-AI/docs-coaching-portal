@@ -15,7 +15,7 @@ The Coaching Portal is an add-on to Vela. Changes to the wider platform, such as
 
 ## Vela 2.1
 
-Coaching shipped with Vela 2.1, and nothing in it has changed on a later release. The platform side of that release is recorded under [Version 2.1](https://docs-vela.botlhale.ai/docs/release-notes#version-21) in the Vela release notes.
+Coaching shipped with Vela 2.1. The platform side of that release is recorded under [Version 2.1](https://docs-vela.botlhale.ai/docs/release-notes#version-21) in the Vela release notes.
 
 ### Coaching for Team Leads
 
@@ -27,7 +27,7 @@ The **Coaching** section in the main Vela sidebar, available where coaching is e
 - **Progress.** Every agent and course pairing, with status, dates, and score, narrowed by team, department, status, or a score range, and by a separate date range control. See [Track Learning Progress](./team-leads/track-learning-progress.md).
 - **Awards.** Define an award with a score range and a message, for the evaluation cycle to present with a certificate. See [Recognise Good Work](./team-leads/recognise-good-work.md).
 
-{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), not origin/main, which has no code that presents awards or assigns courses. Full note under Award in glossary.md. */}
+{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), rechecked 2026-10-01 on origin/dev-hold. Not yet on origin/main or origin/vela-fly, which have no code that presents awards or assigns courses. Documented ahead of release by decision, 2026-10-01: main is expected to carry it before these pages go live. Full note under Award in glossary.md. */}
 - **Preferences.** The evaluation cycle, pass percentage, evaluation scope, and agent view permissions, set once for the organisation. See [Set Coaching Preferences](./team-leads/coaching-preferences.md).
 
 ### The Coaching Portal for Agents

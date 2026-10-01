@@ -22,13 +22,13 @@ You need:
 
 ## 1. Set the Period
 
-Select the date range control at the top of the page to choose the period. It opens **Filter by Date Range**, which offers **Today**, **Yesterday**, **This Week**, **Last Week**, **This Month**, and **Last Month** down the side, or **From** and **To** dates you pick off two months of calendar. Select **Save** to apply it, or **Close** to leave the range as it was. Everything below is recalculated for the dates you keep.
+Select the **Pencil** beside **Date range** at the top of the page to choose the period. The page opens on the current month. It opens **Filter by Date Range**, which offers **Today**, **Yesterday**, **This Week**, **Last Week**, **This Month**, and **Last Month** down the side, or **From** and **To** dates you pick off two months of calendar. Select **Save** to apply it, or **Close** to leave the range as it was. Everything below is recalculated for the dates you keep.
 
 ![The Filter by Date Range picker, with the preset ranges beside From and To dates on two months of calendar](../../img/screenshots/agent_view/dashboard/date-range.png)
 
 Start with a period long enough to hold several interactions. A single day rarely says much about a trend.
 
-Use the **Search categories** box at the top left to show one category at a time in Category Scores.
+Type in the **Search categories** box at the top left to show only the categories whose names contain what you type, in **Category Scores** and in the charts below. When nothing matches, the page reads **No matching categories found for your search**.
 
 ![The Agent Portal Dashboard, with the Search categories box and date range control at the top and the Auto Fails and Category Scores panels below](../../img/screenshots/agent_view/dashboard/dashboard-overview.png)
 
@@ -43,7 +43,7 @@ The page holds four panels, most of which compare you with your team, which is w
 | **Auto Fails** | The share of your calls that failed a critical question, beside the same figure for your team | Whether one requirement is costing you whole interactions |
 | **Category Scores** | Your score per category, beside your team's | Which specific area to work on |
 | **Average Agent Performance** | Your trend across the period beside your team's | Direction, rather than any single day |
-| **Individual Agent Performance** | Your own figure on its own | Where you stand right now |
+| **Individual Agent Performance** | Your own score for the category across the period, as a single number | The figure to compare with your target |
 
 The last two appear once for each category, further down the page, rather than once for the whole Dashboard. Select a category's name to open or close its section.
 
@@ -63,7 +63,7 @@ When there are more categories than fit across the panel, an arrow on each side 
 
 ### C. Performance Charts
 
-Below the panels, each category your organisation scores on has its own section, headed with the category name. Select the heading to open or close it. Inside, **Average Agent Performance** shows two lines across the date range, your team's score for the category in blue and your own in orange. There is no legend, so hover a point to see which line it belongs to. Beside it, **Individual Agent Performance** shows your current score for that category as a single figure. Select **fullscreen** on **Individual Agent Performance** to see that chart on its own.
+Below the panels, each category your organisation scores on has its own section, headed with the category name. Select the heading to open or close it. Inside, **Average Agent Performance** shows two lines across the date range, your team's score for the category in blue and your own in orange. There is no legend, so hover a point to see which line it belongs to. Beside it, **Individual Agent Performance** shows your score for that category across the whole date range, as a single number. Select the expand icon at the top right of **Individual Agent Performance** to see that figure on its own.
 
 ![The Dashboard charts, showing Average Agent Performance over the period beside Individual Agent Performance](../../img/screenshots/agent_view/dashboard/dashboard-charts.png)
 

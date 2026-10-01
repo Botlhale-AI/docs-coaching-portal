@@ -30,7 +30,7 @@ Three controls sit above the list:
 
 | Control | What it does |
 | :--- | :--- |
-| **Search** | Narrows the list by wording |
+| **Search** | Finds an interaction by its file name, the customer's number, or its full Call ID |
 | **Sort By** | Orders the list by a column, ascending or descending |
 | **Filter** | Narrows the list by department, team, handle time, and other fields |
 
@@ -54,7 +54,7 @@ A call's detailed view has three cards, with **Audio** and **Smart Detector** on
 
 ### A. Audio and Smart Detector
 
-**Audio** holds the player, on a call only. Where a recording is unavailable it reads **Audio not available**. A control in this card's corner reads **Expand Section** or **Collapse Section**, giving it the whole width while you read.
+**Audio** holds the player, on a call only. A control in this card's corner reads **Expand Section** or **Collapse Section**, giving it the whole width while you read.
 
 **Smart Detector** holds two tabs:
 
@@ -63,7 +63,7 @@ A call's detailed view has three cards, with **Audio** and **Smart Detector** on
 | **Summary** | What the AI found in the conversation |
 | **Scorecard** | Each question your organisation scores on, with its **Weight**, **Outcome**, and **Score** |
 
-On **Scorecard**, switch **View** between **Automatic** and **Manual** to see the AI's answers or a reviewer's. **Filter Scorecard** narrows a long list of questions.
+On **Scorecard**, switch **View** to **Automatic** for the questions the AI answers, or to **Manual** for the questions a reviewer answers. **Filter Scorecard** narrows a long list of questions.
 
 A question that did not apply to the conversation reads **N/A** rather than counting against you.
 
@@ -73,13 +73,13 @@ A question that did not apply to the conversation reads **N/A** rather than coun
 
 **Call Details**, or **Chat Details** on a chat, shows your name at the top, then two groups of fields, **Scores** and **Details**.
 
-**Scores** holds **Agent Score**, **Initial Score**, and a **Compliance Score** and **Quality Score** that each have their own **Initial** figure. A score that was auto-failed shows two numbers, for example 0.0% (60.9%). The first is your score with the auto-fail applied, and the number in brackets is what it would have been without it. Compliance and quality can be auto-failed on their own, so any of the three can show a pair. Without an auto-fail, each is a single figure. A figure your organisation does not use reads as a dash, and so does a score of 0%.
+**Scores** lists six labels, but in the Agent Portal only **Agent Score** has a figure. The other five are left empty here, and your team lead sees them in the main Vela platform. Where your score was auto-failed, **Agent Score** shows two numbers, for example 0.0% (60.9%). The first is your score with the auto-fail applied. The number in brackets is your score without the auto-fail rule, with the failed question still counted at zero. Without an auto-fail it is a single figure. An **Agent Score** of 0%, or no score at all, reads as a dash.
 
 **Details** holds **Call ID** (**Chat ID** on a chat), **File Name**, **Date**, **Uploaded**, **Handle Time**, **Department**, **Team**, **Topic**, and **Direction**. A call also shows **Silent Time**, and a chat shows **Response Time** in its place.
 
-{/* VERIFIED 2026-09-07 against live agent captures (DemoOrg3, Vusi Zulu): the panel shows the agent's name at the top, then "Scores:" (Agent Score, Initial Score, Compliance Score, Initial Compliance Score, Quality Score, Initial Quality Score - most blank on that call) and "Details:" (Call ID, File Name, Date, Uploaded, Handle Time, Silent Time, Department, Team, Topic, Direction). A chat shows Response Time where a call shows Silent Time. No Alerts field for an agent. An earlier DEV note claiming Alerts shows here and Team/Topic/Direction do not was wrong. Scores corrected 2026-10-01 against vela (Fly) origin/main: components/chats/infoCard.jsx holds all six labels and is the card calls render too; interactions/calls/[id]/callDetails.jsx falls back to a literal "-" for each, so an unused figure and a 0% both read as a dash, not blank (the same card shows Department: - on the capture above). components/calls/agentScore.jsx renders the bracketed pair only on its fail branch, and callDetails passes a separate fail flag for the agent, compliance and quality figures, so any of the three can show a pair and a score without an auto-fail is a single figure. */}
+{/* VERIFIED 2026-09-07 against live agent captures (DemoOrg3, Vusi Zulu): the panel shows the agent's name at the top, then "Scores:" (Agent Score, Initial Score, Compliance Score, Initial Compliance Score, Quality Score, Initial Quality Score - most blank on that call) and "Details:" (Call ID, File Name, Date, Uploaded, Handle Time, Silent Time, Department, Team, Topic, Direction). A chat shows Response Time where a call shows Silent Time. No Alerts field for an agent. An earlier DEV note claiming Alerts shows here and Team/Topic/Direction do not was wrong. Agent side corrected 2026-10-01 against origin/vela-fly: app/(agents)/coaching_portal/(pages)/interactions/calls/[id]/callDetails.jsx passes infoCard only score (call.total_agent_score, "-" when falsy, AgentScore with the auto-fail flag), so the other five labels render empty; chatDetails.jsx does the same. The note that follows describes the team-lead file. Earlier note, against vela (Fly) origin/main: components/chats/infoCard.jsx holds all six labels and is the card calls render too; interactions/calls/[id]/callDetails.jsx falls back to a literal "-" for each, so an unused figure and a 0% both read as a dash, not blank (the same card shows Department: - on the capture above). components/calls/agentScore.jsx renders the bracketed pair only on its fail branch, and callDetails passes a separate fail flag for the agent, compliance and quality figures, so any of the three can show a pair and a score without an auto-fail is a single figure. */}
 
-Below it, a call's **Transcript** switches between **Original** and **English** when the conversation was not in English, and uses **Search** to find a word in it. Selecting a line's timestamp jumps the audio to that moment, and **Play from here** does the same thing. A chat's own panel is titled **Chat** rather than Transcript, with the same **Original**/**English** and **Search** controls, but nothing to jump the audio to.
+Below it, a call's **Transcript** switches between **Original** and **English** when the conversation was not in English, and uses **Search** to find a word in it. Selecting a line's timestamp jumps the audio to that moment. Its tooltip reads **Play from here**. A chat's own panel is titled **Chat** rather than Transcript, with the same **Original**/**English** and **Search** controls, but nothing to jump the audio to.
 
 Where a transcript is unavailable the panel reads **Transcript not available**.
 
@@ -93,7 +93,7 @@ Open the interaction, then select **View Comments** to open the comments panel. 
 
 ![The comments panel open on a call, with a comment from the team lead and the Reply, Like, and Mark as Resolved links](../../img/screenshots/agent_view/interactions/comments.png)
 
-A comment that tags you with **@** also raises a notification, so check **Notifications** under **ADMIN** if you want to find recent feedback without opening each interaction. See [Manage Your Account](./your-account.md).
+Your team lead's comments do not raise a notification for you. Open **View Comments** on an interaction to check for feedback. See [Manage Your Account](./your-account.md).
 
 ---
 

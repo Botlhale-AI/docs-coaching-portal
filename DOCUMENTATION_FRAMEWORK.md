@@ -4,7 +4,7 @@ How the Vela documentation is organised, and why. Read this before adding a page
 
 For writing rules such as punctuation, vocabulary, and voice, see [STYLE_GUIDE.md](./STYLE_GUIDE.md).
 
-**Audience for the documentation itself:** call centre team leads, QA managers, and administrators. They are not developers. They usually arrive with a job to do or a problem to solve, and they arrive through search rather than from the top of the navigation.
+**Audience for the documentation itself:** call centre team leads, QA managers, and administrators, and the agents they coach, who use the Agent Portal. They are not developers. They usually arrive with a job to do or a problem to solve, and they arrive through search rather than from the top of the navigation.
 
 ---
 
@@ -140,7 +140,7 @@ Every button name, menu path, field, and limit must exist in the product. Most s
 
 Finding a feature in the codebase does not mean a user can get to it. Trace the path from something a user clicks to the code you found. Watch for commented-out JSX, imports with no corresponding render, and routes with no navigation entry.
 
-Two real cases from this repository:
+Two real cases from the Vela documentation, where this rule was learned:
 
 - **Knowledge Base URL uploads.** The API route, form handling, validation, and success message all exist. The mode selector button is commented out, so the mode cannot be reached. Knowledge Base accepts PDF files only.
 - **Settings Preferences.** The component is written and imported into the settings page, but never rendered and absent from the tab list. There is no Preferences tab.
@@ -163,11 +163,13 @@ The test: if this page were the only one a customer ever read, would it make sen
 
 ## 7. Deliberate deviations
 
-Two departures from strict Diátaxis, both decisions rather than oversights.
+Three departures from strict Diátaxis, all decisions rather than oversights.
 
 **The Metrics reference includes interpretation.** Diátaxis says reference must be neutral. We include short "what to look for" notes because our readers are QA managers, not engineers. Knowing that Talk to Listen Ratio measures agent talking time against customer talking time is accurate and not much use alone. The interpretation is what they came for.
 
 **The tutorials present two sign-in methods.** Diátaxis says tutorials must not offer choices. We keep SSO and email/password because the reader is not choosing. Their organisation already chose, and they need to recognise which applies.
+
+**Release notes speak in the first person.** They are Botlhale announcing a change to a customer, not a page describing the product. See STYLE_GUIDE.md section 5.
 
 Anything else that mixes types is a defect, not a deviation.
 

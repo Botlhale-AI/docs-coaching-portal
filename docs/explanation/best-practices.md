@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-Coaching in Vela is automatic once configured, which is its strength and its risk. Set the criteria well and the right training reaches the right people without anyone chasing it. Set them carelessly and the same machinery sends everyone everything, and people stop reading it.
+Coaching in Vela is automatic once a team lead configures it, which is its strength and its risk. Set the criteria well and the right training reaches the right people without anyone chasing it. Set them carelessly and the same machinery sends everyone everything, and people stop reading it.
 
 These are recommendations for the second problem. Each section stands on its own.
 
@@ -15,7 +15,7 @@ These are recommendations for the second problem. Each section stands on its own
 
 ## Set the Cycle Before Anything Else
 
-Nothing is assigned between cycle runs, so a course built without knowing the cycle looks broken for a month. See [How Coaching Works](./how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for what the cycle actually does.
+Nothing is assigned between cycle runs, so a course built without knowing the cycle looks broken until the next run. See [How Coaching Works](./how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for what the cycle actually does.
 
 **Monthly suits most teams.** A month holds enough interactions to tell a real gap from a bad week.
 
@@ -28,6 +28,8 @@ Nothing is assigned between cycle runs, so a course built without knowing the cy
 The **Training Initiation Score Range** is what decides who receives a course. It is the single setting that separates useful coaching from noise.
 
 **Build around a category, not an overall score.** Several agents behind in Compliance is a course. One agent behind everywhere is a conversation, and no course fixes it.
+
+{/* UNVERIFIED: per-Category measurement. See the note under Category in glossary.md. */}
 
 **Keep the range tight.** A range covering most of the team reaches people who do not need it, so completion does not show whether it worked. A narrow range means completion is a signal.
 
@@ -71,7 +73,7 @@ Sort on **Due Date** to bring the overdue to the top. That list is shorter than 
 
 Coaching that assigns training and never checks whether scores moved is administration rather than coaching.
 
-After a course has been completed by the agents it targeted, go back to the Dashboard and look at the category it addressed, over the weeks since. A category that has stayed flat tells you the course missed. Change the material, or narrow who receives it, before you run it again.
+After a course has been completed by the agents it targeted, go back to the Dashboard and look at the category it addressed, over the weeks since. A category that has stayed flat tells you the course missed. Change the material, or narrow who receives it, before the next cycle runs.
 
 Where it has moved, an award is the natural next step, and it is more credible for following a real improvement.
 

@@ -7,7 +7,7 @@ pagination_prev: team-leads/create-and-assign-courses
 pagination_next: team-leads/recognise-good-work
 ---
 
-**Progress** shows where each agent is with the courses assigned to them. Use it to find the agents who have stalled, and to check whether a course you built is actually being completed.
+**Progress**, under **Coaching** in the main Vela platform, shows team leads where each agent is with the courses assigned to them. Use it to find the agents who have stalled, and to check whether a course you built is actually being completed.
 
 ---
 
@@ -22,7 +22,7 @@ You need:
 
 ## 1. Read the List
 
-Select **Coaching** in the left sidebar, then **Progress**. Each row pairs an agent with a course:
+Select **Coaching** in the left sidebar, then **Progress**. The list opens on courses assigned this month, so change the dates with the **Pencil** to see earlier ones. Each row pairs an agent with a course:
 
 ![The Progress table, with a row for each agent and course](../../img/screenshots/team_lead/progress/progress-table.png)
 
@@ -34,7 +34,7 @@ Select **Coaching** in the left sidebar, then **Progress**. Each row pairs an ag
 | **Date Assigned** | When they received it |
 | **Due Date** | Worked out from the deadline set on the course |
 | [**Initiation Score**](../reference/glossary.md#initiation-score) | The agent's score at the time the course was assigned, which is the score that put them inside the course's **Training Initiation Score Range** |
-| **Score** | Their result on the quiz. Reads **0%** by default until the agent submits it, so a 0% on a **Not Started** or **In Progress** row means no attempt yet, not a fail |
+| **Score** | Their result on their most recent quiz attempt. Reads **0%** until they submit, and again while they work on a retake, so a 0% on a **Not Started** or **In Progress** row is not a fail |
 
 The two score columns sit side by side so you can read them together. **Initiation Score** is where the agent was before the course, and **Score** is how they did on it. A course assigned at 40% and passed at 90% tells you the assignment was aimed correctly.
 
@@ -50,7 +50,8 @@ Long lists are paged, with **Previous** and **Next** either side of the page cou
 
 | Field | What it takes |
 | :--- | :--- |
-| **Department** and **Team** | Tick the teams whose agents you want, grouped under their department. Each team shows its department alongside it, reading **No Department** where that link cannot be resolved |
+| **Department** | Departments to include. Shown where your access covers the organisation |
+| **Team** | Teams to include, each followed by its department in brackets, or **No Department** where the team has none. Shown where your access covers a department or more |
 | **Status** | **Not Started**, **In Progress**, or **Complete** |
 | **Score** | A range, so you can isolate the agents who failed |
 | **Initiation Score** | A range, so you can isolate the agents a course was aimed at |
@@ -67,9 +68,9 @@ The date range is a separate control, the **pencil** icon above the table rather
 
 ![The detailed date range picker, with the range you set](../../img/screenshots/team_lead/progress/date-filter-detailed.png)
 
-The picker keeps the earlier date you select as the start automatically, so there is no way to set an out-of-order range. Where the page instead shows **Invalid date range**, one of the two dates has not been set yet.
+The picker keeps the earlier date you select as the start automatically, so there is no way to set an out-of-order range. If you select **Apply** with only one date chosen, Vela asks you to pick both and leaves the range as it was.
 
-**Sort By** orders the list on a column you choose.
+**Sort By** orders the list on a column you choose. It opens set to **Descending**, and **Save Changes** applies it. Sorting on **Score** leaves the order unchanged, so filter on score instead.
 
 ![The sort control on the Progress list](../../img/screenshots/team_lead/progress/sort.png)
 
@@ -85,7 +86,7 @@ The picker keeps the earlier date you select as the start automatically, so ther
 | Everyone **Complete** with high scores | The course is working, or the pass percentage is set too low to tell |
 
 :::tip Sort by Due Date to find who needs chasing
-Sorting on **Due Date** brings the overdue to the top. Working from that list takes less time than reading the whole page, and it catches the agents a course is failing rather than the ones it is working for.
+Filter **Status** to **Not Started** and **In Progress**, then sort on **Due Date**, **Ascending**, and select **Save Changes**. The overdue come first. Working from that list takes less time than reading the whole page, and it catches the agents a course is failing rather than the ones it is working for.
 :::
 
 ---
@@ -94,7 +95,7 @@ Sorting on **Due Date** brings the overdue to the top. Working from that list ta
 
 Open **Progress** and confirm the course you assigned has agents against it, with **Date Assigned** on or after the evaluation cycle that ran.
 
-A course with nobody against it after a cycle has run usually means no agent's scores fell inside its **Training Initiation Score Range**. Widen the range on the course, or check the scores on the Dashboard.
+A course with nobody against it after a cycle has run means one of three things. The date range does not cover the run, no agent in the course's **Scope** had a score inside its **Training Initiation Score Range**, or no agent had scored interactions since the last run. Check the dates first, then widen the range on the course or check the scores on the Dashboard.
 
 ---
 

@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-Coaching runs on a schedule. You set the criteria once, and on each cycle Vela checks every agent's scores against them and assigns the courses and awards they have qualified for. Between cycles it does nothing, and it never decides anything itself.
+Coaching runs on a schedule that team leads set. You set the criteria once, and on each cycle Vela checks the score of every agent who had scored interactions since the last run, and assigns the courses and awards they have qualified for. Between cycles it does nothing, and it never decides anything itself.
 
 Seven rules follow from that, and each has a section below.
 
@@ -56,7 +56,7 @@ It also means the cycle length is a real decision rather than a formality. A mon
 
 ## Assignment is by score, never by name
 
-There is no control anywhere that assigns a course to a named person. You describe a band of scores, and whoever falls inside it on the day the cycle runs receives the course.
+There is no control anywhere that assigns a course to a named person. You describe a band of scores, and whoever falls inside it on the day the cycle runs receives the course. An agent who still has that course open is not given it again. Once they complete it, a later run can assign it again if their score is still in the band.
 
 Two settings shape who that is:
 
@@ -75,7 +75,7 @@ Both courses and awards use two numbers rather than one, and both are inclusive 
 
 An award set to 80 to 100 recognises the top of the team. An award set to 70 to 79 recognises a specific tier and deliberately excludes the people above it, which is how you build a ladder rather than a single prize.
 
-The same applies to courses in reverse. A course set to 0 to 100 is assigned to everyone, including the people who are already good at it, and it produces no evidence about whether it worked. A narrower band leaves a group who did not receive it, and the comparison between the two groups on the next cycle is the only real measure of whether the training changed anything.
+The same applies to courses in reverse. A course set very wide, such as 0 to 99, reaches almost everyone, including the people who are already good at it, and it produces no evidence about whether it worked. A narrower band leaves a group who did not receive it, and the comparison between the two groups on the next cycle is the only real measure of whether the training changed anything.
 
 ---
 

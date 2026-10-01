@@ -15,7 +15,7 @@ pagination_next: agents/your-account
 
 You need:
 
-- **An award presented to you.** Until one is, the page reads **No Awards Found**. That is a result rather than a fault.
+- **An award presented to you.** The page opens on the current month. If it reads **No Awards Found**, widen the date range before deciding you have none.
 - **Nothing else.** Awards arrive automatically. There is no action to take to receive one.
 
 ---
@@ -26,7 +26,7 @@ Select **Awards** in the left sidebar. The page opens on **Recent Activity**, wh
 
 ![The Awards page in the Agent Portal, with Search, the date range, Filter and Sort By above a Recent Activity card for the newest award](../../img/screenshots/agent_view/awards/awards-overview.png)
 
-Every award you have been presented sits below that under **Your Awards**, one card each, reading down as its name, the date it was awarded, what it recognises, and the category it was earned in. An award with the same name can appear more than once, carrying a different date each time.
+Every award you have been presented sits below that under **Your Awards**, one card each, reading down as its name, the date it was awarded, what it recognises, and the category the award belongs to. An award with the same name can appear more than once, carrying a different date each time.
 
 ![The full list of awards, each card carrying a trophy, the award name, the date awarded, the description, and the category](../../img/screenshots/agent_view/awards/awards-overview2.png)
 
@@ -82,7 +82,7 @@ Select **Download** to save the certificate. It is yours to keep or share, and i
 Your team lead sets the criteria and Vela presents the award automatically when an agent meets them on the [evaluation cycle](../reference/glossary.md#evaluation-cycle), the same way courses are assigned. Nobody presents them manually.
 :::
 
-{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), not origin/main, which has no code that presents awards or assigns courses. Full note under Award in glossary.md. */}
+{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), rechecked 2026-10-01 on origin/dev-hold. Not yet on origin/main or origin/vela-fly, which have no code that presents awards or assigns courses. Documented ahead of release by decision, 2026-10-01: main is expected to carry it before these pages go live. Full note under Award in glossary.md. */}
 
 ---
 

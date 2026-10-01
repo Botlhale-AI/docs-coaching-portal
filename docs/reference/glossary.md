@@ -47,7 +47,7 @@ Reviewed-only means an unreviewed backlog is invisible to the agent. See [Set Co
 
 A question your organisation marks as critical. Failing it takes the whole interaction to zero whatever else went well.
 
-The **Auto Fails** panel on the Dashboard shows the proportion of calls affected, for an agent and for their team.
+The **Auto Fails** panel on the Dashboard shows the proportion of calls affected. A team lead sees one percentage covering everything **View By** selects. An agent sees two, their team's and their own.
 
 The main Vela platform writes this as **Auto-Fail**, with a hyphen. It is the same measure, spelled as each screen spells it.
 
@@ -55,9 +55,11 @@ The main Vela platform writes this as **Auto-Fail**, with a hyphen. It is the sa
 
 Recognition presented automatically when an agent's score in the award's **Category** falls inside its **Score Threshold (Range)**, the same mechanism as a [Course](#course) pointed at a high band instead of a low one. Awards carry a certificate the agent can download.
 
+{/* UNVERIFIED: per-Category measurement. See the note under Category in glossary.md. */}
+
 Nobody presents an award manually. See [Recognise Good Work](../team-leads/recognise-good-work.md).
 
-{/* VERIFIED 2026-09-21 against origin/dev, not origin/main. Nothing on origin/main creates a PresentedAward or a CourseAssigned record: lib/coachingCycle.js (#842, merged to dev 2026-08-30) says so in its header, citing #693, "settings with no effect". On dev that file presents awards and assigns courses in one pass, triggered by coaching.nextEvaluationDate from Preferences and run by an hourly cron through /api/coaching/cycle. Score Threshold (Range) and Training Initiation Score Range are inclusive bands, floor <= score <= ceiling. An award is presented once per agent per award per evaluation window, so again on a later cycle if the agent qualifies again. A course is not re-assigned while one is outstanding. Until #842 reaches main the released product has no code that does any of this, so the behaviour on these pages is dev's. Recheck when it ships. See the marker under Category for the one place dev contradicts the pages. */}
+{/* VERIFIED 2026-09-21 against origin/dev, not origin/main. Nothing on origin/main creates a PresentedAward or a CourseAssigned record: lib/coachingCycle.js (#842, merged to dev 2026-08-30) says so in its header, citing #693, "settings with no effect". On dev that file presents awards and assigns courses in one pass, triggered by coaching.nextEvaluationDate from Preferences and run by an hourly cron through /api/coaching/cycle. Score Threshold (Range) and Training Initiation Score Range are inclusive bands, floor <= score <= ceiling. An award is presented once per agent per award per evaluation window, so again on a later cycle if the agent qualifies again. A course is not re-assigned while one is outstanding. Rechecked 2026-10-01: still only on origin/dev and origin/dev-hold, not on origin/main or origin/vela-fly (the live app). Documented ahead of release by decision, 2026-10-01, because main is expected to carry it before these pages go live. Recheck when it ships. See the marker under Category for the one place dev contradicts the pages. */}
 
 ## Category
 
@@ -77,7 +79,9 @@ The coaching add-on as a whole, and the name of this documentation. It has two h
 
 ## Course
 
-Training assigned automatically when an agent's score in the course's **Category** falls inside its **Training Initiation Score Range**. A course holds material, an optional quiz, and a deadline.
+Training assigned automatically when an agent's score in the course's **Category** falls inside its **Training Initiation Score Range**. A course holds material, a quiz of at least one question, a cover image, and a deadline.
+
+{/* UNVERIFIED: per-Category measurement. See the note under Category in glossary.md. */}
 
 Courses reach people by score in a category rather than by name. See [Create and Assign Courses](../team-leads/create-and-assign-courses.md).
 
@@ -111,7 +115,7 @@ A single customer conversation, either a **call** (voice) or a **chat** (text). 
 
 ## Pass Percentage
 
-The share of the total quiz score an agent reaches to pass a course. Set once under **Coaching → Preferences** and applied to every course, rather than set per course.
+The share of the total quiz score an agent reaches to pass a course. Set once under **Coaching → Preferences** and applied to every course, rather than set per course. A change applies at once, to existing courses as well as new ones.
 
 ## Progress
 
@@ -119,7 +123,7 @@ The page pairing each agent with each course assigned to them, with a status of 
 
 ## Quiz Retakes
 
-How many extra attempts an agent gets at a course quiz after their first try. Set on each course, so it varies between courses, unlike the [Pass Percentage](#pass-percentage), which is set once for the organisation. See [Quiz Retakes](../reference/course-and-award-fields.md#quiz-retakes) for the range and how it decides **Complete**.
+How many attempts an agent gets at a course quiz in total, including the first. Set on each course, so it varies between courses, unlike the [Pass Percentage](#pass-percentage), which is set once for the organisation. See [Quiz Retakes](../reference/course-and-award-fields.md#quiz-retakes) for the range and how it decides **Complete**.
 
 ## Scorecard
 
@@ -132,6 +136,8 @@ An agent sees the outcome per question on the **Scorecard** tab of an interactio
 ## Training Initiation Score Range
 
 The score range on a course that decides who receives it, measured against the agent's score in the course's own **Category** rather than their overall score. An agent whose score in that category falls inside the range is assigned the course on the next evaluation cycle.
+
+{/* UNVERIFIED: per-Category measurement. See the note under Category in glossary.md. */}
 
 A narrow range reaches the people with the gap. A wide one reaches everyone and measures nothing.
 

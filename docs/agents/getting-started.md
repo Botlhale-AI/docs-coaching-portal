@@ -17,27 +17,31 @@ This page takes you through signing in for the first time and finding each part 
 
 You need:
 
-- **An invitation email.** Your team lead creates your account, and the portal emails you an invitation with a temporary password.
+- **An invitation email.** An administrator in your organisation creates your account, and the portal emails you an invitation.
 
 ---
 
 ## 1. Sign In for the First Time
 
-1. Open the invitation email and select **Confirm Account**. Do this before anything else, because the portal refuses the sign-in until your address is confirmed.
-2. On the sign-in page, enter your email address and the temporary password from the email.
-3. Select **Sign In**.
+Set your own password before you sign in. The portal does not accept the temporary password in the invitation, so signing in with it returns **We have sent you an email. Please reset your password before logging in.**
 
 ![The invitation email, with the Confirm Account button and temporary password](../../img/screenshots/agent_view/auth/agent-invite.png)
+
+1. On the Agent Portal sign-in page, select **Forgot your password?**.
+2. Enter the email address the invitation was sent to, and select **Reset**.
+3. Open the **Reset Your Password** email and select **Reset Password**.
+4. Enter your new password twice, and select **Reset**. Setting the password also confirms your email address.
+5. Back on the sign-in page, enter your email address and your new password, and select **Sign In**.
+
+{/* VERIFIED 2026-10-01 on origin/vela-fly: settings.jsx creates every user with force_password_change: true, and app/api/auth/[...nextauth]/route.js refuses that sign-in with the message above (commit e0f70e3d, not on origin/main). No email is sent on that path. Only app/api/reset/route.js clears the flag, and it also sets email_confirmed, so Confirm Account is not needed first. */}
 
 Signing in takes you straight to your **Dashboard**.
 
 ![The Agent Portal sign-in page, with the email and password fields](../../img/screenshots/agent_view/auth/login.png)
 
 :::note Signing in with Google or Microsoft
-Where your organisation uses Single Sign-On, the Google and Microsoft buttons are not on this screen. Select **Go to Vela Login** below the sign-in form instead, and sign in there with your identity provider. You do not set a portal password, and the **Security** tab does not appear.
+Where your organisation uses Single Sign-On, the Google and Microsoft buttons are not on this screen. Select **Go to Vela Login** below the sign-in form instead, and sign in there with your identity provider. You do not need a portal password. Your provider holds your password, so change it there, not on the **Security** tab.
 :::
-
-Change the temporary password once you are in. See [Manage Your Account](./your-account.md).
 
 ---
 
@@ -60,7 +64,7 @@ The left sidebar holds everything, in two groups.
 
 | Item | What it holds |
 | :--- | :--- |
-| **Notifications** | New awards, courses, and comments |
+| **Notifications** | New awards and courses |
 | **Settings** | Your account details and password |
 
 ---

@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-The Coaching Portal has few settings, but they depend on one another in ways that are not obvious from any single page. Most of the confusion reported about coaching comes from a setting doing exactly what it says while a different one quietly decides the outcome.
+The Coaching Portal has few settings for team leads, but they depend on one another in ways that are not obvious from any single page. Most of the confusion reported about coaching comes from a setting doing exactly what it says while a different one quietly decides the outcome.
 
 This page maps those dependencies.
 
@@ -32,7 +32,7 @@ What connects them is the evaluation cycle. Team leads define, the cycle distrib
 
 Preferences sits at the top of everything. Its four settings fan out into the rest of coaching. **Evaluation Scope** decides which interactions produce the scores, and those scores, broken down by category, are what the Dashboard shows and what a course or award range is measured against. That range always checks the agent's score in one specific **Category**, never their overall score. **Evaluation Cycle** decides when that measurement runs, and the run is what assigns courses and presents awards, which is what Progress then records. **Pass Percentage** decides whether a quiz result in Progress reads as a pass. **Agent View Permissions** sits apart from all of it, governing only what an agent can open under Interactions.
 
-{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev (#842), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
+{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev and origin/dev-hold (#842, rechecked 2026-10-01), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
 
 {/* flowchart TD on purpose, against the LR default in STYLE_GUIDE.md section 6: four settings fan out from Preferences and rejoin at Progress, and drawn left to right that is six columns wide, which overflows a phone screen. Top down keeps it in one column of width. */}
 
@@ -55,7 +55,9 @@ flowchart TD
     V --> I("What an agent sees<br/>under Interactions")
 ```
 
-Read from the top. Preferences governs everything. Nothing else in coaching overrides it, and no course or award carries its own cycle or its own pass percentage.
+Read from the top. Preferences governs everything. Nothing else in coaching overrides it, and no course or award carries its own pass percentage. Every course and award is checked on the same run.
+
+{/* UNVERIFIED: origin/dev-hold adds a Custom Evaluation Cycle to the award form, used as that award's look-back window. Not on main or vela-fly. Needs a decision on whether to document it with the cycle. */}
 
 ---
 
@@ -63,9 +65,9 @@ Read from the top. Preferences governs everything. Nothing else in coaching over
 
 ### Evaluation Scope decides the scores, which decide the assignment
 
-**Evaluation Scope** looks like a small setting about which interactions count. It is not. It decides the scores on the Dashboard, and the Dashboard scores decide who falls inside a course's range.
+**Evaluation Scope** looks like a small setting about which interactions count. It is not. It decides which interactions count, both for the Dashboard and for the score each run checks against a course's range. The run does not read the Dashboard. It scores each agent on the interactions recorded since the last run.
 
-Set it to **Reviewed Interactions Only** and coaching runs on human-checked work, which is stricter and usually fairer. It also means that if reviewing falls behind, the scores stop moving, and courses stop reaching the people who need them. The setting is sound. The backlog is what breaks it.
+Set it to **Reviewed Interactions Only** and coaching runs on human-checked work, which is stricter and usually fairer. It also means that if reviewing falls behind, an agent with nothing reviewed since the last run is left out of that run, and work reviewed after the run never counts towards it. Courses stop reaching the people who need them. The setting is sound. The backlog is what breaks it.
 
 Set it to **All Interactions** and nothing stalls, but the coaching follows the analysis alone.
 
@@ -81,7 +83,7 @@ So the difficulty of passing is uniform, but how many chances an agent gets is n
 
 ### Agent View Permissions is retroactive
 
-Most settings here apply from the next cycle onwards. **Agent View Permissions** is not one of them.
+**Agent View Permissions** changes what agents can open straight away, not from the next cycle.
 
 It controls what an agent can open under **Interactions** right now. Changing it from **All Interactions** to **Reviewed Interactions Only** removes access to work they could see yesterday, including interactions they have already read.
 

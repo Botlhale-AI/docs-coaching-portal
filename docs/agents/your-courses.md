@@ -46,14 +46,13 @@ Each course shows its **Due Date**. Start early enough to finish before it.
 
 ## 2. Work Through the Material
 
-Select **View Course** to open one. The page opens on a description of what it covers, then its details, with **Category**, **Scope**, and **Applies to** on the left and **Initiation Score**, **Score**, **Date Assigned**, **Due Date**, and, once finished, **Date Completed** on the right. The material sits below.
+Select **View Course** to open one. The page opens on a description of what it covers, then its details, with **Category**, **Scope**, and **Applies to** on the left and **Initiation Score**, **Date Assigned**, **Due Date**, and, once finished, **Score** and **Date Completed** on the right. The material sits below.
 
 {/* Two independent captures (quick-search.png above and course-actions.png below) both show View Course on an Assigned-status card, not Start Course. AgentCourseView.jsx ties Start Course to status === "assigned", but the live product no longer matches that. Updated this step to what the screen actually shows. */}
 
-Material comes in two forms, and a course can carry both:
+**Course Material** can hold a web link, a PDF, or both. Each opens in a new tab from its own **View Material** button. Where there are two, the top one is the link and the bottom one is the PDF. On the course's card in the list, **Download Material** opens the PDF too.
 
-- **Course Material** is a PDF your team lead uploaded. **View Material** opens it in a new tab. On the course's card in the list, **Download Material** does the same.
-- **Course Link** is an **External Link**, behind its own **View Material** control, that opens elsewhere in a new tab.
+{/* VERIFIED 2026-10-01 on origin/vela-fly: coaching_portal/(pages)/courses/[courseId]/page.jsx renders course.link then course.materials[0], each as a View Material control. Course Link and External Link are labels on the team lead's form only. */}
 
 Below the material, **Take Quiz** opens the quiz. Once the course is complete it reads **View Quiz** instead, and opens your results.
 
@@ -83,7 +82,9 @@ When you submit, the page shows **Quiz Completed** and your score as a percentag
 
 - **Previous Attempts**, once you have retaken the quiz, listing the score of every attempt with the latest outlined.
 - Three buttons, **Return to Course**, **Retake Quiz** with the number left in brackets, and **Complete Course**.
-- **Quiz Answers** lists each question with the points it earned, such as **1/3 points**.
+- **Quiz Answers** lists each question with the points it earned, such as **1/3 points**. A question that earned nothing still shows 1 point, so trust the percentage at the top over the points per question.
+
+  {/* VERIFIED 2026-10-01 on origin/vela-fly: CourseQuizClient.jsx shows assignmentQuestion.score || 1, so a zero-point answer reads as 1 point. Product bug, raised with engineering. */}
 
 ![The quiz results screen, with Quiz Completed and the score, the passing-score message, and the Return to Course, Retake Quiz and Complete Course buttons](../../img/screenshots/agent_view/courses/quiz-failed.png)
 
@@ -95,7 +96,7 @@ The percentage on the results screen is the **Final Score** recorded against the
 
 Once a course is finished it moves to the **Completed Courses** table, whose row shows **Date Assigned**, **Due Date**, **Category**, **Initiation Score**, **Final Score**, and **Date Completed**. Select the **eye** icon in the **Actions** column to reopen the course and read back your attempt.
 
-{/* VERIFIED 2026-09-07 against a live agent capture (DemoOrg3, Vusi Zulu): Completed Courses is a table with those columns and an eye icon in Actions, not a card with a Review Quiz button. Final Score reads N/A on a row completed without a graded attempt. */}
+{/* VERIFIED 2026-09-07 against a live agent capture (DemoOrg3, Vusi Zulu): Completed Courses is a table with those columns and an eye icon in Actions, not a card with a Review Quiz button. Final Score reads N/A on a row completed without a graded attempt. Corrected 2026-10-01 on origin/vela-fly: AgentCourseView.jsx shows assignment.totalScore || "N/A", so N/A means a score of 0%, which is also what an unsubmitted quiz holds. Complete Course exists only on the results screen (CourseQuizClient.jsx), after a submission. */}
 
 ### How Many Attempts You Get
 
@@ -109,9 +110,9 @@ flowchart LR
     C -- "You run out of retakes" --> D
 ```
 
-Read the **Final Score** for how you did, not for which of the two closed the course out. A **Final Score** of **N/A** means the course was completed without a quiz result, for example by selecting **Complete Course** before taking the quiz.
+Read the **Final Score** for how you did, not for which of the two closed the course out. A **Final Score** of **N/A** means you scored 0%.
 
-Your team lead sets **Quiz Retakes** on each course, between 1 and 5, so the number is not the same on every course. Vela shows how many you have left in a few places. The quiz page reads **You have 2 retake attempts available**, the results screen reads **You have 2 retakes remaining**, and the button on the results screen reads **Retake Quiz (2 left)**.
+Your team lead sets **Quiz Retakes** on each course, between 1 and 5, so the number is not the same on every course. It is the total number of attempts, including your first, so a course set to 1 gives you one attempt. Vela shows how many you have left in a few places. On your first attempt the quiz page counts one more than the results screen, because it is read before the attempt starts. The quiz page reads **You have 2 retake attempts available**, the results screen reads **You have 2 retakes remaining**, and the button on the results screen reads **Retake Quiz (2 left)**.
 
 When the count reaches zero, the line reads **You have no retakes remaining.** and both **Retake Quiz** and **Complete Course** are gone, leaving **Return to Course**. A completed course shows the same single button whenever you reopen its results.
 
@@ -133,7 +134,7 @@ While retakes remain, the results screen also offers **Complete Course**, beside
 
 Open **Courses** and confirm the course you finished sits under **Completed Courses** with a **Final Score** on it.
 
-A course still under **Courses In Progress** after you submitted usually means the quiz was not submitted rather than not passed. Open it and check. A course that moved to **Completed Courses** with a score below the pass percentage means either your retakes ran out or you selected **Complete Course** on that attempt.
+A course still under **Courses In Progress** after you submitted is waiting for you. Open its quiz results and select **Complete Course**, or use a retake. A course that moved to **Completed Courses** with a score below the pass percentage means either your retakes ran out or you selected **Complete Course** on that attempt.
 
 ---
 

@@ -512,8 +512,8 @@ for (const { rel, file, raw } of live) {
 }
 
 // --- Navigation ------------------------------------------------------------
-// A rename has to land in four places at once: the title, the H1, the sidebar
-// label, and the navigation table. Each of these has drifted before.
+// A rename has to land in three places at once: the title, the sidebar label,
+// and the navigation table. Each of these has drifted before.
 
 const sidebarSrc = read(join(ROOT, "sidebars.js"))
   .split("\n")

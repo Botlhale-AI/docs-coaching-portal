@@ -29,7 +29,7 @@ What the course covers and why it was assigned. Free text.
 
 The scorecard category the **Training Initiation Score Range** below is measured against, not only a label for browsing. It is the same list your organisation's Agent Scorecard questions are grouped into, and it grows automatically the first time a scorecard question uses a new category. Chosen from that list. There is no way to add a new one from this form (see [Create and Assign Courses](../team-leads/create-and-assign-courses.md)).
 
-{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev (#842), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
+{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev and origin/dev-hold (#842, rechecked 2026-10-01), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
 
 ### Upload PDF
 
@@ -46,7 +46,7 @@ No other format is accepted. Material in another format must be exported to PDF 
 
 ### External Link
 
-A URL to material hosted outside Vela. Opens in a new tab for the agent.
+A URL to material hosted outside Vela, starting with `https://`. The form refuses any other link. Opens in a new tab for the agent.
 
 **Upload PDF** and **External Link** sit either side of an **or** on the form, so a course built in one pass carries one of the two.
 
@@ -58,11 +58,11 @@ A course switched from one to the other in **Edit Course** keeps what it already
 
 An image shown on the course card. Either one of the supplied theme images or an uploaded file.
 
-Uploads accept `.jpg`, `.jpeg`, and `.png`.
+Required. The form refuses a course without a cover image. Uploads accept `.jpg`, `.jpeg`, and `.png`.
 
 ### Quiz Questions
 
-Added one at a time with **Add Question**. Each question has its text and an answer type.
+Added one at a time with **Add Question**. At least one is required, and the form refuses a course without one. Each question has its text and an answer type.
 
 | Answer type | What you set | Validation |
 | :--- | :--- | :--- |
@@ -83,7 +83,7 @@ Existing questions are changed with the **pencil** icon, which opens a panel hea
 
 ### Quiz Retakes
 
-How many retakes an agent gets after their first attempt at the quiz, so a course set to 3 allows four attempts in total.
+The total number of attempts an agent gets at the quiz, including the first. A course set to 3 allows three attempts.
 
 | Property | Value |
 | :--- | :--- |
@@ -96,12 +96,12 @@ A course reaches **Complete** when retakes run out or the agent selects **Comple
 
 The band of scores that assigns the course, measured against the agent's score in the course's own **Category** rather than their overall score. A slider with two handles, showing the floor and ceiling as percentages.
 
+{/* UNVERIFIED: per-Category measurement. See the note under Category in glossary.md. */}
+
 | Property | Value |
 | :--- | :--- |
-| Range | 0 to 100 |
+| Range | Within 0 to 100, but not the whole of it. The slider starts at 0 to 100, which the form refuses, so move at least one handle |
 | Behaviour | Agents whose score in the course's Category falls between the floor and ceiling are assigned the course on the next cycle |
-
-A range of 0 to 100 assigns the course to everyone in scope.
 
 ### Deadline
 
@@ -151,7 +151,9 @@ Who is eligible for the award, on the same access-level-dependent basis as a cou
 
 The band of scores that earns the award, set as **Min** and **Max**, measured against the agent's score in **Award Category** rather than their overall score. The same mechanism as a course's Training Initiation Score Range, aimed at a high band instead of a low one.
 
-An agent earns the award when their score in that category falls between the two. It is a band rather than a floor, so an award set to 70 to 79 deliberately excludes agents scoring 80.
+An agent earns the award when their score in that category falls between the two. It is a band rather than a floor, so an award set to 70 to 79 deliberately excludes agents scoring 80. **Min** must be lower than **Max**, and a range of 0 to 100 cannot be saved. The form starts at 0 and 100, so change at least one.
+
+{/* UNVERIFIED: per-Category measurement. See the note under Category in glossary.md. */}
 
 ### Award Message
 
@@ -190,7 +192,7 @@ The page confirms the setting back as **Evaluate every 1 month(s)** or similar.
 
 ### Pass Percentage
 
-The share of the total quiz score needed to pass a course. Applies to every course in the organisation.
+The share of the total quiz score needed to pass a course. Applies to every course in the organisation, and a change applies at once, to existing courses as well as new ones.
 
 Default 50.
 

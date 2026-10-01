@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: team-leads/coaching-dashboard
 ---
 
-Coaching turns what Vela measures into training and recognition. You set the criteria once, and Vela assigns courses and presents awards to whoever meets them on a regular cycle. You are setting the rules rather than picking people each time.
+This walkthrough is for team leads new to coaching. Coaching turns what Vela measures into training and recognition. You set the criteria once, and Vela assigns courses and presents awards to whoever meets them on a regular cycle. You are setting the rules rather than picking people each time.
 
 This page takes you from an empty Coaching section to a first course that reaches the agents who need it. Work through it in order.
 
@@ -31,11 +31,11 @@ You need:
 
 Select **Coaching** in the left sidebar, then **Preferences**.
 
-Set the [evaluation cycle](../reference/glossary.md#evaluation-cycle) before anything else. Nothing is assigned between runs, so a course built without knowing it looks broken for a month. See [How Coaching Works](../explanation/how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for what the cycle actually does.
+Set the [evaluation cycle](../reference/glossary.md#evaluation-cycle) before anything else. Nothing is assigned between runs, so a course built without knowing it looks broken until the next run. See [How Coaching Works](../explanation/how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for what the cycle actually does.
 
 ![The Evaluation Cycle settings under Preferences, with the interval, unit, and time](../../img/screenshots/team_lead/preferences/evaluation-cycle.png)
 
-Set the **Pass Percentage** at the same time. It applies to every course you build afterwards.
+Set the **Pass Percentage** at the same time. It applies to every course, including ones already built, from the moment you save it.
 
 See [Set Coaching Preferences](./coaching-preferences.md) for each setting, including what agents can see of their own work.
 
@@ -45,7 +45,7 @@ See [Set Coaching Preferences](./coaching-preferences.md) for each setting, incl
 
 Select **Dashboard**.
 
-Set the date range to a period with enough interactions to judge, then read **Category Scores**. Look for a category where several agents sit below the team rather than one agent below everywhere.
+Set the date range to a period with enough interactions to judge. Set **View By** to **Specific Teams**, or **Entire Team** for team access, so each line is an agent, then read **Category Scores**. Look for a category where several agents sit below the team rather than one agent below everywhere.
 
 ![Auto Fails beside Category Scores on the Coaching Dashboard, broken down by category](../../img/screenshots/team_lead/dashboard/dashboard-overview.png)
 
@@ -59,13 +59,13 @@ See [Read the Coaching Dashboard](./coaching-dashboard.md).
 
 Select **Courses**, then **Create a New Course**.
 
-Name it for the gap, describe what it covers in terms the agent recognises, and attach your material. Set **Category** to the same category you found behind in step 2, since that is what the score range below is measured against, not the agent's overall score. Add a quiz so completion means something. Set the **Deadline** (a count and a unit of Days, Weeks, or Months) and the **Scope**.
+Name it for the gap, describe what it covers in terms the agent recognises, and attach your material. Set **Category** to the same category you found behind in step 2, since that is what the score range below is measured against, not the agent's overall score. Add at least one quiz question, because the course cannot be saved without one. The quiz is also what makes completion mean something. Set the **Deadline** (a count and a unit of Days, Weeks, or Months) and the **Scope**.
 
 ![The Add Details step of the course form, with Title, Category, Description, Scope, and the score range slider](../../img/screenshots/team_lead/courses/new-course.png)
 
 The [**Training Initiation Score Range**](../reference/glossary.md#training-initiation-score-range) is what decides who receives it, which is every agent whose score in that category falls inside it. Narrow it to the agents you saw behind in step 2. A wide range reaches everyone and measures nothing.
 
-{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev (#842), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
+{/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev and origin/dev-hold (#842, rechecked 2026-10-01), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
 
 See [Create and Assign Courses](./create-and-assign-courses.md).
 
@@ -75,7 +75,7 @@ See [Create and Assign Courses](./create-and-assign-courses.md).
 
 Nothing happens until the next evaluation run. When it has passed, select **Progress**.
 
-Confirm agents appear against your course with a **Date Assigned**. Nobody there means no agent's scores fell inside your **Training Initiation Score Range**, so widen it or check the scores again.
+Confirm agents appear against your course with a **Date Assigned**. Nobody there means no agent in the course's **Scope** had a score inside your **Training Initiation Score Range**, or no agent had scored interactions since the last run. Check the scope, then widen the range.
 
 ![The Progress table once a cycle has run, with a row pairing each agent with a course](../../img/screenshots/team_lead/progress/progress-table.png)
 

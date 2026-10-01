@@ -4,7 +4,7 @@ How we write Vela documentation. Read this before adding or editing a page.
 
 For how the documentation is structured and why, see [DOCUMENTATION_FRAMEWORK.md](./DOCUMENTATION_FRAMEWORK.md).
 
-Our audience is call centre team leads, QA managers, and administrators. They are not developers, and they usually arrive with a job to do or a problem to solve. Write for that person. Section 4 covers who they are and the tone that serves them, and it matters as much as the mechanical rules do: this documentation is read by paying customers and the people they report to.
+Our audience is call centre team leads, QA managers, and administrators, and the agents they coach, who use the Agent Portal. They are not developers, and they usually arrive with a job to do or a problem to solve. Write for that person. Section 4 covers who they are and the tone that serves them, and it matters as much as the mechanical rules do: this documentation is read by paying customers and the people they report to.
 
 ---
 
@@ -44,7 +44,7 @@ This is not a style preference. Most of the serious errors found in this documen
 
 Finding a feature in the codebase does not mean a user can get to it. Half-built and deliberately hidden features leave working code behind. Before documenting a capability, confirm there is a control a user can actually reach.
 
-Two real examples from this documentation:
+Two real examples from the Vela documentation, which this guide was adopted from:
 
 - **Knowledge Base URL uploads.** The API route, form handling, validation, and success message all exist. The button that switches to URL mode is commented out, so the mode cannot be reached. Knowledge Base accepts PDF files only.
 - **Settings Preferences.** The component is written and imported into the settings page, but never rendered and absent from the tab list. There is no Preferences tab.
@@ -415,7 +415,7 @@ The most common mistake is putting reference material inside a tutorial. If a qu
 
 ### Deliberate deviations
 
-We depart from strict Diátaxis in two places, on purpose. Both are decisions, not oversights.
+We depart from strict Diátaxis in three places, on purpose. All three are decisions, not oversights.
 
 **1. The Metrics reference includes "What to look for" notes.**
 
@@ -535,7 +535,7 @@ A screenshot is a claim about the product, and it ages faster than the text arou
 
 ### Recording work still to do
 
-Both markers are MDX comments, so they compile to nothing:
+All three markers are MDX comments, so they compile to nothing:
 
 | Marker | Use it when |
 | :--- | :--- |

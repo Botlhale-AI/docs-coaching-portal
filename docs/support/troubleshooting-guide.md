@@ -7,15 +7,23 @@ pagination_prev: null
 pagination_next: null
 ---
 
-Common problems in the Coaching Portal, and what to check. Each entry starts from what you can see rather than from the feature it belongs to. For short answers to general questions, see [Frequently Asked Questions](./faq.md).
+Common problems in the Coaching Portal, for team leads and agents, and what to check. Each entry starts from what you can see rather than from the feature it belongs to. For short answers to general questions, see [Frequently Asked Questions](./faq.md).
 
 ---
 
 ## Signing In
 
-{/* The sign-in messages in this section are from app/api/login/route.js on origin/main, shown on the sign-in page as the message Vela shows. Confirmed on screen: the unconfirmed-address message, the Security tab entry, "You are not registered as an agent. Please log in on the main Vela login page." (2026-09-21), and "Your account has been blocked. Please contact support for assistance" (2026-09-21). Not yet seen live: the agent-at-main-login message, the deactivated message, and the tenth-attempt "Too many login attempts" wording that precedes the blocked one. No capture of the wrong-portal message is in the repository yet: the one taken shows a real address, so mask it with a solid bar before saving it as img/screenshots/agent_view/auth/wrong-portal.png. */}
+{/* The sign-in messages in this section are from app/api/login/route.js and app/api/auth/[...nextauth]/route.js on origin/vela-fly (the reset message is not on origin/main), shown on the sign-in page as the message Vela shows. Confirmed on screen: the unconfirmed-address message, "You are not registered as an agent. Please log in on the main Vela login page." (2026-09-21), and "Your account has been blocked. Please contact support for assistance" (2026-09-21). Not yet seen live: the agent-at-main-login message, the deactivated message, and the tenth-attempt "Too many login attempts" wording that precedes the blocked one. No capture of the wrong-portal message is in the repository yet: the one taken shows a real address, so mask it with a solid bar before saving it as img/screenshots/agent_view/auth/wrong-portal.png. */}
 
-**Problem:** Sign-in is refused with **We have sent you an email. Please verify your email address.**, even with the password from the invitation email.
+**Problem:** Sign-in is refused with **We have sent you an email. Please reset your password before logging in.**, even with the password from the invitation email.
+
+**Cause:** A new account must set its own password before its first sign-in. The temporary password in the invitation does not work, and no email is sent at this point.
+
+**Solution:** Select **Forgot your password?** on the sign-in page, enter your email address, and select **Reset**. Follow the link in the **Reset Your Password** email to set a password, then sign in with it. Setting the password also confirms your email address. See [Getting Started for Agents](../agents/getting-started.md#1-sign-in-for-the-first-time).
+
+---
+
+**Problem:** Sign-in is refused with **We have sent you an email. Please verify your email address.**
 
 **Cause:** The email address has not been confirmed yet. Vela refuses the sign-in until it is.
 
@@ -26,11 +34,13 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 
 ---
 
-**Problem:** The **Security** tab is missing from Settings, so there is nowhere to change a password.
+**Problem:** Changing the password on the **Security** tab has no effect on a Google or Microsoft sign-in.
 
-**Cause:** The account signs in through Google or Microsoft, so the identity provider holds the password rather than Vela.
+**Cause:** The **Security** tab changes the Vela password only. Where you sign in with Google or Microsoft, your provider holds that password.
 
-**Solution:** Change the password with your provider. The tab is absent by design rather than missing.
+**Solution:** Change the password with your provider.
+
+{/* Rewritten 2026-10-01. The earlier entry said the Security tab is hidden for Google or Microsoft sign-in, and an earlier note called that confirmed on screen, but no capture of it is in the repository. coaching_portal/(pages)/settings/page.jsx hides the tab only when session.provider is google or azure-ad, and no branch (main, vela-fly, dev, dev-hold) sets provider in the session callback, so the tab shows for everyone. Check on a live SSO account. */}
 
 ---
 
@@ -81,7 +91,7 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 **Cause:** No processed interactions fall inside the selected dates.
 
 **Solution:**
-1. Widen the date range. A new account often has nothing in the current week.
+1. Widen the date range. The Dashboard opens on the current month, and a new account often has nothing in it yet.
 2. Confirm interactions have finished processing. They appear once analysis completes.
 3. If **Evaluation Scope** is set to **Reviewed Interactions Only**, nothing appears until a reviewer marks an interaction as reviewed. See [Set Coaching Preferences](../team-leads/coaching-preferences.md).
 
@@ -104,7 +114,7 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 **Solution:**
 1. Work out when the cycle next runs from the interval, day, and time under **Coaching → Preferences**. The page shows the schedule rather than the date of the next run.
 2. After it has run, open **Progress** and look for agents against the course.
-3. Still nobody? No agent's scores fell inside the **Training Initiation Score Range**. Widen the range, or check the scores on the Dashboard.
+3. Still nobody? Either no agent's score fell inside the **Training Initiation Score Range**, or no agent had scored interactions since the last run. Where **Evaluation Scope** is **Reviewed Interactions Only**, only reviewed interactions count. Widen the range, or check the scores on the Dashboard.
 
 ---
 
@@ -135,21 +145,23 @@ Common problems in the Coaching Portal, and what to check. Each entry starts fro
 2. Lower it to a band that is demanding but reachable, or leave it if it is deliberately rare.
 3. Changes take effect from the next evaluation cycle. Awards already presented stay presented.
 
-{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), not origin/main, which has no code that presents awards or assigns courses. Full note under Award in glossary.md. */}
+{/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), rechecked 2026-10-01 on origin/dev-hold. Not yet on origin/main or origin/vela-fly, which have no code that presents awards or assigns courses. Documented ahead of release by decision, 2026-10-01: main is expected to carry it before these pages go live. Full note under Award in glossary.md. */}
 
 ---
 
 ## Progress
 
-**Problem:** A date range control reads **Invalid date range**.
+**Problem:** Selecting **Apply** on a date range shows a message that the start date or end date is missing.
 
-**Cause:** The picker keeps the earlier of the two dates you select as the start automatically, so an out-of-order range cannot actually be set. **Invalid date range** instead means one of the two dates has not been set yet.
+**Cause:** Only one date is selected. The range stays as it was.
 
-**Solution:** Set both a start and an end date, then select **Apply** again.
+**Solution:** Select a start date and an end date, then select **Apply** again.
+
+{/* VERIFIED 2026-10-01 on origin/vela-fly: app/(pages)/coaching/progress/timeframe.jsx shows this toast and returns. Invalid date range comes only from dates in the page address that cannot be read (progress/page.jsx), which the picker never produces. */}
 
 ---
 
-**Problem:** **No Department** appears as an option in the Progress filter's department list.
+**Problem:** **No Department** appears in brackets after a team's name in the Progress filter's team list.
 
 **Cause:** A team's department is not assigned in the main Vela platform. This does not affect the Progress table itself, which has no department column.
 
