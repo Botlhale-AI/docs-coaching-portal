@@ -22,7 +22,7 @@ Coaching spans two applications that look nothing alike.
 | **The coaching side of Vela** | **Coaching** in the main Vela sidebar | Team leads, QA managers, administrators |
 | **The Agent Portal** | A separate portal at its own address | Agents |
 
-A team lead never sees the portal an agent uses, and an agent never sees the Coaching section. This is why the documentation is split by audience rather than by feature, and why a team lead cannot answer "what does this look like on my screen?" for an agent from memory.
+A team lead never sees the portal an agent uses, and an agent never sees the Coaching section. This is why the documentation is split by audience rather than by feature. It is also why a team lead cannot describe an agent's screen from memory.
 
 What connects them is the evaluation cycle. Team leads define, the cycle distributes, and agents receive.
 
@@ -30,7 +30,7 @@ What connects them is the evaluation cycle. Team leads define, the cycle distrib
 
 ## What depends on what
 
-Preferences sits at the top of everything. Its four settings fan out into the rest of coaching. **Evaluation Scope** decides which interactions produce the scores, and those scores, broken down by category, are what the Dashboard shows and what a course or award range is measured against. That range always checks the agent's score in one specific **Category**, never their overall score. **Evaluation Cycle** decides when that measurement runs, and the run is what assigns courses and presents awards, which is what Progress then records. **Pass Percentage** decides whether a quiz result in Progress reads as a pass. **Agent View Permissions** sits apart from all of it, governing only what an agent can open under Interactions.
+Preferences sits at the top of everything. Its four settings fan out into the rest of coaching. **Evaluation Scope** decides which interactions produce the scores. Those scores, broken down by category, feed both the Dashboard and the cycle run, which checks each agent against a course's or award's range. The range is measured against the agent's score in the chosen **Category**, not their overall score. **Evaluation Cycle** decides when that measurement runs, and the run is what assigns courses and presents awards, which is what Progress then records. **Pass Percentage** decides whether a quiz result in Progress reads as a pass. **Agent View Permissions** sits apart from all of it, governing only what an agent can open under Interactions.
 
 {/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev and origin/dev-hold (#842, rechecked 2026-10-01), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
 
@@ -38,16 +38,16 @@ Preferences sits at the top of everything. Its four settings fan out into the re
 
 ```mermaid
 flowchart TD
+    R("The score range you<br/>set on a course or award") --> A
     P("Preferences") --> C("Evaluation Cycle")
     P --> M("Pass Percentage")
     P --> E("Evaluation Scope")
     P --> V("Agent View Permissions")
 
     E --> S("Which interactions<br/>produce the scores")
-    S --> D("Dashboard figures")
-    D --> R("The score range you<br/>set on a course or award")
     C --> A("The cycle run")
-    R --> A
+    S --> A
+    S --> D("Dashboard figures")
     A --> G("Courses assigned<br/>and awards presented")
     G --> PR("Progress")
     M --> Q("Whether a quiz result<br/>reads as a pass")
@@ -65,9 +65,9 @@ Read from the top. Preferences governs everything. Nothing else in coaching over
 
 ### Evaluation Scope decides the scores, which decide the assignment
 
-**Evaluation Scope** looks like a small setting about which interactions count. It is not. It decides which interactions count, both for the Dashboard and for the score each run checks against a course's range. The run does not read the Dashboard. It scores each agent on the interactions recorded since the last run.
+**Evaluation Scope** looks like a minor setting, but it decides which interactions count, both for the Dashboard and for the score each run checks against a course's range. The run does not read the Dashboard. It scores each agent on the interactions recorded since the last run.
 
-Set it to **Reviewed Interactions Only** and coaching runs on human-checked work, which is stricter and usually fairer. It also means that if reviewing falls behind, an agent with nothing reviewed since the last run is left out of that run, and work reviewed after the run never counts towards it. Courses stop reaching the people who need them. The setting is sound. The backlog is what breaks it.
+Set it to **Reviewed Interactions Only** and coaching runs on human-checked work, which is stricter and usually fairer. If reviewing falls behind, an agent with nothing reviewed since the last run is left out of that run. Work reviewed after a run never counts towards it. Courses stop reaching the people who need them. The setting is sound. The backlog is what breaks it.
 
 Set it to **All Interactions** and nothing stalls, but the coaching follows the analysis alone.
 
@@ -83,9 +83,7 @@ So the difficulty of passing is uniform, but how many chances an agent gets is n
 
 ### Agent View Permissions is retroactive
 
-**Agent View Permissions** changes what agents can open straight away, not from the next cycle.
-
-It controls what an agent can open under **Interactions** right now. Changing it from **All Interactions** to **Reviewed Interactions Only** removes access to work they could see yesterday, including interactions they have already read.
+**Agent View Permissions** changes what an agent can open under **Interactions** straight away, not from the next cycle. Changing it from **All Interactions** to **Reviewed Interactions Only** removes access to work they could see yesterday, including interactions they have already read.
 
 Agree it before agents are invited. Changing it afterwards is visible to them and reads as something being taken away.
 
@@ -93,7 +91,7 @@ Agree it before agents are invited. Changing it afterwards is visible to them an
 
 The **Scope** control's options depend on your own access level rather than being the same for everyone. Organisational access sees **Entire Organisation**, **Specific Departments**, and **Specific Teams**. Departmental access never sees an organisation-wide option at all, only **Entire Department** and **Specific Teams**. Team access sees no selector, only a fixed line naming your own team.
 
-This is why a departmental-access team lead cannot build a course that reaches another department. The option to try is never offered, not shown and then blocked.
+This is why a departmental-access team lead cannot build a course that reaches another department. The option is never offered, rather than shown and then blocked.
 
 ---
 
@@ -121,7 +119,7 @@ walks through it once, from an empty Coaching section to a first course that
 reaches somebody.
 
 The one step that page cannot cover is the last one, because it happens a cycle
-later. Read the Dashboard again on the next run and compare the agents who
+later. Read the Dashboard again after the next run and compare the agents who
 received the course with those who did not. That comparison is the only evidence
 the course worked, and [Best Practices](./best-practices.md) covers what to do
 with the answer.

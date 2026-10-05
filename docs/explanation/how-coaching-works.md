@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-Coaching runs on a schedule that team leads set. You set the criteria once, and on each cycle Vela checks the score of every agent who had scored interactions since the last run, and assigns the courses and awards they have qualified for. Between cycles it does nothing, and it never decides anything itself.
+Coaching runs on a schedule that team leads set. You set the criteria once. On each cycle, Vela checks the score of every agent with scored interactions since the last run, and assigns the courses and awards they qualify for. Between cycles it does nothing, and it never decides anything itself.
 
 Seven rules follow from that, and each has a section below.
 
@@ -44,8 +44,7 @@ flowchart LR
     C -- "Inside a course's<br/>Training Initiation Score Range" --> D("The course is assigned,<br/>with a Due Date")
     C -- "Inside an award's<br/>Score Threshold (Range)" --> E("The award is presented,<br/>with a certificate")
     C -- "Neither" --> F("Nothing happens<br/>for that agent")
-    D --> G("The agent works through it<br/>and takes the quiz")
-    G --> H("Progress records the result")
+    D --> G("The agent takes the quiz,<br/>and Progress records the result")
 ```
 
 Between runs, nothing is assigned. A course you create this morning reaches nobody until the next run, however obviously some agent qualifies for it. This is the single most common reason a team lead thinks coaching is broken when it is working exactly as configured.
@@ -56,7 +55,7 @@ It also means the cycle length is a real decision rather than a formality. A mon
 
 ## Assignment is by score, never by name
 
-There is no control anywhere that assigns a course to a named person. You describe a band of scores, and whoever falls inside it on the day the cycle runs receives the course. An agent who still has that course open is not given it again. Once they complete it, a later run can assign it again if their score is still in the band.
+There is no control anywhere that assigns a course to a named person. You describe a band of scores, and any agent whose score since the last run falls inside it receives the course. An agent who still has that course open is not given it again. Once they complete it, a later run can assign it again if their score is still in the band.
 
 Two settings shape who that is:
 
@@ -71,11 +70,11 @@ This design has a consequence worth stating plainly. Coaching follows the scores
 
 ## A range is a band, not a threshold
 
-Both courses and awards use two numbers rather than one, and both are inclusive of the space between them rather than everything above or below.
+Courses and awards each use a range with a lowest and a highest score, not a single pass mark. An agent qualifies when their score is anywhere from the lowest to the highest, including both. A range of 70 to 79 includes 70 and 79, but not 80.
 
 An award set to 80 to 100 recognises the top of the team. An award set to 70 to 79 recognises a specific tier and deliberately excludes the people above it, which is how you build a ladder rather than a single prize.
 
-The same applies to courses in reverse. A course set very wide, such as 0 to 99, reaches almost everyone, including the people who are already good at it, and it produces no evidence about whether it worked. A narrower band leaves a group who did not receive it, and the comparison between the two groups on the next cycle is the only real measure of whether the training changed anything.
+The same applies to courses in reverse. A course set very wide reaches almost everyone, including the people who are already good at it, and it produces no evidence about whether it worked. A narrower band leaves out a group who did not receive the course. Comparing the two groups on the next cycle is the only real measure of whether the training worked.
 
 ---
 
@@ -95,7 +94,7 @@ The practical rule is to use the scores to decide **who to look at**, and the in
 
 An auto-fail takes an interaction to zero regardless of everything else that went well. It is not a low score, it is a failed requirement.
 
-That difference should change what you do. A category average that has drifted down a few points is a coaching conversation. A rising auto-fail rate is usually one specific, nameable requirement being missed, and it is often faster to fix by telling people the requirement than by assigning training about the general area.
+That difference should change what you do. A category average that has drifted down a few points is a coaching conversation. A rising auto-fail rate usually means one specific requirement is being missed. Telling people that requirement is often a faster fix than assigning training on the general area.
 
 Because an auto-fail zeroes the interaction, it also pulls the agent's average down hard. An agent with one auto-fail and otherwise strong work can land inside a course's score range for reasons that have nothing to do with the course's subject. Check the auto-fail figure before concluding that a low average means a broad weakness.
 

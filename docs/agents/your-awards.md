@@ -26,7 +26,7 @@ Select **Awards** in the left sidebar. The page opens on **Recent Activity**, wh
 
 ![The Awards page in the Agent Portal, with Search, the date range, Filter and Sort By above a Recent Activity card for the newest award](../../img/screenshots/agent_view/awards/awards-overview.png)
 
-Every award you have been presented sits below that under **Your Awards**, one card each, reading down as its name, the date it was awarded, what it recognises, and the category the award belongs to. An award with the same name can appear more than once, carrying a different date each time.
+Below that, **Your Awards** holds every award you have been presented, one card each. Each card shows the award's name, the date it was awarded, what it recognises, and the category it belongs to. An award with the same name can appear more than once, carrying a different date each time.
 
 ![The full list of awards, each card carrying a trophy, the award name, the date awarded, the description, and the category](../../img/screenshots/agent_view/awards/awards-overview2.png)
 

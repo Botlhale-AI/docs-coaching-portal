@@ -27,7 +27,7 @@ What the course covers and why it was assigned. Free text.
 
 ### Category
 
-The scorecard category the **Training Initiation Score Range** below is measured against, not only a label for browsing. It is the same list your organisation's Agent Scorecard questions are grouped into, and it grows automatically the first time a scorecard question uses a new category. Chosen from that list. There is no way to add a new one from this form (see [Create and Assign Courses](../team-leads/create-and-assign-courses.md)).
+The scorecard category the **Training Initiation Score Range** below is measured against, not only a label for browsing. It is the same list your organisation's Agent Scorecard questions are grouped into. A new category is added automatically the first time a scorecard question uses it. Chosen from that list. There is no way to add a new one from this form (see [Create and Assign Courses](../team-leads/create-and-assign-courses.md)).
 
 {/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev and origin/dev-hold (#842, rechecked 2026-10-01), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
 
@@ -50,7 +50,7 @@ A URL to material hosted outside Vela, starting with `https://`. The form refuse
 
 **Upload PDF** and **External Link** sit either side of an **or** on the form, so a course built in one pass carries one of the two.
 
-A course switched from one to the other in **Edit Course** keeps what it already had rather than clearing it. Reopening **Edit Course** and selecting the other radio option shows the earlier PDF or link still set, and a course edited this way carries both. The agent's course page shows a **View Material** control for each.
+A course switched from one to the other in **Edit Course** keeps what it already had rather than clearing it. Reopening **Edit Course** and selecting the other option shows the earlier PDF or link still set, and a course edited this way carries both. The agent's course page shows a **View Material** control for each.
 
 {/* VERIFIED 2026-09-09 in the live product: a course was created with a PDF, then edited to External Link and saved. The URL showed on the Course Content tab. Reopening Edit Course and selecting Upload PDF still showed the original file, and selecting External Link still showed the URL, confirming both are kept server-side rather than one overwriting the other. The agent-side claim, that View Material then appears twice, follows from AgentCourseView.jsx's independent course.link and course.materials conditionals, traced in source but not separately confirmed on an agent screen. */}
 
@@ -90,7 +90,7 @@ The total number of attempts an agent gets at the quiz, including the first. A c
 | Range | 1 to 5 |
 | Default on a new course | 3 |
 
-A course reaches **Complete** when retakes run out or the agent selects **Complete Course**, whichever comes first, whatever they scored. See [Metrics](./metrics.md#course-progress) for what that does and does not confirm.
+A course reaches **Complete** when the agent uses their last attempt or selects **Complete Course**, whichever comes first, whatever they scored. See [Metrics](./metrics.md#course-progress) for what that does and does not confirm.
 
 ### Training Initiation Score Range
 
@@ -100,7 +100,7 @@ The band of scores that assigns the course, measured against the agent's score i
 
 | Property | Value |
 | :--- | :--- |
-| Range | Within 0 to 100, but not the whole of it. The slider starts at 0 to 100, which the form refuses, so move at least one handle |
+| Range | Any band inside 0 to 100, except the full 0 to 100. The slider starts at 0 to 100, so move at least one handle before saving |
 | Behaviour | Agents whose score in the course's Category falls between the floor and ceiling are assigned the course on the next cycle |
 
 ### Deadline

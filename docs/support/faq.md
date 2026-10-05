@@ -25,7 +25,7 @@ A: An agent sees their own interactions, scores, courses, and awards, never a co
 ## Courses and Awards
 
 **Q: How does an agent get a course?**
-A: By score. You set a **Category** on the course and a **Training Initiation Score Range** within it, and on each evaluation cycle every agent in scope whose score in that category falls in the range receives it. Nobody assigns courses manually.
+A: By score. You set a **Category** and a **Training Initiation Score Range** on the course. On each evaluation cycle, every agent in scope whose score in that category falls in the range receives it. Nobody assigns courses manually.
 
 {/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev and origin/dev-hold (#842, rechecked 2026-10-01), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
 
@@ -36,7 +36,7 @@ A: The **Deadline** on the course, set as a count and a unit of **Days**, **Week
 A: The **Pass Percentage** under **Coaching → Preferences**. It applies to every course rather than being set per course.
 
 **Q: Can an agent retake a course?**
-A: Yes. **Quiz Retakes**, set per course by the team lead, is the total number of attempts, from 1 to 5, including the first. The **Initiation Score**, the agent's score when the course was assigned, stays visible alongside the new **Final Score**, so improvement stays visible.
+A: Yes. **Quiz Retakes**, set per course by the team lead, is the total number of attempts, from 1 to 5, including the first. The **Initiation Score**, the agent's score when the course was assigned, is shown alongside the new **Final Score**, so you can see the improvement.
 
 **Q: How are awards presented?**
 A: Automatically, on the evaluation cycle, to every agent whose score in the award's **Award Category** falls inside its **Score Threshold (Range)**. Agents download their own certificate from their portal.
@@ -50,7 +50,7 @@ A: Automatically, on the evaluation cycle, to every agent whose score in the awa
 ## Timing
 
 **Q: I created a course. Why does nobody have it?**
-A: Assignment happens on the evaluation cycle, not when you save. Work out when the cycle next runs from the interval, day, and time under **Coaching → Preferences**, which shows the schedule rather than the date of the next run, then look at **Progress** after it has.
+A: Assignment happens on the evaluation cycle, not when you save. Work out when the cycle next runs from the interval, day, and time under **Coaching → Preferences**, which shows the schedule rather than the date of the next run. Then check **Progress** once it has run.
 
 **Q: How often should the cycle run?**
 A: Monthly suits most teams. Weekly responds faster but assigns training on less evidence, so an agent can be given a course for one bad week rather than a real gap.

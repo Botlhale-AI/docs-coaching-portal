@@ -9,7 +9,7 @@ pagination_next: null
 
 Coaching in Vela is automatic once a team lead configures it, which is its strength and its risk. Set the criteria well and the right training reaches the right people without anyone chasing it. Set them carelessly and the same machinery sends everyone everything, and people stop reading it.
 
-These are recommendations for the second problem. Each section stands on its own.
+These recommendations help you avoid that. Each section stands on its own.
 
 ---
 
@@ -65,7 +65,7 @@ An award set at a mark most of the team already clears recognises nothing, and a
 
 A high completion rate is the least interesting thing on the Progress page. The useful signals are the failures, not the completions, so read it for what stalled or scored low rather than for how much of it is done. See [Track Learning Progress](../team-leads/track-learning-progress.md#3-act-on-what-you-find) for what each status usually means and how to act on it.
 
-Sort on **Due Date** to bring the overdue to the top. That list is shorter than the whole page and it is where the problems are.
+Filter **Status** to **Not Started** and **In Progress**, then sort on **Due Date**, **Ascending**. The overdue come first. That list is shorter than the whole page and it is where the problems are.
 
 ---
 

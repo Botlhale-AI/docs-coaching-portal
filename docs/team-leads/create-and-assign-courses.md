@@ -11,7 +11,7 @@ import Hotspots from '@site/src/components/Hotspots';
 import newCourseImg from '@site/img/screenshots/team_lead/courses/new-course.png';
 import retakesImg from '@site/img/screenshots/team_lead/courses/new-course4.png';
 
-A course is training you build once, as a team lead, and Vela assigns automatically. You set the category and the score range within it that assigns the course, and on each evaluation cycle every agent whose score in that category falls in the range receives it. Courses reach people by score rather than by name, so you set the criteria rather than picking individuals.
+A course is training you build once, as a team lead, and Vela assigns automatically. You set a category and a score range on the course. On each evaluation cycle, every agent whose score in that category falls in the range receives it. Courses reach people by score rather than by name, so you set the criteria rather than picking individuals.
 
 {/* UNVERIFIED: per-Category measurement. See the note under Category in glossary.md. */}
 
@@ -50,7 +50,7 @@ The form is one page in four labelled parts, and **Add Details** is the first.
     { x: 65.2, y: 31.6, title: 'Category', body: 'The scorecard category the Training Initiation Score Range below is measured against, not only a label for browsing.' },
     { x: 26.4, y: 47.5, title: 'Description', body: 'What the course covers, and why it was assigned.' },
     { x: 24.1, y: 69.9, title: 'Scope', body: 'Who the course can reach, from the whole organisation down to chosen departments or teams. The options offered depend on your own access level.' },
-    { x: 75.1, y: 69.9, title: 'Training Initiation Score Range', body: 'The band of scores, measured against the agent\'s score in the chosen Category rather than their overall score, that receives the course.' },
+    { x: 75.1, y: 69.9, title: 'Training Initiation Score Range', body: 'The band of scores that qualifies an agent for the course. It is measured against their score in the chosen Category, not their overall score.' },
   ]}
 />
 
@@ -84,7 +84,7 @@ Scope and the score range work together rather than instead of each other. Scope
 
 ## 3. Add Content
 
-A course holds what the agent works through, either an uploaded PDF or a link to material hosted elsewhere. **Upload PDF** and **External Link** are a radio choice, so a course built in one pass carries one. Editing the course later and switching to the other option does not clear what was already set. Vela keeps both, and the agent then sees a **View Material** control for each. See [Course and Award Fields](../reference/course-and-award-fields.md#external-link) for how that plays out.
+A course holds what the agent works through, either an uploaded PDF or a link to material hosted elsewhere. You choose either **Upload PDF** or **External Link**, so a course built in one go carries one of them. Editing the course later and switching to the other option does not clear what was already set. Vela keeps both, and the agent then sees a **View Material** control for each. See [Course and Award Fields](../reference/course-and-award-fields.md#external-link) for how that plays out.
 
 ![The Add Content step, with the content type chosen and the cover image picker](../../img/screenshots/team_lead/courses/new-course2.png)
 
@@ -119,7 +119,7 @@ A multiple choice question is refused until it has at least two options and one 
 
 Paragraph answers still need a correct answer, typed rather than chosen. Vela compares the agent's answer against it and scores by meaning rather than exact wording. Write those questions so there is something specific to score. "Name the two disclosures required before taking payment" can be scored, and "What did you think of this course?" cannot.
 
-Every question also carries **Points**, worth 1 by default and adjustable, though saving is refused if you set it to 0, and **Required**, a toggle set on by default that decides whether the agent must answer it before submitting the quiz.
+Every question also has two settings. **Points** is worth 1 by default and can be changed, but not to 0, which the form refuses. **Required** is on by default, and decides whether the agent must answer the question before submitting the quiz.
 
 ![A quiz question as it appears once added, with its type, points and answer](../../img/screenshots/team_lead/courses/new-course3.png)
 

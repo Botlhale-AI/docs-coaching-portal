@@ -7,7 +7,7 @@ pagination_prev: agents/your-interactions
 pagination_next: agents/your-awards
 ---
 
-**Courses** in the left sidebar holds the training assigned to you. Vela assigns courses on your organisation's [evaluation cycle](../reference/glossary.md#evaluation-cycle), based on how you have scored, so a course arrives because your figures qualified you for it rather than because someone picked you.
+**Courses** in the left sidebar holds the training assigned to you. Vela assigns courses on your organisation's [evaluation cycle](../reference/glossary.md#evaluation-cycle), based on your scores. A course arrives because your scores qualified you for it, not because someone picked you.
 
 ---
 
@@ -46,7 +46,7 @@ Each course shows its **Due Date**. Start early enough to finish before it.
 
 ## 2. Work Through the Material
 
-Select **View Course** to open one. The page opens on a description of what it covers, then its details, with **Category**, **Scope**, and **Applies to** on the left and **Initiation Score**, **Date Assigned**, **Due Date**, and, once finished, **Score** and **Date Completed** on the right. The material sits below.
+Select **View Course** to open one. The page opens on a description of what the course covers. Below it, the left side shows **Category**, **Scope**, and **Applies to**. The right side shows **Initiation Score**, **Date Assigned**, and **Due Date**, and once the course is finished, **Score** and **Date Completed**. The material sits below.
 
 {/* Two independent captures (quick-search.png above and course-actions.png below) both show View Course on an Assigned-status card, not Start Course. AgentCourseView.jsx ties Start Course to status === "assigned", but the live product no longer matches that. Updated this step to what the screen actually shows. */}
 
@@ -82,7 +82,7 @@ When you submit, the page shows **Quiz Completed** and your score as a percentag
 
 - **Previous Attempts**, once you have retaken the quiz, listing the score of every attempt with the latest outlined.
 - Three buttons, **Return to Course**, **Retake Quiz** with the number left in brackets, and **Complete Course**.
-- **Quiz Answers** lists each question with the points it earned, such as **1/3 points**. A question that earned nothing still shows 1 point, so trust the percentage at the top over the points per question.
+- **Quiz Answers** lists each question with the points it earned, such as **1/3 points**. A question that earned nothing still shows 1 point, so rely on the percentage at the top, not the points per question.
 
   {/* VERIFIED 2026-10-01 on origin/vela-fly: CourseQuizClient.jsx shows assignmentQuestion.score || 1, so a zero-point answer reads as 1 point. Product bug, raised with engineering. */}
 
@@ -92,7 +92,7 @@ In **Quiz Answers**, a paragraph question shows the answer you gave, and a multi
 
 ![The Quiz Answers list, with paragraph answers shown in full and the chosen multiple-choice option marked Answer](../../img/screenshots/agent_view/courses/courses-detailed-view-quiz-results.png)
 
-The percentage on the results screen is the **Final Score** recorded against the course. **Initiation Score** sits beside it in the Completed Courses table, showing the score you had when the course was assigned to you rather than a quiz result, so the gap between the two is what the course changed.
+The percentage on the results screen is the **Final Score** recorded against the course. **Initiation Score** sits beside it in the Completed Courses table. It is the score you had when the course was assigned, not a quiz result, so the gap between the two shows what the course changed.
 
 Once a course is finished it moves to the **Completed Courses** table, whose row shows **Date Assigned**, **Due Date**, **Category**, **Initiation Score**, **Final Score**, and **Date Completed**. Select the **eye** icon in the **Actions** column to reopen the course and read back your attempt.
 
@@ -107,12 +107,12 @@ flowchart LR
     A("Your score falls in<br/>the course's range") --> B("Assigned")
     B -- "You open it" --> C("In Progress")
     C -- "You select Complete Course" --> D("Completed")
-    C -- "You run out of retakes" --> D
+    C -- "You use your last attempt" --> D
 ```
 
 Read the **Final Score** for how you did, not for which of the two closed the course out. A **Final Score** of **N/A** means you scored 0%.
 
-Your team lead sets **Quiz Retakes** on each course, between 1 and 5, so the number is not the same on every course. It is the total number of attempts, including your first, so a course set to 1 gives you one attempt. Vela shows how many you have left in a few places. On your first attempt the quiz page counts one more than the results screen, because it is read before the attempt starts. The quiz page reads **You have 2 retake attempts available**, the results screen reads **You have 2 retakes remaining**, and the button on the results screen reads **Retake Quiz (2 left)**.
+Your team lead sets **Quiz Retakes** on each course, between 1 and 5, so the number is not the same on every course. It is the total number of attempts, including your first, so a course set to 1 gives you one attempt. Vela shows how many you have left in a few places. The quiz page reads **You have 2 retake attempts available**, the results screen reads **You have 2 retakes remaining**, and the button on the results screen reads **Retake Quiz (2 left)**. On your first attempt, the quiz page shows one more than the results screen. Go by the results screen.
 
 When the count reaches zero, the line reads **You have no retakes remaining.** and both **Retake Quiz** and **Complete Course** are gone, leaving **Return to Course**. A completed course shows the same single button whenever you reopen its results.
 
@@ -120,7 +120,7 @@ When the count reaches zero, the line reads **You have no retakes remaining.** a
 
 {/* The zero-retake wording and the two buttons disappearing are from CourseQuizClient.jsx on origin/main, where both buttons are gated on retakesRemaining > 0 and the assignment not being completed. The completed state is confirmed by the capture above. Previous Attempts is absent on the first-attempt capture (quiz-failed.png) and present with two attempts here, which is why it is described as appearing once the quiz has been retaken. */}
 
-:::warning Running out of retakes closes the course
+:::warning Using your last attempt closes the course
 The course moves to **Completed Courses** with the last score you got, whether or not you passed, and you cannot take it again. Check the count before you start an attempt.
 :::
 
@@ -134,7 +134,7 @@ While retakes remain, the results screen also offers **Complete Course**, beside
 
 Open **Courses** and confirm the course you finished sits under **Completed Courses** with a **Final Score** on it.
 
-A course still under **Courses In Progress** after you submitted is waiting for you. Open its quiz results and select **Complete Course**, or use a retake. A course that moved to **Completed Courses** with a score below the pass percentage means either your retakes ran out or you selected **Complete Course** on that attempt.
+A course still under **Courses In Progress** after you submitted is waiting for you. Open its quiz results and select **Complete Course**, or use a retake. A course that moved to **Completed Courses** with a score below the pass percentage means either you used your last attempt or you selected **Complete Course** on that attempt.
 
 ---
 

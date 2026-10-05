@@ -13,7 +13,7 @@ Definitions of the terms used in the Coaching Portal and in this documentation. 
 
 ## Access Level
 
-How much of the organisation you can see and act on. Set on your user record in the main Vela platform, not in coaching, and it decides which agents appear on the Coaching Dashboard and how far a course or award can reach.
+How much of the organisation you can see and act on. It is set on your user record in the main Vela platform, not in coaching. It decides which agents appear on the Coaching Dashboard, and how far a course or award can reach.
 
 | Level | Covers |
 | :--- | :--- |
@@ -53,7 +53,7 @@ The main Vela platform writes this as **Auto-Fail**, with a hyphen. It is the sa
 
 ## Award
 
-Recognition presented automatically when an agent's score in the award's **Category** falls inside its **Score Threshold (Range)**, the same mechanism as a [Course](#course) pointed at a high band instead of a low one. Awards carry a certificate the agent can download.
+Recognition presented automatically when an agent's score in the award's **Category** falls inside its **Score Threshold (Range)**. It works like a [Course](#course), but aimed at high scores instead of low ones. Awards carry a certificate the agent can download.
 
 {/* UNVERIFIED: per-Category measurement. See the note under Category in glossary.md. */}
 
@@ -63,7 +63,7 @@ Nobody presents an award manually. See [Recognise Good Work](../team-leads/recog
 
 ## Category
 
-One list, shared across coaching and the main Vela platform. It is the same set of categories your organisation's Agent Scorecard questions are grouped into, such as Customer Care or Compliance, and it grows automatically the first time a scorecard question uses a new one.
+One list, shared across coaching and the main Vela platform. It is the same set of categories your organisation's Agent Scorecard questions are grouped into, such as Customer Care or Compliance. A new category is added automatically the first time a scorecard question uses it.
 
 On the **Dashboard**, a category groups scorecard questions, and **Category Scores** breaks performance down by them.
 
@@ -75,7 +75,7 @@ On a course or an award, **Category** is the one whose score the **Training Init
 
 The coaching add-on as a whole, and the name of this documentation. It has two halves. The **Coaching** section inside the main Vela platform is where team leads build courses and awards, and the [Agent Portal](#agent-portal) is where agents receive them.
 
-"Coaching Portal" names the add-on rather than a screen. The agent sign-in page is headed **Coaching Portal**, but no sidebar entry or menu in either application carries the name, so an agent looking for somewhere to sign in wants the Agent Portal.
+"Coaching Portal" names the add-on rather than a screen. The agent sign-in page is headed **Coaching Portal**, but no sidebar entry or menu in either application uses the name. An agent who wants to sign in needs the Agent Portal.
 
 ## Course
 
@@ -91,7 +91,7 @@ How long an agent has from the date a course is assigned to them, set on the cou
 
 ## Evaluation Cycle
 
-How often Vela reviews scores and assigns the courses and awards agents have qualified for. The Preferences page describes both in one breath, with no distinction between them. A course catches agents scoring low in a category, and an award catches those scoring high. Set under **Coaching → Preferences** as an interval, a unit of **Day(s)**, **Week(s)**, or **Month(s)**, and a time.
+How often Vela reviews scores and assigns the courses and awards agents have qualified for. One cycle covers both. A course catches agents scoring low in a category, and an award catches those scoring high. Set under **Coaching → Preferences** as an interval, a unit of **Day(s)**, **Week(s)**, or **Month(s)**, and a time.
 
 Nothing is assigned between runs. A course created today reaches agents at the next run rather than immediately. See [How Coaching Works](../explanation/how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for why.
 
@@ -103,7 +103,7 @@ Marking an interaction as reviewed happens in the main Vela platform, not in coa
 
 ## Final Score
 
-An agent's result on a course quiz. [Initiation Score](#initiation-score) sits beside it, showing where they stood before the course rather than a previous quiz result.
+An agent's result on a course quiz, in the agent's **Completed Courses** table. It reads **N/A** where the result was 0% or there is no result yet, and a team lead sees the same figure as **Score**. [Initiation Score](#initiation-score) sits beside it, showing where they stood before the course rather than a previous quiz result.
 
 ## Initiation Score
 

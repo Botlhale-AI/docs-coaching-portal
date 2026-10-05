@@ -22,7 +22,7 @@ You need:
 
 ## 1. Set the Period
 
-Select the **Pencil** beside **Date range** at the top of the page to choose the period. The page opens on the current month. It opens **Filter by Date Range**, which offers **Today**, **Yesterday**, **This Week**, **Last Week**, **This Month**, and **Last Month** down the side, or **From** and **To** dates you pick off two months of calendar. Select **Save** to apply it, or **Close** to leave the range as it was. Everything below is recalculated for the dates you keep.
+The page opens on the current month. To choose another period, select the **Pencil** beside **Date range** at the top of the page. This opens **Filter by Date Range**, which offers **Today**, **Yesterday**, **This Week**, **Last Week**, **This Month**, and **Last Month** down the side, or **From** and **To** dates you pick off two months of calendar. Select **Save** to apply it, or **Close** to leave the range as it was. Everything below is recalculated for the dates you keep.
 
 ![The Filter by Date Range picker, with the preset ranges beside From and To dates on two months of calendar](../../img/screenshots/agent_view/dashboard/date-range.png)
 

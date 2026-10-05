@@ -70,7 +70,7 @@ The date range is a separate control, the **pencil** icon above the table rather
 
 The picker keeps the earlier date you select as the start automatically, so there is no way to set an out-of-order range. If you select **Apply** with only one date chosen, Vela asks you to pick both and leaves the range as it was.
 
-**Sort By** orders the list on a column you choose. It opens set to **Descending**, and **Save Changes** applies it. Sorting on **Score** leaves the order unchanged, so filter on score instead.
+**Sort By** orders the list on a column you choose. It opens set to **Descending**, and **Save Changes** applies it. Sorting on **Score** does not change the order, so use **Filter** to narrow by score instead.
 
 ![The sort control on the Progress list](../../img/screenshots/team_lead/progress/sort.png)
 
@@ -95,7 +95,13 @@ Filter **Status** to **Not Started** and **In Progress**, then sort on **Due Dat
 
 Open **Progress** and confirm the course you assigned has agents against it, with **Date Assigned** on or after the evaluation cycle that ran.
 
-A course with nobody against it after a cycle has run means one of three things. The date range does not cover the run, no agent in the course's **Scope** had a score inside its **Training Initiation Score Range**, or no agent had scored interactions since the last run. Check the dates first, then widen the range on the course or check the scores on the Dashboard.
+A course with nobody against it after a cycle has run means one of three things:
+
+- The date range does not cover the run.
+- No agent in the course's **Scope** had a score inside its **Training Initiation Score Range**.
+- No agent had scored interactions since the last run.
+
+Check the dates first, then widen the range on the course or check the scores on the Dashboard.
 
 ---
 

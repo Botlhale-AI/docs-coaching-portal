@@ -7,7 +7,7 @@ pagination_prev: team-leads/getting-started
 pagination_next: team-leads/create-and-assign-courses
 ---
 
-As a team lead, you use **Dashboard**, under **Coaching** in the main Vela platform, to see how the agents you cover are scoring over a period you choose. Use it to decide who needs a conversation and what that conversation should be about, before you build a course or open individual interactions.
+As a team lead, you use the **Dashboard** under **Coaching** in the main Vela platform to see how the agents you cover are scoring over a period you choose. Use it to decide who needs a conversation and what that conversation should be about, before you build a course or open individual interactions.
 
 ---
 
@@ -124,7 +124,13 @@ See [Create and Assign Courses](./create-and-assign-courses.md) for the second, 
 
 Set the date range to a period you know holds interactions and confirm the panels fill.
 
-An empty Dashboard shows **No data available for the selected date range. Try adjusting your filter**. Either no processed interactions fall in the dates, **Evaluation Scope** is **Reviewed Interactions Only** and nothing in the dates has been reviewed, or your access level does not cover the agents you expected. Widen the range first, then check **Evaluation Scope** and your access level. The same message also appears when the figures fail to load, so reload the page if the range is clearly right.
+An empty Dashboard shows **No data available for the selected date range. Try adjusting your filter**. It has three usual causes:
+
+- No processed interactions fall in the dates.
+- **Evaluation Scope** is **Reviewed Interactions Only**, and nothing in the dates has been reviewed.
+- Your access level does not cover the agents you expected.
+
+Widen the range first, then check **Evaluation Scope** and your access level. The same message also appears when the figures fail to load, so reload the page if the range is clearly right.
 
 {/* VERIFIED 2026-10-01 on origin/vela-fly: app/components/charts/performanceCharts.jsx sets hasData = true, so the per-category "There is no data available in this category" message never renders. Removed from this page. */}
 

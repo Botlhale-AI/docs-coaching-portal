@@ -28,7 +28,7 @@ Select **Notifications** under **ADMIN** in the left sidebar. Three tabs sort wh
 | :--- | :--- |
 | **Awards** | An award someone has presented to you |
 | **Courses** | A course that has been assigned to you |
-| **Comments** | Comment notifications. Your team lead's comments do not arrive here, so open **View Comments** on the interaction to read them |
+| **Comments** | Usually empty. Your team lead's comments do not arrive here, so open **View Comments** on the interaction to read them |
 
 The page lists unread notifications only, so a tab with nothing in it reads **No results found**. That is a result rather than a fault. It means nothing of that type is waiting for you.
 

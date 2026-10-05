@@ -21,7 +21,7 @@ An award is recognition you define once, as a team lead, and Vela presents autom
 You need:
 
 - **Something worth recognising.** An award for a mark most of the team already clears recognises nothing, and agents work out quickly that it is automatic. Check where scores actually sit on the [Coaching Dashboard](./coaching-dashboard.md) first, then set the floor above most of the team.
-- **To know your evaluation cycle.** Awards go out on the cycle set under [Coaching Preferences](./coaching-preferences.md), not the moment you save the form. An award created today waits for that cycle to run before the first agent receives it, so check the cycle before you commit to a date you are expecting it to land by.
+- **To know your evaluation cycle.** Awards go out on the cycle set under [Coaching Preferences](./coaching-preferences.md), not the moment you save the form. An award created today reaches nobody until that cycle runs, so check the cycle before you promise anyone a date.
 
 ---
 
@@ -37,7 +37,7 @@ Select **Coaching** in the left sidebar, then **Awards**. Select **Create New Aw
     { x: 68.4, y: 42.2, title: 'Award Category', body: "The scorecard category the Score Threshold below measures against. Choose from the same categories your organisation's scorecard questions are grouped into." },
     { x: 31.4, y: 59.6, title: 'Award Description', body: 'What the award recognises. The agent sees it in their award list, and it prints on the certificate beneath the category and score.' },
     { x: 25.9, y: 81.5, title: 'Scope', body: 'Whether the award applies organisation-wide, or only to chosen departments or teams.' },
-    { x: 91.5, y: 81.5, title: 'Score Threshold (Range)', body: 'The Min and Max an agent\'s score in the chosen Award Category must fall between to earn the award.' },
+    { x: 91.5, y: 81.5, title: 'Score Threshold (Range)', body: 'The lowest and highest score that earn the award, measured against the score of the agent in the chosen Award Category.' },
   ]}
 />
 
@@ -49,7 +49,7 @@ Every award runs on your organisation's evaluation cycle, set under [Coaching Pr
 
 {/* UNVERIFIED: origin/dev-hold adds a Custom Evaluation Cycle checkbox to the award form (AwardCreateForm.jsx, AwardEditForm.jsx). coachingCycle.js uses it as that award's look-back window, while the organisation's cycle still decides when the run happens. Not on main or vela-fly. Needs a decision on whether to document it with the cycle. */}
 
-**Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score in **Award Category** falls between **Min** and **Max**, the same mechanism a course uses, aimed at a high band instead of a low one. The form opens at 0 and 100, which it refuses, because a range covering every score recognises no one. Set **Min** below **Max**, and narrower than 0 to 100.
+**Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score in **Award Category** falls between **Min** and **Max**, the same mechanism a course uses, aimed at a high band instead of a low one. The form opens at 0 and 100, which it refuses, because a range covering every score recognises no one. Set **Min** below **Max**, and keep the band narrower than 0 to 100.
 
 That lets you recognise a tier rather than everyone above a line. A "top performer" award is a high min with a max of 100 on the category that matters most. A band such as 70 to 79 picks out that group on its own.
 
@@ -73,7 +73,7 @@ The Awards page holds two collapsible sections. **Awards** is what you have defi
 
 ![The Awards Presented list, with the agent, award, date and score](../../img/screenshots/team_lead/awards/awards-presented.png)
 
-Scroll to **Awards Presented**. Both sections open expanded. Each row is one award reaching one agent:
+Scroll down to **Awards Presented**, which is already open. Each row is one award reaching one agent:
 
 | Column | What it shows |
 | :--- | :--- |

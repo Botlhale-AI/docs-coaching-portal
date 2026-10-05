@@ -91,7 +91,7 @@ Answer "Which interactions would you like agents to be able to view":
 Reviewed-only is worth considering where your reviewers add context that changes how a score reads. It also means an unreviewed backlog is invisible to the agent, so their portal looks emptier than their work has been.
 
 :::warning Two of these four do not wait for the next cycle
-**Evaluation Cycle** reschedules the next run as soon as you save. **Evaluation Scope** changes the Dashboard at once and the courses and awards from that next run. **Pass Percentage** and **Agent View Permissions** apply at once.
+**Evaluation Cycle** reschedules the next run as soon as you save. **Evaluation Scope** changes the Dashboard at once, and courses and awards from the next run. **Pass Percentage** and **Agent View Permissions** apply at once.
 
 **Agent View Permissions** reaches backwards as well. Moving it from **All Interactions** to **Reviewed Interactions Only** withdraws interactions an agent could open yesterday, including ones they have already read and been coached on. Agree that setting and the pass percentage before agents are invited.
 :::

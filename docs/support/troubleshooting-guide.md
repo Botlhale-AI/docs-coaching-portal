@@ -17,7 +17,7 @@ Common problems in the Coaching Portal, for team leads and agents, and what to c
 
 **Problem:** Sign-in is refused with **We have sent you an email. Please reset your password before logging in.**, even with the password from the invitation email.
 
-**Cause:** A new account must set its own password before its first sign-in. The temporary password in the invitation does not work, and no email is sent at this point.
+**Cause:** A new account must set its own password before its first sign-in. The temporary password in the invitation does not work. Despite the message, no email is sent at this point.
 
 **Solution:** Select **Forgot your password?** on the sign-in page, enter your email address, and select **Reset**. Follow the link in the **Reset Your Password** email to set a password, then sign in with it. Setting the password also confirms your email address. See [Getting Started for Agents](../agents/getting-started.md#1-sign-in-for-the-first-time).
 
@@ -120,7 +120,7 @@ Common problems in the Coaching Portal, for team leads and agents, and what to c
 
 **Problem:** An agent completed a course but it still shows **In Progress**.
 
-**Cause:** Submitting the quiz alone does not complete a course. Unless retakes have run out, the agent also has to select **Complete Course** on the results screen.
+**Cause:** Submitting the quiz alone does not complete a course. Unless that was their last attempt, the agent also has to select **Complete Course** on the results screen.
 
 **Solution:** Ask the agent to reopen the course and select **Complete Course**, or use a remaining retake if they want another attempt first.
 
@@ -128,9 +128,9 @@ Common problems in the Coaching Portal, for team leads and agents, and what to c
 
 **Problem:** A course file is rejected on upload, with **Please upload a PDF file** or **File size exceeds 10MB limit**.
 
-**Cause:** The upload accepts PDF only, and a PDF over 10MB.
+**Cause:** The upload accepts PDF files only, up to 10MB.
 
-**Solution:** Export the material to PDF where it is another format. Where the PDF is over 10MB, compress it or split it. Either way, hosting it elsewhere and using **External Link** instead also works.
+**Solution:** Export the material to PDF where it is another format. Where the PDF is over 10MB, compress it or split it. Either way, you can also host it elsewhere and use **External Link**, with a link starting `https://`.
 
 ---
 
@@ -138,10 +138,10 @@ Common problems in the Coaching Portal, for team leads and agents, and what to c
 
 **Problem:** An award exists but has never been presented.
 
-**Cause:** The **Score Threshold (Range)** on the award is set higher than anyone reaches.
+**Cause:** Usually the **Score Threshold (Range)** is set higher than anyone reaches. The award's **Scope** may also leave out the agents who would qualify, and an agent with no scored interactions since the last run is not checked at all.
 
 **Solution:**
-1. Compare the award's range against the scores on the Dashboard.
+1. Compare the award's range against the scores on the Dashboard, and check its **Scope**.
 2. Lower it to a band that is demanding but reachable, or leave it if it is deliberately rare.
 3. Changes take effect from the next evaluation cycle. Awards already presented stay presented.
 
@@ -175,7 +175,7 @@ Common problems in the Coaching Portal, for team leads and agents, and what to c
 
 **Cause:** Nothing of that type is waiting. The page lists unread notifications only.
 
-**Solution:** This is a result rather than a fault. Awards, courses, and comments each have their own tab, so check the others.
+**Solution:** This is a result rather than a fault. Awards, courses, and comments each have their own tab, so check the others. For an agent, **Comments** is usually empty, because a team lead's comments do not raise a notification. Open **View Comments** on the interaction instead.
 
 ---
 

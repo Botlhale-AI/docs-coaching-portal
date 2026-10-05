@@ -29,7 +29,7 @@ Shown on **Coaching → Dashboard** for a team lead, and on **Dashboard** in the
 
 The main Vela platform writes Auto Fails as **Auto-Fail**. It is the same measure, spelled as each screen spells it.
 
-**What to look for:** an auto-fail takes the whole interaction to zero, so a rising figure here outweighs a few points off an average, and it points at one requirement being missed rather than a broad decline. Category Scores is the panel to plan coaching from. An agent below the team in one category has a nameable gap a course can address, while an agent below in every category is a different problem. On the agent side the gap between **Your Score** and **Your Team** carries the meaning, not either figure alone. A score of 72 against a team on 85 is a conversation. Against a team on 70 it is not.
+**What to look for:** an auto-fail takes the whole interaction to zero, so a rising figure here matters more than a few points off an average. It usually points at one requirement being missed, not a broad decline. Category Scores is the panel to plan coaching from. An agent below the team in one category has a nameable gap a course can address, while an agent below in every category is a different problem. On the agent side the gap between **Your Score** and **Your Team** carries the meaning, not either figure alone. A score of 72 against a team on 85 is a conversation. Against a team on 70 it is not.
 
 ---
 
@@ -48,7 +48,7 @@ Shown on **Coaching → Progress** for a team lead, and on **Courses** in the po
 
 Because **Due Date** is calculated per agent, two agents assigned the same course on different cycles carry different due dates.
 
-**What to look for:** **Complete** means finished, not passed. A course closes as complete when an agent uses their last retake, or selects **Complete Course** before that, whatever they scored, so read it together with **Score**. The distance between **Initiation Score** and **Score** is what the course taught. A wide gap means the material worked, and two close figures mean it did not move the needle, which points at the material rather than the agent. **Date Assigned** is the field that confirms a cycle ran, so a course with no rows carrying one has reached nobody yet. To find overdue courses, filter **Status** to **Not Started** and **In Progress**, then sort on **Due Date**, **Ascending**. That is a shorter list to work from than the whole page.
+**What to look for:** **Complete** means finished, not passed. A course closes as complete when an agent uses their last attempt, or selects **Complete Course** before that, whatever they scored, so read it together with **Score**. The distance between **Initiation Score** and **Score** is what the course taught. A wide gap means the material worked, and two close figures mean it did not move the needle, which points at the material rather than the agent. **Date Assigned** is the field that confirms a cycle ran, so a course with no rows carrying one has reached nobody yet. To find overdue courses, filter **Status** to **Not Started** and **In Progress**, then sort on **Due Date**, **Ascending**. That is a shorter list to work from than the whole page.
 
 ---
 
@@ -61,7 +61,7 @@ Shown on **Coaching → Awards** for a team lead, and on **Awards** in the porta
 | **Date Awarded** | Both | The date the evaluation cycle presented an award to an agent |
 | **Score** | Team lead | The agent's score when the award was presented, in the **Awards Presented** list |
 
-**What to look for:** awards are presented by the cycle, so an empty list is a date range that predates the last run more often than a fault.
+**What to look for:** awards are presented by the cycle. An empty list usually means the date range ends before the last run, not a fault, so widen the range first.
 
 {/* VERIFIED 2026-09-21 against origin/dev (lib/coachingCycle.js, #842), rechecked 2026-10-01 on origin/dev-hold. Not yet on origin/main or origin/vela-fly, which have no code that presents awards or assigns courses. Documented ahead of release by decision, 2026-10-01: main is expected to carry it before these pages go live. Full note under Award in glossary.md. */}
 
