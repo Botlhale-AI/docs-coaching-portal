@@ -23,7 +23,7 @@ You need:
 
 ## 1. Sign In for the First Time
 
-Set your own password before you sign in. The portal does not accept the temporary password in the invitation, so signing in with it returns **We have sent you an email. Please reset your password before logging in.**
+If you sign in with email and password, set your own password before you sign in. The portal does not accept the temporary password in the invitation, so signing in with it returns **We have sent you an email. Please reset your password before logging in.**
 
 ![The invitation email, with the Confirm Account button and temporary password](../../img/screenshots/agent_view/auth/agent-invite.png)
 
