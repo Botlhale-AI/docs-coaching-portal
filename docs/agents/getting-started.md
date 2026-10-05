@@ -23,7 +23,7 @@ You need:
 
 ## 1. Sign In for the First Time
 
-If you sign in with email and password, set your own password before you sign in. The portal does not accept the temporary password in the invitation, so signing in with it returns **We have sent you an email. Please reset your password before logging in.**
+If you sign in with email and password, you set your own password before your first sign-in, rather than using the temporary password in the invitation. If you sign in with the temporary password first, the portal shows **We have sent you an email. Please reset your password before logging in.** and you set your password with the same steps.
 
 ![The invitation email, with the Confirm Account button and temporary password](../../img/screenshots/agent_view/auth/agent-invite.png)
 
@@ -40,7 +40,7 @@ Signing in takes you straight to your **Dashboard**.
 ![The Agent Portal sign-in page, with the email and password fields](../../img/screenshots/agent_view/auth/login.png)
 
 :::note Signing in with Google or Microsoft
-Where your organisation uses Single Sign-On, the Google and Microsoft buttons are not on this screen. Select **Go to Vela Login** below the sign-in form instead, and sign in there with your identity provider. You do not need a portal password. Your provider holds your password, so change it there, not on the **Security** tab.
+Where your organisation uses Single Sign-On, the Google and Microsoft buttons are not on this screen. Select **Go to Vela Login** below the sign-in form instead, and sign in there with your Google or Microsoft account. You do not need a portal password. Your provider holds your password, so change it there, not on the **Security** tab.
 :::
 
 ---

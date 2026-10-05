@@ -27,7 +27,7 @@ What the course covers and why it was assigned. Free text.
 
 ### Category
 
-The scorecard category the **Training Initiation Score Range** below is measured against, not only a label for browsing. It is the same list your organisation's Agent Scorecard questions are grouped into. A new category is added automatically the first time a scorecard question uses it. Chosen from that list. There is no way to add a new one from this form (see [Create and Assign Courses](../team-leads/create-and-assign-courses.md)).
+The scorecard category this course is about. The **Training Initiation Score Range** below is measured against the agent's score in this category, so it is more than a label. It is the same list your organisation's Agent Scorecard questions are grouped into. A new category is added automatically the first time a scorecard question uses it. Chosen from that list. There is no way to add a new one from this form (see [Create and Assign Courses](../team-leads/create-and-assign-courses.md)).
 
 {/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev and origin/dev-hold (#842, rechecked 2026-10-01), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
 
@@ -50,7 +50,7 @@ A URL to material hosted outside Vela, starting with `https://`. The form refuse
 
 **Upload PDF** and **External Link** sit either side of an **or** on the form, so a course built in one pass carries one of the two.
 
-A course switched from one to the other in **Edit Course** keeps what it already had rather than clearing it. Reopening **Edit Course** and selecting the other option shows the earlier PDF or link still set, and a course edited this way carries both. The agent's course page shows a **View Material** control for each.
+If you switch a course from a PDF to a link in **Edit Course**, or the other way round, the original stays. Reopening **Edit Course** and selecting the other option shows the earlier PDF or link still set, and a course edited this way carries both. The agent's course page shows a **View Material** control for each.
 
 {/* VERIFIED 2026-09-09 in the live product: a course was created with a PDF, then edited to External Link and saved. The URL showed on the Course Content tab. Reopening Edit Course and selecting Upload PDF still showed the original file, and selecting External Link still showed the URL, confirming both are kept server-side rather than one overwriting the other. The agent-side claim, that View Material then appears twice, follows from AgentCourseView.jsx's independent course.link and course.materials conditionals, traced in source but not separately confirmed on an agent screen. */}
 
@@ -79,7 +79,7 @@ Every question also has:
 | **Points** | A whole number, worth 1 by default. Saving is refused if set to 0 |
 | **Required** | On by default. Decides whether the agent must answer it before submitting the quiz |
 
-Existing questions are changed with the **pencil** icon, which opens a panel headed **Edit Question N**, and removed with the **bin** icon.
+Existing questions are changed with the **Pencil** icon, which opens a panel headed **Edit Question N**, and removed with the **bin** icon.
 
 ### Quiz Retakes
 
@@ -115,6 +115,19 @@ How long an agent has from their own **Date Assigned**, rather than a fixed cale
 
 Each agent's **Due Date** is calculated from the day they receive the course.
 
+### Set Course Nudges
+
+Reminders counted back from each agent's **Due Date**, so a nudge of 2 **Days** falls two days before the due date. Optional.
+
+| Property | Value |
+| :--- | :--- |
+| Count | A number, minimum 1 |
+| Unit | **Days**, **Weeks**, or **Months** |
+| How many | Up to three per course |
+| Duplicate | Refused with **Nudge already exists** |
+
+{/* VERIFIED 2026-10-05 on origin/vela-fly: CourseInputs.jsx (min 1, termOptions Days/Weeks/Months, add disabled at nudges.length >= 3, toast "Nudge already exists"). UNVERIFIED: that nudges are sent. No code on vela-fly or dev-hold sends a nudge on its own date. See the note under Set Course Nudges in create-and-assign-courses.md. */}
+
 ### Scope
 
 Who the course can reach. The options offered depend on your own access level, not a fixed list:
@@ -137,7 +150,7 @@ What the award is called, in the agent's list. It is not printed on the certific
 
 ### Award Category
 
-The scorecard category the **Score Threshold (Range)** below is measured against, the same list a course's **Category** is drawn from. Required.
+The scorecard category this award is about. The **Score Threshold (Range)** below is measured against the agent's score in this category. Chosen from the same list as a course's **Category**. Required.
 
 ### Award Description
 

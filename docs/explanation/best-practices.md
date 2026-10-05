@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-Coaching in Vela is automatic once a team lead configures it, which is its strength and its risk. Set the criteria well and the right training reaches the right people without anyone chasing it. Set them carelessly and the same machinery sends everyone everything, and people stop reading it.
+Coaching in Vela is automatic once a team lead configures it, which is its strength and its risk. Set the criteria well and the right training reaches the right people without anyone chasing it. Set them carelessly and the same machinery sends everyone everything, and agents stop paying attention.
 
 These recommendations help you avoid that. Each section stands on its own.
 
@@ -15,7 +15,7 @@ These recommendations help you avoid that. Each section stands on its own.
 
 ## Set the Cycle Before Anything Else
 
-Nothing is assigned between cycle runs, so a course built without knowing the cycle looks broken until the next run. See [How Coaching Works](./how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for what the cycle actually does.
+Nothing is assigned between cycle runs. If you do not know when the next run is, a new course can look broken while it waits. See [How Coaching Works](./how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for what the cycle actually does.
 
 **Monthly suits most teams.** A month holds enough interactions to tell a real gap from a bad week.
 
@@ -73,7 +73,7 @@ Filter **Status** to **Not Started** and **In Progress**, then sort on **Due Dat
 
 Coaching that assigns training and never checks whether scores moved is administration rather than coaching.
 
-After a course has been completed by the agents it targeted, go back to the Dashboard and look at the category it addressed, over the weeks since. A category that has stayed flat tells you the course missed. Change the material, or narrow who receives it, before the next cycle runs.
+Once the agents a course targeted have completed it, go back to the Dashboard. Look at the category the course covered, over the weeks since. A category that has stayed flat tells you the course missed. Change the material, or narrow who receives it, before the next cycle runs.
 
 Where it has moved, an award is the natural next step, and it is more credible for following a real improvement.
 

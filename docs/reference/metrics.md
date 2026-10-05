@@ -44,11 +44,13 @@ Shown on **Coaching → Progress** for a team lead, and on **Courses** in the po
 | **Final Score** | Agent | The same figure a team lead reads as **Score**, in the agent's **Completed Courses** table. Reads **N/A** where there is no quiz result or the result was 0%. A team lead sees **0%** for the same row |
 | **Status** | Team lead | **Not Started**, **In Progress**, or **Complete** |
 | **Date Assigned** | Both | The date the evaluation cycle assigned the course to that agent |
-| **Due Date** | Both | Worked out from **Date Assigned** plus the deadline set on the course. An agent with no deadline reads **No due date** |
+| **Due Date** | Both | Worked out from **Date Assigned** plus the deadline set on the course |
+
+{/* "No due date" exists in AgentCourseView.jsx (vela-fly) as a fallback when an assignment has no dueDate, but lib/coachingCycle.js on dev-hold always sets one (the course deadline, or 7 days), so it is not documented. Checked 2026-10-05. */}
 
 Because **Due Date** is calculated per agent, two agents assigned the same course on different cycles carry different due dates.
 
-**What to look for:** **Complete** means finished, not passed. A course closes as complete when an agent uses their last attempt, or selects **Complete Course** before that, whatever they scored, so read it together with **Score**. The distance between **Initiation Score** and **Score** is what the course taught. A wide gap means the material worked, and two close figures mean it did not move the needle, which points at the material rather than the agent. **Date Assigned** is the field that confirms a cycle ran, so a course with no rows carrying one has reached nobody yet. To find overdue courses, filter **Status** to **Not Started** and **In Progress**, then sort on **Due Date**, **Ascending**. That is a shorter list to work from than the whole page.
+**What to look for:** **Complete** means finished, not passed. A course closes as complete when an agent uses their last attempt, or selects **Complete Course** before that, whatever they scored, so read it together with **Score**. The distance between **Initiation Score** and **Score** is what the course taught. A wide gap means the material worked. Two close figures mean it changed little, which points at the material, not the agent. **Date Assigned** confirms that a cycle ran, so a course with no rows has reached nobody yet. To find overdue courses, filter **Status** to **Not Started** and **In Progress**, then sort on **Due Date**, **Ascending**. That is a shorter list to work from than the whole page.
 
 ---
 

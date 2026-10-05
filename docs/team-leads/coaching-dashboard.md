@@ -32,7 +32,7 @@ Two controls at the top of the page decide what everything below is calculated f
 | Control | What it does |
 | :--- | :--- |
 | **View By** | How much of the organisation you are looking at. Opens on the broadest scope your access level allows, **Entire Organisation** for organisational access, **Entire Department** for departmental access, or your own team for team access. Team access offers fewer choices than organisational access |
-| **Date range** | Sets the period. Select the **pencil** beside it to change the dates |
+| **Date range** | Sets the period. Select the **Pencil** beside it to change the dates |
 
 Pick a period long enough to hold several interactions per agent. A week is usually the shortest useful range, and a month is better for judging a trend.
 
@@ -75,10 +75,10 @@ An auto-fail removes an interaction's points from every category, not only the c
 
 {/* VERIFIED 2026-10-01 on origin/vela-fly: app/(pages)/coaching/dashboard/dashboard.js works out autoFailed once per call, across all questions, and then withholds that call's points (failScore) in every category. */}
 
-That gap is the useful part. A line reading `0%(71%)` is not a group that knows nothing about the category. It is a group doing most of the category correctly whose score is being wiped by a critical failure, which may be a question in another category. Coaching that failure recovers the whole column, and coaching the category does not.
+That gap is the useful part. A line reading `0%(71%)` is not a group that knows nothing about the category. It is a group that gets most of the category right, but a critical failure wipes its score. That failure may be a question in another category. Coaching that failure recovers the whole column, and coaching the category does not.
 
 :::tip Where the coaching list comes from
-Read across a category and find the groups whose bracketed figure is high while the first figure is low. Those are being held back by one critical requirement, which may sit in another category. That is a specific and fixable conversation. A group low on both figures is a broader gap that a course suits better.
+Read across a category and find the groups whose bracketed figure is high while the first figure is low. Those are being held back by one critical requirement, which may sit in another category. That is a specific and fixable conversation. A group low on both figures has a broader gap, which a course suits better.
 :::
 
 Only categories with interactions in the period appear as columns.

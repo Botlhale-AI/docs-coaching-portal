@@ -76,7 +76,7 @@ A: No. An agent sees their own figures, and their team's figures as an aggregate
 A: An administrator creates it in the main platform, and the portal emails an invitation. An agent who signs in with email and password then selects **Forgot your password?** on the Agent Portal sign-in page and sets their own password before their first sign-in. Agents who sign in with Google or Microsoft skip this.
 
 **Q: An agent cannot sign in. What first?**
-A: For email and password sign-in, setting a password. The temporary password in the invitation does not work, so a new agent selects **Forgot your password?** and follows the emailed link before their first sign-in. See [Troubleshooting](./troubleshooting-guide.md).
+A: If they sign in with email and password, check they have set their own password. A new agent sets it with **Forgot your password?** before their first sign-in, rather than using the temporary password in the invitation. See [Troubleshooting](./troubleshooting-guide.md).
 
 **Q: Can an agent change their name or email?**
 A: No. Those fields are read-only in the portal. A team lead changes them from the main platform.

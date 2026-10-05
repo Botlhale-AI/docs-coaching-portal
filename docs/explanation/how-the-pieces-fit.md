@@ -7,7 +7,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-The Coaching Portal has few settings for team leads, but they depend on one another in ways that are not obvious from any single page. Most of the confusion reported about coaching comes from a setting doing exactly what it says while a different one quietly decides the outcome.
+The Coaching Portal has few settings for team leads, but they depend on one another in ways that are not obvious from any single page. When coaching seems not to work, the cause is usually a different setting from the one you are looking at.
 
 This page maps those dependencies.
 
@@ -30,7 +30,14 @@ What connects them is the evaluation cycle. Team leads define, the cycle distrib
 
 ## What depends on what
 
-Preferences sits at the top of everything. Its four settings fan out into the rest of coaching. **Evaluation Scope** decides which interactions produce the scores. Those scores, broken down by category, feed both the Dashboard and the cycle run, which checks each agent against a course's or award's range. The range is measured against the agent's score in the chosen **Category**, not their overall score. **Evaluation Cycle** decides when that measurement runs, and the run is what assigns courses and presents awards, which is what Progress then records. **Pass Percentage** decides whether a quiz result in Progress reads as a pass. **Agent View Permissions** sits apart from all of it, governing only what an agent can open under Interactions.
+Preferences sits at the top of everything. Its four settings each feed a different part of coaching:
+
+- **Evaluation Scope** decides which interactions produce the scores. Those scores feed both the Dashboard and the cycle run.
+- **Evaluation Cycle** decides when the run happens. Each run checks every agent against each course's and award's range, assigns the courses, and presents the awards. **Progress** records the result.
+- **Pass Percentage** decides whether a quiz result in **Progress** counts as a pass.
+- **Agent View Permissions** stands apart. It only decides what an agent can open under **Interactions**.
+
+A course's or award's range is measured against the agent's score in the chosen **Category**, not their overall score.
 
 {/* UNVERIFIED: the per-Category measurement. The only implementation, lib/coachingCycle.js on origin/dev and origin/dev-hold (#842, rechecked 2026-10-01), uses the agent's overall score and never reads Category. Full note under Category in glossary.md. Needs the product owner to decide which is intended. */}
 
@@ -79,7 +86,7 @@ These two look like they belong together and they do not.
 
 **Pass Percentage** is set once, under Preferences, and applies to every quiz in the organisation. **Quiz Retakes** is set on each course individually, between 1 and 5.
 
-So the difficulty of passing is uniform, but how many chances an agent gets is not. Two agents failing the same mark on different courses may have very different amounts of room left.
+So the difficulty of passing is uniform, but how many chances an agent gets is not. Two agents below the pass percentage on different courses may have very different numbers of attempts left.
 
 ### Agent View Permissions is retroactive
 
@@ -89,9 +96,9 @@ Agree it before agents are invited. Changing it afterwards is visible to them an
 
 ### Scope caps what your own access allows
 
-The **Scope** control's options depend on your own access level rather than being the same for everyone. Organisational access sees **Entire Organisation**, **Specific Departments**, and **Specific Teams**. Departmental access never sees an organisation-wide option at all, only **Entire Department** and **Specific Teams**. Team access sees no selector, only a fixed line naming your own team.
+The **Scope** control's options depend on your own access level rather than being the same for everyone. Organisational access sees **Entire Organisation**, **Specific Departments**, and **Specific Teams**. Departmental access never sees an organisation-wide option at all, only **Entire Department** and **Specific Teams**. Team access sees no selector, only a fixed line naming the team lead's own team.
 
-This is why a departmental-access team lead cannot build a course that reaches another department. The option is never offered, rather than shown and then blocked.
+This is why a departmental-access team lead cannot build a course that reaches another department. The option is not shown at all.
 
 ---
 

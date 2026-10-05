@@ -34,10 +34,10 @@ Select **Coaching** in the left sidebar, then **Awards**. Select **Create New Aw
   alt="The Create an Award form, with Award Name and Award Category above Award Description, then Scope and the Score Threshold (Range) Min and Max fields"
   points={[
     { x: 28.8, y: 42.2, title: 'Award Name', body: 'What the award is called. It shows in the agent\'s own Awards list, but not on the certificate, which prints the award\'s category and score instead.' },
-    { x: 68.4, y: 42.2, title: 'Award Category', body: "The scorecard category the Score Threshold below measures against. Choose from the same categories your organisation's scorecard questions are grouped into." },
+    { x: 68.4, y: 42.2, title: 'Award Category', body: "The scorecard category this award is about. The Score Threshold below is measured against the agent's score in it. Choose from the same categories your organisation's scorecard questions are grouped into." },
     { x: 31.4, y: 59.6, title: 'Award Description', body: 'What the award recognises. The agent sees it in their award list, and it prints on the certificate beneath the category and score.' },
     { x: 25.9, y: 81.5, title: 'Scope', body: 'Whether the award applies organisation-wide, or only to chosen departments or teams.' },
-    { x: 91.5, y: 81.5, title: 'Score Threshold (Range)', body: 'The lowest and highest score that earn the award, measured against the score of the agent in the chosen Award Category.' },
+    { x: 91.5, y: 81.5, title: 'Score Threshold (Range)', body: 'The lowest and highest score that earn the award. It is measured against the agent\'s score in the chosen Award Category.' },
   ]}
 />
 
@@ -49,7 +49,7 @@ Every award runs on your organisation's evaluation cycle, set under [Coaching Pr
 
 {/* UNVERIFIED: origin/dev-hold adds a Custom Evaluation Cycle checkbox to the award form (AwardCreateForm.jsx, AwardEditForm.jsx). coachingCycle.js uses it as that award's look-back window, while the organisation's cycle still decides when the run happens. Not on main or vela-fly. Needs a decision on whether to document it with the cycle. */}
 
-**Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score in **Award Category** falls between **Min** and **Max**, the same mechanism a course uses, aimed at a high band instead of a low one. The form opens at 0 and 100, which it refuses, because a range covering every score recognises no one. Set **Min** below **Max**, and keep the band narrower than 0 to 100.
+**Score Threshold (Range)** is a range rather than a single mark. An agent earns the award when their score in **Award Category** falls between **Min** and **Max**. It works like a course's range, but aimed at high scores. The form opens at 0 and 100, which it refuses, because a range covering every score recognises no one. Set **Min** below **Max**, and keep the band narrower than 0 to 100.
 
 That lets you recognise a tier rather than everyone above a line. A "top performer" award is a high min with a max of 100 on the category that matters most. A band such as 70 to 79 picks out that group on its own.
 
@@ -87,7 +87,7 @@ Scroll down to **Awards Presented**, which is already open. Each row is one awar
 
 {/* CHECKED 2026-10-01: described as origin/dev-hold behaves, because this list fills only once the evaluation cycle ships from there. On origin/vela-fly (and main), Previous and Next throw (presentedAwardsTable.jsx uses an undeclared pathname), and the agent, team, department, and award filters return nothing (awards/page.jsx matches profile.* and checks awards against the agent list). dev-hold fixes both. Recheck when the cycle reaches main. */}
 
-An empty list where you expected awards usually means the date range, not a fault. Awards are presented on the evaluation cycle, so a range that predates the last run shows nothing.
+An empty list where you expected awards usually means the date range ends before the last run, not a fault. Awards are presented on the evaluation cycle, so widen the range first.
 
 **Filter** opens **Filter By**, shown below. **Sort By** and the date range open the same panels as on **Progress**, described in [Track Learning Progress](./track-learning-progress.md#2-narrow-the-list).
 
@@ -117,7 +117,7 @@ Agents can download their own certificates from their portal, so this is for you
 
 ## 4. Edit an Award
 
-Select the **pencil** icon on the award's card, in the **Awards** section, to change its details, its scope, or the score range that earns it.
+Select the **Pencil** icon on the award's card, in the **Awards** section, to change its details, its scope, or the score range that earns it.
 
 ![The pencil icon on an award card, in the Awards section](../../img/screenshots/team_lead/awards/edit-award.png)
 
@@ -129,7 +129,7 @@ Changing the range changes who qualifies from the next evaluation cycle on. Awar
 
 The award appears in the list as soon as you save it. That confirms it exists, not that anyone has earned it.
 
-To confirm it is being presented, open **Awards Presented** after the next evaluation cycle. Nothing there before the cycle runs is expected. An award nobody earns after several cycles usually means the **Score Threshold (Range)** sits above what the team reaches, or that its **Min** and **Max** enclose too narrow a band.
+To confirm it is being presented, open **Awards Presented** after the next evaluation cycle. Nothing there before the cycle runs is expected. An award nobody earns after several cycles usually means the **Score Threshold (Range)** sits above what the team reaches, or that its **Min** and **Max** enclose too narrow a band. Check its **Scope** too, in case it leaves out the agents who would qualify.
 
 ---
 

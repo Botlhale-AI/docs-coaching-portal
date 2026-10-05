@@ -17,9 +17,9 @@ Common problems in the Coaching Portal, for team leads and agents, and what to c
 
 **Problem:** Sign-in is refused with **We have sent you an email. Please reset your password before logging in.**, even with the password from the invitation email.
 
-**Cause:** A new account must set its own password before its first sign-in. The temporary password in the invitation does not work. Despite the message, no email is sent at this point.
+**Cause:** A new account sets its own password before its first sign-in, rather than using the temporary password in the invitation.
 
-**Solution:** Select **Forgot your password?** on the sign-in page, enter your email address, and select **Reset**. Follow the link in the **Reset Your Password** email to set a password, then sign in with it. Setting the password also confirms your email address. See [Getting Started for Agents](../agents/getting-started.md#1-sign-in-for-the-first-time).
+**Solution:** Request the reset link yourself. Select **Forgot your password?** on the sign-in page, enter your email address, and select **Reset**. Follow the link in the **Reset Your Password** email to set a password, then sign in with it. Setting the password also confirms your email address. See [Getting Started for Agents](../agents/getting-started.md#1-sign-in-for-the-first-time).
 
 ---
 

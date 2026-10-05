@@ -66,7 +66,7 @@ Read the material before starting the quiz. The quiz is scored, and your result 
 
 ![An assigned course card, with the View Course, Download Material, and Take Quiz controls](../../img/screenshots/agent_view/courses/course-actions.png)
 
-Select **Take Quiz** on a course that has one. The quiz page shows the course name at the top, and each question is numbered. A question marked **Required** has to be answered before you can submit. Questions come in three forms:
+Select **Take Quiz**. The quiz page shows the course name at the top, and each question is numbered. A question marked **Required** has to be answered before you can submit. Questions come in three forms:
 
 | Type | What you do |
 | :--- | :--- |
@@ -78,7 +78,7 @@ Select **Take Quiz** on a course that has one. The quiz page shows the course na
 
 Written answers are compared against an answer your team lead set when building the quiz, with Vela scoring the meaning rather than the exact wording. Answer the question that was asked rather than writing generally around it.
 
-When you submit, the page shows **Quiz Completed** and your score as a percentage. A pass is green, with **You have successfully passed this course quiz!** beneath it. A fail is red, with **You did not meet the passing score of 50%** followed by how many retakes you have left. Your organisation's pass mark replaces the 50. Below that:
+When you submit, the page shows **Quiz Completed** and your score as a percentage. A pass is green, with **You have successfully passed this course quiz!** beneath it. A fail is red, with **You did not meet the passing score of 50%** followed by how many retakes you have left. Your organisation's pass percentage replaces the 50. Below that:
 
 - **Previous Attempts**, once you have retaken the quiz, listing the score of every attempt with the latest outlined.
 - Three buttons, **Return to Course**, **Retake Quiz** with the number left in brackets, and **Complete Course**.
@@ -110,7 +110,7 @@ flowchart LR
     C -- "You use your last attempt" --> D
 ```
 
-Read the **Final Score** for how you did, not for which of the two closed the course out. A **Final Score** of **N/A** means you scored 0%.
+The **Final Score** tells you how you did. It does not tell you which of the two routes completed the course. A **Final Score** of **N/A** means you scored 0%.
 
 Your team lead sets **Quiz Retakes** on each course, between 1 and 5, so the number is not the same on every course. It is the total number of attempts, including your first, so a course set to 1 gives you one attempt. Vela shows how many you have left in a few places. The quiz page reads **You have 2 retake attempts available**, the results screen reads **You have 2 retakes remaining**, and the button on the results screen reads **Retake Quiz (2 left)**. On your first attempt, the quiz page shows one more than the results screen. Go by the results screen.
 
@@ -126,7 +126,7 @@ The course moves to **Completed Courses** with the last score you got, whether o
 
 A low first attempt is worth spending a retake on rather than leaving. Read the material again before you use the next one.
 
-While retakes remain, the results screen also offers **Complete Course**, beside **Retake Quiz** and **Return to Course**. Selecting it finishes the course on that attempt's score, pass or fail, without waiting for the retakes to run out. Passing alone does not finish a course, so select **Complete Course** once you are happy with a result.
+While retakes remain, the results screen also offers **Complete Course**, beside **Retake Quiz** and **Return to Course**. Selecting it finishes the course on that attempt's score, pass or fail, without using your remaining attempts. Passing alone does not finish a course, so select **Complete Course** once you are happy with a result.
 
 ---
 
@@ -134,7 +134,7 @@ While retakes remain, the results screen also offers **Complete Course**, beside
 
 Open **Courses** and confirm the course you finished sits under **Completed Courses** with a **Final Score** on it.
 
-A course still under **Courses In Progress** after you submitted is waiting for you. Open its quiz results and select **Complete Course**, or use a retake. A course that moved to **Completed Courses** with a score below the pass percentage means either you used your last attempt or you selected **Complete Course** on that attempt.
+A course still under **Courses In Progress** after you submitted is waiting for you to finish it. Open its quiz results and select **Complete Course**, or use a retake. If a course moved to **Completed Courses** with a score below the pass percentage, either you used your last attempt or you selected **Complete Course** after that attempt.
 
 ---
 

@@ -31,7 +31,7 @@ You need:
 
 Select **Coaching** in the left sidebar, then **Preferences**.
 
-Set the [evaluation cycle](../reference/glossary.md#evaluation-cycle) before anything else. Nothing is assigned between runs, so a course built without knowing it looks broken until the next run. See [How Coaching Works](../explanation/how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for what the cycle actually does.
+Set the [evaluation cycle](../reference/glossary.md#evaluation-cycle) before anything else. Nothing is assigned between runs. If you do not know when the next run is, a new course can look broken while it waits. See [How Coaching Works](../explanation/how-coaching-works.md#everything-happens-on-the-cycle-and-only-on-the-cycle) for what the cycle actually does.
 
 ![The Evaluation Cycle settings under Preferences, with the interval, unit, and time](../../img/screenshots/team_lead/preferences/evaluation-cycle.png)
 
@@ -59,7 +59,7 @@ See [Read the Coaching Dashboard](./coaching-dashboard.md).
 
 Select **Courses**, then **Create a New Course**.
 
-Name it for the gap, describe what it covers in terms the agent recognises, and attach your material. Set **Category** to the same category you found behind in step 2, since that is what the score range below is measured against, not the agent's overall score. Add at least one quiz question, because the course cannot be saved without one. The quiz is also what makes completion mean something. Set the **Deadline** (a count and a unit of Days, Weeks, or Months) and the **Scope**.
+Name it for the gap, describe what it covers in terms the agent recognises, and attach your material. Set **Category** to the category you found in step 2. The score range is measured against the agent's score in that category, not their overall score. Add a cover image and at least one quiz question, because the course cannot be saved without them. The quiz is also what makes completion mean something. Set the **Deadline** (a count and a unit of Days, Weeks, or Months) and the **Scope**.
 
 ![The Add Details step of the course form, with Title, Category, Description, Scope, and the score range slider](../../img/screenshots/team_lead/courses/new-course.png)
 

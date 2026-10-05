@@ -35,7 +35,7 @@ Under **Evaluation Scope**, answer "Which interactions would you like these eval
 | **All Interactions** | Every processed interaction counts towards evaluation |
 | **Reviewed Interactions Only** | Only interactions a person has marked as reviewed count |
 
-**Reviewed Interactions Only** is the stricter setting. It means coaching follows human-checked work rather than AI scores alone, which is worth having if your reviewers add context. It also means an agent with no reviewed interactions since the last run is left out of that run, and an interaction reviewed after its run never counts. Pick it only if your team reviews within each cycle.
+**Reviewed Interactions Only** is the stricter setting. It means coaching follows human-checked work rather than AI scores alone, which is worth having if your reviewers add context. It also means an agent with no reviewed interactions since the last run is left out of that run. An interaction reviewed after its run never counts. Pick it only if your team reviews within each cycle.
 
 ![Evaluation Scope and Evaluation Cycle at the top of the preferences page](../../img/screenshots/team_lead/preferences/evaluation-scope-and-cycle.png)
 
@@ -90,7 +90,7 @@ Answer "Which interactions would you like agents to be able to view":
 
 Reviewed-only is worth considering where your reviewers add context that changes how a score reads. It also means an unreviewed backlog is invisible to the agent, so their portal looks emptier than their work has been.
 
-:::warning Two of these four do not wait for the next cycle
+:::warning Most of these take effect when you save
 **Evaluation Cycle** reschedules the next run as soon as you save. **Evaluation Scope** changes the Dashboard at once, and courses and awards from the next run. **Pass Percentage** and **Agent View Permissions** apply at once.
 
 **Agent View Permissions** reaches backwards as well. Moving it from **All Interactions** to **Reviewed Interactions Only** withdraws interactions an agent could open yesterday, including ones they have already read and been coached on. Agree that setting and the pass percentage before agents are invited.

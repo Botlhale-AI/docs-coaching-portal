@@ -22,13 +22,13 @@ You need:
 
 ## 1. Set the Period
 
-The page opens on the current month. To choose another period, select the **Pencil** beside **Date range** at the top of the page. This opens **Filter by Date Range**, which offers **Today**, **Yesterday**, **This Week**, **Last Week**, **This Month**, and **Last Month** down the side, or **From** and **To** dates you pick off two months of calendar. Select **Save** to apply it, or **Close** to leave the range as it was. Everything below is recalculated for the dates you keep.
+The page opens on the current month. To choose another period, select the **Pencil** beside **Date range** at the top of the page. This opens **Filter by Date Range**, which offers **Today**, **Yesterday**, **This Week**, **Last Week**, **This Month**, and **Last Month** down the side, or you can pick **From** and **To** dates on a two-month calendar. Select **Save** to apply the dates, or **Close** to keep the range you had. Everything on the page then updates for the new dates.
 
 ![The Filter by Date Range picker, with the preset ranges beside From and To dates on two months of calendar](../../img/screenshots/agent_view/dashboard/date-range.png)
 
 Start with a period long enough to hold several interactions. A single day rarely says much about a trend.
 
-Type in the **Search categories** box at the top left to show only the categories whose names contain what you type, in **Category Scores** and in the charts below. When nothing matches, the page reads **No matching categories found for your search**.
+To find a category by name, type in the **Search categories** box at the top left. **Category Scores** and the charts below then show only the categories whose names contain what you typed. When nothing matches, the page reads **No matching categories found for your search**.
 
 ![The Agent Portal Dashboard, with the Search categories box and date range control at the top and the Auto Fails and Category Scores panels below](../../img/screenshots/agent_view/dashboard/dashboard-overview.png)
 
@@ -36,14 +36,14 @@ Type in the **Search categories** box at the top left to show only the categorie
 
 ## 2. Read Your Figures
 
-The page holds four panels, most of which compare you with your team, which is what makes the figures mean something.
+The page holds four panels. Most of them show your team's figure beside yours, and that comparison is what makes a figure meaningful.
 
 | Panel | What it shows | Read it for |
 | :--- | :--- | :--- |
 | **Auto Fails** | The share of your calls that failed a critical question, beside the same figure for your team | Whether one requirement is costing you whole interactions |
 | **Category Scores** | Your score per category, beside your team's | Which specific area to work on |
 | **Average Agent Performance** | Your trend across the period beside your team's | Direction, rather than any single day |
-| **Individual Agent Performance** | Your own score for the category across the period, as a single number | The figure to compare with your target |
+| **Individual Agent Performance** | Your own score for the category across the period, as a single number | Your own result, without the team beside it |
 
 The last two appear once for each category, further down the page, rather than once for the whole Dashboard. Select a category's name to open or close its section.
 
@@ -79,7 +79,7 @@ An overall score tells you where you stand. The category breakdown tells you wha
 
 Set the date range to a period you know holds interactions, and confirm the panels fill with figures.
 
-When no interactions fall inside the dates you chose, the Category Scores panel reads **No category data available for the selected date range** and the bottom of the page reads **No data available for the selected date range**. Widen the range. If it stays empty across a long period, your interactions may not have finished processing yet.
+When no interactions fall inside the dates you chose, the Category Scores panel reads **No category data available for the selected date range** and the bottom of the page reads **No data available for the selected date range**. Widen the range. If it stays empty across a long period, there are two likely reasons. Your interactions may not have finished processing, or your organisation counts only reviewed interactions and none of yours has been reviewed yet.
 
 ![The Dashboard for a date range with no interactions, showing both no-data messages](../../img/screenshots/agent_view/dashboard/empty-state.png)
 

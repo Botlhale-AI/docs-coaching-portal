@@ -54,7 +54,7 @@ A call's detailed view has three cards, with **Audio** and **Smart Detector** on
 
 ### A. Audio and Smart Detector
 
-**Audio** holds the player, on a call only. A control in this card's corner reads **Expand Section** or **Collapse Section**, giving it the whole width while you read.
+**Audio** holds the player, on a call only. A control in the card's corner reads **Expand Section** or **Collapse Section**. Expanding gives the card the full width of the page while you read.
 
 **Smart Detector** holds two tabs:
 
@@ -79,7 +79,7 @@ A question that did not apply to the conversation reads **N/A** rather than coun
 
 {/* VERIFIED 2026-09-07 against live agent captures (DemoOrg3, Vusi Zulu): the panel shows the agent's name at the top, then "Scores:" (Agent Score, Initial Score, Compliance Score, Initial Compliance Score, Quality Score, Initial Quality Score - most blank on that call) and "Details:" (Call ID, File Name, Date, Uploaded, Handle Time, Silent Time, Department, Team, Topic, Direction). A chat shows Response Time where a call shows Silent Time. No Alerts field for an agent. An earlier DEV note claiming Alerts shows here and Team/Topic/Direction do not was wrong. Agent side corrected 2026-10-01 against origin/vela-fly: app/(agents)/coaching_portal/(pages)/interactions/calls/[id]/callDetails.jsx passes infoCard only score (call.total_agent_score, "-" when falsy, AgentScore with the auto-fail flag), so the other five labels render empty; chatDetails.jsx does the same. The note that follows describes the team-lead file. Earlier note, against vela (Fly) origin/main: components/chats/infoCard.jsx holds all six labels and is the card calls render too; interactions/calls/[id]/callDetails.jsx falls back to a literal "-" for each, so an unused figure and a 0% both read as a dash, not blank (the same card shows Department: - on the capture above). components/calls/agentScore.jsx renders the bracketed pair only on its fail branch, and callDetails passes a separate fail flag for the agent, compliance and quality figures, so any of the three can show a pair and a score without an auto-fail is a single figure. */}
 
-Below it, a call's **Transcript** switches between **Original** and **English** when the conversation was not in English, and uses **Search** to find a word in it. Selecting a line's timestamp jumps the audio to that moment. Its tooltip reads **Play from here**. A chat's own panel is titled **Chat** rather than Transcript, with the same **Original**/**English** and **Search** controls, but nothing to jump the audio to.
+Below it, a call's **Transcript** switches between **Original** and **English** when the conversation was not in English, and has a **Search** box for finding a word in it. Selecting a line's timestamp jumps the audio to that moment. Its tooltip reads **Play from here**. A chat's own panel is titled **Chat** rather than Transcript, with the same **Original**/**English** and **Search** controls, but nothing to jump the audio to.
 
 Where a transcript is unavailable the panel reads **Transcript not available**.
 
@@ -93,7 +93,7 @@ Open the interaction, then select **View Comments** to open the comments panel. 
 
 ![The comments panel open on a call, with a comment from the team lead and the Reply, Like, and Mark as Resolved links](../../img/screenshots/agent_view/interactions/comments.png)
 
-Your team lead's comments do not raise a notification for you. Open **View Comments** on an interaction to check for feedback. See [Manage Your Account](./your-account.md).
+Your team lead's comments do not raise a notification for you, so check **View Comments** on your recent interactions for new feedback.
 
 ---
 
@@ -109,7 +109,7 @@ An interaction you expected and cannot find is usually one of two things. It may
 
 - [Monitor Your Performance](./personal-performance.md): how these interactions add up to your scores
 - [Track Your Courses](./your-courses.md): the training your scores can lead to
-- [Manage Your Account](./your-account.md): where comment notifications arrive
+- [Manage Your Account](./your-account.md): your notifications, account details, and password
 
 ## Need Help?
 

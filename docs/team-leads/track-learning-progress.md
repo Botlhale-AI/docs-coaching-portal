@@ -38,7 +38,7 @@ Select **Coaching** in the left sidebar, then **Progress**. The list opens on co
 
 The two score columns sit side by side so you can read them together. **Initiation Score** is where the agent was before the course, and **Score** is how they did on it. A course assigned at 40% and passed at 90% tells you the assignment was aimed correctly.
 
-**Score** is shown in red whenever it is below the **Pass Percentage** set in [Coaching Preferences](./coaching-preferences.md), including the default 0% on a course nobody has finished yet. Check **Status** alongside it before reading a red score as a fail. Red on **Not Started** or **In Progress** is the unfinished default, not a result. Red on a **Complete** row means the agent finished below the pass mark. See [Metrics](../reference/metrics.md#course-progress) for the two ways a course reaches **Complete**.
+**Score** is shown in red whenever it is below the **Pass Percentage** set in [Coaching Preferences](./coaching-preferences.md), including the 0% shown before an agent finishes. Check **Status** alongside it before reading a red score as a fail. Red on **Not Started** or **In Progress** is the unfinished default, not a result. Red on a **Complete** row means the agent finished below the pass percentage. See [Metrics](../reference/metrics.md#course-progress) for the two ways a course reaches **Complete**.
 
 Long lists are paged, with **Previous** and **Next** either side of the page count.
 
@@ -62,13 +62,13 @@ There is no filter on an individual agent or a single course. Narrow by team and
 
 ![The filter panel on the Progress list](../../img/screenshots/team_lead/progress/filter.png)
 
-The date range is a separate control, the **pencil** icon above the table rather than part of **Filter By**. Selecting it opens its own picker with its own **Apply**.
+The date range is a separate control, the **Pencil** icon above the table rather than part of **Filter By**. Selecting it opens its own picker with its own **Apply**.
 
 ![Filtering the Progress list by date](../../img/screenshots/team_lead/progress/date-filter.png)
 
 ![The detailed date range picker, with the range you set](../../img/screenshots/team_lead/progress/date-filter-detailed.png)
 
-The picker keeps the earlier date you select as the start automatically, so there is no way to set an out-of-order range. If you select **Apply** with only one date chosen, Vela asks you to pick both and leaves the range as it was.
+The picker always uses the earlier of your two dates as the start, so the range cannot be back to front. If you select **Apply** with only one date chosen, Vela asks you to pick both and leaves the range as it was.
 
 **Sort By** orders the list on a column you choose. It opens set to **Descending**, and **Save Changes** applies it. Sorting on **Score** does not change the order, so use **Filter** to narrow by score instead.
 
@@ -86,7 +86,7 @@ The picker keeps the earlier date you select as the start automatically, so ther
 | Everyone **Complete** with high scores | The course is working, or the pass percentage is set too low to tell |
 
 :::tip Sort by Due Date to find who needs chasing
-Filter **Status** to **Not Started** and **In Progress**, then sort on **Due Date**, **Ascending**, and select **Save Changes**. The overdue come first. Working from that list takes less time than reading the whole page, and it catches the agents a course is failing rather than the ones it is working for.
+Filter **Status** to **Not Started** and **In Progress**, then sort on **Due Date**, **Ascending**, and select **Save Changes**. The overdue come first. Working from that list takes less time than reading the whole page, and it finds the agents who are falling behind, not the ones who are on track.
 :::
 
 ---

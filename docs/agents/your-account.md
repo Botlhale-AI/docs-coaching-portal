@@ -16,7 +16,7 @@ The **ADMIN** section at the foot of the Agent Portal's left sidebar holds two p
 You need:
 
 - **An Agent Portal sign-in.** An administrator in your organisation creates your account, and the portal emails you an invitation.
-- **To know how you sign in.** Where you sign in through Google or Microsoft, your identity provider holds your password. The **Security** tab changes your Vela password only.
+- **To know how you sign in.** Where you sign in through Google or Microsoft, Google or Microsoft holds your password. The **Security** tab changes your Vela password only.
 
 ---
 

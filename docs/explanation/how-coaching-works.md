@@ -70,11 +70,11 @@ This design has a consequence worth stating plainly. Coaching follows the scores
 
 ## A range is a band, not a threshold
 
-Courses and awards each use a range with a lowest and a highest score, not a single pass mark. An agent qualifies when their score is anywhere from the lowest to the highest, including both. A range of 70 to 79 includes 70 and 79, but not 80.
+Courses and awards each use a range with a lowest and a highest score, not a single cut-off score. An agent qualifies when their score is anywhere from the lowest to the highest, including both. A range of 70 to 79 includes 70 and 79, but not 80.
 
 An award set to 80 to 100 recognises the top of the team. An award set to 70 to 79 recognises a specific tier and deliberately excludes the people above it, which is how you build a ladder rather than a single prize.
 
-The same applies to courses in reverse. A course set very wide reaches almost everyone, including the people who are already good at it, and it produces no evidence about whether it worked. A narrower band leaves out a group who did not receive the course. Comparing the two groups on the next cycle is the only real measure of whether the training worked.
+Courses work the same way, aimed at low scores. A course set very wide reaches almost everyone, including the people who are already good at it, and gives no evidence about whether it worked. A narrower band leaves some agents without the course. Comparing the two groups on the next cycle is the only real measure of whether the training worked.
 
 ---
 
@@ -102,7 +102,7 @@ Because an auto-fail zeroes the interaction, it also pulls the agent's average d
 
 ## The results are recorded, not judged
 
-Vela records who was assigned what, when it was due, what they scored, and what they scored the first time. It does not decide whether an agent is improving, and it does not escalate anything.
+Vela records who was assigned what, when it was due, what they scored, and the score they had when the course was assigned. It does not decide whether an agent is improving, and it does not escalate anything.
 
 That is deliberate, and it puts the judgement where it belongs. **Progress** shows you a course nobody started and a course everybody passed at 100%, and treats them the same. Both are worth your attention, for opposite reasons, and only a person can tell which is which.
 

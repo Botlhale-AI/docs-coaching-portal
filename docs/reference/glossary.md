@@ -67,7 +67,7 @@ One list, shared across coaching and the main Vela platform. It is the same set 
 
 On the **Dashboard**, a category groups scorecard questions, and **Category Scores** breaks performance down by them.
 
-On a course or an award, **Category** is the one whose score the **Training Initiation Score Range** or **Score Threshold (Range)** is measured against, not the agent's overall score. A course scoped to Compliance with a range of 40 to 65 reaches agents whose Compliance score, specifically, falls in that band, whatever their other categories look like.
+On a course or an award, the **Training Initiation Score Range** or **Score Threshold (Range)** is measured against the agent's score in the chosen **Category**, not their overall score. A course scoped to Compliance with a range of 40 to 65 reaches agents whose Compliance score, specifically, falls in that band, whatever their other categories look like.
 
 {/* UNVERIFIED: that the range is measured against the agent's score in the chosen Category. origin/main has no implementation to check. The only one, lib/coachingCycle.js on origin/dev (#842), scores each agent on their overall weighted score across every category and never reads the award's or course's category field. Either the form's Category is meant to scope the score and #842 is wrong, or Category is a label and this paragraph is. Three things point at the former. Neither create form carries help text on Category or the range, so the product itself does not say. lib/warningAutoDetect.js, which #842's header says it deliberately mirrors, does score per category: it loops the category scores and matches template.category. And the certificate (lib/generateAward.js) prints "achievement in <category> with a score of <n>%", which misleads if n is the overall score. Needs the product owner to decide, and #842 should be checked before it reaches main. Stated the same way on course-and-award-fields.md, how-the-pieces-fit.md, create-and-assign-courses.md, getting-started.md (team lead), recognise-good-work.md, and faq.md. */}
 
@@ -103,7 +103,7 @@ Marking an interaction as reviewed happens in the main Vela platform, not in coa
 
 ## Final Score
 
-An agent's result on a course quiz, in the agent's **Completed Courses** table. It reads **N/A** where the result was 0% or there is no result yet, and a team lead sees the same figure as **Score**. [Initiation Score](#initiation-score) sits beside it, showing where they stood before the course rather than a previous quiz result.
+An agent's result on a course quiz, in the agent's **Completed Courses** table. It reads **N/A** where the result was 0% or there is no result yet. A team lead sees the same result as **Score**, where it reads **0%** instead of **N/A**. [Initiation Score](#initiation-score) sits beside it. It shows the agent's score before the course, not an earlier quiz result.
 
 ## Initiation Score
 

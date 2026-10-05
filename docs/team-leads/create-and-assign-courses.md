@@ -11,7 +11,7 @@ import Hotspots from '@site/src/components/Hotspots';
 import newCourseImg from '@site/img/screenshots/team_lead/courses/new-course.png';
 import retakesImg from '@site/img/screenshots/team_lead/courses/new-course4.png';
 
-A course is training you build once, as a team lead, and Vela assigns automatically. You set a category and a score range on the course. On each evaluation cycle, every agent whose score in that category falls in the range receives it. Courses reach people by score rather than by name, so you set the criteria rather than picking individuals.
+A course is training you build once, as a team lead, and Vela assigns automatically. You set a category and a score range on the course. On each evaluation cycle, every agent whose score in that category falls in the range receives it. Courses reach people by score, not by name. You set the criteria, and Vela picks the agents.
 
 {/* UNVERIFIED: per-Category measurement. See the note under Category in glossary.md. */}
 
@@ -47,7 +47,7 @@ The form is one page in four labelled parts, and **Add Details** is the first.
   alt="The Add Details step of the course form, with Title and Category above Description, then Scope and the Training Initiation Score Range slider"
   points={[
     { x: 23.1, y: 31.6, title: 'Title', body: 'The name of the course. Agents see it as Course Title in their list.' },
-    { x: 65.2, y: 31.6, title: 'Category', body: 'The scorecard category the Training Initiation Score Range below is measured against, not only a label for browsing.' },
+    { x: 65.2, y: 31.6, title: 'Category', body: 'The scorecard category this course is about. The Training Initiation Score Range below is measured against the agent\'s score in it, so it is more than a label.' },
     { x: 26.4, y: 47.5, title: 'Description', body: 'What the course covers, and why it was assigned.' },
     { x: 24.1, y: 69.9, title: 'Scope', body: 'Who the course can reach, from the whole organisation down to chosen departments or teams. The options offered depend on your own access level.' },
     { x: 75.1, y: 69.9, title: 'Training Initiation Score Range', body: 'The band of scores that qualifies an agent for the course. It is measured against their score in the chosen Category, not their overall score.' },
@@ -66,7 +66,7 @@ Pick from the categories your organisation already has. There is no **+ Add New*
 
 ### Scope
 
-Choosing departments or teams reveals a selector for which ones, and the course is refused until you pick at least one. Your own access level caps what you may set here. If your access covers one team, the form shows that team instead of a choice.
+Choosing departments or teams reveals a selector for which ones, and the course is refused until you pick at least one. Your access level limits which options you see. If your access covers one team, the form shows that team instead of a choice.
 
 ![Scope set to Specific Departments, with the Select Departments list open beside the Training Initiation Score Range slider](../../img/screenshots/team_lead/courses/scope-selector.png)
 
@@ -123,7 +123,7 @@ Every question also has two settings. **Points** is worth 1 by default and can b
 
 ![A quiz question as it appears once added, with its type, points and answer](../../img/screenshots/team_lead/courses/new-course3.png)
 
-Each question you add is listed with its number, its answer type, the point value and **Required** setting you gave it, and the **Answer** you marked correct. The **pencil** edits a question and the **bin** removes it.
+Each question you add is listed with its number, its answer type, the point value and **Required** setting you gave it, and the **Answer** you marked correct. The **Pencil** edits a question and the **bin** removes it.
 
 ![The New Question panel, with a Multiple Choice question, its options with one marked as the correct answer, the Points field, and the Required toggle](../../img/screenshots/team_lead/courses/create-course-add-quiz.png)
 
@@ -148,7 +148,7 @@ These three sit together below the quiz, and they decide how much room an agent 
 **Quiz Retakes** decides how long a struggling agent can keep trying before the course closes on them. Their **Initiation Score** is fixed at assignment and does not change, so it stays on the row as the baseline their quiz **Score** is read against.
 
 :::warning Complete does not mean passed
-An agent reaches **Complete** by running out of retakes or by selecting **Complete Course**, whichever comes first, whatever they scored. The **Progress** table shows the same status either way, so read **Complete** together with **Score**. See [Metrics](../reference/metrics.md#course-progress) for what the two routes mean for what you do next.
+An agent reaches **Complete** by using their last attempt or by selecting **Complete Course**, whichever comes first, whatever they scored. The **Progress** table shows the same status either way, so read **Complete** together with **Score**. See [Metrics](../reference/metrics.md#course-progress) for what the two routes mean for what you do next.
 :::
 
 The pass percentage itself is set once for all courses under Preferences, not per course. See [Set Coaching Preferences](./coaching-preferences.md).
