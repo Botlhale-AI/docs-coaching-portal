@@ -33,7 +33,7 @@ If you sign in with email and password, you set your own password before your fi
 4. Enter your new password twice, and select **Reset**. Setting the password also confirms your email address.
 5. Back on the sign-in page, enter your email address and your new password, and select **Sign In**.
 
-{/* VERIFIED 2026-10-01 on origin/vela-fly: settings.jsx creates every user with force_password_change: true, and app/api/auth/[...nextauth]/route.js refuses that sign-in with the message above (commit e0f70e3d, not on origin/main). No email is sent on that path. Only app/api/reset/route.js clears the flag, and it also sets email_confirmed, so Confirm Account is not needed first. */}
+{/* VERIFIED 2026-10-01 on origin/vela-fly: settings.jsx creates every user with force_password_change: true, and app/api/auth/[...nextauth]/route.js refuses that sign-in with the message above (commit e0f70e3d, not on origin/main). For a user whose address is not yet confirmed, app/api/login/route.js also sends a "Confirm Your Email Address" email before the sign-in is refused (corrected 2026-10-07). Only app/api/reset/route.js clears the flag, and it also sets email_confirmed, so Confirm Account is not needed first. */}
 
 Signing in takes you straight to your **Dashboard**.
 

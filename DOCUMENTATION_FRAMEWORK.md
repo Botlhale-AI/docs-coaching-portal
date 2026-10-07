@@ -73,7 +73,7 @@ type: how-to
 
 **Current distribution:** 10 how-to, 5 reference, 3 explanation, 2 tutorial, 1 troubleshooting, across 21 published pages.
 
-Reference being the largest is intentional. In a mature product it is the material people return to most.
+How-to is the largest here because most of the site walks one of two audiences through a task. Reference stays small on purpose: the platform's own reference material lives in the Vela documentation.
 
 ---
 
